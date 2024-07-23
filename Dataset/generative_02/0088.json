@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "pythonbasics.com",
+        "penulis": "Budi Santosa",
+        "tanggal": "2024-04-10",
+        "judul": "Memahami Operasi Aritmatika di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "aritmatika", "fundamental"],
+        "konten": "Artikel ini membahas berbagai operasi aritmatika yang dapat dilakukan di Python, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sisa hasil bagi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana saya seharusnya melakukan penjumlahan di Python? Saya agak bingung tentang cara kerjanya.",
+                "answer": "Penjumlahan di Python dilakukan dengan menggunakan operator `+`. Misalnya, jika Anda memiliki dua variabel, `a` dan `b`, Anda bisa menjumlahkannya dengan `a + b`."
+            },
+            {
+                "question": "Saya tidak terlalu yakin bagaimana cara melakukan pengurangan. Apakah ini rumit?",
+                "answer": "Tidak, pengurangan cukup sederhana. Anda hanya perlu menggunakan operator `-`. Contoh: `a - b` akan mengurangi nilai `b` dari `a`."
+            },
+            {
+                "question": "Apa sih operator untuk perkalian di Python? Saya bingung antara simbol-simbol yang ada.",
+                "question_code": "a * b",
+                "answer": "Operator perkalian di Python adalah `*`. Jadi, `a * b` akan memberikan hasil perkalian dari `a` dan `b`.",
+                "answer_code": "a * b"
+            },
+            {
+                "question": "Saya baru mulai belajar Python dan bingung dengan pembagian. Bagaimana sebenarnya cara melakukannya?",
+                "question_code": "a / b",
+                "answer": "Pembagian di Python dilakukan dengan operator `/`. Misalnya, `a / b` akan membagi nilai `a` dengan `b` dan memberikan hasil pembagiannya.",
+                "answer_code": "a / b"
+            },
+            {
+                "question": "Bagaimana mendapatkan sisa hasil bagi? Saya tidak mengerti kapan dan bagaimana menggunakannya.",
+                "question_code": "a % b",
+                "answer": "Sisa hasil bagi dapat diperoleh dengan operator `%`. Contohnya: `a % b` akan memberikan sisa dari pembagian `a` dengan `b`.",
+                "answer_code": "a % b"
+            },
+            {
+                "question": "Saya dengar tentang perpangkatan, tapi tidak yakin bagaimana cara melakukannya di Python. Bisa jelasin?",
+                "question_code": "a ** b",
+                "answer": "Perpangkatan di Python menggunakan operator `**`. Jadi, `a ** b` akan menghasilkan `a` dipangkatkan `b`.",
+                "answer_code": "a ** b"
+            },
+            {
+                "question": "Pembagian integer itu apa sih, dan bagaimana cara melakukannya?",
+                "question_code": "a // b",
+                "answer": "Pembagian integer memberikan hasil pembagian tanpa sisa, menggunakan operator `//`. Misalnya, `a // b` akan memberikan hasil pembagian bulat dari `a` dan `b`.",
+                "answer_code": "a // b"
+            },
+            {
+                "question": "Saya masih bingung dengan augmented assignment. Bagaimana cara kerjanya dan kapan harus digunakan?",
+                "question_code": "a += 5",
+                "answer": "Augmented assignment seperti `+=` digunakan untuk memperbarui nilai variabel dengan menambahkan nilai tertentu. Contohnya: `a += 5` berarti menambahkan 5 ke nilai `a`.",
+                "answer_code": "a += 5"
+            },
+            {
+                "question": "Bagaimana mengubah angka negatif menjadi positif? Saya tidak yakin fungsi `abs()` itu seperti apa.",
+                "question_code": "abs(-a)",
+                "answer": "Fungsi `abs()` digunakan untuk mendapatkan nilai absolut dari angka, yaitu mengubah angka negatif menjadi positif. Misalnya: `abs(-a)` akan memberikan nilai positif dari `-a`.",
+                "answer_code": "abs(-a)"
+            }
+        ]
+    },
+    {
+        "sumber": "pythontutorial.net",
+        "penulis": "Cinta Dewi",
+        "tanggal": "2024-05-05",
+        "judul": "Pernyataan Kondisional di Python: if-elif-else",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "kondisional", "if-elif-else"],
+        "konten": "Artikel ini menjelaskan tentang penggunaan pernyataan kondisional `if-elif-else` di Python untuk membuat keputusan dalam kode berdasarkan kondisi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara saya menggunakan pernyataan `if`? Saya agak bingung tentang cara kerjanya.",
+                "answer": "Pernyataan `if` digunakan untuk mengeksekusi blok kode jika kondisi yang diberikan benar. Contohnya: `if x > 0: print('x positif')`."
+            },
+            {
+                "question": "Apa bedanya `if` dan `else`? Saya tidak paham kapan harus menggunakan `else`.",
+                "answer": "Pernyataan `else` digunakan untuk menangani kasus ketika kondisi dalam `if` tidak terpenuhi. Jika `if` tidak benar, maka `else` yang akan dijalankan. Contoh: `else: print('x tidak positif')`."
+            },
+            {
+                "question": "Saya tidak mengerti bagaimana menggunakan `elif`. Apa fungsinya?",
+                "answer": "Pernyataan `elif` digunakan untuk memeriksa kondisi tambahan jika kondisi dalam `if` sebelumnya tidak terpenuhi. Misalnya: `elif x == 0: print('x nol')`."
+            },
+            {
+                "question": "Bagaimana cara menyusun pernyataan `if-elif-else` dengan benar? Saya bingung dengan urutannya.",
+                "question_code": "if x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')",
+                "answer": "Anda bisa menggabungkan `if`, `elif`, dan `else` untuk memeriksa beberapa kondisi. Urutannya adalah: `if`, lalu `elif` untuk kondisi tambahan, dan `else` untuk kasus default.",
+                "answer_code": "if x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')"
+            },
+            {
+                "question": "Saya tidak tahu bagaimana menggunakan operator logika `and` di dalam `if`. Bagaimana cara kerjanya?",
+                "question_code": "if x > 0 and x < 10:\n    print('x antara 0 dan 10')",
+                "answer": "Operator `and` digunakan untuk memeriksa apakah kedua kondisi benar. Contoh: `if x > 0 and x < 10:` akan memeriksa apakah `x` berada di antara 0 dan 10.",
+                "answer_code": "if x > 0 and x < 10:\n    print('x antara 0 dan 10')"
+            },
+            {
+                "question": "Apa fungsi operator logika `or`? Saya bingung bagaimana menggunakannya dalam pernyataan `if`.",
+                "question_code": "if x < 0 or x > 10:\n    print('x di luar rentang 0 hingga 10')",
+                "answer": "Operator `or` digunakan untuk memeriksa apakah salah satu dari dua kondisi benar. Misalnya: `if x < 0 or x > 10:` akan memeriksa apakah `x` berada di luar rentang 0 hingga 10.",
+                "answer_code": "if x < 0 or x > 10:\n    print('x di luar rentang 0 hingga 10')"
+            },
+            {
+                "question": "Bagaimana menggunakan `not` dalam pernyataan `if`? Saya tidak yakin bagaimana cara kerjanya.",
+                "question_code": "if not x:\n    print('x adalah False atau 0')",
+                "answer": "Operator `not` digunakan untuk membalik nilai boolean dari kondisi. Contoh: `if not x:` akan memeriksa apakah `x` adalah `False` atau 0.",
+                "answer_code": "if not x:\n    print('x adalah False atau 0')"
+            },
+            {
+                "question": "Saya kesulitan dengan pernyataan `if` bersarang. Bagaimana cara menulisnya dengan benar?",
+                "question_code": "if x > 0:\n    if x < 10:\n        print('x positif dan kurang dari 10')",
+                "answer": "Pernyataan `if` bersarang melibatkan menempatkan satu pernyataan `if` di dalam pernyataan `if` lainnya. Contoh: `if x > 0: if x < 10:`.",
+                "answer_code": "if x > 0:\n    if x < 10:\n        print('x positif dan kurang dari 10')"
+            },
+            {
+                "question": "Bagaimana cara memeriksa ketidak samaan dengan `!=`? Saya bingung dengan simbol ini.",
+                "question_code": "if x != 0:\n    print('x tidak sama dengan nol')",
+                "answer": "Operator `!=` digunakan untuk memeriksa ketidak samaan. Misalnya: `if x != 0:` akan memeriksa apakah `x` tidak sama dengan 0.",
+                "answer_code": "if x != 0:\n    print('x tidak sama dengan nol')"
+            }
+        ]
+    }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2023-05-20",
+    "judul": "Membuat Web dengan Flask",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["data science", "pandas"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Langkah-langkah jelas", "Contoh konkret"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan penulisan sintaks",
+        "contoh": "print('Hello World'",
+        "solusi": "Tambahkan tanda kurung tutup"
+      }
+    ]
+  },
+  {
+    "sumber": "medium.com",
+    "penulis": "Bob Brown",
+    "tanggal": "2022-05-03",
+    "judul": "Belajar Python Dasar",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["tutorial", "belajar"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Tips berguna", "Mudah dipahami"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan penulisan sintaks",
+        "contoh": "print('Hello World'",
+        "solusi": "Tambahkan tanda kurung tutup"
+      }
+    ]
+  }
+]

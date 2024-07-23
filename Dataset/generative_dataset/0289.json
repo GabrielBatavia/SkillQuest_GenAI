@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "DataCamp",
+    "penulis": "DataCamp Team",
+    "tanggal": "2024-07-13",
+    "judul": "Pengenalan NumPy untuk Komputasi Numerik dalam Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "NumPy", "Komputasi Numerik"],
+    "konten": "NumPy adalah pustaka yang kuat untuk komputasi numerik dalam Python. Artikel ini membahas dasar-dasar NumPy seperti array, operasi matematika, dan slicing array.",
+    "contoh": [
+      {
+        "tipe": "Contoh Komputasi Numerik dengan NumPy",
+        "bahasa": "Python",
+        "isi": "import numpy as np\n\n# Membuat array NumPy\narr = np.array([1, 2, 3, 4, 5])\n\n# Menghitung rata-rata\nrata_rata = np.mean(arr)\nprint('Rata-rata dari array:', rata_rata)",
+        "komentar": "Contoh penggunaan NumPy untuk komputasi numerik sederhana."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "NumPy untuk Komputasi Numerik dalam Python",
+        "deskripsi": "Memperkenalkan penggunaan NumPy untuk operasi komputasi numerik seperti array dan operasi matematika dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NumPy Documentation",
+        "url": "https://numpy.org/doc/stable/"
+      }
+    ],
+    "highlight": ["NumPy", "Komputasi Numerik", "Array"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "Kesalahan yang muncul saat mencoba melakukan operasi yang tidak sesuai dengan tipe data array NumPy.",
+        "contoh": "np.mean(['a', 'b', 'c'])",
+        "solusi": "Pastikan operasi yang dilakukan sesuai dengan tipe data yang diharapkan oleh fungsi atau metode NumPy."
+      }
+    ]
+  },
+  {
+    "sumber": "GeeksforGeeks",
+    "penulis": "GeeksforGeeks Team",
+    "tanggal": "2024-07-13",
+    "judul": "Pengenalan Flask untuk Pembuatan Web Application dengan Python",
+    "tingkat_kesulitan": "Tinggi",
+    "tag": ["Python", "Flask", "Web Development"],
+    "konten": "Flask adalah framework web yang ringan dan mudah digunakan dalam Python. Artikel ini menjelaskan dasar-dasar pembuatan web application menggunakan Flask, termasuk routing, templates, dan interaksi dengan database.",
+    "contoh": [
+      {
+        "tipe": "Contoh Pembuatan Web Application dengan Flask",
+        "bahasa": "Python",
+        "isi": "from flask import Flask\n\napp = Flask(__name__)\n\n@app.route('/')\ndef hello_world():\n    return 'Hello, World!'\n\nif __name__ == '__main__':\n    app.run()",
+        "komentar": "Contoh pembuatan web application sederhana dengan Flask."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Flask untuk Pembuatan Web Application dengan Python",
+        "deskripsi": "Memperkenalkan penggunaan Flask sebagai framework web untuk pembuatan aplikasi web dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Flask Documentation",
+        "url": "https://flask.palletsprojects.com/en/2.0.x/"
+      }
+    ],
+    "highlight": ["Flask", "Web Application", "Routing"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "Kesalahan yang muncul saat mencoba mengimpor modul Flask yang belum terinstal.",
+        "contoh": "from flask import Flask",
+        "solusi": "Pastikan Flask sudah diinstal dalam lingkungan Python yang digunakan."
+      }
+    ]
+  }
+]

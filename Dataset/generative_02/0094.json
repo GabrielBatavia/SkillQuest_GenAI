@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "pemrogramanpython.com",
+        "penulis": "Ani Setiawati",
+        "tanggal": "2023-08-14",
+        "judul": "Penggunaan List Comprehensions di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list comprehensions", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan list comprehensions di Python untuk membuat dan memanipulasi list dengan sintaks yang lebih ringkas dan efisien.",
+        "pertanyaan": [
+            {
+                "question": "Apa sebenarnya yang dimaksud dengan list comprehension? Saya bingung dengan istilah ini.",
+                "answer": "List comprehensions adalah cara singkat untuk membuat list baru dari iterable yang ada menggunakan satu baris kode."
+            },
+            {
+                "question": "Saya tidak mengerti bagaimana cara membuat list comprehension. Bisa kasih contoh yang gampang?",
+                "answer": "Anda bisa membuat list comprehension sederhana dengan sintaks `[expression for item in iterable]`. Contohnya: `[x for x in range(5)]`."
+            },
+            {
+                "question": "Saya lihat ada kondisi dalam list comprehension. Bagaimana cara menambahkannya? Misalnya, hanya memilih angka genap.",
+                "question_code": "[x for x in range(10) if x % 2 == ]",
+                "answer": "Anda bisa menambahkan kondisi dengan sintaks `[expression for item in iterable if condition]`. Contohnya: `[x for x in range(10) if x % 2 == 0]`.",
+                "answer_code": "[x for x in range(10) if x % 2 == 0]"
+            },
+            {
+                "question": "Saya mau buat list comprehension tapi pakai fungsi. Gimana caranya?",
+                "question_code": "[x^2 for x in range(10)]",
+                "answer": "Anda bisa membuat list comprehension dengan menggunakan fungsi di dalam ekspresi. Contohnya: `[x**2 for x in range(10)]`.",
+                "answer_code": "[x**2 for x in range(10)]"
+            },
+            {
+                "question": "Bagaimana sih cara membuat list comprehension dari list yang sudah ada? Saya coba tapi tidak berhasil.",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x^2 for x in numbers]",
+                "answer": "Anda bisa membuat list comprehension dari list yang ada dengan menggunakan list sebagai iterable. Contohnya: `[x**2 for x in numbers]`.",
+                "answer_code": "squares = [x**2 for x in numbers]"
+            },
+            {
+                "question": "Apa itu nested list comprehension? Kok rasanya susah banget.",
+                "question_code": "[[x, y] for x in range(3) for y in range(3) if x > y]",
+                "answer": "Anda bisa membuat nested list comprehensions dengan menggunakan dua loop for di dalam satu list comprehension. Contohnya: `[[x, y] for x in range(3) for y in range(3)]`.",
+                "answer_code": "[[x, y] for x in range(3) for y in range(3)]"
+            },
+            {
+                "question": "Bagaimana caranya manipulasi string pakai list comprehension? Saya tidak paham caranya.",
+                "question_code": "[char.upper for char in 'hello']",
+                "answer": "Anda bisa menggunakan list comprehension untuk memanipulasi string dengan iterasi karakter di dalam string. Contohnya: `[char.upper() for char in 'hello']`.",
+                "answer_code": "[char.upper() for char in 'hello']"
+            },
+            {
+                "question": "Saya mau buat list comprehension dari dictionary, tapi hasilnya tidak sesuai. Bisa kasih contoh?",
+                "question_code": "{k: v*2 for k, v in {'a': 1, 'b': 2}.items() if k == 'b'}",
+                "answer": "Anda bisa membuat list comprehension dari dictionary dengan menggunakan `.items()` untuk iterasi kunci dan nilai. Contohnya: `{k: v**2 for k, v in {'a': 1, 'b': 2}.items()}`.",
+                "answer_code": "{k: v**2 for k, v in {'a': 1, 'b': 2}.items()}"
+            },
+            {
+                "question": "Saya baru belajar set comprehension, tapi kok tidak muncul hasilnya? Apa yang salah?",
+                "question_code": "{x for x in range(5) if x % 2 = 0}",
+                "answer": "Anda bisa membuat set comprehension dengan menggunakan tanda kurung kurawal `{}`. Contohnya: `{x for x in range(5)}`.",
+                "answer_code": "{x for x in range(5)}"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarcoding.id",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-02-18",
+        "judul": "Penggunaan Fungsi Input dan Output di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "input", "output", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi input dan output di Python untuk mengambil input dari pengguna dan menampilkan output ke layar.",
+        "pertanyaan": [
+            {
+                "question": "Gimana cara ambil input dari pengguna di Python? Saya bingung harus mulai dari mana.",
+                "answer": "Anda bisa mengambil input dari pengguna dengan menggunakan fungsi `input()`. Contohnya: `input('Enter your name: ')`."
+            },
+            {
+                "question": "Saya tidak tahu bagaimana menampilkan output. Bagaimana caranya?",
+                "answer": "Anda bisa menampilkan output ke layar dengan menggunakan fungsi `print()`. Contohnya: `print('Hello, World!')`."
+            },
+            {
+                "question": "Saya mencoba mengambil input angka tapi tidak berhasil. Bagaimana cara yang benar?",
+                "question_code": "age = input('Enter your age: ').int()",
+                "answer": "Anda bisa mengambil input angka dari pengguna dengan mengonversi input menjadi integer. Contohnya: `int(input('Enter your age: '))`.",
+                "answer_code": "age = int(input('Enter your age: '))"
+            },
+            {
+                "question": "Bagaimana kalau saya mau input float? Apakah caranya sama?",
+                "question_code": "height = int(input('Enter your height: '))",
+                "answer": "Anda bisa mengambil input float dari pengguna dengan mengonversi input menjadi float. Contohnya: `float(input('Enter your height: '))`.",
+                "answer_code": "height = float(input('Enter your height: '))"
+            },
+            {
+                "question": "Saya bingung cara menampilkan beberapa variabel di print. Bisa jelasin?",
+                "question_code": "name = 'Alice'\nage = 30\nprint('Name:', name, Age =', age)",
+                "answer": "Anda bisa menampilkan beberapa variabel dalam satu pernyataan print dengan memisahkan variabel dengan koma. Contohnya: `print('Name:', name, 'Age:', age)`.",
+                "answer_code": "name = 'Alice'\nage = 30\nprint('Name:', name, 'Age:', age)"
+            },
+            {
+                "question": "Saya baca tentang f-string, tapi bingung cara penggunaannya. Tolong kasih contoh.",
+                "question_code": "name = 'Alice'\nage = 30\nprint(f'Name: {name} Age {age}')",
+                "answer": "Anda bisa menggunakan f-string untuk memformat output dengan menempatkan variabel di dalam kurung kurawal `{}`. Contohnya: `print(f'Name: {name}, Age: {age}')`.",
+                "answer_code": "name = 'Alice'\nage = 30\nprint(f'Name: {name}, Age: {age}')"
+            },
+            {
+                "question": "Saya mau gunakan separator khusus di print, tapi tidak tahu caranya.",
+                "question_code": "print('Hello', 'World', separator='-')",
+                "answer": "Anda bisa menampilkan output dengan separator khusus dengan menggunakan parameter `sep` dalam fungsi `print()`. Contohnya: `print('Hello', 'World', sep='-')`.",
+                "answer_code": "print('Hello', 'World', sep='-')"
+            },
+            {
+                "question": "Saya bingung bagaimana menggunakan end di print. Bisa kasih contoh?",
+                "question_code": "print('Hello', end = ' ')\nprint('World')",
+                "answer": "Anda bisa menampilkan output dengan end khusus dengan menggunakan parameter `end` dalam fungsi `print()`. Contohnya: `print('Hello', end=' '); print('World')`.",
+                "answer_code": "print('Hello', end=' ')\nprint('World')"
+            },
+            {
+                "question": "Saya ingin mengambil beberapa nilai dengan input tapi tidak tahu cara memprosesnya.",
+                "question_code": "data = input('Enter numbers separated by space: ').split().map(int)",
+                "answer": "Anda bisa menggunakan fungsi `input()` untuk mengambil beberapa nilai sekaligus dengan memisahkan nilai-nilai dengan spasi dan menggunakan metode `split()`. Contohnya: `data = input('Enter numbers separated by space: ').split(); numbers = [int(x) for x in data]`.",
+                "answer_code": "data = input('Enter numbers separated by space: ').split()\nnumbers = [int(x) for x in data]"
+            }
+        ]
+    }
+]

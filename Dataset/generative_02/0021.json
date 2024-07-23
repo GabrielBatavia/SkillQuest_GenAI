@@ -1,0 +1,119 @@
+[
+    {
+        "sumber": "pythonid.com",
+        "penulis": "Budi Santoso",
+        "tanggal": "2023-02-25",
+        "judul": "Menggunakan Modul `datetime` di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "datetime", "modul"],
+        "konten": "Artikel ini membahas cara menggunakan modul `datetime` di Python untuk mengelola tanggal dan waktu, termasuk cara membuat, memformat, dan memanipulasi objek datetime.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu modul `datetime` di Python?",
+                "answer": "Modul `datetime` adalah modul standar di Python yang menyediakan kelas untuk mengelola tanggal dan waktu."
+            },
+            {
+                "question": "Bagaimana cara mengimpor modul `datetime`?",
+                "answer": "Anda bisa mengimpor modul `datetime` dengan menggunakan sintaks `import datetime`."
+            },
+            {
+                "question": "Bagaimana cara membuat objek datetime?",
+                "answer": "Anda bisa membuat objek datetime dengan menggunakan konstruktor `datetime.datetime()`. Contohnya: `datetime.datetime(2023, 2, 25, 10, 30, 0)`."
+            },
+            {
+                "question": "Bagaimana cara mendapatkan tanggal dan waktu saat ini?",
+                "question_code": "import datetime\nnow = datetime.datetime.now()",
+                "answer": "Anda bisa mendapatkan tanggal dan waktu saat ini dengan menggunakan metode `datetime.datetime.now()`. Contohnya: `datetime.datetime.now()`.",
+                "answer_code": "now = datetime.datetime.now()"
+            },
+            {
+                "question": "Bagaimana cara memformat objek datetime sebagai string?",
+                "question_code": "import datetime\nnow = datetime.datetime.now()\nformatted_date = now.strftime('%Y-%m-%d %H:%M:%S')",
+                "answer": "Anda bisa memformat objek datetime sebagai string dengan menggunakan metode `strftime()`. Contohnya: `now.strftime('%Y-%m-%d %H:%M:%S')`.",
+                "answer_code": "formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi objek datetime?",
+                "question_code": "import datetime\ndate_string = '2023-02-25 10:30:00'\ndate_obj = datetime.datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S')",
+                "answer": "Anda bisa mengubah string menjadi objek datetime dengan menggunakan metode `strptime()`. Contohnya: `datetime.datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S')`.",
+                "answer_code": "date_obj = datetime.datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S')"
+            },
+            {
+                "question": "Bagaimana cara menambahkan atau mengurangi waktu dari objek datetime?",
+                "question_code": "import datetime\nnow = datetime.datetime.now()\ntomorrow = now + datetime.timedelta(days=1)",
+                "answer": "Anda bisa menambahkan atau mengurangi waktu dari objek datetime dengan menggunakan kelas `timedelta`. Contohnya: `now + datetime.timedelta(days=1)`.",
+                "answer_code": "tomorrow = now + datetime.timedelta(days=1)"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan selisih antara dua objek datetime?",
+                "question_code": "import datetime\nstart = datetime.datetime(2023, 2, 25, 10, 0, 0)\nend = datetime.datetime(2023, 2, 25, 12, 0, 0)\ndiff = end - start",
+                "answer": "Anda bisa mendapatkan selisih antara dua objek datetime dengan mengurangkan satu objek datetime dari yang lain. Contohnya: `end - start`.",
+                "answer_code": "diff = end - start"
+            },
+            {
+                "question": "Bagaimana cara membuat objek date dan time terpisah?",
+                "question_code": "import datetime\ndate_obj = datetime.date(2023, 2, 25)\ntime_obj = datetime.time(10, 30, 0)",
+                "answer": "Anda bisa membuat objek date dan time terpisah dengan menggunakan kelas `date` dan `time`. Contohnya: `datetime.date(2023, 2, 25)` dan `datetime.time(10, 30, 0)`.",
+                "answer_code": "date_obj = datetime.date(2023, 2, 25)\ntime_obj = datetime.time(10, 30, 0)"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonku.com",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-04-07",
+        "judul": "Pemrograman Jaringan dengan Socket di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["python", "socket", "jaringan"],
+        "konten": "Artikel ini membahas dasar-dasar pemrograman jaringan dengan menggunakan modul `socket` di Python, termasuk cara membuat server dan klien sederhana.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu modul `socket` di Python?",
+                "answer": "Modul `socket` adalah modul standar di Python yang menyediakan antarmuka untuk komunikasi jaringan menggunakan soket."
+            },
+            {
+                "question": "Bagaimana cara mengimpor modul `socket`?",
+                "answer": "Anda bisa mengimpor modul `socket` dengan menggunakan sintaks `import socket`."
+            },
+            {
+                "question": "Bagaimana cara membuat objek socket?",
+                "answer": "Anda bisa membuat objek socket dengan menggunakan konstruktor `socket.socket()`. Contohnya: `s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)`."
+            },
+            {
+                "question": "Bagaimana cara menghubungkan socket ke server?",
+                "question_code": "import socket\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\ns.connect(('localhost', 12345))",
+                "answer": "Anda bisa menghubungkan socket ke server dengan menggunakan metode `connect()`. Contohnya: `s.connect(('localhost', 12345))`.",
+                "answer_code": "s.connect(('localhost', 12345))"
+            },
+            {
+                "question": "Bagaimana cara membuat server socket?",
+                "question_code": "import socket\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\ns.bind(('localhost', 12345))\ns.listen(5)",
+                "answer": "Anda bisa membuat server socket dengan mengikat socket ke alamat dan port, lalu mendengarkan koneksi. Contohnya: `s.bind(('localhost', 12345))` dan `s.listen(5)`.",
+                "answer_code": "s.bind(('localhost', 12345))\ns.listen(5)"
+            },
+            {
+                "question": "Bagaimana cara menerima koneksi di server socket?",
+                "question_code": "conn, addr = s.accept()\nprint('Connected by', addr)",
+                "answer": "Anda bisa menerima koneksi di server socket dengan menggunakan metode `accept()`. Contohnya: `conn, addr = s.accept()`.",
+                "answer_code": "conn, addr = s.accept()"
+            },
+            {
+                "question": "Bagaimana cara mengirim data melalui socket?",
+                "question_code": "s.sendall(b'Hello, World!')",
+                "answer": "Anda bisa mengirim data melalui socket dengan menggunakan metode `sendall()`. Contohnya: `s.sendall(b'Hello, World!')`."
+            },
+            {
+                "question": "Bagaimana cara menerima data dari socket?",
+                "question_code": "data = s.recv(1024)\nprint('Received', data)",
+                "answer": "Anda bisa menerima data dari socket dengan menggunakan metode `recv()`. Contohnya: `data = s.recv(1024)`.",
+                "answer_code": "data = s.recv(1024)"
+            },
+            {
+                "question": "Bagaimana cara menutup koneksi socket?",
+                "question_code": "s.close()",
+                "answer": "Anda bisa menutup koneksi socket dengan menggunakan metode `close()`. Contohnya: `s.close()`.",
+                "answer_code": "s.close()"
+            }
+        ]
+    }
+]

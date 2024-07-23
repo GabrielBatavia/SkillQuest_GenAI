@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonStringGuide.com",
+    "penulis": "Adi Nugroho",
+    "tanggal": "2025-06-05",
+    "judul": "Pemahaman Dasar tentang Strings di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini menjelaskan dasar-dasar penggunaan strings di Python, termasuk cara membuat, memanipulasi, dan menggunakan berbagai metode yang tersedia untuk tipe data string.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\nnama = 'Budi'\nprint('Nama:', nama)\nprint('Tipe data:', type(nama))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggabungkan dua string\nnama_depan = 'Budi'\nnama_belakang = 'Santoso'\nnama_lengkap = nama_depan + ' ' + nama_belakang\nprint('Nama lengkap:', nama_lengkap)",
+            "komentar": "Menggabungkan dua string menggunakan operator +"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode upper() dan lower()\nteks = 'Hello, World!'\nteks_upper = teks.upper()\nteks_lower = teks.lower()\nprint('Uppercase:', teks_upper)\nprint('Lowercase:', teks_lower)",
+            "komentar": "Mengubah string menjadi huruf besar dan huruf kecil menggunakan metode upper() dan lower()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode replace()\nteks = 'Python is fun'\nteks_baru = teks.replace('fun', 'awesome')\nprint('Teks baru:', teks_baru)",
+            "komentar": "Mengganti substring dalam string menggunakan metode replace()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode split()\nteks = 'satu,dua,tiga'\nangka_list = teks.split(',')\nprint('List angka:', angka_list)",
+            "komentar": "Memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode join()\nangka_list = ['satu', 'dua', 'tiga']\nteks = ', '.join(angka_list)\nprint('String dari list:', teks)",
+            "komentar": "Menggabungkan list menjadi string menggunakan metode join()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode strip()\nteks = '  hello  '\nteks_strip = teks.strip()\nprint('Teks setelah strip:', teks_strip)",
+            "komentar": "Menghapus spasi di awal dan akhir string menggunakan metode strip()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Mengakses karakter dalam string\nkata = 'Python'\nkarakter_pertama = kata[0]\nkarakter_terakhir = kata[-1]\nprint('Karakter pertama:', karakter_pertama)\nprint('Karakter terakhir:', karakter_terakhir)",
+            "komentar": "Mengakses karakter dalam string menggunakan indeks positif dan negatif"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Menggabungkan String",
+            "deskripsi": "Cara menggabungkan dua atau lebih string menggunakan operator +."
+        },
+        {
+            "topik": "Metode upper() dan lower()",
+            "deskripsi": "Cara mengubah string menjadi huruf besar dan huruf kecil menggunakan metode upper() dan lower()."
+        },
+        {
+            "topik": "Metode replace()",
+            "deskripsi": "Cara mengganti substring dalam string menggunakan metode replace()."
+        },
+        {
+            "topik": "Metode split()",
+            "deskripsi": "Cara memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()."
+        },
+        {
+            "topik": "Metode join()",
+            "deskripsi": "Cara menggabungkan list menjadi string menggunakan metode join()."
+        },
+        {
+            "topik": "Metode strip()",
+            "deskripsi": "Cara menghapus spasi di awal dan akhir string menggunakan metode strip()."
+        },
+        {
+            "topik": "Mengakses Karakter dalam String",
+            "deskripsi": "Cara mengakses karakter dalam string menggunakan indeks positif dan negatif."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "kata = 'Python'\nkarakter = kata[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Budi'\numur = 25\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

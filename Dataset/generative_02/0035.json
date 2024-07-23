@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "pemrogramanpython.com",
+        "penulis": "Siti Rahmawati",
+        "tanggal": "2023-11-05",
+        "judul": "Penggunaan Fungsi di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "fungsi", "dasar"],
+        "konten": "Artikel ini bahas cara bikin dan pakai fungsi di Python, termasuk parameter, pengembalian nilai, dan fungsi bawaan.",
+        "pertanyaan": [
+            {
+                "question": "Gimana caranya bikin fungsi di Python?",
+                "answer": "Kamu bisa bikin fungsi dengan pakai kata kunci `def` diikuti nama fungsi dan tanda kurung. Misalnya: `def my_function():`."
+            },
+            {
+                "question": "Gimana caranya manggil fungsi di Python?",
+                "answer": "Kamu bisa manggil fungsi dengan nulis nama fungsi diikuti tanda kurung. Contohnya: `my_function()`."
+            },
+            {
+                "question": "Gimana caranya bikin fungsi dengan parameter?",
+                "answer": "Buat fungsi dengan parameter, tambahkan parameter di dalam tanda kurung setelah nama fungsi. Contohnya: `def my_function(param1, param2):`."
+            },
+            {
+                "question": "Gimana caranya balikin nilai dari fungsi?",
+                "question_code": "def my_function():\n    return 42",
+                "answer": "Kamu bisa balikin nilai dari fungsi dengan pakai kata kunci `return`. Contohnya: `return 42`.",
+                "answer_code": "def my_function():\n    return 42"
+            },
+            {
+                "question": "Gimana caranya pakai fungsi bawaan `len()` di Python?",
+                "question_code": "my_list = [1, 2, 3, 4]\nlength = len(my_list)",
+                "answer": "Kamu bisa pakai fungsi `len()` buat dapetin panjang dari objek seperti list atau string. Contohnya: `len(my_list)`.",
+                "answer_code": "length = len(my_list)"
+            },
+            {
+                "question": "Gimana caranya bikin fungsi dengan parameter default?",
+                "question_code": "def my_function(x, y=10):\n    return x + y",
+                "answer": "Buat fungsi dengan parameter default, kasih nilai default pada parameter. Contohnya: `def my_function(x, y=10):`.",
+                "answer_code": "def my_function(x, y=10):\n    return x + y"
+            },
+            {
+                "question": "Gimana caranya pakai fungsi `print()` di Python?",
+                "question_code": "print('Hello, World!')",
+                "answer": "Kamu bisa pakai fungsi `print()` buat cetak teks atau nilai ke layar. Contohnya: `print('Hello, World!')`.",
+                "answer_code": "print('Hello, World!')"
+            },
+            {
+                "question": "Gimana caranya bikin fungsi yang bisa terima banyak argumen?",
+                "question_code": "def my_function(*args):\n    for arg in args:\n        print(arg)",
+                "answer": "Buat fungsi yang terima banyak argumen, pakai tanda bintang `*` sebelum nama parameter. Contohnya: `def my_function(*args):`.",
+                "answer_code": "def my_function(*args):\n    for arg in args:\n        print(arg)"
+            },
+            {
+                "question": "Gimana caranya bikin fungsi yang bisa terima banyak pasangan kunci-nilai?",
+                "question_code": "def my_function(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)",
+                "answer": "Buat fungsi yang terima banyak pasangan kunci-nilai, pakai dua tanda bintang `**` sebelum nama parameter. Contohnya: `def my_function(**kwargs):`.",
+                "answer_code": "def my_function(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)"
+            }
+        ]
+    },
+    {
+        "sumber": "pythontutorial.org",
+        "penulis": "Ali Wijaya",
+        "tanggal": "2024-02-15",
+        "judul": "Struktur Kontrol Dasar di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "struktur kontrol", "dasar"],
+        "konten": "Artikel ini jelasin tentang struktur kontrol dasar di Python, seperti if, else, elif, for loop, dan while loop.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu struktur kontrol if di Python?",
+                "answer": "Struktur kontrol `if` dipakai buat bikin keputusan berdasarkan kondisi tertentu. Kalau kondisi benar, blok kode di dalam `if` bakal dijalankan."
+            },
+            {
+                "question": "Gimana caranya pakai struktur kontrol if di Python?",
+                "answer": "Pakai struktur kontrol `if` dengan nulis `if` diikuti kondisi dan blok kode. Misalnya: `if x > 0: print('x positif')`."
+            },
+            {
+                "question": "Apa itu struktur kontrol else di Python?",
+                "answer": "Struktur kontrol `else` dipakai buat eksekusi blok kode kalau kondisi `if` sebelumnya salah."
+            },
+            {
+                "question": "Gimana caranya pakai struktur kontrol else di Python?",
+                "question_code": "if x > 0:\n    print('x positif')\nelse:\n    print('x tidak positif')",
+                "answer": "Pakai struktur kontrol `else` dengan nulis `else` diikuti blok kode. Misalnya: `else: print('x tidak positif')`.",
+                "answer_code": "if x > 0:\n    print('x positif')\nelse:\n    print('x tidak positif')"
+            },
+            {
+                "question": "Apa itu struktur kontrol elif di Python?",
+                "question_code": "if x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')",
+                "answer": "Struktur kontrol `elif` dipakai buat cek kondisi lain kalau kondisi `if` sebelumnya salah.",
+                "answer_code": "elif x == 0:\n    print('x nol')"
+            },
+            {
+                "question": "Gimana caranya pakai for loop di Python?",
+                "question_code": "for i in range(5):\n    print(i)",
+                "answer": "Pakai `for loop` buat ulang blok kode sejumlah item dalam urutan. Misalnya: `for i in range(5): print(i)`.",
+                "answer_code": "for i in range(5):\n    print(i)"
+            },
+            {
+                "question": "Gimana caranya pakai while loop di Python?",
+                "question_code": "while x < 5:\n    print(x)\n    x += 1",
+                "answer": "Pakai `while loop` buat ulang blok kode selama kondisi tertentu terpenuhi. Misalnya: `while x < 5: print(x)`.",
+                "answer_code": "while x < 5:\n    print(x)\n    x += 1"
+            },
+            {
+                "question": "Gimana caranya pakai pernyataan break di dalam loop?",
+                "question_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)",
+                "answer": "Pakai pernyataan `break` buat hentikan loop sebelum semua iterasi selesai. Misalnya: `if i == 5: break`.",
+                "answer_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)"
+            },
+            {
+                "question": "Gimana caranya pakai pernyataan continue di dalam loop?",
+                "question_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)",
+                "answer": "Pakai pernyataan `continue` buat lewati iterasi saat ini dan lanjut ke iterasi berikutnya. Misalnya: `if i % 2 == 0: continue`.",
+                "answer_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)"
+            }
+        ]
+    }
+]

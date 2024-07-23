@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Lucas Bell",
+    "tanggal": "2026-08-20",
+    "judul": "Python Error Handling: Best Practices for Handling Exceptions",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Error Handling", "Exceptions", "Best Practices", "Intermediate"],
+    "konten": "Error handling in Python allows you to gracefully handle exceptions and errors...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of try-except block\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f'Error: {e}')",
+        "komentar": "Uses try-except block to handle ZeroDivisionError."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penanganan Error dalam Python",
+        "deskripsi": "Menggunakan penanganan error untuk menangani pengecualian dan kesalahan secara elegan dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Errors and Exceptions Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html"
+      }
+    ],
+    "highlight": ["gracefully handle exceptions and errors", "Python try-except block"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "SyntaxError occurred due to incorrect syntax in try-except block.",
+        "contoh": "try\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f'Error: {e}')",
+        "solusi": "Ensure correct syntax (missing colon after 'try')."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Finn Hughes",
+    "tanggal": "2026-09-05",
+    "judul": "Python Matplotlib: Data Visualization with Matplotlib",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Matplotlib", "Data Visualization", "Intermediate"],
+    "konten": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import matplotlib.pyplot as plt\n\n# Example of plotting a line graph\nx = [1, 2, 3, 4, 5]\ny = [2, 4, 6, 8, 10]\nplt.plot(x, y)\nplt.xlabel('X-axis')\nplt.ylabel('Y-axis')\nplt.title('Line Graph')\nplt.show()",
+        "komentar": "Plots a line graph using Matplotlib."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Visualisasi Data dengan Matplotlib dalam Python",
+        "deskripsi": "Menggunakan Matplotlib untuk membuat visualisasi statis, animasi, dan interaktif dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Matplotlib Documentation",
+        "url": "https://matplotlib.org/stable/contents.html"
+      }
+    ],
+    "highlight": ["comprehensive library for creating visualizations", "Python Matplotlib line graph"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "TypeError occurred due to passing incompatible data types to Matplotlib plot function.",
+        "contoh": "plt.plot('x', 'y')",
+        "solusi": "Ensure correct data types (arrays or lists) are passed to Matplotlib plot functions."
+      }
+    ]
+  }
+]

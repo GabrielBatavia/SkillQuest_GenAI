@@ -1,0 +1,115 @@
+[
+    {
+        "sumber": "tutorialpython.com",
+        "penulis": "John Doe",
+        "tanggal": "2023-06-15",
+        "judul": "Pengantar Dasar Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "pemrograman", "fundamental"],
+        "konten": "Artikel ini membahas tentang dasar-dasar bahasa pemrograman Python, meliputi sintaks dasar, variabel, dan tipe data.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan Python?",
+                "answer": "Python adalah bahasa pemrograman tingkat tinggi yang mudah dipelajari dan digunakan."
+            },
+            {
+                "question": "Bagaimana cara deklarasi variabel di Python?",
+                "answer": "Untuk mendeklarasikan variabel di Python, cukup tuliskan nama variabel diikuti dengan nilai, misalnya: x = 10."
+            },
+            {
+                "question": "Apa saja tipe data dasar yang ada di Python?",
+                "answer": "Tipe data dasar di Python meliputi integer, float, string, dan boolean."
+            },
+            {
+                "question": "Bagaimana cara mencetak teks menggunakan Python?",
+                "question_code": "print('Hello, World!')",
+                "answer": "Anda bisa menggunakan fungsi print() untuk mencetak teks. Misalnya: print('Hello, World!')."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string di Python?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nhasil = str1 + ' ' + str2\nprint(hasil)",
+                "answer": "Anda bisa menggunakan operator + untuk menggabungkan dua string. Misalnya: hasil = str1 + ' ' + str2."
+            },
+            {
+                "question": "Bagaimana cara memeriksa tipe data variabel di Python?",
+                "question_code": "x = 10\ntype(x)",
+                "answer": "Anda bisa menggunakan fungsi type() untuk memeriksa tipe data dari suatu variabel. Contohnya: type(x)."
+            },
+            {
+                "question": "Bagaimana cara membuat komentar di Python?",
+                "question_code": "# Ini adalah komentar",
+                "answer": "Anda bisa menggunakan tanda # untuk membuat komentar di Python. Misalnya: # Ini adalah komentar.",
+                "answer_code": "# Ini adalah komentar"
+            },
+            {
+                "question": "Bagaimana cara mengonversi string menjadi integer di Python?",
+                "question_code": "s = '123'\ni = int(s)\nprint(i)",
+                "answer": "Anda bisa menggunakan fungsi int() untuk mengonversi string menjadi integer. Misalnya: i = int(s).",
+                "answer_code": "i = int(s)"
+            },
+            {
+                "question": "Bagaimana cara mengulang elemen dalam list di Python?",
+                "question_code": "daftar = [1, 2, 3, 4]\nfor elemen in daftar:\n    print(elemen)",
+                "answer": "Anda bisa menggunakan perulangan for untuk mengulang elemen dalam list. Misalnya: for elemen in daftar: print(elemen).",
+                "answer_code": "for elemen in daftar: print(elemen)"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonguide.com",
+        "penulis": "Jane Smith",
+        "tanggal": "2024-01-10",
+        "judul": "Fungsi dan Modul di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "fungsi", "modul"],
+        "konten": "Artikel ini menjelaskan cara membuat dan menggunakan fungsi serta modul di Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan fungsi di Python?",
+                "answer": "Fungsi adalah sekumpulan kode yang dapat digunakan kembali untuk menjalankan tugas tertentu."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi di Python?",
+                "answer": "Anda dapat mendefinisikan fungsi di Python menggunakan kata kunci def diikuti dengan nama fungsi dan tanda kurung. Contohnya: def fungsi_saya():."
+            },
+            {
+                "question": "Bagaimana cara memanggil fungsi di Python?",
+                "answer": "Anda dapat memanggil fungsi dengan menuliskan nama fungsi diikuti dengan tanda kurung. Contohnya: fungsi_saya()."
+            },
+            {
+                "question": "Bagaimana cara mengimpor modul di Python?",
+                "question_code": "import math",
+                "answer": "Anda dapat mengimpor modul menggunakan kata kunci import diikuti dengan nama modul. Contohnya: import math."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi dari modul yang diimpor?",
+                "question_code": "import math\nhasil = math.sqrt(16)\nprint(hasil)",
+                "answer": "Setelah mengimpor modul, Anda dapat menggunakan fungsi dari modul tersebut dengan sintaks modul.fungsi(). Misalnya: hasil = math.sqrt(16)."
+            },
+            {
+                "question": "Bagaimana cara membuat modul di Python?",
+                "question_code": "def fungsi_saya():\n    print('Halo dari modul saya!')",
+                "answer": "Anda dapat membuat modul dengan menyimpan fungsi atau kode lainnya dalam file dengan ekstensi .py. Contohnya: modul_saya.py.",
+                "answer_code": "def fungsi_saya():\n    print('Halo dari modul saya!')"
+            },
+            {
+                "question": "Bagaimana cara mengimpor fungsi tertentu dari modul?",
+                "question_code": "from math import sqrt\nhasil = sqrt(16)\nprint(hasil)",
+                "answer": "Anda dapat mengimpor fungsi tertentu dari modul menggunakan sintaks from modul import fungsi. Contohnya: from math import sqrt.",
+                "answer_code": "from math import sqrt\nhasil = sqrt(16)\nprint(hasil)"
+            },
+            {
+                "question": "Bagaimana cara memberikan alias pada modul yang diimpor?",
+                "question_code": "import numpy as np\narray = np.array([1, 2, 3])\nprint(array)",
+                "answer": "Anda dapat memberikan alias pada modul yang diimpor menggunakan kata kunci as. Misalnya: import numpy as np.",
+                "answer_code": "import numpy as np\narray = np.array([1, 2, 3])\nprint(array)"
+            },
+            {
+                "question": "Bagaimana cara mengimpor semua fungsi dari modul?",
+                "question_code": "from math import *\nhasil = sqrt(16)\nprint(hasil)",
+                "answer": "Anda dapat mengimpor semua fungsi dari modul menggunakan sintaks from modul import *. Misalnya: from math import *.",
+                "answer_code": "from math import *\nhasil = sqrt(16)\nprint(hasil)"
+            }
+        ]
+    }
+]

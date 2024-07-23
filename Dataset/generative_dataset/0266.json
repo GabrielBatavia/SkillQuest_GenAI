@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Jesse Wyatt",
+    "tanggal": "2028-12-20",
+    "judul": "Python Concurrency: Asynchronous Programming with Asyncio",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Concurrency", "Asynchronous Programming", "Asyncio", "Advanced"],
+    "konten": "Asyncio is a Python library that provides asynchronous programming support. It allows you to write...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of asynchronous programming with Asyncio\nimport asyncio\n\nasync def main():\n    print('Hello')\n    await asyncio.sleep(1)\n    print('world')\n\n# Run asynchronous program\nasyncio.run(main())",
+        "komentar": "Demonstrates asynchronous programming using Asyncio."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Asynchronous dengan Asyncio dalam Python",
+        "deskripsi": "Menggunakan Asyncio untuk mendukung pemrograman asynchronous dalam aplikasi Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Asyncio Documentation",
+        "url": "https://docs.python.org/3/library/asyncio.html"
+      }
+    ],
+    "highlight": ["Python library that provides asynchronous programming support", "Asyncio asynchronous programming"],
+    "error": [
+      {
+        "error": "RuntimeError",
+        "deskripsi": "RuntimeError occurred due to error during Asyncio program execution.",
+        "contoh": "asyncio.run(main())",
+        "solusi": "Check and fix errors reported during Asyncio program execution."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Eliana Macias",
+    "tanggal": "2029-01-05",
+    "judul": "Python Neural Networks: Building a Deep Neural Network with Keras",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Neural Networks", "Deep Learning", "Keras", "Advanced"],
+    "konten": "Keras is a high-level neural networks API written in Python that allows you to build and train deep neural networks...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of building a deep neural network with Keras\nimport tensorflow as tf\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense\n\n# Define model\nmodel = Sequential([\n    Dense(64, activation='relu', input_shape=(10,)),\n    Dense(64, activation='relu'),\n    Dense(1)\n])\n\n# Compile model\nmodel.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logits=True), metrics=['accuracy'])\n\n# Train model\nmodel.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_val, y_val))",
+        "komentar": "Builds a deep neural network using Keras."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Deep Neural Network dengan Keras dalam Python",
+        "deskripsi": "Menggunakan Keras untuk membangun dan melatih deep neural network dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Keras Documentation",
+        "url": "https://keras.io/"
+      }
+    ],
+    "highlight": ["high-level neural networks API written in Python", "Keras deep neural network"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to invalid value or data type in Keras example.",
+        "contoh": "model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logits=True), metrics=['accuracy'])",
+        "solusi": "Ensure correct values and data types are used when compiling model with Keras."
+      }
+    ]
+  }
+]

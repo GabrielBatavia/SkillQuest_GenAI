@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonBeginnerGuide.com",
+    "penulis": "Maya Sari",
+    "tanggal": "2025-05-20",
+    "judul": "Memahami Casting di Python: Panduan Praktis",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["casting", "konversi", "tipe data", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang casting di Python, yaitu proses mengonversi satu tipe data ke tipe data lainnya. Casting digunakan untuk memastikan bahwa operasi dilakukan dengan tipe data yang benar.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari string ke boolean\nstatus_str = 'True'\nstatus_bool = bool(status_str)\nprint('String ke boolean:', status_bool)\nprint('Tipe data:', type(status_bool))",
+            "komentar": "Contoh konversi dari string ke boolean menggunakan fungsi bool()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari integer ke string\nangka = 123\nangka_str = str(angka)\nprint('Integer ke string:', angka_str)\nprint('Tipe data:', type(angka_str))",
+            "komentar": "Contoh konversi dari integer ke string menggunakan fungsi str()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari list ke tuple\nbuah_list = ['apel', 'pisang', 'mangga']\nbuah_tuple = tuple(buah_list)\nprint('List ke tuple:', buah_tuple)\nprint('Tipe data:', type(buah_tuple))",
+            "komentar": "Contoh konversi dari list ke tuple menggunakan fungsi tuple()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari float ke integer\nharga = 199.99\nharga_int = int(harga)\nprint('Float ke integer:', harga_int)\nprint('Tipe data:', type(harga_int))",
+            "komentar": "Contoh konversi dari float ke integer menggunakan fungsi int()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari dictionary ke list nilai\nproduk = {'nama': 'Laptop', 'harga': 15000, 'stok': 20}\nnilai_produk = list(produk.values())\nprint('Dictionary ke list nilai:', nilai_produk)\nprint('Tipe data:', type(nilai_produk))",
+            "komentar": "Contoh konversi dari dictionary ke list nilai menggunakan fungsi list()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari tuple ke list\nangka_tuple = (10, 20, 30)\nangka_list = list(angka_tuple)\nprint('Tuple ke list:', angka_list)\nprint('Tipe data:', type(angka_list))",
+            "komentar": "Contoh konversi dari tuple ke list menggunakan fungsi list()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari set ke string\nangka_set = {4, 5, 6, 7}\nangka_str = str(angka_set)\nprint('Set ke string:', angka_str)\nprint('Tipe data:', type(angka_str))",
+            "komentar": "Contoh konversi dari set ke string menggunakan fungsi str()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari string ke float\nnilai_str = '85.67'\nnilai_float = float(nilai_str)\nprint('String ke float:', nilai_float)\nprint('Tipe data:', type(nilai_float))",
+            "komentar": "Contoh konversi dari string ke float menggunakan fungsi float()"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Konversi String ke Boolean",
+            "deskripsi": "Cara mengonversi tipe data string ke boolean menggunakan fungsi bool()."
+        },
+        {
+            "topik": "Konversi Integer ke String",
+            "deskripsi": "Cara mengonversi tipe data integer ke string menggunakan fungsi str()."
+        },
+        {
+            "topik": "Konversi List ke Tuple",
+            "deskripsi": "Cara mengonversi tipe data list ke tuple menggunakan fungsi tuple()."
+        },
+        {
+            "topik": "Konversi Float ke Integer",
+            "deskripsi": "Cara mengonversi tipe data float ke integer menggunakan fungsi int()."
+        },
+        {
+            "topik": "Konversi Dictionary ke List Nilai",
+            "deskripsi": "Cara mengonversi tipe data dictionary ke list nilai menggunakan fungsi list()."
+        },
+        {
+            "topik": "Konversi Tuple ke List",
+            "deskripsi": "Cara mengonversi tipe data tuple ke list menggunakan fungsi list()."
+        },
+        {
+            "topik": "Konversi Set ke String",
+            "deskripsi": "Cara mengonversi tipe data set ke string menggunakan fungsi str()."
+        },
+        {
+            "topik": "Konversi String ke Float",
+            "deskripsi": "Cara mengonversi tipe data string ke float menggunakan fungsi float()."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Casting - W3Schools",
+            "url": "https://www.w3schools.com/python/python_casting.asp"
+        },
+        {
+            "judul": "Type Conversion in Python - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/type-conversion-python/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang casting di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana mengonversi berbagai tipe data di Python"
+    ],
+    "error": [
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi string yang tidak valid ke tipe data numbers.",
+            "contoh": "angka_str = 'abc'\nangka_float = float(angka_str)",
+            "solusi": "Pastikan string yang akan dikonversi ke tipe data numbers adalah representasi angka yang valid."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi tipe data yang tidak kompatibel.",
+            "contoh": "angka = 123\nangka_list = list(angka)",
+            "solusi": "Pastikan tipe data yang akan dikonversi kompatibel dengan fungsi konversi yang digunakan."
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2023-03-02",
+        "judul": "Belajar Python: Dasar-dasar",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "dasar",
+            "pemrograman"
+        ],
+        "konten": "Artikel ini mencakup dasar-dasar Python termasuk variabel, tipe data, dan kontrol alur.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Contoh kode sederhana untuk mencetak teks."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Variabel",
+                "deskripsi": "Variabel digunakan untuk menyimpan nilai."
+            },
+            {
+                "topik": "Tipe Data",
+                "deskripsi": "Python mendukung berbagai tipe data seperti int, float, dan str."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Official Documentation",
+                "url": "https://docs.python.org/3/tutorial/index.html"
+            }
+        ],
+        "highlight": [
+            "Mudah dipelajari",
+            "Banyak digunakan"
+        ],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks terjadi saat kode tidak valid.",
+                "contoh": "print('Hello, World!'",
+                "solusi": "Pastikan semua tanda kurung dan tanda kutip cocok."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "Raymond Hettinger",
+        "tanggal": "2022-09-10",
+        "judul": "Pemrograman Berorientasi Objek dengan Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": [
+            "python",
+            "oop",
+            "pemrograman"
+        ],
+        "konten": "Artikel ini mencakup konsep dasar dari pemrograman berorientasi objek di Python, termasuk kelas dan objek.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "class Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def bark(self):\n        print('Woof!')",
+                "komentar": "Contoh sederhana dari kelas dan metode di Python."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Kelas",
+                "deskripsi": "Kelas adalah cetak biru untuk membuat objek."
+            },
+            {
+                "topik": "Objek",
+                "deskripsi": "Objek adalah instance dari kelas."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Classes and Objects",
+                "url": "https://docs.python.org/3/tutorial/classes.html"
+            }
+        ],
+        "highlight": [
+            "Konsep OOP",
+            "Kelas dan objek"
+        ],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Kesalahan atribut terjadi saat mencoba mengakses atribut yang tidak ada.",
+                "contoh": "dog = Dog('Buddy')\ndog.age",
+                "solusi": "Pastikan atribut yang diakses ada dalam kelas."
+            }
+        ]
+    }
+]

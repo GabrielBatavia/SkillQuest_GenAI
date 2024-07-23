@@ -1,0 +1,78 @@
+{
+    "sumber": "pythonindonesia.com",
+    "penulis": "Dewi Lestari",
+    "tanggal": "2023-12-05",
+    "judul": "Menggunakan List Comprehension dan Lambda Function di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "List Comprehension", "Lambda", "Menengah"],
+    "konten": "Artikel ini membahas tentang penggunaan list comprehension dan lambda function di Python untuk membuat kode lebih efisien dan elegan.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = [1, 2, 3, 4, 5]\nkuadrat = [x**2 for x in angka]\nprint(kuadrat)",
+            "komentar": "Menggunakan list comprehension untuk membuat list baru yang berisi kuadrat dari elemen-elemen dalam list angka."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka_genap = [x for x in range(10) if x % 2 == 0]\nprint(angka_genap)",
+            "komentar": "Menggunakan list comprehension dengan kondisi untuk membuat list berisi angka genap dari 0 hingga 9."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "kali_dua = lambda x: x * 2\nhasil = kali_dua(5)\nprint(hasil)",
+            "komentar": "Menggunakan lambda function untuk mendefinisikan fungsi anonim yang mengalikan input dengan 2."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = [1, 2, 3, 4, 5]\nganda = list(map(lambda x: x * 2, angka))\nprint(ganda)",
+            "komentar": "Menggunakan lambda function dalam map untuk menggandakan setiap elemen dalam list angka."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "List Comprehension",
+            "deskripsi": "Cara menggunakan list comprehension untuk membuat list baru dengan cara yang lebih ringkas dan efisien."
+        },
+        {
+            "topik": "Lambda Function",
+            "deskripsi": "Cara mendefinisikan dan menggunakan fungsi anonim (lambda) di Python."
+        },
+        {
+            "topik": "Map Function",
+            "deskripsi": "Cara menggunakan fungsi map untuk menerapkan fungsi tertentu pada setiap elemen dalam iterable."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "List Comprehensions",
+            "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions"
+        },
+        {
+            "judul": "Lambda Expressions",
+            "url": "https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions"
+        },
+        {
+            "judul": "Map Function",
+            "url": "https://docs.python.org/3/library/functions.html#map"
+        }
+    ],
+    "highlight": ["Efisiensi kode", "Penggunaan list comprehension", "Penggunaan lambda function"],
+    "error": [
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan penulisan sintaks pada list comprehension.",
+            "contoh": "[x for in range(10)]",
+            "solusi": "Pastikan sintaks list comprehension ditulis dengan benar, yaitu [expression for item in iterable]."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan saat lambda function digunakan tanpa parameter yang diperlukan.",
+            "contoh": "lambda x, y: x + y(5)",
+            "solusi": "Pastikan lambda function dipanggil dengan jumlah parameter yang benar."
+        }
+    ]
+}

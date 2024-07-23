@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "python.org",
+    "penulis": "David Miller",
+    "tanggal": "2025-10-15",
+    "judul": "Python Object-Oriented Programming: Classes and Inheritance",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Object-Oriented Programming", "Classes", "Inheritance", "Intermediate"],
+    "konten": "Object-oriented programming (OOP) in Python involves creating classes and defining objects...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        print(f'Hello, my name is {self.name} and I am {self.age} years old.')\n\n# Create an instance of the Person class\nperson1 = Person('Alice', 30)\nperson1.greet()",
+        "komentar": "Defines a Person class with attributes and a method."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Berorientasi Objek (OOP) dengan Python",
+        "deskripsi": "Membuat dan menggunakan kelas serta pewarisan dalam pemrograman berorientasi objek menggunakan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Classes and Objects Documentation",
+        "url": "https://docs.python.org/3/tutorial/classes.html"
+      }
+    ],
+    "highlight": ["creating classes and defining objects", "Object-Oriented Programming"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "AttributeError occurred due to accessing non-existent attribute in an object.",
+        "contoh": "print(person1.email)",
+        "solusi": "Ensure attribute 'email' is defined in the Person class or object."
+      }
+    ]
+  },
+  {
+    "sumber": "analyticsvidhya.com",
+    "penulis": "Olivia Taylor",
+    "tanggal": "2025-11-20",
+    "judul": "Python Machine Learning: Introduction to TensorFlow",
+    "tingkat_kesulitan": "Tinggi",
+    "tag": ["Python", "Machine Learning", "TensorFlow", "Advanced"],
+    "konten": "TensorFlow is a powerful open-source library for machine learning and deep learning tasks...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import tensorflow as tf\n\n# Define a simple neural network\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(784,)),\n    tf.keras.layers.Dense(10, activation='softmax')\n])\n\n# Compile the model\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])",
+        "komentar": "Defines a simple neural network using TensorFlow."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Machine Learning dengan TensorFlow dalam Python",
+        "deskripsi": "Menggunakan TensorFlow untuk tugas-tugas machine learning dan deep learning."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "TensorFlow Documentation",
+        "url": "https://www.tensorflow.org/"
+      }
+    ],
+    "highlight": ["powerful open-source library for machine learning", "TensorFlow"],
+    "error": [
+      {
+        "error": "ModuleNotFoundError",
+        "deskripsi": "ModuleNotFoundError occurred due to missing TensorFlow installation.",
+        "contoh": "import tensorflow as tf",
+        "solusi": "Install TensorFlow using pip."
+      }
+    ]
+  }
+]

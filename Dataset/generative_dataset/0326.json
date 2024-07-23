@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Bob Brown",
+    "tanggal": "2022-10-22",
+    "judul": "Manipulasi Data dengan Pandas",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["data science", "pandas"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "code",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Mudah dipahami", "Langkah-langkah jelas"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan indentasi",
+        "contoh": "if True:\nprint('Hello')",
+        "solusi": "Tambahkan indentasi yang benar"
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "John Smith",
+    "tanggal": "2022-04-13",
+    "judul": "Manipulasi Data dengan Pandas",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["data science", "pandas"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Contoh konkret", "Tips berguna"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan indentasi",
+        "contoh": "if True:\nprint('Hello')",
+        "solusi": "Tambahkan indentasi yang benar"
+      }
+    ]
+  }
+]

@@ -1,0 +1,192 @@
+[
+    {
+        "sumber": "Python Dasar",
+        "penulis": "Andi Nugroho",
+        "tanggal": "2024-07-01",
+        "judul": "Memulai dengan Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Pemrograman", "Dasar"],
+        "konten": "Artikel ini memberikan pengenalan dasar tentang pemrograman menggunakan bahasa Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "print('Halo, Dunia!')",
+                "komentar": "Kode ini akan mencetak 'Halo, Dunia!' ke layar."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Sintaks Dasar",
+                "deskripsi": "Pengantar tentang sintaks dasar dalam bahasa Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/"
+            }
+        ],
+        "highlight": ["Pengenalan sintaks", "Contoh kode sederhana"],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks terjadi jika kode tidak ditulis dengan benar.",
+                "contoh": "print('Halo, Dunia!)",
+                "solusi": "Periksa kembali tanda kutip yang digunakan."
+            }
+        ]
+    },
+    {
+        "sumber": "Belajar Python",
+        "penulis": "Siti Aminah",
+        "tanggal": "2024-06-20",
+        "judul": "Pemrograman Berorientasi Objek dengan Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "OOP", "Pemrograman"],
+        "konten": "Artikel ini membahas konsep pemrograman berorientasi objek (OOP) dalam Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "class Mobil:\n    def __init__(self, merk):\n        self.merk = merk\n\n    def jalan(self):\n        print(f'{self.merk} berjalan!')",
+                "komentar": "Kode ini mendefinisikan kelas 'Mobil' dengan metode 'jalan'."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Kelas dan Objek",
+                "deskripsi": "Pemahaman dasar tentang kelas dan objek dalam Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Tutorial OOP Python",
+                "url": "https://realpython.com/python3-object-oriented-programming/"
+            }
+        ],
+        "highlight": ["Konsep OOP", "Kelas dan Objek di Python"],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Kesalahan ini terjadi ketika atribut yang diminta tidak ada.",
+                "contoh": "mobil = Mobil('Toyota')\nmobil.kecepatan",
+                "solusi": "Pastikan atribut 'kecepatan' didefinisikan di dalam kelas."
+            }
+        ]
+    },
+    {
+        "sumber": "Data Science ID",
+        "penulis": "Budi Santoso",
+        "tanggal": "2024-05-15",
+        "judul": "Manipulasi Data dengan Pandas",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["Python", "Pandas", "Data Science"],
+        "konten": "Artikel ini menjelaskan cara manipulasi data menggunakan library Pandas di Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "import pandas as pd\ndata = {'Nama': ['Ani', 'Budi', 'Citra'], 'Umur': [23, 30, 27]}\ndf = pd.DataFrame(data)\nprint(df)",
+                "komentar": "Kode ini membuat DataFrame dari dictionary dan mencetaknya."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Pandas DataFrame",
+                "deskripsi": "Dasar-dasar penggunaan DataFrame di Pandas."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Pandas",
+                "url": "https://pandas.pydata.org/pandas-docs/stable/"
+            }
+        ],
+        "highlight": ["Manipulasi Data", "Pandas DataFrame"],
+        "error": [
+            {
+                "error": "KeyError",
+                "deskripsi": "Kesalahan ini terjadi ketika kunci yang diminta tidak ada di DataFrame.",
+                "contoh": "df['Jenis Kelamin']",
+                "solusi": "Pastikan kunci 'Jenis Kelamin' ada di DataFrame sebelum mengaksesnya."
+            }
+        ]
+    },
+    {
+        "sumber": "AI untuk Semua",
+        "penulis": "Rina Wijaya",
+        "tanggal": "2024-04-10",
+        "judul": "Pengenalan TensorFlow untuk Machine Learning",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["Python", "TensorFlow", "Machine Learning"],
+        "konten": "Artikel ini memberikan pengenalan dasar tentang penggunaan TensorFlow untuk machine learning.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "import tensorflow as tf\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu'),\n    tf.keras.layers.Dense(1)\n])",
+                "komentar": "Kode ini mendefinisikan model jaringan saraf sederhana dengan TensorFlow."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "TensorFlow",
+                "deskripsi": "Dasar-dasar penggunaan TensorFlow untuk machine learning."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Tutorial TensorFlow",
+                "url": "https://www.tensorflow.org/tutorials"
+            }
+        ],
+        "highlight": ["Machine Learning", "Model Jaringan Saraf"],
+        "error": [
+            {
+                "error": "InvalidArgumentError",
+                "deskripsi": "Kesalahan ini terjadi ketika argumen yang diberikan tidak valid.",
+                "contoh": "tf.keras.layers.Dense(-1, activation='relu')",
+                "solusi": "Pastikan argumen yang diberikan valid, misalnya jumlah neuron harus positif."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Web Development",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-03-25",
+        "judul": "Membangun Aplikasi Web dengan Django",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "Django", "Web Development"],
+        "konten": "Artikel ini membahas cara membangun aplikasi web sederhana menggunakan Django.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "from django.http import HttpResponse\n\ndef hello(request):\n    return HttpResponse('Halo, Dunia!')",
+                "komentar": "Kode ini mendefinisikan view Django sederhana yang menampilkan 'Halo, Dunia!'."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Django",
+                "deskripsi": "Dasar-dasar penggunaan Django untuk pengembangan aplikasi web."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Django",
+                "url": "https://docs.djangoproject.com/en/3.2/"
+            }
+        ],
+        "highlight": ["Pengembangan Web", "Aplikasi Django"],
+        "error": [
+            {
+                "error": "ImportError",
+                "deskripsi": "Kesalahan ini terjadi ketika modul yang diimpor tidak ditemukan.",
+                "contoh": "from django.http import HttpResponse",
+                "solusi": "Pastikan Django telah diinstal dengan menggunakan 'pip install django'."
+            }
+        ]
+    }
+]

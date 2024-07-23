@@ -1,0 +1,38 @@
+{
+    "sumber": "PythonID.org",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2022-02-14",
+    "judul": "Penggunaan Dekorator di Python",
+    "tingkat_kesulitan": "Lanjut",
+    "tag": ["dekorator", "lanjut"],
+    "konten": "Panduan lengkap tentang cara menggunakan dekorator untuk memodifikasi fungsi di Python.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def my_decorator(func):\n    def wrapper():\n        print('Sebelum fungsi')\n        func()\n        print('Setelah fungsi')\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print('Hello!')\n\nsay_hello()",
+            "komentar": "Contoh penggunaan dekorator sederhana"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Dekorator",
+            "deskripsi": "Fungsi yang digunakan untuk memodifikasi fungsi lain tanpa mengubah kode asli."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Understanding Python Decorators - Real Python",
+            "url": "https://realpython.com/primer-on-python-decorators/"
+        }
+    ],
+    "highlight": ["Penjelasan mendetail", "Contoh yang jelas"],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan saat dekorator digunakan dengan cara yang salah.",
+            "contoh": "@my_decorator\nsay_hello()",
+            "solusi": "Pastikan dekorator digunakan dengan cara yang benar."
+        }
+    ]
+}

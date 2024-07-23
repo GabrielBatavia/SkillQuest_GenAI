@@ -1,0 +1,88 @@
+{
+    "sumber": "belajarpythonmudah.id",
+    "penulis": "Dian Pratama",
+    "tanggal": "2024-06-05",
+    "judul": "Penggunaan Loop For di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Loop", "For Loop", "Pemula"],
+    "konten": "Artikel ini menjelaskan dasar-dasar penggunaan loop for di Python untuk iterasi melalui berbagai jenis koleksi data seperti list, tuple, dan string.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "buah = ['apel', 'jeruk', 'mangga']\nfor item in buah:\n    print(item)",
+            "komentar": "Menggunakan loop for untuk mencetak setiap elemen dalam list."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = (1, 2, 3, 4, 5)\nfor num in angka:\n    print(num)",
+            "komentar": "Menggunakan loop for untuk iterasi melalui elemen-elemen dalam tuple."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "kata = 'Python'\nfor char in kata:\n    print(char)",
+            "komentar": "Menggunakan loop for untuk iterasi melalui setiap karakter dalam string."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "for i in range(5):\n    print(i)",
+            "komentar": "Menggunakan fungsi range() untuk menghasilkan urutan angka dari 0 hingga 4."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "for i in range(2, 10, 2):\n    print(i)",
+            "komentar": "Menggunakan fungsi range() dengan parameter start, stop, dan step untuk menghasilkan urutan angka dari 2 hingga 8 dengan langkah 2."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Dasar For Loop",
+            "deskripsi": "Memahami dasar-dasar penggunaan loop for di Python."
+        },
+        {
+            "topik": "Iterasi List",
+            "deskripsi": "Cara iterasi melalui elemen-elemen dalam list menggunakan loop for."
+        },
+        {
+            "topik": "Iterasi Tuple",
+            "deskripsi": "Cara iterasi melalui elemen-elemen dalam tuple menggunakan loop for."
+        },
+        {
+            "topik": "Iterasi String",
+            "deskripsi": "Cara iterasi melalui setiap karakter dalam string menggunakan loop for."
+        },
+        {
+            "topik": "Fungsi Range",
+            "deskripsi": "Penggunaan fungsi range() untuk menghasilkan urutan angka dalam loop for."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python For Loops",
+            "url": "https://www.w3schools.com/python/python_for_loops.asp"
+        },
+        {
+            "judul": "Looping Techniques",
+            "url": "https://docs.python.org/3/tutorial/datastructures.html#looping-techniques"
+        }
+    ],
+    "highlight": ["Iterasi list", "Iterasi string", "Penggunaan fungsi range()"],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba iterasi objek yang tidak bisa diiterasi.",
+            "contoh": "for item in 123:\n    print(item)",
+            "solusi": "Pastikan objek yang akan diiterasi adalah tipe data yang bisa diiterasi seperti list, tuple, atau string."
+        },
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mengakses indeks yang tidak ada dalam list.",
+            "contoh": "buah = ['apel', 'jeruk']\nprint(buah[3])",
+            "solusi": "Pastikan indeks yang diakses ada dalam jangkauan panjang list."
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "pythonexpert.com",
+        "penulis": "Andi Wijaya",
+        "tanggal": "2024-02-10",
+        "judul": "Operasi Aritmatika Dasar di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "aritmatika", "basic"],
+        "konten": "Artikel ini menguraikan bagaimana menggunakan operasi aritmatika dasar di Python, meliputi penjumlahan, pengurangan, perkalian, pembagian, modulus, serta operator lainnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara melakukan operasi penjumlahan dalam Python?",
+                "answer": "Untuk melakukan penjumlahan, gunakan operator `+`. Misalnya, `a + b` akan memberikan hasil penjumlahan dari `a` dan `b`."
+            },
+            {
+                "question": "Apa cara melakukan operasi pengurangan di Python?",
+                "answer": "Pengurangan dilakukan dengan operator `-`. Contohnya: `a - b` untuk mengurangi `b` dari `a`."
+            },
+            {
+                "question": "Bagaimana cara melakukan perkalian dalam Python?",
+                "question_code": "a * b",
+                "answer": "Gunakan operator `*` untuk perkalian. Contoh: `a * b` akan menghasilkan hasil kali dari `a` dan `b`.",
+                "answer_code": "a * b"
+            },
+            {
+                "question": "Bagaimana cara melakukan pembagian di Python?",
+                "question_code": "a / b",
+                "answer": "Untuk pembagian, gunakan operator `/`. Contoh: `a / b` untuk membagi `a` dengan `b`.",
+                "answer_code": "a / b"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan sisa hasil bagi di Python?",
+                "question_code": "a % b",
+                "answer": "Gunakan operator `%` untuk mendapatkan sisa hasil bagi. Misalnya: `a % b` akan memberikan sisa dari pembagian `a` dengan `b`.",
+                "answer_code": "a % b"
+            },
+            {
+                "question": "Bagaimana melakukan perpangkatan di Python?",
+                "question_code": "a ** b",
+                "answer": "Perpangkatan dilakukan dengan operator `**`. Contohnya: `a ** b` untuk `a` dipangkatkan `b`.",
+                "answer_code": "a ** b"
+            },
+            {
+                "question": "Bagaimana cara melakukan pembagian integer di Python?",
+                "question_code": "a // b",
+                "answer": "Operator `//` digunakan untuk pembagian integer. Contoh: `a // b` memberikan hasil pembagian bulat dari `a` dengan `b`.",
+                "answer_code": "a // b"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator augmented assignment seperti `+=`?",
+                "question_code": "a += 3",
+                "answer": "Operator augmented assignment seperti `+=` digunakan untuk menambah nilai variabel. Contoh: `a += 3` akan menambahkan 3 ke nilai `a`.",
+                "answer_code": "a += 3"
+            },
+            {
+                "question": "Bagaimana mengubah bilangan negatif menjadi positif di Python?",
+                "question_code": "abs(-a)",
+                "answer": "Untuk mengubah bilangan negatif menjadi positif, gunakan fungsi `abs()`. Contoh: `abs(-a)` akan menghasilkan nilai positif dari `-a`.",
+                "answer_code": "abs(-a)"
+            }
+        ]
+    },
+    {
+        "sumber": "pytutorials.com",
+        "penulis": "Rina Pertiwi",
+        "tanggal": "2024-03-22",
+        "judul": "Mengenal Pernyataan Kondisional if-elif-else di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "kondisional", "if-elif-else"],
+        "konten": "Artikel ini membahas cara menggunakan pernyataan kondisional if-elif-else di Python untuk membuat keputusan berdasarkan kondisi yang diberikan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `if` di Python?",
+                "answer": "Pernyataan `if` digunakan untuk mengeksekusi blok kode tertentu jika kondisi yang diberikan terpenuhi. Contoh: `if x > 0: print('x positif')`."
+            },
+            {
+                "question": "Apa fungsi pernyataan `else` dalam Python?",
+                "answer": "Pernyataan `else` digunakan untuk menangani kasus ketika kondisi `if` tidak terpenuhi. Contoh: `else: print('x bukan positif')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `elif` di Python?",
+                "answer": "Pernyataan `elif` digunakan untuk memeriksa kondisi tambahan setelah pernyataan `if`. Contoh: `elif x == 0: print('x nol')`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan `if`, `elif`, dan `else` dalam satu blok?",
+                "question_code": "if x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')",
+                "answer": "Anda bisa menggabungkan `if`, `elif`, dan `else` untuk memeriksa beberapa kondisi secara berurutan. Contoh: `if x > 0: ... elif x == 0: ... else: ...`.",
+                "answer_code": "if x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `and` di dalam `if`?",
+                "question_code": "if x > 0 and x < 10:\n    print('x antara 0 dan 10')",
+                "answer": "Operator `and` digunakan untuk memeriksa apakah kedua kondisi benar. Contoh: `if x > 0 and x < 10:`.",
+                "answer_code": "if x > 0 and x < 10:\n    print('x antara 0 dan 10')"
+            },
+            {
+                "question": "Bagaimana menggunakan operator logika `or` di dalam pernyataan `if`?",
+                "question_code": "if x < 0 or x > 10:\n    print('x di luar rentang 0 hingga 10')",
+                "answer": "Operator `or` digunakan untuk memeriksa apakah salah satu dari dua kondisi benar. Contoh: `if x < 0 or x > 10:`.",
+                "answer_code": "if x < 0 or x > 10:\n    print('x di luar rentang 0 hingga 10')"
+            },
+            {
+                "question": "Bagaimana menggunakan operator logika `not` di dalam `if`?",
+                "question_code": "if not x:\n    print('x adalah False atau 0')",
+                "answer": "Operator `not` digunakan untuk membalik nilai kondisi. Contoh: `if not x:`.",
+                "answer_code": "if not x:\n    print('x adalah False atau 0')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `if` bersarang di Python?",
+                "question_code": "if x > 0:\n    if x < 10:\n        print('x positif dan kurang dari 10')",
+                "answer": "Pernyataan `if` bersarang melibatkan menempatkan satu `if` di dalam `if` lainnya. Contoh: `if x > 0: if x < 10:`.",
+                "answer_code": "if x > 0:\n    if x < 10:\n        print('x positif dan kurang dari 10')"
+            },
+            {
+                "question": "Bagaimana memeriksa ketidak samaan dengan operator `!=`?",
+                "question_code": "if x != 0:\n    print('x tidak sama dengan nol')",
+                "answer": "Operator `!=` digunakan untuk memeriksa ketidak samaan. Contoh: `if x != 0:`.",
+                "answer_code": "if x != 0:\n    print('x tidak sama dengan nol')"
+            }
+        ]
+    }
+]

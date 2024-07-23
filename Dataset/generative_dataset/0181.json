@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonAcademy.com",
+    "penulis": "Rina Kurnia",
+    "tanggal": "2025-02-25",
+    "judul": "Memahami Casting di Python: Cara Mengonversi Tipe Data",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["casting", "konversi", "tipe data", "pemula"],
+    "konten": "Artikel ini membahas tentang casting di Python, yaitu proses mengonversi satu tipe data ke tipe data lain. Casting sering digunakan untuk memastikan bahwa operasi dilakukan dengan tipe data yang benar.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari integer ke string\nangka = 100\nangka_str = str(angka)\nprint('Integer ke string:', angka_str)\nprint('Tipe data:', type(angka_str))",
+            "komentar": "Contoh konversi dari integer ke string menggunakan fungsi str()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari float ke integer\nangka = 45.67\nangka_int = int(angka)\nprint('Float ke integer:', angka_int)\nprint('Tipe data:', type(angka_int))",
+            "komentar": "Contoh konversi dari float ke integer menggunakan fungsi int()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari string ke float\nangka_str = '123.45'\nangka_float = float(angka_str)\nprint('String ke float:', angka_float)\nprint('Tipe data:', type(angka_float))",
+            "komentar": "Contoh konversi dari string ke float menggunakan fungsi float()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari integer ke float\nangka = 50\nangka_float = float(angka)\nprint('Integer ke float:', angka_float)\nprint('Tipe data:', type(angka_float))",
+            "komentar": "Contoh konversi dari integer ke float menggunakan fungsi float()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari float ke string\nangka = 78.90\nangka_str = str(angka)\nprint('Float ke string:', angka_str)\nprint('Tipe data:', type(angka_str))",
+            "komentar": "Contoh konversi dari float ke string menggunakan fungsi str()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari string ke integer\nangka_str = '200'\nangka_int = int(angka_str)\nprint('String ke integer:', angka_int)\nprint('Tipe data:', type(angka_int))",
+            "komentar": "Contoh konversi dari string ke integer menggunakan fungsi int()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari boolean ke integer\nboolean_value = True\ninteger_value = int(boolean_value)\nprint('Boolean ke integer:', integer_value)\nprint('Tipe data:', type(integer_value))",
+            "komentar": "Contoh konversi dari boolean ke integer menggunakan fungsi int()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi dari integer ke boolean\nangka = 0\nboolean_value = bool(angka)\nprint('Integer ke boolean:', boolean_value)\nprint('Tipe data:', type(boolean_value))",
+            "komentar": "Contoh konversi dari integer ke boolean menggunakan fungsi bool()"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Konversi Integer ke String",
+            "deskripsi": "Cara mengonversi tipe data integer ke string menggunakan fungsi str()."
+        },
+        {
+            "topik": "Konversi Float ke Integer",
+            "deskripsi": "Cara mengonversi tipe data float ke integer menggunakan fungsi int()."
+        },
+        {
+            "topik": "Konversi String ke Float",
+            "deskripsi": "Cara mengonversi tipe data string ke float menggunakan fungsi float()."
+        },
+        {
+            "topik": "Konversi Integer ke Float",
+            "deskripsi": "Cara mengonversi tipe data integer ke float menggunakan fungsi float()."
+        },
+        {
+            "topik": "Konversi Float ke String",
+            "deskripsi": "Cara mengonversi tipe data float ke string menggunakan fungsi str()."
+        },
+        {
+            "topik": "Konversi String ke Integer",
+            "deskripsi": "Cara mengonversi tipe data string ke integer menggunakan fungsi int()."
+        },
+        {
+            "topik": "Konversi Boolean ke Integer",
+            "deskripsi": "Cara mengonversi tipe data boolean ke integer menggunakan fungsi int()."
+        },
+        {
+            "topik": "Konversi Integer ke Boolean",
+            "deskripsi": "Cara mengonversi tipe data integer ke boolean menggunakan fungsi bool()."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Casting - W3Schools",
+            "url": "https://www.w3schools.com/python/python_casting.asp"
+        },
+        {
+            "judul": "Type Conversion in Python - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/type-conversion-python/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang casting di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana mengonversi berbagai tipe data di Python"
+    ],
+    "error": [
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi string yang tidak valid ke tipe data numbers.",
+            "contoh": "angka_str = 'abc'\nangka_float = float(angka_str)",
+            "solusi": "Pastikan string yang akan dikonversi ke tipe data numbers adalah representasi angka yang valid."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi tipe data yang tidak kompatibel.",
+            "contoh": "angka = 123\nangka_list = list(angka)",
+            "solusi": "Pastikan tipe data yang akan dikonversi kompatibel dengan fungsi konversi yang digunakan."
+        }
+    ]
+}

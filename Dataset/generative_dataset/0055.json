@@ -1,0 +1,71 @@
+{
+    "sumber": "PythonPemula.id",
+    "penulis": "Siti Rahma",
+    "tanggal": "2020-11-10",
+    "judul": "Memahami dan Menggunakan Fungsi Rekursif di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["rekursif", "fungsi", "menengah"],
+    "konten": "Artikel ini membahas tentang konsep dan penggunaan fungsi rekursif di Python. Rekursi adalah teknik pemrograman di mana sebuah fungsi memanggil dirinya sendiri untuk menyelesaikan tugas yang lebih besar.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def factorial(n):\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))",
+            "komentar": "Contoh fungsi rekursif untuk menghitung faktorial dari sebuah angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))",
+            "komentar": "Contoh fungsi rekursif untuk menghasilkan deret Fibonacci"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def binary_search(arr, low, high, x):\n    if high >= low:\n        mid = (high + low) // 2\n        if arr[mid] == x:\n            return mid\n        elif arr[mid] > x:\n            return binary_search(arr, low, mid - 1, x)\n        else:\n            return binary_search(arr, mid + 1, high, x)\n    else:\n        return -1\n\narr = [2, 3, 4, 10, 40]\nx = 10\nresult = binary_search(arr, 0, len(arr)-1, x)\nprint(f'Element is at index {result}')",
+            "komentar": "Contoh fungsi rekursif untuk melakukan pencarian biner"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Rekursi",
+            "deskripsi": "Proses di mana sebuah fungsi memanggil dirinya sendiri sebagai bagian dari definisinya."
+        },
+        {
+            "topik": "Kasus Basis",
+            "deskripsi": "Kondisi dalam fungsi rekursif yang menghentikan rekursi."
+        },
+        {
+            "topik": "Pencarian Biner",
+            "deskripsi": "Algoritma pencarian yang menggunakan rekursi untuk menemukan elemen dalam array yang sudah diurutkan."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Understanding Recursion in Python - Real Python",
+            "url": "https://realpython.com/python-thinking-recursively/"
+        },
+        {
+            "judul": "Recursion - W3Schools",
+            "url": "https://www.w3schools.com/python/gloss_python_recursion.asp"
+        }
+    ],
+    "highlight": [
+        "Penjelasan mendalam tentang rekursi",
+        "Contoh-contoh praktis yang aplikatif"
+    ],
+    "error": [
+        {
+            "error": "RecursionError",
+            "deskripsi": "Kesalahan yang terjadi saat rekursi tidak memiliki kondisi penghentian (infinite recursion).",
+            "contoh": "def infinite_recursion():\n    return infinite_recursion()\ninfinite_recursion()",
+            "solusi": "Pastikan fungsi rekursif memiliki kondisi penghentian yang tepat."
+        },
+        {
+            "error": "MemoryError",
+            "deskripsi": "Kesalahan yang terjadi saat rekursi terlalu dalam dan menghabiskan memori yang tersedia.",
+            "contoh": "def deep_recursion(n):\n    if n == 0:\n        return\n    else:\n        return deep_recursion(n-1)\ndeep_recursion(10000)",
+            "solusi": "Batasi kedalaman rekursi atau gunakan metode iteratif untuk menghindari penggunaan memori yang berlebihan."
+        }
+    ]
+}

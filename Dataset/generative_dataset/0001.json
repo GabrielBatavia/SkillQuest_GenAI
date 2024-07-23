@@ -1,0 +1,50 @@
+
+    {
+        "sumber": "Python.org",
+        "penulis": "Guido van Rossum",
+        "tanggal": "1991-02-20",
+        "judul": "Python: The Programming Language",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Pemrograman", "Bahasa"],
+        "konten": "Python adalah bahasa pemrograman tingkat tinggi yang mudah dipelajari dan kuat. Hal ini membuatnya menjadi pilihan populer untuk pemula dan pengembang berpengalaman.",
+        "contoh": [
+            {
+                "tipe": "Fungsi",
+                "bahasa": "Python",
+                "isi": "def hello_world():\n    print('Hello, World!')",
+                "komentar": "Fungsi sederhana untuk mencetak pesan 'Hello, World!'"
+            },
+            {
+                "tipe": "Class",
+                "bahasa": "Python",
+                "isi": "class Cat:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        return f'Meow! I am {self.name}'",
+                "komentar": "Contoh class Python untuk representasi objek kucing dengan method greet"
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Variabel",
+                "deskripsi": "Variabel digunakan untuk menyimpan data dalam sebuah program Python."
+            },
+            {
+                "topik": "Percabangan",
+                "deskripsi": "Percabangan digunakan untuk mengambil keputusan berdasarkan kondisi tertentu dalam program."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Documentation",
+                "url": "https://docs.python.org/"
+            }
+        ],
+        "highlight": ["Bahasa tingkat tinggi", "Mudah dipelajari"],
+        "error": [
+            {
+                "error": "IndentationError",
+                "deskripsi": "Kesalahan yang terjadi ketika indentasi tidak konsisten dalam kode Python.",
+                "contoh": "def my_function():\nprint('Hello')",
+                "solusi": "Pastikan semua baris yang sejajar diindentasi dengan benar."
+            }
+        ]
+    }
+

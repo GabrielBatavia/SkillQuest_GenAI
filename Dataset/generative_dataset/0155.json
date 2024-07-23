@@ -1,0 +1,106 @@
+{
+    "sumber": "PythonProGuide.com",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2024-10-30",
+    "judul": "Memahami dan Menggunakan Tipe Data Boolean di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "boolean", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data boolean di Python. Boolean adalah tipe data yang hanya memiliki dua nilai: True dan False. Boolean sering digunakan dalam operasi logika, pernyataan kondisi, dan kontrol alur program.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "is_student = True\nprint('Apakah mahasiswa:', is_student)\nprint('Tipe data:', type(is_student))",
+            "komentar": "Ini adalah cara kita mendefinisikan variabel boolean dengan nilai True"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "is_graduated = False\nprint('Sudah lulus:', is_graduated)",
+            "komentar": "Ini adalah cara kita mendefinisikan variabel boolean dengan nilai False"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nilai = 85\nis_passed = nilai >= 60\nprint('Lulus:', is_passed)",
+            "komentar": "Ini adalah cara kita menggunakan operasi perbandingan untuk menghasilkan nilai boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "umur = 20\ncan_vote = umur >= 18\nprint('Bisa memilih:', can_vote)",
+            "komentar": "Contoh penggunaan boolean dalam konteks pemeriksaan usia untuk hak pilih"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "logged_in = True\nif logged_in:\n    print('Selamat datang kembali!')\nelse:\n    print('Silakan login terlebih dahulu.')",
+            "komentar": "Ini adalah cara kita menggunakan variabel boolean dalam pernyataan if"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nilai_ujian = 45\nlulus = nilai_ujian >= 50\nprint('Lulus ujian:', lulus)",
+            "komentar": "Contoh penggunaan boolean untuk memeriksa kelulusan ujian berdasarkan nilai"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "kondisi_1 = True\nkondisi_2 = False\nhasil = kondisi_1 and kondisi_2\nprint('Hasil and:', hasil)",
+            "komentar": "Ini adalah cara kita menggunakan operator logika 'and' dengan nilai boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "kondisi_1 = True\nkondisi_2 = False\nhasil = kondisi_1 or kondisi_2\nprint('Hasil or:', hasil)",
+            "komentar": "Ini adalah cara kita menggunakan operator logika 'or' dengan nilai boolean"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Boolean",
+            "deskripsi": "Cara mendefinisikan variabel boolean di Python dengan nilai True dan False."
+        },
+        {
+            "topik": "Operasi Perbandingan",
+            "deskripsi": "Cara menggunakan operasi perbandingan untuk menghasilkan nilai boolean."
+        },
+        {
+            "topik": "Penggunaan Boolean dalam Pernyataan If",
+            "deskripsi": "Cara menggunakan variabel boolean dalam pernyataan if untuk kontrol alur program."
+        },
+        {
+            "topik": "Operator Logika",
+            "deskripsi": "Cara menggunakan operator logika 'and' dan 'or' dengan nilai boolean."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Booleans - W3Schools",
+            "url": "https://www.w3schools.com/python/python_booleans.asp"
+        },
+        {
+            "judul": "Boolean Operations in Python - Real Python",
+            "url": "https://realpython.com/python-boolean/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data boolean di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana boolean digunakan dalam operasi logika dan kontrol alur program"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan nilai non-boolean dalam operasi logika.",
+            "contoh": "nilai = 'True'\nhasil = nilai and True",
+            "solusi": "Pastikan nilai yang digunakan dalam operasi logika adalah boolean (True atau False)."
+        },
+        {
+            "error": "AttributeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan metode yang tidak ada pada nilai boolean.",
+            "contoh": "is_student = True\nis_student.append(False)",
+            "solusi": "Pastikan metode yang digunakan adalah metode yang valid untuk tipe data boolean."
+        }
+    ]
+}

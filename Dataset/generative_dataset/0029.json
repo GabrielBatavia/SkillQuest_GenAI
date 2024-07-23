@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "Jessica McKellar",
+        "tanggal": "2023-10-21",
+        "judul": "Penanganan File di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "file",
+            "pemrosesan"
+        ],
+        "konten": "Artikel ini menjelaskan cara membuka, membaca, menulis, dan menutup file di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "with open('file.txt', 'r') as file:\n    content = file.read()\nprint(content)",
+                "komentar": "Contoh membaca seluruh konten file menggunakan pernyataan with."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Membuka File",
+                "deskripsi": "Menggunakan fungsi open() untuk membuka file."
+            },
+            {
+                "topik": "Membaca File",
+                "deskripsi": "Menggunakan metode read() untuk membaca konten file."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Reading and Writing Files",
+                "url": "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files"
+            }
+        ],
+        "highlight": [
+            "Penanganan File",
+            "Membaca File"
+        ],
+        "error": [
+            {
+                "error": "FileNotFoundError",
+                "deskripsi": "Terjadi saat file yang ingin dibuka tidak ditemukan.",
+                "contoh": "open('non_existing_file.txt', 'r')",
+                "solusi": "Pastikan nama file benar dan file ada di lokasi yang tepat."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "David Mertz",
+        "tanggal": "2023-09-28",
+        "judul": "Pemrograman Generatif di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": [
+            "python",
+            "generatif",
+            "pemrograman"
+        ],
+        "konten": "Artikel ini menguraikan konsep pemrograman generatif di Python menggunakan generator dan iterator.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "def count_up_to(max):\n    count = 1\n    while count <= max:\n        yield count\n        count += 1\n\nfor number in count_up_to(5):\n    print(number)",
+                "komentar": "Contoh penggunaan generator untuk menghasilkan angka dari 1 hingga nilai maksimum."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Generator",
+                "deskripsi": "Fungsi yang mengembalikan iterator yang menghasilkan serangkaian nilai."
+            },
+            {
+                "topik": "Iterator",
+                "deskripsi": "Objek yang dapat diiterasi untuk mendapatkan nilai secara berurutan."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Iterators and Generators",
+                "url": "https://docs.python.org/3/tutorial/classes.html#generators"
+            }
+        ],
+        "highlight": [
+            "Generator",
+            "Iterator"
+        ],
+        "error": [
+            {
+                "error": "StopIteration",
+                "deskripsi": "Terjadi saat iterator tidak memiliki nilai yang tersisa.",
+                "contoh": "next(iterator)",
+                "solusi": "Pastikan untuk menangani penghentian iterasi dengan benar menggunakan try-except atau loop."
+            }
+        ]
+    }
+]

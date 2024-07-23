@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Rylan Mcfarlane",
+    "tanggal": "2028-05-20",
+    "judul": "Python GUI Programming: Building Desktop Applications with Tkinter",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "GUI Programming", "Tkinter", "Desktop Applications", "Intermediate"],
+    "konten": "Tkinter is the standard GUI library for Python that allows you to create graphical user interfaces...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of creating a simple GUI application using Tkinter\nimport tkinter as tk\n\n# Create main window\nroot = tk.Tk()\nroot.title('Simple GUI App')\n\n# Add widgets\nlabel = tk.Label(root, text='Hello, Tkinter!')\nlabel.pack(padx=20, pady=20)\n\n# Start the main loop\nroot.mainloop()",
+        "komentar": "Creates a simple GUI application using Tkinter."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Aplikasi Desktop dengan Tkinter dalam GUI Programming Python",
+        "deskripsi": "Menggunakan Tkinter untuk membuat antarmuka pengguna grafis (GUI) dalam aplikasi desktop."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Tkinter Documentation",
+        "url": "https://docs.python.org/3/library/tkinter.html"
+      }
+    ],
+    "highlight": ["standard GUI library for Python", "Tkinter GUI programming"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing Tkinter module.",
+        "contoh": "import tkinter as tk",
+        "solusi": "Ensure Tkinter is installed with Python or available in the environment."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Nylah England",
+    "tanggal": "2028-06-05",
+    "judul": "Python Data Analysis: Exploratory Data Analysis (EDA) with Pandas",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Data Analysis", "Exploratory Data Analysis", "Pandas", "Intermediate"],
+    "konten": "Pandas is a powerful library for data analysis in Python, used for data manipulation, cleaning...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n\n# Example of performing exploratory data analysis (EDA) using Pandas\nurl = 'https://example.com/data.csv'\ndf = pd.read_csv(url)\n\n# Display summary statistics\nsummary_stats = df.describe()\nprint('Summary Statistics:\\n', summary_stats)",
+        "komentar": "Performs exploratory data analysis (EDA) using Pandas."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Analisis Data Eksploratif (EDA) dengan Pandas dalam Python",
+        "deskripsi": "Menggunakan Pandas untuk manipulasi data, pembersihan data, dan analisis data eksploratif (EDA) dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "highlight": ["powerful library for data analysis in Python", "Pandas exploratory data analysis"],
+    "error": [
+      {
+        "error": "ParserError",
+        "deskripsi": "ParserError occurred due to incorrect parsing of CSV data in Pandas.",
+        "contoh": "df = pd.read_csv('nonexistent_file.csv')",
+        "solusi": "Ensure correct file path and format are used when reading data with Pandas."
+      }
+    ]
+  }
+]

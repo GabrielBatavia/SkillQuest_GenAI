@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "belajarpemrogramanpython.com",
+        "penulis": "Budi Santoso",
+        "tanggal": "2023-06-22",
+        "judul": "Menggunakan Loop di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "loop", "dasar"],
+        "konten": "Artikel ini membahas cara menggunakan loop di Python, termasuk penggunaan loop `for` dan `while`, serta bagaimana cara menghentikan loop dengan `break` dan `continue`.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu loop `for` di Python?",
+                "answer": "Loop `for` digunakan untuk mengulang blok kode sejumlah item dalam urutan (seperti list, tuple, atau string)."
+            },
+            {
+                "question": "Bagaimana cara membuat loop `for` di Python?",
+                "answer": "Anda bisa membuat loop `for` dengan menggunakan sintaks `for item in iterable:` diikuti dengan blok kode yang akan diulang. Contohnya: `for i in range(5): print(i)`."
+            },
+            {
+                "question": "Apa itu loop `while` di Python?",
+                "answer": "Loop `while` digunakan untuk mengulang blok kode selama kondisi tertentu terpenuhi."
+            },
+            {
+                "question": "Bagaimana cara membuat loop `while` di Python?",
+                "question_code": "while condition:\n    # blok kode",
+                "answer": "Anda bisa membuat loop `while` dengan menggunakan sintaks `while condition:` diikuti dengan blok kode yang akan diulang. Contohnya: `while x < 5: print(x)`.",
+                "answer_code": "while condition:\n    # blok kode"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop di Python?",
+                "question_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)",
+                "answer": "Anda bisa menghentikan loop dengan menggunakan pernyataan `break`. Contohnya: `if i == 5: break`.",
+                "answer_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya?",
+                "question_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)",
+                "answer": "Anda bisa melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya dengan menggunakan pernyataan `continue`. Contohnya: `if i % 2 == 0: continue`.",
+                "answer_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop bersarang di Python?",
+                "question_code": "for i in range(3):\n    for j in range(3):\n        print(i, j)",
+                "answer": "Anda bisa menggunakan loop bersarang dengan menempatkan satu loop di dalam loop lainnya. Contohnya: `for i in range(3): for j in range(3):`.",
+                "answer_code": "for i in range(3):\n    for j in range(3):\n        print(i, j)"
+            },
+            {
+                "question": "Bagaimana cara mengakses indeks dalam loop `for`?",
+                "question_code": "for index, item in enumerate(iterable):\n    print(index, item)",
+                "answer": "Anda bisa mengakses indeks dalam loop `for` dengan menggunakan fungsi `enumerate()`. Contohnya: `for index, item in enumerate(iterable):`.",
+                "answer_code": "for index, item in enumerate(iterable):\n    print(index, item)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `else` dalam loop di Python?",
+                "question_code": "for item in iterable:\n    if condition:\n        break\nelse:\n    # blok kode jika tidak ada break",
+                "answer": "Anda bisa menggunakan pernyataan `else` dalam loop untuk menjalankan blok kode jika loop selesai tanpa terhenti oleh `break`.",
+                "answer_code": "for item in iterable:\n    if condition:\n        break\nelse:\n    # blok kode jika tidak ada break"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonuntukpemula.com",
+        "penulis": "Rina Sari",
+        "tanggal": "2023-11-15",
+        "judul": "Menggunakan Tuple dan Set di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "tuple", "set"],
+        "konten": "Artikel ini menjelaskan cara menggunakan tuple dan set di Python, termasuk cara membuat, mengakses, dan memanipulasi tuple dan set.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu tuple di Python?",
+                "answer": "Tuple adalah struktur data yang mirip dengan list tetapi bersifat immutable (tidak dapat diubah setelah dibuat)."
+            },
+            {
+                "question": "Bagaimana cara membuat tuple di Python?",
+                "answer": "Anda bisa membuat tuple dengan menggunakan tanda kurung `()` dan memisahkan item dengan koma. Contohnya: `my_tuple = (1, 2, 3)`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam tuple?",
+                "answer": "Anda bisa mengakses elemen dalam tuple dengan menggunakan indeks. Contohnya: `my_tuple[0]`."
+            },
+            {
+                "question": "Bagaimana cara membuat tuple dengan satu elemen?",
+                "question_code": "my_tuple = (1,)",
+                "answer": "Anda bisa membuat tuple dengan satu elemen dengan menambahkan koma setelah elemen. Contohnya: `my_tuple = (1,)`.",
+                "answer_code": "my_tuple = (1,)"
+            },
+            {
+                "question": "Apa itu set di Python?",
+                "question_code": "my_set = {1, 2, 3}",
+                "answer": "Set adalah struktur data yang menyimpan elemen unik tanpa urutan tertentu. Contohnya: `my_set = {1, 2, 3}`.",
+                "answer_code": "my_set = {1, 2, 3}"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke dalam set?",
+                "question_code": "my_set.add(4)",
+                "answer": "Anda bisa menambahkan elemen ke dalam set dengan menggunakan metode `add()`. Contohnya: `my_set.add(4)`.",
+                "answer_code": "my_set.add(4)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari set?",
+                "question_code": "my_set.remove(2)",
+                "answer": "Anda bisa menghapus elemen dari set dengan menggunakan metode `remove()`. Contohnya: `my_set.remove(2)`.",
+                "answer_code": "my_set.remove(2)"
+            },
+            {
+                "question": "Bagaimana cara melakukan union dua set?",
+                "question_code": "set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nunion_set = set1.union(set2)",
+                "answer": "Anda bisa melakukan union dua set dengan menggunakan metode `union()`. Contohnya: `set1.union(set2)`.",
+                "answer_code": "union_set = set1.union(set2)"
+            },
+            {
+                "question": "Bagaimana cara melakukan intersection dua set?",
+                "question_code": "set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nintersection_set = set1.intersection(set2)",
+                "answer": "Anda bisa melakukan intersection dua set dengan menggunakan metode `intersection()`. Contohnya: `set1.intersection(set2)`.",
+                "answer_code": "intersection_set = set1.intersection(set2)"
+            }
+        ]
+    }
+]

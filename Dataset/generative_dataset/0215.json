@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Emily Ward",
+    "tanggal": "2026-07-20",
+    "judul": "Python Generators: Efficiently Handling Large Datasets with Generators",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Generators", "Efficiency", "Large Datasets", "Intermediate"],
+    "konten": "Generators in Python provide a memory-efficient way to handle large datasets...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of a generator function\ndef countdown(num):\n    print('Starting countdown...')\n    while num > 0:\n        yield num\n        num -= 1\n\n# Use the generator to count down from 5\nfor i in countdown(5):\n    print(i)",
+        "komentar": "Defines a generator function to count down from a specified number."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penggunaan Generator untuk Penanganan Dataset Besar dalam Python",
+        "deskripsi": "Menggunakan generator untuk menangani dataset besar secara efisien dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Generators Documentation",
+        "url": "https://docs.python.org/3/howto/functional.html#generators"
+      }
+    ],
+    "highlight": ["memory-efficient way to handle large datasets", "Python generator function"],
+    "error": [
+      {
+        "error": "StopIteration",
+        "deskripsi": "StopIteration occurred due to exhaustion of generator.",
+        "contoh": "next(countdown(3))",
+        "solusi": "Handle StopIteration exception when iterating over a generator."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Ella Adams",
+    "tanggal": "2026-08-05",
+    "judul": "Python Pandas: Data Analysis with Pandas",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Pandas", "Data Analysis", "Intermediate"],
+    "konten": "Pandas is a powerful library for data analysis in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n\n# Example of creating a DataFrame\ndata = {'Name': ['John', 'Emma', 'Peter'], 'Age': [28, 24, 32]}\ndf = pd.DataFrame(data)\nprint(df)",
+        "komentar": "Creates a Pandas DataFrame from a dictionary."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Analisis Data dengan Pandas dalam Python",
+        "deskripsi": "Menggunakan Pandas untuk analisis data yang kuat dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "highlight": ["powerful library for data analysis", "Python Pandas DataFrame"],
+    "error": [
+      {
+        "error": "KeyError",
+        "deskripsi": "KeyError occurred due to accessing non-existent key in DataFrame.",
+        "contoh": "print(df['Salary'])",
+        "solusi": "Ensure column name 'Salary' exists in the DataFrame."
+      }
+    ]
+  }
+]

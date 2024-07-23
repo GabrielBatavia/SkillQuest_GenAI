@@ -1,0 +1,89 @@
+{
+    "sumber": "BelajarPython.id",
+    "penulis": "Budi Santoso",
+    "tanggal": "2024-03-25",
+    "judul": "Memahami dan Menggunakan Variabel Dinamis di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "dynamic", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel dinamis di Python. Variabel di Python bersifat dinamis, artinya tipe data dari variabel dapat berubah selama program berjalan.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 10\nprint(type(x))\nx = 'hello'\nprint(type(x))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data integer kemudian mengubahnya menjadi string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "y = 3.14\nprint(type(y))\ny = [1, 2, 3]\nprint(type(y))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data float kemudian mengubahnya menjadi list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "name = 'Alice'\nprint(type(name))\nname = {'first': 'Alice', 'last': 'Smith'}\nprint(type(name))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data string kemudian mengubahnya menjadi dictionary"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "flag = True\nprint(type(flag))\nflag = 0\nprint(type(flag))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data boolean kemudian mengubahnya menjadi integer"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "data = {'name': 'Bob', 'age': 25}\nprint(type(data))\ndata = 'now a string'\nprint(type(data))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data dictionary kemudian mengubahnya menjadi string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "items = (1, 2, 3)\nprint(type(items))\nitems = {1, 2, 3}\nprint(type(items))",
+            "komentar": "Contoh mendefinisikan variabel dengan tipe data tuple kemudian mengubahnya menjadi set"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Variabel Dinamis",
+            "deskripsi": "Cara mendefinisikan variabel yang dapat berubah tipe datanya selama program berjalan."
+        },
+        {
+            "topik": "Penggunaan Type()",
+            "deskripsi": "Cara menggunakan fungsi type() untuk memeriksa tipe data variabel."
+        },
+        {
+            "topik": "Perubahan Tipe Data",
+            "deskripsi": "Contoh-contoh perubahan tipe data variabel selama program berjalan."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Variables - W3Schools",
+            "url": "https://www.w3schools.com/python/python_variables.asp"
+        },
+        {
+            "judul": "Dynamic Typing in Python - Real Python",
+            "url": "https://realpython.com/python-variable-scope/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang variabel dinamis di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat melakukan operasi yang tidak sesuai dengan tipe data variabel.",
+            "contoh": "x = 10\nx = 'hello'\nprint(x + 10)",
+            "solusi": "Pastikan tipe data variabel sesuai dengan operasi yang akan dilakukan, seperti mengonversi string ke integer dengan int() jika diperlukan."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi string yang tidak valid menjadi tipe data lain.",
+            "contoh": "num_str = 'abc'\nnum_int = int(num_str)",
+            "solusi": "Pastikan string yang akan dikonversi ke integer hanya berisi karakter angka."
+        }
+    ]
+}

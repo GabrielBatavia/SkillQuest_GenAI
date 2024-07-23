@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "HackerRank",
+    "penulis": "HackerRank Team",
+    "tanggal": "2024-07-13",
+    "judul": "Penggunaan Iterators dan Generators dalam Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Iterators", "Generators"],
+    "konten": "Iterators dan generators adalah konsep yang penting dalam Python untuk mengelola dan menghasilkan data secara efisien. Artikel ini menjelaskan perbedaan antara iterators dan generators, serta cara penggunaannya.",
+    "contoh": [
+      {
+        "tipe": "Contoh Penggunaan Generator",
+        "bahasa": "Python",
+        "isi": "def countdown(num):\n    print('Memulai countdown')\n    while num > 0:\n        yield num\n        num -= 1\n\ncd = countdown(5)\nprint(next(cd))\nprint(next(cd))",
+        "komentar": "Contoh pembuatan generator countdown dalam Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Iterators dan Generators dalam Python",
+        "deskripsi": "Memperkenalkan konsep iterators dan generators untuk pengelolaan dan penghasilan data dalam bahasa pemrograman Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Iterators Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/classes.html#iterators"
+      }
+    ],
+    "highlight": ["Iterators", "Generators", "Efisiensi"],
+    "error": [
+      {
+        "error": "StopIteration",
+        "deskripsi": "Kesalahan yang muncul saat mencoba mengakses elemen setelah iterasi selesai pada iterator atau generator.",
+        "contoh": "print(next(cd))",
+        "solusi": "Pastikan untuk menangani exception StopIteration atau menggunakan dalam konstruksi seperti for-loop."
+      }
+    ]
+  },
+  {
+    "sumber": "Python.org",
+    "penulis": "Python Software Foundation",
+    "tanggal": "2024-07-13",
+    "judul": "Penggunaan Modul datetime dalam Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Modul datetime", "Tanggal dan Waktu"],
+    "konten": "Modul datetime dalam Python menyediakan fungsi untuk memanipulasi dan bekerja dengan tanggal dan waktu. Artikel ini menjelaskan cara menggunakan modul datetime untuk operasi dasar seperti pembuatan tanggal, penghitungan selisih waktu, dan formatting tanggal.",
+    "contoh": [
+      {
+        "tipe": "Contoh Penggunaan Modul datetime",
+        "bahasa": "Python",
+        "isi": "from datetime import datetime, timedelta\n\ntanggal_sekarang = datetime.now()\ntanggal_lusa = tanggal_sekarang + timedelta(days=1)\nprint('Besok tanggal:', tanggal_lusa.strftime('%Y-%m-%d'))",
+        "komentar": "Contoh penggunaan modul datetime untuk operasi tanggal dan waktu."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Modul datetime dalam Python",
+        "deskripsi": "Memperkenalkan penggunaan modul datetime untuk manipulasi dan operasi dengan tanggal dan waktu dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python datetime Documentation",
+        "url": "https://docs.python.org/id/3/library/datetime.html"
+      }
+    ],
+    "highlight": ["Modul datetime", "Tanggal dan Waktu", "Formatting Tanggal"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "Kesalahan yang muncul saat mencoba mengakses atribut yang tidak ada dalam objek datetime.",
+        "contoh": "tanggal_sekarang.months",
+        "solusi": "Pastikan untuk memeriksa dokumentasi dan menggunakan atribut yang tersedia dalam objek datetime."
+      }
+    ]
+  }
+]

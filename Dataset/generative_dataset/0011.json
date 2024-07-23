@@ -1,0 +1,192 @@
+[
+    {
+        "sumber": "Python.id",
+        "penulis": "Andi Wijaya",
+        "tanggal": "2024-07-10",
+        "judul": "Pengantar Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["pengantar", "python", "dasar"],
+        "konten": "Artikel ini memberikan pengantar tentang bahasa pemrograman Python dan bagaimana memulai dengan dasar-dasar Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Contoh kode sederhana untuk mencetak teks ke layar."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Dasar Python",
+                "deskripsi": "Memahami sintaks dasar dan struktur kode dalam Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/"
+            }
+        ],
+        "highlight": ["Bahasa yang mudah dipelajari", "Sintaks yang sederhana"],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Terjadi ketika kode tidak ditulis dengan benar.",
+                "contoh": "print('Hello, World!)",
+                "solusi": "Pastikan semua tanda kutip dan tanda kurung ditutup dengan benar."
+            }
+        ]
+    },
+    {
+        "sumber": "BelajarPython.com",
+        "penulis": "Siti Rahma",
+        "tanggal": "2024-06-25",
+        "judul": "Mengenal Struktur Data di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["struktur data", "list", "dictionary"],
+        "konten": "Artikel ini membahas berbagai struktur data yang ada di Python seperti list, tuple, set, dan dictionary.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "my_list = [1, 2, 3, 4]\nprint(my_list)",
+                "komentar": "Contoh penggunaan list di Python."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "List di Python",
+                "deskripsi": "Bagaimana menggunakan list untuk menyimpan kumpulan data."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "W3Schools Python Lists",
+                "url": "https://www.w3schools.com/python/python_lists.asp"
+            }
+        ],
+        "highlight": ["Mendukung berbagai tipe data", "Mudah diakses dan dimodifikasi"],
+        "error": [
+            {
+                "error": "IndexError",
+                "deskripsi": "Terjadi ketika mencoba mengakses indeks yang tidak ada di list.",
+                "contoh": "my_list = [1, 2, 3]\nprint(my_list[5])",
+                "solusi": "Pastikan indeks yang diakses berada dalam rentang yang benar."
+            }
+        ]
+    },
+    {
+        "sumber": "KursusPython.net",
+        "penulis": "Budi Santoso",
+        "tanggal": "2024-07-01",
+        "judul": "Pemrograman Berorientasi Objek di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["oop", "kelas", "objek"],
+        "konten": "Artikel ini menjelaskan konsep pemrograman berorientasi objek (OOP) dan bagaimana menerapkannya di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print('Woof!')\n\nmy_dog = Dog('Fido')\nmy_dog.bark()",
+                "komentar": "Contoh kelas sederhana dan objek di Python."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Kelas dan Objek",
+                "deskripsi": "Bagaimana membuat dan menggunakan kelas dan objek di Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Real Python: Object-Oriented Programming",
+                "url": "https://realpython.com/python3-object-oriented-programming/"
+            }
+        ],
+        "highlight": ["Encapsulation", "Inheritance"],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi ketika mencoba mengakses atribut yang tidak ada di objek.",
+                "contoh": "my_dog = Dog('Fido')\nprint(my_dog.age)",
+                "solusi": "Pastikan atribut yang diakses ada di dalam kelas."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonHub.io",
+        "penulis": "Eka Saputra",
+        "tanggal": "2024-07-05",
+        "judul": "Manipulasi File di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["file", "io", "manipulasi"],
+        "konten": "Artikel ini membahas bagaimana membaca, menulis, dan memanipulasi file di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "with open('file.txt', 'w') as file:\n    file.write('Hello, file!')",
+                "komentar": "Contoh menulis ke file di Python."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Membaca dan Menulis File",
+                "deskripsi": "Cara membaca dan menulis file di Python menggunakan metode built-in."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python File Handling",
+                "url": "https://www.programiz.com/python-programming/file-operation"
+            }
+        ],
+        "highlight": ["Metode 'with'", "Menghindari memory leak"],
+        "error": [
+            {
+                "error": "FileNotFoundError",
+                "deskripsi": "Terjadi ketika mencoba membuka file yang tidak ada.",
+                "contoh": "with open('nonexistent.txt', 'r') as file:\n    content = file.read()",
+                "solusi": "Pastikan file yang akan dibuka memang ada di lokasi yang benar."
+            }
+        ]
+    },
+    {
+        "sumber": "CodeWithPython.org",
+        "penulis": "Rina Amalia",
+        "tanggal": "2024-07-12",
+        "judul": "Menggunakan Modul dan Paket di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["modul", "paket", "organisasi kode"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan modul dan paket untuk mengorganisir kode Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "import math\nprint(math.sqrt(16))",
+                "komentar": "Contoh penggunaan modul math di Python."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Modul Python",
+                "deskripsi": "Bagaimana mengimpor dan menggunakan modul di Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Modules",
+                "url": "https://www.learnpython.org/en/Modules_and_Packages"
+            }
+        ],
+        "highlight": ["Reusable code", "Code organization"],
+        "error": [
+            {
+                "error": "ImportError",
+                "deskripsi": "Terjadi ketika modul yang diimpor tidak ditemukan.",
+                "contoh": "import non_existing_module",
+                "solusi": "Pastikan nama modul yang diimpor benar dan modul tersedia di lingkungan Python."
+            }
+        ]
+    }
+]

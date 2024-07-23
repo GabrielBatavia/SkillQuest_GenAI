@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "belajarpython.id",
+        "penulis": "Fajar Hadi",
+        "tanggal": "2023-09-25",
+        "judul": "Penggunaan Fungsi Built-in di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "built-in functions", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai fungsi built-in di Python seperti `len()`, `type()`, `input()`, `print()`, dan `range()`.",
+        "pertanyaan": [
+            {
+                "question": "Apa fungsi dari `len()` dan bagaimana cara menggunakannya?",
+                "answer": "Fungsi `len()` digunakan untuk menghitung jumlah elemen dalam objek seperti list, string, atau tuple. Contoh penggunaan: `len('Hello')` akan menghasilkan 5."
+            },
+            {
+                "question": "Apa kegunaan dari fungsi `type()` dalam Python?",
+                "answer": "Fungsi `type()` digunakan untuk mengetahui tipe data dari suatu objek. Misalnya, `type('Hello')` akan menghasilkan `<class 'str'>`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `input()` untuk mengambil input dari pengguna?",
+                "answer": "Fungsi `input()` digunakan untuk mengambil input dari pengguna dalam bentuk string. Contoh: `name = input('Masukkan nama Anda: ')`."
+            },
+            {
+                "question": "Apa yang dilakukan fungsi `print()` dan berikan contohnya?",
+                "question_code": "print('Hello, World!')",
+                "answer": "Fungsi `print()` mencetak teks atau nilai ke layar. Contoh: `print('Hello, World!')` akan menampilkan 'Hello, World!' di layar.",
+                "answer_code": "print('Hello, World!')"
+            },
+            {
+                "question": "Bagaimana fungsi `range()` bekerja dalam sebuah loop?",
+                "question_code": "for i in range(3):\n    print(i)",
+                "answer": "Fungsi `range()` menghasilkan urutan angka. Dalam loop, `range(3)` menghasilkan angka 0, 1, dan 2. Contoh: `for i in range(3): print(i)`.",
+                "answer_code": "for i in range(3):\n    print(i)"
+            },
+            {
+                "question": "Apa fungsi dari `abs()` di Python dan berikan contohnya?",
+                "question_code": "abs(-10)",
+                "answer": "Fungsi `abs()` mengembalikan nilai absolut dari sebuah angka. Misalnya, `abs(-10)` menghasilkan 10.",
+                "answer_code": "abs(-10)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `max()` untuk menemukan nilai terbesar?",
+                "question_code": "max([10, 20, 30])",
+                "answer": "Fungsi `max()` digunakan untuk menemukan nilai terbesar dalam iterable. Contoh: `max([10, 20, 30])` menghasilkan 30.",
+                "answer_code": "max([10, 20, 30])"
+            },
+            {
+                "question": "Apa kegunaan dari fungsi `min()` di Python?",
+                "question_code": "min([10, 20, 30])",
+                "answer": "Fungsi `min()` digunakan untuk menemukan nilai terkecil dalam iterable. Misalnya, `min([10, 20, 30])` menghasilkan 10.",
+                "answer_code": "min([10, 20, 30])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `sum()` untuk menjumlahkan elemen dalam list?",
+                "question_code": "sum([1, 2, 3, 4])",
+                "answer": "Fungsi `sum()` digunakan untuk menghitung jumlah total elemen dalam iterable. Contoh: `sum([1, 2, 3, 4])` menghasilkan 10.",
+                "answer_code": "sum([1, 2, 3, 4])"
+            }
+        ]
+    },
+    {
+        "sumber": "codingpythonpemula.com",
+        "penulis": "Dewi Kartika",
+        "tanggal": "2024-03-14",
+        "judul": "Penggunaan Kondisional di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "kondisional", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan pernyataan kondisional di Python, termasuk pernyataan `if`, `else`, `elif`, dan operator logika.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dilakukan pernyataan `if` dan bagaimana cara menggunakannya?",
+                "answer": "Pernyataan `if` digunakan untuk menjalankan blok kode hanya jika kondisi tertentu benar. Contoh: `if x > 0: print('x positif')`."
+            },
+            {
+                "question": "Kapan Anda harus menggunakan pernyataan `else` di Python?",
+                "answer": "Pernyataan `else` digunakan untuk menjalankan blok kode jika kondisi dalam pernyataan `if` tidak terpenuhi. Contoh: `else: print('x tidak positif')`."
+            },
+            {
+                "question": "Apa perbedaan antara `if` dan `elif`?",
+                "answer": "Pernyataan `elif` digunakan setelah `if` untuk memeriksa kondisi lain jika kondisi `if` sebelumnya salah. Contoh: `elif x == 0: print('x nol')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `and` dalam pernyataan kondisional?",
+                "question_code": "if x > 0 and y < 10:\n    print('x positif dan y kurang dari 10')",
+                "answer": "Operator logika `and` memeriksa apakah kedua kondisi benar. Contoh: `if x > 0 and y < 10:`.",
+                "answer_code": "if x > 0 and y < 10:\n    print('x positif dan y kurang dari 10')"
+            },
+            {
+                "question": "Apa fungsi dari operator logika `or` di Python?",
+                "question_code": "if x < 0 or y > 10:\n    print('x negatif atau y lebih dari 10')",
+                "answer": "Operator logika `or` memeriksa apakah salah satu dari dua kondisi benar. Contoh: `if x < 0 or y > 10:`.",
+                "answer_code": "if x < 0 or y > 10:\n    print('x negatif atau y lebih dari 10')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `not` untuk membalikkan kondisi?",
+                "question_code": "if not x:\n    print('x adalah False atau 0')",
+                "answer": "Operator logika `not` membalikkan nilai boolean dari kondisi. Contoh: `if not x:`.",
+                "answer_code": "if not x:\n    print('x adalah False atau 0')"
+            },
+            {
+                "question": "Bagaimana cara mengimplementasikan kondisional bersarang di Python?",
+                "question_code": "if x > 0:\n    if x < 10:\n        print('x adalah bilangan positif kurang dari 10')",
+                "answer": "Kondisional bersarang melibatkan satu pernyataan `if` di dalam pernyataan `if` lainnya. Contoh: `if x > 0: if x < 10:`.",
+                "answer_code": "if x > 0:\n    if x < 10:\n        print('x adalah bilangan positif kurang dari 10')"
+            },
+            {
+                "question": "Apa perbedaan antara operator perbandingan `==` dan `!=`?",
+                "question_code": "if x == y:\n    print('x sama dengan y')\nif x != y:\n    print('x tidak sama dengan y')",
+                "answer": "Operator `==` memeriksa kesamaan nilai, sedangkan `!=` memeriksa ketidaksamaan. Contoh: `if x == y:` dan `if x != y:`.",
+                "answer_code": "if x == y:\n    print('x sama dengan y')\nif x != y:\n    print('x tidak sama dengan y')"
+            }
+        ]
+    }
+]

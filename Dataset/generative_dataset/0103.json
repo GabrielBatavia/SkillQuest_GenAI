@@ -1,0 +1,101 @@
+{
+    "sumber": "PythonDasar.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2024-01-20",
+    "judul": "Memahami dan Menggunakan Tipe Data Dictionary di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["dictionary", "tipe data", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data dictionary di Python. Dictionary adalah struktur data yang menyimpan pasangan kunci-nilai.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Alice', 'age': 25, 'courses': ['Math', 'CompSci']}\nprint(student)",
+            "komentar": "Contoh dasar pembuatan dictionary dan mencetaknya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Bob', 'age': 22, 'courses': ['Math', 'CompSci']}\nprint(student['name'])",
+            "komentar": "Contoh akses nilai dalam dictionary menggunakan kunci"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Charlie', 'age': 23, 'courses': ['Math', 'CompSci']}\nstudent['age'] = 24\nprint(student)",
+            "komentar": "Contoh mengubah nilai dalam dictionary menggunakan kunci"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'David', 'age': 21, 'courses': ['Math', 'CompSci']}\nstudent['phone'] = '555-1234'\nprint(student)",
+            "komentar": "Contoh menambahkan pasangan kunci-nilai baru ke dalam dictionary"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Eve', 'age': 22, 'courses': ['Math', 'CompSci']}\nage = student.pop('age')\nprint(student)\nprint('Popped age:', age)",
+            "komentar": "Contoh menghapus pasangan kunci-nilai dari dictionary menggunakan metode pop"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Frank', 'age': 26, 'courses': ['Math', 'CompSci']}\nfor key, value in student.items():\n    print(key, value)",
+            "komentar": "Contoh iterasi melalui pasangan kunci-nilai dalam dictionary menggunakan metode items"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Pembuatan Dictionary",
+            "deskripsi": "Cara membuat dictionary dan menyimpan pasangan kunci-nilai."
+        },
+        {
+            "topik": "Akses Nilai",
+            "deskripsi": "Cara mengakses nilai dalam dictionary menggunakan kunci."
+        },
+        {
+            "topik": "Mengubah Nilai",
+            "deskripsi": "Cara mengubah nilai dalam dictionary menggunakan kunci."
+        },
+        {
+            "topik": "Menambahkan Pasangan Kunci-Nilai",
+            "deskripsi": "Cara menambahkan pasangan kunci-nilai baru ke dalam dictionary."
+        },
+        {
+            "topik": "Menghapus Pasangan Kunci-Nilai",
+            "deskripsi": "Cara menghapus pasangan kunci-nilai dari dictionary menggunakan metode pop."
+        },
+        {
+            "topik": "Iterasi melalui Dictionary",
+            "deskripsi": "Cara melakukan iterasi melalui pasangan kunci-nilai dalam dictionary menggunakan metode items."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Dictionaries - W3Schools",
+            "url": "https://www.w3schools.com/python/python_dictionaries.asp"
+        },
+        {
+            "judul": "Dictionaries in Python - Real Python",
+            "url": "https://realpython.com/python-dicts/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang tipe data dictionary di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses kunci yang tidak ada dalam dictionary.",
+            "contoh": "student = {'name': 'Alice', 'age': 25}\nprint(student['grade'])",
+            "solusi": "Pastikan kunci yang diakses ada dalam dictionary atau gunakan metode get dengan nilai default."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat kunci yang digunakan bukan tipe data yang dapat di-hash (seperti list).",
+            "contoh": "student = {[1, 2, 3]: 'numbers'}",
+            "solusi": "Pastikan kunci dalam dictionary adalah tipe data yang dapat di-hash, seperti string, integer, atau tuple."
+        }
+    ]
+}

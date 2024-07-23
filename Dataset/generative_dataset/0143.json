@@ -1,0 +1,110 @@
+{
+    "sumber": "PythonCodeAcademy.org",
+    "penulis": "Nina Susanti",
+    "tanggal": "2024-08-10",
+    "judul": "Memahami dan Menggunakan Tipe Data Boolean di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "boolean", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data boolean di Python. Tipe data boolean hanya memiliki dua nilai: True dan False. Boolean digunakan dalam operasi logika dan kontrol alur program, seperti pernyataan if dan loop.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "is_active = True\nprint('Nilai boolean:', is_active)\nprint('Tipe data:', type(is_active))",
+            "komentar": "Contoh mendefinisikan variabel is_active sebagai boolean dengan nilai True dan mencetak nilainya serta tipe datanya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "is_logged_in = False\nprint('Nilai boolean:', is_logged_in)",
+            "komentar": "Contoh mendefinisikan variabel is_logged_in sebagai boolean dengan nilai False"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 10\nb = 5\nresult = (a > b)\nprint('Apakah a lebih besar dari b?', result)",
+            "komentar": "Contoh menggunakan operasi logika untuk menghasilkan nilai boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 0\nif x:\n    print('x bernilai True')\nelse:\n    print('x bernilai False')",
+            "komentar": "Contoh menggunakan variabel boolean dalam pernyataan if untuk kontrol alur program"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "y = 100\nis_positive = (y > 0)\nif is_positive:\n    print('y adalah bilangan positif')",
+            "komentar": "Contoh menggunakan variabel boolean untuk memeriksa apakah nilai y adalah bilangan positif"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "is_valid = True\nis_expired = False\nif is_valid and not is_expired:\n    print('Data valid dan tidak kedaluwarsa')",
+            "komentar": "Contoh menggunakan operasi logika AND dan NOT dengan variabel boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "flag = False\nflag = not flag\nprint('Nilai flag setelah NOT:', flag)",
+            "komentar": "Contoh menggunakan operasi NOT untuk membalik nilai boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "conditions = [True, False, True]\nall_conditions = all(conditions)\nany_conditions = any(conditions)\nprint('Apakah semua kondisi True?', all_conditions)\nprint('Apakah ada kondisi yang True?', any_conditions)",
+            "komentar": "Contoh menggunakan fungsi all() dan any() untuk memeriksa kondisi boolean dalam list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Boolean",
+            "deskripsi": "Cara mendefinisikan variabel boolean di Python dengan nilai True atau False."
+        },
+        {
+            "topik": "Operasi Logika dengan Boolean",
+            "deskripsi": "Cara menggunakan operasi logika seperti AND, OR, dan NOT dengan variabel boolean."
+        },
+        {
+            "topik": "Boolean dalam Pernyataan If",
+            "deskripsi": "Cara menggunakan variabel boolean dalam pernyataan if untuk kontrol alur program."
+        },
+        {
+            "topik": "Menggunakan Fungsi all() dan any()",
+            "deskripsi": "Cara menggunakan fungsi all() dan any() untuk memeriksa kondisi boolean dalam iterable."
+        },
+        {
+            "topik": "Membalik Nilai Boolean",
+            "deskripsi": "Cara menggunakan operasi NOT untuk membalik nilai boolean."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Booleans - W3Schools",
+            "url": "https://www.w3schools.com/python/python_booleans.asp"
+        },
+        {
+            "judul": "Boolean Operators in Python - Real Python",
+            "url": "https://realpython.com/python-boolean/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data boolean di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana boolean digunakan dalam kontrol alur program dan operasi logika"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba melakukan operasi logika pada tipe data yang tidak kompatibel.",
+            "contoh": "result = (10 > '5')",
+            "solusi": "Pastikan kedua operan dalam operasi logika memiliki tipe data yang kompatibel."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi tipe data yang tidak valid menjadi boolean.",
+            "contoh": "bool_value = bool('invalid')",
+            "solusi": "Pastikan nilai yang akan dikonversi ke boolean adalah nilai yang valid dan dapat diinterpretasikan sebagai True atau False."
+        }
+    ]
+}

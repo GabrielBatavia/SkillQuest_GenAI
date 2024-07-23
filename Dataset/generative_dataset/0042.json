@@ -1,0 +1,140 @@
+[
+    {
+        "sumber": "belajarpython.com",
+        "penulis": "Adi Nugroho",
+        "tanggal": "2023-05-14",
+        "judul": "Memahami Dasar-Dasar Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Dasar", "Pemula"],
+        "konten": "Artikel ini membahas dasar-dasar Python seperti variabel, tipe data, dan operasi dasar.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "x = 5\nprint(x)",
+                "komentar": "Mencetak nilai variabel x."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Variabel",
+                "deskripsi": "Cara mendeklarasikan dan menggunakan variabel di Python."
+            },
+            {
+                "topik": "Tipe Data",
+                "deskripsi": "Penjelasan tipe data dasar seperti integer, float, dan string."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/tutorial/index.html"
+            }
+        ],
+        "highlight": ["Pemahaman dasar", "Implementasi kode sederhana"],
+        "error": [
+            {
+                "error": "NameError",
+                "deskripsi": "Kesalahan saat variabel yang belum didefinisikan digunakan.",
+                "contoh": "print(y)",
+                "solusi": "Pastikan variabel sudah didefinisikan sebelum digunakan."
+            }
+        ]
+    },
+    {
+        "sumber": "pythontutorial.net",
+        "penulis": "Budi Santoso",
+        "tanggal": "2022-11-08",
+        "judul": "Penggunaan Fungsi di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "Fungsi", "Menengah"],
+        "konten": "Panduan ini menjelaskan cara membuat dan menggunakan fungsi di Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "def sapa(nama):\n    return f'Hallo, {nama}'\n\nprint(sapa('Dina'))",
+                "komentar": "Mencetak pesan sapaan menggunakan fungsi."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Definisi Fungsi",
+                "deskripsi": "Cara mendefinisikan fungsi menggunakan kata kunci def."
+            },
+            {
+                "topik": "Pemanggilan Fungsi",
+                "deskripsi": "Cara memanggil fungsi yang telah didefinisikan."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Fungsi di Python",
+                "url": "https://realpython.com/defining-your-own-python-function/"
+            }
+        ],
+        "highlight": ["Pendefinisian fungsi", "Penggunaan return statement"],
+        "error": [
+            {
+                "error": "TypeError",
+                "deskripsi": "Kesalahan saat jumlah atau tipe argumen yang diberikan tidak sesuai dengan definisi fungsi.",
+                "contoh": "sapa(123)",
+                "solusi": "Pastikan argumen yang diberikan sesuai dengan definisi fungsi."
+            }
+        ]
+    },
+    {
+        "sumber": "pythonindo.com",
+        "penulis": "Rina Sari",
+        "tanggal": "2021-09-30",
+        "judul": "Menggunakan List dan Dictionary di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["Python", "List", "Dictionary", "Lanjutan"],
+        "konten": "Artikel ini mengajarkan cara menggunakan struktur data list dan dictionary di Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "buah = ['apel', 'jeruk', 'pisang']\nprint(buah[1])",
+                "komentar": "Mencetak elemen kedua dari list."
+            },
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "siswa = {'nama': 'Budi', 'umur': 20}\nprint(siswa['nama'])",
+                "komentar": "Mencetak nilai dari key 'nama' dalam dictionary."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "List",
+                "deskripsi": "Cara mendefinisikan, mengakses, dan memodifikasi list."
+            },
+            {
+                "topik": "Dictionary",
+                "deskripsi": "Cara mendefinisikan, mengakses, dan memodifikasi dictionary."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "List dan Dictionary di Python",
+                "url": "https://docs.python.org/3/tutorial/datastructures.html"
+            }
+        ],
+        "highlight": ["Struktur data lanjutan", "Penggunaan list dan dictionary"],
+        "error": [
+            {
+                "error": "IndexError",
+                "deskripsi": "Kesalahan saat mengakses indeks di luar batas list.",
+                "contoh": "print(buah[5])",
+                "solusi": "Pastikan indeks yang diakses berada dalam rentang yang valid."
+            },
+            {
+                "error": "KeyError",
+                "deskripsi": "Kesalahan saat mengakses key yang tidak ada dalam dictionary.",
+                "contoh": "print(siswa['alamat'])",
+                "solusi": "Pastikan key yang diakses ada dalam dictionary."
+            }
+        ]
+    }
+]

@@ -1,0 +1,97 @@
+{
+    "sumber": "PythonPemula.net",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-01-15",
+    "judul": "Memahami dan Menggunakan Fungsi Def di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["def", "fungsi", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi def di Python. Fungsi digunakan untuk mengelompokkan blok kode yang dapat dipanggil beberapa kali dalam program.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def greet():\n    print('Hello, World!')\n\ngreet()",
+            "komentar": "Contoh dasar mendefinisikan dan memanggil fungsi tanpa parameter"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def greet(name):\n    print(f'Hello, {name}!')\n\ngreet('Alice')\ngreet('Bob')",
+            "komentar": "Contoh mendefinisikan dan memanggil fungsi dengan satu parameter"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def add(a, b):\n    return a + b\n\nresult = add(3, 5)\nprint(result)",
+            "komentar": "Contoh mendefinisikan fungsi dengan dua parameter dan mengembalikan nilai"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))",
+            "komentar": "Contoh mendefinisikan fungsi rekursif untuk menghitung faktorial"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def print_numbers(limit):\n    for i in range(limit):\n        print(i)\n\nprint_numbers(5)",
+            "komentar": "Contoh mendefinisikan fungsi yang menggunakan loop for di dalamnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def calculate_area(width, height):\n    return width * height\n\narea = calculate_area(4, 5)\nprint('Area:', area)",
+            "komentar": "Contoh mendefinisikan fungsi untuk menghitung luas persegi panjang dengan dua parameter"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Fungsi",
+            "deskripsi": "Cara mendefinisikan fungsi menggunakan kata kunci def."
+        },
+        {
+            "topik": "Fungsi dengan Parameter",
+            "deskripsi": "Cara mendefinisikan dan memanggil fungsi yang memiliki parameter."
+        },
+        {
+            "topik": "Mengembalikan Nilai dari Fungsi",
+            "deskripsi": "Cara mengembalikan nilai dari fungsi menggunakan kata kunci return."
+        },
+        {
+            "topik": "Fungsi Rekursif",
+            "deskripsi": "Cara mendefinisikan fungsi yang memanggil dirinya sendiri (rekursif)."
+        },
+        {
+            "topik": "Fungsi dengan Loop",
+            "deskripsi": "Cara mendefinisikan fungsi yang menggunakan loop di dalamnya."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Functions - W3Schools",
+            "url": "https://www.w3schools.com/python/python_functions.asp"
+        },
+        {
+            "judul": "Defining Functions in Python - Real Python",
+            "url": "https://realpython.com/defining-your-own-python-function/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "IndentationError",
+            "deskripsi": "Kesalahan yang terjadi saat indentasi blok kode dalam fungsi tidak konsisten.",
+            "contoh": "def greet():\nprint('Hello, World!')",
+            "solusi": "Pastikan semua baris dalam blok kode fungsi memiliki indentasi yang konsisten."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat jumlah argumen yang diberikan tidak sesuai dengan jumlah parameter fungsi.",
+            "contoh": "def add(a, b):\n    return a + b\n\nresult = add(3)",
+            "solusi": "Pastikan jumlah argumen yang diberikan saat memanggil fungsi sesuai dengan jumlah parameter yang didefinisikan dalam fungsi."
+        }
+    ]
+}

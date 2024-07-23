@@ -1,0 +1,84 @@
+{
+    "sumber": "pythonteknologi.com",
+    "penulis": "Siti Aminah",
+    "tanggal": "2024-02-28",
+    "judul": "Penggunaan Dictionary dan Set di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Dictionary", "Set", "Menengah"],
+    "konten": "Artikel ini membahas tentang penggunaan dictionary dan set di Python, termasuk cara membuat, memanipulasi, dan mengakses elemen-elemen di dalamnya.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "buah = {'apel': 5, 'jeruk': 10, 'mangga': 3}\nprint(buah['apel'])",
+            "komentar": "Mengakses nilai dalam dictionary menggunakan kunci."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "buah = {'apel': 5, 'jeruk': 10, 'mangga': 3}\nbuah['pisang'] = 7\nprint(buah)",
+            "komentar": "Menambahkan pasangan kunci-nilai baru ke dalam dictionary."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "buah = {'apel': 5, 'jeruk': 10, 'mangga': 3}\nprint(buah.get('pisang', 'Tidak ditemukan'))",
+            "komentar": "Menggunakan metode get() untuk mengakses nilai dengan kunci yang mungkin tidak ada."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "set_buah = {'apel', 'jeruk', 'mangga'}\nset_buah.add('pisang')\nprint(set_buah)",
+            "komentar": "Menambahkan elemen baru ke dalam set."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "set_buah = {'apel', 'jeruk', 'mangga'}\nset_buah.remove('jeruk')\nprint(set_buah)",
+            "komentar": "Menghapus elemen dari set menggunakan metode remove()."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Dictionary",
+            "deskripsi": "Cara membuat dan mengakses nilai dalam dictionary di Python."
+        },
+        {
+            "topik": "Set",
+            "deskripsi": "Cara membuat dan mengelola elemen dalam set di Python."
+        },
+        {
+            "topik": "Metode Dictionary",
+            "deskripsi": "Penggunaan metode dictionary seperti get() dan keys()."
+        },
+        {
+            "topik": "Operasi Set",
+            "deskripsi": "Penggunaan operasi set seperti add(), remove(), dan union()."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Dictionary di Python",
+            "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries"
+        },
+        {
+            "judul": "Set di Python",
+            "url": "https://docs.python.org/3/tutorial/datastructures.html#sets"
+        }
+    ],
+    "highlight": ["Penggunaan dictionary", "Operasi set", "Manipulasi data dengan dictionary dan set"],
+    "error": [
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan saat mengakses kunci yang tidak ada dalam dictionary.",
+            "contoh": "buah = {'apel': 5}\nprint(buah['jeruk'])",
+            "solusi": "Gunakan metode get() untuk menghindari KeyError atau pastikan kunci ada dalam dictionary."
+        },
+        {
+            "error": "AttributeError",
+            "deskripsi": "Kesalahan saat menggunakan metode yang tidak ada dalam set.",
+            "contoh": "set_buah = {'apel', 'jeruk'}\nset_buah.append('mangga')",
+            "solusi": "Gunakan metode yang sesuai seperti add() untuk menambah elemen ke dalam set."
+        }
+    ]
+}

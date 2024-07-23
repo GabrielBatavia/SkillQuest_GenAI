@@ -1,0 +1,82 @@
+[
+  {
+    "sumber": "DataCamp",
+    "penulis": "DataCamp Instructors",
+    "tanggal": "2023-09-05",
+    "judul": "Panduan Lengkap Tentang Pandas di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["pandas", "data analysis", "Python"],
+    "konten": "Artikel ini memberikan panduan lengkap tentang penggunaan library Pandas untuk analisis data di Python, termasuk manipulasi data frame dan operasi agregasi.",
+    "contoh": [
+      {
+        "tipe": "contoh kode",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n\n# Membuat data frame\ndata = {'Nama': ['Alice', 'Bob', 'Charlie'], 'Usia': [25, 30, 35]}\ndf = pd.DataFrame(data)\nprint(df)",
+        "komentar": "Membuat dan mencetak data frame menggunakan Pandas."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pandas",
+        "deskripsi": "Penggunaan library Pandas untuk manipulasi dan analisis data tabular di Python."
+      },
+      {
+        "topik": "Data Frame",
+        "deskripsi": "Struktur data utama di Pandas untuk merepresentasikan data dalam bentuk tabel."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/pandas-docs/stable/index.html"
+      }
+    ],
+    "highlight": ["Pandas Python", "manipulasi data frame"],
+    "error": [
+      {
+        "error": "KeyError",
+        "deskripsi": "Terjadi ketika mencoba mengakses kunci yang tidak ada dalam dictionary atau kolom dalam data frame Pandas.",
+        "contoh": "print(df['Alamat'])",
+        "solusi": "Pastikan kunci yang diakses tersedia dalam struktur data yang digunakan."
+      }
+    ]
+  },
+  {
+    "sumber": "Python.org",
+    "penulis": "Python Software Foundation",
+    "tanggal": "2024-07-13",
+    "judul": "Pengenalan Dasar Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Pemrograman", "Dasar"],
+    "konten": "Python adalah bahasa pemrograman tingkat tinggi yang mudah dipelajari. Artikel ini membahas sintaks dasar, tipe data, dan operasi dasar dalam Python.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "print('Halo, dunia!')",
+        "komentar": "Mencetak pesan sederhana ke layar."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar-dasar Python",
+        "deskripsi": "Memperkenalkan konsep dasar dan sintaks Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/"
+      }
+    ],
+    "highlight": ["Sintaks Dasar", "Tipe Data", "Operasi Dasar"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan sintaks umum karena penulisan kode yang salah.",
+        "contoh": "print 'Hello, world!'",
+        "solusi": "Perbaiki dengan menambahkan tanda kurung () di sekitar argumen."
+      }
+    ]
+  }
+]

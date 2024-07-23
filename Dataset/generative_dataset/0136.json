@@ -1,0 +1,101 @@
+{
+    "sumber": "PythonLearningWorld.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2024-07-05",
+    "judul": "Memahami dan Menggunakan Tipe Data Complex di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "complex data type", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data complex di Python. Tipe data complex digunakan untuk merepresentasikan bilangan kompleks, yang terdiri dari bagian nyata dan bagian imajiner. Bilangan kompleks memiliki banyak aplikasi dalam matematika dan ilmu komputer.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 3 + 4j\nprint('Bilangan kompleks:', a)\nprint('Bagian nyata:', a.real)\nprint('Bagian imajiner:', a.imag)",
+            "komentar": "Contoh mendefinisikan variabel a sebagai bilangan kompleks dan mencetak bagian nyata serta bagian imajinernya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "b = complex(5, 6)\nprint('Bilangan kompleks b:', b)",
+            "komentar": "Contoh mendefinisikan variabel b sebagai bilangan kompleks menggunakan fungsi complex()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "c1 = 2 + 3j\nc2 = 4 + 5j\nsum_c = c1 + c2\nprint('Penjumlahan bilangan kompleks:', sum_c)",
+            "komentar": "Contoh melakukan operasi penjumlahan pada dua bilangan kompleks dan menyimpan hasilnya dalam variabel sum_c"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "c1 = 7 + 2j\nc2 = 3 + 1j\nprod_c = c1 * c2\nprint('Perkalian bilangan kompleks:', prod_c)",
+            "komentar": "Contoh melakukan operasi perkalian pada dua bilangan kompleks dan menyimpan hasilnya dalam variabel prod_c"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "c = 1 + 1j\nconjugate_c = c.conjugate()\nprint('Konjugasi dari', c, 'adalah', conjugate_c)",
+            "komentar": "Contoh menggunakan metode conjugate() untuk mendapatkan konjugasi dari bilangan kompleks"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "import cmath\nc = 1 + 2j\nmagnitude = abs(c)\nphase = cmath.phase(c)\nprint('Magnitudo:', magnitude)\nprint('Fase:', phase)",
+            "komentar": "Contoh menggunakan modul cmath untuk menghitung magnitudo dan fase dari bilangan kompleks"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Bilangan Kompleks",
+            "deskripsi": "Cara mendefinisikan bilangan kompleks di Python menggunakan literal dan fungsi complex()."
+        },
+        {
+            "topik": "Akses Bagian Nyata dan Imajiner",
+            "deskripsi": "Cara mengakses bagian nyata dan bagian imajiner dari bilangan kompleks."
+        },
+        {
+            "topik": "Operasi Penjumlahan pada Bilangan Kompleks",
+            "deskripsi": "Cara melakukan operasi penjumlahan pada bilangan kompleks."
+        },
+        {
+            "topik": "Operasi Perkalian pada Bilangan Kompleks",
+            "deskripsi": "Cara melakukan operasi perkalian pada bilangan kompleks."
+        },
+        {
+            "topik": "Menggunakan Metode Conjugate",
+            "deskripsi": "Cara menggunakan metode conjugate() untuk mendapatkan konjugasi dari bilangan kompleks."
+        },
+        {
+            "topik": "Menghitung Magnitudo dan Fase",
+            "deskripsi": "Cara menggunakan modul cmath untuk menghitung magnitudo dan fase dari bilangan kompleks."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Complex Numbers - W3Schools",
+            "url": "https://www.w3schools.com/python/python_numbers.asp#complex"
+        },
+        {
+            "judul": "Complex Numbers in Python - Real Python",
+            "url": "https://realpython.com/python-complex-numbers/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data complex di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba melakukan operasi yang tidak valid dengan bilangan kompleks.",
+            "contoh": "c = 1 + 2j\nresult = c + 'string'",
+            "solusi": "Pastikan operasi yang dilakukan valid untuk tipe data bilangan kompleks."
+        },
+        {
+            "error": "AttributeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses atribut atau metode yang tidak ada pada bilangan kompleks.",
+            "contoh": "c = 1 + 2j\nmagnitude = c.magnitude",
+            "solusi": "Pastikan untuk menggunakan metode yang benar seperti abs() untuk menghitung magnitudo."
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "sumber": "PythonMudah.com",
+    "penulis": "Siti Rahma",
+    "tanggal": "2023-04-17",
+    "judul": "Memahami dan Menggunakan String di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["string", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan string di Python. String adalah urutan karakter yang digunakan untuk menyimpan dan memanipulasi teks.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "text = 'Hello, world!'\nprint(text)",
+            "komentar": "Contoh dasar pembuatan string dan mencetaknya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "text = 'Hello, world!'\nprint(text[0])",
+            "komentar": "Contoh akses karakter pertama dalam string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "text = 'Hello, world!'\nprint(text[0:5])",
+            "komentar": "Contoh slicing string untuk mendapatkan substring"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "text = 'Hello, world!'\nprint(text.lower())",
+            "komentar": "Contoh mengubah string menjadi huruf kecil"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "text = 'Hello, world!'\nprint(text.upper())",
+            "komentar": "Contoh mengubah string menjadi huruf besar"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "String",
+            "deskripsi": "Urutan karakter yang digunakan untuk menyimpan dan memanipulasi teks."
+        },
+        {
+            "topik": "Akses Karakter",
+            "deskripsi": "Cara mengakses karakter dalam string menggunakan indeks."
+        },
+        {
+            "topik": "Slicing String",
+            "deskripsi": "Cara mengambil substring dari string menggunakan teknik slicing."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Strings in Python - Real Python",
+            "url": "https://realpython.com/python-strings/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang string",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "text = 'Hello'\nprint(text[5])",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengubah elemen dalam string.",
+            "contoh": "text = 'Hello'\ntext[0] = 'h'",
+            "solusi": "String di Python adalah immutable, jadi tidak bisa diubah secara langsung. Buat string baru jika perlu."
+        }
+    ]
+}

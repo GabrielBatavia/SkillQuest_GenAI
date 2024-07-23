@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonCodingLab.com",
+    "penulis": "Dewi Putri",
+    "tanggal": "2025-06-25",
+    "judul": "Teknik Manipulasi Strings di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini memberikan panduan tentang berbagai teknik untuk memanipulasi strings di Python, termasuk berbagai metode bawaan yang dapat digunakan untuk mengelola strings.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\nsalam = 'Selamat Siang'\nprint('Salam:', salam)\nprint('Tipe data:', type(salam))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode join()\nkata_list = ['Python', 'adalah', 'bahasa', 'pemrograman']\nteks = ' '.join(kata_list)\nprint('Join:', teks)",
+            "komentar": "Menggabungkan list menjadi string menggunakan metode join()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode find()\nteks = 'Belajar Python mudah dan menyenangkan'\npos = teks.find('mudah')\nprint('Posisi mudah:', pos)",
+            "komentar": "Menemukan posisi substring dalam string menggunakan metode find()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode upper() dan lower()\nteks = 'Python Programming'\nteks_upper = teks.upper()\nteks_lower = teks.lower()\nprint('Uppercase:', teks_upper)\nprint('Lowercase:', teks_lower)",
+            "komentar": "Mengubah string menjadi huruf besar dan huruf kecil menggunakan metode upper() dan lower()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode rsplit()\nteks = 'apel, jeruk, mangga, pisang'\nbuah = teks.rsplit(', ', 2)\nprint('Rsplit:', buah)",
+            "komentar": "Memisahkan string menjadi list berdasarkan delimiter dari kanan menggunakan metode rsplit()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode lstrip()\nteks = '    Selamat Pagi    '\nteks_lstrip = teks.lstrip()\nprint('Lstrip:', teks_lstrip)",
+            "komentar": "Menghapus spasi di awal string menggunakan metode lstrip()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isnumeric()\nteks = '123456'\nis_numeric = teks.isnumeric()\nprint('Apakah teks hanya berisi angka?', is_numeric)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isnumeric()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Mengakses karakter dalam string\nkalimat = 'Python'\nkarakter_pertama = kalimat[0]\nkarakter_terakhir = kalimat[-1]\nprint('Karakter pertama:', karakter_pertama)\nprint('Karakter terakhir:', karakter_terakhir)",
+            "komentar": "Mengakses karakter dalam string menggunakan indeks positif dan negatif"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode join()",
+            "deskripsi": "Cara menggabungkan list menjadi string menggunakan metode join()."
+        },
+        {
+            "topik": "Metode find()",
+            "deskripsi": "Cara menemukan posisi substring dalam string menggunakan metode find()."
+        },
+        {
+            "topik": "Metode upper() dan lower()",
+            "deskripsi": "Cara mengubah string menjadi huruf besar dan huruf kecil menggunakan metode upper() dan lower()."
+        },
+        {
+            "topik": "Metode rsplit()",
+            "deskripsi": "Cara memisahkan string menjadi list berdasarkan delimiter dari kanan menggunakan metode rsplit()."
+        },
+        {
+            "topik": "Metode lstrip()",
+            "deskripsi": "Cara menghapus spasi di awal string menggunakan metode lstrip()."
+        },
+        {
+            "topik": "Metode isnumeric()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isnumeric()."
+        },
+        {
+            "topik": "Mengakses Karakter dalam String",
+            "deskripsi": "Cara mengakses karakter dalam string menggunakan indeks positif dan negatif."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Dewi'\numur = 27\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

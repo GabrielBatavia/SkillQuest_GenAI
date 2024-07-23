@@ -1,0 +1,130 @@
+[
+    {
+        "sumber": "belajarpythonmudah.com",
+        "penulis": "Arif Susanto",
+        "tanggal": "2023-04-10",
+        "judul": "Penggunaan Operator Logika di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator logika", "dasar"],
+        "konten": "Artikel ini menjelaskan penggunaan operator logika di Python seperti `and`, `or`, dan `not` untuk melakukan operasi logika dasar.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu operator logika `and` di Python?",
+                "answer": "Operator logika `and` mengembalikan `True` jika kedua operand adalah `True`. Contohnya: `True and False` mengembalikan `False`."
+            },
+            {
+                "question": "Apa itu operator logika `or` di Python?",
+                "answer": "Operator logika `or` mengembalikan `True` jika salah satu dari operand adalah `True`. Contohnya: `True or False` mengembalikan `True`."
+            },
+            {
+                "question": "Apa itu operator logika `not` di Python?",
+                "question_code": "not 5 > 3",
+                "answer": "Operator logika `not` digunakan untuk membalik nilai boolean dari operand. Contohnya: `not True` mengembalikan `False`.",
+                "answer_code": "not (5 > 3)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `and` dalam pernyataan kondisional?",
+                "question_code": "x = 3\ny = 5\nif x < 2 and y > 2:\n    print('Keduanya benar')",
+                "answer": "Anda bisa menggunakan operator `and` dalam pernyataan kondisional untuk memeriksa apakah kedua kondisi benar. Contohnya: `if x > 0 and y > 0: print('Keduanya positif')`.",
+                "answer_code": "x = 3\ny = 5\nif x > 0 and y > 0:\n    print('Keduanya positif')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `or` dalam pernyataan kondisional?",
+                "question_code": "a = -1\nb = 15\nif a < 0 or:\n    print('Salah satu positif')",
+                "answer": "Anda bisa menggunakan operator `or` dalam pernyataan kondisional untuk memeriksa apakah salah satu kondisi benar. Contohnya: `if a > 0 or b > 0: print('Salah satu positif')`.",
+                "answer_code": "a = -1\nb = 15\nif a < 0 or b > 10:\n    print('Salah satu benar')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `not` dalam pernyataan kondisional?",
+                "question_code": "flag = True\nif not:\n    print('Tidak benar')",
+                "answer": "Anda bisa menggunakan operator `not` dalam pernyataan kondisional untuk memeriksa apakah kondisi salah. Contohnya: `if not x: print('x adalah False')`.",
+                "answer_code": "flag = True\nif not flag:\n    print('Tidak benar')"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan beberapa operator logika dalam satu pernyataan?",
+                "question_code": "a = 2\nb = 8\nc = 5\nif a > 3 and b < 10 or c == 5:\n    print('Kondisi kompleks')",
+                "answer": "Anda bisa menggabungkan beberapa operator logika dalam satu pernyataan untuk memeriksa kondisi yang lebih kompleks. Contohnya: `if x > 0 and y > 0 or z == 0: print('Kondisi kompleks')`.",
+                "answer_code": "a = 2\nb = 8\nc = 5\nif a < 3 and b > 5 or c == 5:\n    print('Kondisi kompleks')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika dalam loop di Python?",
+                "question_code": "x = 0\nwhile x < 10 and x % 2 = 0:\n    print(x)\n    x += 1",
+                "answer": "Anda bisa menggunakan operator logika dalam loop untuk menentukan kondisi penghentian. Contohnya: `while x < 10 and x % 2 == 0: print(x); x += 2`.",
+                "answer_code": "x = 0\nwhile x < 10 and x % 2 == 0:\n    print(x)\n    x += 1"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah nilai tidak ada dalam list menggunakan operator logika?",
+                "question_code": "values = [1, 2, 3]\nif 4 not in list:\n    print('4 tidak ada dalam list')",
+                "answer": "Anda bisa memeriksa apakah nilai tidak ada dalam list dengan menggunakan operator `not in`. Contohnya: `if 4 not in my_list: print('4 tidak ada dalam list')`.",
+                "answer_code": "values = [1, 2, 3]\nif 4 not in values:\n    print('4 tidak ada dalam list')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika untuk memeriksa kondisi dalam list comprehension?",
+                "question_code": "[i for i in range(10) if x % 2 == 0 and x < 5]",
+                "answer": "Anda bisa menggunakan operator logika dalam list comprehension untuk memeriksa kondisi tertentu. Contohnya: `[x for x in range(10) if x % 2 == 0 and x > 5]`.",
+                "answer_code": "[i for i in range(10) if i % 2 == 0 and i < 5]"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpython.org",
+        "penulis": "Rina Kartika",
+        "tanggal": "2024-06-20",
+        "judul": "Penggunaan Fungsi Lambda di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "lambda", "fungsi"],
+        "konten": "Artikel ini menjelaskan cara mendefinisikan dan menggunakan fungsi lambda di Python untuk membuat fungsi anonim yang singkat.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi lambda di Python?",
+                "answer": "Fungsi lambda adalah fungsi anonim kecil yang dapat memiliki sejumlah argumen tetapi hanya satu ekspresi."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi lambda di Python?",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan menggunakan kata kunci `lambda` diikuti dengan argumen dan ekspresi. Contohnya: `lambda x: x * 2`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan map?",
+                "question_code": "list(map(lambda n: n + 1, [2, 3, 4]))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `map()` untuk menerapkan fungsi ke setiap elemen dalam iterable. Contohnya: `map(lambda x: x * 2, [1, 2, 3])`.",
+                "answer_code": "list(map(lambda x: x * 2, [1, 2, 3]))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan filter?",
+                "question_code": "list(filter(lambda x: x >= 2, [0, 1, 2, 3]))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `filter()` untuk menyaring elemen dalam iterable. Contohnya: `filter(lambda x: x % 2 == 0, [1, 2, 3, 4])`.",
+                "answer_code": "list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4]))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan reduce?",
+                "question_code": "reduce(lambda x, y: x * y, [1, 2, 3, 4])",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `reduce()` untuk menerapkan fungsi secara kumulatif ke elemen-elemen dalam iterable. Contohnya: `reduce(lambda x, y: x + y, [1, 2, 3, 4])`.",
+                "answer_code": "from functools import reduce\nreduce(lambda x, y: x + y, [1, 2, 3, 4])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam sorted?",
+                "question_code": "sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[0])",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam `sorted()` untuk menentukan kunci pengurutan. Contohnya: `sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[1])`.",
+                "answer_code": "sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[1])"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi lambda dengan beberapa argumen?",
+                "question_code": "lambda a, b: a - b",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan beberapa argumen dengan memisahkan argumen menggunakan koma. Contohnya: `lambda x, y: x + y`.",
+                "answer_code": "lambda x, y: x + y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan list comprehension?",
+                "question_code": "[lambda n: n * 3 for n in range(6)]",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan list comprehension untuk membuat list fungsi. Contohnya: `[lambda x: x * 2 for x in range(5)]`.",
+                "answer_code": "[lambda x: x * 2 for x in range(5)]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam dictionary comprehension?",
+                "question_code": "{i: (lambda i: i * 3)(i) for i in range(6)}",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam dictionary comprehension untuk membuat dictionary. Contohnya: `{x: (lambda x: x * 2)(x) for x in range(5)}`.",
+                "answer_code": "{x: (lambda x: x * 2)(x) for x in range(5)}"
+            }
+        ]
+    }
+]

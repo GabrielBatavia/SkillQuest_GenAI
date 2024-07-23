@@ -1,0 +1,98 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-14",
+        "judul": "Pengantar Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "pengantar",
+            "dasar",
+            "pemrograman"
+        ],
+        "konten": "Python adalah bahasa pemrograman yang mudah dipelajari dan kuat. Python memiliki struktur data tingkat tinggi yang efisien dan pendekatan sederhana namun efektif terhadap pemrograman berorientasi objek. Sintaks Python yang elegan dan tipe dinamis, bersama dengan sifat interpretatifnya, membuatnya menjadi bahasa yang ideal untuk scripting dan pengembangan aplikasi yang cepat dalam banyak area pada sebagian besar platform.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "Python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Contoh program sederhana yang mencetak 'Hello, World!'"
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Pengenalan",
+                "deskripsi": "Dasar-dasar bahasa Python, termasuk sejarah, penggunaan, dan sintaks dasar."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/tutorial/index.html"
+            }
+        ],
+        "highlight": [
+            "Sintaks sederhana",
+            "Tipe dinamis",
+            "Interpretatif"
+        ],
+        "error": [
+            {
+                "error": "IndentationError",
+                "deskripsi": "Terjadi ketika indentasi kode tidak konsisten.",
+                "contoh": "def func():\nprint('Hello')\n  print('World')",
+                "solusi": "Pastikan semua baris kode memiliki tingkat indentasi yang konsisten."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-14",
+        "judul": "Pemrograman Berorientasi Objek",
+        "tingkat_kesulitan": "Menengah",
+        "tag": [
+            "oop",
+            "kelas",
+            "objek"
+        ],
+        "konten": "Python mendukung pemrograman berorientasi objek, yang memungkinkan pengembang membuat kelas dan objek. Ini membantu dalam mengatur dan mengelola kode dengan lebih baik, terutama untuk proyek besar. Konsep utama dalam OOP adalah kelas, objek, pewarisan, polimorfisme, dan enkapsulasi.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "Python",
+                "isi": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        return f'{self.name} barks!'\n\nmy_dog = Dog('Fido')\nprint(my_dog.bark())",
+                "komentar": "Contoh kelas sederhana dengan metode yang mencetak 'barks!'"
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Kelas dan Objek",
+                "deskripsi": "Membahas cara membuat dan menggunakan kelas dan objek dalam Python."
+            },
+            {
+                "topik": "Pewarisan",
+                "deskripsi": "Menjelaskan konsep pewarisan dalam OOP dan bagaimana menggunakannya dalam Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Pemrograman Berorientasi Objek di Python",
+                "url": "https://docs.python.org/3/tutorial/classes.html"
+            }
+        ],
+        "highlight": [
+            "Kelas dan Objek",
+            "Pewarisan",
+            "Polimorfisme"
+        ],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi ketika mencoba mengakses atribut yang tidak ada pada objek.",
+                "contoh": "my_dog = Dog('Fido')\nprint(my_dog.age)",
+                "solusi": "Pastikan atribut ada dan dieja dengan benar, atau tambahkan atribut yang diperlukan."
+            }
+        ]
+    }
+]

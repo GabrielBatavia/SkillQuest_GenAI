@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "James Wilson",
+    "tanggal": "2025-11-20",
+    "judul": "Python NumPy: Introduction to Numerical Computing with Arrays",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "NumPy", "Numerical Computing", "Arrays", "Intermediate"],
+    "konten": "NumPy is a powerful library for numerical computing in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import numpy as np\n\n# Create a NumPy array\narr = np.array([1, 2, 3])\n\n# Perform element-wise operations\narr_squared = arr ** 2\nprint(arr_squared)",
+        "komentar": "Creates a NumPy array and performs element-wise operations."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penghitungan Numerik (Numerical Computing) dengan NumPy dalam Python",
+        "deskripsi": "Menggunakan NumPy untuk operasi perhitungan numerik dengan array dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NumPy Documentation",
+        "url": "https://numpy.org/doc/stable/"
+      }
+    ],
+    "highlight": ["powerful library for numerical computing", "NumPy arrays"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to mismatched array dimensions.",
+        "contoh": "arr1 = np.array([1, 2, 3])\narr2 = np.array([1, 2])\narr_sum = arr1 + arr2",
+        "solusi": "Ensure arrays have compatible dimensions for element-wise operations."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "William Turner",
+    "tanggal": "2025-12-01",
+    "judul": "Python Regular Expressions: Pattern Matching with re Module",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Regular Expressions", "re Module", "Intermediate"],
+    "konten": "Regular expressions (regex) in Python allow you to search and manipulate strings based on patterns...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import re\n\n# Search for a pattern in a string\ntext = 'Hello, 12345'\npattern = r'd+'\nmatch = re.search(pattern, text)\nif match:\n    print('Found:', match.group())",
+        "komentar": "Uses regular expressions to search for a pattern in a string."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Regular Expressions (Regex) dalam Python",
+        "deskripsi": "Menggunakan regular expressions untuk pencarian dan manipulasi string berdasarkan pola (pattern) dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Regular Expressions Documentation",
+        "url": "https://docs.python.org/3/library/re.html"
+      }
+    ],
+    "highlight": ["search and manipulate strings based on patterns", "Regular expressions in Python"],
+    "error": [
+      {
+        "error": "re.error",
+        "deskripsi": "re.error occurred due to invalid regular expression pattern.",
+        "contoh": "re.search('(+', 'Hello, World!')",
+        "solusi": "Fix the regular expression pattern syntax error."
+      }
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "pythonforbeginners.com",
+        "penulis": "Doni Wahyudi",
+        "tanggal": "2023-06-20",
+        "judul": "Penggunaan Tipe Data Boolean di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "boolean", "dasar"],
+        "konten": "Artikel ini menjelaskan penggunaan tipe data boolean di Python, termasuk cara mendeklarasikan, menggunakan, dan mengoperasikan nilai boolean.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu tipe data boolean di Python?",
+                "answer": "Tipe data boolean adalah tipe data yang hanya memiliki dua nilai: `True` atau `False`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel boolean di Python?",
+                "answer": "Anda bisa mendeklarasikan variabel boolean dengan menugaskan nilai `True` atau `False` ke variabel. Contohnya: `is_active = True`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `and` dengan nilai boolean di Python?",
+                "question_code": "active = True\nadmin = True\nresult = active and not admin",
+                "answer": "Operator logika `and` digunakan untuk mengembalikan `True` hanya jika kedua operand adalah `True`. Untuk menguji ini, kita perlu kedua operand dalam keadaan boolean. Di sini, kita menggunakan operator `not` untuk `admin` untuk menunjukkan perbedaan dengan `and`.",
+                "answer_code": "active = True\nadmin = False\nresult = active and admin"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `or` dengan nilai boolean di Python?",
+                "question_code": "status = True\npermission = True\nresult = not status or permission",
+                "answer": "Operator logika `or` mengembalikan `True` jika salah satu dari operand adalah `True`. Kode ini menggunakan operator `not` pada `status` untuk menunjukkan bagaimana perubahan pada `status` mempengaruhi hasil.",
+                "answer_code": "status = True\npermission = False\nresult = status or permission"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika `not` dengan nilai boolean di Python?",
+                "question_code": "flag = False\nresult = not (flag or True)",
+                "answer": "Operator `not` membalikkan nilai boolean dari operand. Dalam contoh ini, `not` digunakan dengan kombinasi operator `or` untuk menunjukkan perubahan nilai yang lebih kompleks.",
+                "answer_code": "flag = True\nresult = not flag"
+            },
+            {
+                "question": "Bagaimana cara memeriksa kesamaan dua nilai di Python?",
+                "question_code": "x = 7\ny = 7.0\nresult = x == y",
+                "answer": "Untuk memeriksa kesamaan, Anda harus memastikan bahwa tipe data dari kedua nilai adalah sama. Di sini, `x` adalah integer dan `y` adalah float. Untuk perbandingan yang konsisten, pastikan tipe data sama.",
+                "answer_code": "x = 7\ny = 7\nresult = x == y"
+            },
+            {
+                "question": "Bagaimana cara memeriksa ketidaksamaan dua nilai di Python?",
+                "question_code": "x = 8.0\ny = 8\nresult = x !== y",
+                "answer": "Operator ketidaksamaan yang benar adalah `!=`. Kode ini menggunakan `!==`, yang tidak valid dalam Python. Pastikan untuk menggunakan `!=` untuk memeriksa ketidaksamaan.",
+                "answer_code": "x = 8.0\ny = 8\nresult = x != y"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah satu nilai lebih besar dari nilai lainnya di Python?",
+                "question_code": "num1 = 10\nnum2 = 5\nresult = num1 < num2",
+                "answer": "Untuk memeriksa apakah satu nilai lebih besar dari nilai lainnya, gunakan operator `>`. Dalam contoh ini, `num1` harus lebih besar dari `num2` untuk menghasilkan `True`. Gunakan `num1 > num2` untuk hasil yang diharapkan.",
+                "answer_code": "num1 = 10\nnum2 = 5\nresult = num1 > num2"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah satu nilai lebih kecil atau sama dengan nilai lainnya di Python?",
+                "question_code": "value1 = 10\nvalue2 = 10\nresult = value1 > value2",
+                "answer": "Operator `<=` digunakan untuk memeriksa apakah satu nilai lebih kecil atau sama dengan nilai lainnya. Kode ini menggunakan operator `>` yang salah. Gunakan `value1 <= value2` untuk perbandingan yang benar.",
+                "answer_code": "value1 = 10\nvalue2 = 10\nresult = value1 <= value2"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonindonesia.com",
+        "penulis": "Budi Santoso",
+        "tanggal": "2023-10-12",
+        "judul": "Penggunaan Fungsi Built-in di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "built-in functions", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai fungsi built-in di Python seperti `len()`, `type()`, `input()`, `print()`, dan `range()`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan fungsi `len()` di Python?",
+                "answer": "Fungsi `len()` digunakan untuk mendapatkan panjang (jumlah elemen) dari suatu objek seperti list atau string. Contohnya: `len(my_list)`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `type()` di Python?",
+                "answer": "Fungsi `type()` digunakan untuk mengetahui tipe data dari suatu objek. Contohnya: `type(10)`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `input()` di Python?",
+                "question_code": "name = input('What is your name?')\nprint(name + ' said hello')",
+                "answer": "Fungsi `input()` digunakan untuk mengambil input dari pengguna. Pastikan format string yang tepat dalam fungsi `print()` agar hasilnya sesuai dengan yang diharapkan. Contohnya: `print('Hello, ' + name)`.",
+                "answer_code": "name = input('Enter your name: ')\nprint('Hello, ' + name)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `print()` di Python?",
+                "question_code": "print(Hello, World!)",
+                "answer": "Fungsi `print()` digunakan untuk mencetak teks atau nilai ke layar. Pastikan teks dalam tanda kutip untuk menghindari kesalahan sintaks. Contohnya: `print('Hello, World!')`.",
+                "answer_code": "print('Hello, World!')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `range()` di Python?",
+                "question_code": "for i in range(1, 5):\n    print(i)\nrange(5, 10)",
+                "answer": "Fungsi `range()` menghasilkan urutan angka. Dalam loop, Anda dapat menggunakan `range()` dengan parameter `start`, `stop`, dan `step`. Pastikan untuk memanggil `range()` dalam loop untuk iterasi yang benar.",
+                "answer_code": "for i in range(5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `abs()` di Python?",
+                "question_code": "print(abs(-5.2))",
+                "answer": "Fungsi `abs()` digunakan untuk mendapatkan nilai absolut dari angka. Ini akan mengembalikan nilai positif dari argumen, baik itu integer atau float. Contohnya: `abs(-5)`.",
+                "answer_code": "abs(-5)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `max()` di Python?",
+                "question_code": "print(max([1, 3, 2, 5, 4]))\nmax(1, 5, 3, 4)",
+                "answer": "Fungsi `max()` dapat digunakan untuk menemukan nilai terbesar dari iterable atau dari argumen individual. Contoh ini menunjukkan penggunaan `max()` dengan dua cara: iterable dan argumen individu.",
+                "answer_code": "max([1, 3, 2, 5, 4])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `min()` di Python?",
+                "question_code": "min([2, 4, 1, 3])\nmin('abc', 'xyz')",
+                "answer": "Fungsi `min()` digunakan untuk mendapatkan nilai terkecil dari iterable atau argumen individual. Contoh ini menunjukkan penggunaan dengan list angka dan string.",
+                "answer_code": "min([2, 4, 1, 3])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `sum()` di Python?",
+                "question_code": "print(sum([1, 2, 3, '4']))",
+                "answer": "Fungsi `sum()` menjumlahkan elemen dalam iterable. Pastikan semua elemen dalam iterable adalah tipe numerik untuk menghindari kesalahan. Contoh ini menunjukkan penggunaan `sum()` dengan list angka.",
+                "answer_code": "sum([1, 2, 3, 4])"
+            }
+        ]
+    }
+]

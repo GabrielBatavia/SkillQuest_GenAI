@@ -1,0 +1,72 @@
+[
+  {
+    "sumber": "Kaggle",
+    "penulis": "Aulia Rahman",
+    "tanggal": "2024-01-10",
+    "judul": "Menggunakan NumPy untuk Komputasi Ilmiah di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "NumPy", "Komputasi Ilmiah"],
+    "konten": "NumPy adalah library Python yang digunakan untuk komputasi ilmiah, terutama untuk array multidimensional. Artikel ini menjelaskan operasi dasar dan penggunaan NumPy.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import numpy as np\n# Membuat array\narr = np.array([1, 2, 3])\n# Melakukan operasi penjumlahan\nhasil = np.sum(arr)\nprint(hasil)",
+        "komentar": "Contoh penggunaan NumPy untuk operasi array."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "NumPy",
+        "deskripsi": "Penggunaan NumPy untuk komputasi array multidimensional dalam Python."
+      },
+      {
+        "topik": "Komputasi Ilmiah",
+        "deskripsi": "Penerapan Python dalam komputasi ilmiah menggunakan NumPy."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NumPy Documentation",
+        "url": "https://numpy.org/doc/stable/"
+      }
+    ],
+    "highlight": ["NumPy", "Array", "Komputasi Ilmiah"],
+    "error": []
+  },
+  {
+    "sumber": "Tutorialspoint",
+    "penulis": "Budi Santoso",
+    "tanggal": "2023-12-05",
+    "judul": "Menggunakan Modul Matplotlib untuk Visualisasi Data",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Matplotlib", "Visualisasi Data"],
+    "konten": "Matplotlib adalah library Python yang digunakan untuk visualisasi data. Artikel ini menjelaskan cara membuat grafik sederhana dan kustomisasi visualisasi.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import matplotlib.pyplot as plt\n# Data\nx = [1, 2, 3, 4, 5]\ny = [10, 20, 15, 25, 30]\n# Membuat grafik garis\nplt.plot(x, y)\nplt.xlabel('X Label')\nplt.ylabel('Y Label')\nplt.title('Contoh Grafik')\nplt.show()",
+        "komentar": "Contoh pembuatan grafik garis menggunakan Matplotlib."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Matplotlib",
+        "deskripsi": "Penggunaan Matplotlib untuk visualisasi data dalam Python."
+      },
+      {
+        "topik": "Visualisasi Data",
+        "deskripsi": "Teknik-teknik untuk membuat grafik dan visualisasi data menggunakan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Matplotlib Documentation",
+        "url": "https://matplotlib.org/contents.html"
+      }
+    ],
+    "highlight": ["Matplotlib", "Visualisasi Data", "Grafik"],
+    "error": []
+  }
+]

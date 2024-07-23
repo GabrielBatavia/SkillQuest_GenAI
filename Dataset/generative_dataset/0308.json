@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2022-03-19",
+    "judul": "Menguasai Python untuk Data Science",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["tips", "tricks"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Contoh konkret", "Mudah dipahami"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan indentasi",
+        "contoh": "if True:\nprint('Hello')",
+        "solusi": "Tambahkan indentasi yang benar"
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "John Smith",
+    "tanggal": "2022-10-16",
+    "judul": "Belajar Python Dasar",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["web development", "flask"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Tips berguna", "Mudah dipahami"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "Kesalahan tipe data",
+        "contoh": "len(5)",
+        "solusi": "Pastikan fungsi digunakan pada tipe data yang benar"
+      }
+    ]
+  }
+]

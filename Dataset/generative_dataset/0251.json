@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Piper Davidson",
+    "tanggal": "2028-04-20",
+    "judul": "Python APIs: Introduction to RESTful API Development with Flask",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "APIs", "RESTful API", "Flask", "Advanced"],
+    "konten": "RESTful APIs are a popular way to enable communication between different software applications. Flask can be used to develop RESTful APIs in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of creating a simple RESTful API using Flask\nfrom flask import Flask, jsonify, request\n\napp = Flask(__name__)\n\ntasks = [\n    {\n        'id': 1,\n        'title': 'Task 1',\n        'description': 'This is task 1',\n        'done': False\n    }\n]\n\n@app.route('/tasks', methods=['GET'])\ndef get_tasks():\n    return jsonify({'tasks': tasks})\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "komentar": "Creates a simple RESTful API using Flask."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar RESTful API Development dengan Flask dalam Python",
+        "deskripsi": "Menggunakan Flask untuk mengembangkan RESTful API untuk memungkinkan komunikasi antara aplikasi perangkat lunak berbeda."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Flask RESTful API Documentation",
+        "url": "https://flask-restful.readthedocs.io/en/latest/"
+      }
+    ],
+    "highlight": ["enable communication between software applications", "Flask for RESTful API development"],
+    "error": [
+      {
+        "error": "KeyError",
+        "deskripsi": "KeyError occurred due to accessing a non-existent key in a dictionary.",
+        "contoh": "task_id = tasks[0]['non_existent_key']",
+        "solusi": "Ensure keys exist in dictionaries before accessing them."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Jordan Reed",
+    "tanggal": "2027-09-20",
+    "judul": "Python Web Scraping: Introduction to Beautiful Soup",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Web Scraping", "Beautiful Soup", "Intermediate"],
+    "konten": "Beautiful Soup is a powerful library for extracting data from HTML and XML files in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "from bs4 import BeautifulSoup\nimport requests\n\n# Example of scraping a website\nurl = 'https://example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.title)",
+        "komentar": "Uses Beautiful Soup to scrape and print the title of a website."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Web Scraping dengan Beautiful Soup dalam Python",
+        "deskripsi": "Menggunakan Beautiful Soup untuk mengekstrak data dari berkas HTML dan XML dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Beautiful Soup Documentation",
+        "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+      }
+    ],
+    "highlight": ["powerful library for extracting data", "Beautiful Soup web scraping"],
+    "error": [
+      {
+        "error": "ConnectionError",
+        "deskripsi": "ConnectionError occurred due to failed connection when scraping website.",
+        "contoh": "response = requests.get('https://nonexistentwebsite.com')",
+        "solusi": "Ensure correct URL and internet connection when performing web scraping."
+      }
+    ]
+  }
+]

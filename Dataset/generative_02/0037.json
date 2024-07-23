@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "pythonbasic.com",
+        "penulis": "Arif Setiawan",
+        "tanggal": "2023-07-20",
+        "judul": "Penggunaan Operator di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai jenis operator di Python, termasuk operator aritmatika, perbandingan, logika, dan assignment.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan operator aritmatika di Python?",
+                "answer": "Operator aritmatika digunakan untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian."
+            },
+            {
+                "question": "Bagaimana cara memakai operator penjumlahan di Python?",
+                "answer": "Anda dapat menggunakan operator `+` untuk menjumlahkan dua nilai. Contoh: `x + y`."
+            },
+            {
+                "question": "Bagaimana cara memakai operator pengurangan di Python?",
+                "answer": "Anda bisa menggunakan operator `-` untuk mengurangi satu nilai dari nilai lainnya. Contoh: `x - y`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator perkalian di Python?",
+                "question_code": "x * y",
+                "answer": "Anda dapat menggunakan operator `*` untuk mengalikan dua nilai. Contoh: `x * y`.",
+                "answer_code": "x * y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator pembagian di Python?",
+                "question_code": "x / y",
+                "answer": "Anda dapat menggunakan operator `/` untuk membagi satu nilai dengan nilai lainnya. Contoh: `x / y`.",
+                "answer_code": "x / y"
+            },
+            {
+                "question": "Apa yang dimaksud dengan operator perbandingan di Python?",
+                "question_code": "x == y",
+                "answer": "Operator perbandingan digunakan untuk membandingkan dua nilai dan menghasilkan nilai boolean (`True` atau `False`). Contoh: `x == y`.",
+                "answer_code": "x == y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator lebih besar di Python?",
+                "question_code": "x > y",
+                "answer": "Anda bisa menggunakan operator `>` untuk memeriksa apakah suatu nilai lebih besar dari nilai lainnya. Contoh: `x > y`.",
+                "answer_code": "x > y"
+            },
+            {
+                "question": "Apa yang dimaksud dengan operator logika di Python?",
+                "question_code": "x and y",
+                "answer": "Operator logika digunakan untuk operasi logika seperti `and`, `or`, dan `not`. Contoh: `x and y`.",
+                "answer_code": "x and y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator assignment di Python?",
+                "question_code": "x = 10",
+                "answer": "Anda bisa menggunakan operator assignment `=` untuk memberikan nilai kepada variabel. Contoh: `x = 10`.",
+                "answer_code": "x = 10"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarcodingpython.com",
+        "penulis": "Rizki Amalia",
+        "tanggal": "2024-03-01",
+        "judul": "Struktur Data Dasar di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "struktur data", "dasar"],
+        "konten": "Artikel ini membahas struktur data dasar di Python, termasuk list, tuple, set, dan dictionary.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu list di Python?",
+                "answer": "List adalah struktur data yang dapat menyimpan beberapa item dalam satu variabel dan diakses menggunakan indeks."
+            },
+            {
+                "question": "Bagaimana cara membuat list di Python?",
+                "answer": "Anda bisa membuat list dengan menggunakan tanda kurung siku `[]` dan memisahkan item dengan koma. Contoh: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Apa itu tuple di Python?",
+                "answer": "Tuple adalah struktur data yang mirip dengan list, tetapi tidak dapat diubah setelah dibuat (immutable)."
+            },
+            {
+                "question": "Bagaimana cara membuat tuple di Python?",
+                "question_code": "my_tuple = (1, 2, 3)",
+                "answer": "Anda bisa membuat tuple dengan menggunakan tanda kurung `()` dan memisahkan item dengan koma. Contoh: `my_tuple = (1, 2, 3)`.",
+                "answer_code": "my_tuple = (1, 2, 3)"
+            },
+            {
+                "question": "Apa itu set di Python?",
+                "question_code": "my_set = {1, 2, 3}",
+                "answer": "Set adalah struktur data yang menyimpan item unik tanpa urutan tertentu. Contoh: `my_set = {1, 2, 3}`.",
+                "answer_code": "my_set = {1, 2, 3}"
+            },
+            {
+                "question": "Bagaimana cara menambahkan item ke set di Python?",
+                "question_code": "my_set.add(4)",
+                "answer": "Anda bisa menambahkan item ke set dengan menggunakan metode `add()`. Contoh: `my_set.add(4)`.",
+                "answer_code": "my_set.add(4)"
+            },
+            {
+                "question": "Apa itu dictionary di Python?",
+                "question_code": "my_dict = {'key': 'value'}",
+                "answer": "Dictionary adalah struktur data yang menyimpan data dalam bentuk pasangan kunci-nilai. Contoh: `my_dict = {'key': 'value'}`.",
+                "answer_code": "my_dict = {'key': 'value'}"
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dalam dictionary di Python?",
+                "question_code": "value = my_dict['key']",
+                "answer": "Anda bisa mengakses nilai dalam dictionary dengan menggunakan kunci. Contoh: `value = my_dict['key']`.",
+                "answer_code": "value = my_dict['key']"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari dictionary di Python?",
+                "question_code": "del my_dict['key']",
+                "answer": "Anda bisa menghapus item dari dictionary dengan menggunakan kata kunci `del`. Contoh: `del my_dict['key']`.",
+                "answer_code": "del my_dict['key']"
+            }
+        ]
+    }
+]

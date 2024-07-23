@@ -1,0 +1,83 @@
+{
+    "sumber": "BelajarPython.com",
+    "penulis": "Hendra Gunawan",
+    "tanggal": "2023-11-15",
+    "judul": "Memahami dan Menggunakan Fungsi Rekursif di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["rekursi", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi rekursif di Python. Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri untuk menyelesaikan masalah yang lebih besar.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def factorial(n):\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))",
+            "komentar": "Contoh fungsi rekursif untuk menghitung faktorial dari sebuah angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\nfor i in range(10):\n    print(fibonacci(i))",
+            "komentar": "Contoh fungsi rekursif untuk menghasilkan deret Fibonacci"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def sum_array(arr):\n    if len(arr) == 0:\n        return 0\n    else:\n        return arr[0] + sum_array(arr[1:])\n\nprint(sum_array([1, 2, 3, 4, 5]))",
+            "komentar": "Contoh fungsi rekursif untuk menjumlahkan semua elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def power(base, exp):\n    if exp == 0:\n        return 1\n    else:\n        return base * power(base, exp - 1)\n\nprint(power(2, 3))",
+            "komentar": "Contoh fungsi rekursif untuk menghitung perpangkatan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def gcd(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd(b, a % b)\n\nprint(gcd(48, 18))",
+            "komentar": "Contoh fungsi rekursif untuk menghitung Greatest Common Divisor (GCD) atau faktor pembagi terbesar"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Rekursif",
+            "deskripsi": "Cara mendefinisikan dan menggunakan fungsi rekursif untuk menyelesaikan masalah yang dapat dipecah menjadi sub-masalah yang lebih kecil."
+        },
+        {
+            "topik": "Kasus Basis",
+            "deskripsi": "Cara menentukan kondisi penghentian (base case) dalam fungsi rekursif untuk mencegah rekursi tak terbatas."
+        },
+        {
+            "topik": "Contoh Rekursi",
+            "deskripsi": "Beberapa contoh penggunaan rekursi dalam berbagai situasi seperti faktorial, deret Fibonacci, jumlah elemen list, perpangkatan, dan GCD."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Recursion in Python - W3Schools",
+            "url": "https://www.w3schools.com/python/python_functions_recursion.asp"
+        },
+        {
+            "judul": "Understanding Recursion in Python - Real Python",
+            "url": "https://realpython.com/python-thinking-recursively/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi rekursif",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "RecursionError",
+            "deskripsi": "Kesalahan yang terjadi saat fungsi rekursif memanggil dirinya sendiri terlalu banyak kali tanpa mencapai kasus basis.",
+            "contoh": "def infinite_recursion():\n    return infinite_recursion()\n\ninfinite_recursion()",
+            "solusi": "Pastikan fungsi rekursif memiliki kasus basis yang akan menghentikan rekursi."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat argumen yang diberikan ke fungsi rekursif tidak sesuai dengan yang diharapkan.",
+            "contoh": "def factorial(n):\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial('5'))",
+            "solusi": "Pastikan argumen yang diberikan ke fungsi rekursif memiliki tipe data yang sesuai, misalnya menggunakan integer untuk menghitung faktorial."
+        }
+    ]
+}

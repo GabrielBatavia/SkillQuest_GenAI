@@ -1,0 +1,44 @@
+{
+    "sumber": "PythonID.org",
+    "penulis": "Budi Santoso",
+    "tanggal": "2018-11-20",
+    "judul": "Menggunakan Fungsi Lambda di Python",
+    "tingkat_kesulitan": "Lanjut",
+    "tag": ["lambda", "fungsi", "lanjut"],
+    "konten": "Artikel yang menjelaskan cara menggunakan fungsi lambda di Python dengan berbagai contoh.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = lambda a: a + 10\nprint(x(5))",
+            "komentar": "Contoh fungsi lambda sederhana"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "y = lambda a, b: a * b\nprint(y(5, 6))",
+            "komentar": "Contoh fungsi lambda dengan dua parameter"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Lambda",
+            "deskripsi": "Fungsi anonim yang dapat didefinisikan dalam satu baris."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Dokumentasi Resmi Python tentang Lambda",
+            "url": "https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions"
+        }
+    ],
+    "highlight": ["Penjelasan ringkas", "Contoh kode praktis"],
+    "error": [
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan sintaks saat menulis fungsi lambda.",
+            "contoh": "lambda a: a + 10:",
+            "solusi": "Pastikan fungsi lambda ditulis dalam satu baris tanpa tanda titik dua di akhir."
+        }
+    ]
+}

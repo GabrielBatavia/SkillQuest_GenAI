@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "Steven D'Aprano",
+        "tanggal": "2021-11-15",
+        "judul": "Mengelola Paket dengan Pip",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "pip",
+            "manajemen paket"
+        ],
+        "konten": "Artikel ini menjelaskan cara mengelola paket Python menggunakan pip, termasuk instalasi, pembaruan, dan penghapusan paket.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "shell",
+                "isi": "pip install requests",
+                "komentar": "Perintah untuk menginstal paket 'requests' menggunakan pip."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Instalasi Paket",
+                "deskripsi": "Cara menginstal paket baru menggunakan pip."
+            },
+            {
+                "topik": "Pembaruan Paket",
+                "deskripsi": "Cara memperbarui paket yang sudah diinstal ke versi terbaru."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Installing Packages",
+                "url": "https://packaging.python.org/tutorials/installing-packages/"
+            }
+        ],
+        "highlight": [
+            "Manajemen Paket",
+            "Pip"
+        ],
+        "error": [
+            {
+                "error": "PackageNotFoundError",
+                "deskripsi": "Kesalahan ini terjadi saat paket yang ingin diinstal tidak ditemukan.",
+                "contoh": "pip install non_existing_package",
+                "solusi": "Periksa kembali nama paket dan pastikan itu tersedia di PyPI."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "Fred Drake",
+        "tanggal": "2020-01-21",
+        "judul": "Pemrograman Paralel dengan Multiprocessing",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": [
+            "python",
+            "multiprocessing",
+            "paralel"
+        ],
+        "konten": "Artikel ini membahas cara melakukan pemrograman paralel di Python menggunakan modul multiprocessing.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "import multiprocessing\n\ndef worker(num):\n    print(f'Worker: {num}')\n\nif __name__ == '__main__':\n    processes = []\n    for i in range(5):\n        p = multiprocessing.Process(target=worker, args=(i,))\n        processes.append(p)\n        p.start()\n\n    for p in processes:\n        p.join()",
+                "komentar": "Contoh sederhana menjalankan proses paralel dengan multiprocessing."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Multiprocessing",
+                "deskripsi": "Modul untuk menjalankan beberapa proses secara paralel."
+            },
+            {
+                "topik": "Proses Paralel",
+                "deskripsi": "Menjalankan beberapa proses secara bersamaan untuk meningkatkan performa."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Concurrent Execution",
+                "url": "https://docs.python.org/3/library/concurrent.html"
+            }
+        ],
+        "highlight": [
+            "Pemrograman Paralel",
+            "Multiprocessing"
+        ],
+        "error": [
+            {
+                "error": "RuntimeError",
+                "deskripsi": "Terjadi saat mencoba menjalankan proses dalam kondisi yang tidak valid.",
+                "contoh": "p = multiprocessing.Process(target=worker)\np.start()",
+                "solusi": "Pastikan proses dijalankan di dalam blok 'if __name__ == '__main__':'."
+            }
+        ]
+    }
+]

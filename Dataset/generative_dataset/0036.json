@@ -1,0 +1,132 @@
+[
+    {
+        "sumber": "docs.python.org",
+        "penulis": "Raymond Hettinger",
+        "tanggal": "2024-07-14",
+        "judul": "Memulai dengan Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": [
+            "pemrograman",
+            "python",
+            "dasar"
+        ],
+        "konten": "Pembelajaran komprehensif tentang penggunaan Python dalam berbagai bidang.",
+        "contoh": [
+            {
+                "tipe": "code",
+                "bahasa": "python",
+                "isi": "from flask import Flask\napp = Flask(__name__)",
+                "komentar": "Membuat aplikasi web sederhana dengan Flask."
+            },
+            {
+                "tipe": "code",
+                "bahasa": "python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Contoh program Python sederhana."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Python Backend",
+                "deskripsi": "Mengembangkan backend menggunakan Python."
+            },
+            {
+                "topik": "Pengantar Python",
+                "deskripsi": "Dasar-dasar bahasa pemrograman Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/"
+            },
+            {
+                "judul": "Belajar Python",
+                "url": "https://docs.python.org/3/tutorial/index.html"
+            }
+        ],
+        "highlight": [
+            "Contoh kode Python",
+            "Penjelasan mendalam"
+        ],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks.",
+                "contoh": "print('Hello World'",
+                "solusi": "Pastikan semua kurung tutup sudah terpasang dengan benar."
+            },
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks.",
+                "contoh": "print('Hello World'",
+                "solusi": "Pastikan semua kurung tutup sudah terpasang dengan benar."
+            }
+        ]
+    },
+    {
+        "sumber": "docs.python.org",
+        "penulis": "Tim Peters",
+        "tanggal": "2024-07-14",
+        "judul": "Memulai dengan Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": [
+            "python",
+            "oop",
+            "kelas"
+        ],
+        "konten": "Pembelajaran komprehensif tentang penggunaan Python dalam berbagai bidang.",
+        "contoh": [
+            {
+                "tipe": "code",
+                "bahasa": "python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Contoh program Python sederhana."
+            },
+            {
+                "tipe": "code",
+                "bahasa": "python",
+                "isi": "from flask import Flask\napp = Flask(__name__)",
+                "komentar": "Membuat aplikasi web sederhana dengan Flask."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Pengantar Python",
+                "deskripsi": "Dasar-dasar bahasa pemrograman Python."
+            },
+            {
+                "topik": "Penggunaan Python dalam Web",
+                "deskripsi": "Membangun aplikasi web dengan Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/"
+            },
+            {
+                "judul": "Belajar Python",
+                "url": "https://docs.python.org/3/tutorial/index.html"
+            }
+        ],
+        "highlight": [
+            "Contoh kode Python",
+            "Penjelasan mendalam"
+        ],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks.",
+                "contoh": "print('Hello World'",
+                "solusi": "Pastikan semua kurung tutup sudah terpasang dengan benar."
+            },
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks.",
+                "contoh": "print('Hello World'",
+                "solusi": "Pastikan semua kurung tutup sudah terpasang dengan benar."
+            }
+        ]
+    }
+]

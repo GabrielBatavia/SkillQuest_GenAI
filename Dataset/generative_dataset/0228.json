@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Olivia King",
+    "tanggal": "2026-05-20",
+    "judul": "Python Command-Line Arguments: Handling Input from the Command Line",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Command-Line Arguments", "CLI", "Pemula"],
+    "konten": "Command-line arguments in Python allow you to pass input to a script from the command line...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of using command-line arguments\nimport sys\n\n# Print all command-line arguments\nprint('Command-line arguments:', sys.argv)",
+        "komentar": "Prints all command-line arguments passed to the script."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Argument Command-Line dalam Python",
+        "deskripsi": "Menggunakan argument command-line untuk melewati input ke skrip dari baris perintah."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Command-Line Arguments Documentation",
+        "url": "https://docs.python.org/3/tutorial/stdlib.html#command-line-arguments"
+      }
+    ],
+    "highlight": ["pass input to a script from the command line", "Python command-line arguments"],
+    "error": [
+      {
+        "error": "IndexError",
+        "deskripsi": "IndexError occurred due to accessing non-existent index in sys.argv.",
+        "contoh": "print(sys.argv[1])",
+        "solusi": "Ensure the index exists in sys.argv before accessing it."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Blake Turner",
+    "tanggal": "2026-06-05",
+    "judul": "Python NumPy: Introduction to Numerical Computing with NumPy",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "NumPy", "Numerical Computing", "Intermediate"],
+    "konten": "NumPy is a fundamental library for numerical computing in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import numpy as np\n\n# Example of creating a NumPy array\narr = np.array([1, 2, 3])\nprint(arr)",
+        "komentar": "Creates a NumPy array with elements 1, 2, and 3."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Komputasi Numerik dengan NumPy dalam Python",
+        "deskripsi": "Menggunakan NumPy untuk komputasi numerik dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NumPy Documentation",
+        "url": "https://numpy.org/doc/stable/"
+      }
+    ],
+    "highlight": ["fundamental library for numerical computing", "NumPy array creation"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to incompatible shapes in NumPy operations.",
+        "contoh": "arr1 = np.array([1, 2, 3])\narr2 = np.array([1, 2])\nprint(arr1 + arr2)",
+        "solusi": "Ensure arrays have compatible shapes for NumPy operations."
+      }
+    ]
+  }
+]

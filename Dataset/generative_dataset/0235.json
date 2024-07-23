@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Jesse Turner",
+    "tanggal": "2027-01-05",
+    "judul": "Python Iterators and Generators: Understanding Iteration in Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Iterators", "Generators", "Iteration", "Pemula"],
+    "konten": "Iterators and generators in Python facilitate efficient and controlled iteration over elements...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of defining a generator\ndef my_generator():\n    yield 1\n    yield 2\n    yield 3\n\n# Using the generator\ngen = my_generator()\nfor value in gen:\n    print(value)",
+        "komentar": "Defines and uses a generator to yield values iteratively."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Iterasi dengan Iterators dan Generators dalam Python",
+        "deskripsi": "Menggunakan iterators dan generators untuk iterasi yang efisien dan terkendali dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Iterators Documentation",
+        "url": "https://docs.python.org/3/tutorial/classes.html#iterators"
+      }
+    ],
+    "highlight": ["efficient and controlled iteration", "Python iterators and generators"],
+    "error": [
+      {
+        "error": "StopIteration",
+        "deskripsi": "StopIteration occurred due to iterating over exhausted generator.",
+        "contoh": "next(gen)",
+        "solusi": "Ensure generator is not exhausted before iterating over it again."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Bailey Lewis",
+    "tanggal": "2027-01-20",
+    "judul": "Python Natural Language Processing: Introduction to NLP with NLTK",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Natural Language Processing", "NLP", "NLTK", "Intermediate"],
+    "konten": "NLTK (Natural Language Toolkit) is a comprehensive library for natural language processing tasks in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import nltk\nfrom nltk.tokenize import word_tokenize\n\n# Example of tokenizing text\ntext = 'Natural Language Processing is awesome!'\ntokens = word_tokenize(text)\nprint(tokens)",
+        "komentar": "Tokenizes text using NLTK."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Natural Language Processing (NLP) dengan NLTK dalam Python",
+        "deskripsi": "Menggunakan NLTK untuk tugas pemrosesan bahasa alami dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NLTK Documentation",
+        "url": "https://www.nltk.org/"
+      }
+    ],
+    "highlight": ["comprehensive library for NLP tasks", "NLTK tokenizing text"],
+    "error": [
+      {
+        "error": "LookupError",
+        "deskripsi": "LookupError occurred due to missing NLTK data.",
+        "contoh": "nltk.download('punkt')",
+        "solusi": "Ensure NLTK data required for the operation is downloaded."
+      }
+    ]
+  }
+]

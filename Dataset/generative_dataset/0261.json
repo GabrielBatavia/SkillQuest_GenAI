@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Elijah Everett",
+    "tanggal": "2028-07-20",
+    "judul": "Python Deep Learning: Image Classification with TensorFlow",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Deep Learning", "TensorFlow", "Image Classification", "Advanced"],
+    "konten": "TensorFlow is an open-source deep learning framework developed by Google that allows you to build and train...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import tensorflow as tf\nfrom tensorflow.keras.datasets import mnist\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D\n\n# Example of image classification using TensorFlow\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\n\nmodel = Sequential([\n    Flatten(input_shape=(28, 28)),\n    Dense(128, activation='relu'),\n    Dense(10, activation='softmax')\n])\n\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\nmodel.fit(x_train, y_train, epochs=5, batch_size=32, validation_data=(x_test, y_test))",
+        "komentar": "Performs image classification using TensorFlow."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Klasifikasi Gambar dengan TensorFlow dalam Deep Learning Python",
+        "deskripsi": "Menggunakan TensorFlow untuk membangun dan melatih model deep learning untuk klasifikasi gambar."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "TensorFlow Documentation",
+        "url": "https://www.tensorflow.org/"
+      }
+    ],
+    "highlight": ["open-source deep learning framework developed by Google", "TensorFlow image classification"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing TensorFlow module.",
+        "contoh": "import tensorflow as tf",
+        "solusi": "Ensure TensorFlow is installed with Python or available in the environment."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Alma Hobbs",
+    "tanggal": "2028-08-05",
+    "judul": "Python Error Handling: Best Practices for Handling Exceptions",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Error Handling", "Exceptions", "Intermediate"],
+    "konten": "Error handling in Python allows you to gracefully manage and recover from errors or exceptions...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of error handling in Python\ntry:\n    # Code that may raise an exception\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    # Handle specific exception\n    print('Error: Division by zero occurred')\nexcept Exception as e:\n    # Handle generic exception\n    print('Error occurred:', str(e))",
+        "komentar": "Demonstrates error handling best practices in Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Praktik Terbaik untuk Penanganan Error dalam Python",
+        "deskripsi": "Menggunakan error handling untuk mengelola dan memulihkan aplikasi dari kesalahan atau exception dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Exceptions Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html"
+      }
+    ],
+    "highlight": ["gracefully manage and recover from errors or exceptions", "Python error handling best practices"],
+    "error": [
+      {
+        "error": "ZeroDivisionError",
+        "deskripsi": "ZeroDivisionError occurred due to division by zero in Python code.",
+        "contoh": "result = 10 / 0",
+        "solusi": "Avoid dividing by zero or handle ZeroDivisionError appropriately."
+      }
+    ]
+  }
+]

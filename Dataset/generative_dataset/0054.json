@@ -1,0 +1,72 @@
+{
+    "sumber": "codingindo.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2024-03-15",
+    "judul": "Pemahaman Fungsi Rekursif di Python",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Rekursif", "Fungsi", "Lanjutan"],
+    "konten": "Artikel ini menjelaskan konsep fungsi rekursif di Python, mulai dari definisi dasar hingga penerapannya dalam menyelesaikan masalah yang kompleks.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def faktorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * faktorial(n-1)\n\nprint(faktorial(5))",
+            "komentar": "Menggunakan fungsi rekursif untuk menghitung faktorial dari sebuah angka."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\nprint(fibonacci(6))",
+            "komentar": "Menggunakan fungsi rekursif untuk menghitung angka Fibonacci ke-n."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def balik_kata(kata):\n    if len(kata) == 0:\n        return kata\n    else:\n        return balik_kata(kata[1:]) + kata[0]\n\nprint(balik_kata('Python'))",
+            "komentar": "Menggunakan fungsi rekursif untuk membalik urutan huruf dalam sebuah kata."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Rekursif",
+            "deskripsi": "Cara mendefinisikan dan menggunakan fungsi rekursif di Python."
+        },
+        {
+            "topik": "Faktorial",
+            "deskripsi": "Menghitung faktorial menggunakan fungsi rekursif."
+        },
+        {
+            "topik": "Fibonacci",
+            "deskripsi": "Menghitung angka Fibonacci ke-n menggunakan fungsi rekursif."
+        },
+        {
+            "topik": "Balik Kata",
+            "deskripsi": "Membalik urutan huruf dalam sebuah kata menggunakan fungsi rekursif."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Recursion in Python",
+            "url": "https://realpython.com/python-recursion/"
+        },
+        {
+            "judul": "Understanding Recursion",
+            "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+        }
+    ],
+    "highlight": ["Pemahaman rekursif", "Aplikasi rekursif dalam faktorial", "Penggunaan rekursif dalam Fibonacci"],
+    "error": [
+        {
+            "error": "RecursionError",
+            "deskripsi": "Kesalahan saat fungsi rekursif memanggil dirinya sendiri terlalu dalam.",
+            "contoh": "def infinite_recursion():\n    return infinite_recursion()\ninfinite_recursion()",
+            "solusi": "Pastikan kondisi dasar (base case) yang benar untuk menghentikan rekursi."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan saat parameter yang diberikan ke fungsi rekursif tidak sesuai.",
+            "contoh": "def faktorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * faktorial(n-1)\nfaktorial('lima')",
+            "solusi": "Pastikan parameter yang diberikan ke fungsi rekursif adalah tipe data yang sesuai."
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "sumber": "PythonMasteryTutorials.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-08-15",
+    "judul": "Memahami dan Menggunakan Tipe Data Range di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "range", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data range di Python. Range adalah urutan angka yang sering digunakan dalam loop for untuk iterasi melalui rentang nilai. Tipe data range sangat efisien dalam hal memori dan eksekusi, terutama saat berurusan dengan urutan angka yang besar.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "r = range(10)\nprint('Range:', r)\nprint('Tipe data:', type(r))",
+            "komentar": "Contoh mendefinisikan variabel r sebagai range dari 0 hingga 9 dan mencetak nilainya serta tipe datanya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(5):\n    print(i)",
+            "komentar": "Contoh menggunakan range dalam loop for untuk iterasi dari 0 hingga 4"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "r = range(1, 11)\nprint('Range dari 1 hingga 10:', list(r))",
+            "komentar": "Contoh mendefinisikan range dengan nilai awal dan nilai akhir serta mengonversinya menjadi list untuk ditampilkan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "r = range(0, 20, 2)\nprint('Range dengan langkah 2:', list(r))",
+            "komentar": "Contoh mendefinisikan range dengan nilai awal, nilai akhir, dan langkah, serta mengonversinya menjadi list untuk ditampilkan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "r = range(10, 0, -1)\nprint('Range mundur dari 10 hingga 1:', list(r))",
+            "komentar": "Contoh mendefinisikan range mundur dengan nilai awal, nilai akhir, dan langkah negatif, serta mengonversinya menjadi list untuk ditampilkan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "even_numbers = range(2, 21, 2)\nfor num in even_numbers:\n    print(num, end=' ')",
+            "komentar": "Contoh menggunakan range dalam loop for untuk mencetak bilangan genap dari 2 hingga 20"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "odd_numbers = range(1, 20, 2)\nprint('Bilangan ganjil dari 1 hingga 19:', list(odd_numbers))",
+            "komentar": "Contoh mendefinisikan range untuk bilangan ganjil dan mengonversinya menjadi list untuk ditampilkan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "r = range(5)\nprint('Apakah 3 ada dalam range?', 3 in r)\nprint('Apakah 7 ada dalam range?', 7 in r)",
+            "komentar": "Contoh menggunakan operator in untuk memeriksa apakah suatu nilai ada dalam range"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Range",
+            "deskripsi": "Cara mendefinisikan range di Python menggunakan fungsi range() dengan satu, dua, atau tiga argumen."
+        },
+        {
+            "topik": "Range dalam Loop For",
+            "deskripsi": "Cara menggunakan range dalam loop for untuk iterasi melalui rentang nilai."
+        },
+        {
+            "topik": "Range dengan Langkah",
+            "deskripsi": "Cara mendefinisikan range dengan langkah tertentu untuk mengontrol interval nilai dalam range."
+        },
+        {
+            "topik": "Range Mundur",
+            "deskripsi": "Cara mendefinisikan range mundur dengan langkah negatif."
+        },
+        {
+            "topik": "Mengonversi Range menjadi List",
+            "deskripsi": "Cara mengonversi range menjadi list untuk menampilkan atau memproses nilai-nilai dalam range."
+        },
+        {
+            "topik": "Menggunakan Operator in dengan Range",
+            "deskripsi": "Cara menggunakan operator in untuk memeriksa apakah suatu nilai ada dalam range."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Range - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_range.asp"
+        },
+        {
+            "judul": "Understanding the Python range() Function - Real Python",
+            "url": "https://realpython.com/python-range/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data range di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang kelebihan range dalam iterasi efisien melalui urutan angka"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan range() dengan argumen yang tidak valid.",
+            "contoh": "r = range('a', 'z')",
+            "solusi": "Pastikan semua argumen yang diberikan ke fungsi range() adalah bilangan bulat."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mendefinisikan range dengan langkah nol.",
+            "contoh": "r = range(0, 10, 0)",
+            "solusi": "Pastikan langkah yang diberikan ke fungsi range() bukan nol."
+        }
+    ]
+}

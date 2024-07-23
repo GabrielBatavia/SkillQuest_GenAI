@@ -1,0 +1,112 @@
+[
+    {
+        "sumber": "pythontutorial.net",
+        "penulis": "Rahmat Hidayat",
+        "tanggal": "2023-03-20",
+        "judul": "Penggunaan List dan Dictionary di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list", "dictionary"],
+        "konten": "Artikel ini membahas cara menggunakan list dan dictionary di Python, termasuk cara membuat, mengakses, dan memodifikasi elemen.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list di Python?",
+                "answer": "List adalah struktur data yang dapat menyimpan berbagai item dalam satu variabel dan diakses melalui indeks."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan list di Python?",
+                "answer": "Anda dapat membuat list dengan menggunakan tanda kurung siku `[]` dan memisahkan item dengan koma. Contoh: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Bagaimana cara mengambil elemen dari list?",
+                "answer": "Elemen dalam list dapat diakses menggunakan indeks. Contoh: `my_list[0]`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan item ke dalam list?",
+                "question_code": "my_list.append(4)",
+                "answer": "Anda dapat menambahkan item ke dalam list dengan metode `append()`. Contoh: `my_list.append(4)`."
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari list?",
+                "question_code": "my_list.pop(2)",
+                "answer": "Anda dapat menghapus item dari list menggunakan metode `pop()`. Contoh: `my_list.pop(2)`."
+            },
+            {
+                "question": "Apa itu dictionary di Python?",
+                "question_code": "my_dict = {'kunci': 'nilai'}",
+                "answer": "Dictionary adalah struktur data yang menyimpan data dalam pasangan kunci-nilai. Misalnya: `my_dict = {'kunci': 'nilai'}`."
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dalam dictionary?",
+                "question_code": "nilai = my_dict['kunci']",
+                "answer": "Nilai dalam dictionary dapat diakses menggunakan kunci. Contoh: `nilai = my_dict['kunci']`."
+            },
+            {
+                "question": "Bagaimana cara menambah pasangan kunci-nilai ke dictionary?",
+                "question_code": "my_dict['kunci_baru'] = 'nilai_baru'",
+                "answer": "Anda dapat menambah pasangan kunci-nilai ke dictionary dengan menugaskan nilai baru ke kunci baru. Misalnya: `my_dict['kunci_baru'] = 'nilai_baru'`."
+            },
+            {
+                "question": "Bagaimana cara menghapus pasangan kunci-nilai dari dictionary?",
+                "question_code": "del my_dict['kunci']",
+                "answer": "Anda dapat menghapus pasangan kunci-nilai dari dictionary dengan kata kunci `del`. Contoh: `del my_dict['kunci']`."
+            }
+        ]
+    },
+    {
+        "sumber": "pythonforbeginners.com",
+        "penulis": "Lina Sari",
+        "tanggal": "2024-05-18",
+        "judul": "Pemahaman Loop di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "loop", "intermediate"],
+        "konten": "Artikel ini menjelaskan berbagai jenis loop di Python, termasuk loop `for` dan `while`, serta cara penggunaannya.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu loop `for` di Python?",
+                "answer": "Loop `for` adalah struktur kontrol yang digunakan untuk mengulangi blok kode untuk setiap item dalam urutan tertentu."
+            },
+            {
+                "question": "Bagaimana cara membuat loop `for` di Python?",
+                "answer": "Loop `for` dapat dibuat dengan menggunakan sintaks `for item in iterable:` diikuti oleh blok kode yang akan diulangi."
+            },
+            {
+                "question": "Apa itu loop `while` di Python?",
+                "answer": "Loop `while` adalah struktur kontrol yang digunakan untuk mengulangi blok kode selama kondisi yang ditentukan terpenuhi."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan loop `while` di Python?",
+                "question_code": "while kondisi:\n    # kode yang diulang",
+                "answer": "Anda dapat mendeklarasikan loop `while` dengan menggunakan sintaks `while kondisi:` diikuti oleh blok kode yang akan diulangi.",
+                "answer_code": "while kondisi:\n    # kode yang diulang"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `break` dalam loop?",
+                "question_code": "for item in iterable:\n    if kondisi:\n        break",
+                "answer": "Pernyataan `break` digunakan untuk menghentikan loop sebelum semua iterasi selesai. Misalnya: `if kondisi: break`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `continue` dalam loop?",
+                "question_code": "for item in iterable:\n    if kondisi:\n        continue\n    # kode berikutnya",
+                "answer": "Pernyataan `continue` digunakan untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya. Misalnya: `if kondisi: continue`."
+            },
+            {
+                "question": "Bagaimana cara membuat loop bersarang di Python?",
+                "question_code": "for i in range(3):\n    for j in range(3):\n        print(i, j)",
+                "answer": "Loop bersarang dapat dibuat dengan menempatkan satu loop di dalam loop lainnya. Contoh: `for i in range(3): for j in range(3):`.",
+                "answer_code": "for i in range(3):\n    for j in range(3):\n        print(i, j)"
+            },
+            {
+                "question": "Bagaimana cara mengakses indeks dalam loop `for`?",
+                "question_code": "for indeks, item in enumerate(iterable):\n    print(indeks, item)",
+                "answer": "Anda dapat mengakses indeks dalam loop `for` menggunakan fungsi `enumerate()`. Contoh: `for indeks, item in enumerate(iterable):`.",
+                "answer_code": "for indeks, item in enumerate(iterable):\n    print(indeks, item)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop `while` dengan pernyataan `else`?",
+                "question_code": "while kondisi:\n    # kode yang diulang\nelse:\n    # kode lain",
+                "answer": "Anda dapat menggunakan pernyataan `else` dengan loop `while` untuk menjalankan blok kode lain ketika kondisi loop tidak lagi terpenuhi.",
+                "answer_code": "while kondisi:\n    # kode yang diulang\nelse:\n    # kode lain"
+            }
+        ]
+    }
+]

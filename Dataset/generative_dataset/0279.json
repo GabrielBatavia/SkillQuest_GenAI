@@ -1,0 +1,86 @@
+[
+  {
+    "sumber": "Real Python",
+    "penulis": "John Doe",
+    "tanggal": "2023-07-10",
+    "judul": "Panduan Lengkap Tentang List di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["list", "data structures", "Python"],
+    "konten": "Artikel ini menjelaskan penggunaan list dalam Python, termasuk operasi dasar seperti penambahan, penghapusan, dan manipulasi list.",
+    "contoh": [
+      {
+        "tipe": "contoh kode",
+        "bahasa": "Python",
+        "isi": "my_list = [1, 2, 3]\nprint(my_list[0])",
+        "komentar": "Mengakses elemen pertama dari list."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "List",
+        "deskripsi": "Memahami penggunaan list sebagai struktur data yang sering digunakan dalam pemrograman Python."
+      },
+      {
+        "topik": "Operasi List",
+        "deskripsi": "Teknik-teknik untuk memanipulasi list seperti menambahkan, menghapus, dan mengakses elemen."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Real Python - Lists",
+        "url": "https://realpython.com/python-lists-tuples/"
+      }
+    ],
+    "highlight": ["list Python", "operasi list"],
+    "error": [
+      {
+        "error": "IndexError",
+        "deskripsi": "Terjadi ketika mencoba mengakses indeks yang tidak ada dalam list.",
+        "contoh": "my_list = [1, 2, 3]\nprint(my_list[5])",
+        "solusi": "Pastikan indeks yang diakses sesuai dengan panjang list yang ada."
+      }
+    ]
+  },
+  {
+    "sumber": "Medium",
+    "penulis": "Jane Smith",
+    "tanggal": "2023-08-15",
+    "judul": "Tutorial Lanjutan: Membangun Web Scraping dengan Python",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["web scraping", "Python", "requests"],
+    "konten": "Tutorial ini membahas cara membangun web scraping menggunakan Python dengan modul requests dan BeautifulSoup.",
+    "contoh": [
+      {
+        "tipe": "contoh kode",
+        "bahasa": "Python",
+        "isi": "import requests\nfrom bs4 import BeautifulSoup\n\nurl = 'https://example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.title)",
+        "komentar": "Mengambil judul halaman dari sebuah situs web."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Web Scraping",
+        "deskripsi": "Teknik untuk mengekstrak informasi dari halaman web menggunakan Python."
+      },
+      {
+        "topik": "Requests dan BeautifulSoup",
+        "deskripsi": "Penggunaan modul requests untuk mengambil konten dari halaman web dan BeautifulSoup untuk memparsing HTML."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Web Scraping Tutorial",
+        "url": "https://realpython.com/beautiful-soup-web-scraper-python/"
+      }
+    ],
+    "highlight": ["web scraping Python", "requests BeautifulSoup"],
+    "error": [
+      {
+        "error": "ConnectionError",
+        "deskripsi": "Kesalahan yang muncul saat gagal terhubung ke server.",
+        "contoh": "response = requests.get('https://example.com')",
+        "solusi": "Periksa kembali URL yang digunakan dan pastikan koneksi internet berfungsi dengan baik."
+      }
+    ]
+  }
+]

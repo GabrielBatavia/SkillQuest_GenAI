@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonProgrammingTips.com",
+    "penulis": "Dina Permata",
+    "tanggal": "2025-01-05",
+    "judul": "Penggunaan Tipe Data Numbers di Python: Int, Float, dan Complex",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["numbers", "int", "float", "complex", "pemula"],
+    "konten": "Artikel ini menjelaskan penggunaan tipe data numbers di Python, termasuk integer (int), float, dan complex. Tipe data numbers digunakan untuk merepresentasikan berbagai jenis angka dan digunakan dalam berbagai operasi matematika.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Tipe data integer\numur = 21\nprint('Umur:', umur)\nprint('Tipe data:', type(umur))",
+            "komentar": "Contoh penggunaan tipe data integer untuk merepresentasikan usia"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Tipe data float\nkecepatan = 60.5\nprint('Kecepatan:', kecepatan)\nprint('Tipe data:', type(kecepatan))",
+            "komentar": "Contoh penggunaan tipe data float untuk merepresentasikan kecepatan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Tipe data complex\nz = 4 + 5j\nprint('Bilangan kompleks:', z)\nprint('Tipe data:', type(z))",
+            "komentar": "Contoh penggunaan tipe data complex untuk merepresentasikan bilangan kompleks"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operasi matematika dasar\npanjang = 10.5\nlebar = 2.3\nluas = panjang * lebar\nkeliling = 2 * (panjang + lebar)\nprint('Luas:', luas)\nprint('Keliling:', keliling)",
+            "komentar": "Contoh operasi matematika dasar dengan menggunakan integer dan float untuk menghitung luas dan keliling persegi panjang"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Konversi tipe data\nangka_str = '56.78'\nangka_float = float(angka_str)\nangka_int = int(float(angka_str))\nprint('String ke float:', angka_float)\nprint('Float ke integer:', angka_int)",
+            "komentar": "Contoh konversi tipe data dari string ke float, kemudian dari float ke integer"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan fungsi matematika bawaan\nimport math\nangka = 49\nakar_kuadrat = math.sqrt(angka)\nlogaritma = math.log(angka)\nprint('Akar kuadrat dari', angka, 'adalah', akar_kuadrat)\nprint('Logaritma dari', angka, 'adalah', logaritma)",
+            "komentar": "Contoh penggunaan fungsi matematika bawaan seperti sqrt dan log"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Pembulatan angka float\nangka = 7.8912\nprint('Pembulatan ke bawah:', math.floor(angka))\nprint('Pembulatan ke atas:', math.ceil(angka))\nprint('Pembulatan biasa:', round(angka))",
+            "komentar": "Contoh pembulatan angka float menggunakan fungsi floor, ceil, dan round"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operasi matematika dengan bilangan kompleks\nz1 = 3 + 4j\nz2 = 1 - 2j\njumlah = z1 + z2\nselisih = z1 - z2\nhasil_kali = z1 * z2\nhasil_bagi = z1 / z2\nprint('Penjumlahan:', jumlah)\nprint('Pengurangan:', selisih)\nprint('Perkalian:', hasil_kali)\nprint('Pembagian:', hasil_bagi)",
+            "komentar": "Contoh penggunaan bilangan kompleks dalam operasi matematika"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Tipe Data Integer",
+            "deskripsi": "Cara menggunakan tipe data integer untuk merepresentasikan bilangan bulat."
+        },
+        {
+            "topik": "Tipe Data Float",
+            "deskripsi": "Cara menggunakan tipe data float untuk merepresentasikan bilangan desimal."
+        },
+        {
+            "topik": "Tipe Data Complex",
+            "deskripsi": "Cara menggunakan tipe data complex untuk merepresentasikan bilangan kompleks."
+        },
+        {
+            "topik": "Operasi Matematika Dasar",
+            "deskripsi": "Cara melakukan operasi matematika dasar dengan menggunakan integer dan float."
+        },
+        {
+            "topik": "Konversi Tipe Data",
+            "deskripsi": "Cara mengonversi tipe data dari string ke float dan dari float ke integer."
+        },
+        {
+            "topik": "Penggunaan Fungsi Matematika Bawaan",
+            "deskripsi": "Cara menggunakan fungsi matematika bawaan seperti sqrt dan log."
+        },
+        {
+            "topik": "Pembulatan Angka Float",
+            "deskripsi": "Cara membulatkan angka float menggunakan fungsi floor, ceil, dan round."
+        },
+        {
+            "topik": "Operasi Bilangan Kompleks",
+            "deskripsi": "Cara menggunakan bilangan kompleks dalam operasi matematika."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Numbers - W3Schools",
+            "url": "https://www.w3schools.com/python/python_numbers.asp"
+        },
+        {
+            "judul": "Numeric Types in Python - Real Python",
+            "url": "https://realpython.com/python-numbers/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data numbers di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana integer, float, dan complex digunakan dalam operasi matematika dan pemrograman"
+    ],
+    "error": [
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi string yang tidak valid ke tipe data numbers.",
+            "contoh": "angka_str = 'abc'\nangka_float = float(angka_str)",
+            "solusi": "Pastikan string yang akan dikonversi ke tipe data numbers adalah representasi angka yang valid."
+        },
+        {
+            "error": "ZeroDivisionError",
+            "deskripsi": "Kesalahan yang terjadi saat melakukan pembagian dengan nol.",
+            "contoh": "hasil = 10 / 0",
+            "solusi": "Pastikan pembagi tidak bernilai nol sebelum melakukan operasi pembagian."
+        }
+    ]
+}

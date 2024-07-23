@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonDeepDive.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-07-25",
+    "judul": "Memahami dan Menggunakan Tipe Data Set di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "set", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data set di Python. Set adalah koleksi yang tidak berurutan dan tidak mengizinkan duplikasi elemen. Set sangat berguna untuk operasi matematika seperti union, intersection, dan difference serta dapat digunakan untuk menghilangkan duplikasi dalam data.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_set = {1, 2, 3, 4, 5}\nprint('Set:', my_set)\nprint('Tipe data:', type(my_set))",
+            "komentar": "Contoh mendefinisikan variabel my_set sebagai set dan mencetak nilainya serta tipe datanya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_list = [1, 2, 2, 3, 4, 4, 5]\nmy_set = set(my_list)\nprint('Set dari list:', my_set)",
+            "komentar": "Contoh mengonversi list menjadi set untuk menghilangkan duplikasi elemen"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_set = {1, 2, 3}\nmy_set.add(4)\nprint('Set setelah penambahan:', my_set)",
+            "komentar": "Contoh menambahkan elemen baru ke set menggunakan metode add()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_set = {1, 2, 3, 4}\nmy_set.remove(3)\nprint('Set setelah penghapusan:', my_set)",
+            "komentar": "Contoh menghapus elemen dari set menggunakan metode remove()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nunion_set = set_a | set_b\nprint('Union dari dua set:', union_set)",
+            "komentar": "Contoh melakukan operasi union pada dua set untuk menggabungkan elemen-elemen dari kedua set"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nintersection_set = set_a & set_b\nprint('Intersection dari dua set:', intersection_set)",
+            "komentar": "Contoh melakukan operasi intersection pada dua set untuk mendapatkan elemen-elemen yang ada di kedua set"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\ndifference_set = set_a - set_b\nprint('Difference dari dua set:', difference_set)",
+            "komentar": "Contoh melakukan operasi difference pada dua set untuk mendapatkan elemen-elemen yang ada di set pertama tetapi tidak di set kedua"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nsymmetric_difference_set = set_a ^ set_b\nprint('Symmetric difference dari dua set:', symmetric_difference_set)",
+            "komentar": "Contoh melakukan operasi symmetric difference pada dua set untuk mendapatkan elemen-elemen yang ada di salah satu set tetapi tidak di keduanya"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Set",
+            "deskripsi": "Cara mendefinisikan set di Python menggunakan tanda kurung kurawal {} atau fungsi set()."
+        },
+        {
+            "topik": "Mengonversi List ke Set",
+            "deskripsi": "Cara mengonversi list menjadi set untuk menghilangkan elemen duplikat dan memastikan elemen unik."
+        },
+        {
+            "topik": "Menambahkan Elemen ke Set",
+            "deskripsi": "Cara menambahkan elemen baru ke set menggunakan metode add()."
+        },
+        {
+            "topik": "Menghapus Elemen dari Set",
+            "deskripsi": "Cara menghapus elemen dari set menggunakan metode remove()."
+        },
+        {
+            "topik": "Operasi Union pada Set",
+            "deskripsi": "Cara melakukan operasi union pada dua set untuk menggabungkan elemen-elemen dari kedua set."
+        },
+        {
+            "topik": "Operasi Intersection pada Set",
+            "deskripsi": "Cara melakukan operasi intersection pada dua set untuk mendapatkan elemen-elemen yang ada di kedua set."
+        },
+        {
+            "topik": "Operasi Difference pada Set",
+            "deskripsi": "Cara melakukan operasi difference pada dua set untuk mendapatkan elemen-elemen yang ada di set pertama tetapi tidak di set kedua."
+        },
+        {
+            "topik": "Operasi Symmetric Difference pada Set",
+            "deskripsi": "Cara melakukan operasi symmetric difference pada dua set untuk mendapatkan elemen-elemen yang ada di salah satu set tetapi tidak di keduanya."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Sets - W3Schools",
+            "url": "https://www.w3schools.com/python/python_sets.asp"
+        },
+        {
+            "judul": "Set Operations in Python - Real Python",
+            "url": "https://realpython.com/python-sets/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data set di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang kelebihan set dalam mengelola data unik dan operasi matematika pada koleksi data"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menambahkan elemen yang tidak hashable ke dalam set.",
+            "contoh": "my_set = {1, 2, 3}\nmy_set.add([4, 5])",
+            "solusi": "Pastikan hanya menambahkan elemen yang hashable seperti angka, string, atau tuple ke dalam set."
+        },
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menghapus elemen yang tidak ada dalam set.",
+            "contoh": "my_set = {1, 2, 3}\nmy_set.remove(4)",
+            "solusi": "Pastikan elemen yang akan dihapus ada dalam set, atau gunakan metode discard() yang tidak menimbulkan error jika elemen tidak ada."
+        }
+    ]
+}

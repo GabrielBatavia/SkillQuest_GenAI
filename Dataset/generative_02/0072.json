@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "pythonmudah.com",
+        "penulis": "Agus Wijaya",
+        "tanggal": "2023-03-12",
+        "judul": "Penggunaan Fungsi Lambda di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "lambda", "fungsi"],
+        "konten": "Artikel ini menjelaskan cara mendefinisikan dan menggunakan fungsi lambda di Python untuk membuat fungsi anonim yang singkat.",
+        "pertanyaan": [
+            {
+                "question": "Mungkin Anda merasa bingung dengan istilah 'fungsi lambda'. Bisa dijelaskan apa sebenarnya itu?",
+                "answer": "Fungsi lambda adalah fungsi anonim kecil yang dapat memiliki sejumlah argumen tetapi hanya satu ekspresi."
+            },
+            {
+                "question": "Anda mungkin belum familiar dengan cara mendefinisikan fungsi lambda. Bagaimana caranya?",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan menggunakan kata kunci `lambda` diikuti dengan argumen dan ekspresi. Contohnya: `lambda x: x * 2`."
+            },
+            {
+                "question": "Apakah Anda pernah bingung tentang bagaimana cara menggunakan fungsi lambda dengan map?",
+                "question_code": "list(map(lambda x: x * 2, [1, 2, 3]))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `map()` untuk menerapkan fungsi ke setiap elemen dalam iterable. Contohnya: `map(lambda x: x * 2, [1, 2, 3])`.",
+                "answer_code": "list(map(lambda x: x * 2, [1, 2, 3]))"
+            },
+            {
+                "question": "Sepertinya Anda belum memahami cara kerja fungsi lambda dengan filter. Bagaimana cara menggunakannya?",
+                "question_code": "list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4]))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `filter()` untuk menyaring elemen dalam iterable. Contohnya: `filter(lambda x: x % 2 == 0, [1, 2, 3, 4])`.",
+                "answer_code": "list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4]))"
+            },
+            {
+                "question": "Apakah Anda kesulitan memahami bagaimana fungsi lambda digunakan dengan reduce?",
+                "question_code": "from functools import reduce\nreduce(lambda x, y: x + y, [1, 2, 3, 4])",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `reduce()` untuk menerapkan fungsi secara kumulatif ke elemen-elemen dalam iterable. Contohnya: `reduce(lambda x, y: x + y, [1, 2, 3, 4])`.",
+                "answer_code": "from functools import reduce\nreduce(lambda x, y: x + y, [1, 2, 3, 4])"
+            },
+            {
+                "question": "Jika Anda merasa bingung tentang penggunaan fungsi lambda dalam sorted, bisa jadi ini membingungkan. Bagaimana cara melakukannya?",
+                "question_code": "sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[1])",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam `sorted()` untuk menentukan kunci pengurutan. Contohnya: `sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[1])`.",
+                "answer_code": "sorted([('a', 3), ('b', 2), ('c', 1)], key=lambda x: x[1])"
+            },
+            {
+                "question": "Apakah Anda bingung tentang bagaimana mendefinisikan fungsi lambda dengan beberapa argumen?",
+                "question_code": "lambda x, y: x + y",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan beberapa argumen dengan memisahkan argumen menggunakan koma. Contohnya: `lambda x, y: x + y`.",
+                "answer_code": "lambda x, y: x + y"
+            },
+            {
+                "question": "Jika Anda merasa sulit menggunakan fungsi lambda dengan list comprehension, bagaimana cara melakukannya?",
+                "question_code": "[lambda x: x * 2 for x in range(5)]",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan list comprehension untuk membuat list fungsi. Contohnya: `[lambda x: x * 2 for x in range(5)]`.",
+                "answer_code": "[lambda x: x * 2 for x in range(5)]"
+            },
+            {
+                "question": "Mungkin Anda merasa bingung dengan penggunaan fungsi lambda dalam dictionary comprehension. Bagaimana cara menggunakannya?",
+                "question_code": "{x: (lambda x: x * 2)(x) for x in range(5)}",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam dictionary comprehension untuk membuat dictionary. Contohnya: `{x: (lambda x: x * 2)(x) for x in range(5)}`.",
+                "answer_code": "{x: (lambda x: x * 2)(x) for x in range(5)}"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpython.org",
+        "penulis": "Indra Kurniawan",
+        "tanggal": "2024-01-20",
+        "judul": "Penggunaan Struktur Data List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list", "struktur data"],
+        "konten": "Artikel ini menjelaskan cara menggunakan list di Python, termasuk cara membuat, mengakses, menambah, menghapus, dan memanipulasi elemen dalam list.",
+        "pertanyaan": [
+            {
+                "question": "Anda mungkin bertanya-tanya, apa sebenarnya list di Python dan bagaimana fungsinya?",
+                "answer": "List adalah struktur data yang dapat menyimpan beberapa item dalam satu variabel dan diakses menggunakan indeks."
+            },
+            {
+                "question": "Bagaimana cara membuat list jika Anda belum familiar dengan prosesnya?",
+                "answer": "Anda bisa membuat list dengan menggunakan tanda kurung siku `[]` dan memisahkan item dengan koma. Contohnya: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Apa yang harus Anda lakukan jika Anda tidak yakin bagaimana cara mengakses elemen dalam list?",
+                "answer": "Anda bisa mengakses elemen dalam list dengan menggunakan indeks. Contohnya: `my_list[0]`."
+            },
+            {
+                "question": "Jika Anda kesulitan menambahkan elemen ke dalam list, bagaimana caranya?",
+                "question_code": "my_list.append(4)",
+                "answer": "Anda bisa menambahkan elemen ke dalam list dengan menggunakan metode `append()`. Contohnya: `my_list.append(4)`.",
+                "answer_code": "my_list.append(4)"
+            },
+            {
+                "question": "Bagaimana jika Anda tidak tahu cara menghapus elemen dari list?",
+                "question_code": "my_list.remove(2)",
+                "answer": "Anda bisa menghapus elemen dari list dengan menggunakan metode `remove()`. Contohnya: `my_list.remove(2)`.",
+                "answer_code": "my_list.remove(2)"
+            },
+            {
+                "question": "Apakah Anda bingung tentang bagaimana cara mengurutkan elemen dalam list?",
+                "question_code": "my_list.sort()",
+                "answer": "Anda bisa mengurutkan elemen dalam list dengan menggunakan metode `sort()`. Contohnya: `my_list.sort()`.",
+                "answer_code": "my_list.sort()"
+            },
+            {
+                "question": "Bagaimana cara membalik urutan elemen dalam list jika Anda belum paham?",
+                "question_code": "my_list.reverse()",
+                "answer": "Anda bisa membalik urutan elemen dalam list dengan menggunakan metode `reverse()`. Contohnya: `my_list.reverse()`.",
+                "answer_code": "my_list.reverse()"
+            },
+            {
+                "question": "Jika Anda tidak yakin tentang cara menemukan indeks elemen dalam list, apa yang harus dilakukan?",
+                "question_code": "my_list.index(3)",
+                "answer": "Anda bisa menemukan indeks elemen dalam list dengan menggunakan metode `index()`. Contohnya: `my_list.index(3)`.",
+                "answer_code": "my_list.index(3)"
+            },
+            {
+                "question": "Apa yang harus Anda lakukan jika Anda ingin menghitung jumlah kemunculan elemen dalam list?",
+                "question_code": "my_list.count(2)",
+                "answer": "Anda bisa menghitung jumlah kemunculan elemen dalam list dengan menggunakan metode `count()`. Contohnya: `my_list.count(2)`.",
+                "answer_code": "my_list.count(2)"
+            }
+        ]
+    }
+]

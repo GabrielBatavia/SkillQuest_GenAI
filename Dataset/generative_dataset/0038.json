@@ -1,0 +1,48 @@
+{
+    "sumber": "BelajarPython.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2020-08-15",
+    "judul": "Memahami Struktur Data di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["struktur data", "menengah"],
+    "konten": "Panduan lengkap tentang berbagai struktur data di Python seperti list, tuple, set, dan dictionary.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_list = [1, 2, 3, 4, 5]\nprint(my_list)",
+            "komentar": "Contoh penggunaan list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_dict = {'nama': 'Ahmad', 'usia': 25}\nprint(my_dict)",
+            "komentar": "Contoh penggunaan dictionary"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "List",
+            "deskripsi": "Struktur data yang dapat menyimpan banyak item dalam satu variabel."
+        },
+        {
+            "topik": "Dictionary",
+            "deskripsi": "Struktur data yang menyimpan nilai dalam bentuk pasangan kunci-nilai."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Tutorial Python di GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-programming-language/"
+        }
+    ],
+    "highlight": ["Detail dan lengkap", "Banyak contoh praktis"],
+    "error": [
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan saat mencoba mengakses kunci yang tidak ada dalam dictionary.",
+            "contoh": "my_dict['alamat']",
+            "solusi": "Pastikan kunci yang diakses ada dalam dictionary."
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "analyticsvidhya.com",
+    "penulis": "Isaac Cooper",
+    "tanggal": "2026-01-20",
+    "judul": "Python Machine Learning: Introduction to Scikit-Learn",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Machine Learning", "Scikit-Learn", "Intermediate"],
+    "konten": "Scikit-Learn is a widely-used library for machine learning in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "from sklearn.linear_model import LinearRegression\nimport numpy as np\n\n# Example of linear regression using Scikit-Learn\nX = np.array([[1], [2], [3]])\ny = np.array([3, 5, 7])\nmodel = LinearRegression().fit(X, y)\nprint('Coefficients:', model.coef_)",
+        "komentar": "Performs linear regression using Scikit-Learn to predict values."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengenalan Machine Learning dengan Scikit-Learn dalam Python",
+        "deskripsi": "Menggunakan Scikit-Learn untuk membangun model machine learning sederhana dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Scikit-Learn Documentation",
+        "url": "https://scikit-learn.org/stable/documentation.html"
+      }
+    ],
+    "highlight": ["widely-used library for machine learning", "Scikit-Learn linear regression"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to mismatched dimensions between features and target in linear regression.",
+        "contoh": "X = np.array([[1, 2], [3, 4]])\nmodel = LinearRegression().fit(X, y)",
+        "solusi": "Ensure features and target arrays have compatible dimensions."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Mia Hill",
+    "tanggal": "2026-02-05",
+    "judul": "Python Virtual Environments: Managing Dependencies with venv",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Virtual Environments", "venv", "Dependency Management", "Pemula"],
+    "konten": "Virtual environments in Python allow you to isolate project dependencies...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Create a virtual environment\npython -m venv myenv\n\n# Activate the virtual environment\nsource myenv/bin/activate",
+        "komentar": "Creates and activates a virtual environment using venv."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Virtual Environments (Lingkungan Virtual) dalam Python",
+        "deskripsi": "Menggunakan virtual environments untuk mengisolasi dan mengelola dependensi proyek dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Virtual Environments Documentation",
+        "url": "https://docs.python.org/3/tutorial/venv.html"
+      }
+    ],
+    "highlight": ["isolate project dependencies", "Python virtual environments"],
+    "error": [
+      {
+        "error": "ModuleNotFoundError",
+        "deskripsi": "ModuleNotFoundError occurred due to missing module in virtual environment.",
+        "contoh": "import pandas",
+        "solusi": "Ensure required modules are installed in the virtual environment."
+      }
+    ]
+  }
+]

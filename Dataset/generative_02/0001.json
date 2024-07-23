@@ -1,0 +1,58 @@
+[
+    {
+        "sumber": "PythonIndo",
+        "penulis": "John Doe",
+        "tanggal": "2024-07-19",
+        "judul": "Pemrograman Dasar dengan Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "pemrograman dasar", "tutorial"],
+        "konten": "Artikel ini menjelaskan konsep dasar pemrograman menggunakan bahasa Python, termasuk variabel, tipe data, dan struktur kontrol dasar.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu variabel dalam Python?",
+                "answer": "Variabel adalah tempat penyimpanan untuk menyimpan data yang dapat berubah-ubah selama program berjalan."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel dalam Python?",
+                "answer": "Variabel dapat dideklarasikan dengan memberikan nama variabel dan nilai, misalnya: x = 5."
+            },
+            {
+                "question": "Apa saja tipe data dasar dalam Python?",
+                "answer": "Tipe data dasar dalam Python termasuk integer, float, string, dan boolean."
+            },
+            {
+                "question": "Bagaimana cara melakukan penjumlahan dua angka dalam Python?",
+                "question_code": "x = 5\ny = 3\nresult = x + y\nprint(result)",
+                "answer": "Anda dapat menggunakan operator + untuk menjumlahkan dua angka. Contoh: x = 5, y = 3, hasil = x + y."
+            },
+            {
+                "question": "Bagaimana cara mengonversi string ke integer dalam Python?",
+                "question_code": "num_str = '10'\nnum_int = int(num_str)\nprint(num_int)",
+                "answer": "Anda dapat menggunakan fungsi int() untuk mengonversi string ke integer. Contoh: num_str = '10', num_int = int(num_str)."
+            },
+            {
+                "question": "Apa itu struktur kontrol if dalam Python?",
+                "question_code": "x = 10\nif x > 5:\n    print('x lebih besar dari 5')",
+                "answer": "Struktur kontrol if digunakan untuk membuat keputusan berdasarkan kondisi tertentu. Contoh: if x > 5: print('x lebih besar dari 5')."
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for dalam Python?",
+                "question_code": "for i in range(5):\n    print(i)",
+                "answer": "Loop for digunakan untuk mengulang blok kode tertentu. Contoh: for i in range(5): print(i).",
+                "answer_code": "0\n1\n2\n3\n4"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while dalam Python?",
+                "question_code": "x = 5\nwhile x > 0:\n    print(x)\n    x -= 1",
+                "answer": "Loop while digunakan untuk mengulang blok kode selama kondisi tertentu benar. Contoh: x = 5 while x > 0: print(x) x -= 1.",
+                "answer_code": "5\n4\n3\n2\n1"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi dalam Python?",
+                "question_code": "def greet(name):\n    return 'Hello ' + name\n\nprint(greet('Alice'))",
+                "answer": "Fungsi dapat didefinisikan menggunakan kata kunci def diikuti oleh nama fungsi dan parameter. Contoh: def greet(name): return 'Hello ' + name.",
+                "answer_code": "Hello Alice"
+            }
+        ]
+    }
+]

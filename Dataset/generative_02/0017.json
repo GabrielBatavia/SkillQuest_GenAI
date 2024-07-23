@@ -1,0 +1,119 @@
+[
+    {
+        "sumber": "kodepython.com",
+        "penulis": "Nurul Fikri",
+        "tanggal": "2023-08-14",
+        "judul": "Pemrosesan File di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "file", "pemrosesan"],
+        "konten": "Artikel ini membahas cara membaca dan menulis file di Python, termasuk cara membuka, memanipulasi, dan menutup file.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuka file di Python?",
+                "answer": "Anda bisa membuka file di Python menggunakan fungsi `open()`. Misalnya: `file = open('file.txt', 'r')`."
+            },
+            {
+                "question": "Bagaimana cara membaca isi file di Python?",
+                "answer": "Anda bisa membaca isi file dengan metode `read()`. Misalnya: `content = file.read()`."
+            },
+            {
+                "question": "Bagaimana cara menulis ke dalam file di Python?",
+                "answer": "Anda bisa menulis ke dalam file menggunakan metode `write()`. Misalnya: `file.write('Hello, World!')`."
+            },
+            {
+                "question": "Bagaimana cara menutup file setelah selesai digunakan?",
+                "question_code": "file.close()",
+                "answer": "Anda harus menutup file setelah selesai digunakan dengan metode `close()`. Misalnya: `file.close()`."
+            },
+            {
+                "question": "Bagaimana cara membaca file baris demi baris di Python?",
+                "question_code": "with open('file.txt', 'r') as file:\n    for line in file:\n        print(line.strip())",
+                "answer": "Anda bisa membaca file baris demi baris menggunakan loop `for` dalam konteks manajer `with`. Misalnya: `for line in file:`.",
+                "answer_code": "for line in file:\n    print(line.strip())"
+            },
+            {
+                "question": "Bagaimana cara menulis beberapa baris ke dalam file?",
+                "question_code": "lines = ['Hello\n', 'World\n']\nwith open('file.txt', 'w') as file:\n    file.writelines(lines)",
+                "answer": "Anda bisa menulis beberapa baris ke dalam file menggunakan metode `writelines()`. Misalnya: `file.writelines(lines)`.",
+                "answer_code": "file.writelines(lines)"
+            },
+            {
+                "question": "Bagaimana cara mengecek keberadaan file sebelum membukanya?",
+                "question_code": "import os\nif os.path.exists('file.txt'):\n    file = open('file.txt', 'r')",
+                "answer": "Anda bisa mengecek keberadaan file menggunakan modul `os` dan fungsi `os.path.exists()`. Misalnya: `if os.path.exists('file.txt'):`.",
+                "answer_code": "if os.path.exists('file.txt'):\n    file = open('file.txt', 'r')"
+            },
+            {
+                "question": "Bagaimana cara menambahkan konten ke file yang sudah ada tanpa menghapus isinya?",
+                "question_code": "with open('file.txt', 'a') as file:\n    file.write('Tambah konten')",
+                "answer": "Anda bisa menambahkan konten ke file yang sudah ada dengan membuka file dalam mode append (`'a'`). Misalnya: `with open('file.txt', 'a') as file:`.",
+                "answer_code": "with open('file.txt', 'a') as file:\n    file.write('Tambah konten')"
+            },
+            {
+                "question": "Bagaimana cara membaca file dalam format binary?",
+                "question_code": "with open('file.bin', 'rb') as file:\n    content = file.read()",
+                "answer": "Anda bisa membaca file dalam format binary dengan membuka file dalam mode binary read (`'rb'`). Misalnya: `with open('file.bin', 'rb') as file:`.",
+                "answer_code": "with open('file.bin', 'rb') as file:\n    content = file.read()"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarcoding.com",
+        "penulis": "Agus Wijaya",
+        "tanggal": "2022-10-30",
+        "judul": "Penggunaan Fungsi Lambda di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "lambda", "fungsi"],
+        "konten": "Artikel ini menjelaskan tentang fungsi lambda di Python, termasuk cara mendefinisikan dan menggunakan fungsi lambda dalam berbagai situasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi lambda di Python?",
+                "answer": "Fungsi lambda adalah fungsi anonim kecil yang bisa memiliki beberapa argumen tetapi hanya satu ekspresi."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi lambda di Python?",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan kata kunci `lambda` diikuti dengan argumen dan ekspresi. Misalnya: `lambda x: x * 2`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam fungsi lain?",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam fungsi lain dengan mendefinisikannya di dalam panggilan fungsi. Misalnya: `map(lambda x: x * 2, my_list)`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan filter?",
+                "question_code": "my_list = [1, 2, 3, 4]\nfiltered_list = list(filter(lambda x: x > 2, my_list))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `filter()` untuk menyaring elemen dalam iterable. Misalnya: `filter(lambda x: x > 2, my_list)`.",
+                "answer_code": "filtered_list = list(filter(lambda x: x > 2, my_list))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan map?",
+                "question_code": "my_list = [1, 2, 3, 4]\nmapped_list = list(map(lambda x: x * 2, my_list))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `map()` untuk menerapkan fungsi ke setiap elemen dalam iterable. Misalnya: `map(lambda x: x * 2, my_list)`.",
+                "answer_code": "mapped_list = list(map(lambda x: x * 2, my_list))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan reduce?",
+                "question_code": "from functools import reduce\nmy_list = [1, 2, 3, 4]\nresult = reduce(lambda x, y: x + y, my_list)",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan `reduce()` untuk menerapkan fungsi secara kumulatif ke elemen-elemen dalam iterable. Misalnya: `reduce(lambda x, y: x + y, my_list)`.",
+                "answer_code": "result = reduce(lambda x, y: x + y, my_list)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam sorted?",
+                "question_code": "my_list = [(1, 'satu'), (2, 'dua'), (3, 'tiga')]\nsorted_list = sorted(my_list, key=lambda x: x[1])",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam `sorted()` untuk menentukan kunci pengurutan. Misalnya: `sorted(my_list, key=lambda x: x[1])`.",
+                "answer_code": "sorted_list = sorted(my_list, key=lambda x: x[1])"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi lambda dengan beberapa argumen?",
+                "question_code": "lambda x, y: x * y",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan beberapa argumen dengan memisahkan argumen menggunakan koma. Misalnya: `lambda x, y: x * y`.",
+                "answer_code": "lambda x, y: x * y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam list comprehension?",
+                "question_code": "[lambda x: x + 1 for x in range(5)]",
+                "answer": "Anda bisa menggunakan fungsi lambda di dalam list comprehension dengan mendefinisikannya di dalam list comprehension. Misalnya: `[lambda x: x + 1 for x in range(5)]`.",
+                "answer_code": "[lambda x: x + 1 for x in range(5)]"
+            }
+        ]
+    }
+]

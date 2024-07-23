@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "Eric V. Smith",
+        "tanggal": "2021-06-23",
+        "judul": "Pemrosesan Teks di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "teks",
+            "pemrosesan"
+        ],
+        "konten": "Artikel ini menjelaskan cara memproses teks di Python, termasuk penggunaan string dan operasi dasar teks.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "text = 'Hello, World!'\nprint(text.upper())",
+                "komentar": "Contoh mengubah teks menjadi huruf kapital menggunakan metode upper()."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "String",
+                "deskripsi": "Tipe data untuk menyimpan teks di Python."
+            },
+            {
+                "topik": "Metode String",
+                "deskripsi": "Fungsi yang dapat digunakan pada objek string, seperti upper(), lower(), dan split()."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Text Processing Services",
+                "url": "https://docs.python.org/3/library/text.html"
+            }
+        ],
+        "highlight": [
+            "Pemrosesan Teks",
+            "Metode String"
+        ],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi saat mencoba menggunakan metode yang tidak ada pada objek.",
+                "contoh": "text.uppercase()",
+                "solusi": "Pastikan metode yang digunakan benar dan ada pada objek."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "Jessica McKellar",
+        "tanggal": "2023-10-21",
+        "judul": "Penanganan File di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "file",
+            "pemrosesan"
+        ],
+        "konten": "Artikel ini menjelaskan cara membuka, membaca, menulis, dan menutup file di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "with open('file.txt', 'r') as file:\n    content = file.read()\nprint(content)",
+                "komentar": "Contoh membaca seluruh konten file menggunakan pernyataan with."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Membuka File",
+                "deskripsi": "Menggunakan fungsi open() untuk membuka file."
+            },
+            {
+                "topik": "Membaca File",
+                "deskripsi": "Menggunakan metode read() untuk membaca konten file."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Reading and Writing Files",
+                "url": "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files"
+            }
+        ],
+        "highlight": [
+            "Penanganan File",
+            "Membaca File"
+        ],
+        "error": [
+            {
+                "error": "FileNotFoundError",
+                "deskripsi": "Terjadi saat file yang ingin dibuka tidak ditemukan.",
+                "contoh": "open('non_existing_file.txt', 'r')",
+                "solusi": "Pastikan nama file benar dan file ada di lokasi yang tepat."
+            }
+        ]
+    }
+]

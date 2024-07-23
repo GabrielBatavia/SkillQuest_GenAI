@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "Educative.io",
+    "penulis": "Educative Team",
+    "tanggal": "2024-07-13",
+    "judul": "Manipulasi String dengan Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "String", "Manipulasi Data"],
+    "konten": "Artikel ini mengajarkan cara manipulasi string dalam Python, termasuk penggunaan metode string seperti split(), join(), dan slicing.",
+    "contoh": [
+      {
+        "tipe": "Contoh Manipulasi String",
+        "bahasa": "Python",
+        "isi": "kalimat = 'Halo Dunia'\nprint(kalimat.split())\nprint(kalimat.lower())",
+        "komentar": "Contoh penggunaan metode split() dan lower() pada string."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Manipulasi String dalam Python",
+        "deskripsi": "Menjelaskan teknik-teknik manipulasi string menggunakan bahasa pemrograman Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python String Methods Documentation",
+        "url": "https://docs.python.org/id/3/library/stdtypes.html#string-methods"
+      }
+    ],
+    "highlight": ["Manipulasi String", "Metode String", "Slicing"],
+    "error": [
+      {
+        "error": "IndexError",
+        "deskripsi": "Kesalahan saat mencoba mengakses indeks di luar rentang yang valid.",
+        "contoh": "kalimat[20]",
+        "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+      }
+    ]
+  },
+  {
+    "sumber": "PythonProgramming.net",
+    "penulis": "Corey Schafer",
+    "tanggal": "2024-07-13",
+    "judul": "Penanganan Eksepsi (Exceptions) dalam Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Exceptions", "Error Handling"],
+    "konten": "Artikel ini membahas penggunaan try-except untuk menangani eksepsi (exceptions) dalam Python, serta penggunaan blok finally dan menangkap eksepsi khusus.",
+    "contoh": [
+      {
+        "tipe": "Contoh Error Handling",
+        "bahasa": "Python",
+        "isi": "try:\n    hasil = 10 / 0\nexcept ZeroDivisionError as e:\n    print('Error:', e)",
+        "komentar": "Contoh penggunaan try-except untuk menangani ZeroDivisionError."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penanganan Eksepsi dalam Python",
+        "deskripsi": "Memperkenalkan teknik-teknik penanganan eksepsi (exceptions) dalam bahasa pemrograman Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Exception Handling Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/errors.html"
+      }
+    ],
+    "highlight": ["Exceptions", "Error Handling", "try-except"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "Kesalahan yang muncul saat tipe data yang diberikan tidak sesuai dengan yang diharapkan.",
+        "contoh": "int('abc')",
+        "solusi": "Pastikan tipe data yang diberikan sesuai dengan yang diharapkan dalam fungsi atau operasi."
+      }
+    ]
+  }
+]

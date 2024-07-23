@@ -1,0 +1,83 @@
+{
+    "sumber": "KodePython.net",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2022-02-20",
+    "judul": "Memahami dan Menggunakan Fungsi Range di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["range", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi range di Python. Fungsi range digunakan untuk menghasilkan urutan angka, yang sangat berguna dalam loop for.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(5):\n    print(i)",
+            "komentar": "Contoh penggunaan fungsi range untuk mencetak angka dari 0 hingga 4"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(1, 6):\n    print(i)",
+            "komentar": "Contoh penggunaan fungsi range dengan start dan end untuk mencetak angka dari 1 hingga 5"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(0, 10, 2):\n    print(i)",
+            "komentar": "Contoh penggunaan fungsi range dengan step untuk mencetak angka genap dari 0 hingga 8"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(10, 0, -1):\n    print(i)",
+            "komentar": "Contoh penggunaan fungsi range dengan step negatif untuk mencetak angka dari 10 hingga 1 secara terbalik"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = list(range(5))\nprint(numbers)",
+            "komentar": "Contoh mengubah range menjadi list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Range",
+            "deskripsi": "Cara menggunakan fungsi range untuk menghasilkan urutan angka."
+        },
+        {
+            "topik": "Parameter Start dan End",
+            "deskripsi": "Cara menentukan nilai awal dan akhir dalam fungsi range."
+        },
+        {
+            "topik": "Parameter Step",
+            "deskripsi": "Cara menggunakan parameter step untuk menentukan selang nilai dalam fungsi range."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python range() Function - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_range.asp"
+        },
+        {
+            "judul": "Understanding Python's range() Function - Real Python",
+            "url": "https://realpython.com/python-range/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi range",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat parameter fungsi range tidak memiliki tipe data yang sesuai.",
+            "contoh": "for i in range('5'):\n    print(i)",
+            "solusi": "Pastikan semua parameter dalam fungsi range adalah tipe integer."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat parameter step dalam fungsi range adalah nol.",
+            "contoh": "for i in range(0, 10, 0):\n    print(i)",
+            "solusi": "Pastikan parameter step tidak nol untuk menghindari loop tak berujung."
+        }
+    ]
+}

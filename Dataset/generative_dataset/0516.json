@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonBeginner.com",
+    "penulis": "Lina Febrianti",
+    "tanggal": "2025-08-25",
+    "judul": "Menguasai Manipulasi Strings di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini mengulas berbagai teknik manipulasi strings di Python, termasuk metode bawaan yang dapat digunakan untuk memanipulasi dan mengelola strings secara efisien.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\npesan = 'Halo, Dunia!'\nprint('Pesan:', pesan)\nprint('Tipe data:', type(pesan))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode upper()\nteks = 'python programming'\nteks_upper = teks.upper()\nprint('Uppercase:', teks_upper)",
+            "komentar": "Mengubah string menjadi huruf besar menggunakan metode upper()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode lower()\nteks = 'PYTHON PROGRAMMING'\nteks_lower = teks.lower()\nprint('Lowercase:', teks_lower)",
+            "komentar": "Mengubah string menjadi huruf kecil menggunakan metode lower()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode split() tanpa delimiter\nteks = 'saya suka python'\nkata_list = teks.split()\nprint('Split tanpa delimiter:', kata_list)",
+            "komentar": "Memisahkan string menjadi list berdasarkan spasi menggunakan metode split() tanpa delimiter"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode join()\nbuah = ['apel', 'jeruk', 'mangga']\nteks = ', '.join(buah)\nprint('Join:', teks)",
+            "komentar": "Menggabungkan list menjadi string menggunakan metode join()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isalnum()\nteks = 'Python3'\nis_alnum = teks.isalnum()\nprint('Apakah teks alfanumerik?', is_alnum)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah huruf atau angka menggunakan metode isalnum()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode rjust()\nangka = '42'\nangka_rjust = angka.rjust(5, '0')\nprint('Rjust:', angka_rjust)",
+            "komentar": "Menambahkan karakter di sebelah kiri string hingga mencapai panjang tertentu menggunakan metode rjust()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode format() dengan nama variabel\nnama = 'Lina'\numur = 24\ninfo = 'Nama saya {nama} dan saya berusia {umur} tahun.'.format(nama=nama, umur=umur)\nprint(info)",
+            "komentar": "Menggunakan metode format() untuk menyisipkan variabel dalam string berdasarkan nama variabel"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode upper()",
+            "deskripsi": "Cara mengubah string menjadi huruf besar menggunakan metode upper()."
+        },
+        {
+            "topik": "Metode lower()",
+            "deskripsi": "Cara mengubah string menjadi huruf kecil menggunakan metode lower()."
+        },
+        {
+            "topik": "Metode split() tanpa Delimiter",
+            "deskripsi": "Cara memisahkan string menjadi list berdasarkan spasi menggunakan metode split() tanpa delimiter."
+        },
+        {
+            "topik": "Metode join()",
+            "deskripsi": "Cara menggabungkan list menjadi string menggunakan metode join()."
+        },
+        {
+            "topik": "Metode isalnum()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah huruf atau angka menggunakan metode isalnum()."
+        },
+        {
+            "topik": "Metode rjust()",
+            "deskripsi": "Cara menambahkan karakter di sebelah kiri string hingga mencapai panjang tertentu menggunakan metode rjust()."
+        },
+        {
+            "topik": "Metode format() dengan Nama Variabel",
+            "deskripsi": "Cara menggunakan metode format() untuk menyisipkan variabel dalam string berdasarkan nama variabel."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Lina'\numur = 24\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

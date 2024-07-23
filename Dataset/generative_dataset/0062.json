@@ -1,0 +1,84 @@
+{
+    "sumber": "kursuspythononline.id",
+    "penulis": "Andi Prasetyo",
+    "tanggal": "2024-07-10",
+    "judul": "Dasar-Dasar Penggunaan If-Else di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "If-Else", "Conditional", "Pemula"],
+    "konten": "Artikel ini menjelaskan dasar-dasar penggunaan pernyataan if-else di Python untuk membuat keputusan dalam program berdasarkan kondisi tertentu.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = 10\nif angka > 5:\n    print('Angka lebih besar dari 5')",
+            "komentar": "Menggunakan pernyataan if untuk memeriksa apakah angka lebih besar dari 5."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = 4\nif angka > 5:\n    print('Angka lebih besar dari 5')\nelse:\n    print('Angka tidak lebih besar dari 5')",
+            "komentar": "Menggunakan pernyataan if-else untuk memberikan alternatif jika kondisi if tidak terpenuhi."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = 7\nif angka > 10:\n    print('Angka lebih besar dari 10')\nelif angka > 5:\n    print('Angka lebih besar dari 5 tetapi tidak lebih besar dari 10')\nelse:\n    print('Angka 5 atau kurang')",
+            "komentar": "Menggunakan pernyataan elif untuk menambahkan kondisi tambahan setelah if."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "buah = 'apel'\nif buah == 'jeruk':\n    print('Ini adalah jeruk')\nelse:\n    print('Ini bukan jeruk')",
+            "komentar": "Menggunakan pernyataan if-else untuk memeriksa apakah variabel buah adalah 'jeruk'."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "nilai = 85\nif nilai >= 90:\n    print('A')\nelif nilai >= 80:\n    print('B')\nelif nilai >= 70:\n    print('C')\nelif nilai >= 60:\n    print('D')\nelse:\n    print('F')",
+            "komentar": "Menggunakan beberapa pernyataan elif untuk memberikan penilaian berdasarkan nilai."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Pernyataan If",
+            "deskripsi": "Memahami dasar-dasar penggunaan pernyataan if di Python."
+        },
+        {
+            "topik": "Pernyataan If-Else",
+            "deskripsi": "Cara menggunakan pernyataan if-else untuk membuat keputusan berdasarkan kondisi."
+        },
+        {
+            "topik": "Pernyataan Elif",
+            "deskripsi": "Menggunakan pernyataan elif untuk menambahkan kondisi tambahan setelah if."
+        },
+        {
+            "topik": "Operator Perbandingan",
+            "deskripsi": "Penggunaan operator perbandingan seperti >, <, ==, >=, <= dalam pernyataan if."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python If...Else",
+            "url": "https://www.w3schools.com/python/python_conditions.asp"
+        },
+        {
+            "judul": "Conditional Statements in Python",
+            "url": "https://realpython.com/python-conditional-statements/"
+        }
+    ],
+    "highlight": ["Dasar if-else", "Menggunakan elif", "Operator perbandingan dalam if"],
+    "error": [
+        {
+            "error": "IndentationError",
+            "deskripsi": "Kesalahan yang terjadi saat indentasi tidak sesuai dalam blok if-else.",
+            "contoh": "angka = 10\nif angka > 5:\nprint('Angka lebih besar dari 5')",
+            "solusi": "Pastikan semua kode dalam blok if-else memiliki indentasi yang konsisten."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat ada kesalahan sintaks dalam pernyataan if-else.",
+            "contoh": "if angka > 5\n    print('Angka lebih besar dari 5')",
+            "solusi": "Pastikan semua tanda kurung dan titik dua (:) digunakan dengan benar."
+        }
+    ]
+}

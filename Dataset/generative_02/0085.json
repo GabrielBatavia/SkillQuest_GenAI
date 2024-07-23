@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "programmerintro.com",
+        "penulis": "Budi Pratama",
+        "tanggal": "2024-05-15",
+        "judul": "Memahami Dictionary di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "dictionary", "basic"],
+        "konten": "Artikel ini memberikan panduan dasar tentang penggunaan dictionary di Python, termasuk pembuatan, akses, penambahan, dan penghapusan item dalam dictionary.",
+        "pertanyaan": [
+            {
+                "question": "Saya masih bingung tentang apa itu dictionary. Bisa jelasin lebih?",
+                "answer": "Dictionary adalah tipe data di Python yang menyimpan data sebagai pasangan kunci-nilai. Kunci digunakan untuk mengidentifikasi dan mengakses nilai yang terkait."
+            },
+            {
+                "question": "Bagaimana saya bisa mulai membuat dictionary? Saya tidak tahu bagaimana caranya.",
+                "answer": "Untuk membuat dictionary, Anda perlu menggunakan tanda kurung kurawal `{}` dan menuliskan pasangan kunci-nilai di dalamnya. Misalnya: `my_dict = {'key': 'value'}`."
+            },
+            {
+                "question": "Bagaimana cara mengambil nilai dari dictionary? Saya tidak paham bagaimana cara aksesnya.",
+                "answer": "Untuk mengakses nilai dari dictionary, gunakan kunci yang sesuai di dalam tanda kurung. Contoh: `my_dict['key']` akan mengembalikan nilai yang terkait dengan 'key'."
+            },
+            {
+                "question": "Saya tidak tahu cara menambahkan item baru ke dictionary. Ada contoh mudah?",
+                "question_code": "my_dict['new_key'] = 'new_value'",
+                "answer": "Menambahkan item baru dilakukan dengan menugaskan nilai ke kunci baru. Misalnya: `my_dict['new_key'] = 'new_value'` menambahkan pasangan baru ke dictionary.",
+                "answer_code": "my_dict['new_key'] = 'new_value'"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari dictionary? Saya bingung caranya.",
+                "question_code": "del my_dict['key']",
+                "answer": "Untuk menghapus item, gunakan perintah `del` diikuti dengan kunci item yang ingin dihapus. Misalnya: `del my_dict['key']`.",
+                "answer_code": "del my_dict['key']"
+            },
+            {
+                "question": "Bagaimana cara memeriksa keberadaan kunci dalam dictionary? Saya tidak yakin.",
+                "question_code": "'key' in my_dict",
+                "answer": "Anda bisa menggunakan operator `in` untuk memeriksa apakah kunci ada dalam dictionary. Contoh: `'key' in my_dict` akan mengembalikan `True` jika kunci ada.",
+                "answer_code": "'key' in my_dict"
+            },
+            {
+                "question": "Saya tidak tahu bagaimana cara mendapatkan daftar kunci dari dictionary. Bisa beri contoh?",
+                "question_code": "my_dict.keys()",
+                "answer": "Gunakan metode `keys()` untuk mendapatkan semua kunci dalam dictionary. Misalnya: `my_dict.keys()` akan mengembalikan semua kunci yang ada.",
+                "answer_code": "my_dict.keys()"
+            },
+            {
+                "question": "Bagaimana cara melihat semua nilai dalam dictionary? Saya tidak paham caranya.",
+                "question_code": "my_dict.values()",
+                "answer": "Metode `values()` digunakan untuk mendapatkan semua nilai dalam dictionary. Contoh: `my_dict.values()` akan mengembalikan daftar semua nilai.",
+                "answer_code": "my_dict.values()"
+            },
+            {
+                "question": "Bagaimana cara memperbarui nilai dalam dictionary? Saya bingung dengan prosesnya.",
+                "question_code": "my_dict['key'] = 'updated_value'",
+                "answer": "Untuk memperbarui nilai, Anda bisa menugaskan nilai baru ke kunci yang sudah ada. Contoh: `my_dict['key'] = 'updated_value'`.",
+                "answer_code": "my_dict['key'] = 'updated_value'"
+            }
+        ]
+    },
+    {
+        "sumber": "learnpythontoday.com",
+        "penulis": "Diana Kusuma",
+        "tanggal": "2024-07-30",
+        "judul": "Dasar-Dasar String di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "intro"],
+        "konten": "Artikel ini menjelaskan dasar-dasar string di Python, mencakup pembuatan, akses, manipulasi, dan format string.",
+        "pertanyaan": [
+            {
+                "question": "Saya tidak mengerti apa itu string di Python. Bisa jelasin?",
+                "answer": "String adalah tipe data di Python yang digunakan untuk menyimpan teks. Anda dapat membuat string dengan menulis teks di dalam tanda kutip tunggal (`'`) atau ganda (`\"`)."
+            },
+            {
+                "question": "Bagaimana cara memulai dengan string? Saya tidak tahu bagaimana membuatnya.",
+                "answer": "Untuk membuat string, cukup letakkan teks di dalam tanda kutip. Contoh: `str1 = 'Hello'` atau `str2 = \"World\"`."
+            },
+            {
+                "question": "Saya bingung bagaimana mengakses karakter dalam string. Ada caranya?",
+                "answer": "Anda bisa mengakses karakter dalam string menggunakan indeks. Misalnya, `str1[0]` akan mengembalikan karakter pertama dari string `str1`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string? Saya tidak tahu caranya.",
+                "question_code": "str1 + str2",
+                "answer": "Untuk menggabungkan dua string, gunakan operator `+`. Contoh: `str1 + str2` akan menghasilkan gabungan dari `str1` dan `str2`.",
+                "answer_code": "str1 + str2"
+            },
+            {
+                "question": "Bagaimana cara mengulang string beberapa kali? Saya tidak paham.",
+                "question_code": "str1 * 5",
+                "answer": "Gunakan operator `*` untuk mengulang string. Contoh: `str1 * 5` akan mengulang string `str1` sebanyak lima kali.",
+                "answer_code": "str1 * 5"
+            },
+            {
+                "question": "Saya tidak tahu bagaimana memeriksa apakah substring ada dalam string. Ada metode tertentu?",
+                "question_code": "'substring' in str1",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan substring dalam string. Misalnya: `'substring' in str1` akan mengembalikan `True` jika substring ada.",
+                "answer_code": "'substring' in str1"
+            },
+            {
+                "question": "Bagaimana cara mengganti substring dalam string? Saya bingung.",
+                "question_code": "str1.replace('old', 'new')",
+                "answer": "Untuk mengganti substring, gunakan metode `replace()`. Misalnya: `str1.replace('old', 'new')` mengganti semua kemunculan 'old' dengan 'new'.",
+                "answer_code": "str1.replace('old', 'new')"
+            },
+            {
+                "question": "Bagaimana mengubah seluruh string menjadi huruf kapital? Saya tidak mengerti.",
+                "question_code": "str1.upper()",
+                "answer": "Gunakan metode `upper()` untuk mengubah string menjadi huruf kapital. Misalnya: `str1.upper()` akan mengubah seluruh string `str1` menjadi huruf kapital.",
+                "answer_code": "str1.upper()"
+            },
+            {
+                "question": "Bagaimana cara menghapus spasi di awal dan akhir string? Saya bingung.",
+                "question_code": "str1.strip()",
+                "answer": "Gunakan metode `strip()` untuk menghapus spasi di awal dan akhir string. Contoh: `str1.strip()` akan menghapus spasi dari kedua ujung string.",
+                "answer_code": "str1.strip()"
+            },
+            {
+                "question": "Bagaimana cara memformat string dengan variabel? Saya tidak tahu caranya.",
+                "question_code": "\"Hello, {}\".format(name)",
+                "answer": "Gunakan metode `format()` untuk memformat string dengan variabel. Misalnya: `\"Hello, {}\".format(name)` akan menyisipkan nilai dari variabel `name` ke dalam string.",
+                "answer_code": "\"Hello, {}\".format(name)"
+            }
+        ]
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "sumber": "dunia-python.com",
+        "penulis": "Siti Rahmawati",
+        "tanggal": "2024-02-12",
+        "judul": "Memahami Penggunaan Loop di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "Loop", "Menengah"],
+        "konten": "Artikel ini membahas berbagai jenis loop di Python seperti for loop dan while loop, serta penggunaannya dalam berbagai konteks.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "for i in range(5):\n    print(i)",
+                "komentar": "Mencetak angka dari 0 hingga 4 menggunakan for loop."
+            },
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1",
+                "komentar": "Mencetak angka dari 0 hingga 4 menggunakan while loop."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "For Loop",
+                "deskripsi": "Cara menggunakan for loop untuk iterasi."
+            },
+            {
+                "topik": "While Loop",
+                "deskripsi": "Cara menggunakan while loop untuk iterasi hingga kondisi tertentu terpenuhi."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Pengulangan di Python",
+                "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+            }
+        ],
+        "highlight": ["Pengulangan dengan for", "Pengulangan dengan while"],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaksis dalam penulisan loop.",
+                "contoh": "for i in range(5) print(i)",
+                "solusi": "Tambahkan titik dua (:) setelah deklarasi for loop."
+            },
+            {
+                "error": "Infinite Loop",
+                "deskripsi": "Loop yang tidak pernah berhenti karena kondisi tidak pernah menjadi False.",
+                "contoh": "i = 0\nwhile i < 5:\n    print(i)",
+                "solusi": "Pastikan kondisi loop dapat menjadi False dengan mengubah nilai variabel yang terlibat."
+            }
+        ]
+    },
+    {
+        "sumber": "pythonbasic.com",
+        "penulis": "Rudi Hartono",
+        "tanggal": "2023-10-21",
+        "judul": "Pemahaman Tentang Exception Handling di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["Python", "Exception", "Lanjutan"],
+        "konten": "Artikel ini menjelaskan cara menangani kesalahan (exception) di Python dengan menggunakan try, except, dan finally.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('Tidak bisa membagi dengan nol.')",
+                "komentar": "Menangani kesalahan pembagian dengan nol."
+            },
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "try:\n    file = open('file_tidak_ada.txt')\nexcept FileNotFoundError:\n    print('File tidak ditemukan.')\nfinally:\n    print('Blok finally dieksekusi.')",
+                "komentar": "Menangani kesalahan saat file tidak ditemukan dan tetap mengeksekusi blok finally."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Try-Except",
+                "deskripsi": "Cara menangani kesalahan dengan try-except."
+            },
+            {
+                "topik": "Finally",
+                "deskripsi": "Penggunaan blok finally untuk mengeksekusi kode setelah try-except."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Handling Errors di Python",
+                "url": "https://docs.python.org/3/tutorial/errors.html"
+            }
+        ],
+        "highlight": ["Penanganan kesalahan", "Penggunaan finally"],
+        "error": [
+            {
+                "error": "ZeroDivisionError",
+                "deskripsi": "Kesalahan saat melakukan pembagian dengan nol.",
+                "contoh": "x = 1 / 0",
+                "solusi": "Gunakan try-except untuk menangani pembagian dengan nol."
+            },
+            {
+                "error": "FileNotFoundError",
+                "deskripsi": "Kesalahan saat mencoba membuka file yang tidak ada.",
+                "contoh": "file = open('file_tidak_ada.txt')",
+                "solusi": "Gunakan try-except untuk menangani file yang tidak ditemukan."
+            }
+        ]
+    }
+]

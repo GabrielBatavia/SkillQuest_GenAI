@@ -1,0 +1,89 @@
+{
+    "sumber": "PythonLearningHub.net",
+    "penulis": "Nina Susanti",
+    "tanggal": "2024-05-15",
+    "judul": "Memahami dan Menggunakan Variabel Default dan Lokal di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "default", "local", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel default dan lokal di Python. Variabel default digunakan dalam fungsi untuk memberikan nilai awal jika tidak ada argumen yang diberikan, sementara variabel lokal didefinisikan di dalam fungsi dan hanya dapat diakses di dalam fungsi tersebut.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def greet(name='Guest'):\n    print('Hello, ' + name)\n\ngreet()\ngreet('Alice')",
+            "komentar": "Contoh mendefinisikan fungsi dengan parameter default dan memanggil fungsi tersebut tanpa dan dengan argumen"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def add(a, b=5):\n    return a + b\n\nprint(add(10))\nprint(add(10, 20))",
+            "komentar": "Contoh mendefinisikan fungsi dengan satu parameter default dan satu parameter wajib, kemudian memanggil fungsi tersebut dengan satu dan dua argumen"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def my_function():\n    local_var = 'I am local'\n    print(local_var)\n\nmy_function()\n# print(local_var)  # Ini akan menyebabkan NameError karena local_var tidak dapat diakses di luar fungsi",
+            "komentar": "Contoh mendefinisikan variabel lokal di dalam fungsi dan menjelaskan bahwa variabel ini hanya dapat diakses di dalam fungsi tersebut"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def multiply(x, y=2):\n    result = x * y\n    return result\n\nprint(multiply(5))\nprint(multiply(5, 3))",
+            "komentar": "Contoh mendefinisikan fungsi dengan parameter default dan menggunakan variabel lokal untuk menyimpan hasil perhitungan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def display_info(name, age=30):\n    info = f'Name: {name}, Age: {age}'\n    print(info)\n\ndisplay_info('Bob')\ndisplay_info('Bob', 40)",
+            "komentar": "Contoh mendefinisikan fungsi dengan parameter default dan menggunakan variabel lokal untuk menyimpan string format"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def calculate_discount(price, discount=0.1):\n    final_price = price * (1 - discount)\n    return final_price\n\nprint(calculate_discount(100))\nprint(calculate_discount(100, 0.2))",
+            "komentar": "Contoh mendefinisikan fungsi dengan parameter default untuk menghitung harga setelah diskon dan menggunakan variabel lokal untuk menyimpan harga akhir"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Parameter Default",
+            "deskripsi": "Cara mendefinisikan dan menggunakan parameter default dalam fungsi di Python untuk memberikan nilai awal jika tidak ada argumen yang diberikan."
+        },
+        {
+            "topik": "Variabel Lokal dalam Fungsi",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel lokal di dalam fungsi dan memahami keterbatasan aksesnya di luar fungsi."
+        },
+        {
+            "topik": "Penggunaan Variabel Lokal untuk Perhitungan",
+            "deskripsi": "Cara menggunakan variabel lokal di dalam fungsi untuk menyimpan hasil perhitungan atau nilai sementara lainnya."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Function Arguments - W3Schools",
+            "url": "https://www.w3schools.com/python/python_functions.asp"
+        },
+        {
+            "judul": "Default Arguments in Python - Real Python",
+            "url": "https://realpython.com/python-default-argument/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan parameter default dan variabel lokal di dalam fungsi di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat memanggil fungsi tanpa memberikan semua parameter wajib.",
+            "contoh": "def add(a, b):\n    return a + b\n\nprint(add(10))",
+            "solusi": "Pastikan untuk memberikan semua parameter wajib saat memanggil fungsi atau berikan nilai default untuk parameter opsional."
+        },
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses variabel lokal di luar fungsi.",
+            "contoh": "def my_function():\n    local_var = 'I am local'\nmy_function()\nprint(local_var)",
+            "solusi": "Pastikan variabel lokal hanya diakses di dalam fungsi tempat variabel tersebut didefinisikan."
+        }
+    ]
+}

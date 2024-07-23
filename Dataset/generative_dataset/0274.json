@@ -1,0 +1,72 @@
+[
+  {
+    "sumber": "Stack Overflow",
+    "penulis": "Rizky Pratama",
+    "tanggal": "2023-09-10",
+    "judul": "Optimisasi Kode Python: Cara Mempercepat Eksekusi Program",
+    "tingkat_kesulitan": "Mahir",
+    "tag": ["Python", "Optimisasi", "Performance"],
+    "konten": "Memahami teknik dan praktik untuk mengoptimalkan kinerja kode Python sangat penting untuk aplikasi yang skalabel dan efisien. Artikel ini membahas profiling, caching, dan algoritma optimisasi.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import time\nstart_time = time.time()\n# Kode yang akan diuji\nend_time = time.time()\nprint(f'Waktu eksekusi: {end_time - start_time} detik')",
+        "komentar": "Contoh penggunaan time untuk mengukur waktu eksekusi kode."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Optimisasi Kode",
+        "deskripsi": "Teknik dan strategi untuk meningkatkan performa kode Python."
+      },
+      {
+        "topik": "Performance",
+        "deskripsi": "Peningkatan performa aplikasi Python melalui optimisasi kode."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Performance Optimization Guide",
+        "url": "https://stackify.com/python-performance-tuning/"
+      }
+    ],
+    "highlight": ["Optimisasi", "Performance", "Profiling"],
+    "error": []
+  },
+  {
+    "sumber": "Python Software Foundation",
+    "penulis": "Andi Susanto",
+    "tanggal": "2023-08-05",
+    "judul": "Menggunakan Modul SQLite untuk Database dalam Aplikasi Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "SQLite", "Database"],
+    "konten": "SQLite adalah modul database ringan yang terintegrasi dengan Python. Artikel ini menjelaskan cara membuat, mengakses, dan memanipulasi database SQLite.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import sqlite3\n# Membuat koneksi\nconn = sqlite3.connect('database.db')\n# Membuat cursor\ncur = conn.cursor()\n# Membuat tabel\ncur.execute('''CREATE TABLE IF NOT EXISTS mahasiswa (id INTEGER PRIMARY KEY, nama TEXT, usia INTEGER)''')\n# Menambahkan data\ncur.execute('''INSERT INTO mahasiswa (nama, usia) VALUES ('John', 30)''')\n# Commit perubahan\nconn.commit()\n# Menutup koneksi\nconn.close()",
+        "komentar": "Contoh penggunaan SQLite untuk membuat database dan tabel, serta menambahkan data."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "SQLite",
+        "deskripsi": "Penggunaan SQLite untuk database lokal dalam aplikasi Python."
+      },
+      {
+        "topik": "Database",
+        "deskripsi": "Manipulasi data dan pengelolaan database menggunakan Python dan SQLite."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "SQLite Documentation",
+        "url": "https://docs.python.org/id/3/library/sqlite3.html"
+      }
+    ],
+    "highlight": ["SQLite", "Database", "SQL"],
+    "error": []
+  }
+]

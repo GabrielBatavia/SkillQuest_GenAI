@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "TutorialsPoint",
+    "penulis": "TutorialsPoint Team",
+    "tanggal": "2024-07-13",
+    "judul": "Penggunaan List Comprehension dalam Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "List Comprehension", "Pemrograman Fungsional"],
+    "konten": "List comprehension adalah teknik yang kuat untuk membuat dan memanipulasi list dalam Python. Artikel ini membahas sintaks dan penggunaan list comprehension untuk filter dan transformasi data.",
+    "contoh": [
+      {
+        "tipe": "Contoh List Comprehension",
+        "bahasa": "Python",
+        "isi": "numbers = [1, 2, 3, 4, 5]\nsquared = [x**2 for x in numbers]",
+        "komentar": "Contoh pembuatan list squared menggunakan list comprehension."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "List Comprehension dalam Python",
+        "deskripsi": "Memperkenalkan penggunaan teknik list comprehension untuk manipulasi data dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python List Comprehension Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/datastructures.html#list-comprehensions"
+      }
+    ],
+    "highlight": ["List Comprehension", "Filter Data", "Transformasi Data"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan sintaks umum karena penulisan list comprehension yang salah.",
+        "contoh": "[x for x in range(10]",
+        "solusi": "Perbaiki dengan menambahkan tanda kurung siku yang sesuai."
+      }
+    ]
+  },
+  {
+    "sumber": "Analytics Vidhya",
+    "penulis": "Analytics Vidhya Team",
+    "tanggal": "2024-07-13",
+    "judul": "Pengenalan Matplotlib untuk Visualisasi Data",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Matplotlib", "Visualisasi Data"],
+    "konten": "Matplotlib adalah pustaka visualisasi data yang populer dalam Python. Artikel ini membahas penggunaan Matplotlib untuk membuat grafik seperti scatter plot, line plot, dan histogram.",
+    "contoh": [
+      {
+        "tipe": "Contoh Visualisasi Data",
+        "bahasa": "Python",
+        "isi": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [10, 20, 25, 30, 35]\n\nplt.plot(x, y)\nplt.xlabel('x-axis')\nplt.ylabel('y-axis')\nplt.title('Contoh Line Plot')\nplt.show()",
+        "komentar": "Contoh pembuatan line plot menggunakan Matplotlib."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Matplotlib untuk Visualisasi Data",
+        "deskripsi": "Memperkenalkan penggunaan Matplotlib untuk visualisasi data dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Matplotlib Documentation",
+        "url": "https://matplotlib.org/contents.html"
+      }
+    ],
+    "highlight": ["Matplotlib", "Grafik", "Visualisasi Data"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "Kesalahan saat memasukkan data yang tidak valid ke dalam fungsi visualisasi seperti plot().",
+        "contoh": "plt.plot([1, 2, 3], [1, 4])",
+        "solusi": "Pastikan jumlah data pada sumbu x dan y sesuai atau sama."
+      }
+    ]
+  }
+]

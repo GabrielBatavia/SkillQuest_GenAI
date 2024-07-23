@@ -1,0 +1,192 @@
+[
+    {
+        "sumber": "PythonPemula.com",
+        "penulis": "Rian Saputra",
+        "tanggal": "2024-07-13",
+        "judul": "Dasar-Dasar Pemrograman Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["dasar", "pemula", "python"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pemrograman Python, termasuk sintaks dasar dan penggunaan variabel.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "x = 5\ny = 10\nprint(x + y)",
+                "komentar": "Contoh kode untuk menambahkan dua angka dan mencetak hasilnya."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Variabel",
+                "deskripsi": "Bagaimana mendeklarasikan dan menggunakan variabel dalam Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Variables",
+                "url": "https://www.w3schools.com/python/python_variables.asp"
+            }
+        ],
+        "highlight": ["Sintaks sederhana", "Penggunaan variabel mudah"],
+        "error": [
+            {
+                "error": "NameError",
+                "deskripsi": "Terjadi ketika variabel yang belum dideklarasikan digunakan.",
+                "contoh": "print(z)",
+                "solusi": "Pastikan variabel sudah dideklarasikan sebelum digunakan."
+            }
+        ]
+    },
+    {
+        "sumber": "BelajarPython.net",
+        "penulis": "Indra Permana",
+        "tanggal": "2024-06-20",
+        "judul": "Kontrol Alur di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["kontrol alur", "if", "loop"],
+        "konten": "Artikel ini membahas tentang struktur kontrol alur seperti if-else dan loop di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "for i in range(5):\n    print(i)",
+                "komentar": "Contoh penggunaan loop for untuk mencetak angka dari 0 hingga 4."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Looping",
+                "deskripsi": "Bagaimana menggunakan loop untuk mengulang eksekusi kode."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python For Loops",
+                "url": "https://www.learnpython.org/en/Loops"
+            }
+        ],
+        "highlight": ["Kontrol alur fleksibel", "Struktur kode yang jelas"],
+        "error": [
+            {
+                "error": "IndentationError",
+                "deskripsi": "Terjadi ketika indentasi kode tidak konsisten.",
+                "contoh": "for i in range(5):\nprint(i)",
+                "solusi": "Pastikan semua blok kode memiliki indentasi yang konsisten."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonMahir.org",
+        "penulis": "Lisa Santika",
+        "tanggal": "2024-07-05",
+        "judul": "Pemrograman Berorientasi Objek di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["oop", "kelas", "objek"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pemrograman berorientasi objek (OOP) di Python, termasuk pembuatan kelas dan objek.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "class Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\ncar1 = Car('Toyota', 'Corolla')\nprint(car1.brand, car1.model)",
+                "komentar": "Contoh kelas Car dengan atribut brand dan model."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Kelas dan Objek",
+                "deskripsi": "Bagaimana mendefinisikan kelas dan membuat objek di Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python Classes and Objects",
+                "url": "https://www.programiz.com/python-programming/class"
+            }
+        ],
+        "highlight": ["Encapsulation", "Reusability"],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi ketika atribut yang tidak ada diakses.",
+                "contoh": "print(car1.color)",
+                "solusi": "Pastikan atribut sudah didefinisikan di kelas."
+            }
+        ]
+    },
+    {
+        "sumber": "KodingPython.com",
+        "penulis": "Ahmad Taufik",
+        "tanggal": "2024-07-08",
+        "judul": "Manipulasi String di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["string", "manipulasi", "python"],
+        "konten": "Artikel ini membahas berbagai metode untuk manipulasi string di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "text = 'Hello, World!'\nprint(text.lower())",
+                "komentar": "Contoh penggunaan metode lower() untuk mengubah string menjadi huruf kecil."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Metode String",
+                "deskripsi": "Berbagai metode yang tersedia untuk manipulasi string di Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Python String Methods",
+                "url": "https://www.w3schools.com/python/python_ref_string.asp"
+            }
+        ],
+        "highlight": ["Fungsi bawaan yang kuat", "Manipulasi string mudah"],
+        "error": [
+            {
+                "error": "TypeError",
+                "deskripsi": "Terjadi ketika operasi tidak didukung oleh tipe data yang digunakan.",
+                "contoh": "print(text + 5)",
+                "solusi": "Pastikan operasi yang dilakukan sesuai dengan tipe data."
+            }
+        ]
+    },
+    {
+        "sumber": "ExpertPython.net",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-07-10",
+        "judul": "Pemrograman Asinkron di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["asinkron", "async", "await"],
+        "konten": "Artikel ini menjelaskan konsep pemrograman asinkron di Python dengan menggunakan async dan await.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "import asyncio\n\nasync def say_hello():\n    print('Hello')\n    await asyncio.sleep(1)\n    print('World')\n\nasyncio.run(say_hello())",
+                "komentar": "Contoh fungsi asinkron sederhana menggunakan async dan await."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Pemrograman Asinkron",
+                "deskripsi": "Dasar-dasar pemrograman asinkron di Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Async IO in Python",
+                "url": "https://realpython.com/async-io-python/"
+            }
+        ],
+        "highlight": ["Non-blocking IO", "Efisiensi tinggi"],
+        "error": [
+            {
+                "error": "RuntimeError",
+                "deskripsi": "Terjadi ketika loop event berjalan di thread yang salah.",
+                "contoh": "asyncio.run(say_hello()) di dalam loop event",
+                "solusi": "Pastikan loop event dijalankan di thread utama."
+            }
+        ]
+    }
+]

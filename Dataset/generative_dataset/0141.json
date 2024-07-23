@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonLearningHub.net",
+    "penulis": "Dewi Ayu",
+    "tanggal": "2024-08-01",
+    "judul": "Memahami dan Menggunakan Tipe Data Tuple di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "tuple", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data tuple di Python. Tuple adalah struktur data yang tidak dapat diubah (immutable) dan digunakan untuk menyimpan kumpulan elemen yang berurutan. Tuple sering digunakan ketika kita ingin memastikan data yang disimpan tidak dapat diubah setelah didefinisikan.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 2, 3, 4, 5)\nprint('Tuple:', my_tuple)\nprint('Tipe data:', type(my_tuple))",
+            "komentar": "Contoh mendefinisikan variabel my_tuple sebagai tuple dan mencetak nilainya serta tipe datanya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 'Python', 3.14)\nprint('Tuple dengan berbagai tipe data:', my_tuple)",
+            "komentar": "Contoh mendefinisikan tuple dengan elemen-elemen dari berbagai tipe data"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nested_tuple = (1, (2, 3), 4)\nprint('Tuple bersarang:', nested_tuple)\nprint('Akses elemen bersarang:', nested_tuple[1][0])",
+            "komentar": "Contoh mendefinisikan tuple bersarang dan mengakses elemen-elemen di dalamnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 2, 3, 4, 5)\nprint('Elemen pertama:', my_tuple[0])\nprint('Elemen terakhir:', my_tuple[-1])",
+            "komentar": "Contoh mengakses elemen dalam tuple menggunakan indeks positif dan negatif"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 2, 3, 4, 5)\nprint('Irisan tuple (slice):', my_tuple[1:4])",
+            "komentar": "Contoh menggunakan slicing untuk mengakses sekelompok elemen dalam tuple"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def return_multiple_values():\n    return (10, 20, 30)\n\nresult = return_multiple_values()\nprint('Nilai yang dikembalikan:', result)",
+            "komentar": "Contoh fungsi yang mengembalikan beberapa nilai dalam bentuk tuple"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 2, 3, 4, 5)\nfor item in my_tuple:\n    print(item)",
+            "komentar": "Contoh iterasi melalui elemen-elemen dalam tuple menggunakan loop for"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "my_tuple = (1, 2, 3)\na, b, c = my_tuple\nprint('a:', a, 'b:', b, 'c:', c)",
+            "komentar": "Contoh unpacking tuple ke dalam beberapa variabel"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Tuple",
+            "deskripsi": "Cara mendefinisikan tuple di Python menggunakan tanda kurung ()."
+        },
+        {
+            "topik": "Tuple dengan Berbagai Tipe Data",
+            "deskripsi": "Cara mendefinisikan tuple yang berisi elemen dari berbagai tipe data."
+        },
+        {
+            "topik": "Tuple Bersarang",
+            "deskripsi": "Cara mendefinisikan dan mengakses elemen dalam tuple bersarang."
+        },
+        {
+            "topik": "Mengakses Elemen dalam Tuple",
+            "deskripsi": "Cara mengakses elemen dalam tuple menggunakan indeks positif dan negatif."
+        },
+        {
+            "topik": "Slicing Tuple",
+            "deskripsi": "Cara menggunakan slicing untuk mengakses sekelompok elemen dalam tuple."
+        },
+        {
+            "topik": "Mengembalikan Banyak Nilai dari Fungsi",
+            "deskripsi": "Cara menggunakan tuple untuk mengembalikan beberapa nilai dari fungsi."
+        },
+        {
+            "topik": "Iterasi melalui Tuple",
+            "deskripsi": "Cara melakukan iterasi melalui elemen-elemen dalam tuple menggunakan loop for."
+        },
+        {
+            "topik": "Unpacking Tuple",
+            "deskripsi": "Cara unpacking tuple ke dalam beberapa variabel."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Tuples - W3Schools",
+            "url": "https://www.w3schools.com/python/python_tuples.asp"
+        },
+        {
+            "judul": "Working with Tuples in Python - Real Python",
+            "url": "https://realpython.com/python-lists-tuples/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data tuple di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang kelebihan tuple dalam menyimpan data yang tidak dapat diubah"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengubah elemen dalam tuple yang bersifat immutable.",
+            "contoh": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 4",
+            "solusi": "Pastikan untuk tidak mencoba mengubah elemen dalam tuple. Gunakan list jika memerlukan struktur data yang mutable."
+        },
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam tuple.",
+            "contoh": "my_tuple = (1, 2, 3)\nprint(my_tuple[5])",
+            "solusi": "Pastikan indeks yang diakses ada dalam rentang panjang tuple."
+        }
+    ]
+}

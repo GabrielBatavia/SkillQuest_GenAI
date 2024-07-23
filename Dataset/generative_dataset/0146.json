@@ -1,0 +1,110 @@
+{
+    "sumber": "PythonDataScienceCorner.com",
+    "penulis": "Siti Rahma",
+    "tanggal": "2024-08-25",
+    "judul": "Memahami dan Menggunakan Tipe Data Decimal di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "decimal", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data Decimal di Python. Decimal digunakan untuk menghitung angka desimal dengan presisi tinggi, sering digunakan dalam aplikasi keuangan dan ilmiah di mana presisi angka penting.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nx = Decimal('0.1')\ny = Decimal('0.2')\nz = x + y\nprint('Hasil penjumlahan:', z)",
+            "komentar": "Contoh mendefinisikan variabel x dan y sebagai Decimal, kemudian menjumlahkan keduanya dan mencetak hasilnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nprice = Decimal('19.99')\nquantity = Decimal('3')\ntotal = price * quantity\nprint('Total harga:', total)",
+            "komentar": "Contoh menggunakan Decimal untuk menghitung total harga dengan presisi tinggi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nx = Decimal('1.0000')\ny = Decimal('0.3333')\nresult = x / y\nprint('Hasil pembagian:', result)",
+            "komentar": "Contoh menggunakan Decimal untuk melakukan pembagian dengan presisi tinggi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nx = Decimal('1.23')\ny = Decimal('4.56')\nresult = x * y\nprint('Hasil perkalian:', result)",
+            "komentar": "Contoh menggunakan Decimal untuk melakukan perkalian dengan presisi tinggi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nvalue = Decimal('1234.56789')\nprint('Nilai dengan presisi tinggi:', value)",
+            "komentar": "Contoh mencetak nilai Decimal dengan presisi tinggi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal, getcontext\ngetcontext().prec = 6\nx = Decimal('1.23456789')\ny = Decimal('2.34567890')\nz = x * y\nprint('Hasil dengan presisi 6 digit:', z)",
+            "komentar": "Contoh mengatur presisi Decimal ke 6 digit dan melakukan operasi perkalian"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nx = Decimal('0.1')\ny = Decimal('0.2')\nif x + y == Decimal('0.3'):\n    print('x + y sama dengan 0.3')\nelse:\n    print('x + y tidak sama dengan 0.3')",
+            "komentar": "Contoh membandingkan nilai Decimal untuk memastikan akurasi operasi penjumlahan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from decimal import Decimal\nimport math\nx = Decimal('2.0')\nroot = x.sqrt()\nprint('Akar kuadrat:', root)",
+            "komentar": "Contoh menggunakan Decimal untuk menghitung akar kuadrat dengan presisi tinggi"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Decimal",
+            "deskripsi": "Cara mendefinisikan variabel sebagai Decimal di Python menggunakan modul decimal."
+        },
+        {
+            "topik": "Operasi Aritmatika dengan Decimal",
+            "deskripsi": "Cara melakukan operasi aritmatika seperti penjumlahan, pengurangan, perkalian, dan pembagian dengan tipe data Decimal."
+        },
+        {
+            "topik": "Mengatur Presisi Decimal",
+            "deskripsi": "Cara mengatur presisi angka desimal menggunakan fungsi getcontext() dan mengubah nilai prec."
+        },
+        {
+            "topik": "Membandingkan Nilai Decimal",
+            "deskripsi": "Cara membandingkan nilai Decimal untuk memastikan akurasi operasi aritmatika."
+        },
+        {
+            "topik": "Menggunakan Fungsi Matematika dengan Decimal",
+            "deskripsi": "Cara menggunakan fungsi matematika seperti akar kuadrat dengan tipe data Decimal."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Decimal - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_decimal.asp"
+        },
+        {
+            "judul": "Decimal Fixed Point and Floating Point Arithmetic - Real Python",
+            "url": "https://realpython.com/python-decimal/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data Decimal di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana Decimal digunakan untuk menghitung angka dengan presisi tinggi"
+    ],
+    "error": [
+        {
+            "error": "InvalidOperation",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba melakukan operasi yang tidak valid dengan Decimal.",
+            "contoh": "from decimal import Decimal\nx = Decimal('1.23')\ny = Decimal('0')\nz = x / y",
+            "solusi": "Pastikan untuk memeriksa validitas operasi sebelum mengeksekusi, seperti menghindari pembagian dengan nol."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengoperasikan Decimal dengan tipe data lain yang tidak kompatibel.",
+            "contoh": "from decimal import Decimal\nx = Decimal('1.23')\ny = '1.23'\nz = x + y",
+            "solusi": "Pastikan semua operan dalam operasi aritmatika adalah tipe data Decimal."
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "TechBeamers",
+    "penulis": "TechBeamers Team",
+    "tanggal": "2024-07-13",
+    "judul": "Tutorial OOP (Object-Oriented Programming) dengan Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "OOP", "Pemrograman Berorientasi Objek"],
+    "konten": "Tutorial ini mengajarkan konsep dasar OOP dengan Python, termasuk pembuatan kelas, pewarisan, dan penggunaan metode kelas.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kelas",
+        "bahasa": "Python",
+        "isi": "class Kendaraan:\n    def __init__(self, roda, warna):\n        self.roda = roda\n        self.warna = warna\n\nmobil = Kendaraan(4, 'merah')",
+        "komentar": "Contoh definisi kelas Kendaraan dan pembuatan objek mobil."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "OOP dengan Python",
+        "deskripsi": "Memperkenalkan konsep OOP dan penerapannya dalam bahasa pemrograman Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python OOP Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/classes.html"
+      }
+    ],
+    "highlight": ["OOP", "Kelas", "Pewarisan"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "Upaya untuk mengakses atribut yang tidak ada pada objek.",
+        "contoh": "mobil.kecepatan",
+        "solusi": "Pastikan atribut yang diakses telah didefinisikan dalam kelas."
+      }
+    ]
+  },
+  {
+    "sumber": "GeeksforGeeks",
+    "penulis": "GeeksforGeeks Team",
+    "tanggal": "2024-07-13",
+    "judul": "Penggunaan Modul Math dalam Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Modul Math", "Matematika"],
+    "konten": "Modul math dalam Python menyediakan fungsi-fungsi matematika seperti sqrt(), pow(), dan lainnya. Artikel ini menjelaskan penggunaan modul math untuk perhitungan matematika dasar.",
+    "contoh": [
+      {
+        "tipe": "Contoh Penggunaan",
+        "bahasa": "Python",
+        "isi": "import math\n\ntax = math.sqrt(16)\nprint('Akar kuadrat dari 16 adalah:', tax)",
+        "komentar": "Contoh penggunaan fungsi sqrt() dari modul math."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Modul Math dalam Python",
+        "deskripsi": "Memperkenalkan penggunaan modul math untuk operasi matematika dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Math Module Documentation",
+        "url": "https://docs.python.org/id/3/library/math.html"
+      }
+    ],
+    "highlight": ["Modul Math", "Operasi Matematika", "Fungsi Matematika"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "Kesalahan yang muncul saat argumen fungsi tidak sesuai dengan yang diharapkan.",
+        "contoh": "math.sqrt(-1)",
+        "solusi": "Pastikan argumen yang diberikan valid, misalnya tidak boleh negatif untuk fungsi sqrt()."
+      }
+    ]
+  }
+]

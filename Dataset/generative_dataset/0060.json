@@ -1,0 +1,71 @@
+{
+    "sumber": "PythonMudah.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2021-05-05",
+    "judul": "Memahami dan Menggunakan Fungsi Dasar di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["fungsi dasar", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang cara mendefinisikan dan menggunakan fungsi dasar di Python. Fungsi adalah blok kode yang hanya berjalan ketika dipanggil dan dapat digunakan kembali di seluruh program.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def greet(name):\n    print(f'Hello, {name}!')\n\ngreet('Alice')",
+            "komentar": "Contoh fungsi sederhana yang mencetak sapaan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)",
+            "komentar": "Contoh fungsi untuk menjumlahkan dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))",
+            "komentar": "Contoh fungsi rekursif untuk menghitung faktorial"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Definisi Fungsi",
+            "deskripsi": "Cara mendefinisikan fungsi menggunakan kata kunci 'def' diikuti dengan nama fungsi dan parameter opsional."
+        },
+        {
+            "topik": "Memanggil Fungsi",
+            "deskripsi": "Cara memanggil fungsi dengan menyebutkan nama fungsi diikuti dengan argumen dalam tanda kurung."
+        },
+        {
+            "topik": "Fungsi Rekursif",
+            "deskripsi": "Fungsi yang memanggil dirinya sendiri untuk menyelesaikan tugas secara bertahap."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Functions - W3Schools",
+            "url": "https://www.w3schools.com/python/python_functions.asp"
+        },
+        {
+            "judul": "Defining Functions in Python - Real Python",
+            "url": "https://realpython.com/defining-your-own-python-function/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat definisi fungsi tidak sesuai dengan sintaks Python.",
+            "contoh": "def my_function(:",
+            "solusi": "Pastikan menggunakan tanda kurung dan titik dua dengan benar dalam definisi fungsi."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat jumlah atau tipe argumen yang diberikan tidak sesuai dengan definisi fungsi.",
+            "contoh": "add(5)",
+            "solusi": "Pastikan memberikan jumlah dan tipe argumen yang sesuai saat memanggil fungsi."
+        }
+    ]
+}

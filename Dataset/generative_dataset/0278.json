@@ -1,0 +1,79 @@
+[
+  {
+    "sumber": "Towards Data Science",
+    "penulis": "Wahyu Pratama",
+    "tanggal": "2022-10-10",
+    "judul": "Pengenalan ke Natural Language Processing (NLP) dengan NLTK di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "NLTK", "Natural Language Processing"],
+    "konten": "NLTK (Natural Language Toolkit) adalah library Python yang digunakan untuk pemrosesan bahasa alami. Artikel ini memberikan pengantar tentang tokenisasi, analisis teks, dan pemrosesan bahasa alami menggunakan NLTK.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import nltk\n# Tokenisasi kalimat\nfrom nltk.tokenize import word_tokenize\nkalimat = 'Halo, ini contoh tokenisasi kalimat.'\nwords = word_tokenize(kalimat)\nprint(words)",
+        "komentar": "Contoh penggunaan NLTK untuk tokenisasi kalimat dalam Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "NLTK",
+        "deskripsi": "Penggunaan NLTK untuk pemrosesan bahasa alami dalam Python."
+      },
+      {
+        "topik": "Natural Language Processing",
+        "deskripsi": "Teknik-teknik pemrosesan bahasa alami menggunakan NLTK dan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "NLTK Documentation",
+        "url": "https://www.nltk.org/"
+      }
+    ],
+    "highlight": ["NLTK", "Natural Language Processing", "Tokenisasi"],
+    "error": []
+  },
+  {
+    "sumber": "Python.org",
+    "penulis": "Python Software Foundation",
+    "tanggal": "2023-05-20",
+    "judul": "Pengenalan Dasar Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["dasar", "pemrograman", "Python"],
+    "konten": "Artikel ini memberikan pengenalan dasar tentang bahasa pemrograman Python, mencakup sintaks dasar, tipe data, dan operasi dasar.",
+    "contoh": [
+      {
+        "tipe": "contoh kode",
+        "bahasa": "Python",
+        "isi": "print('Halo, dunia!')",
+        "komentar": "Menampilkan teks sederhana ke layar."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Sintaks Dasar",
+        "deskripsi": "Memahami cara menulis kode Python yang benar dan efisien."
+      },
+      {
+        "topik": "Tipe Data",
+        "deskripsi": "Penjelasan mengenai berbagai jenis data yang dapat digunakan dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Documentation",
+        "url": "https://docs.python.org/id/3/tutorial/"
+      }
+    ],
+    "highlight": ["pengenalan dasar", "sintaks Python"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan yang umum terjadi karena penyusunan indentasi kode yang salah.",
+        "contoh": "if True:\nprint('Benar')",
+        "solusi": "Pastikan indentasi setiap blok kode sesuai dengan aturan Python."
+      }
+    ]
+  }
+]

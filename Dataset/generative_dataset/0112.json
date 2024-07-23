@@ -1,0 +1,93 @@
+{
+    "sumber": "PythonMudah.id",
+    "penulis": "Budi Santoso",
+    "tanggal": "2024-03-05",
+    "judul": "Memahami dan Menggunakan Variabel Global dan Lokal di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "global", "local", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel global dan lokal di Python. Variabel lokal didefinisikan di dalam fungsi dan hanya dapat diakses di dalam fungsi tersebut, sedangkan variabel global didefinisikan di luar fungsi dan dapat diakses dari mana saja dalam program.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 'global'\n\ndef my_function():\n    x = 'local'\n    print('Di dalam fungsi:', x)\n\nmy_function()\nprint('Di luar fungsi:', x)",
+            "komentar": "Contoh perbedaan antara variabel global dan lokal dengan nama yang sama"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 'global'\n\ndef my_function():\n    global x\n    x = 'local yang menjadi global'\n\nmy_function()\nprint('Di luar fungsi:', x)",
+            "komentar": "Contoh penggunaan kata kunci global untuk mengubah variabel global di dalam fungsi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def my_function():\n    y = 'local'\n    print('Di dalam fungsi:', y)\n\nmy_function()\ntry:\n    print('Di luar fungsi:', y)\nexcept NameError:\n    print('Variabel y tidak dapat diakses di luar fungsi')",
+            "komentar": "Contoh akses variabel lokal di luar fungsi yang menghasilkan NameError"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "counter = 0\n\ndef increment():\n    global counter\n    counter += 1\n\nincrement()\nincrement()\nprint('Counter:', counter)",
+            "komentar": "Contoh penggunaan variabel global untuk menjaga state antara pemanggilan fungsi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "name = 'Alice'\n\ndef change_name(new_name):\n    global name\n    name = new_name\n\nchange_name('Bob')\nprint('Nama baru:', name)",
+            "komentar": "Contoh penggunaan fungsi untuk mengubah nilai variabel global"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def calculate_area():\n    length = 5\n    width = 3\n    area = length * width\n    return area\n\nprint('Luas:', calculate_area())",
+            "komentar": "Contoh penggunaan variabel lokal di dalam fungsi untuk perhitungan"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Variabel Global dan Lokal",
+            "deskripsi": "Cara mendefinisikan dan membedakan antara variabel global dan lokal di Python."
+        },
+        {
+            "topik": "Penggunaan Kata Kunci Global",
+            "deskripsi": "Cara menggunakan kata kunci global untuk mengakses dan mengubah variabel global di dalam fungsi."
+        },
+        {
+            "topik": "Mengakses Variabel Lokal",
+            "deskripsi": "Memahami keterbatasan akses variabel lokal di luar fungsi."
+        },
+        {
+            "topik": "Mengubah Nilai Variabel Global",
+            "deskripsi": "Cara mengubah nilai variabel global melalui fungsi."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Global Variables - W3Schools",
+            "url": "https://www.w3schools.com/python/python_variables_global.asp"
+        },
+        {
+            "judul": "Global and Local Variables in Python - Real Python",
+            "url": "https://realpython.com/python-global-local-variables/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang variabel global dan lokal di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses variabel lokal di luar fungsi.",
+            "contoh": "def my_function():\n    y = 'local'\nprint(y)",
+            "solusi": "Pastikan variabel lokal hanya diakses di dalam fungsi tempat variabel tersebut didefinisikan."
+        },
+        {
+            "error": "UnboundLocalError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses variabel lokal sebelum didefinisikan di dalam fungsi.",
+            "contoh": "x = 'global'\n\ndef my_function():\n    print(x)\n    x = 'local'\n\nmy_function()",
+            "solusi": "Pastikan variabel lokal didefinisikan sebelum digunakan di dalam fungsi."
+        }
+    ]
+}

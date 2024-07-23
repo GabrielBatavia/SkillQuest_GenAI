@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "pemrogramanpythonmudah.com",
+        "penulis": "Yusuf Arifin",
+        "tanggal": "2023-10-10",
+        "judul": "Metode String dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "metode string", "dasar"],
+        "konten": "Tulisan ini menjelaskan berbagai metode string yang tersedia di Python, seperti `upper()`, `lower()`, `find()`, `replace()`, dan `split()`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat string menjadi huruf kapital di Python?",
+                "answer": "Untuk mengubah string menjadi huruf kapital, Anda dapat menggunakan metode `upper()`. Misalnya: `str.upper()`."
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil di Python?",
+                "answer": "Untuk membuat string menjadi huruf kecil, gunakan metode `lower()`. Contohnya: `str.lower()`."
+            },
+            {
+                "question": "Bagaimana cara menemukan letak substring dalam string?",
+                "answer": "Untuk menemukan letak substring dalam string, gunakan metode `find()`. Misalnya: `str.find('substring')`."
+            },
+            {
+                "question": "Bagaimana cara mengganti substring dalam string?",
+                "question_code": "str.replace('old', 'new')",
+                "answer": "Untuk mengganti substring dalam string, pakailah metode `replace()`. Contoh: `str.replace('old', 'new')`.",
+                "answer_code": "str.replace('old', 'new')"
+            },
+            {
+                "question": "Bagaimana cara membagi string menjadi list berdasarkan delimiter?",
+                "question_code": "str.split(',')",
+                "answer": "Untuk membagi string menjadi list dengan delimiter, gunakan metode `split()`. Contoh: `str.split(',')`.",
+                "answer_code": "str.split(',')"
+            },
+            {
+                "question": "Bagaimana cara menghapus spasi di awal dan akhir string?",
+                "question_code": "str.strip()",
+                "answer": "Untuk menghapus spasi di awal dan akhir string, gunakan metode `strip()`. Misalnya: `str.strip()`.",
+                "answer_code": "str.strip()"
+            },
+            {
+                "question": "Bagaimana cara mengecek apakah string dimulai dengan substring tertentu?",
+                "question_code": "str.startswith('prefix')",
+                "answer": "Untuk memeriksa apakah string dimulai dengan substring tertentu, gunakan metode `startswith()`. Contoh: `str.startswith('prefix')`.",
+                "answer_code": "str.startswith('prefix')"
+            },
+            {
+                "question": "Bagaimana cara mengecek apakah string diakhiri dengan substring tertentu?",
+                "question_code": "str.endswith('suffix')",
+                "answer": "Untuk mengecek apakah string diakhiri dengan substring tertentu, gunakan metode `endswith()`. Misalnya: `str.endswith('suffix')`.",
+                "answer_code": "str.endswith('suffix')"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan elemen-elemen list menjadi sebuah string?",
+                "question_code": "'-'.join(['a', 'b', 'c'])",
+                "answer": "Untuk menggabungkan elemen-elemen list menjadi satu string, gunakan metode `join()`. Contohnya: `'-'.join(['a', 'b', 'c'])`.",
+                "answer_code": "'-'.join(['a', 'b', 'c'])"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonpemula.com",
+        "penulis": "Siti Aminah",
+        "tanggal": "2024-03-25",
+        "judul": "Memahami Penggunaan List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list", "dasar"],
+        "konten": "Tulisan ini menjelaskan cara menggunakan list di Python, termasuk pembuatan, akses, penambahan, dan penghapusan elemen dalam list.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list di Python?",
+                "answer": "List adalah tipe data yang memungkinkan Anda menyimpan beberapa elemen dalam satu variabel dan mengaksesnya dengan indeks."
+            },
+            {
+                "question": "Bagaimana cara membuat list di Python?",
+                "answer": "Untuk membuat list, gunakan tanda kurung siku `[]` dan pisahkan elemen dengan koma. Misalnya: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dari list?",
+                "answer": "Akses elemen dalam list dengan menggunakan indeks. Contoh: `my_list[0]`."
+            },
+            {
+                "question": "Bagaimana cara menambah elemen ke dalam list?",
+                "question_code": "my_list.append(4)",
+                "answer": "Untuk menambahkan elemen ke dalam list, gunakan metode `append()`. Misalnya: `my_list.append(4)`.",
+                "answer_code": "my_list.append(4)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari list?",
+                "question_code": "my_list.remove(2)",
+                "answer": "Untuk menghapus elemen dari list, gunakan metode `remove()`. Contoh: `my_list.remove(2)`.",
+                "answer_code": "my_list.remove(2)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua list di Python?",
+                "question_code": "list1 = [1, 2]\nlist2 = [3, 4]\ncombined_list = list1 + list2",
+                "answer": "Untuk menggabungkan dua list, gunakan operator `+`. Misalnya: `combined_list = list1 + list2`.",
+                "answer_code": "combined_list = list1 + list2"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah elemen terdapat dalam list?",
+                "question_code": "2 in my_list",
+                "answer": "Untuk memeriksa apakah elemen ada dalam list, gunakan operator `in`. Contohnya: `2 in my_list`.",
+                "answer_code": "2 in my_list"
+            },
+            {
+                "question": "Bagaimana cara menemukan indeks dari elemen dalam list?",
+                "question_code": "my_list.index(3)",
+                "answer": "Untuk menemukan indeks dari elemen dalam list, gunakan metode `index()`. Misalnya: `my_list.index(3)`.",
+                "answer_code": "my_list.index(3)"
+            },
+            {
+                "question": "Bagaimana cara mengurutkan elemen dalam list?",
+                "question_code": "my_list.sort()",
+                "answer": "Untuk mengurutkan elemen dalam list, gunakan metode `sort()`. Contohnya: `my_list.sort()`.",
+                "answer_code": "my_list.sort()"
+            }
+        ]
+    }
+]

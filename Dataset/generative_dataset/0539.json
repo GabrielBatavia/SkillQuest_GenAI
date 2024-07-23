@@ -1,0 +1,38 @@
+{
+    "sumber": "Python Expert",
+    "penulis": "Rina Wijaya",
+    "tanggal": "2024-06-15",
+    "judul": "Pemrograman Berorientasi Objek di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "OOP", "Pemrograman"],
+    "konten": "Artikel ini membahas konsep pemrograman berorientasi objek (OOP) dalam Python.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "class Person:\n    def __init__(self, name):\n        self.name = name\n\n    def greet(self):\n        print(f'Hello, {self.name}')",
+            "komentar": "Kode ini mendefinisikan kelas 'Person' dengan metode pengenalan."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Kelas dan Objek",
+            "deskripsi": "Pemahaman dasar tentang kelas dan objek dalam Python."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Tutorial OOP Python",
+            "url": "https://realpython.com/python3-object-oriented-programming/"
+        }
+    ],
+    "highlight": ["Konsep OOP", "Kelas dan Objek di Python"],
+    "error": [
+        {
+            "error": "AttributeError",
+            "deskripsi": "Kesalahan ini terjadi ketika atribut yang diminta tidak ada.",
+            "contoh": "person = Person('Andi')\nperson.age",
+            "solusi": "Pastikan atribut 'age' didefinisikan di dalam kelas."
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Sophie Green",
+    "tanggal": "2025-09-15",
+    "judul": "Python Decorators: Simplifying Code with Function Decorators",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Decorators", "Intermediate"],
+    "konten": "Decorators in Python allow you to modify the behavior of a function or class...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "def decorator_function(func):\n    def wrapper():\n        print('Before function execution')\n        func()\n        print('After function execution')\n    return wrapper\n\n@decorator_function\ndef say_hello():\n    print('Hello, World!')\n\nsay_hello()",
+        "komentar": "Defines a decorator function to add functionality before and after executing a function."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Decorator dalam Python",
+        "deskripsi": "Menggunakan decorator untuk memodifikasi perilaku fungsi atau kelas dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Decorators Documentation",
+        "url": "https://docs.python.org/3/glossary.html#term-decorator"
+      }
+    ],
+    "highlight": ["modify the behavior of a function or class", "Python decorators"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "TypeError occurred due to incorrect usage of decorators.",
+        "contoh": "@decorator_function('arg')\ndef say_hello():\n    print('Hello, World!')",
+        "solusi": "Ensure decorators are applied correctly to functions."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Michael Harris",
+    "tanggal": "2025-10-01",
+    "judul": "Python Error Handling: Using try-except Blocks",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Error Handling", "Pemula"],
+    "konten": "Error handling in Python allows you to gracefully manage exceptions...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "try:\n    num = int(input('Enter a number: '))\n    result = 10 / num\n    print('Result:', result)\nexcept ZeroDivisionError:\n    print('Error: Division by zero')\nexcept ValueError:\n    print('Error: Invalid input, enter a valid number')",
+        "komentar": "Handles division by zero and invalid input exceptions using try-except blocks."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penanganan Kesalahan (Error Handling) dalam Python",
+        "deskripsi": "Menggunakan try-except untuk mengelola pengecualian (exceptions) dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Error Handling Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html"
+      }
+    ],
+    "highlight": ["gracefully manage exceptions", "try-except blocks"],
+    "error": [
+      {
+        "error": "NameError",
+        "deskripsi": "NameError occurred due to using undefined variable.",
+        "contoh": "print(undefined_var)",
+        "solusi": "Define variable 'undefined_var' before using it."
+      }
+    ]
+  }
+]

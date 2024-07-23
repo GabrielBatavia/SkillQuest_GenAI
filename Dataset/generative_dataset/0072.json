@@ -1,0 +1,83 @@
+{
+    "sumber": "BelajarPython.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2022-11-14",
+    "judul": "Memahami dan Menggunakan Dictionary di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["dictionary", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan dictionary di Python. Dictionary adalah struktur data yang menyimpan pasangan kunci-nilai.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {'name': 'John', 'age': 30, 'city': 'New York'}\nprint(person)",
+            "komentar": "Contoh dasar pembuatan dictionary dan mencetaknya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {'name': 'John', 'age': 30, 'city': 'New York'}\nprint(person['name'])",
+            "komentar": "Contoh akses nilai dalam dictionary menggunakan kunci"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {'name': 'John', 'age': 30, 'city': 'New York'}\nperson['age'] = 31\nprint(person)",
+            "komentar": "Contoh mengubah nilai dalam dictionary"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {'name': 'John', 'age': 30, 'city': 'New York'}\nperson['job'] = 'Developer'\nprint(person)",
+            "komentar": "Contoh menambahkan pasangan kunci-nilai baru ke dictionary"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {'name': 'John', 'age': 30, 'city': 'New York'}\ndel person['city']\nprint(person)",
+            "komentar": "Contoh menghapus pasangan kunci-nilai dari dictionary"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Dictionary",
+            "deskripsi": "Struktur data yang menyimpan pasangan kunci-nilai."
+        },
+        {
+            "topik": "Akses Nilai",
+            "deskripsi": "Cara mengakses nilai dalam dictionary menggunakan kunci."
+        },
+        {
+            "topik": "Modifikasi Dictionary",
+            "deskripsi": "Cara menambah, mengubah, dan menghapus pasangan kunci-nilai dalam dictionary."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Dictionaries - W3Schools",
+            "url": "https://www.w3schools.com/python/python_dictionaries.asp"
+        },
+        {
+            "judul": "Dictionaries in Python - Real Python",
+            "url": "https://realpython.com/python-dicts/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang dictionary",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses kunci yang tidak ada dalam dictionary.",
+            "contoh": "person = {'name': 'John', 'age': 30}\nprint(person['city'])",
+            "solusi": "Pastikan kunci yang diakses ada dalam dictionary, atau gunakan metode get() yang mengembalikan nilai default jika kunci tidak ada."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat menggunakan tipe data yang tidak sesuai untuk kunci dalam dictionary.",
+            "contoh": "person = {['name']: 'John', 'age': 30}",
+            "solusi": "Pastikan kunci dalam dictionary adalah tipe data yang dapat di-hash seperti string atau angka."
+        }
+    ]
+}

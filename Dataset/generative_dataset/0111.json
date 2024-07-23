@@ -1,0 +1,93 @@
+{
+    "sumber": "PythonMudah.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-03-01",
+    "judul": "Memahami dan Menggunakan Variabel di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel di Python. Variabel digunakan untuk menyimpan data yang dapat digunakan dan dimanipulasi dalam program.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 5\ny = 3\nprint(x + y)",
+            "komentar": "Contoh dasar mendefinisikan variabel dan menggunakannya dalam operasi penjumlahan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "name = 'Alice'\nprint('Hello, ' + name)",
+            "komentar": "Contoh mendefinisikan variabel string dan menggabungkannya dengan string lain menggunakan operator +"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 10\ny = 2\nz = x * y\nprint(z)",
+            "komentar": "Contoh mendefinisikan variabel dan menggunakannya dalam operasi perkalian"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 15\nb = 3\nc = a / b\nprint(c)",
+            "komentar": "Contoh mendefinisikan variabel dan menggunakannya dalam operasi pembagian"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "length = 5\nwidth = 3\narea = length * width\nprint('Area:', area)",
+            "komentar": "Contoh mendefinisikan beberapa variabel dan menggunakannya dalam perhitungan luas"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "temp_celsius = 25\ntemp_fahrenheit = (temp_celsius * 9/5) + 32\nprint('Temperature in Fahrenheit:', temp_fahrenheit)",
+            "komentar": "Contoh mendefinisikan variabel dan menggunakannya dalam konversi suhu dari Celsius ke Fahrenheit"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Definisi Variabel",
+            "deskripsi": "Cara mendefinisikan variabel di Python untuk menyimpan data."
+        },
+        {
+            "topik": "Penggunaan Variabel dalam Operasi",
+            "deskripsi": "Cara menggunakan variabel dalam berbagai operasi seperti penjumlahan, perkalian, dan pembagian."
+        },
+        {
+            "topik": "Penggabungan String dengan Variabel",
+            "deskripsi": "Cara menggabungkan variabel string dengan string lain menggunakan operator +."
+        },
+        {
+            "topik": "Penggunaan Variabel dalam Perhitungan",
+            "deskripsi": "Cara menggunakan variabel dalam perhitungan seperti luas dan konversi suhu."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Variables - W3Schools",
+            "url": "https://www.w3schools.com/python/python_variables.asp"
+        },
+        {
+            "judul": "Variables in Python - Real Python",
+            "url": "https://realpython.com/python-variables/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang variabel di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan variabel yang belum didefinisikan.",
+            "contoh": "print(x)",
+            "solusi": "Pastikan variabel telah didefinisikan sebelum digunakan."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba melakukan operasi pada tipe data yang tidak sesuai.",
+            "contoh": "x = 5\ny = '3'\nprint(x + y)",
+            "solusi": "Pastikan tipe data sesuai untuk operasi yang akan dilakukan, seperti mengonversi string ke integer dengan int() jika diperlukan."
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "sumber": "PythonCoderHub.com",
+    "penulis": "Dewi Larasati",
+    "tanggal": "2025-11-25",
+    "judul": "Mengenal dan Menggunakan Operator di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["operators", "python", "pemula"],
+    "konten": "Artikel ini membahas berbagai jenis operator di Python, termasuk operator aritmetika, operator perbandingan, operator logika, operator penugasan, dan operator bitwise, serta cara penggunaannya dalam berbagai konteks pemrograman.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Aritmetika\nx = 15\ny = 4\nprint('Penjumlahan:', x + y)\nprint('Pengurangan:', x - y)\nprint('Perkalian:', x * y)\nprint('Pembagian:', x / y)\nprint('Modulus:', x % y)\nprint('Eksponen:', x ** y)\nprint('Pembagian (Floor Division):', x // y)",
+            "komentar": "Menggunakan operator aritmetika dasar di Python"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Perbandingan\nx = 15\ny = 4\nprint('x lebih besar dari y:', x > y)\nprint('x lebih kecil dari y:', x < y)\nprint('x sama dengan y:', x == y)\nprint('x tidak sama dengan y:', x != y)\nprint('x lebih besar atau sama dengan y:', x >= y)\nprint('x lebih kecil atau sama dengan y:', x <= y)",
+            "komentar": "Menggunakan operator perbandingan untuk membandingkan nilai variabel"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Logika\nx = True\ny = False\nprint('x AND y:', x and y)\nprint('x OR y:', x or y)\nprint('NOT x:', not x)",
+            "komentar": "Menggunakan operator logika untuk operasi boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Penugasan\nx = 7\nx += 2\nprint('Setelah x += 2:', x)\nx -= 3\nprint('Setelah x -= 3:', x)\nx *= 4\nprint('Setelah x *= 4:', x)\nx /= 2\nprint('Setelah x /= 2:', x)\nx %= 5\nprint('Setelah x %= 5:', x)\nx **= 3\nprint('Setelah x **= 3:', x)\nx //= 2\nprint('Setelah x //= 2:', x)",
+            "komentar": "Menggunakan operator penugasan untuk memodifikasi nilai variabel"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Bitwise\nx = 6\ny = 2\nprint('x AND y:', x & y)\nprint('x OR y:', x | y)\nprint('x XOR y:', x ^ y)\nprint('NOT x:', ~x)\nprint('x shifted left by 2:', x << 2)\nprint('x shifted right by 2:', x >> 2)",
+            "komentar": "Menggunakan operator bitwise untuk operasi bit-level"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Identitas\nx = 10\ny = 10\nz = 20\nprint('x is y:', x is y)\nprint('x is not z:', x is not z)",
+            "komentar": "Menggunakan operator identitas untuk membandingkan objek"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Operator Keanggotaan\nlist2 = ['a', 'b', 'c']\nprint('a in list2:', 'a' in list2)\nprint('d not in list2:', 'd' not in list2)",
+            "komentar": "Menggunakan operator keanggotaan untuk memeriksa kehadiran elemen dalam list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Operator Aritmetika",
+            "deskripsi": "Cara menggunakan operator aritmetika untuk operasi matematika dasar."
+        },
+        {
+            "topik": "Operator Perbandingan",
+            "deskripsi": "Cara menggunakan operator perbandingan untuk membandingkan nilai."
+        },
+        {
+            "topik": "Operator Logika",
+            "deskripsi": "Cara menggunakan operator logika untuk operasi boolean."
+        },
+        {
+            "topik": "Operator Penugasan",
+            "deskripsi": "Cara menggunakan operator penugasan untuk memodifikasi nilai variabel."
+        },
+        {
+            "topik": "Operator Bitwise",
+            "deskripsi": "Cara menggunakan operator bitwise untuk operasi bit-level."
+        },
+        {
+            "topik": "Operator Identitas",
+            "deskripsi": "Cara menggunakan operator identitas untuk membandingkan objek."
+        },
+        {
+            "topik": "Operator Keanggotaan",
+            "deskripsi": "Cara menggunakan operator keanggotaan untuk memeriksa kehadiran elemen dalam list."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Operators - W3Schools",
+            "url": "https://www.w3schools.com/python/python_operators.asp"
+        },
+        {
+            "judul": "Python Operators - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-operators/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang operator di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai jenis operator yang bisa digunakan di Python"
+    ],
+    "error": [
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat ada kesalahan dalam penulisan sintaks.",
+            "contoh": "num = 7 +\nprint(num)",
+            "solusi": "Pastikan semua pernyataan dan ekspresi ditulis dengan benar."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat menggunakan operator dengan tipe data yang tidak kompatibel.",
+            "contoh": "num = 7 + '2'\nprint(num)",
+            "solusi": "Pastikan tipe data yang digunakan kompatibel dengan operator."
+        }
+    ]
+}

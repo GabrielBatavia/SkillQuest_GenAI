@@ -1,0 +1,88 @@
+{
+    "sumber": "pythonindonesia.id",
+    "penulis": "Budi Santoso",
+    "tanggal": "2025-02-10",
+    "judul": "Pengenalan Fungsi di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Fungsi", "Pemula"],
+    "konten": "Artikel ini memberikan pengenalan tentang penggunaan dasar fungsi di Python, termasuk cara mendefinisikan fungsi, parameter fungsi, dan pengembalian nilai.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def sapa(nama):\n    print('Halo,', nama)\nsapa('Budi')",
+            "komentar": "Mendefinisikan fungsi sapa() yang menerima parameter nama dan mencetak pesan sapaan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def hitung_volume_kubus(sisi):\n    volume = sisi ** 3\n    return volume\nprint('Volume kubus:', hitung_volume_kubus(5))",
+            "komentar": "Mendefinisikan fungsi hitung_volume_kubus() untuk menghitung volume kubus berdasarkan panjang sisi yang diberikan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def tambah(a, b):\n    hasil = a + b\n    return hasil\ntotal = tambah(3, 4)\nprint('Hasil penambahan:', total)",
+            "komentar": "Mendefinisikan fungsi tambah() yang menerima dua parameter dan mengembalikan hasil penambahan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def hitung_luas_persegi(sisi):\n    luas = sisi * sisi\n    print('Luas persegi:', luas)\nhitung_luas_persegi(4)",
+            "komentar": "Mendefinisikan fungsi hitung_luas_persegi() untuk menghitung dan mencetak luas persegi berdasarkan panjang sisi yang diberikan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def kali(a, b):\n    return a * b\nhasil = kali(3, 5)\nprint('Hasil perkalian:', hasil)",
+            "komentar": "Mendefinisikan fungsi kali() yang menerima dua parameter dan mengembalikan hasil perkalian."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Pendefinisian Fungsi",
+            "deskripsi": "Cara mendefinisikan fungsi di Python dengan menggunakan kata kunci def."
+        },
+        {
+            "topik": "Parameter Fungsi",
+            "deskripsi": "Cara menggunakan parameter untuk menerima input dalam fungsi di Python."
+        },
+        {
+            "topik": "Pengembalian Nilai",
+            "deskripsi": "Cara menggunakan kata kunci return untuk mengembalikan nilai dari sebuah fungsi di Python."
+        },
+        {
+            "topik": "Pemanggilan Fungsi",
+            "deskripsi": "Cara memanggil atau menggunakan fungsi yang telah didefinisikan di Python."
+        },
+        {
+            "topik": "Fungsi Matematika Sederhana",
+            "deskripsi": "Contoh penggunaan fungsi untuk melakukan operasi matematika sederhana."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Functions",
+            "url": "https://www.w3schools.com/python/python_functions.asp"
+        },
+        {
+            "judul": "Python Function Arguments",
+            "url": "https://www.programiz.com/python-programming/function-argument"
+        }
+    ],
+    "highlight": ["Fungsi", "Parameter fungsi", "Pengembalian nilai"],
+    "error": [
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan nama variabel atau fungsi yang belum didefinisikan.",
+            "contoh": "def cetak_nama():\n    print(nama)\ncetak_nama()",
+            "solusi": "Pastikan semua variabel atau fungsi yang digunakan sudah didefinisikan sebelum digunakan."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba memanggil fungsi dengan jumlah atau tipe argumen yang salah.",
+            "contoh": "def tambah(a, b):\n    return a + b\ntotal = tambah(3)",
+            "solusi": "Pastikan jumlah dan tipe argumen yang diberikan sesuai dengan yang diperlukan oleh fungsi."
+        }
+    ]
+}

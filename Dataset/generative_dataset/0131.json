@@ -1,0 +1,97 @@
+{
+    "sumber": "PythonJourney.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-06-10",
+    "judul": "Memahami dan Menggunakan Variabel dengan Input Pengguna di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "user input", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel untuk menyimpan input pengguna di Python. Python menyediakan fungsi built-in seperti `input()` yang memungkinkan kita mengambil input dari pengguna dan menyimpannya dalam variabel untuk diproses lebih lanjut.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "name = input('Masukkan nama Anda: ')\nprint('Halo, ' + name)",
+            "komentar": "Contoh mengambil input nama dari pengguna dan menyimpannya dalam variabel name, kemudian menampilkan sapaan dengan nama tersebut"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "age = input('Masukkan usia Anda: ')\nprint('Usia Anda adalah ' + age)",
+            "komentar": "Contoh mengambil input usia dari pengguna dan menyimpannya dalam variabel age, kemudian menampilkan usia tersebut"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "num1 = int(input('Masukkan angka pertama: '))\nnum2 = int(input('Masukkan angka kedua: '))\nsum_result = num1 + num2\nprint('Hasil penjumlahan:', sum_result)",
+            "komentar": "Contoh mengambil dua input angka dari pengguna, mengonversi input menjadi integer, melakukan operasi penjumlahan, dan menampilkan hasilnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "length = float(input('Masukkan panjang: '))\nwidth = float(input('Masukkan lebar: '))\narea = length * width\nprint('Luas area:', area)",
+            "komentar": "Contoh mengambil dua input angka desimal dari pengguna, mengonversi input menjadi float, menghitung luas area, dan menampilkan hasilnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "temp_celsius = float(input('Masukkan suhu dalam Celsius: '))\ntemp_fahrenheit = (temp_celsius * 9/5) + 32\nprint('Suhu dalam Fahrenheit:', temp_fahrenheit)",
+            "komentar": "Contoh mengambil input suhu dalam Celsius dari pengguna, mengonversi suhu ke Fahrenheit, dan menampilkan hasilnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "sentence = input('Masukkan sebuah kalimat: ')\nwords = sentence.split()\nprint('Jumlah kata dalam kalimat:', len(words))",
+            "komentar": "Contoh mengambil input kalimat dari pengguna, memisahkan kalimat menjadi daftar kata, dan menampilkan jumlah kata dalam kalimat tersebut"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mengambil Input Pengguna",
+            "deskripsi": "Cara menggunakan fungsi `input()` di Python untuk mengambil input dari pengguna."
+        },
+        {
+            "topik": "Mengonversi Input Pengguna",
+            "deskripsi": "Cara mengonversi input pengguna dari tipe data string ke tipe data lain seperti integer atau float."
+        },
+        {
+            "topik": "Memproses Input Pengguna",
+            "deskripsi": "Cara memproses input pengguna dengan operasi matematika atau manipulasi string."
+        },
+        {
+            "topik": "Menghitung Hasil dari Input Pengguna",
+            "deskripsi": "Cara menggunakan input pengguna dalam perhitungan matematika dan menampilkan hasilnya."
+        },
+        {
+            "topik": "Manipulasi String dengan Input Pengguna",
+            "deskripsi": "Cara menggunakan input pengguna dalam manipulasi string seperti pemisahan kata dan penghitungan jumlah kata."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Input - W3Schools",
+            "url": "https://www.w3schools.com/python/python_user_input.asp"
+        },
+        {
+            "judul": "Getting User Input in Python - Real Python",
+            "url": "https://realpython.com/python-input/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan variabel untuk menyimpan input pengguna di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap"
+    ],
+    "error": [
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi input pengguna yang tidak sesuai dengan tipe data yang diharapkan.",
+            "contoh": "num = int(input('Masukkan angka: '))",
+            "solusi": "Pastikan pengguna memasukkan nilai yang sesuai dengan tipe data yang diharapkan, atau gunakan penanganan kesalahan untuk mengatasi input yang tidak valid."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba melakukan operasi dengan tipe data yang tidak sesuai.",
+            "contoh": "age = input('Masukkan usia Anda: ')\nprint('Usia Anda adalah ' + age + 5)",
+            "solusi": "Pastikan tipe data sesuai untuk operasi yang akan dilakukan, seperti mengonversi string ke integer jika diperlukan untuk operasi penjumlahan."
+        }
+    ]
+}

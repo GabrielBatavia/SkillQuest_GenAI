@@ -1,0 +1,117 @@
+[
+    {
+        "sumber": "belajarpython.com",
+        "penulis": "Ahmad Budi",
+        "tanggal": "2023-12-05",
+        "judul": "Pemrograman Berorientasi Objek di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["python", "OOP", "advanced"],
+        "konten": "Artikel ini membahas konsep Object-Oriented Programming (OOP) dalam Python, termasuk kelas, objek, pewarisan, dan enkapsulasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan OOP?",
+                "answer": "OOP atau Object-Oriented Programming adalah pendekatan pemrograman yang menggunakan 'objek' untuk mengorganisir kode dan data."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan kelas di Python?",
+                "answer": "Untuk mendefinisikan kelas di Python, gunakan kata kunci `class` diikuti dengan nama kelas. Misalnya: `class KelasBaru:`."
+            },
+            {
+                "question": "Bagaimana cara membuat objek dari kelas di Python?",
+                "answer": "Anda dapat membuat objek dari kelas dengan sintaks `objek = NamaKelas()`. Contoh: `objek = KelasBaru()`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan metode dalam kelas?",
+                "question_code": "class KelasBaru:\n    def metode_saya(self):\n        print('Halo dari KelasBaru')",
+                "answer": "Anda bisa mendeklarasikan metode dalam kelas dengan menambahkan fungsi di dalam kelas. Contoh: `def metode_saya(self):`."
+            },
+            {
+                "question": "Bagaimana cara mengakses atribut dalam kelas?",
+                "question_code": "class KelasBaru:\n    def __init__(self, nilai):\n        self.nilai = nilai\nobjek = KelasBaru(10)\nprint(objek.nilai)",
+                "answer": "Anda bisa mengakses atribut dalam kelas dengan sintaks `self.nama_atribut` di dalam kelas dan `objek.nama_atribut` di luar kelas.",
+                "answer_code": "objek.nilai"
+            },
+            {
+                "question": "Bagaimana cara melakukan pewarisan di Python?",
+                "question_code": "class Induk:\n    def metode_induk(self):\n        print('Halo dari Induk')\nclass Anak(Induk):\n    def metode_anak(self):\n        print('Halo dari Anak')\nobjek = Anak()\nobjek.metode_induk()",
+                "answer": "Anda bisa melakukan pewarisan dengan menulis nama kelas induk dalam tanda kurung setelah nama kelas anak. Misalnya: `class Anak(Induk):`.",
+                "answer_code": "objek.metode_induk()"
+            },
+            {
+                "question": "Bagaimana cara menerapkan enkapsulasi di Python?",
+                "question_code": "class KelasBaru:\n    def __init__(self):\n        self.__atribut_privat = 'privat'\n    def get_atribut_privat(self):\n        return self.__atribut_privat\nobjek = KelasBaru()\nprint(objek.get_atribut_privat())",
+                "answer": "Anda bisa menerapkan enkapsulasi dengan mendeklarasikan atribut sebagai private menggunakan dua garis bawah `__` di awal nama atribut.",
+                "answer_code": "objek.get_atribut_privat()"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan metode statis di Python?",
+                "question_code": "class KelasBaru:\n    @staticmethod\n    def metode_statis():\n        print('Ini adalah metode statis')\nKelasBaru.metode_statis()",
+                "answer": "Anda bisa mendefinisikan metode statis dengan menggunakan dekorator `@staticmethod` di atas metode. Contoh: `@staticmethod`.",
+                "answer_code": "KelasBaru.metode_statis()"
+            },
+            {
+                "question": "Bagaimana cara menerapkan polimorfisme di Python?",
+                "question_code": "class Hewan:\n    def suara(self):\n        raise NotImplementedError\nclass Anjing(Hewan):\n    def suara(self):\n        return 'Guk'\nclass Kucing(Hewan):\n    def suara(self):\n        return 'Meong'\nhewan = [Anjing(), Kucing()]\nfor h in hewan:\n    print(h.suara())",
+                "answer": "Anda bisa menerapkan polimorfisme dengan mendefinisikan metode yang sama di kelas yang berbeda dan memanggilnya melalui referensi kelas induk.",
+                "answer_code": "for h in hewan:\n    print(h.suara())"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonpemula.com",
+        "penulis": "Siti Aminah",
+        "tanggal": "2022-11-22",
+        "judul": "Manipulasi Data Menggunakan Pandas",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "pandas", "data"],
+        "konten": "Artikel ini memberikan panduan tentang cara menggunakan pustaka Pandas untuk manipulasi data dalam Python, termasuk cara membuat, mengakses, dan memodifikasi DataFrame.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan Pandas?",
+                "answer": "Pandas adalah pustaka Python yang digunakan untuk manipulasi dan analisis data secara efisien."
+            },
+            {
+                "question": "Bagaimana cara mengimpor pustaka Pandas?",
+                "answer": "Anda dapat mengimpor pustaka Pandas dengan sintaks `import pandas as pd`."
+            },
+            {
+                "question": "Bagaimana cara membuat DataFrame dengan Pandas?",
+                "answer": "Anda bisa membuat DataFrame menggunakan fungsi `pd.DataFrame()`. Contoh: `df = pd.DataFrame(data)`."
+            },
+            {
+                "question": "Bagaimana cara membaca file CSV ke dalam DataFrame?",
+                "question_code": "import pandas as pd\ndf = pd.read_csv('file.csv')",
+                "answer": "Anda bisa membaca file CSV ke dalam DataFrame menggunakan fungsi `pd.read_csv()`. Misalnya: `df = pd.read_csv('file.csv')`."
+            },
+            {
+                "question": "Bagaimana cara menampilkan lima baris pertama dari DataFrame?",
+                "question_code": "df.head()",
+                "answer": "Anda bisa menampilkan lima baris pertama dari DataFrame menggunakan metode `head()`. Contoh: `df.head()`."
+            },
+            {
+                "question": "Bagaimana cara mengakses kolom tertentu dalam DataFrame?",
+                "question_code": "df['nama_kolom']",
+                "answer": "Anda bisa mengakses kolom tertentu dalam DataFrame menggunakan sintaks `df['nama_kolom']`.",
+                "answer_code": "df['nama_kolom']"
+            },
+            {
+                "question": "Bagaimana cara menambahkan kolom baru ke DataFrame?",
+                "question_code": "df['kolom_baru'] = nilai",
+                "answer": "Anda bisa menambahkan kolom baru ke DataFrame dengan memberikan nilai ke kolom tersebut. Misalnya: `df['kolom_baru'] = nilai`.",
+                "answer_code": "df['kolom_baru'] = nilai"
+            },
+            {
+                "question": "Bagaimana cara menghapus kolom dari DataFrame?",
+                "question_code": "df.drop('nama_kolom', axis=1, inplace=True)",
+                "answer": "Anda bisa menghapus kolom dari DataFrame menggunakan metode `drop()`. Misalnya: `df.drop('nama_kolom', axis=1, inplace=True)`.",
+                "answer_code": "df.drop('nama_kolom', axis=1, inplace=True)"
+            },
+            {
+                "question": "Bagaimana cara memfilter DataFrame berdasarkan kondisi tertentu?",
+                "question_code": "df[df['kolom'] > nilai]",
+                "answer": "Anda bisa memfilter DataFrame berdasarkan kondisi tertentu menggunakan sintaks `df[df['kolom'] > nilai]`.",
+                "answer_code": "df[df['kolom'] > nilai]"
+            }
+        ]
+    }
+]

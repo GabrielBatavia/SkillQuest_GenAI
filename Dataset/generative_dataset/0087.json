@@ -1,0 +1,87 @@
+{
+    "sumber": "KodePython.net",
+    "penulis": "Siti Rahma",
+    "tanggal": "2023-11-20",
+    "judul": "Memahami dan Menggunakan Fungsi Lambda di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["lambda", "fungsi anonim", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi lambda di Python. Fungsi lambda adalah fungsi anonim yang didefinisikan dengan kata kunci 'lambda'. Fungsi ini sering digunakan untuk operasi sederhana dan cepat.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "add = lambda x, y: x + y\nprint(add(2, 3))",
+            "komentar": "Contoh dasar penggunaan fungsi lambda untuk menjumlahkan dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "square = lambda x: x ** 2\nprint(square(5))",
+            "komentar": "Contoh fungsi lambda untuk menghitung kuadrat dari sebuah angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = [1, 2, 3, 4, 5]\ndoubled = list(map(lambda x: x * 2, numbers))\nprint(doubled)",
+            "komentar": "Contoh penggunaan fungsi lambda dengan map() untuk menggandakan setiap elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = [1, 2, 3, 4, 5]\neven = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even)",
+            "komentar": "Contoh penggunaan fungsi lambda dengan filter() untuk memilih elemen genap dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nnumbers = [1, 2, 3, 4, 5]\nproduct = reduce(lambda x, y: x * y, numbers)\nprint(product)",
+            "komentar": "Contoh penggunaan fungsi lambda dengan reduce() untuk menghitung hasil perkalian semua elemen dalam list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Lambda",
+            "deskripsi": "Cara mendefinisikan dan menggunakan fungsi lambda, yaitu fungsi anonim yang cepat dan sederhana."
+        },
+        {
+            "topik": "Penggunaan Map",
+            "deskripsi": "Cara menggunakan fungsi lambda dengan map() untuk menerapkan fungsi ke setiap elemen dalam iterable."
+        },
+        {
+            "topik": "Penggunaan Filter",
+            "deskripsi": "Cara menggunakan fungsi lambda dengan filter() untuk menyaring elemen dalam iterable berdasarkan kondisi tertentu."
+        },
+        {
+            "topik": "Penggunaan Reduce",
+            "deskripsi": "Cara menggunakan fungsi lambda dengan reduce() untuk menggabungkan elemen-elemen dalam iterable menjadi satu nilai tunggal."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Lambda - W3Schools",
+            "url": "https://www.w3schools.com/python/python_lambda.asp"
+        },
+        {
+            "judul": "Understanding Python Lambdas - Real Python",
+            "url": "https://realpython.com/python-lambda/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi lambda",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat argumen yang diberikan ke fungsi lambda tidak sesuai dengan yang diharapkan.",
+            "contoh": "add = lambda x, y: x + y\nprint(add(2))",
+            "solusi": "Pastikan jumlah dan tipe argumen yang diberikan sesuai dengan definisi fungsi lambda."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat sintaks lambda tidak sesuai dengan aturan Python.",
+            "contoh": "lambda x, y: return x + y",
+            "solusi": "Hapus kata kunci 'return' dan pastikan sintaks lambda sesuai dengan format 'lambda argumen: ekspresi'."
+        }
+    ]
+}

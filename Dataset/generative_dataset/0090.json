@@ -1,0 +1,87 @@
+{
+    "sumber": "PythonMudah.com",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2023-10-15",
+    "judul": "Memahami dan Menggunakan Fungsi Map di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["map", "fungsi built-in", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi map di Python. Fungsi map digunakan untuk menerapkan suatu fungsi pada setiap elemen dalam suatu iterable (seperti list) dan menghasilkan iterable baru dengan hasil yang telah diubah.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = [1, 2, 3, 4, 5]\nsquared = list(map(lambda x: x**2, numbers))\nprint(squared)",
+            "komentar": "Contoh penggunaan fungsi map dengan lambda untuk menghitung kuadrat setiap elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def add_five(x):\n    return x + 5\n\nnumbers = [1, 2, 3, 4, 5]\nresult = list(map(add_five, numbers))\nprint(result)",
+            "komentar": "Contoh penggunaan fungsi map dengan fungsi yang didefinisikan sendiri untuk menambah lima ke setiap elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "strings = ['1', '2', '3', '4', '5']\nints = list(map(int, strings))\nprint(ints)",
+            "komentar": "Contoh penggunaan fungsi map dengan fungsi bawaan untuk mengubah setiap elemen string dalam list menjadi integer"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "names = ['alice', 'bob', 'charlie']\ncapitalized = list(map(str.capitalize, names))\nprint(capitalized)",
+            "komentar": "Contoh penggunaan fungsi map dengan fungsi bawaan str.capitalize untuk mengubah huruf pertama setiap nama menjadi huruf besar"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers1 = [1, 2, 3]\nnumbers2 = [4, 5, 6]\nsums = list(map(lambda x, y: x + y, numbers1, numbers2))\nprint(sums)",
+            "komentar": "Contoh penggunaan fungsi map dengan dua list untuk menjumlahkan elemen-elemen yang bersesuaian"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Map",
+            "deskripsi": "Cara menggunakan fungsi map untuk menerapkan suatu fungsi pada setiap elemen dalam iterable."
+        },
+        {
+            "topik": "Lambda dengan Map",
+            "deskripsi": "Cara menggunakan lambda function bersama map untuk operasi sederhana."
+        },
+        {
+            "topik": "Fungsi yang Didefinisikan Sendiri dengan Map",
+            "deskripsi": "Cara menggunakan fungsi yang didefinisikan sendiri bersama map untuk operasi yang lebih kompleks."
+        },
+        {
+            "topik": "Map dengan Beberapa Iterable",
+            "deskripsi": "Cara menggunakan map dengan beberapa iterable untuk menerapkan fungsi yang melibatkan lebih dari satu input."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python map() Function - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_map.asp"
+        },
+        {
+            "judul": "Using Python's map() Function - Real Python",
+            "url": "https://realpython.com/python-map-function/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi map",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat fungsi yang diberikan ke map tidak sesuai dengan elemen dalam iterable.",
+            "contoh": "numbers = [1, 2, 3]\nresult = list(map(lambda x: x + 'a', numbers))",
+            "solusi": "Pastikan fungsi yang diberikan ke map sesuai dengan tipe data elemen dalam iterable."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat jumlah elemen dalam iterable tidak sama ketika menggunakan beberapa iterable.",
+            "contoh": "numbers1 = [1, 2]\nnumbers2 = [3, 4, 5]\nsums = list(map(lambda x, y: x + y, numbers1, numbers2))",
+            "solusi": "Pastikan semua iterable memiliki jumlah elemen yang sama ketika menggunakan beberapa iterable dengan map."
+        }
+    ]
+}

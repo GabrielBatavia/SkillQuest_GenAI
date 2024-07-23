@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "pythonmudah.net",
+        "penulis": "Rizky Aditya",
+        "tanggal": "2023-02-18",
+        "judul": "Memahami Variabel dan Tipe Data di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "variabel", "tipe data"],
+        "konten": "Artikel ini memberikan penjelasan mendalam tentang bagaimana mendeklarasikan variabel serta tipe data dasar yang ada di Python seperti integer, float, string, dan boolean.",
+        "pertanyaan": [
+            {
+                "question": "Ketika menulis kode Python, bagaimana saya bisa menyimpan sebuah nilai untuk digunakan nanti?",
+                "answer": "Anda dapat menyimpan nilai dengan membuat variabel dan memberikan nilai kepadanya. Misalnya, `x = 10` menyimpan nilai 10 dalam variabel x."
+            },
+            {
+                "question": "Saya sering mendengar istilah integer dalam konteks pemrograman. Apa sebenarnya integer itu dalam Python?",
+                "answer": "Dalam Python, tipe data integer digunakan untuk menyimpan bilangan bulat. Contoh penggunaannya adalah `x = 5`."
+            },
+            {
+                "question": "Tipe data float tampaknya berbeda dari integer. Apa yang membuat float unik dalam Python?",
+                "answer": "Tipe data float digunakan untuk menyimpan angka dengan titik desimal. Contoh: `x = 5.5`."
+            },
+            {
+                "question": "Apa cara yang tepat untuk menyimpan dan memanipulasi teks dalam Python?",
+                "question_code": "x = 'Hello, World!'",
+                "answer": "Untuk menyimpan teks, Anda menggunakan tipe data string. Contoh: `x = 'Hello, World!'`.",
+                "answer_code": "x = 'Hello, World!'"
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data boolean, dan bagaimana saya bisa menggunakannya?",
+                "question_code": "x = True",
+                "answer": "Tipe data boolean hanya memiliki dua nilai: `True` atau `False`. Contohnya adalah `x = True`.",
+                "answer_code": "x = True"
+            },
+            {
+                "question": "Jika saya ingin mengubah angka bulat menjadi angka desimal, fungsi apa yang bisa saya gunakan?",
+                "question_code": "x = float(5)",
+                "answer": "Gunakan fungsi `float()` untuk mengubah integer menjadi float. Contoh: `x = float(5)`.",
+                "answer_code": "x = float(5)"
+            },
+            {
+                "question": "Bagaimana cara mengonversi teks yang berisi angka menjadi tipe data integer?",
+                "question_code": "x = int('10')",
+                "answer": "Anda bisa menggunakan fungsi `int()` untuk mengubah string yang berisi angka menjadi integer. Contohnya: `x = int('10')`.",
+                "answer_code": "x = int('10')"
+            },
+            {
+                "question": "Apa yang harus saya lakukan untuk mengetahui tipe data dari suatu variabel?",
+                "question_code": "type(x)",
+                "answer": "Fungsi `type()` digunakan untuk memeriksa tipe data dari variabel. Contoh: `type(x)` akan menunjukkan tipe data dari variabel x.",
+                "answer_code": "type(x)"
+            },
+            {
+                "question": "Saya ingin menggabungkan beberapa potongan teks. Bagaimana cara melakukannya dalam Python?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nresult = str1 + ' ' + str2",
+                "answer": "Untuk menggabungkan teks, Anda dapat menggunakan operator `+`. Misalnya, `result = str1 + ' ' + str2` akan menghasilkan string 'Hello World'.",
+                "answer_code": "result = str1 + ' ' + str2"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpemrogramanpython.net",
+        "penulis": "Ahmad Subagyo",
+        "tanggal": "2024-04-05",
+        "judul": "Operator Dasar di Python dan Fungsinya",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator", "dasar"],
+        "konten": "Artikel ini memberikan gambaran tentang berbagai operator di Python seperti operator aritmatika, perbandingan, logika, dan assignment, serta cara penggunaannya dalam kode.",
+        "pertanyaan": [
+            {
+                "question": "Dalam Python, operator apa yang digunakan untuk melakukan perhitungan matematika dasar?",
+                "answer": "Operator aritmatika seperti `+`, `-`, `*`, dan `/` digunakan untuk operasi matematika dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian."
+            },
+            {
+                "question": "Untuk menambahkan dua angka, operator apa yang digunakan dalam Python?",
+                "answer": "Gunakan operator `+` untuk penjumlahan. Misalnya: `x + y`."
+            },
+            {
+                "question": "Apa operator yang harus digunakan jika saya ingin mengurangi satu nilai dari nilai lainnya?",
+                "answer": "Operator `-` digunakan untuk pengurangan. Contoh penggunaannya: `x - y`."
+            },
+            {
+                "question": "Bagaimana saya bisa melakukan perkalian antara dua angka di Python?",
+                "question_code": "x * y",
+                "answer": "Gunakan operator `*` untuk perkalian. Contoh penggunaannya adalah `x * y`.",
+                "answer_code": "x * y"
+            },
+            {
+                "question": "Apa operator yang tepat untuk membagi angka di Python?",
+                "question_code": "x / y",
+                "answer": "Gunakan operator `/` untuk membagi angka. Contoh: `x / y`.",
+                "answer_code": "x / y"
+            },
+            {
+                "question": "Bagaimana cara membandingkan dua nilai untuk melihat apakah mereka sama?",
+                "question_code": "x == y",
+                "answer": "Operator `==` digunakan untuk membandingkan dua nilai dan memeriksa apakah mereka sama. Contoh: `x == y`.",
+                "answer_code": "x == y"
+            },
+            {
+                "question": "Apa operator yang digunakan untuk membandingkan apakah satu nilai lebih besar dari nilai lainnya?",
+                "question_code": "x > y",
+                "answer": "Gunakan operator `>` untuk memeriksa apakah nilai pertama lebih besar dari nilai kedua. Contoh: `x > y`.",
+                "answer_code": "x > y"
+            },
+            {
+                "question": "Apa fungsi dari operator logika dalam Python dan bagaimana penggunaannya?",
+                "question_code": "x and y",
+                "answer": "Operator logika seperti `and`, `or`, dan `not` digunakan untuk operasi logika. Contoh: `x and y`.",
+                "answer_code": "x and y"
+            },
+            {
+                "question": "Jika saya ingin menetapkan nilai pada variabel, operator apa yang saya gunakan?",
+                "question_code": "x = 10",
+                "answer": "Gunakan operator `=` untuk menetapkan nilai pada variabel. Misalnya: `x = 10`.",
+                "answer_code": "x = 10"
+            }
+        ]
+    }
+]

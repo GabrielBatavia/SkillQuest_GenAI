@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonExperts.org",
+    "penulis": "Rina Setiawan",
+    "tanggal": "2025-07-30",
+    "judul": "Panduan Lengkap Menggunakan Strings di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini membahas berbagai cara untuk memanipulasi strings di Python, termasuk metode bawaan yang dapat digunakan untuk mengelola strings dengan efisien.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\nkalimat = 'Belajar Python itu menyenangkan!'\nprint('Kalimat:', kalimat)\nprint('Tipe data:', type(kalimat))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode startswith()\nteks = 'Belajar Python itu seru'\ncek_awal = teks.startswith('Belajar')\nprint('Startswith Belajar:', cek_awal)",
+            "komentar": "Memeriksa apakah string dimulai dengan substring tertentu menggunakan metode startswith()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode endswith()\nteks = 'Python sangat fleksibel'\ncek_akhir = teks.endswith('fleksibel')\nprint('Endswith fleksibel:', cek_akhir)",
+            "komentar": "Memeriksa apakah string diakhiri dengan substring tertentu menggunakan metode endswith()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isalpha()\nteks = 'Python'\nis_alpha = teks.isalpha()\nprint('Apakah teks hanya berisi huruf?', is_alpha)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah huruf menggunakan metode isalpha()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode zfill()\nnomor = '42'\nnomor_zfill = nomor.zfill(5)\nprint('Zfill:', nomor_zfill)",
+            "komentar": "Menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode replace()\nteks = 'Python sangat mudah'\nteks_baru = teks.replace('mudah', 'menyenangkan')\nprint('Replace:', teks_baru)",
+            "komentar": "Mengganti substring dalam string menggunakan metode replace()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode split() dengan delimiter\nteks = 'apel;jeruk;mangga'\nbuah_list = teks.split(';')\nprint('Split:', buah_list)",
+            "komentar": "Memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode format() dengan f-string\nnama = 'Rina'\numur = 28\ninfo = f'Nama saya {nama} dan saya berusia {umur} tahun.'\nprint(info)",
+            "komentar": "Menggunakan f-string untuk menyisipkan variabel dalam string"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode startswith()",
+            "deskripsi": "Cara memeriksa apakah string dimulai dengan substring tertentu menggunakan metode startswith()."
+        },
+        {
+            "topik": "Metode endswith()",
+            "deskripsi": "Cara memeriksa apakah string diakhiri dengan substring tertentu menggunakan metode endswith()."
+        },
+        {
+            "topik": "Metode isalpha()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah huruf menggunakan metode isalpha()."
+        },
+        {
+            "topik": "Metode zfill()",
+            "deskripsi": "Cara menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()."
+        },
+        {
+            "topik": "Metode replace()",
+            "deskripsi": "Cara mengganti substring dalam string menggunakan metode replace()."
+        },
+        {
+            "topik": "Metode split() dengan Delimiter",
+            "deskripsi": "Cara memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()."
+        },
+        {
+            "topik": "f-string",
+            "deskripsi": "Cara menggunakan f-string untuk menyisipkan variabel dalam string."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Rina'\numur = 28\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

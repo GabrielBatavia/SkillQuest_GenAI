@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Kai Shaw",
+    "tanggal": "2028-03-20",
+    "judul": "Python Decorators: Simplifying Code with Decorators in Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Decorators", "Intermediate"],
+    "konten": "Decorators are a powerful and flexible tool in Python used to modify the behavior of functions or methods...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of defining and using a decorator\ndef my_decorator(func):\n    def wrapper():\n        print('Something is happening before the function is called.')\n        func()\n        print('Something is happening after the function is called.')\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print('Hello, world!')\n\nsay_hello()",
+        "komentar": "Defines a decorator and applies it to a function."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Simplifikasi Kode dengan Decorators dalam Python",
+        "deskripsi": "Menggunakan decorators untuk memodifikasi perilaku fungsi atau metode secara efisien dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Decorators Documentation",
+        "url": "https://docs.python.org/3/glossary.html#term-decorator"
+      }
+    ],
+    "highlight": ["powerful and flexible tool in Python", "Python decorators"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "SyntaxError occurred due to incorrect syntax in decorator definition.",
+        "contoh": "@my_decorator\ndef say_hello():",
+        "solusi": "Ensure correct syntax is used when defining decorators."
+      }
+    ]
+  },
+  {
+    "sumber": "medium.com",
+    "penulis": "Koa Decker",
+    "tanggal": "2028-04-05",
+    "judul": "Python File Handling: Working with Files in Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "File Handling", "Pemula"],
+    "konten": "File handling in Python allows you to read from and write to files, manipulate file contents, and manage...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of reading from and writing to a file\nfile_path = 'example.txt'\n\n# Writing to a file\nwith open(file_path, 'w') as file:\n    file.write('Hello, world!')\n\n# Reading from a file\nwith open(file_path, 'r') as file:\n    content = file.read()\n    print('File content:', content)",
+        "komentar": "Writes to and reads from a file in Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengelolaan Berkas (File Handling) dalam Python",
+        "deskripsi": "Menggunakan Python untuk membaca dan menulis file, memanipulasi isi file, dan mengelola data berkas."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python File Handling Documentation",
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files"
+      }
+    ],
+    "highlight": ["read from and write to files", "Python file handling"],
+    "error": [
+      {
+        "error": "FileNotFoundError",
+        "deskripsi": "FileNotFoundError occurred due to file 'example.txt' not found.",
+        "contoh": "with open('nonexistent_file.txt', 'r') as file:",
+        "solusi": "Ensure file exists in the specified location or correct file path is used."
+      }
+    ]
+  }
+]

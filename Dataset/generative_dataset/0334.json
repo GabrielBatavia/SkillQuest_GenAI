@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2023-09-23",
+    "judul": "Membuat Web dengan Flask",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["data science", "pandas"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "code",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Contoh konkret", "Mudah dipahami"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan penulisan sintaks",
+        "contoh": "print('Hello World'",
+        "solusi": "Tambahkan tanda kurung tutup"
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2023-02-21",
+    "judul": "Belajar Python Dasar",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["tutorial", "belajar"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "code",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Mudah dipahami", "Tips berguna"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan penulisan sintaks",
+        "contoh": "print('Hello World'",
+        "solusi": "Tambahkan tanda kurung tutup"
+      }
+    ]
+  }
+]

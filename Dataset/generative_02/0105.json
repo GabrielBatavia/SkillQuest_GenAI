@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "belajarpemrogramanpython.com",
+        "penulis": "Andi Firmansyah",
+        "tanggal": "2023-03-22",
+        "judul": "Penggunaan Fungsi Built-in untuk String di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "built-in functions"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi built-in untuk memanipulasi string di Python, seperti `len()`, `str()`, `upper()`, `lower()`, dan `split()`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengukur panjang string di Python?",
+                "answer": "Anda bisa mengukur panjang string dengan menggunakan fungsi `len()`. Contohnya: `len('hello world')`."
+            },
+            {
+                "question": "Bagaimana cara mengubah tipe data menjadi string di Python?",
+                "answer": "Anda bisa mengubah tipe data menjadi string dengan menggunakan fungsi `str()`. Contohnya: `str(456.78)`."
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf besar di Python?",
+                "question_code": "string_value = 'example'\ncapitalized_string = string_value.upper_case()",
+                "answer": "Untuk mengubah string menjadi huruf besar, gunakan metode `upper()`. `upper_case()` tidak ada dalam Python. Kode yang benar adalah `string_value.upper()`.",
+                "answer_code": "string_value = 'example'\ncapitalized_string = string_value.upper()"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil di Python?",
+                "question_code": "string_value = 'EXAMPLE'\nmodified_string = string_value.toLowerCase()",
+                "answer": "Untuk mengubah string menjadi huruf kecil, gunakan metode `lower()`. `toLowerCase()` tidak ada dalam Python. Kode yang benar adalah `string_value.lower()`.",
+                "answer_code": "string_value = 'EXAMPLE'\nmodified_string = string_value.lower()"
+            },
+            {
+                "question": "Bagaimana cara memisahkan string menjadi list di Python?",
+                "question_code": "sentence = 'word1-word2-word3'\nwords_list = sentence.split_by('-')",
+                "answer": "Untuk memisahkan string, gunakan metode `split()` dengan parameter pemisah yang sesuai. `split_by()` tidak ada dalam Python. Kode yang benar adalah `sentence.split('-')`.",
+                "answer_code": "sentence = 'word1-word2-word3'\nwords_list = sentence.split('-')"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list menjadi string di Python?",
+                "question_code": "list_of_words = ['join', 'these']\ncombined_string = list_of_words.concat(' ')",
+                "answer": "Untuk menggabungkan list menjadi string, gunakan metode `join()` dengan pemisah yang sesuai. `concat()` tidak ada dalam Python. Kode yang benar adalah `' '.join(list_of_words)`.",
+                "answer_code": "list_of_words = ['join', 'these']\ncombined_string = ' '.join(list_of_words)"
+            },
+            {
+                "question": "Bagaimana cara mengganti substring dalam string di Python?",
+                "question_code": "original_text = 'replace this'\nupdated_text = original_text.swap('this', 'that')",
+                "answer": "Untuk mengganti substring dalam string, gunakan metode `replace()`. `swap()` tidak ada dalam Python. Kode yang benar adalah `original_text.replace('this', 'that')`.",
+                "answer_code": "original_text = 'replace this'\nupdated_text = original_text.replace('this', 'that')"
+            },
+            {
+                "question": "Bagaimana cara menghapus spasi di awal dan akhir string di Python?",
+                "question_code": "text_with_spaces = '   trim spaces   '\ntrimmed_text = text_with_spaces.strip_spaces()",
+                "answer": "Untuk menghapus spasi di awal dan akhir string, gunakan metode `strip()`. `strip_spaces()` tidak ada dalam Python. Kode yang benar adalah `text_with_spaces.strip()`.",
+                "answer_code": "text_with_spaces = '   trim spaces   '\ntrimmed_text = text_with_spaces.strip()"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string dimulai dengan substring tertentu di Python?",
+                "question_code": "line = 'hello there'\nstarts_with_check = line.starts_with('hello')",
+                "answer": "Untuk memeriksa apakah string dimulai dengan substring tertentu, gunakan metode `startswith()`. `starts_with()` tidak ada dalam Python. Kode yang benar adalah `line.startswith('hello')`.",
+                "answer_code": "line = 'hello there'\nstarts_with_check = line.startswith('hello')"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpython.net",
+        "penulis": "Siti Aminah",
+        "tanggal": "2024-01-12",
+        "judul": "Penggunaan Kondisi dan Loop di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "kondisi", "loop"],
+        "konten": "Artikel ini menjelaskan cara menggunakan kondisi dan loop di Python, termasuk pernyataan `if`, `else`, `elif`, dan loop `for` serta `while`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `if` di Python?",
+                "answer": "Pernyataan `if` digunakan untuk menjalankan blok kode tertentu jika kondisi yang diberikan benar. Contohnya: `if y < 10: print('y kurang dari 10')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `else` di Python?",
+                "answer": "Pernyataan `else` digunakan untuk menjalankan blok kode jika kondisi dalam pernyataan `if` salah. Contohnya: `else: print('y tidak kurang dari 10')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `elif` di Python?",
+                "answer": "Pernyataan `elif` digunakan untuk memeriksa kondisi lain jika kondisi dalam pernyataan `if` sebelumnya salah. Contohnya: `elif y == 10: print('y sama dengan 10')`."
+            },
+            {
+                "question": "Bagaimana cara menulis loop `for` di Python?",
+                "question_code": "for index in range(4):\n    print(index + 2)",
+                "answer": "Untuk menulis loop `for`, gunakan sintaks `for item in iterable:`. Contoh ini menambahkan 2 pada setiap elemen dalam `range(4)`.",
+                "answer_code": "for index in range(4):\n    print(index)"
+            },
+            {
+                "question": "Bagaimana cara menulis loop `while` di Python?",
+                "question_code": "num = 5\nwhile num >= 0:\n    print(num)\n    num -= 1",
+                "answer": "Untuk menulis loop `while`, gunakan sintaks `while condition:`. Dalam contoh ini, `num` dikurangi 1 pada setiap iterasi hingga menjadi kurang dari 0.",
+                "answer_code": "num = 5\nwhile num >= 0:\n    print(num)\n    num -= 2"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop di Python?",
+                "question_code": "for i in range(7):\n    if i == 3:\n        halt_loop\n    print(i)",
+                "answer": "Untuk menghentikan loop, gunakan pernyataan `break`. `halt_loop` bukanlah perintah yang valid. Kode yang benar adalah `break`.",
+                "answer_code": "for i in range(7):\n    if i == 3:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya dalam loop?",
+                "question_code": "for i in range(5):\n    if i % 3 == 0:\n        skip\n    print(i)",
+                "answer": "Untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya, gunakan pernyataan `continue`. `skip` bukanlah perintah yang valid. Kode yang benar adalah `continue`.",
+                "answer_code": "for i in range(5):\n    if i % 3 == 0:\n        continue\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop bersarang di Python?",
+                "question_code": "for outer in range(3):\n    for inner in range(4):\n        print(outer + inner)",
+                "answer": "Untuk menggunakan loop bersarang, tempatkan satu loop di dalam loop lainnya. Contoh ini menjumlahkan nilai `outer` dan `inner` untuk setiap iterasi.",
+                "answer_code": "for outer in range(3):\n    for inner in range(4):\n        print(outer, inner)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan `else` dalam loop di Python?",
+                "question_code": "for number in range(3):\n    print(number)\nif number == 2:\n    else:\n        print('Loop lengkap')",
+                "answer": "Untuk menggunakan pernyataan `else` dalam loop, gunakan `else` setelah blok loop. Jika loop selesai tanpa `break`, `else` akan dieksekusi.",
+                "answer_code": "for number in range(3):\n    print(number)\nelse:\n    print('Loop lengkap')"
+            }
+        ]
+    }
+]

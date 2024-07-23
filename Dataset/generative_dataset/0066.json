@@ -1,0 +1,88 @@
+{
+    "sumber": "pythonprogramming.id",
+    "penulis": "Dewi Susanti",
+    "tanggal": "2024-09-20",
+    "judul": "Pengenalan Fungsi di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Fungsi", "Pemula"],
+    "konten": "Artikel ini memberikan pengenalan tentang fungsi di Python, termasuk cara mendefinisikan, memanggil, dan menggunakan fungsi untuk memecahkan masalah.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def hello():\n    print('Hello, world!')\n\nhello()",
+            "komentar": "Mendefinisikan dan memanggil fungsi sederhana hello() untuk mencetak pesan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def tambah(a, b):\n    hasil = a + b\n    return hasil\n\nprint(tambah(5, 3))",
+            "komentar": "Mendefinisikan fungsi tambah() dengan parameter a dan b untuk menjumlahkan dua bilangan dan mengembalikan hasilnya."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def kali(a, b=2):\n    hasil = a * b\n    return hasil\n\nprint(kali(5))\nprint(kali(5, 3))",
+            "komentar": "Mendefinisikan fungsi kali() dengan parameter b yang memiliki nilai default, sehingga bisa dipanggil dengan atau tanpa nilai untuk b."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def pangkat(angka, eksponen):\n    hasil = angka ** eksponen\n    return hasil\n\nprint(pangkat(2, 3))",
+            "komentar": "Mendefinisikan fungsi pangkat() untuk menghitung pangkat dari sebuah bilangan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "def cek_genap(angka):\n    if angka % 2 == 0:\n        return True\n    else:\n        return False\n\nprint(cek_genap(4))",
+            "komentar": "Mendefinisikan fungsi cek_genap() untuk memeriksa apakah sebuah bilangan genap."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Pengenalan Fungsi",
+            "deskripsi": "Dasar-dasar tentang apa itu fungsi di Python."
+        },
+        {
+            "topik": "Parameter Fungsi",
+            "deskripsi": "Cara menggunakan parameter dalam mendefinisikan fungsi."
+        },
+        {
+            "topik": "Return Statement",
+            "deskripsi": "Penggunaan return untuk mengembalikan nilai dari sebuah fungsi."
+        },
+        {
+            "topik": "Nilai Default Parameter",
+            "deskripsi": "Cara menggunakan nilai default untuk parameter fungsi."
+        },
+        {
+            "topik": "Fungsi Matematika Sederhana",
+            "deskripsi": "Contoh penggunaan fungsi untuk operasi matematika sederhana."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Functions",
+            "url": "https://www.w3schools.com/python/python_functions.asp"
+        },
+        {
+            "judul": "Defining Functions",
+            "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+        }
+    ],
+    "highlight": ["Mendefinisikan fungsi", "Menggunakan parameter", "Penggunaan return"],
+    "error": [
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan nama variabel atau fungsi yang belum didefinisikan.",
+            "contoh": "print(halo())",
+            "solusi": "Pastikan nama variabel atau fungsi sudah didefinisikan sebelum digunakan."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat fungsi diberikan jenis argumen yang tidak sesuai.",
+            "contoh": "print(tambah('a', 'b'))",
+            "solusi": "Pastikan argumen yang diberikan sesuai dengan tipe data yang diharapkan oleh fungsi."
+        }
+    ]
+}

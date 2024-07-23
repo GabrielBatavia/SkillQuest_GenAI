@@ -1,0 +1,90 @@
+{
+    "sumber": "pythonacademy.id",
+    "penulis": "Rina Wijayanti",
+    "tanggal": "2024-01-10",
+    "judul": "Menggunakan Exception Handling di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Exception Handling", "Error Handling", "Menengah"],
+    "konten": "Artikel ini membahas cara menangani kesalahan atau exception di Python dengan menggunakan blok try, except, else, dan finally.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "try:\n    angka = int(input('Masukkan sebuah angka: '))\n    hasil = 10 / angka\n    print('Hasil:', hasil)\nexcept ZeroDivisionError:\n    print('Kesalahan: Tidak bisa membagi dengan nol')",
+            "komentar": "Menggunakan blok try dan except untuk menangani ZeroDivisionError."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "try:\n    angka = int(input('Masukkan sebuah angka: '))\nexcept ValueError:\n    print('Kesalahan: Input harus berupa angka')",
+            "komentar": "Menggunakan blok try dan except untuk menangani ValueError."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "try:\n    angka = int(input('Masukkan sebuah angka: '))\n    hasil = 10 / angka\nexcept (ValueError, ZeroDivisionError) as e:\n    print('Kesalahan terjadi:', e)\nelse:\n    print('Hasil:', hasil)",
+            "komentar": "Menggunakan blok try, except, dan else untuk memisahkan logika kesalahan dan logika normal."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "try:\n    file = open('data.txt', 'r')\n    konten = file.read()\n    print(konten)\nfinally:\n    file.close()",
+            "komentar": "Menggunakan blok finally untuk menutup file, memastikan file selalu ditutup meskipun terjadi kesalahan."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "try:\n    angka = int(input('Masukkan sebuah angka: '))\n    hasil = 10 / angka\nexcept ZeroDivisionError:\n    print('Kesalahan: Tidak bisa membagi dengan nol')\nexcept ValueError:\n    print('Kesalahan: Input harus berupa angka')\nelse:\n    print('Hasil:', hasil)\nfinally:\n    print('Eksekusi blok finally')",
+            "komentar": "Menggunakan kombinasi lengkap try, except, else, dan finally untuk menangani berbagai kesalahan dan memastikan blok finally dieksekusi."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Try Except",
+            "deskripsi": "Cara menggunakan blok try dan except untuk menangani kesalahan di Python."
+        },
+        {
+            "topik": "Multiple Exceptions",
+            "deskripsi": "Cara menangani beberapa jenis kesalahan dalam satu blok except."
+        },
+        {
+            "topik": "Else Clause",
+            "deskripsi": "Penggunaan klausa else untuk mengeksekusi kode jika tidak ada kesalahan yang terjadi."
+        },
+        {
+            "topik": "Finally Clause",
+            "deskripsi": "Penggunaan klausa finally untuk mengeksekusi kode yang harus dijalankan terlepas dari adanya kesalahan atau tidak."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Exception Handling di Python",
+            "url": "https://docs.python.org/3/tutorial/errors.html"
+        },
+        {
+            "judul": "Exception Handling Explained",
+            "url": "https://realpython.com/python-exceptions/"
+        }
+    ],
+    "highlight": ["Menangani kesalahan dengan try dan except", "Penggunaan klausa else dan finally", "Exception handling yang efisien"],
+    "error": [
+        {
+            "error": "ZeroDivisionError",
+            "deskripsi": "Kesalahan yang terjadi saat melakukan pembagian dengan nol.",
+            "contoh": "hasil = 10 / 0",
+            "solusi": "Pastikan pembagi tidak nol sebelum melakukan operasi pembagian."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat konversi tipe data gagal.",
+            "contoh": "angka = int('abc')",
+            "solusi": "Pastikan nilai yang akan dikonversi memiliki format yang benar."
+        },
+        {
+            "error": "FileNotFoundError",
+            "deskripsi": "Kesalahan yang terjadi saat file yang ingin dibuka tidak ditemukan.",
+            "contoh": "file = open('tidak_ada.txt', 'r')",
+            "solusi": "Pastikan file yang akan dibuka ada di lokasi yang benar."
+        }
+    ]
+}

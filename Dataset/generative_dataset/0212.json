@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Ella Adams",
+    "tanggal": "2026-04-20",
+    "judul": "Python Object-Oriented Programming (OOP): Understanding Classes and Objects",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Object-Oriented Programming", "OOP", "Classes", "Objects", "Pemula"],
+    "konten": "Object-oriented programming (OOP) in Python allows you to structure your code using classes and objects...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of defining a class\nclass Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\n    def display_info(self):\n        print(f'Car: {self.brand} {self.model}')\n\n# Create an instance of the Car class\nmy_car = Car('Toyota', 'Corolla')\nmy_car.display_info()",
+        "komentar": "Defines a class 'Car' and creates an instance to display information."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Berorientasi Objek (OOP) dalam Python",
+        "deskripsi": "Menggunakan pemrograman berorientasi objek untuk struktur kode menggunakan kelas dan objek dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Classes Documentation",
+        "url": "https://docs.python.org/3/tutorial/classes.html"
+      }
+    ],
+    "highlight": ["structure your code using classes and objects", "Python object-oriented programming (OOP)"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "AttributeError occurred due to accessing non-existent attribute in class instance.",
+        "contoh": "print(my_car.color)",
+        "solusi": "Ensure attribute 'color' exists in the 'Car' class or instance."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Gabriel Scott",
+    "tanggal": "2026-05-05",
+    "judul": "Python Logging: Simplifying Debugging and Error Tracking with Logging",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Logging", "Debugging", "Error Tracking", "Intermediate"],
+    "konten": "Logging in Python allows you to track and record system events for debugging and error tracking purposes...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import logging\n\n# Configure logging\nlogging.basicConfig(filename='example.log', level=logging.DEBUG)\n\n# Example of logging messages\nlogging.debug('Debugging message')\nlogging.info('Informational message')\nlogging.warning('Warning message')\nlogging.error('Error message')\nlogging.critical('Critical message')",
+        "komentar": "Configures logging and logs messages at different levels."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Logging dalam Python",
+        "deskripsi": "Menggunakan logging untuk melacak dan merekam peristiwa sistem untuk tujuan debugging dan pelacakan kesalahan dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Logging Documentation",
+        "url": "https://docs.python.org/3/library/logging.html"
+      }
+    ],
+    "highlight": ["track and record system events", "Python logging levels"],
+    "error": [
+      {
+        "error": "FileNotFoundError",
+        "deskripsi": "FileNotFoundError occurred due to accessing non-existent log file.",
+        "contoh": "logging.basicConfig(filename='nonexistent.log', level=logging.DEBUG)",
+        "solusi": "Ensure specified log file path exists or create the file before configuring logging."
+      }
+    ]
+  }
+]

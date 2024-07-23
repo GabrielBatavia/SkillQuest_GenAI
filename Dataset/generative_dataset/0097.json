@@ -1,0 +1,111 @@
+{
+    "sumber": "BelajarPython.id",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2023-12-25",
+    "judul": "Memahami dan Menggunakan Operator Matematika di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["operator matematika", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan operator matematika dasar di Python. Operator matematika digunakan untuk melakukan operasi seperti penjumlahan, pengurangan, perkalian, dan pembagian.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a + b\nprint(c)",
+            "komentar": "Contoh dasar penjumlahan dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a - b\nprint(c)",
+            "komentar": "Contoh dasar pengurangan dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a * b\nprint(c)",
+            "komentar": "Contoh dasar perkalian dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a / b\nprint(c)",
+            "komentar": "Contoh dasar pembagian dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a % b\nprint(c)",
+            "komentar": "Contoh dasar operasi modulus untuk mendapatkan sisa pembagian"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a ** b\nprint(c)",
+            "komentar": "Contoh dasar operasi eksponen untuk perpangkatan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nc = a // b\nprint(c)",
+            "komentar": "Contoh dasar operasi pembagian bulat"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Penjumlahan",
+            "deskripsi": "Cara menggunakan operator + untuk menjumlahkan dua angka."
+        },
+        {
+            "topik": "Pengurangan",
+            "deskripsi": "Cara menggunakan operator - untuk mengurangi satu angka dari angka lainnya."
+        },
+        {
+            "topik": "Perkalian",
+            "deskripsi": "Cara menggunakan operator * untuk mengalikan dua angka."
+        },
+        {
+            "topik": "Pembagian",
+            "deskripsi": "Cara menggunakan operator / untuk membagi satu angka dengan angka lainnya."
+        },
+        {
+            "topik": "Modulus",
+            "deskripsi": "Cara menggunakan operator % untuk mendapatkan sisa pembagian dari dua angka."
+        },
+        {
+            "topik": "Eksponen",
+            "deskripsi": "Cara menggunakan operator ** untuk menghitung perpangkatan."
+        },
+        {
+            "topik": "Pembagian Bulat",
+            "deskripsi": "Cara menggunakan operator // untuk mendapatkan hasil pembagian bulat."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Arithmetic Operators - W3Schools",
+            "url": "https://www.w3schools.com/python/python_operators.asp"
+        },
+        {
+            "judul": "Basic Math Operations in Python - Real Python",
+            "url": "https://realpython.com/python-numbers/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang operator matematika di Python",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "ZeroDivisionError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba membagi angka dengan nol.",
+            "contoh": "a = 5\nb = 0\nc = a / b\nprint(c)",
+            "solusi": "Pastikan penyebut dalam operasi pembagian tidak nol."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan operator matematika dengan tipe data yang tidak sesuai.",
+            "contoh": "a = 5\nb = '3'\nc = a + b\nprint(c)",
+            "solusi": "Pastikan kedua operan memiliki tipe data yang sesuai, seperti mengonversi string ke integer dengan int(b)."
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "sumber": "Deep Learning Indonesia",
+    "penulis": "Rahmat Hidayat",
+    "tanggal": "2024-03-10",
+    "judul": "Pengenalan TensorFlow untuk Deep Learning",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "TensorFlow", "Deep Learning"],
+    "konten": "Artikel ini memberikan pengenalan dasar tentang penggunaan TensorFlow untuk deep learning.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "import tensorflow as tf\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu'),\n    tf.keras.layers.Dense(1)\n])",
+            "komentar": "Kode ini mendefinisikan model jaringan saraf sederhana dengan TensorFlow."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "TensorFlow",
+            "deskripsi": "Dasar-dasar penggunaan TensorFlow untuk deep learning."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Tutorial TensorFlow",
+            "url": "https://www.tensorflow.org/tutorials"
+        }
+    ],
+    "highlight": ["Deep Learning", "Model Jaringan Saraf"],
+    "error": [
+        {
+            "error": "InvalidArgumentError",
+            "deskripsi": "Kesalahan ini terjadi ketika argumen yang diberikan tidak valid.",
+            "contoh": "tf.keras.layers.Dense(-1, activation='relu')",
+            "solusi": "Pastikan argumen yang diberikan valid, misalnya jumlah neuron harus positif."
+        }
+    ]
+}

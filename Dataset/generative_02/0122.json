@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "pythonuntukpemula.com",
+        "penulis": "Dewi Sartika",
+        "tanggal": "2023-03-05",
+        "judul": "Penggunaan Tipe Data Set di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "set", "dasar"],
+        "konten": "Artikel ini menjelaskan cara membuat, mengakses, menambah, menghapus, dan mengoperasikan elemen dalam set di Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu set di Python?",
+                "answer": "Set adalah struktur data yang tidak berurutan dan tidak mengizinkan elemen duplikat."
+            },
+            {
+                "question": "Bagaimana cara membuat set di Python?",
+                "answer": "Anda bisa membuat set dengan menggunakan tanda kurung kurawal `{}` atau fungsi `set()`. Contohnya: `my_set = {1, 2, 3}` atau `my_set = set([1, 2, 3])`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke dalam set?",
+                "question_code": "set.add(4)",
+                "answer": "Anda bisa menambahkan elemen ke dalam set dengan menggunakan metode `add()`. Contohnya: `my_set.add(4)`.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.add(4)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari set?",
+                "question_code": "remove(2)",
+                "answer": "Anda bisa menghapus elemen dari set dengan menggunakan metode `remove()`. Contohnya: `my_set.remove(2)`.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.remove(2)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah elemen ada dalam set?",
+                "question_code": "2 in set",
+                "answer": "Anda bisa memeriksa apakah elemen ada dalam set dengan menggunakan operator `in`. Contohnya: `2 in my_set`.",
+                "answer_code": "my_set = {1, 2, 3}\n2 in my_set"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua set di Python?",
+                "question_code": "set1 = {1, 2}\nset2 = {3, 4}\ncombined = set1.union(set3)",
+                "answer": "Anda bisa menggabungkan dua set dengan menggunakan metode `union()`. Contohnya: `set1.union(set2)`.",
+                "answer_code": "set1 = {1, 2}\nset2 = {3, 4}\ncombined_set = set1.union(set2)"
+            },
+            {
+                "question": "Bagaimana cara menemukan irisan dua set di Python?",
+                "question_code": "set1 = {1, 2}\nset2 = {2, 3}\nintersection = set1.intersection(3)",
+                "answer": "Anda bisa menemukan irisan dua set dengan menggunakan metode `intersection()`. Contohnya: `set1.intersection(set2)`.",
+                "answer_code": "set1 = {1, 2}\nset2 = {2, 3}\nintersection_set = set1.intersection(set2)"
+            },
+            {
+                "question": "Bagaimana cara menemukan perbedaan dua set di Python?",
+                "question_code": "set1 = {1, 2}\nset2 = {2, 3}\ndiff = set1.difference(set3)",
+                "answer": "Anda bisa menemukan perbedaan dua set dengan menggunakan metode `difference()`. Contohnya: `set1.difference(set2)`.",
+                "answer_code": "set1 = {1, 2}\nset2 = {2, 3}\ndifference_set = set1.difference(set2)"
+            },
+            {
+                "question": "Bagaimana cara menghapus semua elemen dalam set?",
+                "question_code": "clear()",
+                "answer": "Anda bisa menghapus semua elemen dalam set dengan menggunakan metode `clear()`. Contohnya: `my_set.clear()`.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.clear()"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpythonpemula.com",
+        "penulis": "Yusuf Ramadhan",
+        "tanggal": "2024-01-25",
+        "judul": "Penggunaan Loop For di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "loop for", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan loop for di Python untuk mengiterasi elemen-elemen dalam berbagai struktur data seperti list, tuple, dan string.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menulis loop for di Python?",
+                "answer": "Anda bisa menulis loop for dengan menggunakan sintaks `for item in iterable:` diikuti dengan blok kode yang akan diulang. Contohnya: `for i in range(5): print(i)`."
+            },
+            {
+                "question": "Bagaimana cara mengiterasi elemen-elemen dalam list menggunakan loop for?",
+                "question_code": "for element in list:\n    print(elmnt)",
+                "answer": "Anda bisa mengiterasi elemen-elemen dalam list dengan menggunakan loop for. Contohnya: `for item in my_list: print(item)`.",
+                "answer_code": "my_list = [1, 2, 3]\nfor item in my_list:\n    print(item)"
+            },
+            {
+                "question": "Bagaimana cara mengiterasi karakter-karakter dalam string menggunakan loop for?",
+                "question_code": "for c in 'string':\n    print(char)",
+                "answer": "Anda bisa mengiterasi karakter-karakter dalam string dengan menggunakan loop for. Contohnya: `for char in my_string: print(char)`.",
+                "answer_code": "my_string = 'hello'\nfor char in my_string:\n    print(char)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for dengan fungsi range?",
+                "question_code": "for n in range(3):\nprint(i)",
+                "answer": "Anda bisa menggunakan loop for dengan fungsi range untuk menghasilkan urutan angka. Contohnya: `for i in range(5): print(i)`.",
+                "answer_code": "for i in range(5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for dengan enumerate?",
+                "question_code": "list = ['x', 'y', 'z']\nfor idx, val in enum(list):\nprint(idx, val)",
+                "answer": "Anda bisa menggunakan loop for dengan enumerate untuk mendapatkan indeks dan nilai dari iterable. Contohnya: `for index, value in enumerate(my_list): print(index, value)`.",
+                "answer_code": "my_list = ['a', 'b', 'c']\nfor index, value in enumerate(my_list):\n    print(index, value)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for dengan dictionary?",
+                "question_code": "dict = {'a': 1, 'b': 2}\nfor k, v in dic.items():\n    print(k, v)",
+                "answer": "Anda bisa menggunakan loop for dengan dictionary untuk mengiterasi kunci dan nilai. Contohnya: `for key, value in my_dict.items(): print(key, value)`.",
+                "answer_code": "my_dict = {'a': 1, 'b': 2}\nfor key, value in my_dict.items():\n    print(key, value)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for dengan tuple?",
+                "question_code": "tuple = (1, 2, 3)\nfor elem in tup:\n    print(element)",
+                "answer": "Anda bisa menggunakan loop for dengan tuple untuk mengiterasi elemen-elemen dalam tuple. Contohnya: `for item in my_tuple: print(item)`.",
+                "answer_code": "my_tuple = (1, 2, 3)\nfor item in my_tuple:\n    print(item)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop for untuk mengiterasi dua list secara bersamaan?",
+                "question_code": "lst1 = [4, 5, 6]\nlst2 = ['x', 'y', 'z']\nfor x, y in zip(lst1):\n    print(a, b)",
+                "answer": "Anda bisa menggunakan loop for untuk mengiterasi dua list secara bersamaan dengan menggunakan fungsi `zip()`. Contohnya: `for a, b in zip(list1, list2): print(a, b)`.",
+                "answer_code": "list1 = [1, 2, 3]\nlist2 = ['a', 'b', 'c']\nfor a, b in zip(list1, list2):\n    print(a, b)"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop for menggunakan break?",
+                "question_code": "for x in range(10):\n    if x == 6:\n    break\n    print(x)",
+                "answer": "Anda bisa menghentikan loop for menggunakan pernyataan `break`. Contohnya: `if i == 5: break`.",
+                "answer_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)"
+            }
+        ]
+    }
+]

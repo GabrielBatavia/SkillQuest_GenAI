@@ -1,0 +1,97 @@
+{
+    "sumber": "PythonEasyLearning.com",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2024-06-15",
+    "judul": "Memahami dan Menggunakan Variabel dalam Looping di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "looping", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel dalam perulangan (looping) di Python. Loop memungkinkan kita untuk mengulang blok kode tertentu beberapa kali. Variabel dalam loop dapat digunakan untuk menyimpan hasil sementara, menghitung jumlah iterasi, atau memproses elemen dalam struktur data.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(5):\n    print('Iterasi ke-', i)",
+            "komentar": "Contoh menggunakan variabel i dalam loop for untuk mencetak nomor iterasi dari 0 hingga 4"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "total = 0\nfor num in [1, 2, 3, 4, 5]:\n    total += num\nprint('Total:', total)",
+            "komentar": "Contoh mendefinisikan variabel total di luar loop dan menggunakannya di dalam loop untuk menghitung jumlah elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)",
+            "komentar": "Contoh menggunakan variabel fruit dalam loop for untuk mencetak setiap elemen dalam list fruits"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "i = 0\nwhile i < 5:\n    print('Iterasi ke-', i)\n    i += 1",
+            "komentar": "Contoh menggunakan variabel i dalam loop while untuk mencetak nomor iterasi hingga nilai i kurang dari 5"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = [1, 2, 3, 4, 5]\nsquares = []\nfor num in numbers:\n    squares.append(num ** 2)\nprint('Kuadrat:', squares)",
+            "komentar": "Contoh menggunakan loop for untuk menghitung kuadrat dari setiap elemen dalam list dan menyimpannya dalam list baru"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "i = 1\nfactorial = 1\nwhile i <= 5:\n    factorial *= i\n    i += 1\nprint('Faktorial 5 adalah', factorial)",
+            "komentar": "Contoh menggunakan variabel i dan factorial dalam loop while untuk menghitung faktorial dari 5"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Variabel dalam Loop For",
+            "deskripsi": "Cara menggunakan variabel dalam loop for untuk iterasi melalui list, range, atau struktur data lainnya."
+        },
+        {
+            "topik": "Variabel dalam Loop While",
+            "deskripsi": "Cara menggunakan variabel dalam loop while untuk mengontrol kondisi perulangan."
+        },
+        {
+            "topik": "Menghitung Total dengan Loop",
+            "deskripsi": "Cara mendefinisikan variabel di luar loop dan menggunakannya di dalam loop untuk menghitung total."
+        },
+        {
+            "topik": "Memproses List dengan Loop",
+            "deskripsi": "Cara menggunakan loop for untuk memproses elemen dalam list dan menyimpan hasilnya dalam list baru."
+        },
+        {
+            "topik": "Menghitung Faktorial dengan Loop",
+            "deskripsi": "Cara menggunakan loop while untuk menghitung faktorial dari suatu angka."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python For Loops - W3Schools",
+            "url": "https://www.w3schools.com/python/python_for_loops.asp"
+        },
+        {
+            "judul": "Python While Loops - W3Schools",
+            "url": "https://www.w3schools.com/python/python_while_loops.asp"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan variabel dalam perulangan di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap"
+    ],
+    "error": [
+        {
+            "error": "IndentationError",
+            "deskripsi": "Kesalahan yang terjadi saat indentasi kode tidak sesuai dengan aturan Python.",
+            "contoh": "for i in range(5):\nprint(i)",
+            "solusi": "Pastikan semua blok kode dalam pernyataan loop diindentasi dengan benar."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat sintaks tidak sesuai dengan aturan Python.",
+            "contoh": "while i < 5\n    print(i)",
+            "solusi": "Pastikan untuk menambahkan tanda titik dua (:) di akhir pernyataan while."
+        }
+    ]
+}

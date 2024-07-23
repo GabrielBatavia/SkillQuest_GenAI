@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonBeginnerTutorials.com",
+    "penulis": "Dewi Ayu",
+    "tanggal": "2024-11-01",
+    "judul": "Memahami dan Menggunakan Tipe Data Float di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "float", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data float di Python. Float adalah tipe data yang digunakan untuk merepresentasikan angka desimal. Float sangat berguna dalam berbagai aplikasi seperti perhitungan matematika, pengolahan data ilmiah, dan aplikasi keuangan.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "angka = 3.14\nprint('Angka:', angka)\nprint('Tipe data:', type(angka))",
+            "komentar": "Ini adalah cara kita mendefinisikan variabel angka dengan tipe data float"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 7.0\nb = 3.0\nc = a / b\nprint('Hasil pembagian:', c)",
+            "komentar": "Ini adalah contoh penggunaan float untuk operasi pembagian"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "bilangan = 0.1 + 0.2\nprint('Hasil penjumlahan:', bilangan)\nprint('Apakah hasil sama dengan 0.3?', bilangan == 0.3)",
+            "komentar": "Contoh menunjukkan bagaimana operasi penjumlahan pada float dapat menghasilkan hasil yang tidak diharapkan karena presisi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "import math\nangka = 16.0\nakar = math.sqrt(angka)\nprint('Akar kuadrat dari', angka, 'adalah', akar)",
+            "komentar": "Ini adalah cara menggunakan modul math untuk menghitung akar kuadrat dari angka float"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nilai = 7.89\nprint('Nilai asli:', nilai)\nprint('Nilai dibulatkan:', round(nilai))",
+            "komentar": "Contoh penggunaan fungsi round() untuk membulatkan angka float"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "harga = 19.99\njumlah = 3\ntotal = harga * jumlah\nprint('Total harga:', total)",
+            "komentar": "Contoh penggunaan float dalam perhitungan harga total"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nilai = 45.67\nif nilai >= 50.0:\n    print('Lulus')\nelse:\n    print('Tidak lulus')",
+            "komentar": "Ini adalah cara menggunakan float dalam pernyataan if untuk pemeriksaan kondisi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nilai = 3.14159\nprint('Nilai dalam format string: {:.2f}'.format(nilai))",
+            "komentar": "Contoh penggunaan metode format() untuk menampilkan float dengan dua angka desimal"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Float",
+            "deskripsi": "Cara mendefinisikan variabel float di Python menggunakan angka desimal."
+        },
+        {
+            "topik": "Operasi Aritmatika dengan Float",
+            "deskripsi": "Cara menggunakan float untuk operasi aritmatika seperti penjumlahan, pengurangan, perkalian, dan pembagian."
+        },
+        {
+            "topik": "Masalah Presisi pada Float",
+            "deskripsi": "Penjelasan tentang masalah presisi yang mungkin terjadi saat menggunakan float."
+        },
+        {
+            "topik": "Menggunakan Modul Math",
+            "deskripsi": "Cara menggunakan modul math untuk operasi matematika dengan angka float."
+        },
+        {
+            "topik": "Pembulatan Float",
+            "deskripsi": "Cara membulatkan angka float menggunakan fungsi round()."
+        },
+        {
+            "topik": "Float dalam Aplikasi Keuangan",
+            "deskripsi": "Contoh penggunaan float dalam perhitungan harga total dan aplikasi keuangan lainnya."
+        },
+        {
+            "topik": "Penggunaan Float dalam Pernyataan If",
+            "deskripsi": "Cara menggunakan float dalam pernyataan if untuk pemeriksaan kondisi."
+        },
+        {
+            "topik": "Format String dengan Float",
+            "deskripsi": "Cara menggunakan metode format() untuk menampilkan float dengan format tertentu."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Floats - W3Schools",
+            "url": "https://www.w3schools.com/python/python_numbers.asp"
+        },
+        {
+            "judul": "Floating Point Arithmetic: Issues and Limitations - Python Docs",
+            "url": "https://docs.python.org/3/tutorial/floatingpoint.html"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data float di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana float digunakan dalam perhitungan matematika dan aplikasi keuangan"
+    ],
+    "error": [
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengonversi string yang tidak valid ke float.",
+            "contoh": "nilai = float('abc')",
+            "solusi": "Pastikan string yang akan dikonversi ke float adalah representasi angka yang valid."
+        },
+        {
+            "error": "OverflowError",
+            "deskripsi": "Kesalahan yang terjadi saat operasi menghasilkan nilai float yang terlalu besar untuk diwakili.",
+            "contoh": "nilai = 1.79e308\nnilai = nilai * 10",
+            "solusi": "Pastikan nilai float tidak melebihi batas maksimum yang dapat diwakili."
+        }
+    ]
+}

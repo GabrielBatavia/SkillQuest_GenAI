@@ -1,0 +1,88 @@
+{
+    "sumber": "pythonsederhana.com",
+    "penulis": "Dewi Lestari",
+    "tanggal": "2025-03-20",
+    "judul": "Penggunaan Kondisional if-else di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Kondisional", "if-else", "Pemula"],
+    "konten": "Artikel ini memberikan pengenalan tentang penggunaan dasar struktur kondisional if-else di Python, termasuk sintaks dasar, operator perbandingan, dan penggunaan elif untuk kondisi berganda.",
+    "contoh": [
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "nilai = 75\nif nilai >= 70:\n    print('Selamat, Anda lulus!')",
+            "komentar": "Contoh penggunaan kondisional if untuk mengecek apakah nilai lebih dari atau sama dengan 70."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "umur = 18\nif umur >= 18:\n    print('Anda sudah cukup umur.')\nelse:\n    print('Anda masih di bawah umur.')",
+            "komentar": "Contoh penggunaan kondisional if-else untuk menentukan pesan berdasarkan nilai umur."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "angka = -5\nif angka > 0:\n    print('Angka positif')\nelif angka == 0:\n    print('Angka nol')\nelse:\n    print('Angka negatif')",
+            "komentar": "Contoh penggunaan kondisional if-elif-else untuk menentukan pesan berdasarkan nilai angka."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "bilangan = 9\nif bilangan % 2 == 0:\n    print('Bilangan genap')\nelse:\n    print('Bilangan ganjil')",
+            "komentar": "Contoh penggunaan kondisional if-else untuk menentukan apakah bilangan genap atau ganjil."
+        },
+        {
+            "tipe": "Kode",
+            "bahasa": "Python",
+            "isi": "x = 10\ny = 12\nif x > y:\n    print('x lebih besar dari y')\nelif x < y:\n    print('x lebih kecil dari y')\nelse:\n    print('x sama dengan y')",
+            "komentar": "Contoh penggunaan kondisional if-elif-else untuk membandingkan dua nilai."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Kondisional if",
+            "deskripsi": "Cara menggunakan pernyataan if untuk mengeksekusi blok kode jika kondisi tertentu benar."
+        },
+        {
+            "topik": "Kondisional if-else",
+            "deskripsi": "Cara menggunakan pernyataan if-else untuk mengeksekusi blok kode tertentu jika kondisi benar dan blok lain jika kondisi salah."
+        },
+        {
+            "topik": "Kondisional if-elif-else",
+            "deskripsi": "Cara menggunakan pernyataan if-elif-else untuk mengeksekusi salah satu dari beberapa blok kode berdasarkan kondisi yang benar."
+        },
+        {
+            "topik": "Operator Perbandingan",
+            "deskripsi": "Penggunaan operator seperti >, <, >=, <=, ==, dan != dalam kondisi if untuk membandingkan nilai."
+        },
+        {
+            "topik": "Kondisi Berganda",
+            "deskripsi": "Penggunaan kondisional if-elif-else untuk menangani kondisi yang lebih kompleks."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python if...else Statement",
+            "url": "https://www.w3schools.com/python/python_conditions.asp"
+        },
+        {
+            "judul": "Python Comparison Operators",
+            "url": "https://www.programiz.com/python-programming/operators"
+        }
+    ],
+    "highlight": ["Kondisional if-else", "Kondisional if-elif-else", "Operator perbandingan"],
+    "error": [
+        {
+            "error": "IndentationError",
+            "deskripsi": "Kesalahan yang terjadi saat indentasi dalam blok kode kondisional tidak konsisten.",
+            "contoh": "if x > 5:\nprint('x lebih besar dari 5')",
+            "solusi": "Pastikan semua baris kode dalam blok kondisional memiliki indentasi yang sama."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi karena sintaks tidak sesuai dalam pernyataan kondisional.",
+            "contoh": "if x > 5\n    print('x lebih besar dari 5')",
+            "solusi": "Perbaiki sintaks pernyataan kondisional agar sesuai dengan aturan Python."
+        }
+    ]
+}

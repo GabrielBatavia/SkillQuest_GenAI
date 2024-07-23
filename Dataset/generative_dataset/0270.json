@@ -1,0 +1,68 @@
+[
+  {
+    "sumber": "DataCamp",
+    "penulis": "Anna Johnson",
+    "tanggal": "2024-05-20",
+    "judul": "Menggunakan Pandas untuk Analisis Data",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Pandas", "Analisis Data"],
+    "konten": "Pandas adalah library Python yang digunakan untuk analisis data. Artikel ini membahas cara membaca file CSV, mengubah data, dan melakukan analisis sederhana.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n# Membaca file CSV\ndata = pd.read_csv('data.csv')\n# Menampilkan lima baris pertama\ndata.head()",
+        "komentar": "Membaca file CSV dan menampilkan beberapa baris pertama."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pandas",
+        "deskripsi": "Memanfaatkan library Pandas untuk mengolah dan menganalisis data dalam Python."
+      },
+      {
+        "topik": "Analisis Data",
+        "deskripsi": "Teknik-teknik dasar untuk analisis data menggunakan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "highlight": ["Pandas", "Analisis Data", "File CSV"],
+    "error": []
+  },
+  {
+    "sumber": "Towards Data Science",
+    "penulis": "Emily Tan",
+    "tanggal": "2024-04-10",
+    "judul": "Pemrograman Berorientasi Objek dengan Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "OOP", "Pemrograman"],
+    "konten": "Konsep Pemrograman Berorientasi Objek (OOP) adalah paradigma penting dalam Python. Artikel ini membahas class, objek, inheritance, dan polymorphism.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "class Kendaraan:\n    def __init__(self, nama, warna):\n        self.nama = nama\n        self.warna = warna\n\n    def info(self):\n        return f'Kendaraan {self.nama} berwarna {self.warna}'\n\nmobil = Kendaraan('Honda', 'Merah')\nprint(mobil.info())",
+        "komentar": "Contoh pembuatan class Kendaraan dan penggunaannya untuk mencetak informasi."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Berorientasi Objek (OOP)",
+        "deskripsi": "Memahami konsep dasar OOP dan implementasinya dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python OOP Documentation",
+        "url": "https://realpython.com/python3-object-oriented-programming/"
+      }
+    ],
+    "highlight": ["OOP", "Class", "Inheritance"],
+    "error": []
+  }
+]

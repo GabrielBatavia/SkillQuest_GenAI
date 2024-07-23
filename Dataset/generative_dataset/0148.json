@@ -1,0 +1,118 @@
+{
+    "sumber": "PythonAdvancedGuide.com",
+    "penulis": "Raden Muhammad Nabil Dwiyantyas Utama",
+    "tanggal": "2024-09-05",
+    "judul": "Memahami dan Menggunakan Tipe Data Enum di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "enum", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tipe data Enum di Python. Enum digunakan untuk mendefinisikan kumpulan nilai yang diberi nama, membuat kode lebih mudah dibaca dan dipelihara. Enum sangat berguna dalam situasi di mana Anda memiliki sejumlah nilai konstan yang terkait.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n    BLUE = 3\n\nprint('Anggota Enum:', list(Color))",
+            "komentar": "Contoh mendefinisikan enum Color dengan anggota RED, GREEN, dan BLUE, kemudian mencetak semua anggota enum"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Status(Enum):\n    PENDING = 'pending'\n    APPROVED = 'approved'\n    REJECTED = 'rejected'\n\nstatus = Status.PENDING\nprint('Status saat ini:', status)",
+            "komentar": "Contoh mendefinisikan enum Status dengan nilai string dan mencetak nilai enum yang digunakan"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Direction(Enum):\n    NORTH = 1\n    SOUTH = 2\n    EAST = 3\n    WEST = 4\n\nfor direction in Direction:\n    print(direction.name, direction.value)",
+            "komentar": "Contoh iterasi melalui anggota enum dan mencetak nama serta nilainya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Weekday(Enum):\n    MONDAY = 1\n    TUESDAY = 2\n    WEDNESDAY = 3\n    THURSDAY = 4\n    FRIDAY = 5\n    SATURDAY = 6\n    SUNDAY = 7\n\nprint('Hari kerja:', Weekday.MONDAY, 'hingga', Weekday.FRIDAY)",
+            "komentar": "Contoh mendefinisikan enum Weekday untuk hari-hari dalam seminggu dan mencetak rentang hari kerja"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Level(Enum):\n    LOW = 'low'\n    MEDIUM = 'medium'\n    HIGH = 'high'\n\nlevel = Level.HIGH\nif level == Level.HIGH:\n    print('Level adalah tinggi')",
+            "komentar": "Contoh mendefinisikan enum Level dan menggunakan perbandingan enum dalam pernyataan if"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum, auto\n\nclass Signal(Enum):\n    RED = auto()\n    YELLOW = auto()\n    GREEN = auto()\n\nprint('Sinyal:', list(Signal))",
+            "komentar": "Contoh mendefinisikan enum Signal dengan nilai otomatis menggunakan auto() dan mencetak semua anggota enum"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Grade(Enum):\n    A = 4.0\n    B = 3.0\n    C = 2.0\n    D = 1.0\n    F = 0.0\n\nprint('Nilai Grade B:', Grade.B.value)",
+            "komentar": "Contoh mendefinisikan enum Grade dengan nilai numerik dan mencetak nilai numerik untuk Grade B"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from enum import Enum\n\nclass Size(Enum):\n    SMALL = 'S'\n    MEDIUM = 'M'\n    LARGE = 'L'\n    EXTRALARGE = 'XL'\n\nsize = Size.MEDIUM\nprint('Ukuran yang dipilih:', size.name, size.value)",
+            "komentar": "Contoh mendefinisikan enum Size untuk ukuran pakaian dan mencetak nama serta nilai ukuran yang dipilih"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Mendefinisikan Enum",
+            "deskripsi": "Cara mendefinisikan enum di Python menggunakan modul enum."
+        },
+        {
+            "topik": "Menggunakan Nilai String dalam Enum",
+            "deskripsi": "Cara mendefinisikan dan menggunakan nilai string dalam enum."
+        },
+        {
+            "topik": "Iterasi melalui Anggota Enum",
+            "deskripsi": "Cara melakukan iterasi melalui anggota enum dan mencetak nama serta nilainya."
+        },
+        {
+            "topik": "Perbandingan Enum",
+            "deskripsi": "Cara menggunakan perbandingan enum dalam pernyataan if."
+        },
+        {
+            "topik": "Menggunakan auto() untuk Nilai Otomatis",
+            "deskripsi": "Cara menggunakan auto() untuk menetapkan nilai otomatis pada anggota enum."
+        },
+        {
+            "topik": "Enum dengan Nilai Numerik",
+            "deskripsi": "Cara mendefinisikan enum dengan nilai numerik dan mengakses nilai tersebut."
+        },
+        {
+            "topik": "Mengakses Nama dan Nilai Enum",
+            "deskripsi": "Cara mengakses nama dan nilai anggota enum."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Enum - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_enum.asp"
+        },
+        {
+            "judul": "Enums in Python - Real Python",
+            "url": "https://realpython.com/python-enum/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan tipe data enum di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana enum digunakan untuk membuat kode lebih mudah dibaca dan dipelihara dengan nilai yang diberi nama"
+    ],
+    "error": [
+        {
+            "error": "AttributeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses anggota yang tidak ada dalam enum.",
+            "contoh": "from enum import Enum\n\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n\nprint(Color.BLUE)",
+            "solusi": "Pastikan untuk hanya mengakses anggota yang telah didefinisikan dalam enum."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menetapkan nilai baru ke anggota enum yang bersifat immutable.",
+            "contoh": "from enum import Enum\n\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n\nColor.RED = 3",
+            "solusi": "Pastikan untuk tidak mencoba mengubah nilai anggota enum setelah didefinisikan."
+        }
+    ]
+}

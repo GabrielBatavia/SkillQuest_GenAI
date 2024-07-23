@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Ellis Crawford",
+    "tanggal": "2027-12-20",
+    "judul": "Python Deep Learning: Introduction to Neural Networks with TensorFlow",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Deep Learning", "Neural Networks", "TensorFlow", "Intermediate"],
+    "konten": "TensorFlow is a powerful library for building and training deep learning models in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import tensorflow as tf\nfrom tensorflow.keras import layers\n\n# Example of defining a simple neural network\nmodel = tf.keras.Sequential([\n    layers.Dense(64, activation='relu', input_shape=(784,)),\n    layers.Dense(10, activation='softmax')\n])\nmodel.summary()",
+        "komentar": "Defines a simple neural network using TensorFlow."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Neural Networks dengan TensorFlow dalam Python",
+        "deskripsi": "Menggunakan TensorFlow untuk membangun dan melatih model deep learning dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "TensorFlow Documentation",
+        "url": "https://www.tensorflow.org/"
+      }
+    ],
+    "highlight": ["powerful library for building and training deep learning models", "TensorFlow neural networks"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing TensorFlow module.",
+        "contoh": "import tensorflow as tf",
+        "solusi": "Ensure TensorFlow is installed with Python or available in the environment."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Skyler Page",
+    "tanggal": "2028-01-05",
+    "judul": "Python Concurrency: Asynchronous Programming with Asyncio",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Concurrency", "Asyncio", "Intermediate"],
+    "konten": "Asyncio is a library to write concurrent code using the async/await syntax in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of asynchronous programming with Asyncio\nimport asyncio\n\nasync def hello():\n    print('Hello')\n\nloop = asyncio.get_event_loop()\nloop.run_until_complete(hello())",
+        "komentar": "Demonstrates asynchronous programming using Asyncio."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Asynchronous dengan Asyncio dalam Python",
+        "deskripsi": "Menggunakan Asyncio untuk menulis kode yang concurrent menggunakan sintaks async/await dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Asyncio Documentation",
+        "url": "https://docs.python.org/3/library/asyncio.html"
+      }
+    ],
+    "highlight": ["library to write concurrent code using async/await syntax", "Asyncio asynchronous programming"],
+    "error": [
+      {
+        "error": "RuntimeError",
+        "deskripsi": "RuntimeError occurred due to event loop already running in Asyncio.",
+        "contoh": "loop.run_until_complete(hello())",
+        "solusi": "Ensure event loop is properly managed in Asyncio code."
+      }
+    ]
+  }
+]

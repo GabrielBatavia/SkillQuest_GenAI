@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "pythonmudah.com",
+        "penulis": "Fajar Prasetyo",
+        "tanggal": "2023-05-18",
+        "judul": "Cara Kerja String di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "dasar"],
+        "konten": "Artikel ini menjelaskan cara bekerja dengan string di Python, termasuk pembuatan, akses, manipulasi, dan pemformatan string.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat string di Python?",
+                "answer": "String dapat dibuat dengan tanda kutip tunggal atau ganda. Contoh: `str1 = 'Hello'` atau `str2 = \"World\"`."
+            },
+            {
+                "question": "Bagaimana cara mengakses karakter tertentu dalam string?",
+                "answer": "Karakter dalam string dapat diakses melalui indeks. Misalnya, `str1[0]` mengembalikan karakter pertama."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string di Python?",
+                "answer": "Dua string dapat digabungkan dengan operator `+`. Misalnya: `str1 + str2`."
+            },
+            {
+                "question": "Bagaimana cara menggandakan string di Python?",
+                "question_code": "str1 * 3",
+                "answer": "String dapat digandakan dengan operator `*`. Contohnya: `str1 * 3`.",
+                "answer_code": "str1 * 3"
+            },
+            {
+                "question": "Bagaimana cara memeriksa keberadaan substring dalam string?",
+                "question_code": "'Hello' in str1",
+                "answer": "Keberadaan substring dalam string dapat diperiksa dengan operator `in`. Contoh: `'Hello' in str1`.",
+                "answer_code": "'Hello' in str1"
+            },
+            {
+                "question": "Bagaimana cara mengganti substring dalam string?",
+                "question_code": "str1.replace('Hello', 'Hi')",
+                "answer": "Substring dalam string dapat diganti dengan metode `replace()`. Contohnya: `str1.replace('Hello', 'Hi')`.",
+                "answer_code": "str1.replace('Hello', 'Hi')"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf besar semua?",
+                "question_code": "str1.upper()",
+                "answer": "String dapat diubah menjadi huruf besar dengan metode `upper()`. Misalnya: `str1.upper()`.",
+                "answer_code": "str1.upper()"
+            },
+            {
+                "question": "Bagaimana cara menghilangkan spasi di awal dan akhir string?",
+                "question_code": "str1.strip()",
+                "answer": "Spasi di awal dan akhir string dapat dihapus dengan metode `strip()`. Contoh: `str1.strip()`.",
+                "answer_code": "str1.strip()"
+            },
+            {
+                "question": "Bagaimana cara memformat string dengan variabel?",
+                "question_code": "\"Hello, {}\".format(name)",
+                "answer": "String dapat diformat dengan variabel menggunakan metode `format()`. Misalnya: `\"Hello, {}\".format(name)`.",
+                "answer_code": "\"Hello, {}\".format(name)"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpemrogramanpython.com",
+        "penulis": "Mira Handayani",
+        "tanggal": "2024-04-22",
+        "judul": "List Comprehensions di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list comprehensions", "dasar"],
+        "konten": "Artikel ini menguraikan penggunaan list comprehensions di Python untuk membuat dan mengolah list dengan cara yang lebih ringkas.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list comprehensions di Python?",
+                "answer": "List comprehensions adalah metode singkat untuk membuat list baru dari iterable yang sudah ada menggunakan satu baris kode."
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension yang sederhana?",
+                "answer": "List comprehension yang sederhana dapat dibuat dengan sintaks `[expression for item in iterable]`. Contoh: `[x for x in range(5)]`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan kondisi pada list comprehension?",
+                "question_code": "[x for x in range(10) if x % 2 == 0]",
+                "answer": "Kondisi dapat ditambahkan pada list comprehension dengan sintaks `[expression for item in iterable if condition]`. Contoh: `[x for x in range(10) if x % 2 == 0]`.",
+                "answer_code": "[x for x in range(10) if x % 2 == 0]"
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension menggunakan fungsi?",
+                "question_code": "[x**2 for x in range(10)]",
+                "answer": "List comprehension dengan fungsi dapat dibuat dengan memasukkan fungsi dalam ekspresi. Misalnya: `[x**2 for x in range(10)]`.",
+                "answer_code": "[x**2 for x in range(10)]"
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension dari list yang sudah ada?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers]",
+                "answer": "List comprehension dapat dibuat dari list yang sudah ada dengan menggunakan list tersebut sebagai iterable. Contoh: `[x**2 for x in numbers]`.",
+                "answer_code": "squares = [x**2 for x in numbers]"
+            },
+            {
+                "question": "Bagaimana cara membuat nested list comprehensions?",
+                "question_code": "[[x, y] for x in range(3) for y in range(3)]",
+                "answer": "Nested list comprehensions dibuat dengan dua loop for dalam satu list comprehension. Contoh: `[[x, y] for x in range(3) for y in range(3)]`.",
+                "answer_code": "[[x, y] for x in range(3) for y in range(3)]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk mengolah string?",
+                "question_code": "[char.upper() for char in 'hello']",
+                "answer": "List comprehension dapat digunakan untuk mengolah string dengan iterasi karakter dalam string. Misalnya: `[char.upper() for char in 'hello']`.",
+                "answer_code": "[char.upper() for char in 'hello']"
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension dari dictionary?",
+                "question_code": "{k: v**2 for k, v in {'a': 1, 'b': 2}.items()}",
+                "answer": "List comprehension dari dictionary dapat dibuat dengan menggunakan `.items()` untuk iterasi kunci dan nilai. Contoh: `{k: v**2 for k, v in {'a': 1, 'b': 2}.items()}`.",
+                "answer_code": "{k: v**2 for k, v in {'a': 1, 'b': 2}.items()}"
+            },
+            {
+                "question": "Bagaimana cara membuat set comprehension di Python?",
+                "question_code": "{x for x in range(5)}",
+                "answer": "Set comprehension dapat dibuat dengan tanda kurung kurawal `{}`. Misalnya: `{x for x in range(5)}`.",
+                "answer_code": "{x for x in range(5)}"
+            }
+        ]
+    }
+]

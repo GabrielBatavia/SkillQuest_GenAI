@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Liam Parker",
+    "tanggal": "2026-06-20",
+    "judul": "Python Regular Expressions (Regex): Pattern Matching in Strings",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Regular Expressions", "Regex", "Pattern Matching", "Intermediate"],
+    "konten": "Regular expressions (regex) in Python provide a powerful way to search and manipulate strings...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import re\n\n# Example of using regex to find patterns\npattern = r'apple'\ntext = 'An apple a day keeps the doctor away'\nmatches = re.findall(pattern, text)\nprint(matches)",
+        "komentar": "Uses regex to find occurrences of 'apple' in a string."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Ekspresi Reguler (Regex) dalam Python",
+        "deskripsi": "Menggunakan ekspresi reguler untuk pencarian pola dan manipulasi string dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Regular Expressions Documentation",
+        "url": "https://docs.python.org/3/howto/regex.html"
+      }
+    ],
+    "highlight": ["powerful way to search and manipulate strings", "Python regex pattern matching"],
+    "error": [
+      {
+        "error": "re.error",
+        "deskripsi": "re.error occurred due to invalid regex pattern.",
+        "contoh": "pattern = r'*apple'",
+        "solusi": "Ensure valid regex syntax and patterns are used."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Aria Wright",
+    "tanggal": "2026-07-05",
+    "judul": "Python Flask: Building Web Applications with Flask",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Flask", "Web Applications", "Intermediate"],
+    "konten": "Flask is a lightweight and flexible framework for building web applications in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "from flask import Flask\n\n# Example of a basic Flask app\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Hello, Flask!'\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "komentar": "Defines a basic Flask application with a route to display 'Hello, Flask!'"
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Aplikasi Web dengan Flask dalam Python",
+        "deskripsi": "Menggunakan Flask untuk membangun aplikasi web ringan dan fleksibel dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Flask Documentation",
+        "url": "https://flask.palletsprojects.com/en/2.0.x/"
+      }
+    ],
+    "highlight": ["lightweight and flexible framework", "Flask web applications"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing Flask module.",
+        "contoh": "from flask import Flask",
+        "solusi": "Ensure Flask is installed in the Python environment."
+      }
+    ]
+  }
+]

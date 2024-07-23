@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Livia Barrett",
+    "tanggal": "2029-04-05",
+    "judul": "Python Regular Expressions: Comprehensive Guide",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Regular Expressions", "Regex", "Intermediate"],
+    "konten": "Regular expressions (regex) in Python are powerful tools for searching and manipulating strings...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of using regular expressions in Python\nimport re\n\ndef find_emails(text):\n    pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'\n    emails = re.findall(pattern, text)\n    return emails\n\n# Test function\ntext = 'Contact us at info@example.com'\nemails_found = find_emails(text)\nprint('Emails found:', emails_found)",
+        "komentar": "Illustrates using regex to find emails in text."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penggunaan Regular Expressions dalam Python",
+        "deskripsi": "Menggunakan regular expressions untuk pencarian dan manipulasi string dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Regular Expressions Documentation",
+        "url": "https://docs.python.org/3/library/re.html"
+      }
+    ],
+    "highlight": ["powerful tools for searching and manipulating strings", "Python regular expressions"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "SyntaxError occurred due to incorrect syntax in regular expression pattern.",
+        "contoh": "pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'",
+        "solusi": "Ensure correct syntax is used in regular expression patterns in Python."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Jaxon Wang",
+    "tanggal": "2029-04-20",
+    "judul": "Python Data Visualization: Creating Interactive Plots with Plotly",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Data Visualization", "Plotly", "Interactive Plots", "Advanced"],
+    "konten": "Plotly is a versatile library for creating interactive data visualizations in Python. It supports various types of plots...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of creating an interactive plot with Plotly\nimport plotly.graph_objects as go\n\n# Create figure\nfig = go.Figure()\n\n# Add trace\nfig.add_trace(go.Scatter(\n    x=[1, 2, 3, 4],\n    y=[10, 11, 12, 13],\n    mode='lines+markers',\n    name='lineplot'\n))\n\n# Update layout\nfig.update_layout(\n    title='Interactive Plot with Plotly',\n    xaxis_title='X-axis',\n    yaxis_title='Y-axis'\n)\n\n# Show plot\nfig.show()",
+        "komentar": "Creates an interactive plot using Plotly."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Plot Interaktif dengan Plotly dalam Visualisasi Data Python",
+        "deskripsi": "Menggunakan Plotly untuk membuat visualisasi data interaktif dengan berbagai jenis plot dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Plotly Documentation",
+        "url": "https://plotly.com/python/"
+      }
+    ],
+    "highlight": ["versatile library for creating interactive data visualizations in Python", "Plotly interactive plots"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing Plotly library installation.",
+        "contoh": "import plotly.graph_objects as go",
+        "solusi": "Ensure Plotly library is installed and accessible in Python environment."
+      }
+    ]
+  }
+]

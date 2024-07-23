@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python.org",
+        "penulis": "David Mertz",
+        "tanggal": "2023-09-28",
+        "judul": "Pemrograman Generatif di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": [
+            "python",
+            "generatif",
+            "pemrograman"
+        ],
+        "konten": "Artikel ini menguraikan konsep pemrograman generatif di Python menggunakan generator dan iterator.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "def count_up_to(max):\n    count = 1\n    while count <= max:\n        yield count\n        count += 1\n\nfor number in count_up_to(5):\n    print(number)",
+                "komentar": "Contoh penggunaan generator untuk menghasilkan angka dari 1 hingga nilai maksimum."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Generator",
+                "deskripsi": "Fungsi yang mengembalikan iterator yang menghasilkan serangkaian nilai."
+            },
+            {
+                "topik": "Iterator",
+                "deskripsi": "Objek yang dapat diiterasi untuk mendapatkan nilai secara berurutan."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Iterators and Generators",
+                "url": "https://docs.python.org/3/tutorial/classes.html#generators"
+            }
+        ],
+        "highlight": [
+            "Generator",
+            "Iterator"
+        ],
+        "error": [
+            {
+                "error": "StopIteration",
+                "deskripsi": "Terjadi saat iterator tidak memiliki nilai yang tersisa.",
+                "contoh": "next(iterator)",
+                "solusi": "Pastikan untuk menangani penghentian iterasi dengan benar menggunakan try-except atau loop."
+            }
+        ]
+    },
+    {
+        "sumber": "Python.org",
+        "penulis": "Eric V. Smith",
+        "tanggal": "2021-06-23",
+        "judul": "Pemrosesan Teks di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": [
+            "python",
+            "teks",
+            "pemrosesan"
+        ],
+        "konten": "Artikel ini menjelaskan cara memproses teks di Python, termasuk penggunaan string dan operasi dasar teks.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "text = 'Hello, World!'\nprint(text.upper())",
+                "komentar": "Contoh mengubah teks menjadi huruf kapital menggunakan metode upper()."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "String",
+                "deskripsi": "Tipe data untuk menyimpan teks di Python."
+            },
+            {
+                "topik": "Metode String",
+                "deskripsi": "Fungsi yang dapat digunakan pada objek string, seperti upper(), lower(), dan split()."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Text Processing Services",
+                "url": "https://docs.python.org/3/library/text.html"
+            }
+        ],
+        "highlight": [
+            "Pemrosesan Teks",
+            "Metode String"
+        ],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi saat mencoba menggunakan metode yang tidak ada pada objek.",
+                "contoh": "text.uppercase()",
+                "solusi": "Pastikan metode yang digunakan benar dan ada pada objek."
+            }
+        ]
+    }
+]

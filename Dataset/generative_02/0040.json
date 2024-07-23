@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "pythonbasic.com",
+        "penulis": "Arif Setiawan",
+        "tanggal": "2023-07-20",
+        "judul": "Yuk Kenalan Sama Operator di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator", "dasar"],
+        "konten": "Artikel ini ngebahas macem-macem operator di Python, dari yang buat hitung-hitungan sampe yang buat ngatur logika.",
+        "pertanyaan": [
+            {
+                "question": "Operator aritmatika di Python itu apa sih?",
+                "answer": "Nah, operator aritmatika itu yang buat ngerjain soal matematika kayak tambah, kurang, kali, bagi gitu."
+            },
+            {
+                "question": "Gimana sih cara pake operator tambah di Python?",
+                "answer": "Kamu tinggal pake tanda `+` aja buat nambahin angka. Misalnya: `x + y`."
+            },
+            {
+                "question": "Gimana dong cara pake operator kurang di Python?",
+                "answer": "Pake tanda `-` buat ngurangin angka. Jadi kayak gini: `x - y`."
+            },
+            {
+                "question": "Cara pake operator kali di Python gimana?",
+                "question_code": "x * y",
+                "answer": "Kalo mau kali-kalian, pake tanda `*`. Contohnya: `x * y`.",
+                "answer_code": "x * y"
+            },
+            {
+                "question": "Cara pake operator bagi di Python gimana tuh?",
+                "question_code": "x / y",
+                "answer": "Kalo bagi-bagian, pake tanda `/`. Kayak gini: `x / y`.",
+                "answer_code": "x / y"
+            },
+            {
+                "question": "Apa sih operator perbandingan di Python?",
+                "question_code": "x == y",
+                "answer": "Operator perbandingan tuh yang buat bandingin dua nilai, hasilnya bisa `True` atau `False`. Contoh: `x == y`.",
+                "answer_code": "x == y"
+            },
+            {
+                "question": "Gimana cara pake operator lebih besar di Python?",
+                "question_code": "x > y",
+                "answer": "Pake tanda `>` buat liat apakah angka pertama lebih gede dari yang kedua. Misal: `x > y`.",
+                "answer_code": "x > y"
+            },
+            {
+                "question": "Operator logika di Python itu apa?",
+                "question_code": "x and y",
+                "answer": "Operator logika itu yang buat ngecek kondisi logis kayak `and`, `or`, dan `not`. Contohnya: `x and y`.",
+                "answer_code": "x and y"
+            },
+            {
+                "question": "Cara pake operator assignment di Python gimana?",
+                "question_code": "x = 10",
+                "answer": "Pake tanda `=` buat set nilai variabel. Jadi kayak `x = 10`.",
+                "answer_code": "x = 10"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarcodingpython.com",
+        "penulis": "Rizki Amalia",
+        "tanggal": "2024-03-01",
+        "judul": "Ngulik Struktur Data di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "struktur data", "dasar"],
+        "konten": "Di sini kita bahas tentang struktur data basic di Python, termasuk list, tuple, set, dan dictionary.",
+        "pertanyaan": [
+            {
+                "question": "List di Python itu apa ya?",
+                "answer": "List itu kayak rak buku digital, bisa isi macem-macem data dan diakses pake nomor urutnya."
+            },
+            {
+                "question": "Gimana cara bikin list di Python?",
+                "answer": "Buat list itu gampang, pake tanda kurung siku `[]` dan isi data di dalamnya dipisah pake koma. Contoh: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Tuple di Python itu apa?",
+                "answer": "Tuple itu kayak list, tapi sekali dibuat gabisa diubah-ubah lagi. Jadi lebih aman."
+            },
+            {
+                "question": "Cara bikin tuple di Python gimana?",
+                "question_code": "my_tuple = (1, 2, 3)",
+                "answer": "Bikin tuple mirip kayak list, tapi pake kurung biasa `()`. Kayak gini nih: `my_tuple = (1, 2, 3)`.",
+                "answer_code": "my_tuple = (1, 2, 3)"
+            },
+            {
+                "question": "Set di Python itu apa dong?",
+                "question_code": "my_set = {1, 2, 3}",
+                "answer": "Set itu kumpulan item yang unik dan ga berurutan. Jadi gabisa ada duplikat. Contoh: `my_set = {1, 2, 3}`.",
+                "answer_code": "my_set = {1, 2, 3}"
+            },
+            {
+                "question": "Gimana cara nambahin item ke set di Python?",
+                "question_code": "my_set.add(4)",
+                "answer": "Tambahin item ke set itu mudah, tinggal pake `add()`. Misal: `my_set.add(4)`.",
+                "answer_code": "my_set.add(4)"
+            },
+            {
+                "question": "Dictionary di Python itu apa sih?",
+                "question_code": "my_dict = {'key': 'value'}",
+                "answer": "Dictionary itu tempat nyimpen data berpasang, ada kuncinya dan nilainya. Misal: `my_dict = {'key': 'value'}`.",
+                "answer_code": "my_dict = {'key': 'value'}"
+            },
+            {
+                "question": "Gimana cara ngakses nilai dalam dictionary di Python?",
+                "question_code": "value = my_dict['key']",
+                "answer": "Ngeakses nilai dalam dictionary gampang, tinggal pake kuncinya. Kayak gini: `value = my_dict['key']`.",
+                "answer_code": "value = my_dict['key']"
+            },
+            {
+                "question": "Gimana cara ngapus item dari dictionary di Python?",
+                "question_code": "del my_dict['key']",
+                "answer": "Ngehapus item dari dictionary itu tinggal pake `del`. Contoh: `del my_dict['key']`.",
+                "answer_code": "del my_dict['key']"
+            }
+        ]
+    }
+]

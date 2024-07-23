@@ -1,0 +1,83 @@
+{
+    "sumber": "KodePython.net",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2022-09-25",
+    "judul": "Memahami dan Menggunakan Tuple di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["tuple", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan tuple di Python. Tuple adalah struktur data yang mirip dengan list, tetapi tidak dapat diubah setelah didefinisikan (immutable).",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ('apple', 'banana', 'cherry')\nprint(fruits)",
+            "komentar": "Contoh dasar pembuatan tuple dan mencetaknya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ('apple', 'banana', 'cherry')\nprint(fruits[0])",
+            "komentar": "Contoh akses elemen pertama dalam tuple"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ('apple', 'banana', 'cherry')\nfor fruit in fruits:\n    print(fruit)",
+            "komentar": "Contoh iterasi melalui elemen-elemen dalam tuple"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ('apple', 'banana', 'cherry')\nprint(len(fruits))",
+            "komentar": "Contoh penggunaan fungsi len() untuk mendapatkan jumlah elemen dalam tuple"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ('apple', 'banana', 'cherry')\nprint('banana' in fruits)",
+            "komentar": "Contoh penggunaan operator in untuk memeriksa apakah sebuah elemen ada dalam tuple"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Tuple",
+            "deskripsi": "Struktur data yang mirip dengan list, tetapi bersifat immutable (tidak dapat diubah setelah didefinisikan)."
+        },
+        {
+            "topik": "Akses Elemen",
+            "deskripsi": "Cara mengakses elemen dalam tuple menggunakan indeks."
+        },
+        {
+            "topik": "Iterasi Tuple",
+            "deskripsi": "Cara iterasi melalui elemen-elemen dalam tuple."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Tuples - W3Schools",
+            "url": "https://www.w3schools.com/python/python_tuples.asp"
+        },
+        {
+            "judul": "Understanding Tuples in Python - Real Python",
+            "url": "https://realpython.com/python-lists-tuples/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang tuple",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengubah elemen dalam tuple.",
+            "contoh": "fruits = ('apple', 'banana', 'cherry')\nfruits[0] = 'orange'",
+            "solusi": "Pastikan untuk tidak mencoba mengubah elemen dalam tuple. Jika perlu struktur data yang dapat diubah, gunakan list."
+        },
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam tuple.",
+            "contoh": "fruits = ('apple', 'banana', 'cherry')\nprint(fruits[3])",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang tuple."
+        }
+    ]
+}

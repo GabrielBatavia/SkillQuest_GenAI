@@ -1,0 +1,103 @@
+{
+    "sumber": "BelajarPython.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2023-12-31",
+    "judul": "Memahami dan Menggunakan Fungsi Print di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["print", "fungsi built-in", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi print di Python. Fungsi print digunakan untuk menampilkan output ke konsol.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "print('Hello, World!')",
+            "komentar": "Contoh dasar penggunaan fungsi print untuk menampilkan teks ke konsol"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "name = 'Alice'\nprint('Hello, ' + name + '!')",
+            "komentar": "Contoh penggunaan fungsi print untuk menampilkan teks dengan variabel"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "a = 5\nb = 3\nprint('Hasil penjumlahan:', a + b)",
+            "komentar": "Contoh penggunaan fungsi print untuk menampilkan hasil penjumlahan dua angka"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "temperature = 23.5\nprint(f'Suhu saat ini adalah {temperature} derajat Celsius')",
+            "komentar": "Contoh penggunaan fungsi print dengan f-string untuk menampilkan teks dengan variabel"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "items = ['apple', 'banana', 'cherry']\nprint('Daftar buah-buahan:', items)",
+            "komentar": "Contoh penggunaan fungsi print untuk menampilkan list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "for i in range(5):\n    print(i, end=' ')\nprint()",
+            "komentar": "Contoh penggunaan parameter end dalam fungsi print untuk mengubah karakter akhir dari baris baru ke spasi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "print('Baris pertama')\nprint('Baris kedua', 'Baris ketiga', sep=' | ')",
+            "komentar": "Contoh penggunaan parameter sep dalam fungsi print untuk mengubah pemisah antara beberapa argumen"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Print",
+            "deskripsi": "Cara menggunakan fungsi print untuk menampilkan output ke konsol."
+        },
+        {
+            "topik": "Menggabungkan Teks dengan Variabel",
+            "deskripsi": "Cara menggunakan fungsi print untuk menampilkan teks yang digabungkan dengan variabel."
+        },
+        {
+            "topik": "Print dengan f-String",
+            "deskripsi": "Cara menggunakan f-string dalam fungsi print untuk menampilkan teks dengan variabel."
+        },
+        {
+            "topik": "Print List",
+            "deskripsi": "Cara menggunakan fungsi print untuk menampilkan list."
+        },
+        {
+            "topik": "Parameter End dan Sep",
+            "deskripsi": "Cara menggunakan parameter end dan sep dalam fungsi print untuk mengubah karakter akhir dan pemisah."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python print() Function - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_print.asp"
+        },
+        {
+            "judul": "Mastering Python's print() Function - Real Python",
+            "url": "https://realpython.com/python-print/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi print",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data lain tanpa konversi.",
+            "contoh": "print('Nilai: ' + 5)",
+            "solusi": "Pastikan untuk mengonversi tipe data ke string saat menggabungkan dengan string, misalnya dengan menggunakan str()."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat f-string tidak sesuai dengan sintaks.",
+            "contoh": "name = 'Alice'\nprint(f'Hello, {name!')",
+            "solusi": "Pastikan f-string menggunakan kurung kurawal yang sesuai untuk menutup variabel."
+        }
+    ]
+}

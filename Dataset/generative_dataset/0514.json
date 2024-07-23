@@ -1,0 +1,122 @@
+{
+    "sumber": "LearnPythonToday.com",
+    "penulis": "Agus Setiawan",
+    "tanggal": "2025-08-15",
+    "judul": "Teknik Lanjutan dalam Mengelola Strings di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini memberikan panduan tentang teknik lanjutan dalam mengelola strings di Python, termasuk berbagai metode bawaan yang dapat digunakan untuk memanipulasi dan mengelola strings dengan efisien.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\nsalam = 'Hello, World!'\nprint('Salam:', salam)\nprint('Tipe data:', type(salam))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode rstrip()\nteks = 'Hello, World!    '\nteks_rstrip = teks.rstrip()\nprint('Rstrip:', teks_rstrip)",
+            "komentar": "Menghapus spasi di akhir string menggunakan metode rstrip()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode title()\nteks = 'belajar python di internet'\nteks_title = teks.title()\nprint('Title:', teks_title)",
+            "komentar": "Mengubah setiap awal kata menjadi huruf besar menggunakan metode title()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode count()\nteks = 'python python python'\njumlah = teks.count('python')\nprint('Jumlah kata python:', jumlah)",
+            "komentar": "Menghitung jumlah kemunculan substring dalam string menggunakan metode count()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode partition()\nteks = 'belajar python itu menyenangkan'\npartisi = teks.partition('python')\nprint('Partition:', partisi)",
+            "komentar": "Mempartisi string menjadi tiga bagian berdasarkan substring menggunakan metode partition()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isalpha()\nteks = 'Python'\nis_alpha = teks.isalpha()\nprint('Apakah teks hanya berisi huruf?', is_alpha)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah huruf menggunakan metode isalpha()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode ljust()\nangka = '42'\nangka_ljust = angka.ljust(5, '0')\nprint('Ljust:', angka_ljust)",
+            "komentar": "Menambahkan karakter di sebelah kanan string hingga mencapai panjang tertentu menggunakan metode ljust()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode format() dengan f-string\nnama = 'Agus'\numur = 30\ninfo = f'Nama saya {nama} dan saya berusia {umur} tahun.'\nprint(info)",
+            "komentar": "Menggunakan f-string untuk menyisipkan variabel dalam string"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode rstrip()",
+            "deskripsi": "Cara menghapus spasi di akhir string menggunakan metode rstrip()."
+        },
+        {
+            "topik": "Metode title()",
+            "deskripsi": "Cara mengubah setiap awal kata menjadi huruf besar menggunakan metode title()."
+        },
+        {
+            "topik": "Metode count()",
+            "deskripsi": "Cara menghitung jumlah kemunculan substring dalam string menggunakan metode count()."
+        },
+        {
+            "topik": "Metode partition()",
+            "deskripsi": "Cara mempartisi string menjadi tiga bagian berdasarkan substring menggunakan metode partition()."
+        },
+        {
+            "topik": "Metode isalpha()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah huruf menggunakan metode isalpha()."
+        },
+        {
+            "topik": "Metode ljust()",
+            "deskripsi": "Cara menambahkan karakter di sebelah kanan string hingga mencapai panjang tertentu menggunakan metode ljust()."
+        },
+        {
+            "topik": "f-string",
+            "deskripsi": "Cara menggunakan f-string untuk menyisipkan variabel dalam string."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Agus'\numur = 30\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

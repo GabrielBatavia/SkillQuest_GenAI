@@ -1,0 +1,71 @@
+{
+    "sumber": "KodePython.net",
+    "penulis": "Hendra Gunawan",
+    "tanggal": "2022-07-28",
+    "judul": "Memahami dan Menggunakan Exception Handling di Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["exception", "try", "except", "menengah"],
+    "konten": "Artikel ini membahas tentang penanganan kesalahan (exception handling) di Python, mencakup penggunaan blok try-except, jenis-jenis exception, dan cara membuat custom exception.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "try:\n    x = 1 / 0\nexcept ZeroDivisionError as e:\n    print(f'Error: {e}')",
+            "komentar": "Contoh dasar penanganan exception ZeroDivisionError"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "try:\n    with open('non_existent_file.txt', 'r') as file:\n        content = file.read()\nexcept FileNotFoundError as e:\n    print(f'Error: {e}')",
+            "komentar": "Contoh penanganan exception FileNotFoundError saat mencoba membaca file yang tidak ada"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "class CustomError(Exception):\n    pass\n\ntry:\n    raise CustomError('This is a custom error')\nexcept CustomError as e:\n    print(f'Error: {e}')",
+            "komentar": "Contoh pembuatan dan penggunaan custom exception"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Exception Handling",
+            "deskripsi": "Teknik untuk menangani kesalahan yang terjadi selama eksekusi program."
+        },
+        {
+            "topik": "Try-Except",
+            "deskripsi": "Blok kode yang digunakan untuk menangkap dan menangani exception."
+        },
+        {
+            "topik": "Custom Exception",
+            "deskripsi": "Cara membuat exception kustom untuk kasus-kasus khusus."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Exceptions - W3Schools",
+            "url": "https://www.w3schools.com/python/python_try_except.asp"
+        },
+        {
+            "judul": "Exception and Error Handling in Python - Real Python",
+            "url": "https://realpython.com/python-exceptions/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan detail tentang exception handling",
+        "Contoh-contoh kasus nyata"
+    ],
+    "error": [
+        {
+            "error": "ZeroDivisionError",
+            "deskripsi": "Kesalahan yang terjadi saat membagi angka dengan nol.",
+            "contoh": "x = 1 / 0",
+            "solusi": "Pastikan penyebut dalam operasi pembagian tidak nol."
+        },
+        {
+            "error": "FileNotFoundError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses file yang tidak ada.",
+            "contoh": "with open('non_existent_file.txt', 'r') as file:\n    content = file.read()",
+            "solusi": "Periksa kembali nama dan lokasi file yang akan diakses."
+        }
+    ]
+}

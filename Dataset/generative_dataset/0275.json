@@ -1,0 +1,72 @@
+[
+  {
+    "sumber": "YouTube Python Programmer",
+    "penulis": "Adi Wibowo",
+    "tanggal": "2023-07-01",
+    "judul": "Menggunakan Decorator untuk Memperluas Fungsi dalam Python",
+    "tingkat_kesulitan": "Mahir",
+    "tag": ["Python", "Decorator", "Fungsi"],
+    "konten": "Decorator adalah fitur yang kuat dalam Python untuk memodifikasi fungsi atau metode tanpa mengubah kode sumbernya secara langsung. Artikel ini membahas cara membuat dan menerapkan decorator.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "def uppercase_decorator(function):\n    def wrapper():\n        result = function().upper()\n        return result\n    return wrapper\n\n@uppercase_decorator\ndef greeting():\n    return 'Halo, Dunia!'\n\nprint(greeting())",
+        "komentar": "Contoh penggunaan decorator untuk mengubah output fungsi."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Decorator",
+        "deskripsi": "Penggunaan decorator untuk memodifikasi perilaku fungsi dalam Python."
+      },
+      {
+        "topik": "Fungsi Lanjutan",
+        "deskripsi": "Teknik-teknik lanjutan untuk memanipulasi fungsi dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Decorators Documentation",
+        "url": "https://realpython.com/primer-on-python-decorators/"
+      }
+    ],
+    "highlight": ["Decorator", "Fungsi", "Metaprogramming"],
+    "error": []
+  },
+  {
+    "sumber": "Data Science Central",
+    "penulis": "Rudi Hermawan",
+    "tanggal": "2023-06-15",
+    "judul": "Pengantar ke Machine Learning dengan Scikit-Learn",
+    "tingkat_kesulitan": "Mahir",
+    "tag": ["Python", "Machine Learning", "Scikit-Learn"],
+    "konten": "Scikit-Learn adalah library Python yang populer untuk machine learning. Artikel ini memberikan pengantar tentang penggunaan Scikit-Learn untuk klasifikasi sederhana.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "from sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\n\n# Memuat dataset iris\niris = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)\n# Membuat model klasifikasi\nmodel = KNeighborsClassifier(n_neighbors=3)\nmodel.fit(X_train, y_train)\n# Memprediksi kelas untuk data uji\npredictions = model.predict(X_test)\nprint(predictions)",
+        "komentar": "Contoh penggunaan Scikit-Learn untuk klasifikasi data iris."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Machine Learning",
+        "deskripsi": "Penggunaan Python dalam machine learning menggunakan library Scikit-Learn."
+      },
+      {
+        "topik": "Scikit-Learn",
+        "deskripsi": "Memahami penggunaan dan fitur dari library Scikit-Learn untuk machine learning."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Scikit-Learn Documentation",
+        "url": "https://scikit-learn.org/stable/user_guide.html"
+      }
+    ],
+    "highlight": ["Machine Learning", "Scikit-Learn", "Klasifikasi"],
+    "error": []
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Jadiel Finch",
+    "tanggal": "2029-02-20",
+    "judul": "Python Reinforcement Learning: Building a Q-Learning Agent",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Reinforcement Learning", "Q-Learning", "Advanced"],
+    "konten": "Q-Learning is a model-free reinforcement learning technique that aims to find the optimal action-selection policy...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of building a Q-Learning agent\nimport numpy as np\n\nclass QLearningAgent:\n    def __init__(self, num_states, num_actions, learning_rate, discount_factor):\n        self.num_states = num_states\n        self.num_actions = num_actions\n        self.learning_rate = learning_rate\n        self.discount_factor = discount_factor\n        self.q_table = np.zeros((num_states, num_actions))\n\n    def learn(self, state, action, reward, next_state):\n        current_q = self.q_table[state, action]\n        max_future_q = np.max(self.q_table[next_state])\n        new_q = current_q + self.learning_rate * (reward + self.discount_factor * max_future_q - current_q)\n        self.q_table[state, action] = new_q",
+        "komentar": "Builds a Q-Learning agent using Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Agen Q-Learning dalam Reinforcement Learning Python",
+        "deskripsi": "Membangun agen Q-Learning untuk mencari kebijakan pemilihan tindakan optimal dalam reinforcement learning menggunakan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto",
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    ],
+    "highlight": ["model-free reinforcement learning technique", "Q-Learning agent in Python"],
+    "error": [
+      {
+        "error": "IndexError",
+        "deskripsi": "IndexError occurred due to index out of range in Q-Learning example.",
+        "contoh": "self.q_table[next_state]",
+        "solusi": "Ensure correct indexing is used with Q-Learning Q-table."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Kobe Conrad",
+    "tanggal": "2029-03-05",
+    "judul": "Python Machine Learning: Introduction to Scikit-Learn",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Machine Learning", "Scikit-Learn", "Intermediate"],
+    "konten": "Scikit-Learn is a simple and efficient tool for data mining and data analysis, built on NumPy, SciPy, and matplotlib...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "from sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\n\n# Example of using Scikit-Learn for machine learning\niris = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)\n\nmodel = KNeighborsClassifier(n_neighbors=3)\nmodel.fit(X_train, y_train)\nscore = model.score(X_test, y_test)\nprint('Accuracy:', score)",
+        "komentar": "Uses Scikit-Learn for machine learning with KNeighborsClassifier."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Scikit-Learn dalam Machine Learning Python",
+        "deskripsi": "Menggunakan Scikit-Learn untuk data mining dan analisis data dengan efisien dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Scikit-Learn Documentation",
+        "url": "https://scikit-learn.org/stable/"
+      }
+    ],
+    "highlight": ["simple and efficient tool for data mining and data analysis", "Scikit-Learn machine learning"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "AttributeError occurred due to undefined attribute in Scikit-Learn example.",
+        "contoh": "model.score(X_test, y_test)",
+        "solusi": "Ensure correct attributes and methods are used with Scikit-Learn objects."
+      }
+    ]
+  }
+]

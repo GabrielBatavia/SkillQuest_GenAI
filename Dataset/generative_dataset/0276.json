@@ -1,0 +1,72 @@
+[
+  {
+    "sumber": "Real Python",
+    "penulis": "Rudi Setiawan",
+    "tanggal": "2023-03-20",
+    "judul": "Pengenalan ke Pandas untuk Analisis Data",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Pandas", "Data Analysis"],
+    "konten": "Pandas adalah library Python yang kuat untuk analisis data. Artikel ini memberikan pengantar tentang struktur data DataFrame, operasi dasar, dan pemrosesan data.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n# Membuat DataFrame\ndata = {'Nama': ['John', 'Jane', 'Doe'], 'Usia': [28, 32, 25]}\ndf = pd.DataFrame(data)\n# Menampilkan DataFrameprint(df)",
+        "komentar": "Contoh pembuatan dan tampilan DataFrame menggunakan Pandas."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pandas",
+        "deskripsi": "Penggunaan Pandas untuk manipulasi dan analisis data dalam Python."
+      },
+      {
+        "topik": "Data Analysis",
+        "deskripsi": "Teknik-teknik analisis data menggunakan Pandas dan Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "highlight": ["Pandas", "Data Analysis", "DataFrame"],
+    "error": []
+  },
+  {
+    "sumber": "GeeksforGeeks",
+    "penulis": "Ani Kartika",
+    "tanggal": "2023-02-10",
+    "judul": "Menggunakan Modul datetime untuk Manipulasi Waktu di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Datetime", "Waktu"],
+    "konten": "Datetime adalah modul Python yang digunakan untuk manipulasi tanggal dan waktu. Artikel ini menjelaskan cara membuat dan memanipulasi objek tanggal dan waktu.",
+    "contoh": [
+      {
+        "tipe": "Contoh Kode",
+        "bahasa": "Python",
+        "isi": "from datetime import datetime, timedelta\n# Membuat objek tanggal\nnow = datetime.now()\n# Menambahkan interval waktu\nfuture = now + timedelta(days=30)\n# Menampilkan hasilprint(future)",
+        "komentar": "Contoh penggunaan datetime untuk manipulasi tanggal dan waktu."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Datetime",
+        "deskripsi": "Penggunaan modul datetime untuk manipulasi dan pengaturan tanggal dan waktu dalam Python."
+      },
+      {
+        "topik": "Waktu",
+        "deskripsi": "Teknik-teknik pengaturan dan manipulasi waktu dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Datetime Documentation",
+        "url": "https://docs.python.org/id/3/library/datetime.html"
+      }
+    ],
+    "highlight": ["Datetime", "Manipulasi Waktu", "Interval"],
+    "error": []
+  }
+]

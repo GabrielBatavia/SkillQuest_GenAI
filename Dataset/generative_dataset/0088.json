@@ -1,0 +1,87 @@
+{
+    "sumber": "BelajarPython.com",
+    "penulis": "Budi Santoso",
+    "tanggal": "2023-11-25",
+    "judul": "Memahami dan Menggunakan Fungsi Zip di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["zip", "fungsi built-in", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi zip di Python. Fungsi zip digunakan untuk menggabungkan dua atau lebih iterable (seperti list atau tuple) menjadi iterator dari tuple.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "names = ['Alice', 'Bob', 'Charlie']\nages = [25, 30, 35]\nzipped = zip(names, ages)\nprint(list(zipped))",
+            "komentar": "Contoh dasar penggunaan fungsi zip untuk menggabungkan dua list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "names = ['Alice', 'Bob', 'Charlie']\nages = [25, 30, 35]\njobs = ['Engineer', 'Doctor', 'Artist']\nzipped = zip(names, ages, jobs)\nfor name, age, job in zipped:\n    print(f'{name} is a {age}-year-old {job}')",
+            "komentar": "Contoh penggunaan fungsi zip dengan tiga list dan iterasi melalui hasilnya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "list1 = [1, 2, 3]\nlist2 = ['a', 'b', 'c']\nzipped = zip(list1, list2)\nunzipped = list(zip(*zipped))\nprint(unzipped)",
+            "komentar": "Contoh penggunaan zip dan unzip (menggunakan operator * dan zip) untuk membalik proses zip"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "numbers = [1, 2, 3]\nsquares = [x**2 for x in numbers]\ncubes = [x**3 for x in numbers]\nzipped = zip(numbers, squares, cubes)\nprint(list(zipped))",
+            "komentar": "Contoh penggunaan fungsi zip dengan list komprehensi untuk menghasilkan kuadrat dan kubus"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "list1 = [1, 2, 3]\nlist2 = ['a', 'b', 'c', 'd']\nzipped = zip(list1, list2)\nprint(list(zipped))",
+            "komentar": "Contoh penggunaan fungsi zip dengan list yang memiliki panjang berbeda"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Zip",
+            "deskripsi": "Cara menggunakan fungsi zip untuk menggabungkan dua atau lebih iterable menjadi iterator dari tuple."
+        },
+        {
+            "topik": "Iterasi Zip",
+            "deskripsi": "Cara iterasi melalui hasil dari fungsi zip untuk mengakses elemen-elemen yang digabungkan."
+        },
+        {
+            "topik": "Unzip",
+            "deskripsi": "Cara membalik proses zip menggunakan operator * dan fungsi zip."
+        },
+        {
+            "topik": "List dengan Panjang Berbeda",
+            "deskripsi": "Cara fungsi zip menangani list atau iterable dengan panjang berbeda."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python zip() Function - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_zip.asp"
+        },
+        {
+            "judul": "Understanding Python's zip() Function - Real Python",
+            "url": "https://realpython.com/python-zip-function/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi zip",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat argumen yang diberikan ke fungsi zip tidak sesuai dengan yang diharapkan.",
+            "contoh": "zip(123, 'abc')",
+            "solusi": "Pastikan argumen yang diberikan ke fungsi zip adalah iterable seperti list atau tuple."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba meng-unzip iterator yang sudah terpakai.",
+            "contoh": "zipped = zip([1, 2, 3], ['a', 'b', 'c'])\nunzipped = list(zip(*zipped))\nunzipped_again = list(zip(*zipped))",
+            "solusi": "Pastikan untuk tidak menggunakan iterator yang sama lebih dari sekali tanpa membuat salinannya terlebih dahulu."
+        }
+    ]
+}

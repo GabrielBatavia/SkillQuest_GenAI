@@ -1,0 +1,109 @@
+{
+    "sumber": "PythonDasar.com",
+    "penulis": "Rina Anggraini",
+    "tanggal": "2024-04-10",
+    "judul": "Memahami dan Menggunakan Variabel dalam Struktur Data Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["variable", "data structures", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan variabel dalam berbagai struktur data di Python, seperti list, tuple, set, dan dictionary. Struktur data memungkinkan kita untuk menyimpan dan memanipulasi kelompok item dengan cara yang efisien.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits)\nprint(type(fruits))",
+            "komentar": "Contoh mendefinisikan variabel list untuk menyimpan beberapa item buah. List adalah struktur data yang mutable dan memungkinkan penyimpanan item dengan urutan tertentu."
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "coordinates = (10.0, 20.0)\nprint(coordinates)\nprint(type(coordinates))",
+            "komentar": "Contoh mendefinisikan variabel tuple untuk menyimpan pasangan koordinat. Tuple adalah struktur data yang immutable dan cocok untuk menyimpan data yang tidak berubah."
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "unique_numbers = {1, 2, 3, 3, 4}\nprint(unique_numbers)\nprint(type(unique_numbers))",
+            "komentar": "Contoh mendefinisikan variabel set untuk menyimpan angka unik. Set adalah struktur data yang tidak berurutan dan tidak mengizinkan duplikasi."
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "student = {'name': 'Alice', 'age': 25, 'courses': ['Math', 'CompSci']}\nprint(student)\nprint(type(student))",
+            "komentar": "Contoh mendefinisikan variabel dictionary untuk menyimpan informasi tentang seorang siswa. Dictionary menyimpan pasangan kunci-nilai dan sangat berguna untuk data yang memerlukan asosiasi."
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "nested_list = [1, [2, 3], [4, 5, 6]]\nprint(nested_list)\nprint(type(nested_list))",
+            "komentar": "Contoh mendefinisikan variabel list bersarang untuk menyimpan list di dalam list. Struktur data bersarang memungkinkan penyimpanan data kompleks dalam format hierarki."
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "person = {\n    'name': 'Bob',\n    'address': {\n        'street': '123 Main St',\n        'city': 'Anytown'\n    }\n}\nprint(person)\nprint(type(person))",
+            "komentar": "Contoh mendefinisikan variabel dictionary bersarang untuk menyimpan informasi tentang orang dan alamatnya. Dictionary bersarang memungkinkan penyimpanan data yang lebih terstruktur dan detail."
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Variabel List",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel list di Python untuk menyimpan beberapa item dalam urutan tertentu."
+        },
+        {
+            "topik": "Variabel Tuple",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel tuple di Python untuk menyimpan data yang tidak berubah."
+        },
+        {
+            "topik": "Variabel Set",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel set di Python untuk menyimpan item unik tanpa urutan tertentu."
+        },
+        {
+            "topik": "Variabel Dictionary",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel dictionary di Python untuk menyimpan pasangan kunci-nilai."
+        },
+        {
+            "topik": "Variabel List Bersarang",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel list bersarang di Python untuk menyimpan data dalam format hierarki."
+        },
+        {
+            "topik": "Variabel Dictionary Bersarang",
+            "deskripsi": "Cara mendefinisikan dan menggunakan variabel dictionary bersarang di Python untuk menyimpan data yang lebih terstruktur."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Lists - W3Schools",
+            "url": "https://www.w3schools.com/python/python_lists.asp"
+        },
+        {
+            "judul": "Python Tuples - W3Schools",
+            "url": "https://www.w3schools.com/python/python_tuples.asp"
+        },
+        {
+            "judul": "Python Sets - W3Schools",
+            "url": "https://www.w3schools.com/python/python_sets.asp"
+        },
+        {
+            "judul": "Python Dictionaries - W3Schools",
+            "url": "https://www.w3schools.com/python/python_dictionaries.asp"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang variabel dalam struktur data di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan mendalam"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengubah elemen dalam tuple yang bersifat immutable.",
+            "contoh": "coordinates = (10.0, 20.0)\ncoordinates[0] = 15.0",
+            "solusi": "Pastikan untuk tidak mencoba mengubah elemen dalam tuple. Gunakan list jika membutuhkan struktur data yang mutable."
+        },
+        {
+            "error": "KeyError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses kunci yang tidak ada dalam dictionary.",
+            "contoh": "student = {'name': 'Alice', 'age': 25}\nprint(student['grade'])",
+            "solusi": "Pastikan kunci yang diakses ada dalam dictionary atau gunakan metode get dengan nilai default."
+        }
+    ]
+}

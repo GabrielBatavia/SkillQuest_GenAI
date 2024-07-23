@@ -1,0 +1,122 @@
+{
+    "sumber": "CodeWithPython.com",
+    "penulis": "Irfan Maulana",
+    "tanggal": "2025-08-20",
+    "judul": "Mengelola Strings di Python: Panduan Lengkap",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini memberikan panduan lengkap tentang berbagai teknik untuk mengelola strings di Python, termasuk metode bawaan yang dapat digunakan untuk memanipulasi dan mengelola strings.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\nkalimat = 'Belajar Python sangat menyenangkan!'\nprint('Kalimat:', kalimat)\nprint('Tipe data:', type(kalimat))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode split() dengan delimiter\nteks = 'Python;adalah;bahasa;pemrograman'\nkata_list = teks.split(';')\nprint('Split dengan delimiter:', kata_list)",
+            "komentar": "Memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isdigit()\nteks = '2023'\nis_digit = teks.isdigit()\nprint('Apakah teks hanya berisi angka?', is_digit)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isdigit()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode strip()\nteks = '   Python   '\nteks_strip = teks.strip()\nprint('Strip:', teks_strip)",
+            "komentar": "Menghapus spasi di awal dan akhir string menggunakan metode strip()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode replace()\nteks = 'saya suka coding'\nteks_baru = teks.replace('coding', 'Python')\nprint('Replace:', teks_baru)",
+            "komentar": "Mengganti substring dalam string menggunakan metode replace()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode zfill()\nangka = '9'\nangka_zfill = angka.zfill(3)\nprint('Zfill:', angka_zfill)",
+            "komentar": "Menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode find()\nteks = 'Python adalah bahasa yang hebat'\nposisi = teks.find('bahasa')\nprint('Posisi bahasa:', posisi)",
+            "komentar": "Menemukan posisi substring dalam string menggunakan metode find()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode format() dengan f-string\nnama = 'Irfan'\numur = 28\ninfo = f'Nama saya {nama} dan saya berusia {umur} tahun.'\nprint(info)",
+            "komentar": "Menggunakan f-string untuk menyisipkan variabel dalam string"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode split() dengan Delimiter",
+            "deskripsi": "Cara memisahkan string menjadi list berdasarkan delimiter menggunakan metode split()."
+        },
+        {
+            "topik": "Metode isdigit()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isdigit()."
+        },
+        {
+            "topik": "Metode strip()",
+            "deskripsi": "Cara menghapus spasi di awal dan akhir string menggunakan metode strip()."
+        },
+        {
+            "topik": "Metode replace()",
+            "deskripsi": "Cara mengganti substring dalam string menggunakan metode replace()."
+        },
+        {
+            "topik": "Metode zfill()",
+            "deskripsi": "Cara menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()."
+        },
+        {
+            "topik": "Metode find()",
+            "deskripsi": "Cara menemukan posisi substring dalam string menggunakan metode find()."
+        },
+        {
+            "topik": "f-string",
+            "deskripsi": "Cara menggunakan f-string untuk menyisipkan variabel dalam string."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Irfan'\numur = 28\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

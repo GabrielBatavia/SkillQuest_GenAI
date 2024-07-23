@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonBasics.net",
+    "penulis": "Teguh Santoso",
+    "tanggal": "2025-07-25",
+    "judul": "Manipulasi Strings di Python: Panduan Lengkap",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini memberikan panduan tentang berbagai teknik manipulasi strings di Python, termasuk metode bawaan yang dapat digunakan untuk mengelola strings.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\npesan = 'Selamat Belajar Python!'\nprint('Pesan:', pesan)\nprint('Tipe data:', type(pesan))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode capitalize()\nteks = 'python itu mudah'\nteks_capitalize = teks.capitalize()\nprint('Capitalize:', teks_capitalize)",
+            "komentar": "Mengubah huruf pertama string menjadi huruf besar menggunakan metode capitalize()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode find()\nteks = 'Pemrograman Python sangat menarik'\nposisi = teks.find('Python')\nprint('Posisi Python:', posisi)",
+            "komentar": "Menemukan posisi substring dalam string menggunakan metode find()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode replace()\nteks = 'saya suka apel'\nteks_baru = teks.replace('apel', 'jeruk')\nprint('Replace:', teks_baru)",
+            "komentar": "Mengganti substring dalam string menggunakan metode replace()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode join()\nbuah = ['apel', 'mangga', 'pisang']\nteks = ', '.join(buah)\nprint('Join:', teks)",
+            "komentar": "Menggabungkan list menjadi string menggunakan metode join()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isalnum()\nteks = 'Python3'\nis_alnum = teks.isalnum()\nprint('Apakah teks alfanumerik?', is_alnum)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah huruf atau angka menggunakan metode isalnum()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode zfill()\nangka = '7'\nangka_zfill = angka.zfill(3)\nprint('Zfill:', angka_zfill)",
+            "komentar": "Menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Mengakses substring dengan slicing\nteks = 'Python untuk semua orang'\nsubstring = teks[7:12]\nprint('Substring:', substring)",
+            "komentar": "Mengakses substring dalam string menggunakan teknik slicing"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode capitalize()",
+            "deskripsi": "Cara mengubah huruf pertama string menjadi huruf besar menggunakan metode capitalize()."
+        },
+        {
+            "topik": "Metode find()",
+            "deskripsi": "Cara menemukan posisi substring dalam string menggunakan metode find()."
+        },
+        {
+            "topik": "Metode replace()",
+            "deskripsi": "Cara mengganti substring dalam string menggunakan metode replace()."
+        },
+        {
+            "topik": "Metode join()",
+            "deskripsi": "Cara menggabungkan list menjadi string menggunakan metode join()."
+        },
+        {
+            "topik": "Metode isalnum()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah huruf atau angka menggunakan metode isalnum()."
+        },
+        {
+            "topik": "Metode zfill()",
+            "deskripsi": "Cara menambahkan nol di depan string hingga mencapai panjang tertentu menggunakan metode zfill()."
+        },
+        {
+            "topik": "Slicing",
+            "deskripsi": "Cara mengakses substring dalam string menggunakan teknik slicing."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Teguh'\numur = 32\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

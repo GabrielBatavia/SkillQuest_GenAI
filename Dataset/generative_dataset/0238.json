@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Morgan Diaz",
+    "tanggal": "2027-04-05",
+    "judul": "Python Concurrency: Multithreading and Multiprocessing in Python",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["Python", "Concurrency", "Multithreading", "Multiprocessing", "Advanced"],
+    "konten": "Concurrency in Python involves techniques like multithreading and multiprocessing to execute tasks concurrently...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of using multithreading\nimport threading\n\ndef task():\n    print('Executing task')\n\n# Creating and starting a thread\nthread = threading.Thread(target=task)\nthread.start()\nthread.join()",
+        "komentar": "Uses multithreading to execute a task concurrently."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Multithreading dan Multiprocessing dalam Python",
+        "deskripsi": "Menggunakan teknik multithreading dan multiprocessing untuk mengeksekusi tugas secara konkuren dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Threading Documentation",
+        "url": "https://docs.python.org/3/library/threading.html"
+      }
+    ],
+    "highlight": ["techniques like multithreading and multiprocessing", "Python concurrency"],
+    "error": [
+      {
+        "error": "RuntimeError",
+        "deskripsi": "RuntimeError occurred due to attempting to start already started thread.",
+        "contoh": "thread.start()",
+        "solusi": "Ensure threads are started only once and are not restarted."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Payton Ellis",
+    "tanggal": "2027-04-20",
+    "judul": "Python Data Visualization: Creating Interactive Plots with Plotly",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Data Visualization", "Plotly", "Intermediate"],
+    "konten": "Plotly is a versatile library for creating interactive visualizations and plots in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import plotly.express as px\n\ndata = px.data.iris()\nfig = px.scatter(data, x='sepal_width', y='sepal_length', color='species', size='petal_length', hover_data=['petal_width'])\nfig.show()",
+        "komentar": "Creates an interactive scatter plot using Plotly."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Plot Interaktif dengan Plotly dalam Python",
+        "deskripsi": "Menggunakan Plotly untuk membuat visualisasi interaktif dan plot dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Plotly Documentation",
+        "url": "https://plotly.com/python/"
+      }
+    ],
+    "highlight": ["versatile library for creating interactive visualizations", "Plotly interactive plots"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to invalid input data for creating Plotly visualization.",
+        "contoh": "fig = px.scatter(data, x='sepal_width', y='sepal_length', color='species', size='nonexistent_column')",
+        "solusi": "Ensure input data columns exist and are correctly referenced in Plotly visualization."
+      }
+    ]
+  }
+]

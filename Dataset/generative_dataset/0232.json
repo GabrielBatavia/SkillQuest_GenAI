@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Zoe Parker",
+    "tanggal": "2026-09-20",
+    "judul": "Python Error Handling: Managing Exceptions in Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Error Handling", "Exceptions", "Pemula"],
+    "konten": "Error handling in Python allows you to manage and handle exceptions that occur during program execution...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of handling an exception\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print('Error:', e)",
+        "komentar": "Handles ZeroDivisionError exception in Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Penanganan Error dengan Exceptions dalam Python",
+        "deskripsi": "Menggunakan error handling untuk mengelola dan menangani exception yang terjadi selama eksekusi program dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Errors and Exceptions Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html"
+      }
+    ],
+    "highlight": ["manage and handle exceptions", "Python error handling"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "TypeError occurred due to passing incompatible data types to an operation.",
+        "contoh": "result = '10' / 2",
+        "solusi": "Ensure data types are compatible for the intended operation."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Skyler Wright",
+    "tanggal": "2026-10-05",
+    "judul": "Python Scikit-Learn: Machine Learning with Scikit-Learn",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Scikit-Learn", "Machine Learning", "Intermediate"],
+    "konten": "Scikit-Learn is a widely-used library for machine learning in Python...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "from sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\n\n# Example of using K-Nearest Neighbors algorithm\niris = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(iris['data'], iris['target'], test_size=0.2)\nmodel = KNeighborsClassifier(n_neighbors=3)\nmodel.fit(X_train, y_train)\naccuracy = model.score(X_test, y_test)\nprint('Accuracy:', accuracy)",
+        "komentar": "Uses K-Nearest Neighbors algorithm for classification using Scikit-Learn."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Machine Learning dengan Scikit-Learn dalam Python",
+        "deskripsi": "Menggunakan Scikit-Learn untuk machine learning dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Scikit-Learn Documentation",
+        "url": "https://scikit-learn.org/stable/user_guide.html"
+      }
+    ],
+    "highlight": ["widely-used library for machine learning", "Scikit-Learn K-Nearest Neighbors algorithm"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to mismatched dimensions in input data for machine learning model.",
+        "contoh": "model.fit(X_train, y_train)",
+        "solusi": "Ensure input data dimensions are compatible with the machine learning model requirements."
+      }
+    ]
+  }
+]

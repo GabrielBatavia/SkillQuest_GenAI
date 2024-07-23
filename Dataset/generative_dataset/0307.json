@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Bob Brown",
+    "tanggal": "2022-09-20",
+    "judul": "Trik Python untuk Pemula",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["tips", "tricks"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Contoh konkret", "Tips berguna"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan indentasi",
+        "contoh": "if True:\nprint('Hello')",
+        "solusi": "Tambahkan indentasi yang benar"
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Alice Johnson",
+    "tanggal": "2023-08-15",
+    "judul": "Belajar Python Dasar",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["data science", "pandas"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Contoh konkret", "Tips berguna"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "Kesalahan tipe data",
+        "contoh": "len(5)",
+        "solusi": "Pastikan fungsi digunakan pada tipe data yang benar"
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Spencer Ryan",
+    "tanggal": "2027-10-05",
+    "judul": "Python GUI Programming: Creating Desktop Applications with Tkinter",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "GUI Programming", "Tkinter", "Intermediate"],
+    "konten": "Tkinter is the standard GUI toolkit for Python. It allows you to create graphical user interfaces...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import tkinter as tk\n\n# Example of creating a simple GUI window\nroot = tk.Tk()\nlabel = tk.Label(root, text='Hello, Tkinter!')\nlabel.pack()\nroot.mainloop()",
+        "komentar": "Creates a simple GUI window using Tkinter."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan Aplikasi Desktop dengan Tkinter dalam Python",
+        "deskripsi": "Menggunakan Tkinter untuk membuat antarmuka pengguna grafis (GUI) dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Tkinter Documentation",
+        "url": "https://docs.python.org/3/library/tkinter.html"
+      }
+    ],
+    "highlight": ["standard GUI toolkit for Python", "Tkinter GUI programming"],
+    "error": [
+      {
+        "error": "ImportError",
+        "deskripsi": "ImportError occurred due to missing Tkinter module.",
+        "contoh": "import tkinter as tk",
+        "solusi": "Ensure Tkinter is installed with Python or available in the environment."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Rowan Hunt",
+    "tanggal": "2027-10-20",
+    "judul": "Python Data Analysis: Exploratory Data Analysis with Pandas",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Data Analysis", "Pandas", "Intermediate"],
+    "konten": "Pandas is a powerful library for data manipulation and analysis in Python, particularly for handling...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n\n# Example of performing exploratory data analysis\ndata = pd.read_csv('example_data.csv')\nsummary = data.describe()\nprint(summary)",
+        "komentar": "Performs exploratory data analysis using Pandas."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Analisis Data Eksploratif dengan Pandas dalam Python",
+        "deskripsi": "Menggunakan Pandas untuk manipulasi dan analisis data, terutama untuk penanganan data tabular."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/pandas-docs/stable/index.html"
+      }
+    ],
+    "highlight": ["powerful library for data manipulation and analysis", "Pandas exploratory data analysis"],
+    "error": [
+      {
+        "error": "FileNotFoundError",
+        "deskripsi": "FileNotFoundError occurred due to missing data file 'example_data.csv'.",
+        "contoh": "data = pd.read_csv('missing_data.csv')",
+        "solusi": "Ensure data file exists in the specified location or correct file path is used."
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+
+    {
+        "sumber": "Belajar Python",
+        "penulis": "Andi Santoso",
+        "tanggal": "2024-07-10",
+        "judul": "Pengantar Pemrograman Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Pemrograman", "Dasar"],
+        "konten": "Artikel ini memberikan pengenalan dasar tentang pemrograman menggunakan bahasa Python.",
+        "contoh": [
+            {
+                "tipe": "Kode",
+                "bahasa": "Python",
+                "isi": "print('Hello, World!')",
+                "komentar": "Kode ini mencetak 'Hello, World!' ke layar."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Sintaks Dasar",
+                "deskripsi": "Pengantar sintaks dasar dalam bahasa Python."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Resmi Python",
+                "url": "https://docs.python.org/3/"
+            }
+        ],
+        "highlight": ["Pengenalan sintaks dasar", "Contoh kode sederhana"],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Kesalahan sintaks terjadi jika kode tidak ditulis dengan benar.",
+                "contoh": "print('Hello, World!)",
+                "solusi": "Periksa kembali tanda kutip yang digunakan."
+            }
+        ]
+    }

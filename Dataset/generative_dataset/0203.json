@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Sophia Adams",
+    "tanggal": "2025-08-01",
+    "judul": "Python Functions: Understanding Function Arguments",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Functions", "Arguments", "Pemula"],
+    "konten": "Functions in Python allow you to encapsulate code for reusability...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('Alice')",
+        "komentar": "Defines a function 'greet' that takes a name as an argument and prints a greeting."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Fungsi dalam Python",
+        "deskripsi": "Memahami penggunaan fungsi dalam Python untuk meningkatkan reusabilitas kode."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Functions Documentation",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+      }
+    ],
+    "highlight": ["encapsulate code for reusability", "Python Functions"],
+    "error": [
+      {
+        "error": "TypeError",
+        "deskripsi": "TypeError occurred due to incorrect function arguments.",
+        "contoh": "greet(123)",
+        "solusi": "Ensure function arguments are of the correct type."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Nathan Brown",
+    "tanggal": "2025-08-10",
+    "judul": "Python Classes and Objects: OOP Concepts Explained",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Classes", "Objects", "OOP", "Intermediate"],
+    "konten": "Object-oriented programming (OOP) in Python involves creating classes and objects...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "class Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\n    def display_info(self):\n        print(f'Car: {self.brand} {self.model}')\n\n# Create an object of class Car\nmy_car = Car('Toyota', 'Camry')\nmy_car.display_info()",
+        "komentar": "Defines a class 'Car' with attributes and a method to display car information."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Berbasis Objek (Object-Oriented Programming/OOP) dalam Python",
+        "deskripsi": "Menggunakan konsep OOP untuk mengorganisir dan memanipulasi data dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Classes Documentation",
+        "url": "https://docs.python.org/3/tutorial/classes.html"
+      }
+    ],
+    "highlight": ["creating classes and objects", "Object-oriented programming in Python"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "AttributeError occurred due to accessing non-existent attribute.",
+        "contoh": "print(my_car.color)",
+        "solusi": "Ensure attribute 'color' exists in the 'Car' class or object."
+      }
+    ]
+  }
+]

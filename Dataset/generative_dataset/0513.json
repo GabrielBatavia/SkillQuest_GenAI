@@ -1,0 +1,122 @@
+{
+    "sumber": "PythonLearnHub.com",
+    "penulis": "Dian Anggraini",
+    "tanggal": "2025-08-10",
+    "judul": "Pemanfaatan Strings di Python: Teknik dan Contoh",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["strings", "python", "pemula"],
+    "konten": "Artikel ini menjelaskan berbagai cara untuk memanfaatkan strings di Python, termasuk metode bawaan yang dapat digunakan untuk memanipulasi dan mengelola strings.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat string\npesan = 'Selamat datang di dunia Python!'\nprint('Pesan:', pesan)\nprint('Tipe data:', type(pesan))",
+            "komentar": "Contoh sederhana membuat dan mencetak string"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode lower()\nteks = 'BELAJAR PYTHON'\nteks_lower = teks.lower()\nprint('Lowercase:', teks_lower)",
+            "komentar": "Mengubah string menjadi huruf kecil menggunakan metode lower()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode splitlines()\nteks = 'Baris pertama\nBaris kedua\nBaris ketiga'\nbaris_list = teks.splitlines()\nprint('Splitlines:', baris_list)",
+            "komentar": "Memisahkan string berdasarkan baris baru menggunakan metode splitlines()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode center()\nteks = 'Python'\nteks_center = teks.center(20, '*')\nprint('Center:', teks_center)",
+            "komentar": "Menyisipkan string di tengah dengan karakter tertentu di sekeliling menggunakan metode center()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode find()\nteks = 'Python sangat mudah dipelajari'\nposisi = teks.find('mudah')\nprint('Posisi mudah:', posisi)",
+            "komentar": "Menemukan posisi substring dalam string menggunakan metode find()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode isnumeric()\nteks = '12345'\nis_numeric = teks.isnumeric()\nprint('Apakah teks hanya berisi angka?', is_numeric)",
+            "komentar": "Memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isnumeric()"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan metode format() dengan posisi\nnama = 'Dian'\numur = 29\ninfo = 'Nama saya {0} dan saya berusia {1} tahun.'.format(nama, umur)\nprint(info)",
+            "komentar": "Menggunakan metode format() untuk menyisipkan variabel dalam string berdasarkan posisi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Mengakses substring dengan slicing\nteks = 'Belajar Python bersama teman'\nsubstring = teks[8:14]\nprint('Substring:', substring)",
+            "komentar": "Mengakses substring dalam string menggunakan teknik slicing"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat String",
+            "deskripsi": "Cara membuat dan mencetak string di Python."
+        },
+        {
+            "topik": "Metode lower()",
+            "deskripsi": "Cara mengubah string menjadi huruf kecil menggunakan metode lower()."
+        },
+        {
+            "topik": "Metode splitlines()",
+            "deskripsi": "Cara memisahkan string berdasarkan baris baru menggunakan metode splitlines()."
+        },
+        {
+            "topik": "Metode center()",
+            "deskripsi": "Cara menyisipkan string di tengah dengan karakter tertentu di sekeliling menggunakan metode center()."
+        },
+        {
+            "topik": "Metode find()",
+            "deskripsi": "Cara menemukan posisi substring dalam string menggunakan metode find()."
+        },
+        {
+            "topik": "Metode isnumeric()",
+            "deskripsi": "Cara memeriksa apakah semua karakter dalam string adalah angka menggunakan metode isnumeric()."
+        },
+        {
+            "topik": "Metode format() dengan Posisi",
+            "deskripsi": "Cara menggunakan metode format() untuk menyisipkan variabel dalam string berdasarkan posisi."
+        },
+        {
+            "topik": "Slicing",
+            "deskripsi": "Cara mengakses substring dalam string menggunakan teknik slicing."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Strings - W3Schools",
+            "url": "https://www.w3schools.com/python/python_strings.asp"
+        },
+        {
+            "judul": "Python String Methods - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/python-string-methods/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang strings di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi strings di Python"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam string.",
+            "contoh": "teks = 'Python'\nkarakter = teks[10]",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang panjang string."
+        },
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggabungkan string dengan tipe data non-string.",
+            "contoh": "nama = 'Dian'\numur = 29\ninfo = nama + umur",
+            "solusi": "Konversi tipe data non-string ke string sebelum menggabungkan."
+        }
+    ]
+}

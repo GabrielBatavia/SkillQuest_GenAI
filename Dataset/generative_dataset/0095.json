@@ -1,0 +1,91 @@
+{
+    "sumber": "BelajarPython.net",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2023-12-15",
+    "judul": "Memahami dan Menggunakan Fungsi Reduce di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["reduce", "fungsi built-in", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan fungsi reduce di Python. Fungsi reduce digunakan untuk menerapkan fungsi pada iterable secara kumulatif dari kiri ke kanan sehingga menghasilkan satu nilai tunggal.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nnumbers = [1, 2, 3, 4]\nsum_numbers = reduce(lambda x, y: x + y, numbers)\nprint(sum_numbers)",
+            "komentar": "Contoh penggunaan fungsi reduce untuk menjumlahkan semua elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nnumbers = [1, 2, 3, 4]\nproduct_numbers = reduce(lambda x, y: x * y, numbers)\nprint(product_numbers)",
+            "komentar": "Contoh penggunaan fungsi reduce untuk mengalikan semua elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nwords = ['Python', 'is', 'fun']\nconcatenated = reduce(lambda x, y: x + ' ' + y, words)\nprint(concatenated)",
+            "komentar": "Contoh penggunaan fungsi reduce untuk menggabungkan semua string dalam list dengan spasi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nnumbers = [5, 3, 8, 2]\nmax_number = reduce(lambda x, y: x if x > y else y, numbers)\nprint(max_number)",
+            "komentar": "Contoh penggunaan fungsi reduce untuk menemukan nilai maksimum dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "from functools import reduce\nnumbers = [5, 3, 8, 2]\nmin_number = reduce(lambda x, y: x if x < y else y, numbers)\nprint(min_number)",
+            "komentar": "Contoh penggunaan fungsi reduce untuk menemukan nilai minimum dalam list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Fungsi Reduce",
+            "deskripsi": "Cara menggunakan fungsi reduce untuk menerapkan fungsi pada iterable secara kumulatif sehingga menghasilkan satu nilai tunggal."
+        },
+        {
+            "topik": "Menjumlahkan Elemen",
+            "deskripsi": "Cara menggunakan reduce untuk menjumlahkan semua elemen dalam list."
+        },
+        {
+            "topik": "Mengalikan Elemen",
+            "deskripsi": "Cara menggunakan reduce untuk mengalikan semua elemen dalam list."
+        },
+        {
+            "topik": "Menggabungkan String",
+            "deskripsi": "Cara menggunakan reduce untuk menggabungkan semua string dalam list dengan spasi."
+        },
+        {
+            "topik": "Menemukan Nilai Maksimum dan Minimum",
+            "deskripsi": "Cara menggunakan reduce untuk menemukan nilai maksimum dan minimum dalam list."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python reduce() Function - W3Schools",
+            "url": "https://www.w3schools.com/python/ref_func_reduce.asp"
+        },
+        {
+            "judul": "Understanding Python's reduce() Function - Real Python",
+            "url": "https://realpython.com/python-reduce-function/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang fungsi reduce",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat fungsi yang diberikan ke reduce tidak sesuai dengan elemen dalam iterable.",
+            "contoh": "reduce(lambda x, y: x + y, [1, 'a', 3])",
+            "solusi": "Pastikan fungsi yang diberikan ke reduce sesuai dengan tipe data elemen dalam iterable."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat iterable kosong diberikan ke fungsi reduce.",
+            "contoh": "reduce(lambda x, y: x + y, [])",
+            "solusi": "Pastikan iterable tidak kosong atau berikan nilai awal (initial value) yang sesuai."
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2023-10-27",
+    "judul": "Menguasai Python untuk Data Science",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["web development", "flask"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Mudah dipahami", "Tips berguna"],
+    "error": [
+      {
+        "error": "IndentationError",
+        "deskripsi": "Kesalahan indentasi",
+        "contoh": "if True:\nprint('Hello')",
+        "solusi": "Tambahkan indentasi yang benar"
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Jane Doe",
+    "tanggal": "2023-04-29",
+    "judul": "Menguasai Python untuk Data Science",
+    "tingkat_kesulitan": "Lanjutan",
+    "tag": ["tutorial", "belajar"],
+    "konten": "Konten utama mengenai topik Python.",
+    "contoh": [
+      {
+        "tipe": "output",
+        "bahasa": "Python",
+        "isi": "print('Hello World')",
+        "komentar": "Contoh sederhana penggunaan fungsi print."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Dasar Python",
+        "deskripsi": "Memahami sintaks dasar dan struktur bahasa Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Dokumentasi Python",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "highlight": ["Mudah dipahami", "Contoh konkret"],
+    "error": [
+      {
+        "error": "SyntaxError",
+        "deskripsi": "Kesalahan penulisan sintaks",
+        "contoh": "print('Hello World'",
+        "solusi": "Tambahkan tanda kurung tutup"
+      }
+    ]
+  }
+]

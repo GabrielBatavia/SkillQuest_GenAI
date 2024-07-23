@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "medium.com",
+    "penulis": "Ira Downes",
+    "tanggal": "2028-08-20",
+    "judul": "Python Web Development: Building RESTful APIs with Flask",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Web Development", "RESTful APIs", "Flask", "Intermediate"],
+    "konten": "Flask is a lightweight and flexible Python web framework that makes it easy to build RESTful APIs...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of building a RESTful API with Flask\nfrom flask import Flask, jsonify, request\n\napp = Flask(__name__)\n\n# Define a route and function for GET request\n@app.route('/api', methods=['GET'])\ndef get_data():\n    data = {'message': 'Hello, world!'}\n    return jsonify(data)\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "komentar": "Builds a simple RESTful API using Flask."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pembuatan RESTful APIs dengan Flask dalam Pengembangan Web Python",
+        "deskripsi": "Menggunakan Flask untuk membangun dan mengelola RESTful APIs dalam pengembangan aplikasi web Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Flask Documentation",
+        "url": "https://flask.palletsprojects.com/en/2.0.x/"
+      }
+    ],
+    "highlight": ["lightweight and flexible Python web framework", "Flask RESTful APIs"],
+    "error": [
+      {
+        "error": "AttributeError",
+        "deskripsi": "AttributeError occurred due to undefined attribute in Flask application.",
+        "contoh": "return jsonify(data)",
+        "solusi": "Ensure correct attributes and methods are used in Flask application."
+      }
+    ]
+  },
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Safiya Eason",
+    "tanggal": "2028-09-05",
+    "judul": "Python Data Visualization: Introduction to Matplotlib",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "Data Visualization", "Matplotlib", "Pemula"],
+    "konten": "Matplotlib is a popular Python library for creating static, animated, and interactive visualizations...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of creating a basic plot using Matplotlib\nimport matplotlib.pyplot as plt\n\n# Data to plot\nx = [1, 2, 3, 4, 5]\ny = [10, 20, 25, 30, 35]\n\n# Create plot\nplt.plot(x, y)\n\n# Customize plot\nplt.title('Basic Plot')\nplt.xlabel('X-axis')\nplt.ylabel('Y-axis')\n\n# Display plot\nplt.show()",
+        "komentar": "Creates a basic plot using Matplotlib."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengenalan Matplotlib dalam Visualisasi Data Python",
+        "deskripsi": "Menggunakan Matplotlib untuk membuat visualisasi data statis, animasi, dan interaktif dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Matplotlib Documentation",
+        "url": "https://matplotlib.org/stable/contents.html"
+      }
+    ],
+    "highlight": ["popular Python library for creating static, animated, and interactive visualizations", "Matplotlib data visualization"],
+    "error": [
+      {
+        "error": "ValueError",
+        "deskripsi": "ValueError occurred due to invalid value or data type in Matplotlib example.",
+        "contoh": "plt.plot(x, y)",
+        "solusi": "Ensure correct values and data types are used for plotting with Matplotlib."
+      }
+    ]
+  }
+]

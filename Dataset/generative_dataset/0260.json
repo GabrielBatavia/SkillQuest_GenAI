@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "realpython.com",
+    "penulis": "Halle Blackburn",
+    "tanggal": "2028-06-20",
+    "judul": "Python Functional Programming: Understanding Functional Programming Concepts",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Functional Programming", "Intermediate"],
+    "konten": "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of functional programming in Python\nfrom functools import reduce\n\n# Define a list of numbers\nnumbers = [1, 2, 3, 4, 5]\n\n# Example of using reduce to compute the sum of numbers\nsum = reduce(lambda x, y: x + y, numbers)\nprint('Sum of numbers:', sum)",
+        "komentar": "Illustrates functional programming using Python's reduce function."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemahaman Konsep Functional Programming dalam Python",
+        "deskripsi": "Memahami paradigma pemrograman fungsional yang menganggap komputasi sebagai evaluasi fungsi matematis."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Functional Programming Documentation",
+        "url": "https://docs.python.org/3/howto/functional.html"
+      }
+    ],
+    "highlight": ["programming paradigm that treats computation as the evaluation of mathematical functions", "Python functional programming"],
+    "error": [
+      {
+        "error": "NameError",
+        "deskripsi": "NameError occurred due to undefined variable or function name in functional programming example.",
+        "contoh": "sum = reduce(lambda x, y: x + y, numbers)",
+        "solusi": "Ensure variables and functions are defined and accessible within the scope."
+      }
+    ]
+  },
+  {
+    "sumber": "medium.com",
+    "penulis": "Jesse Wyatt",
+    "tanggal": "2028-07-05",
+    "judul": "Python Concurrency: Parallel Programming with ThreadPoolExecutor",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Concurrency", "Parallel Programming", "ThreadPoolExecutor", "Intermediate"],
+    "konten": "Concurrency in Python allows you to run multiple tasks concurrently, improving performance...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of using ThreadPoolExecutor for parallel programming\nfrom concurrent.futures import ThreadPoolExecutor\nimport time\n\n# Define a function to simulate a task\ndef task(message):\n    time.sleep(2)\n    return message\n\n# Create a ThreadPoolExecutor\nwith ThreadPoolExecutor(max_workers=3) as executor:\n    # Submit tasks\n    tasks = [executor.submit(task, f'Task {i}') for i in range(3)]\n\n    # Retrieve results\n    for future in tasks:\n        print(future.result())",
+        "komentar": "Uses ThreadPoolExecutor for parallel programming in Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pemrograman Paralel dengan ThreadPoolExecutor dalam Python",
+        "deskripsi": "Menggunakan ThreadPoolExecutor untuk menjalankan tugas secara simultan dan meningkatkan kinerja dalam Python."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "ThreadPoolExecutor Documentation",
+        "url": "https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor"
+      }
+    ],
+    "highlight": ["Concurrency in Python", "ThreadPoolExecutor parallel programming"],
+    "error": [
+      {
+        "error": "TimeoutError",
+        "deskripsi": "TimeoutError occurred due to task execution exceeding time limit in ThreadPoolExecutor.",
+        "contoh": "time.sleep(2)",
+        "solusi": "Increase time limit for task execution or optimize task performance."
+      }
+    ]
+  }
+]

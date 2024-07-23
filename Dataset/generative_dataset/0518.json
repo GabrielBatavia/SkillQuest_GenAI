@@ -1,0 +1,118 @@
+{
+    "sumber": "PythonForEveryone.com",
+    "penulis": "Dewi Andriani",
+    "tanggal": "2025-09-15",
+    "judul": "Penerapan Boolean di Python: Contoh dan Penjelasan",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["boolean", "python", "pemula"],
+    "konten": "Artikel ini mengulas penggunaan boolean di Python, termasuk cara membuat, menggunakan operator logika, dan menerapkannya dalam kondisi dan perulangan.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Membuat variabel boolean\nis_valid = True\nis_expired = False\nprint('Is valid?', is_valid)\nprint('Is expired?', is_expired)",
+            "komentar": "Contoh sederhana membuat dan mencetak variabel boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan operator logika\nis_windy = False\nis_sunny = True\nis_sunny_and_windy = is_sunny and is_windy\nis_sunny_or_windy = is_sunny or is_windy\nprint('Is it sunny and windy?', is_sunny_and_windy)\nprint('Is it sunny or windy?', is_sunny_or_windy)",
+            "komentar": "Menggunakan operator logika AND dan OR dengan variabel boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan operator not\nis_dark = True\nis_light = not is_dark\nprint('Is it light?', is_light)",
+            "komentar": "Menggunakan operator logika NOT dengan variabel boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan boolean dalam kondisi if\nhas_permission = True\nif has_permission:\n    print('Access granted')\nelse:\n    print('Access denied')",
+            "komentar": "Menggunakan variabel boolean dalam pernyataan if"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan boolean dari perbandingan angka\nscore = 85\nis_passing = score >= 60\nprint('Is the score passing?', is_passing)",
+            "komentar": "Menggunakan hasil perbandingan angka sebagai boolean"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan fungsi any() dan all()\nvalues = [False, False, True]\nall_true = all(values)\nany_true = any(values)\nprint('Are all values True?', all_true)\nprint('Is any value True?', any_true)",
+            "komentar": "Menggunakan fungsi any() dan all() untuk memeriksa boolean dari elemen dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan fungsi bool() untuk konversi\nnumber = 10\nzero = 0\nempty_str = ''\nnon_empty_str = 'Hello'\nprint('bool(10):', bool(number))\nprint('bool(0):', bool(zero))\nprint('bool(\"\"):', bool(empty_str))\nprint('bool(\"Hello\"):', bool(non_empty_str))",
+            "komentar": "Menggunakan fungsi bool() untuk memeriksa nilai boolean dari berbagai tipe data"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menggunakan boolean dalam perulangan while\ncountdown = 3\nwhile countdown > 0:\n    print('Countdown:', countdown)\n    countdown -= 1\nprint('Liftoff!')",
+            "komentar": "Menggunakan variabel boolean dalam perulangan while"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Membuat Variabel Boolean",
+            "deskripsi": "Cara membuat dan mencetak variabel boolean di Python."
+        },
+        {
+            "topik": "Operator Logika",
+            "deskripsi": "Cara menggunakan operator logika AND, OR, dan NOT dengan variabel boolean."
+        },
+        {
+            "topik": "Boolean dalam Kondisi If",
+            "deskripsi": "Cara menggunakan variabel boolean dalam pernyataan if."
+        },
+        {
+            "topik": "Boolean dari Perbandingan Angka",
+            "deskripsi": "Cara menggunakan hasil perbandingan angka sebagai boolean."
+        },
+        {
+            "topik": "Fungsi any() dan all()",
+            "deskripsi": "Cara menggunakan fungsi any() dan all() untuk memeriksa boolean dari elemen dalam list."
+        },
+        {
+            "topik": "Fungsi bool()",
+            "deskripsi": "Cara menggunakan fungsi bool() untuk memeriksa nilai boolean dari berbagai tipe data."
+        },
+        {
+            "topik": "Boolean dalam Perulangan While",
+            "deskripsi": "Cara menggunakan variabel boolean dalam perulangan while."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Booleans - W3Schools",
+            "url": "https://www.w3schools.com/python/python_booleans.asp"
+        },
+        {
+            "judul": "Boolean in Python - GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/boolean-in-python/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang boolean di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang berbagai metode yang bisa digunakan untuk memanipulasi boolean di Python"
+    ],
+    "error": [
+        {
+            "error": "TypeError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menggunakan nilai non-boolean dalam konteks yang membutuhkan boolean.",
+            "contoh": "is_enabled = 'true'\nif is_enabled:\n    print('Enabled')",
+            "solusi": "Pastikan nilai yang digunakan dalam konteks boolean adalah nilai boolean atau konversi nilai ke boolean menggunakan bool()."
+        },
+        {
+            "error": "NameError",
+            "deskripsi": "Kesalahan yang terjadi saat variabel boolean tidak didefinisikan.",
+            "contoh": "if is_logged_in:\n    print('User is logged in')",
+            "solusi": "Pastikan variabel boolean sudah didefinisikan sebelum digunakan."
+        }
+    ]
+}

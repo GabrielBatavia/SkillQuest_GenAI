@@ -1,0 +1,108 @@
+{
+    "sumber": "LearnPythonPro.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2024-11-10",
+    "judul": "Memahami dan Menggunakan Comment di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["comment", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan comment di Python. Comment adalah cara untuk menambahkan penjelasan atau catatan dalam kode yang tidak akan dieksekusi oleh interpreter Python. Comment sangat berguna untuk mendokumentasikan kode dan membuatnya lebih mudah dipahami oleh diri sendiri dan orang lain.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Ini adalah comment satu baris\nprint('Hello, World!')",
+            "komentar": "Contoh penggunaan comment satu baris untuk memberikan penjelasan sederhana"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "print('Hello, World!')  # Ini adalah comment di akhir baris",
+            "komentar": "Contoh penggunaan comment di akhir baris kode"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "\"\"\"\nIni adalah comment multi-baris.\nComment ini bisa digunakan untuk memberikan penjelasan yang lebih panjang atau mendokumentasikan bagian kode yang kompleks.\n\"\"\"\nprint('Hello, World!')",
+            "komentar": "Contoh penggunaan comment multi-baris untuk mendokumentasikan bagian kode yang lebih panjang"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def tambah(a, b):\n    \"\"\"\n    Fungsi ini menambahkan dua angka.\n    Parameter:\n    a (int, float): Angka pertama\n    b (int, float): Angka kedua\n    \n    Returns:\n    int, float: Hasil penjumlahan a dan b\n    \"\"\"\n    return a + b\n\nprint(tambah(3, 4))",
+            "komentar": "Contoh penggunaan docstring dalam fungsi untuk mendokumentasikan tujuan dan parameter fungsi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def bagi(a, b):\n    \"\"\"\n    Fungsi ini membagi dua angka.\n    Pastikan b tidak nol untuk menghindari ZeroDivisionError.\n    \"\"\"\n    if b == 0:\n        raise ValueError('Pembagi tidak boleh nol')\n    return a / b\n\nprint(bagi(10, 2))",
+            "komentar": "Contoh penggunaan docstring dalam fungsi untuk memberikan peringatan atau informasi penting mengenai penggunaan fungsi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menghitung luas lingkaran\n# Rumus: πr^2\nradius = 5\nluas = 3.14 * (radius ** 2)\nprint('Luas lingkaran:', luas)",
+            "komentar": "Contoh penggunaan comment untuk menjelaskan langkah-langkah perhitungan dalam kode"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "def faktorial(n):\n    \"\"\"\n    Menghitung faktorial dari n\n    Faktorial adalah hasil perkalian semua bilangan bulat positif kurang dari atau sama dengan n\n    \"\"\"\n    if n == 0:\n        return 1\n    else:\n        return n * faktorial(n-1)\n\nprint(faktorial(5))",
+            "komentar": "Contoh penggunaan docstring untuk mendokumentasikan fungsi rekursif"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "# Menghitung keliling persegi\n# Rumus: 4 * sisi\nsisi = 7\nkeliling = 4 * sisi\nprint('Keliling persegi:', keliling)",
+            "komentar": "Contoh penggunaan comment untuk menjelaskan rumus matematika dalam kode"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Comment Satu Baris",
+            "deskripsi": "Cara menambahkan comment satu baris menggunakan tanda pagar (#) di awal baris."
+        },
+        {
+            "topik": "Comment di Akhir Baris",
+            "deskripsi": "Cara menambahkan comment di akhir baris kode setelah pernyataan."
+        },
+        {
+            "topik": "Comment Multi-Baris",
+            "deskripsi": "Cara menambahkan comment multi-baris menggunakan tanda kutip tiga ganda (\"\"\")."
+        },
+        {
+            "topik": "Docstring dalam Fungsi",
+            "deskripsi": "Cara menggunakan docstring dalam fungsi untuk mendokumentasikan tujuan, parameter, dan return value fungsi."
+        },
+        {
+            "topik": "Menggunakan Comment untuk Penjelasan Langkah Kode",
+            "deskripsi": "Cara menggunakan comment untuk menjelaskan langkah-langkah dalam perhitungan atau proses dalam kode."
+        },
+        {
+            "topik": "Menggunakan Docstring untuk Informasi Penting",
+            "deskripsi": "Cara menggunakan docstring untuk memberikan peringatan atau informasi penting mengenai penggunaan fungsi."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Comments - W3Schools",
+            "url": "https://www.w3schools.com/python/python_comments.asp"
+        },
+        {
+            "judul": "Writing Comments in Python - Real Python",
+            "url": "https://realpython.com/python-comments-guide/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang penggunaan comment di Python",
+        "Contoh-contoh praktis yang mudah dipahami dengan penjelasan konteks yang lebih lengkap",
+        "Insight tentang bagaimana comment dan docstring digunakan untuk mendokumentasikan dan menjelaskan kode"
+    ],
+    "error": [
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat comment tidak ditulis dengan benar, misalnya menggunakan tanda kutip tunggal untuk comment multi-baris.",
+            "contoh": "''' Ini adalah comment multi-baris yang salah '''",
+            "solusi": "Gunakan tanda kutip tiga ganda (\"\"\") atau tanda pagar (#) untuk comment yang benar."
+        }
+    ]
+}

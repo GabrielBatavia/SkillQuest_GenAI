@@ -1,0 +1,196 @@
+[
+    {
+        "sumber": "PythonDasar.com",
+        "penulis": "Andi Prasetyo",
+        "tanggal": "2024-07-13",
+        "judul": "Memahami Variabel dan Tipe Data di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["variabel", "tipe data", "pemula"],
+        "konten": "Artikel ini membahas tentang cara mendeklarasikan variabel dan memahami berbagai tipe data yang ada di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "x = 5\ny = 'Hello, World!'\nz = 3.14",
+                "komentar": "Contoh sederhana mendeklarasikan variabel dengan tipe data yang berbeda."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Variabel",
+                "deskripsi": "Variabel digunakan untuk menyimpan data yang dapat digunakan kembali."
+            },
+            {
+                "topik": "Tipe Data",
+                "deskripsi": "Python memiliki beberapa tipe data seperti integer, float, dan string."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Python - Variabel",
+                "url": "https://docs.python.org/id/3/tutorial/introduction.html#using-python-as-a-calculator"
+            }
+        ],
+        "highlight": ["Deklarasi variabel", "Tipe data dasar"],
+        "error": [
+            {
+                "error": "TypeError",
+                "deskripsi": "Terjadi kesalahan tipe data saat operasi tidak valid.",
+                "contoh": "x = 5\nprint(x + 'hello')",
+                "solusi": "Pastikan operasi dilakukan pada tipe data yang sesuai, seperti mengubah integer menjadi string dengan str()."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonIntermediate.com",
+        "penulis": "Budi Santoso",
+        "tanggal": "2024-06-21",
+        "judul": "Menggunakan Fungsi Lambda di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["lambda", "fungsi", "menengah"],
+        "konten": "Artikel ini menjelaskan penggunaan fungsi lambda di Python untuk membuat fungsi anonim.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "add = lambda x, y: x + y\nprint(add(2, 3))",
+                "komentar": "Contoh sederhana fungsi lambda untuk penjumlahan."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Fungsi Lambda",
+                "deskripsi": "Fungsi lambda adalah cara cepat untuk mendeklarasikan fungsi anonim."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Python - Fungsi Lambda",
+                "url": "https://docs.python.org/id/3/tutorial/controlflow.html#lambda-expressions"
+            }
+        ],
+        "highlight": ["Penggunaan lambda", "Fungsi anonim"],
+        "error": [
+            {
+                "error": "SyntaxError",
+                "deskripsi": "Terjadi kesalahan sintaks saat mendeklarasikan fungsi lambda.",
+                "contoh": "add = lambda x, y: x + y print(add(2, 3))",
+                "solusi": "Pastikan setiap pernyataan dipisah dengan tanda koma atau menggunakan new line."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonAdvance.com",
+        "penulis": "Citra Kusuma",
+        "tanggal": "2024-05-10",
+        "judul": "Mengelola Exception di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["exception", "error handling", "lanjutan"],
+        "konten": "Artikel ini membahas cara mengelola exception di Python menggunakan blok try-except.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "try:\n  x = 10 / 0\nexcept ZeroDivisionError:\n  print('Terjadi pembagian dengan nol')",
+                "komentar": "Contoh penanganan exception untuk ZeroDivisionError."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Exception Handling",
+                "deskripsi": "Mengelola kesalahan program agar tidak menyebabkan crash."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Python - Exception",
+                "url": "https://docs.python.org/id/3/tutorial/errors.html#exceptions"
+            }
+        ],
+        "highlight": ["Blok try-except", "Penanganan ZeroDivisionError"],
+        "error": [
+            {
+                "error": "ZeroDivisionError",
+                "deskripsi": "Terjadi ketika mencoba membagi angka dengan nol.",
+                "contoh": "x = 10 / 0",
+                "solusi": "Gunakan blok try-except untuk menangani kesalahan ini."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonGuru.com",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-03-15",
+        "judul": "Menggunakan List Comprehension di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["list comprehension", "menengah"],
+        "konten": "Artikel ini membahas penggunaan list comprehension untuk membuat daftar dalam satu baris kode.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "squares = [x**2 for x in range(10)]\nprint(squares)",
+                "komentar": "Contoh sederhana list comprehension untuk membuat daftar kuadrat."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "List Comprehension",
+                "deskripsi": "Sebuah cara singkat untuk membuat list dengan sintaks yang lebih elegan."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Python - List Comprehensions",
+                "url": "https://docs.python.org/id/3/tutorial/datastructures.html#list-comprehensions"
+            }
+        ],
+        "highlight": ["Pembuatan list", "Sintaks singkat"],
+        "error": [
+            {
+                "error": "TypeError",
+                "deskripsi": "Terjadi kesalahan tipe data saat operasi pada list comprehension.",
+                "contoh": "squares = [x**2 for x in 'Python']",
+                "solusi": "Pastikan input yang digunakan pada list comprehension sesuai dengan operasi yang diterapkan."
+            }
+        ]
+    },
+    {
+        "sumber": "PythonPro.com",
+        "penulis": "Eko Nugroho",
+        "tanggal": "2024-04-20",
+        "judul": "Menggunakan Dekorator di Python",
+        "tingkat_kesulitan": "Lanjutan",
+        "tag": ["dekorator", "fungsi", "lanjutan"],
+        "konten": "Artikel ini menjelaskan tentang penggunaan dekorator untuk memodifikasi fungsi di Python.",
+        "contoh": [
+            {
+                "tipe": "kode",
+                "bahasa": "python",
+                "isi": "def my_decorator(func):\n  def wrapper():\n    print('Sebelum fungsi dijalankan')\n    func()\n    print('Setelah fungsi dijalankan')\n  return wrapper\n\n@my_decorator\ndef say_hello():\n  print('Hello!')\n\nsay_hello()",
+                "komentar": "Contoh penggunaan dekorator untuk menambahkan pesan sebelum dan sesudah fungsi dijalankan."
+            }
+        ],
+        "topik": [
+            {
+                "topik": "Dekorator",
+                "deskripsi": "Dekorator adalah fungsi yang digunakan untuk memodifikasi fungsi lain."
+            }
+        ],
+        "referensi": [
+            {
+                "judul": "Dokumentasi Python - Dekorator",
+                "url": "https://docs.python.org/id/3/tutorial/controlflow.html#decorators"
+            }
+        ],
+        "highlight": ["Memodifikasi fungsi", "Penggunaan dekorator"],
+        "error": [
+            {
+                "error": "AttributeError",
+                "deskripsi": "Terjadi kesalahan saat atribut yang tidak ada diakses dalam dekorator.",
+                "contoh": "def my_decorator(func):\n  def wrapper():\n    func.nonexistent_attribute\n  return wrapper\n\n@my_decorator\ndef say_hello():\n  print('Hello!')\n\nsay_hello()",
+                "solusi": "Pastikan atribut yang diakses dalam dekorator memang ada atau gunakan try-except untuk menangani kesalahan ini."
+            }
+        ]
+    }
+]

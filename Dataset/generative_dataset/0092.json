@@ -1,0 +1,93 @@
+{
+    "sumber": "PythonMudah.com",
+    "penulis": "Ahmad Maulana",
+    "tanggal": "2023-11-30",
+    "judul": "Memahami dan Menggunakan List di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["list", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan list di Python. List adalah struktur data yang dapat menyimpan beberapa item dalam satu variabel, dan memungkinkan untuk menyimpan berbagai jenis data.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits)",
+            "komentar": "Contoh dasar pembuatan list dan mencetaknya"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits[1])",
+            "komentar": "Contoh akses elemen kedua dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nfruits[1] = 'blueberry'\nprint(fruits)",
+            "komentar": "Contoh mengganti elemen kedua dalam list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nprint(fruits)",
+            "komentar": "Contoh menambahkan elemen ke list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nfruits.remove('banana')\nprint(fruits)",
+            "komentar": "Contoh menghapus elemen dari list"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "fruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)",
+            "komentar": "Contoh iterasi melalui elemen-elemen dalam list"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "List",
+            "deskripsi": "Struktur data yang dapat menyimpan beberapa item dalam satu variabel."
+        },
+        {
+            "topik": "Akses Elemen",
+            "deskripsi": "Cara mengakses elemen dalam list menggunakan indeks."
+        },
+        {
+            "topik": "Modifikasi List",
+            "deskripsi": "Cara menambah, mengganti, dan menghapus elemen dalam list."
+        },
+        {
+            "topik": "Iterasi List",
+            "deskripsi": "Cara iterasi melalui elemen-elemen dalam list menggunakan loop."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python Lists - W3Schools",
+            "url": "https://www.w3schools.com/python/python_lists.asp"
+        },
+        {
+            "judul": "Lists in Python - Real Python",
+            "url": "https://realpython.com/python-lists-tuples/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang list",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "IndexError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba mengakses indeks yang tidak ada dalam list.",
+            "contoh": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits[3])",
+            "solusi": "Pastikan indeks yang diakses berada dalam rentang list."
+        },
+        {
+            "error": "ValueError",
+            "deskripsi": "Kesalahan yang terjadi saat mencoba menghapus elemen yang tidak ada dalam list.",
+            "contoh": "fruits = ['apple', 'banana', 'cherry']\nfruits.remove('orange')",
+            "solusi": "Pastikan elemen yang akan dihapus ada dalam list atau tangani kasus saat elemen tidak ditemukan."
+        }
+    ]
+}

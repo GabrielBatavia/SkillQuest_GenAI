@@ -1,0 +1,93 @@
+{
+    "sumber": "BelajarPython.net",
+    "penulis": "Hendra Gunawan",
+    "tanggal": "2024-01-05",
+    "judul": "Memahami dan Menggunakan Kondisional If di Python",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["if", "kondisional", "pemula"],
+    "konten": "Artikel ini menjelaskan tentang penggunaan pernyataan kondisional if di Python. Pernyataan if digunakan untuk menjalankan blok kode tertentu hanya jika kondisi yang diberikan bernilai True.",
+    "contoh": [
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 10\nif x > 5:\n    print('x lebih besar dari 5')",
+            "komentar": "Contoh dasar penggunaan if untuk memeriksa apakah nilai x lebih besar dari 5"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 3\nif x % 2 == 0:\n    print('x adalah bilangan genap')\nelse:\n    print('x adalah bilangan ganjil')",
+            "komentar": "Contoh penggunaan if-else untuk memeriksa apakah x adalah bilangan genap atau ganjil"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 15\nif x < 10:\n    print('x kurang dari 10')\nelif x < 20:\n    print('x kurang dari 20 tapi tidak kurang dari 10')\nelse:\n    print('x lebih besar atau sama dengan 20')",
+            "komentar": "Contoh penggunaan if-elif-else untuk memeriksa beberapa kondisi"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 10\ny = 20\nif x > 5 and y > 15:\n    print('x lebih besar dari 5 dan y lebih besar dari 15')",
+            "komentar": "Contoh penggunaan operator logika and dalam pernyataan if"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 4\ny = 6\nif x > 5 or y > 5:\n    print('Salah satu dari x atau y lebih besar dari 5')",
+            "komentar": "Contoh penggunaan operator logika or dalam pernyataan if"
+        },
+        {
+            "tipe": "kode",
+            "bahasa": "python",
+            "isi": "x = 10\nif not x < 5:\n    print('x tidak kurang dari 5')",
+            "komentar": "Contoh penggunaan operator logika not dalam pernyataan if"
+        }
+    ],
+    "topik": [
+        {
+            "topik": "Pernyataan If",
+            "deskripsi": "Cara menggunakan pernyataan if untuk menjalankan kode hanya jika kondisi tertentu terpenuhi."
+        },
+        {
+            "topik": "Pernyataan If-Else",
+            "deskripsi": "Cara menggunakan if-else untuk menangani dua kondisi yang saling eksklusif."
+        },
+        {
+            "topik": "Pernyataan If-Elif-Else",
+            "deskripsi": "Cara menggunakan if-elif-else untuk menangani beberapa kondisi."
+        },
+        {
+            "topik": "Operator Logika dalam If",
+            "deskripsi": "Cara menggunakan operator logika and, or, dan not dalam pernyataan if."
+        }
+    ],
+    "referensi": [
+        {
+            "judul": "Python If...Else - W3Schools",
+            "url": "https://www.w3schools.com/python/python_conditions.asp"
+        },
+        {
+            "judul": "Understanding Python's if Statements - Real Python",
+            "url": "https://realpython.com/python-conditional-statements/"
+        }
+    ],
+    "highlight": [
+        "Penjelasan dasar tentang pernyataan kondisional if",
+        "Contoh-contoh praktis yang mudah dipahami"
+    ],
+    "error": [
+        {
+            "error": "IndentationError",
+            "deskripsi": "Kesalahan yang terjadi saat indentasi blok kode if tidak konsisten.",
+            "contoh": "x = 10\nif x > 5:\nprint('x lebih besar dari 5')",
+            "solusi": "Pastikan semua baris dalam blok kode if memiliki indentasi yang konsisten."
+        },
+        {
+            "error": "SyntaxError",
+            "deskripsi": "Kesalahan yang terjadi saat sintaks if tidak sesuai dengan aturan Python.",
+            "contoh": "x = 10\nif x > 5\n    print('x lebih besar dari 5')",
+            "solusi": "Pastikan untuk menambahkan tanda titik dua (:) setelah kondisi if."
+        }
+    ]
+}

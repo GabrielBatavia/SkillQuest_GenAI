@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Piper Hunter",
+    "tanggal": "2027-10-20",
+    "judul": "Python Data Analysis: Exploratory Data Analysis (EDA) with Pandas",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Data Analysis", "Pandas", "EDA", "Intermediate"],
+    "konten": "Pandas is a powerful library for data analysis in Python that simplifies data manipulation and analysis tasks...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import pandas as pd\n\n# Example of performing EDA with Pandas\nurl = 'https://example.com/data.csv'\ndata = pd.read_csv(url)\nsummary = data.describe()\nprint('Data Summary:', summary)",
+        "komentar": "Uses Pandas for exploratory data analysis (EDA) on a dataset."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Analisis Data Eksploratif (EDA) dengan Pandas dalam Python",
+        "deskripsi": "Menggunakan Pandas untuk manipulasi dan analisis data yang mempermudah tugas-tugas tersebut."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "highlight": ["powerful library for data analysis", "Pandas EDA operations"],
+    "error": [
+      {
+        "error": "KeyError",
+        "deskripsi": "KeyError occurred due to accessing non-existent column in Pandas DataFrame.",
+        "contoh": "summary = data['non_existent_column'].describe()",
+        "solusi": "Ensure columns accessed in Pandas DataFrames exist."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Marlowe Holt",
+    "tanggal": "2027-11-05",
+    "judul": "Python GUI Programming: Introduction to Tkinter",
+    "tingkat_kesulitan": "Pemula",
+    "tag": ["Python", "GUI Programming", "Tkinter", "Beginner"],
+    "konten": "Tkinter is the standard GUI library for Python. It allows you to create GUI applications with ease...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "# Example of creating a simple GUI with Tkinter\nimport tkinter as tk\n\nwindow = tk.Tk()\nwindow.title('Hello Tkinter')\nlabel = tk.Label(window, text='Hello, World!')\nlabel.pack(padx=20, pady=20)\nwindow.mainloop()",
+        "komentar": "Creates a basic GUI application using Tkinter."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar GUI Programming dengan Tkinter dalam Python",
+        "deskripsi": "Menggunakan Tkinter untuk membuat aplikasi GUI dengan mudah."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Tkinter Documentation",
+        "url": "https://docs.python.org/3/library/tkinter.html"
+      }
+    ],
+    "highlight": ["standard GUI library for Python", "Tkinter GUI applications"],
+    "error": [
+      {
+        "error": "TclError",
+        "deskripsi": "TclError occurred due to using invalid Tcl commands in Tkinter application.",
+        "contoh": "label = tk.Label(window, text='Hello, World!', non_existent_option='value')",
+        "solusi": "Ensure Tcl commands used in Tkinter are valid and supported."
+      }
+    ]
+  }
+]

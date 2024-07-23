@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "belajarpythonmudah.com",
+        "penulis": "Dina Hapsari",
+        "tanggal": "2023-03-12",
+        "judul": "Loop While: Panduan Lengkap untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "looping", "while"],
+        "konten": "Panduan ini memberikan penjelasan menyeluruh tentang penggunaan loop while di Python, termasuk penulisan, eksekusi, dan cara mengontrol loop tersebut.",
+        "pertanyaan": [
+            {
+                "question": "Apa kegunaan loop while di Python?",
+                "answer": "Loop while berguna untuk menjalankan blok kode berulang kali selama kondisi yang diberikan tetap benar."
+            },
+            {
+                "question": "Bagaimana menulis sintaks loop while di Python?",
+                "answer": "Sintaks loop while adalah `while kondisi:` diikuti dengan blok kode yang ingin diulang. Misalnya: `while x < 10: print(x)`."
+            },
+            {
+                "question": "Apa yang dilakukan perintah `break` dalam loop while?",
+                "question_code": "while x < 10:\n    if x == 5:\n        break\n    x += 1",
+                "answer": "Perintah `break` digunakan untuk menghentikan loop while secara paksa. Misalnya: `if x == 5: break`.",
+                "answer_code": "while x < 10:\n    if x == 5:\n        break\n    x += 1"
+            },
+            {
+                "question": "Bagaimana cara melewati iterasi tertentu dalam loop while?",
+                "question_code": "while x < 10:\n    x += 1\n    if x == 5:\n        continue\n    print(x)",
+                "answer": "Gunakan perintah `continue` untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya. Misalnya: `if x == 5: continue`.",
+                "answer_code": "while x < 10:\n    x += 1\n    if x == 5:\n        continue\n    print(x)"
+            },
+            {
+                "question": "Bagaimana cara membuat loop while yang tidak terbatas?",
+                "question_code": "while True:\n    print('Ini adalah loop tak berujung')",
+                "answer": "Loop while yang tidak terbatas menggunakan kondisi `True`. Contoh: `while True:`. Pastikan Anda memiliki mekanisme untuk menghentikannya.",
+                "answer_code": "while True:\n    print('Ini adalah loop tak berujung')"
+            },
+            {
+                "question": "Apa fungsi dari bagian else dalam loop while?",
+                "question_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1\nelse:\n    print('Loop selesai')",
+                "answer": "Bagian `else` dalam loop while dijalankan ketika loop selesai tanpa adanya intervensi dari `break`. Misalnya: `else: print('Loop selesai')`.",
+                "answer_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1\nelse:\n    print('Loop selesai')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan beberapa kondisi dalam loop while?",
+                "question_code": "while x < 5 and y > 0:\n    print(x, y)\n    x += 1\n    y -= 1",
+                "answer": "Anda dapat menggabungkan beberapa kondisi dengan operator logika `and` atau `or`. Misalnya: `while x < 5 and y > 0:`.",
+                "answer_code": "while x < 5 and y > 0:\n    print(x, y)\n    x += 1\n    y -= 1"
+            },
+            {
+                "question": "Bagaimana cara melakukan iterasi melalui list dengan loop while?",
+                "question_code": "my_list = [1, 2, 3, 4, 5]\nindex = 0\nwhile index < len(my_list):\n    print(my_list[index])\n    index += 1",
+                "answer": "Iterasi melalui list dengan loop while dapat dilakukan dengan menggunakan indeks. Misalnya: `while index < len(my_list):`.",
+                "answer_code": "my_list = [1, 2, 3, 4, 5]\nindex = 0\nwhile index < len(my_list):\n    print(my_list[index])\n    index += 1"
+            },
+            {
+                "question": "Bagaimana cara menggunakan input pengguna dalam kondisi loop while?",
+                "question_code": "user_input = ''\nwhile user_input.lower() != 'exit':\n    user_input = input('Masukkan sesuatu (ketik \"exit\" untuk keluar): ')\n    print('Anda mengetik:', user_input)",
+                "answer": "Kondisi loop while dapat bergantung pada input pengguna dengan menggunakan fungsi `input()`. Misalnya: `while user_input.lower() != 'exit':`.",
+                "answer_code": "user_input = ''\nwhile user_input.lower() != 'exit':\n    user_input = input('Masukkan sesuatu (ketik \"exit\" untuk keluar): ')\n    print('Anda mengetik:', user_input)"
+            }
+        ]
+    },
+    {
+        "sumber": "tutorialpython.com",
+        "penulis": "Arif Rahman",
+        "tanggal": "2024-04-15",
+        "judul": "Memahami dan Menggunakan Dictionary di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "dictionary", "pemula"],
+        "konten": "Artikel ini membahas konsep dasar dictionary di Python, cara membuat, mengakses, dan memodifikasi elemen di dalamnya.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan dictionary dalam Python?",
+                "answer": "Dictionary adalah tipe data yang menyimpan data dalam format pasangan kunci-nilai, di mana setiap kunci unik dan digunakan untuk mengakses nilai yang terkait."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan dictionary di Python?",
+                "answer": "Dictionary didefinisikan dengan menggunakan tanda kurung kurawal `{}` dan pasangan kunci-nilai yang dipisahkan oleh koma. Contoh: `my_dict = {'key': 'value'}`."
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dalam dictionary dengan kunci?",
+                "answer": "Nilai dalam dictionary diakses dengan menuliskan kunci dalam tanda kurung siku. Misalnya: `value = my_dict['key']`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan entri baru ke dictionary?",
+                "question_code": "my_dict['new_key'] = 'new_value'",
+                "answer": "Tambahkan entri baru dengan menetapkan nilai ke kunci baru. Misalnya: `my_dict['new_key'] = 'new_value'`.",
+                "answer_code": "my_dict['new_key'] = 'new_value'"
+            },
+            {
+                "question": "Bagaimana cara menghapus entri dari dictionary?",
+                "question_code": "del my_dict['key']",
+                "answer": "Gunakan perintah `del` untuk menghapus entri dari dictionary. Contoh: `del my_dict['key']`.",
+                "answer_code": "del my_dict['key']"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah kunci ada di dictionary?",
+                "question_code": "'key' in my_dict",
+                "answer": "Periksa keberadaan kunci dengan operator `in`. Misalnya: `'key' in my_dict`.",
+                "answer_code": "'key' in my_dict"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan daftar semua kunci dalam dictionary?",
+                "question_code": "my_dict.keys()",
+                "answer": "Dapatkan semua kunci dalam dictionary dengan metode `keys()`. Contoh: `my_dict.keys()`.",
+                "answer_code": "my_dict.keys()"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan semua nilai dalam dictionary?",
+                "question_code": "my_dict.values()",
+                "answer": "Dapatkan semua nilai dalam dictionary dengan metode `values()`. Contoh: `my_dict.values()`.",
+                "answer_code": "my_dict.values()"
+            },
+            {
+                "question": "Bagaimana cara memperbarui nilai dalam dictionary?",
+                "question_code": "my_dict['key'] = 'updated_value'",
+                "answer": "Perbarui nilai dalam dictionary dengan menetapkan nilai baru ke kunci yang ada. Misalnya: `my_dict['key'] = 'updated_value'`.",
+                "answer_code": "my_dict['key'] = 'updated_value'"
+            }
+        ]
+    }
+]

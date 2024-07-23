@@ -1,0 +1,78 @@
+[
+  {
+    "sumber": "towardsdatascience.com",
+    "penulis": "Jordan Riley",
+    "tanggal": "2028-01-20",
+    "judul": "Python Database Programming: Working with SQLite in Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Database Programming", "SQLite", "Intermediate"],
+    "konten": "SQLite is a lightweight and versatile SQL database engine that can be easily integrated with Python applications...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import sqlite3\n\n# Example of creating a SQLite database and table\nconn = sqlite3.connect('example.db')\nc = conn.cursor()\nc.execute('''\nCREATE TABLE IF NOT EXISTS users (\n    id INTEGER PRIMARY KEY,\n    name TEXT NOT NULL,\n    email TEXT NOT NULL\n);\n''')\nconn.commit()\nconn.close()",
+        "komentar": "Creates a SQLite database and table using Python."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Database Programming dengan SQLite dalam Python",
+        "deskripsi": "Menggunakan SQLite untuk mengintegrasikan basis data SQL dengan aplikasi Python secara mudah."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "SQLite Documentation",
+        "url": "https://www.sqlite.org/docs.html"
+      }
+    ],
+    "highlight": ["lightweight and versatile SQL database engine", "SQLite database creation in Python"],
+    "error": [
+      {
+        "error": "OperationalError",
+        "deskripsi": "OperationalError occurred due to incorrect SQL syntax in SQLite query.",
+        "contoh": "c.execute('SELECT * FROM non_existent_table')",
+        "solusi": "Ensure correct SQL syntax is used in SQLite queries."
+      }
+    ]
+  },
+  {
+    "sumber": "realpython.com",
+    "penulis": "Indigo Marsh",
+    "tanggal": "2028-02-05",
+    "judul": "Python Regular Expressions: Introduction to Regex in Python",
+    "tingkat_kesulitan": "Menengah",
+    "tag": ["Python", "Regular Expressions", "Regex", "Intermediate"],
+    "konten": "Regular expressions (regex) in Python allow you to search for patterns in strings and manipulate text based on those patterns...",
+    "contoh": [
+      {
+        "tipe": "Code Example",
+        "bahasa": "Python",
+        "isi": "import re\n\n# Example of using regex to find email addresses\ntext = 'Contact us at email@example.com'\nemails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}', text)\nprint('Emails found:', emails)",
+        "komentar": "Uses regex to find email addresses in a text."
+      }
+    ],
+    "topik": [
+      {
+        "topik": "Pengantar Regular Expressions (Regex) dalam Python",
+        "deskripsi": "Menggunakan regular expressions (regex) untuk mencari pola dalam string dan memanipulasi teks berdasarkan pola tersebut."
+      }
+    ],
+    "referensi": [
+      {
+        "judul": "Python Regex Documentation",
+        "url": "https://docs.python.org/3/howto/regex.html"
+      }
+    ],
+    "highlight": ["search for patterns in strings", "manipulate text with regex in Python"],
+    "error": [
+      {
+        "error": "re.error",
+        "deskripsi": "re.error occurred due to invalid regex pattern.",
+        "contoh": "emails = re.findall('([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+)', text)",
+        "solusi": "Ensure valid regex patterns are used in re.findall."
+      }
+    ]
+  }
+]
