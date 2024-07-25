@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "panduancodingpython.com",
+        "penulis": "Dina Puspita",
+        "tanggal": "2023-05-30",
+        "judul": "Penggunaan Dictionary di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "dictionary", "dasar"],
+        "konten": "Artikel ini membahas cara bekerja dengan dictionary di Python, termasuk bagaimana membuat, mengakses, dan mengubah data di dalamnya.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan dictionary dalam Python dan bagaimana cara kerjanya?",
+                "answer": "Dictionary di Python adalah struktur data yang menyimpan data dalam bentuk pasangan kunci-nilai. Anda bisa membayangkannya seperti kamus yang menyimpan kata-kata dan artinya."
+            },
+            {
+                "question": "Bagaimana cara membuat dictionary kosong di Python?",
+                "answer": "Untuk membuat dictionary kosong, Anda dapat menggunakan kurung kurawal tanpa pasangan kunci-nilai di dalamnya. Contoh: `kosong = {}`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan data ke dictionary setelah dibuat?",
+                "question_code": "kosong['buah'] = 'apel'",
+                "answer": "Setelah dictionary dibuat, Anda bisa menambahkan data dengan menetapkan nilai pada kunci yang diinginkan. Misalnya: `kosong['buah'] = 'apel'`.",
+                "answer_code": "kosong['buah'] = 'apel'"
+            },
+            {
+                "question": "Bagaimana cara mengambil nilai dari dictionary jika saya tahu kuncinya?",
+                "question_code": "kosong = {'buah': 'apel'}\nambil = kosong['buah']",
+                "answer": "Jika Anda tahu kunci, Anda bisa mengambil nilai dari dictionary dengan menulis `dictionary[kunci]`. Misalnya: `ambil = kosong['buah']` akan memberikan nilai 'apel'.",
+                "answer_code": "kosong = {'buah': 'apel'}\nambil = kosong['buah']"
+            },
+            {
+                "question": "Bagaimana cara menghapus data dari dictionary?",
+                "question_code": "del kosong['buah']",
+                "answer": "Untuk menghapus data dari dictionary, Anda dapat menggunakan `del` diikuti dengan kunci. Contohnya: `del kosong['buah']` akan menghapus kunci 'buah' beserta nilainya.",
+                "answer_code": "del kosong['buah']"
+            },
+            {
+                "question": "Bagaimana cara mengecek apakah sebuah kunci ada di dalam dictionary?",
+                "question_code": "'buah' in kosong",
+                "answer": "Untuk mengecek apakah sebuah kunci ada, gunakan operator `in`. Misalnya: `'buah' in kosong` akan mengembalikan True jika 'buah' adalah kunci dalam dictionary.",
+                "answer_code": "'buah' in kosong"
+            },
+            {
+                "question": "Bagaimana saya bisa mendapatkan semua kunci dalam dictionary?",
+                "question_code": "kosong.keys()",
+                "answer": "Untuk mendapatkan daftar semua kunci, gunakan metode `keys()`. Contoh: `kosong.keys()` akan menampilkan semua kunci dalam dictionary.",
+                "answer_code": "kosong.keys()"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan semua nilai dari dictionary?",
+                "question_code": "kosong.values()",
+                "answer": "Gunakan metode `values()` untuk mendapatkan semua nilai dalam dictionary. Contoh: `kosong.values()` akan menampilkan semua nilai yang ada.",
+                "answer_code": "kosong.values()"
+            },
+            {
+                "question": "Bagaimana cara memperbarui nilai yang sudah ada di dalam dictionary?",
+                "question_code": "kosong['buah'] = 'jeruk'",
+                "answer": "Untuk memperbarui nilai, Anda bisa menulis kunci dan menetapkan nilai baru. Contoh: `kosong['buah'] = 'jeruk'` akan mengganti nilai kunci 'buah' menjadi 'jeruk'.",
+                "answer_code": "kosong['buah'] = 'jeruk'"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpemrogramanpython.net",
+        "penulis": "Eko Prasetyo",
+        "tanggal": "2023-11-21",
+        "judul": "Penggunaan List Comprehensions di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list comprehensions", "dasar"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan list comprehensions untuk membuat dan memodifikasi list dengan cara yang lebih ringkas dan jelas.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu list comprehension dan kenapa kita menggunakannya?",
+                "answer": "List comprehension adalah cara untuk membuat list baru dengan sintaks yang lebih ringkas. Ini membantu menulis kode yang lebih bersih dan lebih efisien dibandingkan dengan menggunakan loop tradisional."
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension untuk mendapatkan angka 1 sampai 5?",
+                "question_code": "[n for n in range(1, 6)]",
+                "answer": "Untuk membuat list comprehension yang berisi angka dari 1 sampai 5, gunakan sintaks `[n for n in range(1, 6)]`.",
+                "answer_code": "[n for n in range(1, 6)]"
+            },
+            {
+                "question": "Bagaimana menambahkan syarat dalam list comprehension untuk angka genap?",
+                "question_code": "[n for n in range(10) if n % 2 == 0]",
+                "answer": "Untuk menambahkan syarat, tambahkan `if` dalam list comprehension. Misalnya: `[n for n in range(10) if n % 2 == 0]` akan menghasilkan angka genap dari 0 hingga 9.",
+                "answer_code": "[n for n in range(10) if n % 2 == 0]"
+            },
+            {
+                "question": "Bagaimana membuat list comprehension yang mengalikan setiap angka dengan 5?",
+                "question_code": "[n * 5 for n in range(4)]",
+                "answer": "Untuk mengalikan setiap angka dalam range dengan 5, gunakan sintaks `[n * 5 for n in range(4)]`. Ini akan menghasilkan list `[0, 5, 10, 15]`.",
+                "answer_code": "[n * 5 for n in range(4)]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk mengubah huruf dalam string menjadi kapital?",
+                "question_code": "[char.upper() for char in 'world']",
+                "answer": "Untuk mengubah setiap huruf dalam string menjadi kapital, gunakan `[char.upper() for char in 'world']`. Ini akan menghasilkan `['W', 'O', 'R', 'L', 'D']`.",
+                "answer_code": "[char.upper() for char in 'world']"
+            },
+            {
+                "question": "Bagaimana cara membuat list comprehension dari list yang sudah ada dan menambahkan 10 ke setiap elemennya?",
+                "question_code": "angka = [1, 2, 3, 4]\nplus_ten = [x + 10 for x in angka]",
+                "answer": "Jika Anda memiliki list dan ingin menambahkan 10 ke setiap elemennya, gunakan sintaks `[x + 10 for x in angka]`. Contoh: `plus_ten = [x + 10 for x in angka]`.",
+                "answer_code": "angka = [1, 2, 3, 4]\nplus_ten = [x + 10 for x in angka]"
+            },
+            {
+                "question": "Bagaimana membuat nested list comprehension untuk menghasilkan koordinat (x, y) dalam grid 2x2?",
+                "question_code": "[[x, y] for x in range(2) for y in range(2)]",
+                "answer": "Untuk membuat nested list comprehension, gunakan beberapa loop `for` dalam satu sintaks. Contoh: `[[x, y] for x in range(2) for y in range(2)]` menghasilkan koordinat dalam grid 2x2.",
+                "answer_code": "[[x, y] for x in range(2) for y in range(2)]"
+            },
+            {
+                "question": "Bagaimana cara membuat dictionary comprehension untuk mengkuadratkan nilai dari setiap kunci?",
+                "question_code": "{k: v**2 for k, v in {'a': 2, 'b': 3}.items()}",
+                "answer": "Untuk membuat dictionary comprehension yang mengkuadratkan nilai, gunakan `{k: v**2 for k, v in dict.items()}`. Contoh: `{k: v**2 for k, v in {'a': 2, 'b': 3}.items()}`.",
+                "answer_code": "{k: v**2 for k, v in {'a': 2, 'b': 3}.items()}"
+            },
+            {
+                "question": "Bagaimana membuat set comprehension untuk angka ganjil dari 1 hingga 7?",
+                "question_code": "{n for n in range(1, 8) if n % 2 != 0}",
+                "answer": "Untuk membuat set comprehension yang berisi angka ganjil dari 1 hingga 7, gunakan sintaks `{n for n in range(1, 8) if n % 2 != 0}`.",
+                "answer_code": "{n for n in range(1, 8) if n % 2 != 0}"
+            }
+        ]
+    }
+]

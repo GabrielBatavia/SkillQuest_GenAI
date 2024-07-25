@@ -1,0 +1,96 @@
+[
+    {
+        "sumber": "Python Basics for Beginners",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-11-06",
+        "judul": "Menyisipkan Elemen pada Posisi Tertentu di List dengan Method insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Artikel ini menjelaskan bagaimana cara menyisipkan elemen pada posisi tertentu di dalam list menggunakan method insert() di Python. Method ini memungkinkan Anda untuk menambahkan elemen pada posisi yang ditentukan tanpa menghapus elemen lainnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda dapat menyisipkan elemen 'sun' pada posisi ke-3 dalam list weather?",
+                "answer": "Gunakan kode berikut: weather.insert(3, 'sun'). Ini akan menempatkan 'sun' pada posisi indeks ke-3 dalam list weather, menggeser elemen setelahnya ke kanan.",
+                "question_code": "weather = ['rain', 'cloud', 'snow']\nweather.insert(3, 'sun')",
+                "answer_code": "weather = ['rain', 'cloud', 'snow']\nweather.insert(3, 'sun')  # Output: ['rain', 'cloud', 'snow', 'sun']"
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda menyisipkan elemen 'moon' pada posisi ke-2 dalam list celestial_objects yang sudah ada?",
+                "answer": "Menyisipkan elemen pada posisi ke-2 dalam list celestial_objects akan membuat 'moon' berada di posisi tersebut dan menggeser semua elemen setelahnya satu posisi ke kanan.",
+                "question_code": "celestial_objects = ['star', 'planet', 'asteroid']\ncelestial_objects.insert(2, 'moon')",
+                "answer_code": "celestial_objects = ['star', 'planet', 'asteroid']\ncelestial_objects.insert(2, 'moon')  # Output: ['star', 'planet', 'moon', 'asteroid']"
+            },
+            {
+                "question": "Bagaimana Anda bisa menyisipkan elemen 'apple' pada akhir list menggunakan method insert()?",
+                "answer": "Untuk menambahkan elemen di akhir list, Anda dapat menggunakan len(list) sebagai indeks. Contohnya, list.insert(len(list), 'apple') akan menambahkan 'apple' di akhir list.",
+                "question_code": "fruits = ['banana', 'cherry']\nfruits.insert(len(fruits), 'apple')",
+                "answer_code": "fruits = ['banana', 'cherry']\nfruits.insert(len(fruits), 'apple')  # Output: ['banana', 'cherry', 'apple']"
+            },
+            {
+                "question": "Kenapa Anda mendapatkan error 'IndexError: list index out of range' ketika menyisipkan elemen dengan indeks lebih besar dari panjang list?",
+                "answer": "Method insert() akan menambahkan elemen pada akhir list jika indeks lebih besar dari panjang list. Namun, jika indeks terlalu besar, mungkin akan terjadi error. Biasakan untuk menggunakan indeks yang valid atau gunakan len(list) untuk menambahkan di akhir list.",
+                "question_code": "items = ['x', 'y', 'z']\nitems.insert(100, 'w')",
+                "answer_code": "items = ['x', 'y', 'z']\nitems.insert(len(items), 'w')  # Output: ['x', 'y', 'z', 'w']"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: insert() argument must be an integer' saat mencoba menggunakan string sebagai indeks?",
+                "answer": "Method insert() memerlukan indeks berupa integer. Menggunakan string atau tipe data lain sebagai indeks akan menyebabkan error. Pastikan indeks adalah integer.",
+                "question_code": "values = [10, 20, 30]\nvalues.insert('1', 40)",
+                "answer_code": "values = [10, 20, 30]\nvalues.insert(1, 40)  # Output: [10, 40, 20, 30]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'AttributeError: 'tuple' object has no attribute 'insert'' saat mencoba menyisipkan elemen pada tuple?",
+                "answer": "Tuple adalah struktur data yang tidak dapat diubah (immutable) di Python. Oleh karena itu, tuple tidak memiliki method insert(). Gunakan list jika Anda memerlukan metode insert().",
+                "question_code": "my_tuple = (1, 2, 3)\nmy_tuple.insert(1, 4)",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.insert(1, 4)  # Output: [1, 4, 2, 3]"
+            }
+        ]
+    },
+    {
+        "sumber": "Intro to Python Programming",
+        "penulis": "Evan Smith",
+        "tanggal": "2024-11-06",
+        "judul": "Menggunakan Method insert() untuk Menambahkan Elemen pada Posisi Tertentu dalam List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Panduan ini menjelaskan cara menggunakan method insert() di Python untuk menambahkan elemen pada posisi tertentu dalam list. Method ini sangat berguna untuk mengelola data dalam list dengan lebih fleksibel.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyisipkan elemen 'dog' pada posisi ke-4 dalam list animals?",
+                "answer": "Untuk menyisipkan 'dog' pada posisi ke-4, Anda dapat menggunakan kode berikut: animals.insert(4, 'dog'). Ini akan menambahkan 'dog' pada indeks ke-4, dan elemen setelahnya akan digeser.",
+                "question_code": "animals = ['cat', 'rabbit', 'hamster', 'fish']\nanimals.insert(4, 'dog')",
+                "answer_code": "animals = ['cat', 'rabbit', 'hamster', 'fish']\nanimals.insert(4, 'dog')  # Output: ['cat', 'rabbit', 'hamster', 'fish', 'dog']"
+            },
+            {
+                "question": "Apa efek dari menyisipkan elemen 'bird' pada posisi ke-1 dalam list animals yang sudah ada?",
+                "answer": "Menyisipkan 'bird' pada posisi ke-1 akan menempatkan 'bird' di posisi kedua dalam list, menggeser elemen setelahnya satu posisi ke belakang.",
+                "question_code": "animals = ['cat', 'rabbit', 'hamster']\nanimals.insert(1, 'bird')",
+                "answer_code": "animals = ['cat', 'rabbit', 'hamster']\nanimals.insert(1, 'bird')  # Output: ['cat', 'bird', 'rabbit', 'hamster']"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen 'juice' pada akhir list menggunakan method insert()?",
+                "answer": "Gunakan len(list) sebagai indeks untuk menambahkan elemen di akhir list. Contohnya, list.insert(len(list), 'juice') akan menambahkan 'juice' di akhir list.",
+                "question_code": "beverages = ['water', 'tea']\nbeverages.insert(len(beverages), 'juice')",
+                "answer_code": "beverages = ['water', 'tea']\nbeverages.insert(len(beverages), 'juice')  # Output: ['water', 'tea', 'juice']"
+            },
+            {
+                "question": "Apa penyebab error 'IndexError: list index out of range' ketika menyisipkan elemen dengan indeks yang sangat besar?",
+                "answer": "Error ini disebabkan oleh penggunaan indeks yang sangat besar. Method insert() akan menambahkan elemen di akhir list jika indeks terlalu besar, tetapi indeks yang sangat besar dapat menyebabkan error.",
+                "question_code": "data = ['a', 'b']\ndata.insert(1000, 'c')",
+                "answer_code": "data = ['a', 'b']\ndata.insert(len(data), 'c')  # Output: ['a', 'b', 'c']"
+            },
+            {
+                "question": "Kenapa error 'TypeError: insert() argument must be an integer' muncul saat menggunakan float sebagai indeks?",
+                "answer": "Method insert() memerlukan indeks berupa integer. Menggunakan float atau tipe data lain sebagai indeks akan menyebabkan error. Pastikan indeks adalah integer.",
+                "question_code": "data = [5, 10, 15]\ndata.insert(2.5, 20)",
+                "answer_code": "data = [5, 10, 15]\ndata.insert(2, 20)  # Output: [5, 10, 20, 15]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'AttributeError: 'tuple' object has no attribute 'insert'' saat menggunakan method insert() pada tuple?",
+                "answer": "Error ini muncul karena tuple adalah struktur data yang tidak dapat diubah (immutable) dan tidak memiliki method insert(). Gunakan list jika Anda perlu melakukan penyisipan elemen.",
+                "question_code": "my_tuple = (4, 5, 6)\nmy_tuple.insert(1, 3)",
+                "answer_code": "my_list = [4, 5, 6]\nmy_list.insert(1, 3)  # Output: [4, 3, 5, 6]"
+            }
+        ]
+    }
+]

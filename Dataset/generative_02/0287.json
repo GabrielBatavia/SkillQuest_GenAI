@@ -1,0 +1,122 @@
+[
+    {
+        "sumber": "pythonskills.com",
+        "penulis": "Dian Pratama",
+        "tanggal": "2024-12-10",
+        "judul": "Penggunaan Fungsi Lambda di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "lambda", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi lambda di Python untuk menulis fungsi kecil dan sederhana.",
+        "pertanyaan": [
+            {
+                "question": "Saya dengar tentang fungsi lambda di Python, itu apa sih?",
+                "answer": "Fungsi lambda adalah fungsi anonim yang didefinisikan dengan kata kunci `lambda` dan dapat memiliki banyak argumen tetapi hanya satu ekspresi."
+            },
+            {
+                "question": "Bagaimana cara membuat fungsi lambda di Python? Ada contohnya?",
+                "question_code": "lambda x, y: x * y",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan menggunakan kata kunci `lambda` diikuti oleh argumen dan ekspresi. Contohnya: `lambda x, y: x * y`.",
+                "answer_code": "lambda x, y: x * y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi `map` di Python?",
+                "question_code": "angka = [1, 2, 3, 4]\nhasil = list(map(lambda x: x**2, angka))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi `map` untuk menerapkan fungsi ke setiap item dalam iterable. Contohnya: `map(lambda x: x**2, angka)`.",
+                "answer_code": "angka = [1, 2, 3, 4]\nhasil = list(map(lambda x: x**2, angka))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi `filter` di Python?",
+                "question_code": "angka = [1, 2, 3, 4]\ngenap = list(filter(lambda x: x % 2 == 0, angka))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi `filter` untuk menyaring item dalam iterable berdasarkan kondisi tertentu. Contohnya: `filter(lambda x: x % 2 == 0, angka)`.",
+                "answer_code": "angka = [1, 2, 3, 4]\ngenap = list(filter(lambda x: x % 2 == 0, angka))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi `reduce` di Python?",
+                "question_code": "from functools import reduce\nangka = [1, 2, 3, 4]\nsum_angka = reduce(lambda x, y: x + y, angka)",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi `reduce` untuk menggabungkan item dalam iterable secara berurutan. Contohnya: `reduce(lambda x, y: x + y, angka)`.",
+                "answer_code": "from functools import reduce\nangka = [1, 2, 3, 4]\nsum_angka = reduce(lambda x, y: x + y, angka)"
+            },
+            {
+                "question": "Bagaimana cara menulis fungsi lambda untuk menghitung nilai faktorial?",
+                "question_code": "(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(lambda f: lambda n: 1 if n == 0 else n * f(n-1))(5)",
+                "answer": "Anda bisa menulis fungsi lambda untuk menghitung nilai faktorial dengan menggunakan rekursi. Contohnya: `(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(lambda f: lambda n: 1 if n == 0 else n * f(n-1))(5)`.",
+                "answer_code": "(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(lambda f: lambda n: 1 if n == 0 else n * f(n-1))(5)"
+            },
+            {
+                "question": "Bagaimana cara menulis fungsi lambda untuk membalik string?",
+                "question_code": "balik_string = lambda s: s[::-1]",
+                "answer": "Anda bisa menulis fungsi lambda untuk membalik string dengan menggunakan slicing. Contohnya: `lambda s: s[::-1]`.",
+                "answer_code": "balik_string = lambda s: s[::-1]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda sebagai argumen fungsi lain di Python?",
+                "question_code": "def terapkan_fungsi(x, func):\n    return func(x)\nhasil = terapkan_fungsi(5, lambda x: x * 3)",
+                "answer": "Anda bisa menggunakan fungsi lambda sebagai argumen fungsi lain dengan mendefinisikan lambda di dalam panggilan fungsi. Contohnya: `terapkan_fungsi(5, lambda x: x * 3)`.",
+                "answer_code": "def terapkan_fungsi(x, func):\n    return func(x)\nhasil = terapkan_fungsi(5, lambda x: x * 3)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda untuk memeriksa apakah suatu string adalah palindrom?",
+                "question_code": "adalah_palindrom = lambda s: s == s[::-1]",
+                "answer": "Anda bisa menggunakan fungsi lambda untuk memeriksa apakah suatu string adalah palindrom dengan membandingkan string dengan kebalikannya. Contohnya: `lambda s: s == s[::-1]`.",
+                "answer_code": "adalah_palindrom = lambda s: s == s[::-1]"
+            }
+        ]
+    },
+    {
+        "sumber": "pythontuts.com",
+        "penulis": "Eko Purwanto",
+        "tanggal": "2024-11-20",
+        "judul": "Penggunaan Fungsi Generators di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "generators", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan generators di Python untuk menghasilkan urutan nilai dengan cara yang efisien dalam penggunaan memori.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu generator di Python?",
+                "answer": "Generator adalah fungsi yang menghasilkan urutan nilai menggunakan kata kunci `yield` dan mengingat posisi terakhirnya setiap kali dipanggil."
+            },
+            {
+                "question": "Bagaimana cara membuat generator di Python? Bisa berikan contohnya?",
+                "question_code": "def contoh_generator():\n    yield 1\n    yield 2\n    yield 3",
+                "answer": "Anda bisa mendefinisikan generator dengan menggunakan kata kunci `yield` di dalam fungsi untuk menghasilkan nilai satu per satu. Contohnya: `def contoh_generator(): yield 1 yield 2 yield 3`.",
+                "answer_code": "def contoh_generator():\n    yield 1\n    yield 2\n    yield 3"
+            },
+            {
+                "question": "Bagaimana cara menggunakan generator di Python?",
+                "question_code": "gen = contoh_generator()\nfor nilai in gen:\n    print(nilai)",
+                "answer": "Anda bisa menggunakan generator dengan memanggilnya dan mengiterasi hasilnya menggunakan loop. Contohnya: `gen = contoh_generator(); for nilai in gen: print(nilai)`.",
+                "answer_code": "gen = contoh_generator()\nfor nilai in gen:\n    print(nilai)"
+            },
+            {
+                "question": "Bagaimana cara membuat generator untuk menghasilkan urutan angka di Python?",
+                "question_code": "def hitung_sampai(max):\n    hitung = 1\n    while hitung <= max:\n        yield hitung\n        hitung += 1",
+                "answer": "Anda bisa membuat generator untuk menghasilkan urutan angka dengan menggunakan loop dan kata kunci `yield`. Contohnya: `def hitung_sampai(max): hitung = 1 while hitung <= max: yield hitung hitung += 1`.",
+                "answer_code": "def hitung_sampai(max):\n    hitung = 1\n    while hitung <= max:\n        yield hitung\n        hitung += 1"
+            },
+            {
+                "question": "Bagaimana cara membuat generator untuk menghasilkan bilangan Fibonacci di Python?",
+                "question_code": "def fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b",
+                "answer": "Anda bisa membuat generator untuk menghasilkan bilangan Fibonacci dengan mendefinisikan dua variabel dan menggunakan loop serta kata kunci `yield`. Contohnya: `def fibonacci(): a, b = 0, 1 while True: yield a a, b = b, a + b`.",
+                "answer_code": "def fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b"
+            },
+            {
+                "question": "Bagaimana cara membuat generator untuk menghasilkan nilai faktorial di Python?",
+                "question_code": "def generator_faktorial():\n    n = 1\n    hasil = 1\n    while True:\n        yield hasil\n        n += 1\n        hasil *= n",
+                "answer": "Anda bisa membuat generator untuk menghasilkan nilai faktorial dengan menggunakan loop dan kata kunci `yield` serta menghitung hasil faktorial pada setiap iterasi. Contohnya: `def generator_faktorial(): n = 1 hasil = 1 while True: yield hasil n += 1 hasil *= n`.",
+                "answer_code": "def generator_faktorial():\n    n = 1\n    hasil = 1\n    while True:\n        yield hasil\n        n += 1\n        hasil *= n"
+            },
+            {
+                "question": "Bagaimana cara membuat generator untuk menghasilkan bilangan prima di Python?",
+                "question_code": "def generator_prima():\n    num = 2\n    while True:\n        for i in range(2, num):\n            if num % i == 0:\n                break\n        else:\n            yield num\n        num += 1",
+                "answer": "Anda bisa membuat generator untuk menghasilkan bilangan prima dengan menggunakan loop dan pengecekan pembagian pada setiap angka. Contohnya: `def generator_prima(): num = 2 while True: for i in range(2, num): if num % i == 0: break else: yield num num += 1`.",
+                "answer_code": "def generator_prima():\n    num = 2\n    while True:\n        for i in range(2, num):\n            if num % i == 0:\n                break\n        else:\n            yield num\n        num += 1"
+            },
+            {
+                "question": "Bagaimana cara menghentikan generator di Python?",
+                "question_code": "def generator_terbatas(max):\n    hitung = 1\n    while hitung <= max:\n        yield hitung\n        hitung += 1\nfor nilai in generator_terbatas(5):\n    print(nilai)",
+                "answer": "Anda bisa menghentikan generator dengan menggunakan kondisi penghentian di dalam loop generator. Contohnya: `def generator_terbatas(max): hitung = 1 while hitung <= max: yield hitung hitung += 1`.",
+                "answer_code": "def generator_terbatas(max):\n    hitung = 1\n    while hitung <= max:\n        yield hitung\n        hitung += 1\nfor nilai in generator_terbatas(5):\n    print(nilai)"
+            }
+        ]
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Alice Smith",
+        "tanggal": "2024-11-15",
+        "judul": "Dasar-Dasar Menghapus Elemen List dengan `pop()`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "pop", "Pemula"],
+        "konten": "Artikel ini membahas bagaimana menggunakan metode `pop()` untuk menghapus elemen dari list berdasarkan indeks. Kami akan menjelaskan berbagai situasi dan masalah umum yang mungkin ditemui.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang akan terjadi jika Anda menjalankan kode berikut: `data = [10, 20, 30, 40]\nremoved = data.pop(0)`?",
+                "answer": "Kode tersebut akan menghapus elemen pada indeks 0 dari list `data`, yang adalah '10'. Variabel `removed` akan menyimpan nilai '10', dan `data` akan menjadi `[20, 30, 40]`."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen pertama dan ketiga dari list `[5, 15, 25, 35, 45]` secara bersamaan?",
+                "answer": "Untuk menghapus elemen pertama dan ketiga secara bersamaan, Anda perlu melakukannya dalam dua langkah. Pertama, hapus elemen pada indeks 2, lalu hapus elemen pada indeks 0. Kode-nya adalah: `numbers = [5, 15, 25, 35, 45]\nnumbers.pop(2)\nnumbers.pop(0)`. Ini akan menghapus elemen '25' dan '5'."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda menggunakan `pop()` pada indeks yang tidak ada dalam list `[1, 2, 3]`?",
+                "answer": "Jika Anda mencoba menggunakan `pop()` pada indeks yang tidak ada, misalnya `data.pop(5)`, Python akan menghasilkan `IndexError` karena indeks tersebut di luar jangkauan list. Pastikan indeks berada dalam rentang yang valid."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: pop index out of range', saya tidak paham?",
+                "question_code": "items = [4, 5, 6]\nitems.pop(10)",
+                "answer": "Error ini terjadi karena indeks yang digunakan melebihi jumlah elemen dalam list. Pastikan indeks berada dalam rentang yang benar.",
+                "answer_code": "items = [4, 5, 6]\nif len(items) > 10:\n    items.pop(10)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: pop() takes at most 1 argument (2 given)', saya tidak paham?",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.pop(1, 'extra')",
+                "answer": "Error ini terjadi karena metode `pop()` hanya menerima satu argumen yaitu indeks. Pastikan hanya satu argumen yang diberikan.",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.pop(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'str' object has no attribute 'pop'', saya tidak paham?",
+                "question_code": "text = 'hello'\ntext.pop(1)",
+                "answer": "Error ini terjadi karena metode `pop()` hanya tersedia untuk list, bukan string. Gunakan metode yang sesuai untuk string, seperti indexing atau slicing.",
+                "answer_code": "text = [ 'h', 'e', 'l', 'l', 'o' ]\ntext.pop(1)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen kedua dari list `[11, 22, 33, 44, 55]` dan menyimpan elemen yang dihapus?",
+                "answer": "Untuk menghapus elemen kedua dan menyimpan elemen yang dihapus, gunakan `removed = numbers.pop(1)`. Ini akan menghapus elemen '22' dan menyimpannya dalam variabel `removed`."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Michael Brown",
+        "tanggal": "2024-11-16",
+        "judul": "Menggunakan `pop()` untuk Memanipulasi List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "pop", "Pemula"],
+        "konten": "Artikel ini memaparkan teknik dasar menggunakan metode `pop()` untuk menghapus elemen dari list berdasarkan indeks. Contoh dan penjelasan disediakan untuk berbagai kasus penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menghapus elemen terakhir dari list `[7, 14, 21, 28, 35]` menggunakan `pop()`?",
+                "answer": "Untuk menghapus elemen terakhir dari list `[7, 14, 21, 28, 35]`, gunakan `last_element = numbers.pop()`. Ini akan menghapus dan mengembalikan elemen '35'."
+            },
+            {
+                "question": "Apa yang akan dilakukan kode `data = [1, 2, 3, 4]\nremoved = data.pop(3)`?",
+                "answer": "Kode ini akan menghapus elemen pada indeks 3 dari list `data`, yang adalah '4'. Variabel `removed` akan menyimpan nilai '4', dan `data` akan menjadi `[1, 2, 3]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan `pop()` pada list kosong?",
+                "answer": "Jika `pop()` digunakan pada list kosong, Python akan menghasilkan `IndexError`. Pastikan list tidak kosong sebelum memanggil `pop()`."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: pop index out of range', saya tidak paham?",
+                "question_code": "list_values = [8, 9, 10]\nlist_values.pop(5)",
+                "answer": "Error ini terjadi karena indeks yang digunakan lebih besar dari panjang list. Pastikan indeks berada dalam rentang yang valid.",
+                "answer_code": "list_values = [8, 9, 10]\nif len(list_values) > 5:\n    list_values.pop(5)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: pop() takes at most 1 argument (2 given)', saya tidak paham?",
+                "question_code": "values = [10, 20, 30]\nvalues.pop(0, 'extra')",
+                "answer": "Error ini terjadi karena metode `pop()` hanya menerima satu argumen yaitu indeks. Pastikan hanya satu argumen yang diberikan.",
+                "answer_code": "values = [10, 20, 30]\nvalues.pop(0)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'dict' object has no attribute 'pop'', saya tidak paham?",
+                "question_code": "data_dict = { 'a': 1, 'b': 2 }\ndata_dict.pop('a')",
+                "answer": "Error ini terjadi karena metode `pop()` tidak tersedia untuk dictionary dengan argumen indeks. Gunakan metode `pop()` yang sesuai untuk dictionary dengan kunci.",
+                "answer_code": "data_dict = { 'a': 1, 'b': 2 }\nremoved_value = data_dict.pop('a')"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen kedua dari list `[2, 4, 6, 8]` dan mengembalikan nilai yang dihapus?",
+                "answer": "Untuk menghapus elemen kedua dari list `[2, 4, 6, 8]` dan mengembalikan nilai yang dihapus, gunakan kode berikut: `removed_value = numbers.pop(1)`. Ini akan menghapus elemen '4' dan menyimpannya dalam variabel `removed_value`."
+            }
+        ]
+    }
+]

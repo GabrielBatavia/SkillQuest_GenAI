@@ -1,0 +1,102 @@
+[
+    {
+        "sumber": "Python Data Manipulation",
+        "penulis": "Emily Watson",
+        "tanggal": "2024-10-01",
+        "judul": "Exploring Advanced Slicing Techniques in Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Slicing"],
+        "konten": "Artikel ini membahas teknik slicing yang lebih kompleks dalam Python, termasuk penggunaan slicing untuk memanipulasi data dalam list dan string secara efisien.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengambil setiap elemen ketiga dari sebuah list mulai dari indeks ke-2 hingga akhir?",
+                "answer": "Gunakan notasi slicing `list[2::3]` untuk mengambil setiap elemen ketiga dari indeks ke-2 hingga akhir list."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan slicing dengan langkah yang sangat kecil pada string panjang?",
+                "answer": "Slicing dengan langkah yang sangat kecil, seperti `string[::0.1]`, akan menghasilkan error karena langkah dalam slicing harus berupa integer. Sebaiknya gunakan integer sebagai langkah untuk hasil yang diinginkan."
+            },
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk mengubah nilai pada elemen tertentu di list dengan panjang berbeda?",
+                "answer": "Untuk mengubah nilai pada elemen tertentu di list, gunakan slicing untuk menentukan area yang ingin diganti. Misalnya, `list[3:5] = ['new1', 'new2']` mengganti elemen pada indeks ke-3 dan ke-4 dengan `new1` dan `new2`."
+            },
+            {
+                "question": "Kenapa Anda mendapatkan error 'TypeError: slice indices must be integers or None or have an __index__ method' saat menggunakan slicing dengan tuple dan float?",
+                "question_code": "values = (10, 20, 30)\nprint(values[1.5:2.5])",
+                "answer": "Error ini muncul karena slicing hanya mendukung integer atau None sebagai indeks. Pastikan untuk menggunakan integer untuk menghindari error.",
+                "answer_code": "values = (10, 20, 30)\nprint(values[1:3])"
+            },
+            {
+                "question": "Bagaimana cara menangani slicing pada list yang berisi sub-list dengan elemen yang berbeda?",
+                "question_code": "matrix = [[1, 2], [3, 4], [5, 6]]\nprint(matrix[0:2][1])",
+                "answer": "Slicing pada list yang berisi sub-list dapat dilakukan dengan memilih sub-list terlebih dahulu. Misalnya, `matrix[0:2]` menghasilkan `[[1, 2], [3, 4]]`, dan menambahkan `[1]` memilih elemen kedua dari sub-list pertama hasil slicing.",
+                "answer_code": "matrix = [[1, 2], [3, 4], [5, 6]]\nprint(matrix[1:2])"
+            },
+            {
+                "question": "Kenapa error 'IndexError: list index out of range' muncul saat melakukan slicing dengan batas akhir yang sangat besar?",
+                "question_code": "data = [100, 200, 300]\nprint(data[0:100])",
+                "answer": "Batas akhir yang sangat besar dalam slicing tidak menyebabkan error tetapi hanya mengambil elemen yang ada dalam list. Misalnya, `data[0:100]` menghasilkan `[100, 200, 300]` karena 100 melebihi panjang list.",
+                "answer_code": "data = [100, 200, 300]\nprint(data[0:2])"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'NoneType' object is not subscriptable' saat slicing dengan None sebagai indeks?",
+                "question_code": "data = [1, 2, 3]\nprint(data[None:2])",
+                "answer": "Error ini terjadi karena None tidak dapat digunakan sebagai indeks dalam slicing. Pastikan untuk menggunakan integer sebagai indeks.",
+                "answer_code": "data = [1, 2, 3]\nprint(data[0:2])"
+            },
+            {
+                "question": "Bagaimana cara menangani slicing pada list yang berisi objek non-iterable, seperti integer?",
+                "question_code": "items = [1, 2, 3]\nprint(items[1:2][1])",
+                "answer": "Slicing pada list yang berisi integer atau objek non-iterable dapat dilakukan dengan memilih bagian yang tepat dari list terlebih dahulu. Misalnya, `items[1:2]` menghasilkan `[2]`, dan menambahkan `[1]` menghasilkan error karena `[2]` tidak memiliki indeks 1.",
+                "answer_code": "items = [1, 2, 3]\nprint(items[1:2])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Oliver King",
+        "tanggal": "2024-10-05",
+        "judul": "Advanced Techniques in Python List and String Slicing",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Slicing"],
+        "konten": "Artikel ini memberikan wawasan mendalam tentang teknik-teknik lanjutan dalam slicing list dan string di Python. Pelajari berbagai cara untuk memanipulasi data dengan efisien menggunakan slicing.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara melakukan slicing pada string untuk mengambil setiap elemen kedua mulai dari indeks ke-1 hingga akhir?",
+                "answer": "Gunakan notasi slicing `string[1::2]` untuk mengambil setiap elemen kedua dari indeks ke-1 hingga akhir string."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda memberikan langkah negatif yang lebih kecil dari panjang string?",
+                "answer": "Jika langkah negatif lebih kecil dari panjang string, hasilnya akan membalik string dan memberikan potongan sesuai dengan langkah negatif yang ditentukan. Misalnya, `string[::-3]` membalikkan string dan mengambil setiap elemen ketiga dari akhir."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggunakan slicing untuk menghapus bagian tertentu dari list?",
+                "answer": "Untuk menghapus bagian tertentu dari list, gunakan slicing dengan menetapkan potongan yang ingin dihapus ke list kosong. Misalnya, `list[2:4] = []` akan menghapus elemen pada indeks ke-2 dan ke-3 dari list."
+            },
+            {
+                "question": "Kenapa Anda mendapatkan error 'TypeError: 'str' object cannot be interpreted as an integer' saat menggunakan string sebagai indeks dalam slicing?",
+                "question_code": "text = 'example'\nprint(text['1':'4'])",
+                "answer": "Error ini muncul karena slicing memerlukan integer sebagai indeks. Pastikan indeks Anda adalah integer untuk menghindari error.",
+                "answer_code": "text = 'example'\nprint(text[1:4])"
+            },
+            {
+                "question": "Mengapa error 'IndexError: tuple index out of range' terjadi saat melakukan slicing dengan batas akhir yang lebih besar dari panjang tuple?",
+                "question_code": "t = (1, 2, 3)\nprint(t[0:5])",
+                "answer": "Slicing dengan batas akhir yang lebih besar dari panjang tuple tidak menyebabkan error tetapi hanya memberikan hasil yang lebih pendek dari tuple. Misalnya, `t[0:5]` menghasilkan `(1, 2, 3)`.",
+                "answer_code": "t = (1, 2, 3)\nprint(t[0:2])"
+            },
+            {
+                "question": "Apa penyebab error 'TypeError: 'float' object is not subscriptable' saat melakukan slicing dengan float?",
+                "question_code": "number = 3.14\nprint(number[1:3])",
+                "answer": "Error ini terjadi karena slicing hanya dapat dilakukan pada tipe data yang mendukungnya, seperti list atau string. Float tidak dapat di-slice.",
+                "answer_code": "number_list = [3.14]\nprint(number_list[0:1])"
+            },
+            {
+                "question": "Bagaimana cara menangani slicing pada list yang berisi objek dengan panjang tidak tetap?",
+                "question_code": "data = [{'a': 1}, {'b': 2}, {'c': 3}]\nprint(data[0:2][1])",
+                "answer": "Slicing pada list yang berisi objek dengan panjang tidak tetap dapat dilakukan dengan memilih sub-list terlebih dahulu. Misalnya, `data[0:2]` menghasilkan `[{ 'a': 1 }, { 'b': 2 }]`, dan menambahkan `[1]` memilih elemen kedua dari sub-list hasil slicing.",
+                "answer_code": "data = [{'a': 1}, {'b': 2}, {'c': 3}]\nprint(data[1:2])"
+            }
+        ]
+    }
+]

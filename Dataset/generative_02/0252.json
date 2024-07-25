@@ -1,0 +1,128 @@
+[
+    {
+        "sumber": "belajarpythonadvanced.com",
+        "penulis": "Hadi Suprapto",
+        "tanggal": "2024-08-01",
+        "judul": "Penggunaan Fungsi Anonim (Lambda) di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "lambda", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi anonim atau lambda di Python untuk menulis fungsi kecil dan sederhana secara lebih singkat.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi lambda di Python?",
+                "answer": "Fungsi lambda adalah fungsi anonim yang didefinisikan dengan kata kunci `lambda` dan dapat memiliki banyak argumen tetapi hanya satu ekspresi."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi lambda di Python?",
+                "question_code": "lambda x: x * 10",
+                "answer": "Anda bisa mendefinisikan fungsi lambda dengan menggunakan kata kunci `lambda` diikuti oleh argumen dan ekspresi. Contohnya: `lambda x: x * 10`.",
+                "answer_code": "lambda x: x * 10"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi map di Python?",
+                "question_code": "numbers = [2, 4, 6, 8]\ndoubled = list(map(lambda x: x * 2, numbers))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi map untuk menggandakan setiap elemen dalam daftar. Contohnya: `map(lambda x: x * 2, numbers)`.",
+                "answer_code": "numbers = [2, 4, 6, 8]\ndoubled = list(map(lambda x: x * 2, numbers))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi filter di Python?",
+                "question_code": "numbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi filter untuk menyaring angka genap dalam daftar. Contohnya: `filter(lambda x: x % 2 == 0, numbers)`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda dengan fungsi reduce di Python?",
+                "question_code": "from functools import reduce\nnumbers = [1, 2, 3, 4, 5]\nsum_of_numbers = reduce(lambda x, y: x + y, numbers)",
+                "answer": "Anda bisa menggunakan fungsi lambda dengan fungsi reduce untuk menjumlahkan semua elemen dalam daftar. Contohnya: `reduce(lambda x, y: x + y, numbers)`.",
+                "answer_code": "from functools import reduce\nnumbers = [1, 2, 3, 4, 5]\nsum_of_numbers = reduce(lambda x, y: x + y, numbers)"
+            },
+            {
+                "question": "Bagaimana cara menulis fungsi lambda untuk memeriksa apakah sebuah angka adalah genap atau ganjil?",
+                "question_code": "is_even = lambda x: x % 2 == 0\nresult = is_even(4)",
+                "answer": "Anda bisa menulis fungsi lambda untuk memeriksa apakah sebuah angka adalah genap atau ganjil. Contohnya: `lambda x: x % 2 == 0`.",
+                "answer_code": "is_even = lambda x: x % 2 == 0\nresult = is_even(4)"
+            },
+            {
+                "question": "Bagaimana cara menulis fungsi lambda untuk menghitung panjang string?",
+                "question_code": "length_of_string = lambda s: len(s)\nresult = length_of_string('Python')",
+                "answer": "Anda bisa menulis fungsi lambda untuk menghitung panjang sebuah string. Contohnya: `lambda s: len(s)`.",
+                "answer_code": "length_of_string = lambda s: len(s)\nresult = length_of_string('Python')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda sebagai argumen dalam fungsi pengurutan di Python?",
+                "question_code": "students = [{'name': 'Andi', 'score': 80}, {'name': 'Budi', 'score': 90}]\nsorted_students = sorted(students, key=lambda x: x['score'])",
+                "answer": "Anda bisa menggunakan fungsi lambda sebagai argumen dalam fungsi pengurutan untuk mengurutkan berdasarkan nilai. Contohnya: `sorted(students, key=lambda x: x['score'])`.",
+                "answer_code": "students = [{'name': 'Andi', 'score': 80}, {'name': 'Budi', 'score': 90}]\nsorted_students = sorted(students, key=lambda x: x['score'])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda untuk memeriksa apakah sebuah kata adalah palindrom?",
+                "question_code": "is_palindrome = lambda s: s == s[::-1]\nresult = is_palindrome('katak')",
+                "answer": "Anda bisa menggunakan fungsi lambda untuk memeriksa apakah sebuah kata adalah palindrom dengan membandingkan kata tersebut dengan kebalikannya. Contohnya: `lambda s: s == s[::-1]`.",
+                "answer_code": "is_palindrome = lambda s: s == s[::-1]\nresult = is_palindrome('katak')"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpythonlanjut.com",
+        "penulis": "Dian Kurniawan",
+        "tanggal": "2024-09-01",
+        "judul": "Penggunaan Fungsi Partial di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "partial", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi partial di Python untuk membuat versi baru dari fungsi yang ada dengan beberapa argumen tetap.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi partial di Python?",
+                "answer": "Fungsi partial adalah fungsi yang dibuat dari fungsi lain dengan satu atau lebih argumen tetap menggunakan modul `functools`."
+            },
+            {
+                "question": "Bagaimana cara membuat fungsi partial di Python?",
+                "question_code": "from functools import partial\ndef multiply(x, y):\n    return x * y\ndouble = partial(multiply, 2)",
+                "answer": "Anda bisa membuat fungsi partial dengan menggunakan `partial` dari modul `functools` dan menetapkan nilai argumen tetap. Contohnya: `partial(multiply, 2)`.",
+                "answer_code": "from functools import partial\ndef multiply(x, y):\n    return x * y\ndouble = partial(multiply, 2)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk mengonversi suhu dari Celsius ke Fahrenheit?",
+                "question_code": "from functools import partial\ndef convert_temp(temp, multiplier, addition):\n    return temp * multiplier + addition\nc_to_f = partial(convert_temp, 9/5, 32)\nresult = c_to_f(30)",
+                "answer": "Anda bisa menggunakan fungsi partial untuk mengonversi suhu dengan menetapkan nilai argumen tetap untuk rumus konversi. Contohnya: `partial(convert_temp, 9/5, 32)`.",
+                "answer_code": "from functools import partial\ndef convert_temp(temp, multiplier, addition):\n    return temp * multiplier + addition\nc_to_f = partial(convert_temp, 9/5, 32)\nresult = c_to_f(30)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit bilangan kelipatan tetap?",
+                "question_code": "from functools import partial\ndef create_multiples(base, multiplier):\n    return base * multiplier\ntripler = partial(create_multiples, 3)\nresult = tripler(4)",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit bilangan kelipatan tetap dengan menetapkan nilai argumen tetap untuk kelipatan. Contohnya: `partial(create_multiples, 3)`.",
+                "answer_code": "from functools import partial\ndef create_multiples(base, multiplier):\n    return base * multiplier\ntripler = partial(create_multiples, 3)\nresult = tripler(4)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan terima kasih?",
+                "question_code": "from functools import partial\ndef thank_you_message(message, name):\n    return f'{message}, {name}!'\nthank_you = partial(thank_you_message, 'Terima kasih')\nresult = thank_you('Dian')",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan terima kasih dengan menetapkan nilai argumen tetap untuk pesan. Contohnya: `partial(thank_you_message, 'Terima kasih')`.",
+                "answer_code": "from functools import partial\ndef thank_you_message(message, name):\n    return f'{message}, {name}!'\nthank_you = partial(thank_you_message, 'Terima kasih')\nresult = thank_you('Dian')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit pangkat dua?",
+                "question_code": "from functools import partial\ndef power(base, exponent):\n    return base ** exponent\nsquare = partial(power, exponent=2)\nresult = square(5)",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit pangkat dua dengan menetapkan nilai argumen tetap untuk eksponen. Contohnya: `partial(power, exponent=2)`.",
+                "answer_code": "from functools import partial\ndef power(base, exponent):\n    return base ** exponent\nsquare = partial(power, exponent=2)\nresult = square(5)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit pangkat empat?",
+                "question_code": "from functools import partial\ndef power(base, exponent):\n    return base ** exponent\nquadruple = partial(power, exponent=4)\nresult = quadruple(2)",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit pangkat empat dengan menetapkan nilai argumen tetap untuk eksponen. Contohnya: `partial(power, exponent=4)`.",
+                "answer_code": "from functools import partial\ndef power(base, exponent):\n    return base ** exponent\nquadruple = partial(power, exponent=4)\nresult = quadruple(2)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan selamat sore?",
+                "question_code": "from functools import partial\ndef greet(time_of_day, name):\n    return f'Selamat {time_of_day}, {name}!'\ngoodafternoon_greet = partial(greet, 'Sore')\nresult = goodafternoon_greet('Rudi')",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan selamat sore dengan menetapkan nilai argumen tetap untuk waktu. Contohnya: `partial(greet, 'Sore')`.",
+                "answer_code": "from functools import partial\ndef greet(time_of_day, name):\n    return f'Selamat {time_of_day}, {name}!'\ngoodafternoon_greet = partial(greet, 'Sore')\nresult = goodafternoon_greet('Rudi')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan selamat malam?",
+                "question_code": "from functools import partial\ndef greet(time_of_day, name):\n    return f'Selamat {time_of_day}, {name}!'\ngoodnight_greet = partial(greet, 'Malam')\nresult = goodnight_greet('Siti')",
+                "answer": "Anda bisa menggunakan fungsi partial untuk membuat fungsi pembangkit teks ucapan selamat malam dengan menetapkan nilai argumen tetap untuk waktu. Contohnya: `partial(greet, 'Malam')`.",
+                "answer_code": "from functools import partial\ndef greet(time_of_day, name):\n    return f'Selamat {time_of_day}, {name}!'\ngoodnight_greet = partial(greet, 'Malam')\nresult = goodnight_greet('Siti')"
+            }
+        ]
+    }
+]

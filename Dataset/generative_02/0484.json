@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Python Basics Unleashed",
+        "penulis": "Emma Davis",
+        "tanggal": "2024-12-12",
+        "judul": "Menguasai Iterasi dengan `for` Loop di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Artikel ini menjelaskan dasar-dasar menggunakan `for` loop dalam Python untuk iterasi. Anda akan belajar bagaimana mengakses setiap elemen dari list, string, dan range menggunakan `for` loop dengan contoh praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mencetak angka dari 1 hingga 5 menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for num in range(1, 6): print(num)` untuk mencetak angka dari 1 hingga 5."
+            },
+            {
+                "question": "Apa hasil dari kode berikut: `for char in 'python': print(char.upper())`?",
+                "answer": "Hasil dari kode tersebut adalah huruf besar dari setiap karakter dalam string 'python', yaitu `P`, `Y`, `T`, `H`, `O`, `N`."
+            },
+            {
+                "question": "Dapatkah Anda menggunakan `for` loop untuk mencetak elemen dari dictionary `{1: 'a', 2: 'b'}`? Berikan contoh.",
+                "answer": "Ya, Anda bisa menggunakan kode berikut: `for key in {1: 'a', 2: 'b'}: print(key, {1: 'a', 2: 'b'}[key])`. Ini akan mencetak kunci dan nilai dari dictionary."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not iterable', saya tidak paham?",
+                "question_code": "for item in 12345:\n    print(item)",
+                "answer": "Error ini terjadi karena Anda mencoba mengiterasi angka, yang bukan objek iterable. Pastikan Anda menggunakan iterable seperti list atau string.",
+                "answer_code": "for item in '12345':\n    print(item)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'float' object is not iterable', saya tidak paham?",
+                "question_code": "for item in 3.14:\n    print(item)",
+                "answer": "Error ini terjadi karena Anda mencoba mengiterasi tipe data float, yang bukan objek iterable. Pastikan Anda menggunakan iterable seperti list atau string.",
+                "answer_code": "for item in ['3.14']:\n    print(item)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan `for` loop untuk mencetak kuadrat dari angka 1 hingga 4?",
+                "answer": "Gunakan kode berikut: `for num in range(1, 5): print(num ** 2)` untuk mencetak kuadrat dari angka 1 hingga 4, yaitu `1`, `4`, `9`, `16`."
+            },
+            {
+                "question": "Apa keuntungan menggunakan `for` loop untuk iterasi dibandingkan dengan `while` loop?",
+                "answer": "Keuntungan utama menggunakan `for` loop adalah sintaksisnya yang lebih sederhana dan kemudahan dalam iterasi langsung melalui elemen tanpa harus mengelola variabel kontrol seperti pada `while` loop. Ini membuat kode lebih ringkas dan mudah dibaca."
+            }
+        ]
+    },
+    {
+        "sumber": "Getting Started with Python",
+        "penulis": "Oliver Thompson",
+        "tanggal": "2024-12-13",
+        "judul": "Pendahuluan untuk `for` Loop dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Artikel ini memberikan panduan tentang penggunaan `for` loop dalam Python. Fokus utamanya adalah bagaimana loop ini dapat digunakan untuk iterasi pada berbagai struktur data seperti list, string, dan range.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mencetak setiap elemen dari list `[10, 20, 30, 40]` menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for num in [10, 20, 30, 40]: print(num)` untuk mencetak setiap elemen dalam list."
+            },
+            {
+                "question": "Apa hasil dari kode ini: `for num in range(2, 6, 2): print(num)`?",
+                "answer": "Hasil dari kode ini adalah `2`, `4`. Fungsi `range(2, 6, 2)` menghasilkan angka mulai dari 2 hingga kurang dari 6 dengan langkah 2."
+            },
+            {
+                "question": "Bagaimana Anda dapat menggunakan `for` loop untuk mencetak elemen dari tuple `(100, 200, 300)`?",
+                "answer": "Gunakan kode berikut: `for num in (100, 200, 300): print(num)` untuk mencetak setiap elemen dalam tuple."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object is not callable', saya tidak paham?",
+                "question_code": "for item in [1, 2, 3]():\n    print(item)",
+                "answer": "Error ini terjadi karena Anda mencoba memanggil list sebagai fungsi. Pastikan untuk tidak menggunakan tanda kurung setelah list.",
+                "answer_code": "for item in [1, 2, 3]:\n    print(item)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'dict' object is not callable', saya tidak paham?",
+                "question_code": "for key in {'a': 1, 'b': 2}():\n    print(key)",
+                "answer": "Error ini terjadi karena Anda mencoba memanggil dictionary seperti fungsi. Pastikan untuk tidak menggunakan tanda kurung setelah dictionary.",
+                "answer_code": "for key in {'a': 1, 'b': 2}:\n    print(key)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan `for` loop untuk mencetak setiap elemen dalam set `{5, 10, 15}`?",
+                "answer": "Gunakan kode berikut: `for num in {5, 10, 15}: print(num)` untuk mencetak setiap elemen dalam set."
+            },
+            {
+                "question": "Apa keuntungan dari menggunakan `for` loop dibandingkan dengan pendekatan lain dalam Python?",
+                "answer": "Keuntungan dari `for` loop adalah kemudahan dalam iterasi langsung melalui elemen tanpa perlu mengelola variabel iterasi secara manual. Ini membuat kode lebih bersih dan lebih mudah dibaca, serta mengurangi kemungkinan kesalahan dalam pengelolaan indeks atau kondisi loop."
+            }
+        ]
+    }
+]

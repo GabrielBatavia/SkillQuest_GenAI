@@ -1,0 +1,93 @@
+[
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Sophie Williams",
+        "tanggal": "2024-12-01",
+        "judul": "Memahami Penggunaan Statement `del` untuk Menghapus Elemen dari List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "del", "Pemula"],
+        "konten": "Panduan ini menjelaskan berbagai cara untuk menggunakan statement `del` dalam Python untuk menghapus elemen dari list dan objek lainnya. Disertai dengan contoh yang jelas dan kesalahan umum yang harus dihindari.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda menghapus elemen pada indeks 2 dari list `['cat', 'dog', 'rabbit', 'hamster']` menggunakan `del`?",
+                "answer": "Untuk menghapus elemen pada indeks 2 dari list `['cat', 'dog', 'rabbit', 'hamster']`, gunakan kode berikut: `del animals[2]`. Ini akan menghapus 'rabbit' dari list, sehingga list menjadi `['cat', 'dog', 'hamster']`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan `del` pada list kosong?",
+                "answer": "Menggunakan `del` pada list kosong akan menghasilkan `IndexError` jika Anda mencoba menghapus elemen berdasarkan indeks. Pastikan list tidak kosong atau gunakan `del list` untuk menghapus list itu sendiri."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen terakhir dari list `['one', 'two', 'three']` dengan `del`?",
+                "answer": "Untuk menghapus elemen terakhir dari list `['one', 'two', 'three']`, gunakan kode berikut: `del items[-1]`. Ini akan menghapus 'three' dan list akan menjadi `['one', 'two']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "list1 = ['a', 'b', 'c']\ndel list1[10]",
+                "answer": "Error ini terjadi karena Anda mencoba menghapus elemen pada indeks yang lebih besar daripada ukuran list. Pastikan indeks berada dalam rentang yang valid.",
+                "answer_code": "list1 = ['a', 'b', 'c']\nif 10 < len(list1):\n    del list1[10]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not float', saya tidak paham?",
+                "question_code": "list1 = ['a', 'b', 'c']\ndel list1[2.5]",
+                "answer": "Error ini terjadi karena indeks harus berupa bilangan bulat, bukan float. Pastikan indeks yang digunakan adalah integer.",
+                "answer_code": "list1 = ['a', 'b', 'c']\ndel list1[2]"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'remove'', saya tidak paham?",
+                "question_code": "list1 = ['a', 'b', 'c']\nlist1.remove(1)",
+                "answer": "Error ini terjadi karena metode `remove` tidak ada untuk list. Gunakan `del` untuk menghapus elemen dari list.",
+                "answer_code": "list1 = ['a', 'b', 'c']\ndel list1[1]"
+            },
+            {
+                "question": "Bagaimana cara menghapus seluruh isi list dengan menggunakan `del`?",
+                "answer": "Untuk menghapus seluruh isi list, gunakan kode berikut: `del list1[:]`. Ini akan menghapus semua elemen dari list namun tetap mempertahankan variabel list.",
+                "answer_code": "list1 = ['x', 'y', 'z']\ndel list1[:]"
+            }
+        ]
+    },
+    {
+        "sumber": "Introduction to Python",
+        "penulis": "David Green",
+        "tanggal": "2024-12-02",
+        "judul": "Penggunaan Statement `del` untuk Manipulasi List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "del", "Pemula"],
+        "konten": "Artikel ini memperkenalkan penggunaan statement `del` untuk menghapus elemen dari list dan menjelaskan beberapa kasus umum dan kesalahan saat menggunakan `del`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda menghapus elemen pada indeks 1 dari list `['a', 'b', 'c', 'd']` dengan `del`?",
+                "answer": "Untuk menghapus elemen pada indeks 1 dari list `['a', 'b', 'c', 'd']`, gunakan kode berikut: `del letters[1]`. Ini akan menghapus 'b' dan list akan menjadi `['a', 'c', 'd']`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan `del` pada variabel yang tidak ada?",
+                "answer": "Jika `del` digunakan pada variabel yang tidak ada, Python akan menghasilkan `NameError`. Pastikan variabel sudah didefinisikan sebelum menggunakan `del`."
+            },
+            {
+                "question": "Bagaimana Anda dapat menghapus elemen dengan indeks 0 dari list `['first', 'second', 'third']`?",
+                "answer": "Untuk menghapus elemen dengan indeks 0 dari list `['first', 'second', 'third']`, gunakan kode berikut: `del items[0]`. Ini akan menghapus 'first' dan list akan menjadi `['second', 'third']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "list1 = ['1', '2']\ndel list1[3]",
+                "answer": "Error ini terjadi karena indeks yang digunakan melebihi rentang indeks yang ada dalam list. Pastikan indeks yang diberikan ada dalam rentang list.",
+                "answer_code": "list1 = ['1', '2']\nif 3 < len(list1):\n    del list1[3]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unhashable type: 'list'', saya tidak paham?",
+                "question_code": "list1 = ['a', 'b', 'c']\ndel list1[['a']]",
+                "answer": "Error ini terjadi karena `del` tidak bisa digunakan dengan tipe data non-integer untuk indeks. Gunakan indeks numerik yang valid.",
+                "answer_code": "list1 = ['a', 'b', 'c']\ndel list1[1]"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'discard'', saya tidak paham?",
+                "question_code": "list1 = ['a', 'b', 'c']\nlist1.discard(1)",
+                "answer": "Error ini terjadi karena metode `discard` tidak tersedia untuk list. Gunakan `del` untuk menghapus elemen dari list.",
+                "answer_code": "list1 = ['a', 'b', 'c']\ndel list1[1]"
+            },
+            {
+                "question": "Bagaimana cara menghapus seluruh list dengan menggunakan `del`?",
+                "answer": "Untuk menghapus seluruh list, gunakan kode berikut: `del list1`. Ini akan menghapus list `list1` dari memori dan menghilangkan semua elemennya."
+            }
+        ]
+    }
+]

@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "BelajarPythonMudah.com",
+        "penulis": "Rina Kurnia",
+        "tanggal": "2024-07-15",
+        "judul": "Langkah Pertama Belajar Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["pemula", "python", "dasar"],
+        "konten": "Artikel ini memberikan langkah-langkah awal untuk memulai belajar Python, termasuk instalasi dan menulis skrip sederhana.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menampilkan tulisan di layar menggunakan Python?",
+                "answer": "Anda bisa menggunakan fungsi print() untuk menampilkan teks ke layar. Misalnya: print('Halo, Dunia!')."
+            },
+            {
+                "question": "Bagaimana saya bisa menginstal Python di komputer saya?",
+                "answer": "Anda bisa mengunduh Python dari situs resmi python.org dan mengikuti petunjuk instalasi yang sesuai dengan sistem operasi Anda."
+            },
+            {
+                "question": "Kenapa saya mendapatkan SyntaxError saat menulis kode?",
+                "answer": "SyntaxError terjadi ketika ada kesalahan dalam penulisan kode. Pastikan semua tanda kutip dan tanda kurung Anda benar."
+            },
+            {
+                "question": "Bagaimana cara membuat program sederhana di Python?",
+                "question_code": "prnt('Halo, Dunia!')",
+                "answer": "Untuk menulis program sederhana, gunakan fungsi print() dengan benar. Misalnya: print('Halo, Dunia!').",
+                "answer_code": "print('Halo, Dunia!')"
+            },
+            {
+                "question": "Kode saya tidak jalan, kenapa?",
+                "question_code": "print('Selamat datang di Python!)",
+                "answer": "Pastikan semua tanda kutip dan kurung ditutup dengan benar. Misalnya: print('Selamat datang di Python!').",
+                "answer_code": "print('Selamat datang di Python!')"
+            },
+            {
+                "question": "Apa itu komentar dalam kode Python?",
+                "question_code": "# Ini komentar",
+                "answer": "Komentar digunakan untuk memberikan penjelasan dalam kode. Ditulis dengan tanda pagar (#) di awal.",
+                "answer_code": "# Ini adalah komentar"
+            },
+            {
+                "question": "Bagaimana cara menulis komentar dalam kode Python?",
+                "question_code": "# ini adalah komentar\nprint('Halo, Dunia!')",
+                "answer": "Gunakan tanda pagar (#) di awal baris untuk menulis komentar. Misalnya: # ini adalah komentar.",
+                "answer_code": "# ini adalah komentar\nprint('Halo, Dunia!')"
+            },
+            {
+                "question": "Bagaimana cara membuat variabel di Python?",
+                "question_code": "x = 10\ny = 5\nprint(x y)",
+                "answer": "Anda bisa membuat variabel dengan memberi nilai padanya dan menggunakan tanda plus (+) untuk menjumlahkan. Misalnya: x = 10 dan y = 5 lalu print(x + y).",
+                "answer_code": "x = 10\ny = 5\nprint(x + y)"
+            },
+            {
+                "question": "Bagaimana cara mengubah angka menjadi teks di Python?",
+                "question_code": "angka = 10\nteks = str(angka)\nprint(teks)",
+                "answer": "Gunakan fungsi str() untuk mengubah angka menjadi teks. Misalnya: teks = str(angka).",
+                "answer_code": "angka = 10\nteks = str(angka)\nprint(teks)"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonExpert.net",
+        "penulis": "Dian Prasetyo",
+        "tanggal": "2024-08-10",
+        "judul": "Dasar Pemrograman Berorientasi Objek dengan Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["OOP", "kelas", "python"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pemrograman berorientasi objek (OOP) dan cara mengimplementasikannya di Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu kelas dalam pemrograman Python?",
+                "answer": "Kelas adalah blueprint atau template untuk membuat objek. Kelas mendefinisikan atribut dan metode untuk objek."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan sebuah kelas di Python?",
+                "answer": "Gunakan kata kunci class untuk mendefinisikan kelas. Misalnya: class Hewan:."
+            },
+            {
+                "question": "Apa yang dimaksud dengan objek dalam Python?",
+                "answer": "Objek adalah instance dari kelas. Contohnya: kucing = Hewan()."
+            },
+            {
+                "question": "Saya ingin membuat objek dari sebuah kelas, bagaimana caranya?",
+                "question_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\nkucing = Hewan('Kucing')\nprint(kucing.nama)",
+                "answer": "Anda bisa membuat objek dengan memanggil kelas seperti memanggil fungsi. Misalnya: kucing = Hewan('Kucing').",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\nkucing = Hewan('Kucing')\nprint(kucing.nama)"
+            },
+            {
+                "question": "Kenapa saya mendapatkan AttributeError saat mengakses atribut?",
+                "question_code": "print(kucing.umur)",
+                "answer": "AttributeError terjadi karena atribut yang Anda coba akses tidak ada dalam kelas. Pastikan atribut tersebut sudah didefinisikan.",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\nkucing = Hewan('Kucing')\nprint(kucing.nama)"
+            },
+            {
+                "question": "Bagaimana cara membuat metode dalam kelas Python?",
+                "question_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\n    def suara(self):\n        return 'Suara hewan'",
+                "answer": "Metode didefinisikan dalam kelas menggunakan kata kunci def. Misalnya: def suara(self):.",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\n    def suara(self):\n        return 'Suara hewan'"
+            },
+            {
+                "question": "Bagaimana cara memanggil metode dari sebuah objek?",
+                "question_code": "kucing.suara()",
+                "answer": "Gunakan notasi titik untuk memanggil metode dari objek. Misalnya: kucing.suara().",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\n    def suara(self):\n        return 'Suara hewan'\n\nkucing = Hewan('Kucing')\nprint(kucing.suara())"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pewarisan di Python?",
+                "question_code": "class Kucing(Hewan):\n    def __init__(self, nama, warna):\n        super().__init__(nama)\n        self.warna = warna",
+                "answer": "Gunakan pewarisan untuk membuat kelas baru yang mewarisi atribut dan metode dari kelas induk. Misalnya: class Kucing(Hewan):.",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\nclass Kucing(Hewan):\n    def __init__(self, nama, warna):\n        super().__init__(nama)\n        self.warna = warna\n\nkucing = Kucing('Kitty', 'Putih')\nprint(kucing.nama, kucing.warna)"
+            },
+            {
+                "question": "Bagaimana cara mengakses atribut dari kelas induk?",
+                "question_code": "class Kucing(Hewan):\n    def __init__(self, nama, warna):\n        super().__init__(nama)\n        self.warna = warna",
+                "answer": "Gunakan super() untuk mengakses atribut dan metode dari kelas induk. Misalnya: super().__init__(nama).",
+                "answer_code": "class Hewan:\n    def __init__(self, nama):\n        self.nama = nama\n\nclass Kucing(Hewan):\n    def __init__(self, nama, warna):\n        super().__init__(nama)\n        self.warna = warna\n\nkucing = Kucing('Kitty', 'Putih')\nprint(kucing.nama, kucing.warna)"
+            }
+        ]
+    }
+]

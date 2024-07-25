@@ -1,0 +1,102 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Alex Johnson",
+        "tanggal": "2024-12-20",
+        "judul": "Memahami Iterasi dengan for Loop",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Panduan ini memberikan pemahaman mendalam tentang penggunaan for loop dalam Python, termasuk iterasi melalui list, string, dan dictionary. Didesain untuk pemula yang ingin menguasai dasar-dasar iterasi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa mencetak setiap elemen dari tuple `(1, 3, 5, 7)` menggunakan for loop?",
+                "answer": "Gunakan kode berikut untuk mencetak setiap elemen dari tuple: `for number in (1, 3, 5, 7): print(number)`."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda mencoba mengiterasi integer menggunakan for loop?",
+                "answer": "Anda akan mendapatkan error `TypeError` karena integer bukan tipe data yang bisa diiterasi. Pastikan untuk mengiterasi tipe data yang mendukung iterasi seperti list atau string."
+            },
+            {
+                "question": "Bagaimana Anda bisa mencetak hasil dari `len()` untuk setiap elemen dalam list `['cat', 'dog', 'elephant']`?",
+                "answer": "Gunakan kode berikut: `for animal in ['cat', 'dog', 'elephant']: print(len(animal))`."
+            },
+            {
+                "question": "Bagaimana cara mencetak indeks dari setiap elemen dalam list `[10, 20, 30]`?",
+                "question_code": "numbers = [10, 20, 30]\nfor index in range(len(numbers)):\n    print(index)",
+                "answer": "Gunakan kode ini untuk mencetak indeks: `numbers = [10, 20, 30]\nfor index in range(len(numbers)):\n    print(index)`."
+            },
+            {
+                "question": "Bagaimana Anda bisa mencetak setiap elemen dari string 'Hello' dalam urutan terbalik menggunakan for loop?",
+                "answer": "Gunakan kode berikut: `for char in 'Hello'[::-1]: print(char)`."
+            },
+            {
+                "question": "Bagaimana Anda dapat menghitung jumlah total dari elemen dalam list `[5, 10, 15, 20]` menggunakan for loop?",
+                "answer": "Gunakan kode ini untuk menghitung jumlah total: `total = 0\nfor number in [5, 10, 15, 20]: total += number\nprint(total)`."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Anda mendapatkan error 'TypeError: 'dict_keys' object is not subscriptable' saat menggunakan for loop?",
+                "question_code": "my_dict = {'a': 1, 'b': 2}\nfor key in my_dict.keys()[0]:\n    print(key)",
+                "answer": "Error ini muncul karena `dict_keys` tidak bisa diakses dengan indeks. Gunakan list untuk mengakses elemen tertentu, misalnya: `list(my_dict.keys())[0]`.",
+                "answer_code": "my_dict = {'a': 1, 'b': 2}\nfor key in list(my_dict.keys())[0]:\n    print(key)"
+            },
+            {
+                "question": "Bagaimana Anda dapat mencetak kuadrat dari angka genap dalam rentang 0 hingga 10 menggunakan for loop?",
+                "answer": "Gunakan kode ini: `for num in range(0, 11): if num % 2 == 0: print(num ** 2)`."
+            },
+            {
+                "question": "Bagaimana cara mencetak setiap pasangan kunci dan nilai dari dictionary `{'red': 'apple', 'yellow': 'banana'}` menggunakan for loop?",
+                "answer": "Gunakan kode berikut: `for key, value in {'red': 'apple', 'yellow': 'banana'}.items(): print(f'Kunci: {key}, Nilai: {value}')`."
+            }
+        ]
+    },
+    {
+        "sumber": "Introduction to Python",
+        "penulis": "Jordan Lee",
+        "tanggal": "2024-12-21",
+        "judul": "Exploring For Loops in Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Artikel ini memperkenalkan konsep for loop dalam Python dan aplikasinya pada berbagai tipe data. Cocok untuk pemula yang ingin memahami penggunaan dasar for loop.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa mencetak setiap item dalam list `[3.5, 7.0, 10.5]` menggunakan for loop?",
+                "answer": "Gunakan kode berikut: `for item in [3.5, 7.0, 10.5]: print(item)`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba mengiterasi objek set yang kosong menggunakan for loop?",
+                "answer": "Jika objek set kosong, loop tidak akan menghasilkan output. Pastikan set memiliki elemen untuk diproses."
+            },
+            {
+                "question": "Bagaimana Anda bisa mencetak panjang dari setiap elemen dalam list `['hello', 'world']` menggunakan for loop?",
+                "answer": "Gunakan kode berikut: `for word in ['hello', 'world']: print(len(word))`."
+            },
+            {
+                "question": "Bagaimana cara mencetak hasil pangkat dua dari angka dalam list `[2, 4, 6]`?",
+                "question_code": "numbers = [2, 4, 6]\nfor number in numbers:\n    print(number ** 2)",
+                "answer": "Gunakan kode ini untuk mencetak pangkat dua: `numbers = [2, 4, 6]\nfor number in numbers:\n    print(number ** 2)`."
+            },
+            {
+                "question": "Bagaimana Anda bisa mencetak setiap elemen dalam string 'Python' dengan indeksnya menggunakan for loop?",
+                "answer": "Gunakan kode berikut: `for i in range(len('Python')): print(i, 'Python'[i])`."
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah semua elemen dalam list `[1, 3, 5]` menggunakan for loop?",
+                "answer": "Gunakan kode ini: `total_sum = 0\nfor num in [1, 3, 5]: total_sum += num\nprint(total_sum)`."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'IndexError: list index out of range' saat menggunakan for loop dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = [10, 20, 30]\nfor i in range(5):\n    print(my_list[i])",
+                "answer": "Error ini terjadi karena loop mencoba mengakses indeks yang tidak ada dalam list. Pastikan indeks berada dalam rentang yang valid.",
+                "answer_code": "my_list = [10, 20, 30]\nfor i in range(len(my_list)):\n    print(my_list[i])"
+            },
+            {
+                "question": "Bagaimana Anda dapat mencetak hasil dari `sum()` untuk setiap elemen dalam list `[[1, 2], [3, 4]]`?",
+                "answer": "Gunakan kode berikut: `for sublist in [[1, 2], [3, 4]]: print(sum(sublist))`."
+            },
+            {
+                "question": "Bagaimana cara mencetak setiap elemen dalam dictionary `{'name': 'John', 'age': 30}` menggunakan for loop?",
+                "answer": "Gunakan kode ini: `for key in {'name': 'John', 'age': 30}:\n    print(key, {'name': 'John', 'age': 30}[key])`."
+            }
+        ]
+    }
+]

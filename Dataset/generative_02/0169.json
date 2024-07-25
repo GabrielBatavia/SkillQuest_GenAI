@@ -1,0 +1,118 @@
+[
+    {
+        "sumber": "realpython.com",
+        "penulis": "Dan Bader",
+        "tanggal": "2024-07-24",
+        "judul": "Tutorial Python: Menguasai Dasar-Dasar Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "tutorial", "pemula", "belajar"],
+        "konten": "Tutorial ini membantu pemula untuk memahami dasar-dasar Python, termasuk cara menulis, menjalankan, dan mengatasi masalah dalam script Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara memulai dengan file Python?",
+                "answer": "Untuk memulai dengan file Python, buka editor teks, tulis kode Python, dan simpan file dengan ekstensi `.py`, seperti `program.py`."
+            },
+            {
+                "question": "Apa langkah-langkah untuk menjalankan file Python di terminal?",
+                "answer": "Di terminal, navigasikan ke folder tempat file Python berada dan jalankan perintah `python nama_file.py`, misalnya `python program.py`."
+            },
+            {
+                "question": "Bagaimana cara memperbaiki error 'ModuleNotFoundError' saat menjalankan script?",
+                "question_code": "Error ini terjadi jika modul tidak ditemukan. Periksa apakah modul sudah diinstal dengan benar menggunakan `pip install nama_modul`.",
+                "answer": "Jika Anda mendapatkan 'ModuleNotFoundError', pastikan modul sudah diinstal dengan benar. Instal modul yang hilang menggunakan `pip install nama_modul`.",
+                "answer_code": "Gunakan perintah `pip install nama_modul` untuk menginstal modul yang diperlukan."
+            },
+            {
+                "question": "Bagaimana menjalankan script Python di lingkungan virtual?",
+                "question_code": "Buat lingkungan virtual dengan `python -m venv myenv`. Aktifkan dengan `source myenv/bin/activate` di Unix atau `myenv\\Scripts\\activate` di Windows.",
+                "answer": "Untuk menjalankan script Python di lingkungan virtual, pertama buat lingkungan virtual dengan `python -m venv myenv`. Kemudian aktifkan lingkungan dengan `source myenv/bin/activate` (Unix) atau `myenv\\Scripts\\activate` (Windows).",
+                "answer_code": "Aktifkan lingkungan virtual menggunakan `source myenv/bin/activate` (Unix) atau `myenv\\Scripts\\activate` (Windows)."
+            },
+            {
+                "question": "Bagaimana cara mengatasi error 'SyntaxError' di Python?",
+                "question_code": "SyntaxError biasanya disebabkan oleh kesalahan penulisan kode. Periksa kode Anda untuk tanda kurung yang hilang, indentasi yang salah, atau kesalahan penulisan.",
+                "answer": "Jika Anda mengalami 'SyntaxError', periksa kode untuk kesalahan penulisan, seperti tanda kurung yang hilang atau indentasi yang salah. Perbaiki kesalahan tersebut sesuai dengan petunjuk error.",
+                "answer_code": "Periksa kode untuk kesalahan sintaks seperti tanda kurung yang hilang atau indentasi yang tidak sesuai."
+            },
+            {
+                "question": "Bagaimana cara memasang dan menggunakan modul di Python?",
+                "question_code": "Gunakan `pip install nama_modul` untuk memasang modul. Setelah itu, impor modul dengan `import nama_modul` dalam script.",
+                "answer": "Untuk memasang modul, gunakan `pip install nama_modul`. Kemudian, impor modul tersebut dalam script dengan perintah `import nama_modul`.",
+                "answer_code": "Gunakan `pip install nama_modul` untuk memasang modul dan `import nama_modul` untuk menggunakannya dalam kode."
+            },
+            {
+                "question": "Bagaimana memeriksa versi Python yang terinstal di sistem?",
+                "question_code": "Jalankan perintah `python --version` atau `python3 --version` di terminal untuk memeriksa versi Python.",
+                "answer": "Untuk memeriksa versi Python, gunakan perintah `python --version` atau `python3 --version` di terminal.",
+                "answer_code": "Gunakan `python --version` untuk memeriksa versi Python yang terinstal."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika script Python tidak memberikan output yang diharapkan?",
+                "question_code": "Periksa kode Anda untuk kesalahan logika atau kesalahan penulisan. Gunakan fungsi `print()` untuk debug dan memastikan nilai variabel.",
+                "answer": "Jika script tidak memberikan output yang diharapkan, periksa kode untuk kesalahan logika atau penulisan. Gunakan `print()` untuk men-debug dan memeriksa nilai variabel.",
+                "answer_code": "Gunakan fungsi `print()` untuk memeriksa nilai variabel dan debug kode."
+            },
+            {
+                "question": "Bagaimana menghapus folder virtual environment jika tidak lagi dibutuhkan?",
+                "question_code": "Hapus folder environment dengan `rm -rf venv` di Unix atau hapus folder `venv` secara manual di Windows.",
+                "answer": "Untuk menghapus virtual environment, gunakan perintah `rm -rf venv` di Unix atau hapus folder `venv` di Windows secara manual.",
+                "answer_code": "Hapus folder `venv` untuk menghapus virtual environment."
+            }
+        ]
+    },
+    {
+        "sumber": "python-course.eu",
+        "penulis": "Linda Brown",
+        "tanggal": "2024-07-24",
+        "judul": "Belajar Python: Panduan Lengkap untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "pemula", "belajar", "tutorial"],
+        "konten": "Panduan ini memberikan penjelasan mendalam tentang cara memulai dengan Python, termasuk langkah-langkah untuk menulis dan menjalankan kode Python serta menangani masalah umum.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat file Python dan menjalankannya?",
+                "answer": "Untuk membuat file Python, buka editor teks, tulis kode Python, dan simpan file dengan ekstensi `.py`. Untuk menjalankannya, gunakan perintah `python nama_file.py` di terminal."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Python tidak terdeteksi di terminal?",
+                "answer": "Jika Python tidak terdeteksi, pastikan Python telah diinstal dengan benar dan PATH sudah diatur. Instal ulang Python atau tambahkan ke PATH jika perlu."
+            },
+            {
+                "question": "Bagaimana cara mengatasi masalah jika script Python menampilkan error 'ImportError'?",
+                "question_code": "Error ini muncul jika modul tidak ditemukan. Periksa apakah modul sudah terinstal dengan benar menggunakan `pip install nama_modul`.",
+                "answer": "Jika Anda mendapatkan 'ImportError', pastikan modul yang diperlukan sudah diinstal dengan benar. Instal modul menggunakan `pip install nama_modul` jika diperlukan.",
+                "answer_code": "Instal modul dengan perintah `pip install nama_modul` untuk mengatasi 'ImportError'."
+            },
+            {
+                "question": "Bagaimana cara menjalankan kode Python di Jupyter Notebook?",
+                "question_code": "Di Jupyter Notebook, tulis kode di cell dan tekan `Shift+Enter` untuk menjalankan kode. Pastikan notebook sudah terkonfigurasi dengan benar.",
+                "answer": "Untuk menjalankan kode Python di Jupyter Notebook, ketikkan kode di dalam cell dan tekan `Shift+Enter` untuk eksekusi. Output akan ditampilkan di bawah cell tersebut.",
+                "answer_code": "Gunakan `Shift+Enter` untuk menjalankan kode di Jupyter Notebook."
+            },
+            {
+                "question": "Bagaimana cara memeriksa dan mengatasi error dalam script Python?",
+                "question_code": "Periksa pesan error di terminal atau IDE. Debug dengan menambahkan `print()` untuk melacak nilai variabel dan alur eksekusi.",
+                "answer": "Periksa pesan error yang ditampilkan di terminal atau IDE untuk mengetahui penyebab masalah. Gunakan `print()` untuk memeriksa nilai variabel dan men-debug kode.",
+                "answer_code": "Gunakan fitur debugging di IDE untuk menemukan dan memperbaiki error dalam kode."
+            },
+            {
+                "question": "Bagaimana cara menggunakan argumen baris perintah dalam script Python?",
+                "question_code": "Jalankan script dengan argumen seperti `python script.py arg1`. Di dalam script, gunakan `sys.argv` untuk mengakses argumen.",
+                "answer": "Jalankan script Python dengan argumen tambahan menggunakan `python script.py arg1`. Di dalam script, akses argumen menggunakan `sys.argv`.",
+                "answer_code": "Import sys dan gunakan `sys.argv` untuk mengakses argumen dalam script Python."
+            },
+            {
+                "question": "Bagaimana cara melihat hasil output dari script Python setelah eksekusi?",
+                "question_code": "Output dari fungsi `print()` akan muncul di terminal atau command prompt setelah script dijalankan.",
+                "answer": "Hasil dari `print()` dalam script Python akan terlihat di terminal setelah script dijalankan. Periksa terminal untuk output yang dihasilkan.",
+                "answer_code": "Output dari `print()` akan ditampilkan di terminal atau command prompt setelah eksekusi."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika folder virtual environment tidak bisa dihapus?",
+                "question_code": "Gunakan perintah `rm -rf venv` untuk menghapus folder di Unix atau hapus folder secara manual di Windows.",
+                "answer": "Jika folder virtual environment tidak bisa dihapus, pastikan tidak ada proses yang menggunakan folder tersebut dan coba hapus kembali menggunakan perintah `rm -rf venv` (Unix) atau hapus secara manual di Windows.",
+                "answer_code": "Pastikan tidak ada proses aktif yang menggunakan folder dan hapus menggunakan perintah `rm -rf venv` di Unix."
+            }
+        ]
+    }
+]

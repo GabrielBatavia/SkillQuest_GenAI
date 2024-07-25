@@ -1,0 +1,144 @@
+[
+    {
+        "sumber": "LearnPython.org",
+        "penulis": "Rina Syafitri",
+        "tanggal": "2024-07-27",
+        "judul": "Pengantar String dan Operasi String di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["string", "python"],
+        "konten": "Artikel ini memberikan pengantar mengenai penggunaan string di Python, termasuk operasi dasar seperti penggabungan, pemotongan, dan pencarian.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat string dan mencetaknya?",
+                "question_code": "message = 'Hello, World!'\nprint(messge)",
+                "answer": "Anda bisa membuat string dengan menyimpan teks dalam tanda kutip dan mencetaknya dengan fungsi `print()`. Pastikan ejaan variabel benar. Misalnya, `print(message)`.",
+                "answer_code": "message = 'Hello, World!'\nprint(message)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nresult = str1 + str2\nprint(result)",
+                "answer": "Gunakan operator `+` untuk menggabungkan dua string. Misalnya: `result = str1 + ' ' + str2` untuk menambahkan spasi di antara kata-kata.",
+                "answer_code": "str1 = 'Hello'\nstr2 = 'World'\nresult = str1 + ' ' + str2\nprint(result)"
+            },
+            {
+                "question": "Bagaimana cara mengakses karakter tertentu dari string?",
+                "question_code": "text = 'Python'\nprint(text[6])",
+                "answer": "Karakter dalam string diakses menggunakan indeks yang dimulai dari 0. Misalnya, untuk mengakses karakter ketiga: `print(text[2])`.",
+                "answer_code": "text = 'Python'\nprint(text[2])"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah sebuah substring ada dalam string?",
+                "question_code": "text = 'Hello Python'\nprint('Python' in text)",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan substring dalam string. Misalnya: `'Python' in text` akan memeriksa apakah 'Python' ada di dalam `text`.",
+                "answer_code": "text = 'Hello Python'\nprint('Python' in text)"
+            },
+            {
+                "question": "Bagaimana cara mengubah semua huruf dalam string menjadi huruf besar?",
+                "question_code": "text = 'hello world'\nprint(text.upper())",
+                "answer": "Gunakan metode `upper()` untuk mengubah semua huruf dalam string menjadi huruf besar. Misalnya: `text.upper()`.",
+                "answer_code": "text = 'hello world'\nprint(text.upper())"
+            },
+            {
+                "question": "Bagaimana cara memotong bagian dari string?",
+                "question_code": "text = 'Python Programming'\nprint(text[7:])",
+                "answer": "Gunakan slicing untuk memotong bagian dari string. Misalnya, `text[7:]` akan memotong dari indeks 7 hingga akhir string.",
+                "answer_code": "text = 'Python Programming'\nprint(text[7:])"
+            },
+            {
+                "question": "Bagaimana cara mengganti kata dalam string?",
+                "question_code": "text = 'Hello World'\nprint(text.replace('World', 'Python'))",
+                "answer": "Gunakan metode `replace()` untuk mengganti kata atau substring dalam string. Misalnya: `text.replace('World', 'Python')` akan mengganti 'World' dengan 'Python'.",
+                "answer_code": "text = 'Hello World'\nprint(text.replace('World', 'Python'))"
+            },
+            {
+                "question": "Bagaimana cara memeriksa panjang string?",
+                "question_code": "text = 'Data Science'\nprint(len(text))",
+                "answer": "Gunakan fungsi `len()` untuk mendapatkan panjang string. Misalnya: `len(text)` akan mengembalikan jumlah karakter dalam string.",
+                "answer_code": "text = 'Data Science'\nprint(len(text))"
+            },
+            {
+                "question": "Bagaimana cara mengubah huruf pertama dari setiap kata menjadi huruf kapital?",
+                "question_code": "text = 'data science is fun'\nprint(text.capitalize())",
+                "answer": "Gunakan metode `title()` untuk mengubah huruf pertama dari setiap kata menjadi huruf kapital. Misalnya: `text.title()`.",
+                "answer_code": "text = 'data science is fun'\nprint(text.title())"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string dimulai dengan substring tertentu?",
+                "question_code": "text = 'Welcome to Python'\nprint(text.startswith('Welcome'))",
+                "answer": "Gunakan metode `startswith()` untuk memeriksa apakah string dimulai dengan substring tertentu. Misalnya: `text.startswith('Welcome')`.",
+                "answer_code": "text = 'Welcome to Python'\nprint(text.startswith('Welcome'))"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonBasics.com",
+        "penulis": "Lina Kusuma",
+        "tanggal": "2024-07-28",
+        "judul": "Penggunaan Kondisi dan Looping di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["kondisi", "looping", "python"],
+        "konten": "Artikel ini menjelaskan penggunaan struktur kontrol seperti `if`, `elif`, `else`, serta loop `for` dan `while` di Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat pernyataan kondisional sederhana?",
+                "question_code": "age = 20\nif age = 18:\n    print('You are 18')",
+                "answer": "Gunakan operator perbandingan `==` dalam pernyataan kondisional. Misalnya: `if age == 18:`.",
+                "answer_code": "age = 20\nif age == 18:\n    print('You are 18')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan `elif` untuk kondisi tambahan?",
+                "question_code": "age = 16\nif age >= 18:\n    print('Adult')\nelif age >= 13:\n    print('Teenager')\nelse:\n    print('Child')",
+                "answer": "Gunakan `elif` untuk memeriksa kondisi tambahan jika kondisi `if` tidak terpenuhi. Misalnya: `elif age >= 13:`.",
+                "answer_code": "age = 16\nif age >= 18:\n    print('Adult')\nelif age >= 13:\n    print('Teenager')\nelse:\n    print('Child')"
+            },
+            {
+                "question": "Bagaimana cara membuat loop `for` untuk iterasi melalui list?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nfor number in range(len(numbers)):\n    print(number)",
+                "answer": "Gunakan `for` dengan langsung mengiterasi list. Misalnya: `for number in numbers:`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5]\nfor number in numbers:\n    print(number)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop `while` untuk iterasi hingga kondisi terpenuhi?",
+                "question_code": "count = 0\nwhile count < 5:\n    print(count)\n    count += 1",
+                "answer": "Gunakan loop `while` untuk iterasi berdasarkan kondisi yang diberikan. Misalnya: `while count < 5:`.",
+                "answer_code": "count = 0\nwhile count < 5:\n    print(count)\n    count += 1"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop lebih awal menggunakan `break`?",
+                "question_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)",
+                "answer": "Gunakan pernyataan `break` untuk menghentikan loop lebih awal. Misalnya: `if i == 5: break`.",
+                "answer_code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara melanjutkan iterasi berikutnya menggunakan `continue`?",
+                "question_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)",
+                "answer": "Gunakan pernyataan `continue` untuk melanjutkan ke iterasi berikutnya dalam loop. Misalnya: `if i % 2 == 0: continue`.",
+                "answer_code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara membuat loop dengan langkah tertentu menggunakan `range()`?",
+                "question_code": "for i in range(0, 10, 2):\n    print(i)",
+                "answer": "Gunakan `range(start, stop, step)` untuk menentukan langkah iterasi dalam loop `for`. Misalnya: `range(0, 10, 2)`.",
+                "answer_code": "for i in range(0, 10, 2):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah sebuah angka ada dalam list?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nprint(6 in numbers)",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan elemen dalam list. Misalnya: `6 in numbers`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5]\nprint(6 in numbers)"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah elemen dalam list menggunakan `len()`?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nprint(count(numbers))",
+                "answer": "Gunakan fungsi `len()` untuk menghitung jumlah elemen dalam list. Misalnya: `print(len(numbers))`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5]\nprint(len(numbers))"
+            },
+            {
+                "question": "Bagaimana cara membuat list dari hasil perhitungan dengan loop?",
+                "question_code": "squares = []\nfor i in range(5):\n    squares.append(i ** 2)\nprint(squares)",
+                "answer": "Gunakan loop untuk mengisi list dengan hasil perhitungan. Misalnya: `squares.append(i ** 2)` akan menambahkan kuadrat dari `i` ke dalam list `squares`.",
+                "answer_code": "squares = []\nfor i in range(5):\n    squares.append(i ** 2)\nprint(squares)"
+            }
+        ]
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "Programming Fundamentals",
+        "penulis": "Emma Collins",
+        "tanggal": "2024-12-25",
+        "judul": "Dasar-Dasar `for` Loop di Python: Panduan Lengkap untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Panduan ini menguraikan bagaimana menggunakan `for` loop dalam Python dengan berbagai contoh yang dirancang untuk membantu pemula memahami konsep iterasi.",
+        "pertanyaan": [
+            {
+                "question": "Anda mendapatkan undangan ke beberapa acara dan ingin membuat daftar rencana Anda. Bagaimana Anda bisa menggunakan `for` loop untuk menyusun daftar acara dengan cara yang tidak biasa?",
+                "answer": "Gunakan kode berikut: `for event in ['Concert', 'Art Gallery', 'Food Festival']: print(f'Get ready for the {event} this weekend!')` untuk menampilkan acara dengan sentuhan kreatif."
+            },
+            {
+                "question": "Jika Anda memiliki daftar hewan peliharaan dan ingin mencetak pesan yang menggambarkan karakter setiap hewan, bagaimana Anda bisa menggunakan `for` loop untuk melakukannya dengan gaya yang unik?",
+                "answer": "Gunakan kode berikut: `for pet in ['dog', 'cat', 'parrot']: print(f'My {pet} has a special talent!')` untuk menambahkan karakter unik pada setiap hewan peliharaan."
+            },
+            {
+                "question": "Bayangkan Anda memiliki beberapa jenis makanan yang ingin Anda perkenalkan dalam acara memasak. Bagaimana Anda bisa menggunakan `for` loop untuk memperkenalkan setiap makanan dengan cara yang menarik?",
+                "answer": "Gunakan kode berikut: `for dish in ['pasta', 'sushi', 'tacos']: print(f'Have you tried our amazing {dish}?')` untuk memperkenalkan makanan dengan cara menarik."
+            },
+            {
+                "question": "Anda memiliki daftar tempat wisata yang ingin Anda promosikan dan ingin menampilkan informasi tentang setiap tempat dengan gaya yang memikat. Bagaimana Anda bisa menggunakan `for` loop untuk menampilkan informasi tersebut?",
+                "answer": "Gunakan kode berikut: `for destination in ['Paris', 'New York', 'Tokyo']: print(f'Explore the beauty of {destination}!')` untuk menampilkan tempat wisata dengan gaya memikat."
+            },
+            {
+                "question": "Jika Anda ingin menulis surat undangan untuk beberapa teman dan ingin mencetak setiap surat dengan pesan yang berbeda, bagaimana Anda bisa menggunakan `for` loop untuk menulis surat tersebut?",
+                "question_code": "for friend in ['Alice', 'Bob', 'Charlie']:\n    print(f'Dear {friend}, wed love to see you at the party!')",
+                "answer": "Kode ini mencetak surat undangan untuk setiap teman dengan pesan yang berbeda, seperti 'Dear Alice, wed love to see you at the party!'.",
+                "answer_code": "for friend in ['Alice', 'Bob', 'Charlie']:\n    print(f'Dear {friend}, wed love to see you at the party!')"
+            },
+            {
+                "question": "Anda memiliki sebuah daftar buku yang ingin Anda baca dan ingin mencetak setiap judul buku dengan sedikit sentuhan kreativitas. Bagaimana Anda bisa menggunakan `for` loop untuk mencetak setiap judul buku?",
+                "answer": "Gunakan kode berikut: `for book in ['The Great Gatsby', 'To Kill a Mockingbird', '1984']: print(f'Next on my reading list: {book}')` untuk mencetak judul buku dengan sentuhan kreatif."
+            },
+            {
+                "question": "Jika Anda diminta untuk mencetak setiap langkah dalam panduan perjalanan dengan gaya yang unik, bagaimana Anda bisa menggunakan `for` loop untuk menyajikan panduan tersebut?",
+                "answer": "Gunakan kode berikut: `for step in ['Pack your bags', 'Board the flight', 'Check into the hotel']: print(f'Prepare to: {step}')` untuk mencetak setiap langkah dengan gaya unik."
+            }
+        ]
+    },
+    {
+        "sumber": "Basic Python",
+        "penulis": "George Murphy",
+        "tanggal": "2024-12-26",
+        "judul": "Memahami `for` Loop dalam Python: Tutorial Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Tutorial ini menjelaskan konsep dasar `for` loop dalam Python dengan berbagai contoh untuk membantu pemula memahami cara kerja iterasi.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda memiliki beberapa proyek yang sedang berlangsung dan ingin mencetak setiap proyek dengan sedikit dorongan motivasi, bagaimana Anda bisa menggunakan `for` loop untuk menampilkan proyek-proyek tersebut?",
+                "answer": "Gunakan kode berikut: `for project in ['Website', 'App', 'Game']: print(f'Keep going with the {project} project!')` untuk menampilkan proyek dengan dorongan motivasi."
+            },
+            {
+                "question": "Anda sedang membuat daftar aktivitas akhir pekan dan ingin mencetak setiap aktivitas dengan sedikit kreativitas. Bagaimana Anda bisa menggunakan `for` loop untuk melakukannya?",
+                "answer": "Gunakan kode berikut: `for activity in ['Picnic', 'Hiking', 'Movie Night']: print(f'Plan for this weekend: {activity}')` untuk menambahkan kreativitas pada daftar aktivitas."
+            },
+            {
+                "question": "Bayangkan Anda ingin memberikan rekomendasi film kepada teman dan ingin mencetak setiap rekomendasi dengan entusiastik. Bagaimana Anda bisa menggunakan `for` loop untuk menampilkan rekomendasi tersebut?",
+                "answer": "Gunakan kode berikut: `for movie in ['Inception', 'The Matrix', 'Interstellar']: print(f'You have to watch {movie}!')` untuk menampilkan rekomendasi film dengan antusiasme."
+            },
+            {
+                "question": "Jika Anda memiliki beberapa jenis tanaman indoor dan ingin menulis catatan singkat tentang setiap tanaman dengan gaya yang menyenangkan, bagaimana Anda bisa menggunakan `for` loop untuk menulis catatan tersebut?",
+                "answer": "Gunakan kode berikut: `for plant in ['Succulent', 'Orchid', 'Fern']: print(f'Check out this amazing {plant}!')` untuk menulis catatan tentang tanaman dengan gaya menyenangkan."
+            },
+            {
+                "question": "Anda sedang menulis artikel tentang berbagai tempat menarik untuk dikunjungi dan ingin mencetak setiap tempat dengan deskripsi singkat yang menggugah. Bagaimana Anda bisa menggunakan `for` loop untuk menulis deskripsi tersebut?",
+                "question_code": "for place in ['Grand Canyon', 'Eiffel Tower', 'Great Wall']:\n    print(f'Visit the stunning {place} on your next trip!')",
+                "answer": "Kode ini mencetak deskripsi tempat dengan gaya menggugah, seperti 'Visit the stunning Grand Canyon on your next trip!'.",
+                "answer_code": "for place in ['Grand Canyon', 'Eiffel Tower', 'Great Wall']:\n    print(f'Visit the stunning {place} on your next trip!')"
+            },
+            {
+                "question": "Jika Anda memiliki beberapa alat musik dan ingin mencetak setiap alat dengan sentuhan humor, bagaimana Anda bisa menggunakan `for` loop untuk melakukannya?",
+                "answer": "Gunakan kode berikut: `for instrument in ['Guitar', 'Piano', 'Drums']: print(f'Time to rock out on the {instrument}!')` untuk mencetak alat musik dengan sentuhan humor."
+            },
+            {
+                "question": "Anda diminta untuk menulis laporan tentang beberapa eksperimen dan ingin mencetak setiap eksperimen dengan sentuhan yang menarik. Bagaimana Anda bisa menggunakan `for` loop untuk menyajikan laporan tersebut?",
+                "answer": "Gunakan kode berikut: `for experiment in ['Chemical Reaction', 'Physics Test', 'Biology Observation']: print(f'Experiment conducted: {experiment}')` untuk menyajikan laporan eksperimen dengan sentuhan menarik."
+            }
+        ]
+    }
+]

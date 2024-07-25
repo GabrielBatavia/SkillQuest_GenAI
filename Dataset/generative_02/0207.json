@@ -1,0 +1,138 @@
+[
+    {
+        "sumber": "PythonGuide.org",
+        "penulis": "Rina Kurnia",
+        "tanggal": "2024-08-01",
+        "judul": "Penggunaan Dictionary dalam Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["dictionary", "python"],
+        "konten": "Artikel ini membahas dasar-dasar penggunaan dictionary di Python, termasuk cara membuat, mengakses, dan memodifikasi data di dalamnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat dictionary dan menambah item ke dalamnya?",
+                "question_code": "my_dict = {'name': 'Alice'}\nmy_dict['age'] = 25\nprint(my_dict['age'])",
+                "answer": "Dictionary dibuat dengan menuliskan pasangan kunci-nilai di dalam tanda kurung kurawal `{}`. Untuk menambah item, gunakan sintaks `my_dict['key'] = value`. Contoh: `my_dict['age'] = 25` menambahkan item dengan kunci 'age' dan nilai 25.",
+                "answer_code": "my_dict = {'name': 'Alice'}\nmy_dict['age'] = 25\nprint(my_dict['age'])"
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dari dictionary menggunakan kunci?",
+                "question_code": "my_dict = {'name': 'Bob', 'age': 30}\nprint(my_dict['name'])",
+                "answer": "Nilai dalam dictionary diakses menggunakan kunci di dalam tanda kurung siku. Misalnya: `my_dict['name']` akan mengembalikan nilai yang terkait dengan kunci 'name'.",
+                "answer_code": "my_dict = {'name': 'Bob', 'age': 30}\nprint(my_dict['name'])"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari dictionary berdasarkan kunci?",
+                "question_code": "my_dict = {'name': 'Carol', 'age': 22}\nmy_dict.pop('age')\nprint(my_dict)",
+                "answer": "Gunakan metode `pop()` untuk menghapus item dari dictionary berdasarkan kunci. Misalnya: `my_dict.pop('age')` akan menghapus item dengan kunci 'age' dari dictionary.",
+                "answer_code": "my_dict = {'name': 'Carol', 'age': 22}\nmy_dict.pop('age')\nprint(my_dict)"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan semua kunci dari dictionary?",
+                "question_code": "my_dict = {'name': 'Dan', 'age': 28}\nprint(my_dict.keys())",
+                "answer": "Gunakan metode `keys()` untuk mendapatkan semua kunci dari dictionary. Ini akan mengembalikan objek tampilan kunci yang dapat diiterasi.",
+                "answer_code": "my_dict = {'name': 'Dan', 'age': 28}\nprint(my_dict.keys())"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan semua nilai dari dictionary?",
+                "question_code": "my_dict = {'name': 'Eve', 'age': 35}\nprint(my_dict.values())",
+                "answer": "Gunakan metode `values()` untuk mendapatkan semua nilai dari dictionary. Ini akan mengembalikan objek tampilan nilai yang dapat diiterasi.",
+                "answer_code": "my_dict = {'name': 'Eve', 'age': 35}\nprint(my_dict.values())"
+            },
+            {
+                "question": "Bagaimana cara mengecek apakah kunci ada di dalam dictionary?",
+                "question_code": "my_dict = {'name': 'Frank', 'age': 40}\nprint('age' in my_dict)",
+                "answer": "Gunakan operator `in` untuk mengecek apakah kunci ada dalam dictionary. Misalnya: `'age' in my_dict` akan mengembalikan `True` jika kunci 'age' ada di dictionary.",
+                "answer_code": "my_dict = {'name': 'Frank', 'age': 40}\nprint('age' in my_dict)"
+            },
+            {
+                "question": "Bagaimana cara mengupdate nilai dari item dalam dictionary?",
+                "question_code": "my_dict = {'name': 'Grace', 'age': 45}\nmy_dict['age'] = 50\nprint(my_dict)",
+                "answer": "Untuk mengupdate nilai dari item dalam dictionary, cukup gunakan kunci yang ada dan assign nilai baru. Misalnya: `my_dict['age'] = 50` akan memperbarui nilai untuk kunci 'age'.",
+                "answer_code": "my_dict = {'name': 'Grace', 'age': 45}\nmy_dict['age'] = 50\nprint(my_dict)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua dictionary?",
+                "question_code": "dict1 = {'a': 1}\ndict2 = {'b': 2}\ncombined_dict = dict1 + dict2\nprint(combined_dict)",
+                "answer": "Untuk menggabungkan dua dictionary, gunakan metode `update()` atau operator `**` (Python 3.5+). Misalnya: `combined_dict = {**dict1, **dict2}` akan menggabungkan `dict1` dan `dict2`.",
+                "answer_code": "dict1 = {'a': 1}\ndict2 = {'b': 2}\ncombined_dict = {**dict1, **dict2}\nprint(combined_dict)"
+            },
+            {
+                "question": "Bagaimana cara mengiterasi melalui semua item dalam dictionary?",
+                "question_code": "my_dict = {'name': 'Helen', 'age': 29}\nfor key in my_dict:\n    print(key, my_dict[key])",
+                "answer": "Untuk mengiterasi melalui semua item dalam dictionary, gunakan loop `for` yang mengakses kunci terlebih dahulu, kemudian ambil nilai dari dictionary. Misalnya: `for key in my_dict: print(key, my_dict[key])`.",
+                "answer_code": "my_dict = {'name': 'Helen', 'age': 29}\nfor key in my_dict:\n    print(key, my_dict[key])"
+            },
+            {
+                "question": "Bagaimana cara membuat dictionary dari dua list, satu untuk kunci dan satu untuk nilai?",
+                "question_code": "keys = ['name', 'age']\nvalues = ['Ivy', 32]\nmy_dict = dict(keys, values)\nprint(my_dict)",
+                "answer": "Gunakan fungsi `zip()` dan `dict()` untuk membuat dictionary dari dua list. Misalnya: `my_dict = dict(zip(keys, values))` akan menggabungkan `keys` dan `values` menjadi dictionary.",
+                "answer_code": "keys = ['name', 'age']\nvalues = ['Ivy', 32]\nmy_dict = dict(zip(keys, values))\nprint(my_dict)"
+            }
+        ]
+    },
+    {
+        "sumber": "LearnPython.org",
+        "penulis": "Joko Sutrisno",
+        "tanggal": "2024-08-02",
+        "judul": "Manipulasi String di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["string", "python"],
+        "konten": "Artikel ini membahas berbagai teknik manipulasi string di Python, termasuk pemotongan, penggabungan, dan pencarian substring.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara memotong substring dari string?",
+                "question_code": "text = 'Hello, World!'\nprint(text[7:12])",
+                "answer": "Gunakan slicing untuk memotong substring dari string. Sintaksnya adalah `text[start:end]`, di mana `start` adalah indeks awal dan `end` adalah indeks akhir. Misalnya, `text[7:12]` memotong substring dari indeks 7 hingga 11.",
+                "answer_code": "text = 'Hello, World!'\nprint(text[7:12])"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nprint(str1 + str2)",
+                "answer": "Untuk menggabungkan dua string, gunakan operator `+`. Misalnya, `str1 + str2` akan menggabungkan 'Hello' dan 'World' menjadi 'HelloWorld'.",
+                "answer_code": "str1 = 'Hello'\nstr2 = 'World'\nprint(str1 + ' ' + str2)"
+            },
+            {
+                "question": "Bagaimana cara mengganti semua kemunculan substring di dalam string?",
+                "question_code": "text = 'Hello, World!'\nnew_text = text.replace('World', 'Python')\nprint(new_text)",
+                "answer": "Gunakan metode `replace()` untuk mengganti semua kemunculan substring dalam string. Misalnya: `text.replace('World', 'Python')` menggantikan 'World' dengan 'Python'.",
+                "answer_code": "text = 'Hello, World!'\nnew_text = text.replace('World', 'Python')\nprint(new_text)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string dimulai dengan substring tertentu?",
+                "question_code": "text = 'Hello, World!'\nprint(text.startswith('Hello'))",
+                "answer": "Gunakan metode `startswith()` untuk memeriksa apakah string dimulai dengan substring tertentu. Misalnya: `text.startswith('Hello')` akan mengembalikan `True` jika string dimulai dengan 'Hello'.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.startswith('Hello'))"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah kemunculan substring dalam string?",
+                "question_code": "text = 'Hello, World! Hello!'\nprint(text.count('Hello'))",
+                "answer": "Gunakan metode `count()` untuk menghitung jumlah kemunculan substring dalam string. Misalnya: `text.count('Hello')` menghitung berapa kali 'Hello' muncul dalam string.",
+                "answer_code": "text = 'Hello, World! Hello!'\nprint(text.count('Hello'))"
+            },
+            {
+                "question": "Bagaimana cara mengubah semua huruf dalam string menjadi huruf kecil?",
+                "question_code": "text = 'Hello, World!'\nprint(text.lower())",
+                "answer": "Gunakan metode `lower()` untuk mengubah semua huruf dalam string menjadi huruf kecil. Misalnya: `text.lower()` akan mengubah 'Hello, World!' menjadi 'hello, world!'.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.lower())"
+            },
+            {
+                "question": "Bagaimana cara mengubah semua huruf dalam string menjadi huruf kapital?",
+                "question_code": "text = 'Hello, World!'\nprint(text.upper())",
+                "answer": "Gunakan metode `upper()` untuk mengubah semua huruf dalam string menjadi huruf kapital. Misalnya: `text.upper()` akan mengubah 'Hello, World!' menjadi 'HELLO, WORLD!'.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.upper())"
+            },
+            {
+                "question": "Bagaimana cara memisahkan string berdasarkan delimiter tertentu?",
+                "question_code": "text = 'apple,banana,orange'\nprint(text.split(','))",
+                "answer": "Gunakan metode `split()` untuk memisahkan string berdasarkan delimiter tertentu. Misalnya: `text.split(',')` akan memisahkan string menjadi list berdasarkan koma.",
+                "answer_code": "text = 'apple,banana,orange'\nprint(text.split(','))"
+            },
+            {
+                "question": "Bagaimana cara menghilangkan spasi di awal dan akhir string?",
+                "question_code": "text = '   Hello, World!   '\nprint(text.strip())",
+                "answer": "Gunakan metode `strip()` untuk menghilangkan spasi di awal dan akhir string. Misalnya: `text.strip()` akan menghilangkan spasi tambahan dari '   Hello, World!   '.",
+                "answer_code": "text = '   Hello, World!   '\nprint(text.strip())"
+            }
+        ]
+    }
+]

@@ -1,0 +1,103 @@
+[
+    {
+        "sumber": "Python Coding Techniques",
+        "penulis": "Mia Thompson",
+        "tanggal": "2024-10-15",
+        "judul": "Exploring Slicing Techniques in Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Slicing", "Programming"],
+        "konten": "Panduan ini membahas teknik-teknik slicing yang umum digunakan dalam Python, serta contoh praktis penerapannya pada berbagai tipe data.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengambil elemen-elemen dengan jarak tertentu dari sebuah list?",
+                "answer": "Gunakan slicing dengan langkah yang diatur untuk mengambil elemen dengan jarak tertentu. Misalnya, `list[::3]` akan mengambil setiap elemen ketiga dari awal hingga akhir list."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda menggunakan slicing dengan indeks yang tidak valid pada string?",
+                "answer": "Jika indeks yang digunakan dalam slicing melebihi panjang string, slicing tetap akan menghasilkan string yang sesuai dengan indeks yang valid. Misalnya, `text[3:10]` pada string dengan panjang 5 akan menghasilkan `text[3:5]`."
+            },
+            {
+                "question": "Bagaimana cara mengakses potongan dari sebuah string dimulai dari posisi tengah hingga akhir?",
+                "answer": "Gunakan slicing untuk mulai dari posisi tengah hingga akhir dengan menetapkan indeks awal dan membiarkan indeks akhir kosong. Misalnya, `text[len(text)//2:]` mengambil substring dari posisi tengah hingga akhir."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dari sebuah tuple dengan langkah tertentu?",
+                "answer": "Gunakan slicing dengan langkah yang diatur pada tuple. Misalnya, `tup[::2]` akan menghasilkan elemen dari tuple dengan langkah 2, yaitu elemen dengan indeks genap."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'ValueError: too many values to unpack' saat menggunakan slicing pada tuple dengan jumlah variabel yang tidak sesuai?",
+                "question_code": "t = (1, 2, 3, 4)\n(a, b, c) = t[1:4]",
+                "answer": "Error ini terjadi karena jumlah elemen dalam slicing tidak cocok dengan jumlah variabel yang digunakan untuk unpack. `t[1:4]` menghasilkan 3 elemen, sementara unpack memerlukan 3 variabel, sehingga sesuai."
+            },
+            {
+                "question": "Bagaimana cara mengubah urutan elemen dalam sebuah list menggunakan slicing?",
+                "question_code": "data = [1, 2, 3, 4, 5]\ndata[1:4] = [9, 8, 7]\nprint(data)",
+                "answer": "Untuk mengubah urutan elemen, Anda dapat menggunakan slicing untuk menggantikan bagian list dengan elemen baru. Misalnya, `data[1:4] = [9, 8, 7]` menggantikan elemen dari indeks 1 hingga 3 dengan elemen baru.",
+                "answer_code": "data = [1, 2, 3, 4, 5]\ndata[1:3] = [9, 8]\nprint(data)"
+            },
+            {
+                "question": "Bagaimana menggunakan slicing untuk menyalin elemen dari list dalam urutan terbalik?",
+                "question_code": "lst = [10, 20, 30, 40]\nreversed_lst = lst[::-1]\nprint(reversed_lst)",
+                "answer": "Gunakan slicing dengan langkah negatif untuk membalikkan urutan elemen dalam list. `lst[::-1]` akan mengembalikan `[40, 30, 20, 10]`, yaitu urutan terbalik dari list asli.",
+                "answer_code": "lst = [10, 20, 30, 40]\nreversed_lst = lst[::-2]\nprint(reversed_lst)"
+            },
+            {
+                "question": "Bagaimana mengakses setiap karakter ke-2 dari sebuah string?",
+                "question_code": "text = 'abcdefgh'\nprint(text[::2])",
+                "answer": "Gunakan slicing dengan langkah untuk mengakses setiap karakter ke-2 dari string. `text[::2]` menghasilkan `aceg`, yaitu setiap karakter kedua dari string asli.",
+                "answer_code": "text = 'abcdefgh'\nprint(text[1::3])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk memodifikasi elemen tertentu dalam list?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nnumbers[1:3] = [10, 20]\nprint(numbers)",
+                "answer": "Gunakan slicing untuk memodifikasi bagian dari list dengan mengganti elemen yang sesuai. Misalnya, `numbers[1:3] = [10, 20]` menggantikan elemen pada indeks 1 dan 2 dengan `[10, 20]`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5]\nnumbers[1:4] = [10, 20]\nprint(numbers)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Data Manipulation",
+        "penulis": "Chris Jordan",
+        "tanggal": "2024-10-17",
+        "judul": "Advanced Slicing for Data Analysis",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Slicing", "Data Analysis"],
+        "konten": "Artikel ini menyelidiki teknik slicing tingkat lanjut untuk analisis data menggunakan Python, dengan fokus pada aplikasi praktis dan pemecahan masalah.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk mengekstrak elemen-elemen dengan interval tertentu dari sebuah list?",
+                "answer": "Gunakan slicing dengan langkah untuk mengekstrak elemen dengan interval tertentu. Misalnya, `data[1:10:3]` akan mengembalikan elemen dari indeks 1 hingga 9 dengan langkah 3."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan slicing pada string dengan langkah negatif yang lebih kecil dari panjang string?",
+                "answer": "Slicing dengan langkah negatif yang lebih kecil dari panjang string akan membalikkan string dan mengambil elemen berdasarkan langkah yang ditentukan. Misalnya, `text[::-3]` akan membalikkan string dan mengambil setiap elemen ketiga dari akhir."
+            },
+            {
+                "question": "Bagaimana mengakses bagian dari tuple yang dimulai dari elemen tertentu hingga akhir dengan langkah khusus?",
+                "answer": "Gunakan slicing pada tuple dengan indeks awal, akhir, dan langkah untuk mengakses bagian yang diinginkan. Misalnya, `tup[2::2]` mengakses elemen dari indeks ke-2 hingga akhir dengan langkah 2."
+            },
+            {
+                "question": "Bagaimana cara mengganti elemen tertentu dalam sebuah string menggunakan slicing?",
+                "answer": "String tidak dapat dimodifikasi secara langsung menggunakan slicing karena string bersifat immutable. Anda harus membuat salinan string dengan bagian yang diubah. Misalnya, `text[:5] + 'new' + text[8:]` untuk mengganti bagian tertentu."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'IndexError: list index out of range' saat menggunakan slicing pada list dengan indeks akhir yang sangat besar?",
+                "question_code": "lst = [1, 2, 3]\nprint(lst[1:100])",
+                "answer": "Error ini mungkin terjadi jika Anda mencoba mengakses elemen di luar rentang yang ada. Namun, dalam slicing, indeks akhir yang besar hanya menghasilkan elemen yang ada dalam list, tanpa error.",
+                "answer_code": "lst = [1, 2, 3]\nprint(lst[:10])"
+            },
+            {
+                "question": "Bagaimana menggunakan slicing untuk membuat potongan dari sebuah list tanpa memodifikasi list asli?",
+                "question_code": "original = [1, 2, 3, 4, 5]\nsubset = original[1:4]\nprint(subset)",
+                "answer": "Slicing pada list membuat salinan dari bagian yang dipilih tanpa memodifikasi list asli. `original[1:4]` menghasilkan `[2, 3, 4]` sebagai salinan.",
+                "answer_code": "original = [1, 2, 3, 4, 5]\nsubset = original[1:4]\nprint(subset)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk membalikkan urutan elemen dalam tuple dengan langkah khusus?",
+                "question_code": "tup = (10, 20, 30, 40)\nprint(tup[::-2])",
+                "answer": "Untuk membalikkan urutan elemen dalam tuple dengan langkah tertentu, gunakan langkah negatif dalam slicing. `tup[::-2]` akan mengembalikan `(40, 30)` sebagai elemen dengan langkah 2 dari akhir.",
+                "answer_code": "tup = (10, 20, 30, 40)\nprint(tup[::-1])"
+            }
+        ]
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Alex Green",
+        "tanggal": "2024-12-05",
+        "judul": "Penggabungan List di Python: Metode `extend()` dan Operator `+`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "extend", "Operator", "Pemula"],
+        "konten": "Panduan ini menjelaskan cara menggabungkan dua list menggunakan metode `extend()` dan operator `+`. Contoh kode dan penjelasan disediakan untuk memperjelas perbedaan antara kedua metode tersebut.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari penggabungan list `[8, 16, 24]` dan `[32, 40]` menggunakan metode `extend()`?",
+                "answer": "Menggunakan metode `extend()`, elemen dari list kedua ditambahkan ke list pertama. Contoh: `list_x = [8, 16, 24]` dan `list_x.extend([32, 40])` menghasilkan `list_x` sebagai `[8, 16, 24, 32, 40]`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[5, 10, 15]` dan `[20, 25, 30]` menggunakan operator `+`?",
+                "answer": "Operator `+` menghasilkan list baru yang merupakan gabungan dari kedua list. Sebagai contoh, `combined_list = [5, 10, 15] + [20, 25, 30]` menghasilkan `combined_list` sebagai `[5, 10, 15, 20, 25, 30]`."
+            },
+            {
+                "question": "Jika Anda memiliki list `[3, 6]` dan ingin menambahkan list `[9, 12]` tanpa mengubah list asli, bagaimana caranya?",
+                "answer": "Anda bisa membuat salinan dari list pertama dan kemudian menggunakan `extend()` pada salinan tersebut. Contoh: `list_a = [3, 6]`, salinan adalah `list_copy = list_a.copy()`, lalu `list_copy.extend([9, 12])`, menghasilkan `list_copy` sebagai `[3, 6, 9, 12]`."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda mencoba menggabungkan list `[1, 2, 3]` dengan string `'abc'` menggunakan operator `+`?",
+                "question_code": "list_a = [1, 2, 3]\nresult = list_a + 'abc'",
+                "answer": "Operator `+` tidak dapat digunakan untuk menggabungkan list dengan string langsung. Anda harus mengonversi string menjadi list terlebih dahulu. Contoh: `result = list_a + list('abc')` menghasilkan `[1, 2, 3, 'a', 'b', 'c']`."
+            },
+            {
+                "question": "Bagaimana menggabungkan list `[7, 14]` dan set `{21, 28}` menggunakan metode `extend()`?",
+                "question_code": "list_b = [7, 14]\nlist_b.extend({21, 28})",
+                "answer": "Metode `extend()` tidak dapat digunakan langsung untuk menggabungkan list dengan set. Anda harus mengonversi set menjadi list terlebih dahulu. Contoh: `list_b.extend(list({21, 28}))`, menghasilkan `[7, 14, 21, 28]`."
+            },
+            {
+                "question": "Apa hasil penggabungan list `[1, 4, 7]` dengan list `[10, 13, 16]` menggunakan operator `+`?",
+                "answer": "Operator `+` menggabungkan kedua list dan menghasilkan list baru. Contoh: `result = [1, 4, 7] + [10, 13, 16]` menghasilkan `result` sebagai `[1, 4, 7, 10, 13, 16]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggabungkan list `[2, 4]` dan dictionary `{8: 'eight'}` menggunakan metode `extend()`?",
+                "question_code": "list_c = [2, 4]\nlist_c.extend({8: 'eight'})",
+                "answer": "Metode `extend()` tidak dapat digunakan langsung dengan dictionary. Anda perlu mengonversi dictionary menjadi list terlebih dahulu. Contoh: `list_c.extend(list({8: 'eight'}.items()))`, menghasilkan `[2, 4, (8, 'eight')]`."
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python",
+        "penulis": "Jordan Lee",
+        "tanggal": "2024-12-06",
+        "judul": "Metode `extend()` dan Operator `+` untuk Menggabungkan List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "extend", "Operator", "Pemula"],
+        "konten": "Artikel ini membahas dua metode penggabungan list, yaitu `extend()` dan operator `+`, dengan penjelasan dan contoh yang membantu pemula memahami perbedaan dan penggunaan keduanya.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari menggabungkan list `[12, 24]` dan `[36, 48]` dengan menggunakan metode `extend()`?",
+                "answer": "Metode `extend()` menambahkan elemen dari list kedua ke list pertama. Contoh: `list_x = [12, 24]` dan `list_x.extend([36, 48])` menghasilkan `list_x` sebagai `[12, 24, 36, 48]`."
+            },
+            {
+                "question": "Bagaimana Anda menggabungkan list `[3, 6]` dan `[9, 12]` dengan menggunakan operator `+`?",
+                "answer": "Operator `+` membuat list baru yang menggabungkan kedua list. Sebagai contoh, `combined_list = [3, 6] + [9, 12]` menghasilkan `combined_list` sebagai `[3, 6, 9, 12]`."
+            },
+            {
+                "question": "Jika Anda memiliki list `[1, 2]` dan ingin menggabungkannya dengan list `[3, 4]` tanpa mengubah list asli, bagaimana caranya?",
+                "answer": "Buat salinan dari list pertama, kemudian gunakan `extend()` pada salinan tersebut. Contoh: `list_a = [1, 2]`, salinan adalah `list_copy = list_a.copy()`, lalu `list_copy.extend([3, 4])`, menghasilkan `list_copy` sebagai `[1, 2, 3, 4]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggabungkan list `[5, 10]` dengan tuple `(15, 20)` menggunakan operator `+`?",
+                "question_code": "list_a = [5, 10]\nresult = list_a + (15, 20)",
+                "answer": "Operator `+` tidak dapat digunakan untuk menggabungkan list dengan tuple langsung. Anda harus mengonversi tuple menjadi list terlebih dahulu. Contoh: `result = list_a + list((15, 20))` menghasilkan `[5, 10, 15, 20]`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[10, 20]` dan set `{30, 40}` menggunakan metode `extend()`?",
+                "question_code": "list_b = [10, 20]\nlist_b.extend({30, 40})",
+                "answer": "Metode `extend()` tidak dapat digunakan langsung untuk menggabungkan list dengan set. Anda harus mengonversi set menjadi list terlebih dahulu. Contoh: `list_b.extend(list({30, 40}))`, menghasilkan `[10, 20, 30, 40]`."
+            },
+            {
+                "question": "Apa hasil penggabungan list `[11, 22, 33]` dengan list `[44, 55, 66]` menggunakan operator `+`?",
+                "answer": "Operator `+` menggabungkan kedua list dan menghasilkan list baru. Contoh: `result = [11, 22, 33] + [44, 55, 66]` menghasilkan `result` sebagai `[11, 22, 33, 44, 55, 66]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggabungkan list `[9, 18]` dan dictionary `{27: 'twenty-seven'}` menggunakan metode `extend()`?",
+                "question_code": "list_c = [9, 18]\nlist_c.extend({27: 'twenty-seven'})",
+                "answer": "Metode `extend()` tidak dapat digunakan untuk menggabungkan list dengan dictionary langsung. Anda perlu mengonversi dictionary menjadi list terlebih dahulu. Contoh: `list_c.extend(list({27: 'twenty-seven'}.items()))`, menghasilkan `[9, 18, (27, 'twenty-seven')]`."
+            }
+        ]
+    }
+]

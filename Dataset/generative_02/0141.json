@@ -1,0 +1,117 @@
+[
+    {
+        "sumber": "python.org",
+        "penulis": "John Doe",
+        "tanggal": "2024-07-23",
+        "judul": "Pengantar Sintaks Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "pemula"],
+        "konten": "Artikel ini membahas dasar-dasar sintaks Python, termasuk variabel, tipe data, dan struktur kontrol.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu variabel dalam Python?",
+                "answer": "Variabel dalam Python adalah penamaan untuk menyimpan data yang dapat digunakan dan dimanipulasi dalam program."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel dalam Python?",
+                "answer": "Variabel dalam Python dapat dideklarasikan dengan langsung memberikan nilai, contohnya: `x = 5`."
+            },
+            {
+                "question": "Apa saja tipe data dasar dalam Python?",
+                "answer": "Tipe data dasar dalam Python meliputi int, float, str, dan bool."
+            },
+            {
+                "question": "Bagaimana cara menulis komentar dalam Python?",
+                "question_code": "# Ini adalah komentar",
+                "answer": "Komentar dalam Python ditulis dengan menggunakan tanda pagar (#) di awal kalimat."
+            },
+            {
+                "question": "Apa itu list dalam Python?",
+                "question_code": "my_list = [1, 2, 3]",
+                "answer": "List dalam Python adalah struktur data yang dapat menyimpan beberapa item dalam satu variabel."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam list?",
+                "question_code": "my_list[0]",
+                "answer": "Elemen dalam list dapat diakses menggunakan indeks, contohnya my_list[0] akan mengakses elemen pertama."
+            },
+            {
+                "question": "Bagaimana cara menggunakan perulangan for dalam Python?",
+                "question_code": "for i in range(5):\n    print(i)",
+                "answer": "Perulangan for digunakan untuk mengiterasi melalui urutan (seperti list atau string), contohnya: `for i in range(5): print(i)`.",
+                "answer_code": "0\n1\n2\n3\n4"
+            },
+            {
+                "question": "Bagaimana cara menggunakan kondisional if dalam Python?",
+                "question_code": "if x > 0:\n    print('x adalah positif')",
+                "answer": "Kondisional if digunakan untuk membuat keputusan berdasarkan kondisi, contohnya: `if x > 0: print('x adalah positif')`.",
+                "answer_code": "x adalah positif"
+            },
+            {
+                "question": "Bagaimana cara membuat fungsi dalam Python?",
+                "question_code": "def my_function():\n    return 'Hello, World!'",
+                "answer": "Fungsi dalam Python didefinisikan menggunakan kata kunci `def`, contohnya: `def my_function(): return 'Hello, World!'`.",
+                "answer_code": "Hello, World!"
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "Jane Smith",
+        "tanggal": "2024-07-20",
+        "judul": "Dasar-Dasar Sintaks Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "tutorial"],
+        "konten": "Artikel ini memberikan panduan lengkap untuk memahami dasar-dasar sintaks Python bagi pemula.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu tipe data bool dalam Python?",
+                "answer": "Tipe data bool dalam Python adalah tipe data yang hanya memiliki dua nilai yaitu True dan False."
+            },
+            {
+                "question": "Bagaimana cara melakukan konversi tipe data dalam Python?",
+                "answer": "Konversi tipe data dalam Python dapat dilakukan menggunakan fungsi seperti int(), float(), dan str()."
+            },
+            {
+                "question": "Apa itu string dalam Python?",
+                "answer": "String dalam Python adalah urutan karakter yang dikelilingi oleh tanda kutip, misalnya: 'Hello, World!' atau \"Hello, World!\"."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string dalam Python?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nresult = str1 + ' ' + str2",
+                "answer": "Dua string dapat digabungkan menggunakan operator +, contohnya: `result = str1 + ' ' + str2`.",
+                "answer_code": "Hello World"
+            },
+            {
+                "question": "Bagaimana cara mengambil substring dalam Python?",
+                "question_code": "my_string = 'Hello, World!'\nsubstring = my_string[0:5]",
+                "answer": "Substring dapat diambil dengan menggunakan slicing, contohnya: `substring = my_string[0:5]`.",
+                "answer_code": "Hello"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf besar semua?",
+                "question_code": "my_string = 'hello'\nupper_string = my_string.upper()",
+                "answer": "String dapat diubah menjadi huruf besar semua menggunakan metode upper(), contohnya: `upper_string = my_string.upper()`.",
+                "answer_code": "HELLO"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari list dalam Python?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.remove(2)",
+                "answer": "Elemen dari list dapat dihapus menggunakan metode remove(), contohnya: `my_list.remove(2)`.",
+                "answer_code": "[1, 3]"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu elemen ada dalam list?",
+                "question_code": "my_list = [1, 2, 3]\nif 2 in my_list:\n    print('2 ada dalam list')",
+                "answer": "Keberadaan elemen dalam list dapat diperiksa menggunakan kata kunci `in`, contohnya: `if 2 in my_list: print('2 ada dalam list')`.",
+                "answer_code": "2 ada dalam list"
+            },
+            {
+                "question": "Bagaimana cara membuat loop while dalam Python?",
+                "question_code": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1",
+                "answer": "Loop while digunakan untuk mengulang blok kode selama kondisi tertentu terpenuhi, contohnya: `i = 0\nwhile i < 5: print(i)\ni += 1`.",
+                "answer_code": "0\n1\n2\n3\n4"
+            }
+        ]
+    }
+]

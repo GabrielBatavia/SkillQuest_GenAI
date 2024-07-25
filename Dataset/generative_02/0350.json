@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python Expert Guide",
+        "penulis": "Julia Roberts",
+        "tanggal": "2024-12-01",
+        "judul": "Menggunakan List dengan Tipe Data Beragam di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Data Types"],
+        "konten": "Artikel ini menjelaskan cara menggunakan list yang berisi tipe data beragam di Python, seperti integer, string, list lain, tuple, set, dan dictionary.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan list dengan tipe data beragam di Python?",
+                "answer": "Anda dapat mendeklarasikan list dengan tipe data beragam menggunakan tanda kurung siku dan memisahkan setiap elemen dengan koma. Contoh: my_list = [5, 'Python', [7, 8], (9, 10), {11, 12}, {'key': 'value'}]"
+            },
+            {
+                "question": "Mengapa penting mengetahui bahwa list di Python dapat berisi tipe data beragam?",
+                "answer": "Mengetahui bahwa list di Python dapat berisi tipe data beragam penting karena memberikan fleksibilitas dalam menyimpan dan memanipulasi data kompleks dalam satu struktur data tunggal."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam list yang berisi tipe data beragam?",
+                "answer": "Anda dapat mengakses elemen dalam list menggunakan indeks. Contoh: my_list[3] akan mengakses elemen keempat dari my_list, yaitu (9, 10)."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unhashable type: 'set'', saya tidak paham?",
+                "question_code": "my_list = [1, 'example', {3, 4}]\nmy_set = {my_list}",
+                "answer": "Error ini terjadi karena set tidak dapat menjadi elemen dari set lain karena tidak hashable. Gunakan tipe data yang hashable.",
+                "answer_code": "my_list = [1, 'example', (3, 4)]\nmy_set = {1, 'example', (3, 4)}"
+            },
+            {
+                "question": "Kenapa terjadi error 'ValueError: dictionary update sequence element #0 has length 1; 2 is required', saya tidak paham?",
+                "question_code": "my_dict = dict(['one', 'two'])",
+                "answer": "Error ini terjadi karena setiap elemen yang digunakan untuk menginisialisasi dictionary harus berupa pasangan kunci-nilai. Gunakan tuple untuk setiap pasangan.",
+                "answer_code": "my_dict = dict([('one', 'two')])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'tuple' object does not support item assignment', saya tidak paham?",
+                "question_code": "my_tuple = (100, 200, 300)\nmy_tuple[1] = 400",
+                "answer": "Error ini terjadi karena tuple bersifat immutable dan tidak dapat diubah setelah didefinisikan. Gunakan list jika elemen perlu diubah.",
+                "answer_code": "my_list = [100, 200, 300]\nmy_list[1] = 400"
+            },
+            {
+                "question": "Kenapa terjadi error 'KeyError: 'missing_key'', saya tidak paham?",
+                "question_code": "my_dict = {'key1': 'value1'}\nprint(my_dict['missing_key'])",
+                "answer": "Error ini terjadi karena kunci yang diakses tidak ada dalam dictionary. Gunakan metode get() untuk menghindari error jika kunci tidak ada.",
+                "answer_code": "my_dict = {'key1': 'value1'}\nprint(my_dict.get('missing_key', 'default_value'))"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "my_list = [1, 'test', (2, 3)]\nprint(my_list[5])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang list. Indeks dimulai dari 0, jadi indeks maksimum untuk list ini adalah 2.",
+                "answer_code": "my_list = [1, 'test', (2, 3)]\nprint(my_list[2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'dict' object is not iterable', saya tidak paham?",
+                "question_code": "my_list = [2, 'world', {'a': 1}]\nfor i in {'a': 1}:\n    print(i)",
+                "answer": "Error ini terjadi karena dictionary tidak dapat diiterasi seperti list. Pastikan Anda mengiterasi objek yang benar seperti list atau gunakan metode yang sesuai.",
+                "answer_code": "my_list = [2, 'world', {'a': 1}]\nfor i in my_list:\n    print(i)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Advanced Techniques",
+        "penulis": "Emma Stone",
+        "tanggal": "2024-12-10",
+        "judul": "Manipulasi List dengan Tipe Data Beragam di Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Data Types"],
+        "konten": "Panduan ini memberikan penjelasan mendalam tentang cara memanipulasi list yang berisi tipe data beragam di Python, termasuk integer, string, list lain, tuple, set, dan dictionary.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list dengan tipe data beragam di Python?",
+                "answer": "Anda dapat membuat list dengan tipe data beragam menggunakan tanda kurung siku dan memisahkan setiap elemen dengan koma. Contoh: my_list = [50, 'code', [6, 7], (8, 9), {10, 11}, {'key': 'value'}]"
+            },
+            {
+                "question": "Apa keuntungan menggunakan list yang berisi tipe data beragam di Python?",
+                "answer": "Menggunakan list yang berisi tipe data beragam memberikan fleksibilitas dalam menyimpan dan memanipulasi data kompleks dan heterogen dalam satu struktur data tunggal."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam list yang berisi tipe data beragam?",
+                "answer": "Anda dapat mengakses elemen dalam list menggunakan indeks. Contoh: my_list[4] akan mengakses elemen kelima dari my_list, yaitu {10, 11}."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unhashable type: 'list'', saya tidak paham?",
+                "question_code": "mixed_list = [1, 'sample', [2, 3]]\nmy_set = {mixed_list}",
+                "answer": "Error ini terjadi karena list tidak dapat menjadi elemen dari set karena tidak hashable. Gunakan tipe data yang hashable seperti tuple.",
+                "answer_code": "mixed_list = [1, 'sample', (2, 3)]\nmy_set = {1, 'sample', (2, 3)}"
+            },
+            {
+                "question": "Kenapa terjadi error 'ValueError: dictionary update sequence element #0 has length 1; 2 is required', saya tidak paham?",
+                "question_code": "my_dict = dict(['alpha', 'beta'])",
+                "answer": "Error ini terjadi karena setiap elemen yang digunakan untuk menginisialisasi dictionary harus berupa pasangan kunci-nilai. Gunakan tuple untuk setiap pasangan.",
+                "answer_code": "my_dict = dict([('alpha', 'beta')])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'tuple' object does not support item assignment', saya tidak paham?",
+                "question_code": "my_tuple = (25, 50, 75)\nmy_tuple[1] = 100",
+                "answer": "Error ini terjadi karena tuple bersifat immutable dan tidak dapat diubah setelah didefinisikan. Gunakan list jika elemen perlu diubah.",
+                "answer_code": "my_list = [25, 50, 75]\nmy_list[1] = 100"
+            },
+            {
+                "question": "Kenapa terjadi error 'KeyError: 'age'', saya tidak paham?",
+                "question_code": "my_dict = {'name': 'Bob'}\nprint(my_dict['age'])",
+                "answer": "Error ini terjadi karena kunci yang diakses tidak ada dalam dictionary. Gunakan metode get() untuk menghindari error jika kunci tidak ada.",
+                "answer_code": "my_dict = {'name': 'Bob'}\nprint(my_dict.get('age', 'unknown'))"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "data_list = [3, 'example', (4, 5)]\nprint(data_list[4])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang list. Indeks dimulai dari 0, jadi indeks maksimum untuk list ini adalah 2.",
+                "answer_code": "data_list = [3, 'example', (4, 5)]\nprint(data_list[2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'set' object is not iterable', saya tidak paham?",
+                "question_code": "elements = [100, 'test', {'key': 1}]\nfor i in {2, 3}:\n    print(i)",
+                "answer": "Error ini terjadi karena set tidak dapat diiterasi seperti list. Pastikan Anda mengiterasi objek yang benar seperti list atau gunakan metode yang sesuai.",
+                "answer_code": "elements = [100, 'test', {'key': 1}]\nfor i in elements:\n    print(i)"
+            }
+        ]
+    }
+]

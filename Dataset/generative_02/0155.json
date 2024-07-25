@@ -1,0 +1,157 @@
+[
+    {
+        "sumber": "programiz.com",
+        "penulis": "Laura Smith",
+        "tanggal": "2024-07-23",
+        "judul": "Memahami Fungsi dan Metode di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "fungsi", "metode"],
+        "konten": "Artikel ini menjelaskan dasar-dasar fungsi dan metode di Python, serta cara penggunaannya.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi di Python dan bagaimana Anda mendeklarasikannya?",
+                "answer": "Fungsi adalah blok kode yang dirancang untuk melakukan tugas tertentu. Anda mendeklarasikan fungsi dengan kata kunci `def`. Contoh: `def greet(): print('Hello!')`."
+            },
+            {
+                "question": "Bagaimana cara memanggil fungsi setelah dideklarasikan?",
+                "answer": "Untuk memanggil fungsi, cukup tulis nama fungsi diikuti dengan tanda kurung. Contoh: `greet()` akan menjalankan fungsi `greet`."
+            },
+            {
+                "question": "Apa perbedaan antara fungsi dengan parameter dan tanpa parameter?",
+                "answer": "Fungsi dengan parameter menerima nilai saat dipanggil, sementara fungsi tanpa parameter tidak menerima nilai. Contoh: `def add(x, y): return x + y` vs `def say_hello(): print('Hi')`."
+            },
+            {
+                "question": "Bagaimana Anda mengembalikan nilai dari fungsi?",
+                "question_code": "def square(number):\n    return number * number\nresult = square(5)",
+                "answer": "Gunakan kata kunci `return` untuk mengembalikan nilai dari fungsi. Contoh: `return number * number` mengembalikan kuadrat dari `number`.",
+                "answer_code": "25"
+            },
+            {
+                "question": "Apa itu metode string dan bagaimana cara menggunakannya?",
+                "question_code": "text = 'hello world'\nuppercase_text = text.upper()",
+                "answer": "Metode string adalah fungsi bawaan untuk objek string. Misalnya, `upper()` mengubah string menjadi huruf besar. Contoh: `text.upper()`.",
+                "answer_code": "HELLO WORLD"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode `split()` pada string?",
+                "question_code": "sentence = 'Python is awesome'\nwords = sentence.split()",
+                "answer": "Metode `split()` membagi string menjadi list berdasarkan separator, defaultnya adalah spasi. Contoh: `sentence.split()` menghasilkan `['Python', 'is', 'awesome']`.",
+                "answer_code": "['Python', 'is', 'awesome']"
+            },
+            {
+                "question": "Bagaimana cara memformat string dengan metode `format()`?",
+                "question_code": "name = 'Alice'\nage = 30\nformatted_string = 'Name: {}, Age: {}'.format(name, age)",
+                "answer": "Metode `format()` memungkinkan Anda menyisipkan nilai ke dalam string. Contoh: `'Name: {}, Age: {}'.format(name, age)`.",
+                "answer_code": "Name: Alice, Age: 30"
+            },
+            {
+                "question": "Bagaimana cara memeriksa panjang string menggunakan `len()`?",
+                "question_code": "text = 'Python'\nlength = len(text)",
+                "answer": "Fungsi `len()` digunakan untuk mendapatkan jumlah karakter dalam string. Contoh: `len(text)` akan memberikan 6 untuk string 'Python'.",
+                "answer_code": "6"
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "James Lee",
+        "tanggal": "2024-07-23",
+        "judul": "Dasar-Dasar Penggunaan List dan Tuple di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "list", "tuple"],
+        "konten": "Panduan ini menjelaskan dasar penggunaan list dan tuple dalam Python, termasuk bagaimana mengakses dan memodifikasi elemen.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu list dalam Python dan bagaimana cara menambah elemen ke dalamnya?",
+                "answer": "List adalah koleksi elemen yang dapat diubah. Untuk menambah elemen, gunakan metode `append()`. Contoh: `my_list.append(4)`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen pertama dari sebuah list?",
+                "answer": "Gunakan indeks 0 untuk mengakses elemen pertama. Contoh: `my_list[0]` akan memberikan elemen pertama dari list `my_list`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tuple dan bagaimana cara membuatnya?",
+                "answer": "Tuple adalah koleksi yang tidak dapat diubah. Anda membuat tuple dengan menempatkan elemen dalam tanda kurung. Contoh: `my_tuple = (1, 2, 3)`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen terakhir dari tuple?",
+                "question_code": "my_tuple = (1, 2, 3, 4)\nlast_element = my_tuple[-1]",
+                "answer": "Gunakan indeks negatif -1 untuk mengakses elemen terakhir. Contoh: `my_tuple[-1]` akan memberikan 4.",
+                "answer_code": "4"
+            },
+            {
+                "question": "Bagaimana cara mengganti elemen di dalam list?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list[1] = 20",
+                "answer": "Untuk mengganti elemen, akses indeks dan tetapkan nilai baru. Contoh: `my_list[1] = 20` akan mengganti elemen kedua dengan 20.",
+                "answer_code": "[1, 20, 3]"
+            },
+            {
+                "question": "Bagaimana Anda membuat salinan dari sebuah list?",
+                "question_code": "original_list = [1, 2, 3]\ncopied_list = original_list.copy()",
+                "answer": "Gunakan metode `copy()` untuk membuat salinan list. Contoh: `copied_list = original_list.copy()`.",
+                "answer_code": "[1, 2, 3]"
+            },
+            {
+                "question": "Apa perbedaan utama antara list dan tuple?",
+                "answer": "List dapat diubah, sedangkan tuple tidak dapat diubah setelah dibuat. Contoh: `my_list = [1, 2]` vs `my_tuple = (1, 2)`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan beberapa elemen ke list sekaligus?",
+                "question_code": "my_list = [1, 2]\nmy_list.extend([3, 4])",
+                "answer": "Gunakan metode `extend()` untuk menambahkan beberapa elemen sekaligus ke list. Contoh: `my_list.extend([3, 4])`.",
+                "answer_code": "[1, 2, 3, 4]"
+            }
+        ]
+    },
+    {
+        "sumber": "learnpython.org",
+        "penulis": "Michael Davis",
+        "tanggal": "2024-07-23",
+        "judul": "Pendahuluan pada Struktur Data Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "struktur data", "pendahuluan"],
+        "konten": "Panduan ini memberikan pengantar tentang berbagai struktur data yang ada di Python, termasuk list, tuple, set, dan dictionary.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu dictionary di Python dan bagaimana cara mengakses nilainya?",
+                "answer": "Dictionary adalah koleksi pasangan kunci-nilai. Akses nilai dengan menggunakan kunci. Contoh: `my_dict = {'key': 'value'}` dan `my_dict['key']`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen baru ke dictionary?",
+                "question_code": "my_dict = {'name': 'John'}\nmy_dict['age'] = 30",
+                "answer": "Tambahkan elemen dengan menetapkan nilai untuk kunci baru. Contoh: `my_dict['age'] = 30`.",
+                "answer_code": "{'name': 'John', 'age': 30}"
+            },
+            {
+                "question": "Bagaimana Anda menghapus elemen dari dictionary?",
+                "question_code": "my_dict = {'name': 'John', 'age': 30}\ndel my_dict['age']",
+                "answer": "Gunakan kata kunci `del` untuk menghapus elemen berdasarkan kunci. Contoh: `del my_dict['age']`.",
+                "answer_code": "{'name': 'John'}"
+            },
+            {
+                "question": "Apa itu set dalam Python dan bagaimana Anda menambahkan elemen?",
+                "question_code": "my_set = {1, 2}\nmy_set.add(3)",
+                "answer": "Set adalah koleksi yang tidak memiliki elemen duplikat. Tambahkan elemen dengan metode `add()`. Contoh: `my_set.add(3)`.",
+                "answer_code": "{1, 2, 3}"
+            },
+            {
+                "question": "Bagaimana cara menghapus semua elemen dari set?",
+                "question_code": "my_set = {1, 2, 3}\nmy_set.clear()",
+                "answer": "Gunakan metode `clear()` untuk menghapus semua elemen dari set. Contoh: `my_set.clear()`.",
+                "answer_code": "{}"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua dictionary?",
+                "question_code": "dict1 = {'a': 1}\ndict2 = {'b': 2}\ncombined = {**dict1, **dict2}",
+                "answer": "Gabungkan dua dictionary dengan menggunakan unpacking `**`. Contoh: `{**dict1, **dict2}`.",
+                "answer_code": "{'a': 1, 'b': 2}"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah kunci tertentu ada di dictionary?",
+                "question_code": "my_dict = {'name': 'Alice'}\nexists = 'name' in my_dict",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan kunci dalam dictionary. Contoh: `'name' in my_dict`.",
+                "answer_code": "True"
+            }
+        ]
+    }
+]

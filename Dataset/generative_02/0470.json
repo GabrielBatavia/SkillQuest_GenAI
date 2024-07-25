@@ -1,0 +1,72 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Liam Brown",
+        "tanggal": "2024-12-30",
+        "judul": "Memperbarui Nilai pada Indeks Tertentu di List Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "Update", "Pemula"],
+        "konten": "Artikel ini memandu Anda dalam memperbarui elemen pada indeks tertentu dalam list Python. Sangat cocok untuk pemula yang ingin memahami dasar-dasar pengolahan list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengganti elemen pada indeks 2 dari list `[100, 200, 300, 400]` dengan nilai 150?",
+                "answer": "Untuk mengganti elemen pada indeks 2 dengan nilai 150, gunakan kode berikut: `my_list = [100, 200, 300, 400]\nmy_list[2] = 150`."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda mengganti elemen pada indeks 4 dari list `[1, 3, 5, 7, 9]` dengan 20?",
+                "answer": "Mengganti elemen pada indeks 4 dengan 20 akan menghasilkan list `[1, 3, 5, 7, 20]`. Gunakan kode: `my_list = [1, 3, 5, 7, 9]\nmy_list[4] = 20`."
+            },
+            {
+                "question": "Bagaimana cara memperbarui elemen pada indeks 0 dari list `[10, 20, 30, 40]` dengan string 'first'?",
+                "answer": "Gunakan kode berikut: `my_list = [10, 20, 30, 40]\nmy_list[0] = 'first'` untuk mengganti elemen pada indeks 0 dengan string 'first'."
+            },
+            {
+                "question": "Jika Anda memiliki list `[5, 10, 15, 20, 25]`, bagaimana cara mengganti nilai pada indeks 3 dengan 100?",
+                "answer": "Untuk mengganti nilai pada indeks 3 dengan 100, gunakan kode: `my_list = [5, 10, 15, 20, 25]\nmy_list[3] = 100`."
+            },
+            {
+                "question": "Bagaimana Anda mengganti elemen pada indeks 1 dari list `[12, 24, 36]` dengan nilai 50?",
+                "answer": "Untuk mengganti elemen pada indeks 1 dengan nilai 50, gunakan kode berikut: `my_list = [12, 24, 36]\nmy_list[1] = 50`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mengganti elemen pada indeks 2 dari list `[a, b, c, d]` dengan 'z'?",
+                "answer": "Mengganti elemen pada indeks 2 dengan 'z' akan menghasilkan list `['a', 'b', 'z', 'd']`. Gunakan kode: `my_list = ['a', 'b', 'c', 'd']\nmy_list[2] = 'z'`."
+            }
+        ]
+    },
+    {
+        "sumber": "Intro to Python",
+        "penulis": "Sophia Green",
+        "tanggal": "2024-12-31",
+        "judul": "Cara Memperbarui Elemen pada Indeks di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "Update", "Pemula"],
+        "konten": "Panduan ini menjelaskan cara memperbarui elemen pada indeks tertentu di list Python dengan berbagai contoh yang mudah dipahami oleh pemula.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengganti elemen pada indeks 3 dari list `[7, 14, 21, 28]` dengan nilai 35?",
+                "answer": "Gunakan kode berikut: `my_list = [7, 14, 21, 28]\nmy_list[3] = 35` untuk mengganti elemen pada indeks 3 dengan nilai 35."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda mengganti elemen pada indeks 1 dari list `[9, 18, 27]` dengan nilai 50?",
+                "answer": "Mengganti elemen pada indeks 1 dengan 50 akan menghasilkan list `[9, 50, 27]`. Gunakan kode: `my_list = [9, 18, 27]\nmy_list[1] = 50`."
+            },
+            {
+                "question": "Bagaimana cara memperbarui elemen pada indeks 4 dari list `[10, 20, 30, 40, 50]` dengan string 'updated'?",
+                "answer": "Untuk mengganti elemen pada indeks 4 dengan string 'updated', gunakan kode: `my_list = [10, 20, 30, 40, 50]\nmy_list[4] = 'updated'`."
+            },
+            {
+                "question": "Jika list Anda adalah `[3, 6, 9, 12]`, bagaimana cara mengganti nilai pada indeks 2 dengan 24?",
+                "answer": "Gunakan kode berikut: `my_list = [3, 6, 9, 12]\nmy_list[2] = 24` untuk mengganti nilai pada indeks 2 dengan 24."
+            },
+            {
+                "question": "Bagaimana Anda mengganti elemen pada indeks 0 dari list `[1, 2, 3, 4, 5]` dengan nilai 99?",
+                "answer": "Untuk mengganti elemen pada indeks 0 dengan nilai 99, gunakan kode: `my_list = [1, 2, 3, 4, 5]\nmy_list[0] = 99`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mengganti elemen pada indeks 2 dari list `[a, b, c, d]` dengan 'x'?",
+                "answer": "Mengganti elemen pada indeks 2 dengan 'x' menghasilkan list `['a', 'b', 'x', 'd']`. Gunakan kode: `my_list = ['a', 'b', 'c', 'd']\nmy_list[2] = 'x'`."
+            }
+        ]
+    }
+]

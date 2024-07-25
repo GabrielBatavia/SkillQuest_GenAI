@@ -1,0 +1,111 @@
+[
+    {
+        "sumber": "KodingPython.com",
+        "penulis": "Ahmad Taufik",
+        "tanggal": "2024-07-08",
+        "judul": "Manipulasi String di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["string", "manipulasi", "python"],
+        "konten": "Artikel ini membahas berbagai metode untuk manipulasi string di Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil di Python?",
+                "answer": "Anda bisa menggunakan metode `lower()` untuk mengubah string menjadi huruf kecil. Contohnya: `text.lower()`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string di Python?",
+                "answer": "Anda bisa menggunakan operator `+` untuk menggabungkan dua string. Contohnya: `'Hello' + ' World'`."
+            },
+            {
+                "question": "Apa itu TypeError?",
+                "answer": "TypeError terjadi ketika operasi tidak didukung oleh tipe data yang digunakan. Pastikan operasi yang dilakukan sesuai dengan tipe data."
+            },
+            {
+                "question": "Mengapa kode ini tidak memotong string dengan benar?",
+                "question_code": "text = 'Hello, World!'\nprint(text[0:])",
+                "answer": "Anda tidak menentukan batas akhir untuk slicing. Gunakan text[0:5] untuk memotong string hingga karakter kelima.",
+                "answer_code": "text = 'Hello, World!'\nprint(text[0:5])"
+            },
+            {
+                "question": "Kenapa string saya tidak berubah menjadi huruf besar?",
+                "question_code": "text = 'Hello, World!'\nprint(text.capitalize())",
+                "answer": "Metode capitalize() hanya mengubah huruf pertama menjadi besar. Gunakan metode upper() untuk mengubah semua huruf menjadi besar.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.upper())"
+            },
+            {
+                "question": "Bagaimana cara menghilangkan spasi di awal dan akhir string?",
+                "question_code": "text = '  Hello, World!  '\nprint(text.trim())",
+                "answer": "Metode trim() tidak ada di Python. Gunakan metode strip() untuk menghilangkan spasi di awal dan akhir string.",
+                "answer_code": "text = '  Hello, World!  '\nprint(text.strip())"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string dimulai dengan 'Hello'?",
+                "question_code": "text = 'Hello, World!'\nprint(text.startwith('Hello'))",
+                "answer": "Metode startwith() salah. Gunakan metode startswith() untuk memeriksa apakah string dimulai dengan substring tertentu.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.startswith('Hello'))"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string diakhiri dengan 'World!'?",
+                "question_code": "text = 'Hello, World!'\nprint(text.endswidth('World!'))",
+                "answer": "Metode endswidth() salah. Gunakan metode endswith() untuk memeriksa apakah string diakhiri dengan substring tertentu.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.endswith('World!'))"
+            },
+            {
+                "question": "Kenapa substring dalam string saya tidak berubah?",
+                "question_code": "text = 'Hello, World!'\nprint(text.replace('world', 'Python'))",
+                "answer": "Perhatikan sensitivitas huruf besar dan kecil. Gunakan 'World' alih-alih 'world' untuk mengganti substring dengan benar.",
+                "answer_code": "text = 'Hello, World!'\nprint(text.replace('World', 'Python'))"
+            }
+        ]
+    },
+    {
+        "sumber": "ExpertPython.net",
+        "penulis": "Dewi Lestari",
+        "tanggal": "2024-07-10",
+        "judul": "Pemrograman Asinkron di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["asinkron", "async", "await"],
+        "konten": "Artikel ini menjelaskan konsep pemrograman asinkron di Python dengan menggunakan async dan await.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu pemrograman asinkron di Python?",
+                "answer": "Pemrograman asinkron memungkinkan Anda menjalankan tugas tanpa menunggu tugas lain selesai, menggunakan kata kunci `async` dan `await`."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi asinkron di Python?",
+                "answer": "Anda bisa mendefinisikan fungsi asinkron dengan menggunakan kata kunci `async def`. Contohnya: `async def my_function():`."
+            },
+            {
+                "question": "Apa itu RuntimeError?",
+                "answer": "RuntimeError terjadi ketika loop event berjalan di thread yang salah. Pastikan loop event dijalankan di thread utama."
+            },
+            {
+                "question": "Kenapa fungsi asinkron saya tidak berjalan?",
+                "question_code": "async def main():\nawait say_hello()\n\nasyncio.run(main)",
+                "answer": "Anda tidak memanggil fungsi main() dengan benar. Tambahkan tanda kurung saat memanggil fungsi main.",
+                "answer_code": "async def main():\nawait say_hello()\n\nasyncio.run(main())"
+            },
+            {
+                "question": "Bagaimana cara membuat tugas asinkron di Python?",
+                "question_code": "import asyncio\n\nasync def say_hello():\n    await asyncio.sleep(1)\n    print('Hello')",
+                "answer": "Anda bisa membuat tugas asinkron dengan mendefinisikan fungsi asinkron menggunakan `async` dan `await`. Contohnya: `async def say_hello(): await asyncio.sleep(1); print('Hello')`."
+            },
+            {
+                "question": "Bagaimana cara menjalankan beberapa tugas asinkron secara bersamaan?",
+                "question_code": "async def main():\n    task1 = asyncio.create_task(say_hello())\n    task2 = asyncio.create_task(say_world())\n    await task1\n    await task2",
+                "answer": "Anda bisa menjalankan beberapa tugas asinkron secara bersamaan dengan menggunakan `asyncio.create_task()` dan `await`. Contohnya: `task1 = asyncio.create_task(say_hello()); task2 = asyncio.create_task(say_world()); await task1; await task2`."
+            },
+            {
+                "question": "Kenapa event loop saya tidak berjalan?",
+                "question_code": "async def main():\n    print('Hello')\n    await asyncio.sleep(1)\n    print('World')\n\nloop = asyncio.get_event_loop()\nloop.run_until_complete(main)",
+                "answer": "Anda tidak memanggil fungsi main() dengan benar dalam run_until_complete. Tambahkan tanda kurung saat memanggil fungsi main.",
+                "answer_code": "import asyncio\n\nasync def main():\n    print('Hello')\n    await asyncio.sleep(1)\n    print('World')\n\nloop = asyncio.get_event_loop()\nloop.run_until_complete(main())"
+            },
+            {
+                "question": "Bagaimana cara menangani exception dalam fungsi asinkron di Python?",
+                "question_code": "async def main():\n    try:\n        await some_async_function()\n    except Exception as e:\n        print(f'Error: {e}')",
+                "answer": "Anda bisa menangani exception dalam fungsi asinkron dengan menggunakan blok try-except. Contohnya: `try: await some_async_function(); except Exception as e: print(f'Error: {e}')`."
+            }
+        ]
+    }
+]

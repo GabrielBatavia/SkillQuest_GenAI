@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "LearnPythonBasics.org",
+        "penulis": "Nina Hartanto",
+        "tanggal": "2024-12-10",
+        "judul": "Pengantar Fungsi di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["fungsi", "python", "parameter", "return"],
+        "konten": "Artikel ini menjelaskan bagaimana cara mendefinisikan dan menggunakan fungsi di Python, termasuk parameter dan nilai kembali.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi di Python?",
+                "answer": "Gunakan kata kunci def diikuti dengan nama fungsi dan tanda kurung. Contoh: def my_function(): pass."
+            },
+            {
+                "question": "Apa itu parameter dalam fungsi Python?",
+                "answer": "Parameter adalah variabel yang didefinisikan di dalam tanda kurung fungsi dan digunakan untuk menerima nilai yang dikirimkan ke fungsi."
+            },
+            {
+                "question": "Bagaimana cara mengembalikan nilai dari fungsi?",
+                "answer": "Gunakan kata kunci return diikuti dengan nilai yang ingin dikembalikan. Contoh: return value."
+            },
+            {
+                "question": "Kenapa kode ini menghasilkan error?",
+                "question_code": "def add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(10)\nprint(result)",
+                "answer": "Error terjadi karena fungsi add_numbers membutuhkan dua argumen, tetapi hanya satu yang diberikan. Berikan dua argumen saat memanggil fungsi.",
+                "answer_code": "def add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(10, 5)\nprint(result)"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi dengan nilai default untuk parameter?",
+                "question_code": "def greet(name='Guest'):\n    print(f'Hello, {name}!')\n\ngreet()\ngreet('Alice')",
+                "answer": "Tentukan nilai default parameter di dalam definisi fungsi dengan menyertakan nilai setelah tanda sama dengan. Contoh: def greet(name='Guest').",
+                "answer_code": "def greet(name='Guest'):\n    print(f'Hello, {name}!')\n\ngreet()\ngreet('Alice')"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi yang menerima jumlah argumen yang tidak terbatas?",
+                "question_code": "def sum_all(*args):\n    return sum(args)\n\nprint(sum_all(1, 2, 3, 4))",
+                "answer": "Gunakan *args di dalam definisi fungsi untuk menerima jumlah argumen yang tidak terbatas. Ini akan mengumpulkan semua argumen dalam tuple.",
+                "answer_code": "def sum_all(*args):\n    return sum(args)\n\nprint(sum_all(1, 2, 3, 4))"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonForDataScience.net",
+        "penulis": "Hadi Prabowo",
+        "tanggal": "2024-12-12",
+        "judul": "Pengolahan Data dengan Pandas",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["pandas", "dataframe", "manipulasi data", "python"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan pustaka Pandas untuk manipulasi data, termasuk pembuatan dan pengolahan DataFrame.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu DataFrame di Pandas?",
+                "answer": "DataFrame adalah struktur data dua dimensi di Pandas yang menyimpan data dalam bentuk tabel dengan baris dan kolom."
+            },
+            {
+                "question": "Bagaimana cara membuat DataFrame dari dictionary?",
+                "answer": "Gunakan pd.DataFrame() dengan dictionary sebagai argumen. Kunci dictionary akan menjadi nama kolom dan nilai akan menjadi data di kolom tersebut."
+            },
+            {
+                "question": "Bagaimana cara mengakses kolom DataFrame di Pandas?",
+                "answer": "Gunakan nama kolom dalam tanda kurung siku atau dot notation. Contoh: df['column_name'] atau df.column_name."
+            },
+            {
+                "question": "Kenapa kode ini menghasilkan error?",
+                "question_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5]})\nprint(df)",
+                "answer": "Error terjadi karena jumlah elemen dalam list berbeda di setiap kolom dictionary. Pastikan semua kolom memiliki jumlah elemen yang sama.",
+                "answer_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df)"
+            },
+            {
+                "question": "Bagaimana cara menambahkan kolom baru ke DataFrame?",
+                "question_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf['B'] = [4, 5, 6]\nprint(df)",
+                "answer": "Gunakan notasi df['new_column'] untuk menambahkan kolom baru dan berikan nilai untuk kolom tersebut.",
+                "answer_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3]})\ndf['B'] = [4, 5, 6]\nprint(df)"
+            },
+            {
+                "question": "Bagaimana cara menghapus baris dari DataFrame?",
+                "question_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\ndf.drop(1, axis=0, inplace=True)\nprint(df)",
+                "answer": "Gunakan metode drop() dengan parameter axis=0 untuk menghapus baris berdasarkan index dan inplace=True untuk melakukan perubahan pada DataFrame yang ada.",
+                "answer_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\ndf.drop(1, axis=0, inplace=True)\nprint(df)"
+            }
+        ]
+    }
+]

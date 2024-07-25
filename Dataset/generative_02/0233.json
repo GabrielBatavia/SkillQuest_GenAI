@@ -1,0 +1,101 @@
+[
+    {
+        "sumber": "PythonMastery.org",
+        "penulis": "Tariq Hassan",
+        "tanggal": "2024-11-01",
+        "judul": "Pengantar Python untuk Data Science",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["data science", "python", "analisis data"],
+        "konten": "Artikel ini membahas penggunaan Python dalam data science, termasuk manipulasi data dengan Pandas, visualisasi dengan Matplotlib, dan analisis data statistik.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membaca file CSV menggunakan Pandas?",
+                "answer": "Gunakan fungsi pd.read_csv() dari library Pandas. Contoh: df = pd.read_csv('file.csv')."
+            },
+            {
+                "question": "Apa yang dimaksud dengan DataFrame di Pandas?",
+                "answer": "DataFrame adalah struktur data tabular dua dimensi yang mirip dengan tabel database atau spreadsheet, di mana data disimpan dalam baris dan kolom."
+            },
+            {
+                "question": "Bagaimana cara membuat plot histogram di Matplotlib?",
+                "answer": "Gunakan fungsi plt.hist() untuk membuat histogram. Contoh: plt.hist(data, bins=10)."
+            },
+            {
+                "question": "Kenapa kode ini tidak menghasilkan output yang diharapkan?",
+                "question_code": "import pandas as pd\n\ndata = pd.read_csv('datafile.csv')\nprint(data.head())",
+                "answer": "Masalah mungkin disebabkan oleh kesalahan dalam path file atau file tidak ada. Pastikan path file dan nama file benar.",
+                "answer_code": "import pandas as pd\n\ndata = pd.read_csv('path/to/datafile.csv')\nprint(data.head())"
+            },
+            {
+                "question": "Apa yang menyebabkan error dalam kode ini?",
+                "question_code": "import matplotlib.pyplot as plt\n\nplt.bar(['A', 'B', 'C'], [1, 2, 3]\nplt.show()",
+                "answer": "SyntaxError terjadi karena tanda kurung tidak ditutup dengan benar. Tambahkan tanda kurung tutup yang hilang.",
+                "answer_code": "import matplotlib.pyplot as plt\n\nplt.bar(['A', 'B', 'C'], [1, 2, 3])\nplt.show()"
+            },
+            {
+                "question": "Bagaimana cara mengelompokkan data berdasarkan kolom tertentu di Pandas?",
+                "question_code": "df.groupby('column_name').mean()",
+                "answer": "Gunakan metode groupby() diikuti dengan fungsi agregasi seperti mean() untuk menghitung rata-rata per grup. Contoh: df.groupby('column_name').mean()."
+            },
+            {
+                "question": "Bagaimana cara menyimpan DataFrame ke dalam file Excel?",
+                "question_code": "df.to_csv('output.xlsx')",
+                "answer": "Gunakan metode to_excel() untuk menyimpan DataFrame ke dalam file Excel, bukan to_csv(). Contoh: df.to_excel('output.xlsx').",
+                "answer_code": "df.to_excel('output.xlsx')"
+            },
+            {
+                "question": "Bagaimana cara menghapus kolom dari DataFrame?",
+                "question_code": "df.drop('column_name')",
+                "answer": "Gunakan metode drop() dengan parameter axis=1 untuk menghapus kolom dari DataFrame. Contoh: df.drop('column_name', axis=1).",
+                "answer_code": "df.drop('column_name', axis=1, inplace=True)"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonAutomationHub.com",
+        "penulis": "Nina Oktavia",
+        "tanggal": "2024-11-02",
+        "judul": "Automatisasi Tugas dengan Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["automatisasi", "python", "skrip"],
+        "konten": "Artikel ini membahas cara menggunakan Python untuk mengotomatisasi berbagai tugas, termasuk operasi file, web scraping, dan pengiriman email otomatis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membaca konten dari file teks menggunakan Python?",
+                "answer": "Gunakan fungsi open() dengan mode 'r' untuk membaca file teks. Contoh: with open('file.txt', 'r') as file: content = file.read()."
+            },
+            {
+                "question": "Apa yang dimaksud dengan web scraping di Python?",
+                "answer": "Web scraping adalah proses ekstraksi data dari situs web menggunakan library seperti BeautifulSoup atau Scrapy untuk mengumpulkan informasi secara otomatis."
+            },
+            {
+                "question": "Bagaimana cara mengirim email menggunakan Python?",
+                "answer": "Gunakan modul smtplib untuk mengirim email. Contoh: import smtplib\nserver = smtplib.SMTP('smtp.example.com', 587)\nserver.starttls()\nserver.login('your_email@example.com', 'password')\nserver.sendmail('from@example.com', 'to@example.com', 'Email body')"
+            },
+            {
+                "question": "Kenapa skrip ini tidak bisa membaca file?",
+                "question_code": "with open('datafile.txt') as file:\n    data = file.read()\nprint(data)",
+                "answer": "Masalah bisa terjadi jika file tidak ada di path yang ditentukan. Pastikan file berada di direktori yang benar dan path yang digunakan benar.",
+                "answer_code": "with open('path/to/datafile.txt') as file:\n    data = file.read()\nprint(data)"
+            },
+            {
+                "question": "Apa yang salah dengan kode pengiriman email ini?",
+                "question_code": "import smtplib\n\nserver = smtplib.SMTP('smtp.example.com')\nserver.sendmail('from@example.com', 'to@example.com', 'Hello')",
+                "answer": "Anda harus menyertakan port dan autentikasi untuk server SMTP. Tambahkan server.starttls() dan login dengan benar.",
+                "answer_code": "import smtplib\n\nserver = smtplib.SMTP('smtp.example.com', 587)\nserver.starttls()\nserver.login('your_email@example.com', 'password')\nserver.sendmail('from@example.com', 'to@example.com', 'Hello')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan BeautifulSoup untuk mengparse HTML?",
+                "question_code": "from bs4 import BeautifulSoup\n\nsoup = BeautifulSoup('<html></html>', 'html.parser')",
+                "answer": "Gunakan BeautifulSoup untuk memparse HTML dengan menyertakan parser. Pastikan HTML valid dan parser yang digunakan sesuai.",
+                "answer_code": "from bs4 import BeautifulSoup\n\nsoup = BeautifulSoup('<html><body><h1>Title</h1></body></html>', 'html.parser')"
+            },
+            {
+                "question": "Bagaimana cara menangani error saat scraping web?",
+                "question_code": "try:\n    response = requests.get('http://example.com')\n    print(response.text)\nexcept Exception as e:\n    print(e)",
+                "answer": "Gunakan blok try-except untuk menangani error saat scraping, seperti kesalahan jaringan atau URL yang salah. Pastikan untuk menangani berbagai jenis exception.",
+                "answer_code": "import requests\n\ntry:\n    response = requests.get('http://example.com')\n    print(response.text)\nexcept requests.exceptions.RequestException as e:\n    print('Error:', e)"
+            }
+        ]
+    }
+]

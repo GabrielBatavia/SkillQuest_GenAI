@@ -1,0 +1,96 @@
+[
+    {
+        "sumber": "Python Essentials",
+        "penulis": "James Lee",
+        "tanggal": "2024-10-31",
+        "judul": "Menggunakan Method `append()` untuk Menambahkan Elemen ke List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "append", "Pemula"],
+        "konten": "Artikel ini menguraikan cara menggunakan method `append()` untuk menambahkan elemen ke akhir list di Python. Method ini sangat berguna untuk memperluas list dengan elemen baru.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan objek `dict` `{'name': 'Alice', 'age': 30}` ke dalam list `people` dengan `append()`?",
+                "answer": "Untuk menambahkan objek `dict` ke dalam list `people`, gunakan kode berikut: `people.append({'name': 'Alice', 'age': 30})`. Ini akan menambahkan dictionary tersebut sebagai elemen baru di akhir list `people`.",
+                "question_code": "people = [{'name': 'Bob', 'age': 25}]\npeople.append({'name': 'Alice', 'age': 30})"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan `append()` untuk menambahkan integer `42` ke dalam list `numbers`?",
+                "answer": "Jika Anda menambahkan integer `42` ke dalam list `numbers`, integer `42` akan menjadi elemen terakhir dalam list. Gunakan kode: `numbers.append(42)`.",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.append(42)"
+            },
+            {
+                "question": "Bagaimana cara menambahkan string `'New Element'` ke dalam list `items` dengan `append()`?",
+                "answer": "Untuk menambahkan string `'New Element'` ke dalam list `items`, gunakan kode berikut: `items.append('New Element')`. Ini akan menambahkan string tersebut di akhir list `items`.",
+                "question_code": "items = ['Old Element']\nitems.append('New Element')"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen list `[10, 20]` ke dalam list `lists_container` dengan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan list `[10, 20]` ke dalam list `lists_container`: `lists_container.append([10, 20])`. Ini akan menambahkan list `[10, 20]` sebagai elemen baru di akhir `lists_container`.",
+                "question_code": "lists_container = [[1, 2]]\nlists_container.append([10, 20])"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan `append()` untuk menambahkan objek `set` `{5, 10}` ke dalam list `sets_collection`?",
+                "answer": "Menambahkan objek `set` `{5, 10}` ke dalam list `sets_collection` akan menambah set `{5, 10}` sebagai elemen baru di akhir list. Gunakan kode: `sets_collection.append({5, 10})`.",
+                "question_code": "sets_collection = [set()]\nsets_collection.append({5, 10})"
+            },
+            {
+                "question": "Bagaimana cara menambahkan nilai `None` ke dalam list `optional_values` dengan `append()`?",
+                "answer": "Untuk menambahkan nilai `None` ke dalam list `optional_values`, gunakan kode berikut: `optional_values.append(None)`. Ini akan menambahkan `None` di akhir list `optional_values`.",
+                "question_code": "optional_values = [1, 2, 3]\noptional_values.append(None)"
+            },
+            {
+                "question": "Kenapa Anda mendapatkan error 'AttributeError: 'list' object has no attribute 'append'' saat mencoba menggunakan `append()` pada tuple?",
+                "answer": "Error ini terjadi karena `append()` adalah method khusus untuk list dan tidak dapat digunakan pada tuple. Pastikan Anda hanya menggunakan `append()` pada list.",
+                "question_code": "my_tuple = (1, 2)\nmy_tuple.append(3)",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)"
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python Basics",
+        "penulis": "Sophia Brown",
+        "tanggal": "2024-10-31",
+        "judul": "Menambahkan Elemen Baru ke List dengan `append()`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "append", "Pemula"],
+        "konten": "Panduan ini menjelaskan bagaimana menggunakan method `append()` untuk menambah elemen ke akhir list di Python. Ini adalah cara yang efisien untuk memperbarui list dengan elemen tambahan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana menambahkan nilai boolean `True` ke dalam list `status_flags` dengan `append()`?",
+                "answer": "Untuk menambahkan nilai boolean `True` ke dalam list `status_flags`, gunakan kode berikut: `status_flags.append(True)`. Ini akan menambah `True` sebagai elemen baru di akhir list `status_flags`.",
+                "question_code": "status_flags = [False]\nstatus_flags.append(True)"
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda menambahkan list kosong `[]` ke dalam list `empty_lists` dengan `append()`?",
+                "answer": "Menambahkan list kosong `[]` ke dalam list `empty_lists` akan menambah list kosong sebagai elemen baru di akhir `empty_lists`. Gunakan kode: `empty_lists.append([])`.",
+                "question_code": "empty_lists = [[1, 2]]\nempty_lists.append([])"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen tuple `(1, 2, 3)` ke dalam list `tuple_container` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan tuple `(1, 2, 3)` ke dalam list `tuple_container`: `tuple_container.append((1, 2, 3))`. Ini akan menambahkan tuple tersebut di akhir list `tuple_container`.",
+                "question_code": "tuple_container = [(4, 5)]\ntuple_container.append((1, 2, 3))"
+            },
+            {
+                "question": "Bagaimana cara menambahkan integer `100` ke dalam list `integers` dengan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan integer `100` ke dalam list `integers`: `integers.append(100)`. Ini akan menambah `100` sebagai elemen terakhir di list `integers`.",
+                "question_code": "integers = [10, 20, 30]\nintegers.append(100)"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menambahkan objek `float` `3.1415` ke dalam list `float_numbers` menggunakan `append()`?",
+                "answer": "Menambahkan objek `float` `3.1415` ke dalam list `float_numbers` akan menambah `3.1415` sebagai elemen baru di akhir list. Gunakan kode: `float_numbers.append(3.1415)`.",
+                "question_code": "float_numbers = [2.718]\nfloat_numbers.append(3.1415)"
+            },
+            {
+                "question": "Kenapa Anda mendapatkan error 'AttributeError: 'int' object has no attribute 'append'' saat menggunakan `append()` pada integer?",
+                "answer": "Error ini terjadi karena `append()` hanya dapat digunakan pada list, bukan pada tipe data seperti integer. Gunakan method yang sesuai untuk tipe data yang Anda miliki.",
+                "question_code": "num = 5\nnum.append(10)",
+                "answer_code": "num_list = [5]\nnum_list.append(10)"
+            },
+            {
+                "question": "Bagaimana menambahkan string `'Hello World'` ke dalam list `messages` menggunakan `append()`?",
+                "answer": "Untuk menambahkan string `'Hello World'` ke dalam list `messages`, gunakan kode berikut: `messages.append('Hello World')`. Ini akan menambah `'Hello World'` sebagai elemen baru di akhir list `messages`.",
+                "question_code": "messages = ['Hi']\nmessages.append('Hello World')"
+            }
+        ]
+    }
+]

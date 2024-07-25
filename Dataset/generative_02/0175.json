@@ -1,0 +1,132 @@
+[
+    {
+        "sumber": "realpython.com",
+        "penulis": "Sara Brown",
+        "tanggal": "2024-07-30",
+        "judul": "Panduan Lengkap Operator Aritmatika di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "aritmatika", "pemula"],
+        "konten": "Panduan ini menjelaskan berbagai operator aritmatika di Python, termasuk penjumlahan, pengurangan, perkalian, pembagian, dan modulus. Anda akan belajar bagaimana menggunakan operator ini dalam situasi nyata.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana operator `+` digunakan ketika Anda ingin menggabungkan dua teks?",
+                "answer": "Operator `+` digunakan untuk menggabungkan dua string menjadi satu string panjang. Misalnya, `'Hello' + ' World!'` menghasilkan `'Hello World!'`."
+            },
+            {
+                "question": "Apa hasil dari `7 - 2`?",
+                "answer": "Hasil dari `7 - 2` adalah `5`."
+            },
+            {
+                "question": "Apa fungsi operator `*` dalam operasi aritmatika?",
+                "answer": "Operator `*` digunakan untuk mengalikan dua angka, sehingga menghasilkan hasil perkalian dari kedua angka tersebut."
+            },
+            {
+                "question": "Apa hasil dari `24 / 8`?",
+                "question_code": "hasil = 24 / 8",
+                "answer": "Operator `/` digunakan untuk membagi dua angka dan memberikan hasil dalam bentuk pecahan.",
+                "answer_code": "hasil = 24 / 8\n# Hasilnya adalah 3.0"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator modulus `%` untuk menemukan sisa pembagian?",
+                "question_code": "sisa = 25 % 7",
+                "answer": "Operator `%` memberikan sisa dari pembagian dua angka.",
+                "answer_code": "sisa = 25 % 7\n# Hasilnya adalah 4"
+            },
+            {
+                "question": "Apa hasil dari `20 - 4 * 3`?",
+                "question_code": "hasil = 20 - 4 * 3",
+                "answer": "Hasil dari `20 - 4 * 3` adalah `8`, karena perkalian dilakukan terlebih dahulu sebelum pengurangan.",
+                "answer_code": "hasil = 20 - 4 * 3\n# Hasilnya adalah 8"
+            },
+            {
+                "question": "Apa perbedaan antara `*` dan `/`?",
+                "question_code": "x = 9 * 3\ny = 9 / 3",
+                "answer": "Operator `*` digunakan untuk perkalian, sedangkan `/` digunakan untuk pembagian. `*` memberikan hasil perkalian, sedangkan `/` memberikan hasil pembagian dalam bentuk pecahan.",
+                "answer_code": "x = 9 * 3\n# Hasilnya adalah 27\ny = 9 / 3\n# Hasilnya adalah 3.0"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string dengan `+`?",
+                "question_code": "text = 'Happy' + ' Birthday!'",
+                "answer": "Operator `+` menggabungkan dua string menjadi satu string yang panjangnya adalah jumlah dari kedua string tersebut.",
+                "answer_code": "text = 'Happy' + ' Birthday!'\n# Hasilnya adalah 'Happy Birthday!'"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda membagi angka dengan nol?",
+                "question_code": "hasil = 10 / 0",
+                "answer": "Pembagian dengan nol menghasilkan error `ZeroDivisionError` karena pembagian dengan nol tidak diperbolehkan.",
+                "answer_code": "try:\n    hasil = 10 / 0\nexcept ZeroDivisionError:\n    print('Error: Tidak bisa membagi dengan nol!')"
+            },
+            {
+                "question": "Bagaimana cara menghitung sisa dari pembagian menggunakan `%`?",
+                "question_code": "sisa = 19 % 8",
+                "answer": "Gunakan operator `%` untuk mendapatkan sisa dari pembagian dua angka.",
+                "answer_code": "sisa = 19 % 8\n# Hasilnya adalah 3"
+            }
+        ]
+    },
+    {
+        "sumber": "w3schools.com",
+        "penulis": "David Wilson",
+        "tanggal": "2024-07-30",
+        "judul": "Dasar-Dasar Operator Aritmatika di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "aritmatika", "pemula"],
+        "konten": "Artikel ini membahas dasar-dasar operator aritmatika dalam Python, termasuk cara kerja penjumlahan, pengurangan, perkalian, pembagian, dan modulus serta contoh penggunaan dalam kode.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dilakukan operator `+` ketika digunakan dengan dua string?",
+                "answer": "Operator `+` menggabungkan dua string menjadi satu string panjang, seperti `'Python' + ' Rocks!'` yang menghasilkan `'Python Rocks!'`."
+            },
+            {
+                "question": "Apa hasil dari `14 - 5`?",
+                "answer": "Hasil dari `14 - 5` adalah `9`."
+            },
+            {
+                "question": "Apa fungsi dari operator `*` di Python?",
+                "answer": "Operator `*` digunakan untuk mengalikan dua angka dan menghasilkan hasil perkalian dari kedua angka tersebut."
+            },
+            {
+                "question": "Apa hasil dari `36 / 6`?",
+                "question_code": "hasil = 36 / 6",
+                "answer": "Operator `/` membagi dua angka dan memberikan hasil dalam bentuk pecahan.",
+                "answer_code": "hasil = 36 / 6\n# Hasilnya adalah 6.0"
+            },
+            {
+                "question": "Bagaimana menggunakan operator modulus `%` untuk menghitung sisa pembagian?",
+                "question_code": "sisa = 22 % 5",
+                "answer": "Operator `%` digunakan untuk menghitung sisa dari pembagian dua angka.",
+                "answer_code": "sisa = 22 % 5\n# Hasilnya adalah 2"
+            },
+            {
+                "question": "Apa hasil dari `18 + 9 / 3`?",
+                "question_code": "hasil = 18 + 9 / 3",
+                "answer": "Hasil dari `18 + 9 / 3` adalah `21.0`, karena pembagian dilakukan sebelum penjumlahan.",
+                "answer_code": "hasil = 18 + 9 / 3\n# Hasilnya adalah 21.0"
+            },
+            {
+                "question": "Apa perbedaan antara `*` dan `/` dalam Python?",
+                "question_code": "a = 5 * 4\nb = 5 / 4",
+                "answer": "Operator `*` digunakan untuk perkalian, sementara `/` digunakan untuk pembagian. `*` memberikan hasil perkalian, sedangkan `/` memberikan hasil pecahan.",
+                "answer_code": "a = 5 * 4\n# Hasilnya adalah 20\nb = 5 / 4\n# Hasilnya adalah 1.25"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua teks dengan operator `+`?",
+                "question_code": "text = 'Welcome' + ' Home!'",
+                "answer": "Operator `+` menggabungkan dua string menjadi satu string yang panjangnya adalah jumlah dari kedua string.",
+                "answer_code": "text = 'Welcome' + ' Home!'\n# Hasilnya adalah 'Welcome Home!'"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba membagi angka dengan nol?",
+                "question_code": "hasil = 7 / 0",
+                "answer": "Pembagian dengan nol menyebabkan error `ZeroDivisionError`. Pembagian dengan nol tidak dapat dilakukan dalam Python.",
+                "answer_code": "try:\n    hasil = 7 / 0\nexcept ZeroDivisionError:\n    print('Error: Pembagian dengan nol tidak valid!')"
+            },
+            {
+                "question": "Bagaimana menghitung sisa pembagian menggunakan operator `%`?",
+                "question_code": "sisa = 30 % 13",
+                "answer": "Gunakan operator `%` untuk menghitung sisa dari pembagian dua angka.",
+                "answer_code": "sisa = 30 % 13\n# Hasilnya adalah 4"
+            }
+        ]
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "Advanced Python Programming",
+        "penulis": "Alex Martin",
+        "tanggal": "2024-08-30",
+        "judul": "Pemahaman Indeks Negatif dalam List Python: Studi Kasus dan Contoh",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Negative Indexing"],
+        "konten": "Artikel ini memberikan pemahaman mendalam tentang penggunaan indeks negatif dalam list Python. Pembaca akan belajar melalui berbagai studi kasus dan contoh praktis.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari mengakses elemen dengan indeks -2 pada list yang hanya berisi dua elemen?",
+                "answer": "Jika list hanya memiliki dua elemen, mengakses indeks -2 akan mengembalikan elemen pertama dari list. Indeks -2 mengacu pada elemen kedua dari akhir list."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen ketiga dari akhir dalam list yang memiliki 6 elemen?",
+                "answer": "Untuk mengakses elemen ketiga dari akhir, gunakan indeks -3. Ini akan mengembalikan elemen yang berada di posisi ketiga dari akhir list."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan indeks -1 pada list kosong?",
+                "answer": "Menggunakan indeks -1 pada list kosong akan menghasilkan 'IndexError' karena tidak ada elemen yang dapat diakses dalam list kosong."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "data = ['apple', 'banana', 'cherry']\nprint(data[-4])",
+                "answer": "Error ini terjadi karena indeks -4 melebihi rentang list yang hanya memiliki tiga elemen. Gunakan indeks -3 atau lebih besar, sesuai dengan panjang list.",
+                "answer_code": "data = ['apple', 'banana', 'cherry']\nprint(data[-3])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not str', saya tidak paham?",
+                "question_code": "my_list = [10, 20, 30]\nprint(my_list['-2'])",
+                "answer": "Error ini terjadi karena indeks harus berupa integer, bukan string. Indeks dalam list harus berupa integer untuk mengakses elemen.",
+                "answer_code": "my_list = [10, 20, 30]\nprint(my_list[-2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object is not callable', saya tidak paham?",
+                "question_code": "items = [1, 2, 3]\nprint(items(-1))",
+                "answer": "Error ini terjadi karena Anda mencoba menggunakan tanda kurung untuk mengakses elemen list. Gunakan tanda kurung siku untuk indexing.",
+                "answer_code": "items = [1, 2, 3]\nprint(items[-1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not float', saya tidak paham?",
+                "question_code": "numbers = [4, 5, 6]\nprint(numbers[-2.5])",
+                "answer": "Error ini terjadi karena indeks float tidak diperbolehkan. Gunakan integer sebagai indeks untuk mengakses elemen dalam list.",
+                "answer_code": "numbers = [4, 5, 6]\nprint(numbers[-2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'sort_by'', saya tidak paham?",
+                "question_code": "my_list = [5, 3, 1]\nmy_list.sort_by(-1)",
+                "answer": "Error ini terjadi karena method 'sort_by' tidak ada pada objek list. Gunakan method 'sort' untuk mengurutkan elemen dalam list.",
+                "answer_code": "my_list = [5, 3, 1]\nmy_list.sort()"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: string index out of range', saya tidak paham?",
+                "question_code": "text = 'hello'\nprint(text[-6])",
+                "answer": "Error ini terjadi karena indeks -6 berada di luar rentang string yang hanya memiliki lima karakter. Gunakan indeks yang sesuai dengan panjang string.",
+                "answer_code": "text = 'hello'\nprint(text[-5])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Sophia Lee",
+        "tanggal": "2024-09-01",
+        "judul": "Menguasai Akses Elemen dengan Indeks Negatif dalam List Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Negative Indexing"],
+        "konten": "Panduan ini membahas cara menggunakan indeks negatif untuk mengakses elemen dalam list Python. Termasuk berbagai teknik dan contoh untuk membantu memahami konsep ini.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengakses elemen keempat dari akhir dalam list dengan 8 elemen?",
+                "answer": "Untuk mengakses elemen keempat dari akhir, gunakan indeks -4. Ini akan mengembalikan elemen yang berada di posisi keempat dari akhir list."
+            },
+            {
+                "question": "Apa hasil dari mengakses elemen dengan indeks -5 pada list yang hanya memiliki empat elemen?",
+                "answer": "Jika list hanya memiliki empat elemen, mengakses indeks -5 akan menghasilkan 'IndexError' karena indeks tersebut berada di luar rentang list."
+            },
+            {
+                "question": "Bagaimana cara menghindari error saat menggunakan indeks negatif pada list dengan panjang yang dinamis?",
+                "answer": "Untuk menghindari error, pastikan indeks negatif tidak melebihi panjang list. Periksa panjang list terlebih dahulu sebelum menggunakan indeks negatif."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "animals = ['cat', 'dog', 'rabbit']\nprint(animals[-10])",
+                "answer": "Error ini terjadi karena indeks -10 melebihi rentang list yang hanya memiliki tiga elemen. Gunakan indeks yang sesuai dengan panjang list.",
+                "answer_code": "animals = ['cat', 'dog', 'rabbit']\nprint(animals[-3])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not dict', saya tidak paham?",
+                "question_code": "data = [10, 20, 30]\nprint(data[{1: 'b'}])",
+                "answer": "Error ini terjadi karena indeks harus berupa integer, bukan dictionary. Gunakan integer untuk mengakses elemen dalam list.",
+                "answer_code": "data = [10, 20, 30]\nprint(data[-1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'NoneType' object is not subscriptable', saya tidak paham?",
+                "question_code": "result = None\nprint(result[-1])",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses indeks pada objek None, yang tidak mendukung indexing. Pastikan objek yang diindeks adalah list atau tipe data yang mendukung indexing.",
+                "answer_code": "result = [10, 20, 30]\nprint(result[-1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'add'', saya tidak paham?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.add(-1)",
+                "answer": "Error ini terjadi karena method 'add' tidak ada pada objek list. Gunakan method 'append' untuk menambahkan elemen ke dalam list.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.append(-1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: tuple index out of range', saya tidak paham?",
+                "question_code": "my_tuple = (5, 10)\nprint(my_tuple[-3])",
+                "answer": "Error ini terjadi karena indeks -3 berada di luar rentang tuple yang hanya memiliki dua elemen. Gunakan indeks yang sesuai dengan panjang tuple.",
+                "answer_code": "my_tuple = (5, 10)\nprint(my_tuple[-2])"
+            }
+        ]
+    }
+]

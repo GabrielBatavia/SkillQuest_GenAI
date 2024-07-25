@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python List Operations",
+        "penulis": "Sarah Mitchell",
+        "tanggal": "2024-11-01",
+        "judul": "Menggabungkan Dua List dengan `extend()` dan Operator `+`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "extend", "Operator", "Pemula"],
+        "konten": "Panduan ini membahas bagaimana menggabungkan dua list di Python menggunakan method `extend()` untuk menambahkan elemen dari list lain ke dalam list yang ada, dan operator `+` untuk menggabungkan dua list menjadi satu. Penjelasan mencakup cara menggunakan kedua metode ini dengan contoh praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen dari list `list2` ke dalam list `list1` menggunakan `extend()`?",
+                "answer": "Untuk menambahkan semua elemen dari list `list2` ke dalam list `list1` menggunakan `extend()`, gunakan kode berikut: `list1.extend(list2)`. Ini akan menambahkan setiap elemen dari `list2` ke `list1`, mengubah `list1` menjadi gabungan dari kedua list tersebut."
+            },
+            {
+                "question": "Apa perbedaan utama antara menggunakan `extend()` dan operator `+` untuk menggabungkan list?",
+                "answer": "Perbedaan utama adalah bahwa `extend()` mengubah list yang ada dengan menambahkan elemen dari list lain, sedangkan operator `+` menghasilkan list baru yang berisi elemen dari kedua list tanpa mengubah list yang ada."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[5, 6]` dengan list `[7, 8]` menggunakan operator `+`?",
+                "answer": "Untuk menggabungkan list `[5, 6]` dengan list `[7, 8]` menggunakan operator `+`, gunakan kode berikut: `combined_list = [5, 6] + [7, 8]`. Ini akan menghasilkan list baru `[5, 6, 7, 8]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'extend_to'', saya tidak paham?",
+                "question_code": "list1 = [10, 20]\nlist1.extend_to([30, 40])",
+                "answer": "Error ini terjadi karena method `extend_to()` tidak ada pada list. Gunakan method `extend()` untuk menambahkan elemen dari list lain ke dalam list yang ada.",
+                "answer_code": "list1 = [10, 20]\nlist1.extend([30, 40])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'str') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + 'hello'",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Untuk menambahkan string ke list, konversikan string tersebut menjadi list terlebih dahulu.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + list('hello')"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'tuple') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + (3, 4)",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Gunakan `list()` untuk mengonversi tuple menjadi list sebelum penggabungan.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + list((3, 4))"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'int') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + 10",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Pastikan untuk mengonversi tipe data lain menjadi list sebelum penggabungan.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + [10]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object cannot be interpreted as an integer', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\nlist1.extend(3)",
+                "answer": "Error ini terjadi karena `extend()` hanya menerima satu argumen yang merupakan iterable. Jika Anda ingin menambahkan elemen ke list, pastikan untuk memberikan list atau iterable lainnya.",
+                "answer_code": "list1 = [1, 2]\nlist1.extend([3])"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'extend_items'', saya tidak paham?",
+                "question_code": "list1 = [10, 20]\nlist1.extend_items([30, 40])",
+                "answer": "Error ini terjadi karena method `extend_items()` tidak ada pada list. Gunakan method `extend()` dengan satu argumen berupa iterable untuk menambahkan elemen dari list lain ke list yang ada.",
+                "answer_code": "list1 = [10, 20]\nlist1.extend([30, 40])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Basics",
+        "penulis": "Michael Adams",
+        "tanggal": "2024-11-02",
+        "judul": "Penggunaan `extend()` dan Operator `+` untuk Menggabungkan List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "extend", "Operator", "Pemula"],
+        "konten": "Artikel ini memberikan penjelasan mendalam tentang bagaimana menggabungkan list di Python menggunakan method `extend()` dan operator `+`. Anda akan belajar perbedaan antara kedua metode dan bagaimana masing-masing dapat digunakan untuk mencapai hasil yang diinginkan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen dari list `list_b` ke dalam list `list_a` menggunakan `extend()`?",
+                "answer": "Untuk menambahkan semua elemen dari list `list_b` ke dalam list `list_a` menggunakan `extend()`, gunakan kode berikut: `list_a.extend(list_b)`. Ini akan menambahkan setiap elemen dari `list_b` ke `list_a`."
+            },
+            {
+                "question": "Apa keuntungan dari menggunakan `extend()` dibandingkan dengan operator `+` untuk menggabungkan list?",
+                "answer": "Keuntungan utama dari `extend()` adalah bahwa ia mengubah list yang ada dengan menambahkan elemen dari list lain, sementara operator `+` menghasilkan list baru tanpa mengubah list yang ada."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[9, 10]` dengan list `[11, 12]` menggunakan operator `+`?",
+                "answer": "Untuk menggabungkan list `[9, 10]` dengan list `[11, 12]` menggunakan operator `+`, gunakan kode berikut: `combined_list = [9, 10] + [11, 12]`. Ini akan menghasilkan list baru `[9, 10, 11, 12]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'bool') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + True",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Untuk menggabungkan tipe data lain dengan list, konversikan tipe data tersebut menjadi list.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + [True]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'dict') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + {'key': 'value'}",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Untuk menambahkan dictionary ke list, konversikan dictionary menjadi list terlebih dahulu.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + [dict(key='value')]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'NoneType') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + None",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Pastikan tipe data yang akan digabungkan adalah list.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + [None]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object cannot be interpreted as an integer', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\nlist1.extend(5)",
+                "answer": "Error ini terjadi karena `extend()` hanya menerima iterable sebagai argumen. Untuk menambahkan elemen ke list, pastikan untuk memberikan list atau iterable lainnya.",
+                "answer_code": "list1 = [1, 2]\nlist1.extend([5])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not 'float') to list', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\ncombined_list = list1 + 3.14",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Untuk menambahkan float ke list, konversikan float menjadi list terlebih dahulu.",
+                "answer_code": "list1 = [1, 2]\ncombined_list = list1 + [3.14]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object cannot be interpreted as an integer', saya tidak paham?",
+                "question_code": "list1 = [1, 2]\nlist1.extend('text')",
+                "answer": "Error ini terjadi karena `extend()` hanya menerima iterable. Jika Anda ingin menambahkan elemen dari string ke list, pastikan string diiterasi dengan benar.",
+                "answer_code": "list1 = [1, 2]\nlist1.extend(list('text'))"
+            }
+        ]
+    }
+]

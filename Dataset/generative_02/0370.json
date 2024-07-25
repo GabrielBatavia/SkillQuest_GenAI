@@ -1,0 +1,100 @@
+[
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Anna Liu",
+        "tanggal": "2024-10-10",
+        "judul": "Mastering Python Slicing Techniques",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Slicing", "Data Manipulation"],
+        "konten": "Artikel ini mengulas teknik-teknik slicing tingkat lanjut dalam Python, termasuk bagaimana melakukan manipulasi data menggunakan slicing pada list dan string.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengambil elemen dari akhir list dengan langkah negatif?",
+                "answer": "Gunakan notasi slicing dengan langkah negatif untuk mengambil elemen dari akhir list. Misalnya, `list[-1:-4:-1]` akan mengambil elemen dari akhir hingga indeks ke-4, secara terbalik."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan slicing dengan langkah lebih besar dari panjang list atau string?",
+                "answer": "Jika langkah lebih besar dari panjang list atau string, hasilnya adalah bagian yang dipilih dari awal hingga akhir list atau string. Misalnya, `list[::10]` hanya akan mengambil elemen pertama jika panjang list kurang dari 10."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dengan langkah desimal dalam slicing pada string?",
+                "answer": "Langkah desimal tidak didukung dalam slicing. Langkah harus berupa integer. Jika langkah desimal diperlukan, Anda perlu mengkonversinya ke integer terlebih dahulu atau menggunakan metode lain untuk mencapai hasil yang diinginkan."
+            },
+            {
+                "question": "Bagaimana menggunakan slicing untuk membuat salinan dari bagian tertentu dari list?",
+                "answer": "Gunakan slicing untuk membuat salinan dari bagian list yang diinginkan dengan menetapkan indeks awal dan akhir. Misalnya, `list[1:5]` membuat salinan dari elemen ke-1 hingga elemen ke-4 dari list."
+            },
+            {
+                "question": "Mengapa Anda mendapatkan error 'IndexError: string index out of range' saat melakukan slicing dengan indeks akhir yang melebihi panjang string?",
+                "question_code": "text = 'abcdefgh'\nprint(text[2:20])",
+                "answer": "Indeks akhir yang melebihi panjang string tidak menyebabkan error. Slicing hanya menghasilkan elemen yang ada dalam string. `text[2:20]` hanya mengembalikan `cdefgh`.",
+                "answer_code": "text = 'abcdefgh'\nprint(text[2:5])"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'tuple' object is not callable' saat menggunakan slicing dengan tuple dan metode non-iterable?",
+                "question_code": "t = (1, 2, 3, 4)\nprint(t(1:3))",
+                "answer": "Error ini terjadi karena tuple tidak dapat dipanggil seperti fungsi. Pastikan untuk menggunakan notasi slicing yang benar, yaitu `t[1:3]` untuk mendapatkan elemen dari indeks ke-1 hingga ke-2.",
+                "answer_code": "t = (1, 2, 3, 4)\nprint(t[1:3])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk membalikkan urutan elemen dalam list?",
+                "question_code": "data = [10, 20, 30, 40]\nprint(data[::-1])",
+                "answer": "Untuk membalikkan urutan elemen dalam list, gunakan langkah negatif dalam slicing. `data[::-1]` akan menghasilkan `[40, 30, 20, 10]`.",
+                "answer_code": "data = [10, 20, 30, 40]\nprint(data[::-1])"
+            },
+            {
+                "question": "Bagaimana cara mengakses sub-list dari list multidimensi menggunakan slicing?",
+                "question_code": "matrix = [[1, 2], [3, 4], [5, 6]]\nprint(matrix[1:3])",
+                "answer": "Gunakan slicing pada list multidimensi dengan menentukan rentang sub-list yang diinginkan. `matrix[1:3]` akan mengembalikan `[[3, 4], [5, 6]]`, yaitu elemen mulai dari indeks ke-1 hingga ke-2.",
+                "answer_code": "matrix = [[1, 2], [3, 4], [5, 6]]\nprint(matrix[1:3])"
+            }
+        ]
+    },
+    {
+        "sumber": "Advanced Python Techniques",
+        "penulis": "David Brooks",
+        "tanggal": "2024-10-12",
+        "judul": "Advanced Slicing Techniques for Data Manipulation",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Slicing", "Advanced Techniques"],
+        "konten": "Panduan ini memberikan wawasan mendalam tentang teknik slicing yang lebih kompleks dalam Python, termasuk aplikasi untuk data manipulasi pada berbagai tipe data.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengambil elemen dari awal list hingga indeks tertentu dengan langkah yang bervariasi?",
+                "answer": "Gunakan slicing dengan langkah variabel untuk mengambil elemen dari awal list hingga indeks tertentu. Misalnya, `list[:5:2]` akan mengambil elemen dari indeks 0 hingga 4 dengan langkah 2."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan slicing dengan langkah yang negatif dan langkah yang lebih besar dari panjang string?",
+                "answer": "Langkah negatif yang lebih besar dari panjang string membalikkan string dan memilih elemen dengan langkah yang ditentukan. Misalnya, `string[::-10]` akan membalikkan string dan hanya mengambil elemen pertama jika panjang string lebih pendek dari 10."
+            },
+            {
+                "question": "Bagaimana menggunakan slicing untuk mengakses setiap elemen dari list dalam urutan terbalik dengan langkah spesifik?",
+                "answer": "Gunakan slicing dengan langkah negatif untuk membalikkan urutan elemen dalam list dan menentukan langkah. Misalnya, `list[::-2]` membalikkan list dan mengambil setiap elemen kedua dari akhir."
+            },
+            {
+                "question": "Apa penyebab error 'TypeError: 'list' object is not callable' saat menggunakan slicing dengan list dan metode non-iterable?",
+                "question_code": "lst = [1, 2, 3, 4]\nprint(lst(1:3))",
+                "answer": "Error ini terjadi karena list tidak dapat dipanggil seperti fungsi. Gunakan notasi slicing yang benar, yaitu `lst[1:3]` untuk mendapatkan elemen dari indeks ke-1 hingga ke-2.",
+                "answer_code": "lst = [1, 2, 3, 4]\nprint(lst[1:3])"
+            },
+            {
+                "question": "Bagaimana cara memotong list dengan interval yang lebih besar dari panjang list dan menangani hasilnya?",
+                "question_code": "numbers = [10, 20, 30, 40]\nprint(numbers[::5])",
+                "answer": "Jika interval lebih besar dari panjang list, slicing hanya mengembalikan elemen pertama. `numbers[::5]` menghasilkan `[10]` karena panjang list kurang dari 5.",
+                "answer_code": "numbers = [10, 20, 30, 40]\nprint(numbers[::2])"
+            },
+            {
+                "question": "Mengapa Anda mendapatkan error 'TypeError: 'str' object cannot be interpreted as an integer' saat menggunakan string sebagai indeks dalam slicing?",
+                "question_code": "text = 'data'\nprint(text['0':'3'])",
+                "answer": "Error ini disebabkan oleh penggunaan string sebagai indeks. Gunakan integer sebagai indeks untuk menghindari error, seperti `text[0:3]`.",
+                "answer_code": "text = 'data'\nprint(text[0:3])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan slicing untuk mengakses elemen tertentu dari tuple yang berisi objek berbeda?",
+                "question_code": "data = (1, 'text', [3, 4])\nprint(data[1:3])",
+                "answer": "Slicing pada tuple yang berisi objek berbeda dapat dilakukan dengan memilih sub-tuple yang diinginkan. `data[1:3]` mengembalikan `('text', [3, 4])`, yaitu elemen dari indeks ke-1 hingga ke-2.",
+                "answer_code": "data = (1, 'text', [3, 4])\nprint(data[0:2])"
+            }
+        ]
+    }
+]

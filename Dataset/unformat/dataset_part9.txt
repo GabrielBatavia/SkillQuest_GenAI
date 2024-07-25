@@ -1,0 +1,139 @@
+Skenario 1: Menggabungkan String
+User: "Bagaimana cara menggabungkan dua string di Python?"
+AI: "Anda bisa menggabungkan dua string menggunakan operator +. Contohnya:
+
+python
+Copy code
+str1 = "Hello"
+str2 = "World"
+gabung = str1 + " " + str2
+
+print(gabung)  # Output: Hello World
+Kode di atas menggabungkan dua string str1 dan str2 dengan spasi di antara keduanya."
+
+Skenario 2: Menghitung Panjang String
+User: "Bagaimana cara menghitung panjang sebuah string di Python?"
+AI: "Anda bisa menggunakan fungsi bawaan len untuk menghitung panjang sebuah string. Contohnya:
+
+python
+Copy code
+teks = "Hello, world!"
+panjang = len(teks)
+
+print(panjang)  # Output: 13
+Kode di atas menghitung jumlah karakter dalam string teks."
+
+Skenario 3: Mengakses Elemen List
+User: "Bagaimana cara mengakses elemen tertentu dalam list di Python?"
+AI: "Anda bisa mengakses elemen dalam list menggunakan indeks. Contohnya:
+
+python
+Copy code
+buah = ['apel', 'pisang', 'jeruk']
+pertama = buah[0]
+terakhir = buah[-1]
+
+print(pertama)  # Output: apel
+print(terakhir)  # Output: jeruk
+Indeks 0 mengakses elemen pertama, sedangkan indeks -1 mengakses elemen terakhir dalam list."
+
+Skenario 4: Memodifikasi Elemen List
+User: "Bagaimana cara memodifikasi elemen dalam list di Python?"
+AI: "Anda bisa memodifikasi elemen dalam list dengan mengaksesnya melalui indeks. Contohnya:
+
+python
+Copy code
+buah = ['apel', 'pisang', 'jeruk']
+buah[1] = 'mangga'
+
+print(buah)  # Output: ['apel', 'mangga', 'jeruk']
+Kode di atas mengganti elemen kedua ('pisang') dengan 'mangga'."
+
+Skenario 5: Menambahkan Elemen ke List
+User: "Bagaimana cara menambahkan elemen baru ke dalam list di Python?"
+AI: "Anda bisa menambahkan elemen baru ke dalam list menggunakan metode append. Contohnya:
+
+python
+Copy code
+buah = ['apel', 'pisang', 'jeruk']
+buah.append('mangga')
+
+print(buah)  # Output: ['apel', 'pisang', 'jeruk', 'mangga']
+Metode append menambahkan elemen baru di akhir list."
+
+Skenario 6: Menghapus Elemen dari List
+User: "Bagaimana cara menghapus elemen dari list di Python?"
+AI: "Anda bisa menggunakan metode remove atau pop untuk menghapus elemen dari list. Contohnya:
+
+python
+Copy code
+buah = ['apel', 'pisang', 'jeruk']
+buah.remove('pisang')
+
+print(buah)  # Output: ['apel', 'jeruk']
+
+# Menggunakan pop
+terakhir = buah.pop()
+print(terakhir)  # Output: jeruk
+print(buah)  # Output: ['apel']
+Metode remove menghapus elemen berdasarkan nilainya, sedangkan pop menghapus elemen terakhir dan mengembalikannya."
+
+Skenario 7: Menyortir List
+User: "Bagaimana cara menyortir list di Python?"
+AI: "Anda bisa menggunakan metode sort atau fungsi sorted untuk menyortir list. Contohnya:
+
+python
+Copy code
+angka = [5, 3, 8, 1, 2]
+angka.sort()
+
+print(angka)  # Output: [1, 2, 3, 5, 8]
+
+# Menggunakan sorted
+angka_baru = [5, 3, 8, 1, 2]
+sorted_angka = sorted(angka_baru)
+
+print(sorted_angka)  # Output: [1, 2, 3, 5, 8]
+Metode sort menyortir list di tempat, sedangkan sorted mengembalikan list yang baru yang sudah disortir."
+
+Skenario 8: Dictionary dengan Loop
+User: "Bagaimana cara mengiterasi melalui dictionary di Python?"
+AI: "Anda bisa menggunakan loop untuk mengiterasi melalui pasangan kunci-nilai dalam dictionary. Contohnya:
+
+python
+Copy code
+mahasiswa = {
+    'nama': 'Alice',
+    'umur': 23,
+    'jurusan': 'Informatika'
+}
+
+for kunci, nilai in mahasiswa.items():
+    print(f"{kunci}: {nilai}")
+Metode items mengembalikan pasangan kunci-nilai yang dapat diiterasi."
+
+Skenario 9: Menggunakan zip untuk Menggabungkan List
+User: "Bagaimana cara menggabungkan dua list menjadi satu menggunakan zip di Python?"
+AI: "Fungsi zip digunakan untuk menggabungkan dua list menjadi satu iterator dari tuple. Contohnya:
+
+python
+Copy code
+nama = ['Alice', 'Bob', 'Charlie']
+umur = [23, 24, 22]
+
+gabungan = zip(nama, umur)
+for n, u in gabungan:
+    print(f"Nama: {n}, Umur: {u}")
+Fungsi zip menggabungkan elemen dari kedua list berdasarkan indeks mereka."
+
+Skenario 10: List Slicing
+User: "Bagaimana cara melakukan slicing pada list di Python?"
+AI: "Anda bisa melakukan slicing pada list untuk mengambil sebagian elemen. Contohnya:
+
+python
+Copy code
+angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+subset = angka[2:7]
+
+print(subset)  # Output: [3, 4, 5, 6, 7]
+Slicing angka[2:7] mengambil elemen dari indeks 2 hingga 6."

@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "pythonpemula.com",
+        "penulis": "Teguh Saputra",
+        "tanggal": "2023-09-12",
+        "judul": "Penggunaan Tipe Data String di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan tipe data string di Python, termasuk cara membuat, mengakses, dan memanipulasi string.",
+        "pertanyaan": [
+            {
+                "question": "String di Python itu apa ya?",
+                "answer": "String adalah tipe data yang digunakan untuk menyimpan teks. String di Python ditulis di dalam tanda kutip tunggal (' ') atau ganda (\" \")."
+            },
+            {
+                "question": "Bagaimana cara buat string di Python?",
+                "answer": "Anda bisa membuat string dengan menempatkan teks di dalam tanda kutip tunggal atau ganda. Contohnya: `my_string = 'Hello, World!'` atau `my_string = \"Hello, World!\"`."
+            },
+            {
+                "question": "Gimana caranya akses karakter dalam string?",
+                "question_code": "kata = 'Python'\nkarakter_pertama = kata[0]",
+                "answer": "Anda bisa mengakses karakter dalam string dengan menggunakan indeks. Indeks dimulai dari 0. Contohnya: `karakter_pertama = kata[0]`.",
+                "answer_code": "kata = 'Python'\nkarakter_pertama = kata[0]"
+            },
+            {
+                "question": "Bagaimana caranya ambil sebagian dari string?",
+                "question_code": "teks = 'Hello, World!'\nsub_teks = teks[7:12]",
+                "answer": "Anda bisa mengambil substring dengan menggunakan notasi slicing. Contohnya: `sub_teks = teks[7:12]`.",
+                "answer_code": "teks = 'Hello, World!'\nsub_teks = teks[7:12]"
+            },
+            {
+                "question": "Gimana caranya gabungkan dua string?",
+                "question_code": "salam = 'Hi'\nnama = 'Alice'\ngabungan = salam + ', ' + nama",
+                "answer": "Anda bisa menggabungkan dua string dengan menggunakan operator `+`. Contohnya: `gabungan = salam + ', ' + nama`.",
+                "answer_code": "salam = 'Hi'\nnama = 'Alice'\ngabungan = salam + ', ' + nama"
+            },
+            {
+                "question": "Bagaimana cara mengulang string beberapa kali?",
+                "question_code": "ucapan = 'Hore! '\nulangi_ucapan = ucapan * 4",
+                "answer": "Anda bisa mengulang string beberapa kali dengan menggunakan operator `*`. Contohnya: `ulangi_ucapan = ucapan * 4`.",
+                "answer_code": "ucapan = 'Hore! '\nulangi_ucapan = ucapan * 4"
+            },
+            {
+                "question": "Gimana cek apakah ada kata di dalam string?",
+                "question_code": "'Python' in teks",
+                "answer": "Anda bisa memeriksa apakah substring ada dalam string dengan menggunakan operator `in`. Contohnya: `'Python' in teks`.",
+                "answer_code": "'Python' in teks"
+            },
+            {
+                "question": "Bagaimana cara ganti kata dalam string?",
+                "question_code": "teks = 'Hello, World!'\nteks_baru = teks.replace('World', 'Everyone')",
+                "answer": "Anda bisa mengganti substring dalam string dengan menggunakan metode `replace()`. Contohnya: `teks_baru = teks.replace('World', 'Everyone')`.",
+                "answer_code": "teks = 'Hello, World!'\nteks_baru = teks.replace('World', 'Everyone')"
+            },
+            {
+                "question": "Bagaimana cara pisahkan string jadi list?",
+                "question_code": "kalimat = 'Halo dunia'\nkata_kata = kalimat.split()",
+                "answer": "Anda bisa membagi string menjadi list dengan menggunakan metode `split()`. Contohnya: `kata_kata = kalimat.split()`.",
+                "answer_code": "kalimat = 'Halo dunia'\nkata_kata = kalimat.split()"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpythonpemula.net",
+        "penulis": "Ayu Lestari",
+        "tanggal": "2023-11-01",
+        "judul": "Penggunaan Fungsi Built-in di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "built-in functions", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai fungsi built-in di Python seperti `len()`, `type()`, `input()`, `print()`, dan `range()`.",
+        "pertanyaan": [
+            {
+                "question": "Gimana cara pakai fungsi `len()`?",
+                "answer": "Fungsi `len()` digunakan untuk mendapatkan panjang (jumlah elemen) dari suatu objek seperti list atau string. Contohnya: `len(my_list)`."
+            },
+            {
+                "question": "Gimana cara pakai fungsi `type()`?",
+                "answer": "Fungsi `type()` digunakan untuk mengetahui tipe data dari suatu objek. Contohnya: `type(10)`."
+            },
+            {
+                "question": "Bagaimana cara ambil input dari pengguna pakai `input()`?",
+                "question_code": "nama = input('Siapa namamu? ')\nprint('Halo, ' + nama)",
+                "answer": "Fungsi `input()` digunakan untuk mengambil input dari pengguna. Contohnya: `input('Siapa namamu? ')`.",
+                "answer_code": "nama = input('Siapa namamu? ')\nprint('Halo, ' + nama)"
+            },
+            {
+                "question": "Gimana pakai `print()` di Python?",
+                "question_code": "print('Hai semuanya!')",
+                "answer": "Fungsi `print()` digunakan untuk mencetak teks atau nilai ke layar. Contohnya: `print('Hai semuanya!')`.",
+                "answer_code": "print('Hai semuanya!')"
+            },
+            {
+                "question": "Bagaimana cara pakai `range()` dalam loop?",
+                "question_code": "for angka in range(3):\n    print(angka)",
+                "answer": "Fungsi `range()` digunakan untuk menghasilkan urutan angka yang bisa digunakan dalam loop. Contohnya: `for angka in range(3): print(angka)`.",
+                "answer_code": "for angka in range(3):\n    print(angka)"
+            },
+            {
+                "question": "Bagaimana cara pakai `abs()` untuk nilai absolut?",
+                "question_code": "nilai_absolut = abs(-7)",
+                "answer": "Fungsi `abs()` digunakan untuk mendapatkan nilai absolut dari suatu angka. Contohnya: `abs(-7)`.",
+                "answer_code": "nilai_absolut = abs(-7)"
+            },
+            {
+                "question": "Gimana pakai `max()` untuk cari nilai terbesar?",
+                "question_code": "terbesar = max([10, 20, 30])",
+                "answer": "Fungsi `max()` digunakan untuk mendapatkan nilai terbesar dari suatu iterable. Contohnya: `max([10, 20, 30])`.",
+                "answer_code": "terbesar = max([10, 20, 30])"
+            },
+            {
+                "question": "Bagaimana cara pakai `min()` untuk nilai terkecil?",
+                "question_code": "terkecil = min([10, 20, 30])",
+                "answer": "Fungsi `min()` digunakan untuk mendapatkan nilai terkecil dari suatu iterable. Contohnya: `min([10, 20, 30])`.",
+                "answer_code": "terkecil = min([10, 20, 30])"
+            },
+            {
+                "question": "Bagaimana cara pakai `sum()` untuk menjumlahkan elemen?",
+                "question_code": "total = sum([1, 2, 3, 4])",
+                "answer": "Fungsi `sum()` digunakan untuk menjumlahkan elemen-elemen dalam suatu iterable seperti list. Contohnya: `sum([1, 2, 3, 4])`.",
+                "answer_code": "total = sum([1, 2, 3, 4])"
+            }
+        ]
+    }
+]

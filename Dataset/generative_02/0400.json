@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Emma Davis",
+        "tanggal": "2024-11-06",
+        "judul": "Cara Menyisipkan Elemen pada Posisi Spesifik dalam List dengan Method insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Panduan ini mengajarkan cara menggunakan method insert() untuk menambahkan elemen pada posisi tertentu dalam list Python. Method ini memudahkan Anda dalam mengatur urutan elemen tanpa menghapus elemen lainnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen 'blueberry' pada posisi ketiga dalam list fruits?",
+                "answer": "Untuk menambahkan 'blueberry' pada posisi ketiga, Anda harus menggunakan indeks 2 (karena indeks dimulai dari 0). Kode berikut: fruits.insert(2, 'blueberry'). Ini akan menempatkan 'blueberry' sebelum elemen yang saat ini berada di indeks 2.",
+                "question_code": "fruits = ['apple', 'banana', 'cherry', 'date']\nfruits.insert(2, 'blueberry')",
+                "answer_code": "fruits = ['apple', 'banana', 'cherry', 'date']\nfruits.insert(2, 'blueberry')  # Output: ['apple', 'banana', 'blueberry', 'cherry', 'date']"
+            },
+            {
+                "question": "Apa hasil dari menyisipkan elemen 'kiwi' pada posisi keempat jika list memiliki panjang 3?",
+                "answer": "Menyisipkan elemen pada posisi keempat di list yang panjangnya 3 akan menambahkan elemen di akhir list, karena indeks keempat berada di luar jangkauan. Gunakan indeks len(list) untuk menambahkan elemen di akhir.",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.insert(4, 'kiwi')",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.insert(4, 'kiwi')  # Output: [1, 2, 3, 'kiwi']"
+            },
+            {
+                "question": "Bagaimana cara menambahkan 'grape' pada posisi kedua jika list sudah memiliki elemen sebelumnya?",
+                "answer": "Untuk menyisipkan 'grape' pada posisi kedua, Anda harus menggunakan indeks 1. Kode berikut: fruits.insert(1, 'grape'). Ini akan menempatkan 'grape' setelah elemen pertama dan sebelum elemen yang ada di indeks 1.",
+                "question_code": "fruits = ['apple', 'orange', 'banana']\nfruits.insert(1, 'grape')",
+                "answer_code": "fruits = ['apple', 'orange', 'banana']\nfruits.insert(1, 'grape')  # Output: ['apple', 'grape', 'orange', 'banana']"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menyisipkan elemen pada indeks negatif di list?",
+                "answer": "Indeks negatif menghitung dari akhir list. Menyisipkan elemen pada indeks -1 akan menempatkan elemen tersebut sebelum elemen terakhir, dan -2 sebelum elemen kedua dari akhir, dan seterusnya.",
+                "question_code": "colors = ['red', 'green', 'blue']\ncolors.insert(-2, 'yellow')",
+                "answer_code": "colors = ['red', 'green', 'blue']\ncolors.insert(-2, 'yellow')  # Output: ['red', 'yellow', 'green', 'blue']"
+            },
+            {
+                "question": "Kenapa Anda mungkin mendapatkan error jika mencoba menyisipkan elemen di tuple menggunakan method insert()?",
+                "answer": "Tuple tidak dapat diubah (immutable) dan tidak memiliki method insert(). Untuk menambahkan elemen, Anda perlu mengonversi tuple menjadi list, melakukan penyisipan, dan jika perlu, mengonversi kembali menjadi tuple.",
+                "question_code": "my_tuple = (1, 2, 3)\nmy_list = list(my_tuple)\nmy_list.insert(1, 4)\nmy_tuple = tuple(my_list)",
+                "answer_code": "my_tuple = (1, 2, 3)\nmy_list = list(my_tuple)\nmy_list.insert(1, 4)\nmy_tuple = tuple(my_list)  # Output: (1, 4, 2, 3)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming for Beginners",
+        "penulis": "James Wilson",
+        "tanggal": "2024-11-06",
+        "judul": "Memahami Insert() Method untuk Menyisipkan Elemen pada Posisi Tertentu dalam List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Artikel ini membahas cara menggunakan method insert() untuk menyisipkan elemen pada posisi tertentu dalam list. Ini berguna untuk menambah elemen baru di tempat yang diinginkan tanpa mempengaruhi elemen yang sudah ada.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda dapat menyisipkan elemen 'melon' pada posisi kedua dalam list fruits?",
+                "answer": "Gunakan kode: fruits.insert(1, 'melon'). Ini akan menambahkan 'melon' pada posisi kedua dan menggeser elemen lainnya ke belakang.",
+                "question_code": "fruits = ['apple', 'banana', 'cherry']\nfruits.insert(1, 'melon')",
+                "answer_code": "fruits = ['apple', 'banana', 'cherry']\nfruits.insert(1, 'melon')  # Output: ['apple', 'melon', 'banana', 'cherry']"
+            },
+            {
+                "question": "Apa hasilnya jika Anda menyisipkan elemen 'mango' pada indeks 0 dalam list vegetables?",
+                "answer": "Menyisipkan elemen pada indeks 0 akan menempatkan elemen sebagai elemen pertama dalam list. Elemen lainnya akan bergeser satu posisi ke belakang.",
+                "question_code": "vegetables = ['carrot', 'spinach']\nvegetables.insert(0, 'mango')",
+                "answer_code": "vegetables = ['carrot', 'spinach']\nvegetables.insert(0, 'mango')  # Output: ['mango', 'carrot', 'spinach']"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen 'beet' di akhir list jika Anda tidak tahu panjang list?",
+                "answer": "Gunakan indeks len(list) untuk menambahkan elemen di akhir. Kode berikut: list_name.insert(len(list_name), 'beet') akan menambahkan 'beet' pada akhir list.",
+                "question_code": "items = ['a', 'b', 'c']\nitems.insert(len(items), 'beet')",
+                "answer_code": "items = ['a', 'b', 'c']\nitems.insert(len(items), 'beet')  # Output: ['a', 'b', 'c', 'beet']"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menyisipkan elemen pada posisi negatif yang lebih besar dari panjang list?",
+                "answer": "Indeks negatif yang lebih besar dari panjang list akan dihitung dari akhir list. Jika terlalu besar, indeks tersebut setara dengan 0 atau menambahkan elemen di awal list.",
+                "question_code": "numbers = [10, 20, 30]\nnumbers.insert(-5, 40)",
+                "answer_code": "numbers = [10, 20, 30]\nnumbers.insert(0, 40)  # Output: [40, 10, 20, 30]"
+            },
+            {
+                "question": "Kenapa method insert() bisa menimbulkan masalah performa pada list yang sangat besar?",
+                "answer": "Method insert() pada list yang sangat besar dapat menyebabkan masalah performa karena operasi ini memerlukan pergeseran elemen lainnya untuk mengakomodasi elemen baru. Ini mempengaruhi efisiensi terutama jika sering digunakan pada list besar.",
+                "question_code": "large_list = list(range(10000))\nlarge_list.insert(5000, 'new_item')",
+                "answer_code": "large_list = list(range(10000))\nlarge_list.insert(5000, 'new_item')  # Output: List with 'new_item' inserted at position 5000"
+            }
+        ]
+    }
+]

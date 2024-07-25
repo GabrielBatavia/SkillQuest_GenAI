@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-25",
+        "judul": "Deklarasi List Kosong di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Empty List"],
+        "konten": "Artikel ini menjelaskan cara mendeklarasikan list kosong di Python serta contoh penggunaan list kosong dalam berbagai situasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list kosong di Python dan bagaimana cara mendeklarasikannya?",
+                "answer": "List kosong di Python adalah list yang tidak memiliki elemen di dalamnya. Anda bisa mendeklarasikannya dengan tanda kurung siku kosong. Contoh: empty_list = []"
+            },
+            {
+                "question": "Mengapa penting untuk mendeklarasikan list kosong dalam pemrograman Python?",
+                "answer": "Mendeklarasikan list kosong sering kali diperlukan ketika Anda ingin membuat list yang akan diisi dengan elemen-elemen nanti, biasanya dalam loop atau setelah menerima input dari pengguna."
+            },
+            {
+                "question": "Bagaimana cara mengisi list kosong dengan elemen baru di Python?",
+                "answer": "Anda bisa menggunakan metode append() untuk menambahkan elemen ke dalam list kosong. Contoh: empty_list.append(1) akan menambahkan angka 1 ke dalam empty_list."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'NoneType' object has no attribute 'append'', saya tidak paham?",
+                "question_code": "empty_list = None\nempty_list.append(1)",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan bahwa variabel yang digunakan adalah list, bukan NoneType. Deklarasikan list kosong dengan benar sebelum menggunakan metode append().",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not callable', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.append = 1",
+                "answer": "Kamu bisa mengatasi error ini dengan tidak menggunakan nama metode sebagai variabel. Pastikan untuk tidak menimpa metode append() dengan nilai lain.",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'NameError: name 'empty_list' is not defined', saya tidak paham?",
+                "question_code": "empty_list.append(1)",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan bahwa list sudah dideklarasikan sebelum digunakan. Deklarasikan list kosong terlebih dahulu.",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.append(1",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan semua tanda kurung dibuka dan ditutup dengan benar. Periksa tanda kurung yang hilang.",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'append'', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.add(1)",
+                "answer": "Kamu bisa mengatasi error ini dengan menggunakan metode append() yang benar untuk menambahkan elemen ke dalam list. Metode add() tidak ada dalam list.",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not \"int\") to list', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list = empty_list + 1",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan hanya menggabungkan list dengan list lain. Gunakan metode append() jika ingin menambahkan elemen tunggal.",
+                "answer_code": "empty_list = []\nempty_list.append(1)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Guru",
+        "penulis": "Jane Doe",
+        "tanggal": "2024-07-26",
+        "judul": "Memahami Deklarasi List Kosong di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Empty List"],
+        "konten": "Panduan ini memberikan penjelasan tentang cara mendeklarasikan list kosong di Python dan beberapa praktik terbaik dalam penggunaannya.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list kosong di Python dan bagaimana cara mendeklarasikannya dengan benar?",
+                "answer": "List kosong di Python adalah list yang tidak memiliki elemen. Anda dapat mendeklarasikannya dengan menggunakan tanda kurung siku kosong seperti ini: empty_list = []"
+            },
+            {
+                "question": "Mengapa penting untuk mengetahui cara mendeklarasikan list kosong di Python?",
+                "answer": "Mengetahui cara mendeklarasikan list kosong penting karena sering kali kita perlu membuat list yang akan diisi dengan data secara dinamis selama eksekusi program."
+            },
+            {
+                "question": "Bagaimana cara mengisi list kosong dengan elemen-elemen baru di Python?",
+                "answer": "Untuk mengisi list kosong dengan elemen-elemen baru, Anda dapat menggunakan metode append(). Contoh: empty_list.append('new item') akan menambahkan 'new item' ke dalam empty_list."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'NoneType' object has no attribute 'append'', saya tidak paham?",
+                "question_code": "empty_list = None\nempty_list.append('item')",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan variabel yang digunakan adalah list, bukan NoneType. Deklarasikan list kosong dengan benar sebelum menggunakan metode append().",
+                "answer_code": "empty_list = []\nempty_list.append('item')"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not callable', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.append = 2",
+                "answer": "Kamu bisa mengatasi error ini dengan tidak menggunakan nama metode sebagai variabel. Pastikan untuk tidak menimpa metode append() dengan nilai lain.",
+                "answer_code": "empty_list = []\nempty_list.append(2)"
+            },
+            {
+                "question": "Kenapa terjadi error 'NameError: name 'empty_list' is not defined', saya tidak paham?",
+                "question_code": "empty_list.append('data')",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan bahwa list sudah dideklarasikan sebelum digunakan. Deklarasikan list kosong terlebih dahulu.",
+                "answer_code": "empty_list = []\nempty_list.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.append('data'",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan semua tanda kurung dibuka dan ditutup dengan benar. Periksa tanda kurung yang hilang.",
+                "answer_code": "empty_list = []\nempty_list.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'append'', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list.add('data')",
+                "answer": "Kamu bisa mengatasi error ini dengan menggunakan metode append() yang benar untuk menambahkan elemen ke dalam list. Metode add() tidak ada dalam list.",
+                "answer_code": "empty_list = []\nempty_list.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not \"str\") to list', saya tidak paham?",
+                "question_code": "empty_list = []\nempty_list = empty_list + 'data'",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan hanya menggabungkan list dengan list lain. Gunakan metode append() jika ingin menambahkan elemen tunggal.",
+                "answer_code": "empty_list = []\nempty_list.append('data')"
+            }
+        ]
+    }
+]

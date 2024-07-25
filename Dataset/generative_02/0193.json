@@ -1,0 +1,130 @@
+[
+    {
+        "sumber": "belajarpython.com",
+        "penulis": "Adi Santoso",
+        "tanggal": "2023-11-10",
+        "judul": "Penggunaan Pernyataan If Else di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "if else", "kondisional", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan pernyataan if else di Python untuk membuat keputusan dalam program berdasarkan kondisi yang diberikan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if di Python?",
+                "answer": "Pernyataan if digunakan untuk menjalankan blok kode tertentu jika kondisi yang diberikan benar. Contohnya: `if x > 0: print('x adalah positif')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan else di Python?",
+                "answer": "Pernyataan else digunakan untuk menjalankan blok kode jika kondisi dalam pernyataan if salah. Contohnya: `else: print('x adalah negatif atau nol')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan elif di Python?",
+                "question_code": "x = 0\nif x > 0\nprint('x positif')\nelif x == 0\nprint('x nol')",
+                "answer": "Pernyataan elif digunakan untuk memeriksa kondisi lain jika kondisi dalam pernyataan if sebelumnya salah. Contohnya: `elif x == 0: print('x nol')`.",
+                "answer_code": "x = 0\nif x > 0:\n    print('x positif')\nelif x == 0:\n    print('x nol')\nelse:\n    print('x negatif')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if bersarang di Python?",
+                "question_code": "x = 10\nif x > 0\nif x < 20\nprint('x adalah positif dan kurang dari 20')",
+                "answer": "Anda bisa menggunakan pernyataan if bersarang dengan menempatkan satu pernyataan if di dalam pernyataan if lainnya. Contohnya: `if x > 0: if x < 20: print('x adalah positif dan kurang dari 20')`.",
+                "answer_code": "x = 10\nif x > 0:\n    if x < 20:\n        print('x adalah positif dan kurang dari 20')"
+            },
+            {
+                "question": "Bagaimana cara memeriksa kesamaan dua nilai di Python?",
+                "question_code": "a = 5\nb = 6\nif a == b\nprint('a sama dengan b')",
+                "answer": "Anda bisa memeriksa kesamaan dua nilai dengan menggunakan operator `==`. Contohnya: `if a == b: print('a sama dengan b')`.",
+                "answer_code": "a = 5\nb = 5\nif a == b:\n    print('a sama dengan b')"
+            },
+            {
+                "question": "Bagaimana cara memeriksa ketidaksamaan dua nilai di Python?",
+                "question_code": "a = 5\nb = 3\nif a !== b\nprint('a tidak sama dengan b')",
+                "answer": "Anda bisa memeriksa ketidaksamaan dua nilai dengan menggunakan operator `!=`. Contohnya: `if a != b: print('a tidak sama dengan b')`.",
+                "answer_code": "a = 5\nb = 3\nif a != b:\n    print('a tidak sama dengan b')"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah satu nilai lebih besar dari nilai lainnya di Python?",
+                "question_code": "a = 10\nb = 5\nif a > b\nprint('a lebih besar dari b')",
+                "answer": "Anda bisa memeriksa apakah satu nilai lebih besar dari nilai lainnya dengan menggunakan operator `>`. Contohnya: `if a > b: print('a lebih besar dari b')`.",
+                "answer_code": "a = 10\nb = 5\nif a > b:\n    print('a lebih besar dari b')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator logika dalam pernyataan if di Python?",
+                "question_code": "a = 10\nb = 5\nif a > 0 and b > 0\nprint('a dan b keduanya positif')",
+                "answer": "Anda bisa menggunakan operator logika seperti `and`, `or`, dan `not` dalam pernyataan if. Contohnya: `if a > 0 and b > 0: print('a dan b keduanya positif')`.",
+                "answer_code": "a = 10\nb = 5\nif a > 0 and b > 0:\n    print('a dan b keduanya positif')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if else dalam loop di Python?",
+                "question_code": "for i in range(5)\nif i % 2 == 0\nprint(i, 'genap')\nelse\nprint(i, 'ganjil')",
+                "answer": "Anda bisa menggunakan pernyataan if else dalam loop untuk memeriksa kondisi pada setiap iterasi. Contohnya: `for i in range(5): if i % 2 == 0: print(i, 'genap') else: print(i, 'ganjil')`.",
+                "answer_code": "for i in range(5):\n    if i % 2 == 0:\n        print(i, 'genap')\n    else:\n        print(i, 'ganjil')"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonindonesia.com",
+        "penulis": "Budi Hartono",
+        "tanggal": "2024-06-02",
+        "judul": "Penggunaan Fungsi Built-in di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "fungsi built-in", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai fungsi built-in di Python seperti `len()`, `type()`, `int()`, `str()`, dan `input()`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan fungsi `len()` di Python?",
+                "answer": "Fungsi `len()` digunakan untuk mendapatkan panjang (jumlah elemen) dari suatu objek seperti list atau string. Contohnya: `len(my_list)`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `type()` di Python?",
+                "answer": "Fungsi `type()` digunakan untuk mengetahui tipe data dari suatu objek. Contohnya: `type(10)`."
+            },
+            {
+                "question": "Bagaimana cara mengonversi string ke integer di Python?",
+                "question_code": "num_str = 'sepuluh'\nnum = int(num_str)",
+                "answer": "Anda bisa mengonversi string ke integer dengan menggunakan fungsi `int()`. Contohnya: `int('10')`.",
+                "answer_code": "num_str = '10'\nnum = int(num_str)"
+            },
+            {
+                "question": "Bagaimana cara mengonversi integer ke string di Python?",
+                "question_code": "num = 10\nnum_str = string(num)",
+                "answer": "Anda bisa mengonversi integer ke string dengan menggunakan fungsi `str()`. Contohnya: `str(10)`.",
+                "answer_code": "num = 10\nnum_str = str(num)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `input()` di Python?",
+                "question_code": "nama = input(Masukkan nama Anda:)\nprint('Halo, ' + nama)",
+                "answer": "Fungsi `input()` digunakan untuk mengambil input dari pengguna. Contohnya: `input('Enter your name: ')`.",
+                "answer_code": "nama = input('Masukkan nama Anda: ')\nprint('Halo, ' + nama)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `print()` di Python?",
+                "question_code": "print(Hello, World!)",
+                "answer": "Fungsi `print()` digunakan untuk mencetak teks atau nilai ke layar. Contohnya: `print('Hello, World!')`.",
+                "answer_code": "print('Hello, World!')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `range()` di Python?",
+                "question_code": "for i in range(5)\nprint(i)",
+                "answer": "Fungsi `range()` digunakan untuk menghasilkan urutan angka yang bisa digunakan dalam loop. Contohnya: `range(5)`.",
+                "answer_code": "for i in range(5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `abs()` di Python?",
+                "question_code": "abs-5)",
+                "answer": "Fungsi `abs()` digunakan untuk mendapatkan nilai absolut dari suatu angka. Contohnya: `abs(-5)`.",
+                "answer_code": "abs(-5)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `max()` di Python?",
+                "question_code": "max[1, 2, 3, 4]",
+                "answer": "Fungsi `max()` digunakan untuk mendapatkan nilai terbesar dari suatu iterable. Contohnya: `max([1, 2, 3, 4])`.",
+                "answer_code": "max([1, 2, 3, 4])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `min()` di Python?",
+                "question_code": "min(1, 2, 3, 4)",
+                "answer": "Fungsi `min()` digunakan untuk mendapatkan nilai terkecil dari suatu iterable. Contohnya: `min([1, 2, 3, 4])`.",
+                "answer_code": "min([1, 2, 3, 4])"
+            }
+        ]
+    }
+]

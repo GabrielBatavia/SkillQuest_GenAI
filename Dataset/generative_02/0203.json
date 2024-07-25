@@ -1,0 +1,135 @@
+[
+    {
+        "sumber": "CodeSimplify.com",
+        "penulis": "Andre Nugroho",
+        "tanggal": "2024-07-25",
+        "judul": "Memahami List dan Dictionary di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["list", "dictionary", "python"],
+        "konten": "Artikel ini menjelaskan dasar-dasar penggunaan list dan dictionary di Python, termasuk cara membuat, mengakses, dan memodifikasi data di dalamnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list yang berisi beberapa angka?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]",
+                "answer": "Anda dapat membuat list dengan menggunakan tanda kurung siku `[]` dan memisahkan elemen dengan koma. Misalnya, `numbers = [1, 2, 3, 4, 5]`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen baru ke dalam list?",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.append(4)\nprint(numbers)",
+                "answer": "Gunakan metode `append()` untuk menambahkan elemen baru ke akhir list. Misalnya: `numbers.append(4)`.",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.append(4)\nprint(numbers)"
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen ke-3 dari list?",
+                "question_code": "numbers = [10, 20, 30, 40]\nprint(numbers[2])",
+                "answer": "Gunakan indeks untuk mengakses elemen dalam list. Indeks dimulai dari 0, jadi elemen ke-3 memiliki indeks 2. Misalnya: `print(numbers[2])`.",
+                "answer_code": "numbers = [10, 20, 30, 40]\nprint(numbers[2])"
+            },
+            {
+                "question": "Bagaimana cara membuat dictionary dengan beberapa pasangan kunci-nilai?",
+                "question_code": "person = {'name': 'Alice', 'age': 30, 'city': 'New York'}",
+                "answer": "Dictionary dibuat dengan menggunakan tanda kurung kurawal `{}` dan setiap pasangan kunci-nilai dipisahkan oleh koma. Misalnya: `person = {'name': 'Alice', 'age': 30, 'city': 'New York'}`.",
+                "answer_code": "person = {'name': 'Alice', 'age': 30, 'city': 'New York'}"
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dari dictionary menggunakan kunci?",
+                "question_code": "person = {'name': 'Alice', 'age': 30, 'city': 'New York'}\nprint(person['name'])",
+                "answer": "Gunakan kunci di dalam tanda kurung siku untuk mengakses nilai dari dictionary. Misalnya: `print(person['name'])`.",
+                "answer_code": "person = {'name': 'Alice', 'age': 30, 'city': 'New York'}\nprint(person['name'])"
+            },
+            {
+                "question": "Bagaimana cara menambahkan pasangan kunci-nilai baru ke dalam dictionary?",
+                "question_code": "person = {'name': 'Alice'}\nperson['age'] = 30\nprint(person)",
+                "answer": "Tambahkan pasangan kunci-nilai baru dengan menetapkan nilai untuk kunci yang baru. Misalnya: `person['age'] = 30`.",
+                "answer_code": "person = {'name': 'Alice'}\nperson['age'] = 30\nprint(person)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari list?",
+                "question_code": "numbers = [1, 2, 3, 4, 5]\nnumbers.remove(3)\nprint(numbers)",
+                "answer": "Gunakan metode `remove()` untuk menghapus elemen dari list berdasarkan nilainya. Misalnya: `numbers.remove(3)`.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5]\nnumbers.remove(3)\nprint(numbers)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari dictionary berdasarkan kunci?",
+                "question_code": "person = {'name': 'Alice', 'age': 30}\ndel person['age']\nprint(person)",
+                "answer": "Gunakan kata kunci `del` untuk menghapus elemen dari dictionary berdasarkan kunci. Misalnya: `del person['age']`.",
+                "answer_code": "person = {'name': 'Alice', 'age': 30}\ndel person['age']\nprint(person)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah sebuah kunci ada di dalam dictionary?",
+                "question_code": "person = {'name': 'Alice', 'age': 30}\nprint('name' in person)",
+                "answer": "Gunakan operator `in` untuk memeriksa apakah sebuah kunci ada di dalam dictionary. Misalnya: `'name' in person`.",
+                "answer_code": "person = {'name': 'Alice', 'age': 30}\nprint('name' in person)"
+            },
+            {
+                "question": "Bagaimana cara mengiterasi melalui elemen dalam list?",
+                "question_code": "numbers = [1, 2, 3, 4]\nfor number in numbers:\n    print(number)",
+                "answer": "Gunakan loop `for` untuk mengiterasi melalui elemen dalam list. Misalnya: `for number in numbers: print(number)`.",
+                "answer_code": "numbers = [1, 2, 3, 4]\nfor number in numbers:\n    print(number)"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonGuide.com",
+        "penulis": "Sari Pratama",
+        "tanggal": "2024-07-26",
+        "judul": "Pengenalan Fungsi dan Lambda di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["fungsi", "lambda", "python"],
+        "konten": "Artikel ini menjelaskan tentang bagaimana mendefinisikan dan menggunakan fungsi di Python, termasuk fungsi lambda dan aplikasi praktisnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi sederhana di Python?",
+                "question_code": "def greet(name):\n    return 'Hello ' + name\nprint(greet('Alice'))",
+                "answer": "Definisikan fungsi menggunakan kata kunci `def`, diikuti dengan nama fungsi dan parameter dalam tanda kurung. Misalnya: `def greet(name): return 'Hello ' + name`.",
+                "answer_code": "def greet(name):\n    return 'Hello ' + name\nprint(greet('Alice'))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda untuk operasi sederhana?",
+                "question_code": "add = lambda x, y: x + y\nprint(add(5, 3))",
+                "answer": "Fungsi lambda adalah fungsi anonim yang didefinisikan dengan menggunakan kata kunci `lambda`. Misalnya: `add = lambda x, y: x + y` untuk menjumlahkan dua angka.",
+                "answer_code": "add = lambda x, y: x + y\nprint(add(5, 3))"
+            },
+            {
+                "question": "Apa perbedaan antara fungsi biasa dan fungsi lambda?",
+                "answer": "Fungsi biasa didefinisikan dengan kata kunci `def` dan dapat memiliki banyak baris kode, sedangkan fungsi lambda adalah fungsi anonim yang biasanya digunakan untuk operasi sederhana dan didefinisikan dalam satu baris."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi untuk mengembalikan beberapa nilai?",
+                "question_code": "def min_max(numbers):\n    return min(numbers), max(numbers)\nprint(min_max([1, 2, 3, 4, 5]))",
+                "answer": "Fungsi dapat mengembalikan beberapa nilai dengan menggunakan tuple. Misalnya: `return min(numbers), max(numbers)`.",
+                "answer_code": "def min_max(numbers):\n    return min(numbers), max(numbers)\nprint(min_max([1, 2, 3, 4, 5]))"
+            },
+            {
+                "question": "Bagaimana cara memberikan nilai default pada parameter fungsi?",
+                "question_code": "def power(base, exp=2):\n    return base ** exp\nprint(power(4))",
+                "answer": "Nilai default untuk parameter fungsi dapat diberikan dengan menyertakannya setelah tanda `=`. Misalnya: `def power(base, exp=2)` untuk memberikan nilai default 2 pada parameter `exp`.",
+                "answer_code": "def power(base, exp=2):\n    return base ** exp\nprint(power(4))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi di dalam fungsi lain?",
+                "question_code": "def outer_function(x):\n    def inner_function(y):\n        return y + x\n    return inner_function(10)\nprint(outer_function(5))",
+                "answer": "Anda dapat mendefinisikan fungsi di dalam fungsi lain dan memanggilnya di dalam fungsi luar. Misalnya: `inner_function` didefinisikan di dalam `outer_function` dan dipanggil dengan `inner_function(10)`.",
+                "answer_code": "def outer_function(x):\n    def inner_function(y):\n        return y + x\n    return inner_function(10)\nprint(outer_function(5))"
+            },
+            {
+                "question": "Bagaimana cara menangani parameter variabel dalam fungsi?",
+                "question_code": "def concatenate(*args):\n    return ' '.join(args)\nprint(concatenate('Hello', 'World', 'from', 'Python'))",
+                "answer": "Gunakan `*args` untuk menangani jumlah parameter yang tidak tetap. Misalnya: `def concatenate(*args)` akan menangani semua argumen yang diteruskan ke fungsi.",
+                "answer_code": "def concatenate(*args):\n    return ' '.join(args)\nprint(concatenate('Hello', 'World', 'from', 'Python'))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi lambda di dalam fungsi lain?",
+                "question_code": "def apply_func(func, value):\n    return func(value)\nprint(apply_func(lambda x: x ** 2, 4))",
+                "answer": "Anda dapat meneruskan fungsi lambda sebagai argumen ke fungsi lain. Misalnya: `apply_func(lambda x: x ** 2, 4)` akan meneruskan lambda yang mengkuadratkan nilai.",
+                "answer_code": "def apply_func(func, value):\n    return func(value)\nprint(apply_func(lambda x: x ** 2, 4))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi dengan keyword arguments?",
+                "question_code": "def greet(name, message='Hello'):\n    return f'{message}, {name}'\nprint(greet('Alice', message='Hi'))",
+                "answer": "Keyword arguments dapat digunakan untuk menentukan nilai parameter dengan nama. Misalnya: `greet('Alice', message='Hi')` akan mengubah pesan default 'Hello' menjadi 'Hi'.",
+                "answer_code": "def greet(name, message='Hello'):\n    return f'{message}, {name}'\nprint(greet('Alice', message='Hi'))"
+            }
+        ]
+    }
+]

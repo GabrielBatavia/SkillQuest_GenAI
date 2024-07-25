@@ -1,0 +1,104 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Sarah Lee",
+        "tanggal": "2024-10-30",
+        "judul": "Menggunakan `append()` untuk Menambah Elemen pada List di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "append", "Beginner"],
+        "konten": "Panduan ini memperkenalkan cara menambahkan elemen ke dalam list menggunakan method `append()` di Python. Method ini memungkinkan Anda menambahkan satu elemen pada akhir list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan string 'hello' ke dalam list `my_strings` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan string 'hello' ke dalam list: `my_strings.append('hello')`. Ini akan menambahkan string 'hello' di akhir list `my_strings`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan method `append()` pada variabel bertipe integer?",
+                "answer": "Jika Anda mencoba menggunakan `append()` pada variabel bertipe integer, Python akan menghasilkan error. Method `append()` hanya berlaku untuk list."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan angka 10 ke dalam list `my_numbers` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan angka 10 ke dalam list: `my_numbers.append(10)`. Ini akan menambahkan angka 10 di akhir list `my_numbers`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'float' object has no attribute 'append'' saat menggunakan `append()` pada float?",
+                "question_code": "my_float = 3.14\nmy_float.append(2.71)",
+                "answer": "Error ini karena method `append()` tidak tersedia pada tipe data float. Method ini hanya berlaku untuk list.",
+                "answer_code": "my_list = [3.14]\nmy_list.append(2.71)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'append'' saat menggunakan `append()` pada objek yang tidak diinisialisasi sebagai list?",
+                "question_code": "my_list = None\nmy_list.append(4)",
+                "answer": "Error ini karena `my_list` diinisialisasi sebagai `None`, yang bukan tipe data list. Anda perlu memastikan `my_list` adalah objek list sebelum menggunakan `append()`.",
+                "answer_code": "my_list = []\nmy_list.append(4)"
+            },
+            {
+                "question": "Bagaimana cara menambahkan tuple `(1, 2)` ke dalam list `my_tuples` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan tuple `(1, 2)` ke dalam list: `my_tuples.append((1, 2))`. Ini akan menambahkan tuple sebagai elemen di akhir list `my_tuples`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() takes exactly one argument (2 given)' saat mencoba memberikan dua argumen?",
+                "question_code": "my_list = [1, 2]\nmy_list.append(3, 4)",
+                "answer": "Error ini terjadi karena method `append()` hanya menerima satu argumen. Untuk menambahkan beberapa elemen sekaligus, gunakan `extend()` atau tambahkan elemen satu per satu.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)\nmy_list.append(4)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'set' object has no attribute 'append'' saat menggunakan `append()` pada set?",
+                "question_code": "my_set = {1, 2}\nmy_set.append(3)",
+                "answer": "Error ini karena set tidak mendukung method `append()`. Untuk menambahkan elemen ke set, gunakan method `add()`.",
+                "answer_code": "my_set = {1, 2}\nmy_set.add(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'NoneType' object has no attribute 'append'' saat menggunakan `append()` pada None?",
+                "question_code": "my_var = None\nmy_var.append(5)",
+                "answer": "Error ini terjadi karena Anda mencoba menggunakan `append()` pada objek `None`. Pastikan objek yang Anda gunakan adalah list.",
+                "answer_code": "my_list = []\nmy_list.append(5)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Fundamentals",
+        "penulis": "John Doe",
+        "tanggal": "2024-10-31",
+        "judul": "Cara Menambahkan Elemen pada List dengan `append()`",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "append", "Beginner"],
+        "konten": "Artikel ini membahas cara menambahkan elemen baru ke dalam list dengan menggunakan method `append()` di Python, serta contoh kasus penggunaannya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan dictionary `{'name': 'John'}` ke dalam list `my_dicts` dengan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan dictionary ke dalam list: `my_dicts.append({'name': 'John'})`. Ini akan menambahkan dictionary sebagai elemen baru di akhir list `my_dicts`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan `append()` pada variabel bertipe tuple?",
+                "answer": "Jika Anda menggunakan `append()` pada variabel bertipe tuple, Python akan menghasilkan error karena method `append()` tidak ada pada tuple. Tuple adalah tipe data immutable."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan list `[5, 6]` ke dalam list `my_lists` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan list `[5, 6]` ke dalam list: `my_lists.append([5, 6])`. Ini akan menambahkan list `[5, 6]` sebagai elemen di akhir list `my_lists`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'int' object has no attribute 'append'' saat menggunakan `append()` pada integer?",
+                "question_code": "my_number = 7\nmy_number.append(8)",
+                "answer": "Error ini karena method `append()` tidak tersedia pada tipe data integer. Pastikan Anda menggunakan `append()` pada list.",
+                "answer_code": "my_list = [7]\nmy_list.append(8)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() missing 1 required positional argument: 'item'' saat tidak memberikan argumen?",
+                "question_code": "my_list = [1, 2]\nmy_list.append()",
+                "answer": "Error ini terjadi karena method `append()` memerlukan satu argumen. Anda harus memberikan elemen yang ingin ditambahkan saat menggunakan `append()`.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)"
+            },
+            {
+                "question": "Bagaimana cara menambahkan float `3.14` ke dalam list `my_floats` menggunakan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan float `3.14` ke dalam list: `my_floats.append(3.14)`. Ini akan menambahkan float `3.14` di akhir list `my_floats`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'str' object has no attribute 'append'' saat menggunakan `append()` pada string?",
+                "question_code": "my_string = 'Hello'\nmy_string.append(' World')",
+                "answer": "Error ini karena method `append()` tidak tersedia pada tipe data string. String adalah tipe data immutable. Untuk menggabungkan string, gunakan operator `+`.",
+                "answer_code": "my_string = 'Hello'\nmy_string += ' World'"
+            }
+        ]
+    }
+]

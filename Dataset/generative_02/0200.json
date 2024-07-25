@@ -1,0 +1,106 @@
+[
+    {
+        "sumber": "LearnPython.org",
+        "penulis": "Agus Setiawan",
+        "tanggal": "2024-07-31",
+        "judul": "Belajar Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "pemula", "belajar"],
+        "konten": "Tutorial ini menjelaskan langkah pertama dalam Python, termasuk mendeklarasikan variabel, tipe data, dan fungsi sederhana.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel untuk menyimpan angka bulat?",
+                "answer": "Gunakan sintaks seperti `angka = 10` untuk menyimpan angka bulat dalam variabel. Anda dapat menggunakan tipe data `int` untuk angka bulat."
+            },
+            {
+                "question": "Apa itu tipe data string dan bagaimana cara menggunakannya?",
+                "answer": "Tipe data string digunakan untuk menyimpan teks. Anda dapat membuat string dengan menggunakan tanda kutip ganda atau tunggal, seperti `nama = 'John'`."
+            },
+            {
+                "question": "Bagaimana cara menghitung hasil bagi dari dua angka?",
+                "question_code": "a = 10\nb = 2\nprint(a * b)",
+                "answer": "Untuk menghitung hasil bagi, gunakan operator `/`. Contoh yang benar adalah: `print(a / b)`.",
+                "answer_code": "a = 10\nb = 2\nprint(a / b)"
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda menggunakan variabel yang belum didefinisikan dalam `print()`?",
+                "question_code": "print(tidak_ada_variabel)",
+                "answer": "Anda akan mendapatkan error `NameError` karena `tidak_ada_variabel` belum didefinisikan. Pastikan variabel sudah dideklarasikan sebelumnya.",
+                "answer_code": "tidak_ada_variabel = 100\nprint(tidak_ada_variabel)"
+            },
+            {
+                "question": "Bagaimana cara melakukan operasi penjumlahan menggunakan Python?",
+                "question_code": "x = 5\ny = 7\nprint(x - y)",
+                "answer": "Gunakan operator `+` untuk penjumlahan. Contoh yang benar adalah: `print(x + y)`.",
+                "answer_code": "x = 5\ny = 7\nprint(x + y)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu angka lebih besar dari angka lainnya?",
+                "question_code": "a = 8\nb = 4\nif a < b:\n    print('a lebih besar dari b')",
+                "answer": "Gunakan operator `>` untuk memeriksa apakah `a` lebih besar dari `b`. Contoh yang benar adalah: `if a > b: print('a lebih besar dari b')`.",
+                "answer_code": "a = 8\nb = 4\nif a > b:\n    print('a lebih besar dari b')"
+            },
+            {
+                "question": "Bagaimana cara mencetak urutan angka dari 1 hingga 4 menggunakan loop `for`?",
+                "question_code": "for i in range(1, 4):\n    print(i + 1)",
+                "answer": "Untuk mencetak angka dari 1 hingga 4, gunakan `range(1, 5)`. Contoh yang benar adalah: `print(i)`.",
+                "answer_code": "for i in range(1, 5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop sebelum selesai?",
+                "question_code": "for i in range(5):\n    if i == 3:\n        continue\n    print(i)",
+                "answer": "Gunakan perintah `break` untuk menghentikan loop. Contoh yang benar adalah: `if i == 3: break`.",
+                "answer_code": "for i in range(5):\n    if i == 3:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi yang mengembalikan hasil perkalian dua angka?",
+                "question_code": "def kali(x, y):\n    return x + y",
+                "answer": "Untuk mengembalikan hasil perkalian, gunakan operator `*`. Contoh yang benar adalah: `return x * y`.",
+                "answer_code": "def kali(x, y):\n    return x * y"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonGuide.net",
+        "penulis": "Sari Dewi",
+        "tanggal": "2024-08-01",
+        "judul": "Mengenal Struktur Kontrol di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["python", "kontrol", "looping"],
+        "konten": "Panduan ini memberikan pemahaman tentang struktur kontrol dalam Python seperti `if`, `for`, dan `while` loops.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menulis kondisi `if` dengan beberapa syarat?",
+                "answer": "Gunakan operator logika seperti `and` atau `or` untuk menggabungkan beberapa kondisi dalam `if`. Contoh: `if a > 10 and b < 20:`."
+            },
+            {
+                "question": "Apa yang dilakukan bagian `else` pada struktur kontrol alur program?",
+                "answer": "`else` digunakan untuk menangani kasus di mana kondisi `if` tidak terpenuhi. Contoh: `else: print('Kondisi tidak sesuai')`."
+            },
+            {
+                "question": "Bagaimana cara mencetak angka dari 1 sampai 4 menggunakan loop `for`?",
+                "question_code": "for i in range(4):\n    print(i + 2)",
+                "answer": "Untuk mencetak angka dari 1 sampai 4, gunakan `range(1, 5)` tanpa penambahan angka dalam `print()`. Contoh yang benar adalah: `print(i)`.",
+                "answer_code": "for i in range(1, 5):\n    print(i)"
+            },
+            {
+                "question": "Apa yang menyebabkan error ketika menggunakan `return` di luar fungsi?",
+                "question_code": "def print_message():\n    return\nreturn 'Hello'",
+                "answer": "`return` hanya bisa digunakan dalam fungsi. Error terjadi karena `return` di luar fungsi. Pastikan `return` hanya ada di dalam fungsi.",
+                "answer_code": "def print_message():\n    return 'Hello'\nprint_message()"
+            },
+            {
+                "question": "Bagaimana cara membuat fungsi yang memeriksa apakah sebuah bilangan adalah ganjil?",
+                "question_code": "def ganjil(x):\n    if x % 2 == 0:\n        return False\n    else:\n        return True",
+                "answer": "Fungsi harus mengembalikan `True` jika bilangan ganjil dan `False` jika tidak. Contoh yang benar adalah: `if x % 2 != 0: return True`.",
+                "answer_code": "def ganjil(x):\n    if x % 2 != 0:\n        return True\n    else:\n        return False"
+            },
+            {
+                "question": "Bagaimana cara mencetak pola persegi menggunakan loop bersarang?",
+                "question_code": "for i in range(4):\n    for j in range(i):\n        print('*', end='')\n    print('')",
+                "answer": "Gunakan loop bersarang untuk mencetak pola persegi dengan jumlah baris dan kolom yang sama. Pastikan `print()` berada di luar loop baris untuk membuat baris baru.",
+                "answer_code": "for i in range(4):\n    for j in range(4):\n        print('*', end='')\n    print()"
+            }
+        ]
+    }
+]

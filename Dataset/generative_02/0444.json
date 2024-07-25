@@ -1,0 +1,92 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Jordan Smith",
+        "tanggal": "2024-12-07",
+        "judul": "Mengenal Metode `clear()` untuk Mengosongkan List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "clear()", "Pemula"],
+        "konten": "Artikel ini memberikan panduan dasar tentang bagaimana menggunakan metode `clear()` untuk mengosongkan list di Python. Contoh kode disertakan untuk membantu pemahaman.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menghapus semua elemen dari list `['apple', 'banana', 'cherry']` menggunakan metode `clear()`?",
+                "answer": "Untuk menghapus semua elemen dari list `['apple', 'banana', 'cherry']`, Anda dapat memanggil metode `clear()` dengan cara berikut: `fruits.clear()`. Setelah itu, list `fruits` akan menjadi kosong."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda memanggil metode `clear()` pada list kosong?",
+                "answer": "Jika Anda memanggil metode `clear()` pada list yang sudah kosong, tidak ada perubahan yang terjadi. List tetap kosong setelah pemanggilan metode ini."
+            },
+            {
+                "question": "Bisakah metode `clear()` digunakan pada list yang diisi dengan tipe data lain seperti angka atau objek?",
+                "answer": "Ya, metode `clear()` dapat digunakan untuk menghapus semua elemen dari list terlepas dari tipe data yang ada di dalamnya, baik itu angka, string, atau objek."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'AttributeError: 'list' object has no attribute 'delete_all'', dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = [1, 2, 3, 4]\nmy_list.delete_all()",
+                "answer": "Error ini terjadi karena metode `delete_all()` tidak ada pada list. Gunakan metode `clear()` yang benar untuk menghapus semua elemen dari list.",
+                "answer_code": "my_list = [1, 2, 3, 4]\nmy_list.clear()"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: 'list' object is not callable' saat mencoba menggunakan metode `clear` tanpa tanda kurung?",
+                "question_code": "my_list = [10, 20, 30]\nmy_list.clear",
+                "answer": "Error ini muncul karena metode `clear` dipanggil tanpa tanda kurung. Tambahkan tanda kurung setelah nama metode untuk memanggilnya dengan benar.",
+                "answer_code": "my_list = [10, 20, 30]\nmy_list.clear()"
+            },
+            {
+                "question": "Mengapa muncul error 'AttributeError: 'list' object has no attribute 'empty'', dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = ['one', 'two']\nmy_list.empty()",
+                "answer": "Error ini muncul karena metode `empty()` tidak ada untuk list. Gunakan metode `clear()` untuk menghapus semua elemen dari list.",
+                "answer_code": "my_list = ['one', 'two']\nmy_list.clear()"
+            },
+            {
+                "question": "Apa alternatif cara untuk mengosongkan list selain menggunakan metode `clear()`?",
+                "answer": "Alternatif lain untuk mengosongkan list adalah dengan menginisialisasi list baru seperti berikut: `my_list = []`. Ini akan menggantikan list lama dengan list kosong."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Taylor Brown",
+        "tanggal": "2024-12-08",
+        "judul": "Cara Efektif Menggunakan Metode `clear()` untuk List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "clear()", "Pemula"],
+        "konten": "Panduan ini membahas bagaimana metode `clear()` digunakan dalam Python untuk mengosongkan list. Termasuk contoh praktis untuk mempermudah pemahaman.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa menggunakan metode `clear()` untuk menghapus semua elemen dari list `['dog', 'cat', 'bird']`?",
+                "answer": "Untuk menghapus semua elemen dari list `['dog', 'cat', 'bird']`, gunakan metode `clear()` seperti ini: `pets.clear()`. List `pets` akan menjadi kosong setelah metode ini dijalankan."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan metode `clear()` pada list yang sudah tidak memiliki elemen?",
+                "answer": "Saat metode `clear()` digunakan pada list yang sudah kosong, tidak ada efek tambahan atau error. List tetap kosong setelah metode ini dipanggil."
+            },
+            {
+                "question": "Apakah metode `clear()` hanya berlaku untuk list, atau dapat juga digunakan pada tipe data lain seperti set atau dictionary?",
+                "answer": "Metode `clear()` juga berlaku untuk set dan dictionary. Misalnya, `my_set.clear()` untuk set dan `my_dict.clear()` untuk dictionary akan menghapus semua elemen dari struktur data tersebut."
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'list' object has no attribute 'remove_all_items'', dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = [5, 10, 15]\nmy_list.remove_all_items()",
+                "answer": "Error ini disebabkan karena metode `remove_all_items()` tidak ada untuk list. Gunakan metode `clear()` untuk menghapus semua elemen dari list.",
+                "answer_code": "my_list = [5, 10, 15]\nmy_list.clear()"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: 'list' object is not callable', saat menggunakan metode `clear` tanpa tanda kurung?",
+                "question_code": "my_list = ['x', 'y', 'z']\nmy_list.clear",
+                "answer": "Error ini muncul karena metode `clear` dipanggil tanpa tanda kurung. Tambahkan tanda kurung setelah nama metode untuk memanggilnya dengan benar.",
+                "answer_code": "my_list = ['x', 'y', 'z']\nmy_list.clear()"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'list' object has no attribute 'reset'', dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = ['one', 'two', 'three']\nmy_list.reset()",
+                "answer": "Error ini muncul karena metode `reset()` tidak ada pada list. Gunakan metode `clear()` untuk menghapus semua elemen dari list.",
+                "answer_code": "my_list = ['one', 'two', 'three']\nmy_list.clear()"
+            },
+            {
+                "question": "Apa metode alternatif untuk mengosongkan list tanpa menggunakan `clear()`?",
+                "answer": "Sebagai alternatif, Anda bisa mengosongkan list dengan menginisialisasi list baru menggunakan `my_list = []`, yang akan menggantikan list lama dengan list kosong."
+            }
+        ]
+    }
+]

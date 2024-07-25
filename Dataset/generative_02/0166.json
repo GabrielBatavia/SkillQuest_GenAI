@@ -1,0 +1,132 @@
+[
+    {
+        "sumber": "w3schools.com",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-07-23",
+        "judul": "Memulai dengan Script Python: Panduan Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "script", "pemula", "tutorial"],
+        "konten": "Artikel ini memberikan panduan langkah demi langkah tentang cara menulis dan menjalankan script Python pertama Anda, termasuk tips untuk pemula dan cara menangani masalah umum.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu script Python?",
+                "answer": "Script Python adalah file teks yang berisi kode Python dan biasanya memiliki ekstensi `.py`."
+            },
+            {
+                "question": "Bagaimana cara membuat file script Python pertama?",
+                "answer": "Buka editor teks, tulis kode Python seperti `print('Hello, World!')`, dan simpan file dengan ekstensi `.py`, misalnya `hello_world.py`."
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python dari command line?",
+                "answer": "Di command line, arahkan ke direktori tempat file script disimpan dan jalankan perintah `python nama_file.py`, misalnya `python hello_world.py`."
+            },
+            {
+                "question": "Bagaimana menangani error jika Python tidak terinstal?",
+                "question_code": "Periksa apakah Python sudah terinstal dengan menjalankan `python --version`. Jika tidak, unduh dan instal Python dari situs resmi.",
+                "answer": "Pastikan Python terinstal dengan benar. Jika tidak, unduh dan instal Python dari situs resmi Python.",
+                "answer_code": "Download dari https://www.python.org/downloads/"
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python di IDE seperti VSCode?",
+                "question_code": "1. Buka VSCode.\n2. Buka folder yang berisi script.\n3. Pilih file `.py` dan tekan `Ctrl+F5` untuk menjalankannya.",
+                "answer": "Di VSCode, buka file `.py` dan tekan `Ctrl+F5` untuk menjalankan script tanpa debugging.",
+                "answer_code": "Tekan `Ctrl+F5` untuk menjalankan script Python."
+            },
+            {
+                "question": "Bagaimana cara menggunakan virtual environment untuk menjalankan script?",
+                "question_code": "1. Buat virtual environment: `python -m venv venv`\n2. Aktifkan environment: `source venv/bin/activate` (Unix) atau `venv\\Scripts\\activate` (Windows).\n3. Jalankan script dengan `python nama_file.py`.",
+                "answer": "Gunakan virtual environment untuk mengelola dependensi proyek. Aktifkan environment sebelum menjalankan script.",
+                "answer_code": "Lingkungan virtual mengisolasi dependensi proyek."
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python dengan argumen?",
+                "question_code": "1. Jalankan script dengan argumen: `python script.py arg1 arg2`\n2. Akses argumen dalam script menggunakan `sys.argv`.",
+                "answer": "Jalankan script dengan argumen di command line dan akses argumen di script menggunakan `sys.argv`.",
+                "answer_code": "import sys\nprint(sys.argv)"
+            },
+            {
+                "question": "Bagaimana cara melihat output dari script Python saat menjalankannya?",
+                "question_code": "Output akan muncul di jendela terminal atau output IDE setelah menjalankan script.",
+                "answer": "Output dari `print()` dalam script akan ditampilkan di terminal atau jendela output di IDE.",
+                "answer_code": "Contoh output: `Hello, World!`"
+            },
+            {
+                "question": "Apa yang harus dilakukan jika script Python tidak berjalan?",
+                "question_code": "Periksa kesalahan sintaks atau konfigurasi. Gunakan alat debugging di IDE jika diperlukan.",
+                "answer": "Periksa kesalahan dalam kode atau konfigurasi lingkungan. Gunakan fitur debugging di IDE untuk menemukan masalah.",
+                "answer_code": "Lakukan debugging untuk mengidentifikasi dan memperbaiki kesalahan."
+            },
+            {
+                "question": "Bagaimana cara menghapus virtual environment setelah digunakan?",
+                "question_code": "1. Hapus folder virtual environment dengan perintah `rm -rf venv` di Unix atau hapus folder `venv` di Windows.",
+                "answer": "Hapus folder virtual environment untuk menghapusnya setelah selesai digunakan.",
+                "answer_code": "Hapus folder `venv` untuk menghapus lingkungan virtual."
+            }
+        ]
+    },
+    {
+        "sumber": "tutorialspoint.com",
+        "penulis": "Robert Green",
+        "tanggal": "2024-07-23",
+        "judul": "Langkah-Langkah Menjalankan Script Python: Panduan Praktis",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "script", "pemula", "panduan"],
+        "konten": "Panduan ini mencakup langkah-langkah praktis untuk menulis dan menjalankan script Python pertama Anda, serta solusi untuk masalah umum yang mungkin ditemui.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan file script Python?",
+                "answer": "File script Python adalah file yang berisi kode Python dan biasanya memiliki ekstensi `.py`."
+            },
+            {
+                "question": "Bagaimana cara membuat dan menyimpan script Python?",
+                "answer": "Gunakan editor teks untuk menulis kode Python dan simpan file dengan ekstensi `.py`, misalnya `script_pertama.py`."
+            },
+            {
+                "question": "Bagaimana menjalankan script Python di terminal macOS?",
+                "answer": "Buka terminal, arahkan ke direktori script, dan jalankan perintah `python3 nama_file.py`, misalnya `python3 script_pertama.py`."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Python tidak terdeteksi di terminal?",
+                "question_code": "Periksa instalasi Python dengan perintah `python3 --version`. Jika Python tidak ditemukan, perbarui PATH atau instal Python.",
+                "answer": "Jika Python tidak terdeteksi, pastikan Python terinstal dan PATH sudah diset dengan benar. Perbarui PATH atau instal Python jika diperlukan.",
+                "answer_code": "Periksa instalasi Python dengan `python3 --version`."
+            },
+            {
+                "question": "Bagaimana menjalankan script Python dengan IDE seperti PyCharm?",
+                "question_code": "1. Buka PyCharm.\n2. Buat atau buka proyek.\n3. Klik kanan pada file `.py` dan pilih 'Run'.",
+                "answer": "Di PyCharm, buka file script dan pilih 'Run' dari menu konteks untuk menjalankan script.",
+                "answer_code": "Klik kanan pada file `.py` dan pilih 'Run'."
+            },
+            {
+                "question": "Bagaimana cara menggunakan input pengguna dalam script Python?",
+                "question_code": "1. Gunakan fungsi `input()` untuk mengambil input.\n2. Simpan input dalam variabel dan gunakan di script.",
+                "answer": "Gunakan fungsi `input()` untuk mendapatkan data dari pengguna. Contoh: `user_input = input('Masukkan sesuatu: ')`.",
+                "answer_code": "user_input = input('Masukkan sesuatu: ')\nprint(f'Anda memasukkan: {user_input}')"
+            },
+            {
+                "question": "Bagaimana menjalankan script Python secara otomatis menggunakan cron job?",
+                "question_code": "1. Edit crontab dengan perintah `crontab -e`.\n2. Tambahkan entri untuk menjalankan script pada waktu tertentu.",
+                "answer": "Gunakan cron job untuk menjadwalkan eksekusi script Python secara otomatis. Edit crontab dan tambahkan entri sesuai kebutuhan.",
+                "answer_code": "Contoh entri crontab: `0 9 * * * /usr/bin/python3 /path/to/script_pertama.py`"
+            },
+            {
+                "question": "Bagaimana memeriksa versi Python dari terminal?",
+                "question_code": "1. Jalankan perintah `python3 --version` untuk memeriksa versi Python.",
+                "answer": "Gunakan `python3 --version` untuk memeriksa versi Python yang terinstal di sistem.",
+                "answer_code": "Versi Python yang terinstal akan ditampilkan di terminal."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika script Python tidak memberikan output yang diharapkan?",
+                "question_code": "Periksa kode untuk kesalahan sintaks dan logika. Gunakan alat debugging untuk membantu menemukan masalah.",
+                "answer": "Periksa kode Anda untuk kesalahan dan pastikan semua logika benar. Gunakan debugging untuk membantu memecahkan masalah.",
+                "answer_code": "Debugging membantu menemukan dan memperbaiki kesalahan dalam kode."
+            },
+            {
+                "question": "Bagaimana cara menghapus file script Python setelah selesai digunakan?",
+                "question_code": "1. Hapus file script dengan perintah `rm nama_file.py` di terminal.",
+                "answer": "Hapus file script Python jika sudah tidak diperlukan dengan menggunakan perintah `rm` di terminal.",
+                "answer_code": "Hapus file dengan perintah `rm nama_file.py`."
+            }
+        ]
+    }
+]

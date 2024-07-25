@@ -1,0 +1,108 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "John Doe",
+        "tanggal": "2024-07-25",
+        "judul": "Cara Mendeklarasikan List Kosong di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Empty List"],
+        "konten": "Artikel ini menjelaskan berbagai cara untuk mendeklarasikan list kosong di Python serta beberapa kegunaan umum dari list kosong tersebut.",
+        "pertanyaan": [
+            {
+                "question": "Bisakah Anda menjelaskan secara rinci apa yang dimaksud dengan list kosong di Python dan bagaimana cara mendeklarasikannya dengan benar? Sertakan juga beberapa skenario di mana kita mungkin perlu menggunakan list kosong tersebut dalam pemrograman Python.",
+                "answer": "List kosong di Python adalah list yang tidak memiliki elemen di dalamnya. Anda bisa mendeklarasikannya dengan tanda kurung siku kosong seperti ini: daftar_kosong = []. List kosong sering kali digunakan ketika kita perlu memulai dengan list yang akan diisi kemudian, misalnya saat melakukan iterasi dalam loop atau saat mengumpulkan input dari pengguna dalam aplikasi interaktif."
+            },
+            {
+                "question": "Kenapa kita perlu mendeklarasikan list kosong di Python dan dalam situasi apa saja list kosong ini bisa sangat berguna? Tolong jelaskan beberapa contoh penggunaan praktis dari list kosong.",
+                "answer": "Mendeklarasikan list kosong sering kali diperlukan ketika Anda ingin membuat list yang akan diisi dengan elemen-elemen nanti, biasanya dalam loop atau setelah menerima input dari pengguna. Contoh penggunaan praktisnya termasuk mengumpulkan hasil perhitungan dalam loop atau menyimpan data yang diinput oleh pengguna dalam aplikasi."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke dalam list kosong yang sudah dideklarasikan? Tolong berikan contoh kode yang jelas dan jelaskan setiap langkahnya secara rinci.",
+                "answer": "Anda bisa menggunakan metode append() untuk menambahkan elemen ke dalam list kosong. Contoh: daftar_kosong = []\ndaftar_kosong.append(10). Langkah pertama adalah mendeklarasikan list kosong, kemudian kita gunakan append() untuk menambahkan elemen baru ke dalam list tersebut."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'NoneType' object has no attribute 'append'', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = None\ndaftar_kosong.append(10)",
+                "answer": "Error ini terjadi karena variabel daftar_kosong diatur ke None, bukan list. Anda bisa mengatasi error ini dengan memastikan bahwa variabel yang digunakan adalah list, bukan NoneType. Deklarasikan list kosong dengan benar sebelum menggunakan metode append(). Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(10)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not callable', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.append = 1",
+                "answer": "Error ini terjadi karena Anda menggunakan nama metode sebagai variabel dan menimpa metode append(). Kamu bisa mengatasi error ini dengan tidak menggunakan nama metode sebagai variabel. Pastikan untuk tidak menimpa metode append() dengan nilai lain. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'NameError: name 'daftar_kosong' is not defined', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong.append(1)",
+                "answer": "Error ini terjadi karena variabel daftar_kosong belum dideklarasikan sebelum digunakan. Kamu bisa mengatasi error ini dengan memastikan bahwa list sudah dideklarasikan sebelum digunakan. Deklarasikan list kosong terlebih dahulu. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.append(1",
+                "answer": "Error ini terjadi karena ada kesalahan dalam penulisan sintaks, seperti tanda kurung yang tidak ditutup. Kamu bisa mengatasi error ini dengan memastikan semua tanda kurung dibuka dan ditutup dengan benar. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'append'', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.add(1)",
+                "answer": "Error ini terjadi karena metode add() tidak ada dalam list. Kamu bisa mengatasi error ini dengan menggunakan metode append() yang benar untuk menambahkan elemen ke dalam list. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(1)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not \"int\") to list', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong = daftar_kosong + 1",
+                "answer": "Error ini terjadi karena Anda mencoba menggabungkan list dengan integer, yang tidak diizinkan. Kamu bisa mengatasi error ini dengan memastikan hanya menggabungkan list dengan list lain. Gunakan metode append() jika ingin menambahkan elemen tunggal. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(1)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Jane Smith",
+        "tanggal": "2024-07-26",
+        "judul": "Memahami List Kosong dalam Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Empty List"],
+        "konten": "Panduan ini akan membantu Anda memahami cara mendeklarasikan list kosong di Python serta beberapa teknik untuk mengisinya dengan data.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list kosong di Python dan bagaimana cara mendeklarasikannya dengan benar? Sertakan juga penjelasan mengenai kapan dan mengapa kita perlu menggunakan list kosong tersebut dalam pemrograman Python.",
+                "answer": "List kosong di Python adalah list yang tidak memiliki elemen. Anda dapat mendeklarasikannya dengan menggunakan tanda kurung siku kosong seperti ini: daftar_kosong = []. List kosong sering kali digunakan saat kita ingin memulai dengan list yang akan diisi kemudian, misalnya saat melakukan iterasi dalam loop atau saat mengumpulkan input dari pengguna dalam aplikasi interaktif."
+            },
+            {
+                "question": "Mengapa penting untuk mengetahui cara mendeklarasikan list kosong di Python dan dalam situasi apa saja list kosong ini bisa sangat berguna? Tolong jelaskan beberapa contoh penggunaan praktis dari list kosong.",
+                "answer": "Mengetahui cara mendeklarasikan list kosong penting karena sering kali kita perlu membuat list yang akan diisi dengan data secara dinamis selama eksekusi program. Contoh penggunaan praktisnya termasuk mengumpulkan hasil perhitungan dalam loop atau menyimpan data yang diinput oleh pengguna dalam aplikasi."
+            },
+            {
+                "question": "Bagaimana cara mengisi list kosong dengan elemen-elemen baru di Python? Tolong berikan contoh kode yang jelas dan jelaskan setiap langkahnya secara rinci.",
+                "answer": "Untuk mengisi list kosong dengan elemen-elemen baru, Anda dapat menggunakan metode append(). Contoh: daftar_kosong = []\ndaftar_kosong.append('elemen baru'). Langkah pertama adalah mendeklarasikan list kosong, kemudian kita gunakan append() untuk menambahkan elemen baru ke dalam list tersebut."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'NoneType' object has no attribute 'append'', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = None\ndaftar_kosong.append('elemen')",
+                "answer": "Error ini terjadi karena variabel daftar_kosong diatur ke None, bukan list. Kamu bisa mengatasi error ini dengan memastikan variabel yang digunakan adalah list, bukan NoneType. Deklarasikan list kosong dengan benar sebelum menggunakan metode append(). Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append('elemen')"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not callable', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.append = 2",
+                "answer": "Error ini terjadi karena Anda menggunakan nama metode sebagai variabel dan menimpa metode append(). Kamu bisa mengatasi error ini dengan tidak menggunakan nama metode sebagai variabel. Pastikan untuk tidak menimpa metode append() dengan nilai lain. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append(2)"
+            },
+            {
+                "question": "Kenapa terjadi error 'NameError: name 'daftar_kosong' is not defined', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong.append('data')",
+                "answer": "Error ini terjadi karena variabel daftar_kosong belum dideklarasikan sebelum digunakan. Kamu bisa mengatasi error ini dengan memastikan bahwa list sudah dideklarasikan sebelum digunakan. Deklarasikan list kosong terlebih dahulu. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.append('data'",
+                "answer": "Error ini terjadi karena ada kesalahan dalam penulisan sintaks, seperti tanda kurung yang tidak ditutup. Kamu bisa mengatasi error ini dengan memastikan semua tanda kurung dibuka dan ditutup dengan benar. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'append'', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong.add('data')",
+                "answer": "Error ini terjadi karena metode add() tidak ada dalam list. Kamu bisa mengatasi error ini dengan menggunakan metode append() yang benar untuk menambahkan elemen ke dalam list. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append('data')"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: can only concatenate list (not \"str\") to list', saya tidak paham? Tolong jelaskan penyebab error ini dan cara mengatasinya dengan memberikan contoh kode yang benar.",
+                "question_code": "daftar_kosong = []\ndaftar_kosong = daftar_kosong + 'data'",
+                "answer": "Error ini terjadi karena Anda mencoba menggabungkan list dengan string, yang tidak diizinkan. Kamu bisa mengatasi error ini dengan memastikan hanya menggabungkan list dengan list lain. Gunakan metode append() jika ingin menambahkan elemen tunggal. Contoh yang benar: daftar_kosong = []\ndaftar_kosong.append('data')"
+            }
+        ]
+    }
+]

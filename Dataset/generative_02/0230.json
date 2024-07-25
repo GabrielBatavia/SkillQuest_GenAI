@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "PythonBeginnerHub.com",
+        "penulis": "Lina Sari",
+        "tanggal": "2024-10-05",
+        "judul": "Memulai Pemrograman dengan Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "pemula", "pengenalan"],
+        "konten": "Artikel ini mengenalkan dasar-dasar Python, termasuk cara mendeklarasikan variabel, tipe data, dan penggunaan operasi dasar.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat variabel di Python?",
+                "answer": "Untuk membuat variabel, Anda hanya perlu memberikan nama variabel diikuti dengan tanda sama dengan (=) dan nilai yang ingin disimpan. Contoh: angka = 10."
+            },
+            {
+                "question": "Bagaimana caranya menampilkan nilai variabel ke layar?",
+                "answer": "Gunakan fungsi print(). Misalnya: print(angka) akan menampilkan nilai dari variabel angka di konsol."
+            },
+            {
+                "question": "Apa itu tipe data di Python dan sebutkan contohnya?",
+                "answer": "Tipe data adalah kategori nilai yang bisa disimpan dalam variabel. Contoh tipe data meliputi integer (bilangan bulat), float (bilangan desimal), dan string (teks)."
+            },
+            {
+                "question": "Kenapa kode ini tidak berjalan dengan baik?",
+                "question_code": "name = 'John'\nprint(Name)",
+                "answer": "Error terjadi karena Python membedakan huruf kapital dan kecil. Variabel yang benar adalah name, bukan Name.",
+                "answer_code": "name = 'John'\nprint(name)"
+            },
+            {
+                "question": "Mengapa saya mendapatkan error saat mencetak variabel ini?",
+                "question_code": "print(value)",
+                "answer": "Error ini terjadi karena variabel value belum dideklarasikan sebelumnya. Pastikan value sudah ada sebelum mencoba mencetaknya.",
+                "answer_code": "value = 100\nprint(value)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string dalam Python?",
+                "question_code": "part1 = 'Hello'\npart2 = 'World'\nprint(part1 + part2)",
+                "answer": "Anda bisa menggunakan operator + untuk menggabungkan string. Contohnya: part1 + ' ' + part2 akan menghasilkan 'Hello World'.",
+                "answer_code": "part1 = 'Hello'\npart2 = 'World'\nprint(part1 + ' ' + part2)"
+            },
+            {
+                "question": "Bagaimana cara mengubah teks menjadi huruf kapital semua?",
+                "question_code": "text = 'welcome'\nprint(text.capitalize())",
+                "answer": "Untuk mengubah teks menjadi huruf kapital semua, gunakan metode upper(). Contoh: text.upper() akan mengubah teks menjadi 'WELCOME'.",
+                "answer_code": "text = 'welcome'\nprint(text.upper())"
+            },
+            {
+                "question": "Bagaimana cara menghapus spasi di awal dan akhir string?",
+                "question_code": "string = '  example  '\nprint(string.lstrip())",
+                "answer": "Gunakan metode strip() untuk menghapus spasi di awal dan akhir string. Misalnya: string.strip() akan menghapus spasi yang tidak diinginkan.",
+                "answer_code": "string = '  example  '\nprint(string.strip())"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah sebuah kata terdapat dalam kalimat?",
+                "question_code": "sentence = 'Python is fun'\nprint(sentence.has('fun'))",
+                "answer": "Gunakan operator in untuk memeriksa apakah kata atau substring ada dalam kalimat. Misalnya: 'fun' in sentence akan menghasilkan True jika 'fun' ada dalam kalimat.",
+                "answer_code": "sentence = 'Python is fun'\nprint('fun' in sentence)"
+            }
+        ]
+    },
+    {
+        "sumber": "IntermediatePythonSkills.org",
+        "penulis": "Joko Santoso",
+        "tanggal": "2024-10-10",
+        "judul": "Pengendalian Alur Program di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["python", "kontrol alur", "if", "loop"],
+        "konten": "Artikel ini membahas cara mengendalikan alur eksekusi program di Python, termasuk penggunaan pernyataan if-else, loop for, dan while.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if dalam Python?",
+                "answer": "Pernyataan if digunakan untuk menjalankan kode jika kondisi tertentu benar. Contoh: if score >= 60: print('Lulus')."
+            },
+            {
+                "question": "Apa fungsi dari pernyataan else?",
+                "answer": "Pernyataan else digunakan untuk menjalankan kode ketika kondisi dalam if tidak terpenuhi. Contoh: else: print('Gagal')."
+            },
+            {
+                "question": "Bagaimana cara menggunakan elif untuk memeriksa kondisi lain?",
+                "answer": "Pernyataan elif memungkinkan Anda memeriksa kondisi tambahan jika kondisi if tidak terpenuhi. Contoh: elif score == 50: print('Mendekati lulus')."
+            },
+            {
+                "question": "Kenapa kode ini menampilkan error?",
+                "question_code": "num = 5\nif num > 3\nprint('Number is greater than 3')",
+                "answer": "Kesalahan terjadi karena tidak ada titik dua (:) setelah kondisi if. Tambahkan titik dua untuk memperbaiki sintaks.",
+                "answer_code": "num = 5\nif num > 3:\n    print('Number is greater than 3')"
+            },
+            {
+                "question": "Apa yang salah dengan loop ini?",
+                "question_code": "for i in range(3)\n    print(i)",
+                "answer": "Loop ini tidak berfungsi karena tanda titik dua (:) setelah range(3) hilang. Tambahkan tanda titik dua untuk sintaks yang benar.",
+                "answer_code": "for i in range(3):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menulis loop while untuk menghitung mundur dari 4 hingga 0?",
+                "question_code": "count = 4\nwhile count > 0:\nprint(count)\ncount -= 1",
+                "answer": "Loop while digunakan untuk menjalankan kode selama kondisi benar. Contoh: while count > 0: print(count); count -= 1.",
+                "answer_code": "count = 4\nwhile count > 0:\n    print(count)\n    count -= 1"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop dengan break?",
+                "question_code": "for i in range(6):\n    if i == 4:\n        halt\n    print(i)",
+                "answer": "Untuk menghentikan loop, gunakan pernyataan break. Ganti halt dengan break.",
+                "answer_code": "for i in range(6):\n    if i == 4:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan continue dalam loop?",
+                "question_code": "for i in range(5):\n    if i == 1:\n        skip\n    print(i)",
+                "answer": "Gunakan pernyataan continue untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya. Ganti skip dengan continue.",
+                "answer_code": "for i in range(5):\n    if i == 1:\n        continue\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara membuat loop bersarang untuk menghasilkan tabel perkalian?",
+                "question_code": "for x in range(3):\nfor y in range(3):\nprint(x * y)",
+                "answer": "Loop bersarang melibatkan satu loop di dalam loop lainnya. Pastikan untuk menggunakan indentasi yang benar. Contoh: for x in range(3): for y in range(3): print(x * y).",
+                "answer_code": "for x in range(3):\n    for y in range(3):\n        print(x * y)"
+            }
+        ]
+    }
+]

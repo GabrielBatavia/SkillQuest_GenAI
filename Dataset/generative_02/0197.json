@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "PythonPemula.com",
+        "penulis": "Rian Saputra",
+        "tanggal": "2024-07-13",
+        "judul": "Dasar-Dasar Pemrograman Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["dasar", "pemula", "python"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pemrograman Python, termasuk sintaks dasar dan penggunaan variabel.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana saya bisa membuat variabel untuk menyimpan angka di Python?",
+                "answer": "Anda dapat membuat variabel untuk menyimpan angka dengan cara memberikan nama variabel dan mengatur nilainya. Contoh: `angka = 10`."
+            },
+            {
+                "question": "Apa cara yang benar untuk menampilkan nilai variabel di konsol?",
+                "answer": "Gunakan fungsi `print()` untuk menampilkan nilai variabel di konsol. Misalnya: `print(angka)`."
+            },
+            {
+                "question": "Apa itu variabel dan mengapa saya membutuhkannya?",
+                "answer": "Variabel adalah tempat penyimpanan data yang memungkinkan Anda menyimpan dan menggunakan informasi di berbagai bagian program. Contohnya: `nama = 'Alice'`."
+            },
+            {
+                "question": "Bagaimana cara menambah dua angka dan menampilkan hasilnya?",
+                "question_code": "num1 = 8\nnum2 = 5\nprint(num1 - num2)",
+                "answer": "Untuk menambah dua angka, gunakan operator `+`. Contoh yang benar adalah: `num1 + num2`.",
+                "answer_code": "num1 = 8\nnum2 = 5\nprint(num1 + num2)"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error ketika mencoba mencetak variabel yang belum saya buat?",
+                "question_code": "print(val)",
+                "answer": "Error tersebut adalah `NameError`, yang terjadi karena variabel `val` belum dideklarasikan. Pastikan variabel sudah dideklarasikan terlebih dahulu.",
+                "answer_code": "val = 7\nprint(val)"
+            },
+            {
+                "question": "Bagaimana saya bisa menggabungkan dua kalimat dalam satu string?",
+                "question_code": "sentence1 = 'Hello'\nsentence2 = 'World'\nprint(sentence1 * sentence2)",
+                "answer": "Gunakan operator `+` untuk menggabungkan dua string. Contoh yang benar adalah: `sentence1 + ' ' + sentence2`.",
+                "answer_code": "sentence1 = 'Hello'\nsentence2 = 'World'\nprint(sentence1 + ' ' + sentence2)"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil?",
+                "question_code": "text = 'PYTHON'\nprint(text.upper())",
+                "answer": "Gunakan metode `lower()` untuk mengubah string menjadi huruf kecil. Contohnya: `text.lower()`.",
+                "answer_code": "text = 'PYTHON'\nprint(text.lower())"
+            },
+            {
+                "question": "Bagaimana cara mengambil sebagian dari sebuah string?",
+                "question_code": "text = 'HelloWorld'\nprint(text[5:])",
+                "answer": "Untuk memotong string, gunakan slicing dengan indeks. Contoh untuk mengambil karakter dari indeks 0 hingga 4: `text[:5]`.",
+                "answer_code": "text = 'HelloWorld'\nprint(text[:5])"
+            },
+            {
+                "question": "Bagaimana saya bisa memeriksa apakah satu angka lebih besar dari angka lainnya?",
+                "question_code": "a = 8\nb = 10\nif a < b:\n    print('a lebih besar dari b')",
+                "answer": "Gunakan operator `>` untuk memeriksa apakah satu angka lebih besar dari angka lainnya. Contoh yang benar adalah: `if a < b: print('a lebih kecil dari b')`.",
+                "answer_code": "a = 8\nb = 10\nif a < b:\n    print('a lebih kecil dari b')"
+            }
+        ]
+    },
+    {
+        "sumber": "BelajarPython.net",
+        "penulis": "Indra Permana",
+        "tanggal": "2024-06-20",
+        "judul": "Kontrol Alur di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["kontrol alur", "if", "loop"],
+        "konten": "Artikel ini membahas tentang struktur kontrol alur seperti if-else dan loop di Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if untuk memeriksa kondisi di Python?",
+                "answer": "Pernyataan `if` digunakan untuk menjalankan kode jika kondisi yang diberikan benar. Contoh: `if x > 0: print('x adalah positif')`."
+            },
+            {
+                "question": "Apa yang dilakukan pernyataan else jika kondisi if tidak terpenuhi?",
+                "answer": "Pernyataan `else` menjalankan kode ketika kondisi pada `if` tidak benar. Misalnya: `else: print('x adalah nol atau negatif')`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan kondisi dengan elif setelah if?",
+                "answer": "Pernyataan `elif` memungkinkan Anda memeriksa kondisi tambahan jika kondisi `if` awal salah. Contoh: `elif x == 0: print('x nol')`."
+            },
+            {
+                "question": "Bagaimana cara membuat loop for untuk mencetak angka dari 1 sampai 3?",
+                "question_code": "for i in range(1, 4):\nprint(i * 2)",
+                "answer": "Untuk mencetak angka dari 1 hingga 3, gunakan `range(1, 4)` dan pastikan indentasi benar. Contoh yang benar adalah: `for i in range(1, 4): print(i)`.",
+                "answer_code": "for i in range(1, 4):\n    print(i)"
+            },
+            {
+                "question": "Apa penyebab IndentationError dan bagaimana cara mengatasinya?",
+                "question_code": "for i in range(3):\nprint(i)\n  print('Done')",
+                "answer": "IndentationError terjadi jika indentasi tidak konsisten dalam blok kode. Pastikan semua baris dalam blok memiliki indentasi yang sama.",
+                "answer_code": "for i in range(3):\n    print(i)\n    print('Done')"
+            },
+            {
+                "question": "Bagaimana cara membuat loop while yang benar untuk menghitung mundur dari 5?",
+                "question_code": "x = 5\nwhile x > 0:\nprint(x)\nx -= 1",
+                "answer": "Gunakan `while` untuk menjalankan kode selama kondisi benar. Contoh yang benar: `while x > 0: print(x); x -= 1`.",
+                "answer_code": "x = 5\nwhile x > 0:\n    print(x)\n    x -= 1"
+            },
+            {
+                "question": "Bagaimana cara menggunakan if dan else dalam loop?",
+                "question_code": "for i in range(3):\nif i % 2 == 1:\nprint(i, 'ganjil')\nelse\nprint(i, 'genap')",
+                "answer": "Anda bisa menggunakan `if` dan `else` dalam loop untuk memeriksa kondisi setiap iterasi. Contoh yang benar: `for i in range(3): if i % 2 == 1: print(i, 'ganjil') else: print(i, 'genap')`.",
+                "answer_code": "for i in range(3):\n    if i % 2 == 1:\n        print(i, 'ganjil')\n    else:\n        print(i, 'genap')"
+            },
+            {
+                "question": "Bagaimana cara membuat nested loop untuk mencetak tabel perkalian 2x2?",
+                "question_code": "for i in range(2):\n    for j in range(2):\n    print(i * j)",
+                "answer": "Nested loops digunakan untuk iterasi dalam iterasi. Contoh yang benar untuk tabel perkalian: `for i in range(2): for j in range(2): print(i * j)`.",
+                "answer_code": "for i in range(2):\n    for j in range(2):\n        print(i * j)"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop lebih awal dengan perintah break?",
+                "question_code": "for i in range(4):\nif i == 2:\n    continue\nprint(i)",
+                "answer": "Gunakan perintah `break` untuk menghentikan loop sebelum waktunya. Contoh yang benar: `for i in range(4): if i == 2: break; print(i)`.",
+                "answer_code": "for i in range(4):\n    if i == 2:\n        break\n    print(i)"
+            }
+        ]
+    }
+]

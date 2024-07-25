@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "pythonpemula.com",
+        "penulis": "Teguh Saputra",
+        "tanggal": "2023-09-12",
+        "judul": "Penggunaan Tipe Data String di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan tipe data string di Python, termasuk cara membuat, mengakses, dan memanipulasi string.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan tipe data string dalam Python dan bagaimana cara menuliskannya?",
+                "answer": "Tipe data string digunakan untuk menyimpan informasi berupa teks. Di Python, Anda dapat menulis string dengan menggunakan tanda kutip tunggal (' ') atau ganda (\" \")."
+            },
+            {
+                "question": "Bagaimana cara membuat sebuah string di Python?",
+                "answer": "Anda bisa membuat string dengan menulis teks di dalam tanda kutip tunggal atau ganda. Contoh: `text = 'Hello World!'` atau `text = \"Hello World!\"`."
+            },
+            {
+                "question": "Jika saya ingin mengambil karakter pertama dari string 'Hello World', bagaimana melakukannya?",
+                "question_code": "text = 'Hello World'\nfirst_char = text[1]",
+                "answer": "Untuk mendapatkan karakter pertama dari string, gunakan indeks `0`. Misalnya: `first_char = text[0]` akan mengembalikan 'H'.",
+                "answer_code": "text = 'Hello World'\nfirst_char = text[0]"
+            },
+            {
+                "question": "Bagaimana cara memotong bagian awal dari string 'Learning Python' untuk mendapatkan 'Learn'?",
+                "question_code": "text = 'Learning Python'\npart = text[1:6]",
+                "answer": "Untuk mendapatkan 'Learn', Anda perlu menggunakan slicing yang benar. Contoh: `part = text[:6]` menghasilkan 'Learn'.",
+                "answer_code": "text = 'Learning Python'\npart = text[:6]"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan string 'Python' dengan 'is Fun'?",
+                "question_code": "part1 = 'Python'\npart2 = 'is Fun'\ncombined = part1 - part2",
+                "answer": "Anda bisa menggabungkan string dengan operator `+`. Contoh: `combined = part1 + ' ' + part2` menghasilkan 'Python is Fun'.",
+                "answer_code": "part1 = 'Python'\npart2 = 'is Fun'\ncombined = part1 + ' ' + part2"
+            },
+            {
+                "question": "Bagaimana cara mengulang string 'Code' sebanyak 4 kali?",
+                "question_code": "text = 'Code'\nrepeated = text + 4",
+                "answer": "Gunakan operator `*` untuk mengulang string. Contoh: `repeated = text * 4` menghasilkan 'CodeCodeCodeCode'.",
+                "answer_code": "text = 'Code'\nrepeated = text * 4"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string 'Java' ada dalam kalimat 'I enjoy learning Java'?",
+                "question_code": "'Java' not in 'I enjoy learning Java'",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan substring. Contoh: `'Java' in 'I enjoy learning Java'` mengembalikan `True`.",
+                "answer_code": "'Java' in 'I enjoy learning Java'"
+            },
+            {
+                "question": "Bagaimana cara mengganti kata 'old' dengan 'new' dalam string 'My old car'?",
+                "question_code": "text = 'My old car'\nnew_text = text.update('old', 'new')",
+                "answer": "Gunakan metode `replace()` untuk mengganti substring. Contoh: `new_text = text.replace('old', 'new')` menghasilkan 'My new car'.",
+                "answer_code": "text = 'My old car'\nnew_text = text.replace('old', 'new')"
+            },
+            {
+                "question": "Bagaimana cara membagi string 'Split this text' menjadi kata-kata?",
+                "question_code": "text = 'Split this text'\nwords = text.partition()",
+                "answer": "Gunakan metode `split()` untuk membagi string berdasarkan spasi. Contoh: `words = text.split()` menghasilkan ['Split', 'this', 'text'].",
+                "answer_code": "text = 'Split this text'\nwords = text.split()"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpythonpemula.net",
+        "penulis": "Ayu Lestari",
+        "tanggal": "2023-11-01",
+        "judul": "Penggunaan Fungsi Built-in di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "built-in functions", "dasar"],
+        "konten": "Artikel ini menjelaskan berbagai fungsi built-in di Python seperti `len()`, `type()`, `input()`, `print()`, dan `range()`.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan fungsi `len()` untuk mengetahui panjang dari sebuah list?",
+                "answer": "Fungsi `len()` mengembalikan jumlah elemen dalam sebuah list. Contoh: `len([1, 2, 3])` akan menghasilkan 3."
+            },
+            {
+                "question": "Bagaimana saya bisa mengetahui tipe data dari sebuah angka menggunakan fungsi `type()`?",
+                "answer": "Fungsi `type()` digunakan untuk mengetahui tipe data dari sebuah nilai. Misalnya: `type(3.14)` akan mengembalikan `<class 'float'>`."
+            },
+            {
+                "question": "Apa yang dilakukan fungsi `input()` dan bagaimana cara menggunakannya untuk mengambil input pengguna?",
+                "question_code": "user_input = input('Enter age')\nprint('You are ' + user_input)",
+                "answer": "Fungsi `input()` digunakan untuk meminta input dari pengguna. Contoh: `user_input = input('Enter your age: ')` menyimpan input ke dalam `user_input`.",
+                "answer_code": "user_input = input('Enter your age: ')\nprint('You are ' + user_input + ' years old')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `print()` untuk menampilkan pesan di layar?",
+                "question_code": "print('Hello World')",
+                "answer": "Fungsi `print()` digunakan untuk menampilkan teks atau nilai. Contoh: `print('Hello World!')` akan mencetak pesan ke layar.",
+                "answer_code": "print('Hello World!')"
+            },
+            {
+                "question": "Bagaimana saya bisa menggunakan fungsi `range()` untuk mencetak angka dari 1 sampai 4?",
+                "question_code": "for i in range(1, 5):\n    print(i)",
+                "answer": "Fungsi `range()` digunakan dalam loop untuk menghasilkan urutan angka. Contoh: `range(1, 5)` menghasilkan angka dari 1 hingga 4.",
+                "answer_code": "for i in range(1, 5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana saya bisa mendapatkan nilai absolut dari angka -7 menggunakan fungsi `abs()`?",
+                "question_code": "abs(-7.0)",
+                "answer": "Fungsi `abs()` mengembalikan nilai positif dari angka. Contoh: `abs(-7)` menghasilkan 7.",
+                "answer_code": "abs(-7)"
+            },
+            {
+                "question": "Bagaimana cara menemukan nilai terbesar dalam list [3, 6, 1] menggunakan `max()`?",
+                "question_code": "largest = max([3, 6, 1, 10])",
+                "answer": "Fungsi `max()` menemukan nilai terbesar dalam iterable. Contoh: `largest = max([3, 6, 1])` menghasilkan 6.",
+                "answer_code": "largest = max([3, 6, 1])"
+            },
+            {
+                "question": "Bagaimana saya bisa mendapatkan nilai terkecil dari list [7, 2, 5] menggunakan `min()`?",
+                "question_code": "smallest = min(7, 2, 5)",
+                "answer": "Fungsi `min()` mengembalikan nilai terkecil dalam iterable. Contoh: `smallest = min([7, 2, 5])` menghasilkan 2.",
+                "answer_code": "smallest = min([7, 2, 5])"
+            },
+            {
+                "question": "Apa yang dilakukan fungsi `sum()` dan bagaimana cara menjumlahkan elemen-elemen dalam list [1, 2, 3, 4]?",
+                "question_code": "total = sum(1, 2, 3, 4)",
+                "answer": "Fungsi `sum()` digunakan untuk menjumlahkan semua elemen dalam iterable. Contoh: `total = sum([1, 2, 3, 4])` menghasilkan 10.",
+                "answer_code": "total = sum([1, 2, 3, 4])"
+            }
+        ]
+    }
+]

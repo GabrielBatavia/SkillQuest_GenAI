@@ -1,0 +1,116 @@
+[
+    {
+        "sumber": "python-docs.org",
+        "penulis": "Emily Carter",
+        "tanggal": "2024-07-25",
+        "judul": "Memahami Konsep Aritmatika Menengah di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["python", "aritmatika", "menengah", "konsep"],
+        "konten": "Artikel ini menjelaskan konsep-konsep aritmatika tingkat menengah di Python, seperti operasi kombinasi, operator eksponensial, dan presisi floating-point dengan contoh dan penjelasan.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan operator eksponensial `**` di Python?",
+                "answer": "Operator `**` digunakan untuk menghitung pangkat atau eksponen dari sebuah angka. Misalnya, `2 ** 3` menghasilkan `8`."
+            },
+            {
+                "question": "Bagaimana Python menangani hasil operasi floating-point dalam perhitungan matematika?",
+                "answer": "Python menggunakan representasi floating-point yang dapat menyebabkan ketidakakuratan kecil dalam hasil operasi matematika, terutama dalam operasi yang melibatkan bilangan desimal."
+            },
+            {
+                "question": "Apa hasil dari `5 ** (1/2)` dan bagaimana cara menghitung akar kuadrat di Python?",
+                "question_code": "result = 5 ** (1/2)",
+                "answer": "Hasil dari `5 ** (1/2)` adalah akar kuadrat dari `5`, yaitu sekitar `2.236`. Anda juga bisa menggunakan `math.sqrt()` untuk menghitung akar kuadrat.",
+                "answer_code": "import math\nresult = math.sqrt(5)\n# Hasilnya adalah 2.23606797749979"
+            },
+            {
+                "question": "Apa perbedaan antara operator `/` dan operator `//` dalam hal pembagian?",
+                "question_code": "result1 = 7 / 3\nresult2 = 7 // 3",
+                "answer": "Operator `/` melakukan pembagian biasa dan menghasilkan float, sementara operator `//` melakukan pembagian bulat dan menghasilkan integer.",
+                "answer_code": "result1 = 7 / 3\nresult2 = 7 // 3\n# Hasil dari result1 adalah 2.3333333333333335\n# Hasil dari result2 adalah 2"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `%` untuk menentukan apakah suatu angka genap atau ganjil?",
+                "question_code": "is_even = (number % 2 == 0)",
+                "answer": "Operator `%` dapat digunakan untuk menentukan genap atau ganjil dengan memeriksa sisa pembagian angka dengan `2`. Jika sisa pembagiannya `0`, maka angka tersebut genap.",
+                "answer_code": "number = 7\nis_even = (number % 2 == 0)\n# Hasil dari is_even adalah False"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `3 * (4 + 5) ** 2 / 9` dan bagaimana urutan operasi mempengaruhi hasil?",
+                "question_code": "result = 3 * (4 + 5) ** 2 / 9",
+                "answer": "Ekspresi ini menggunakan urutan operasi matematika, di mana operasi dalam tanda kurung dan eksponensial dilakukan terlebih dahulu, diikuti oleh perkalian dan pembagian.",
+                "answer_code": "result = 3 * (4 + 5) ** 2 / 9\n# Hasilnya adalah 27.0"
+            },
+            {
+                "question": "Bagaimana Python menangani pembagian bilangan bulat dengan hasil floating-point dan cara menghindarinya?",
+                "question_code": "result = 7 / 2",
+                "answer": "Python secara otomatis menghasilkan float saat membagi bilangan bulat menggunakan `/`. Untuk hasil bilangan bulat, gunakan operator `//`. Jika hanya ingin hasil integer dari pembagian, gunakan `//`.",
+                "answer_code": "result = 7 / 2\n# Hasilnya adalah 3.5\ninteger_result = 7 // 2\n# Hasilnya adalah 3"
+            },
+            {
+                "question": "Apa yang terjadi ketika Anda menggabungkan operator aritmatika dalam sebuah ekspresi kompleks seperti `2 + 3 * 4 ** 2 / (1 + 1)`?",
+                "question_code": "result = 2 + 3 * 4 ** 2 / (1 + 1)",
+                "answer": "Ekspresi ini mengikuti urutan operasi, dengan eksponensial dilakukan pertama, kemudian perkalian dan pembagian, dan terakhir penjumlahan.",
+                "answer_code": "result = 2 + 3 * 4 ** 2 / (1 + 1)\n# Hasilnya adalah 14.0"
+            },
+            {
+                "question": "Apa perbedaan antara penggunaan operator `**` dan fungsi `pow()` untuk eksponensial?",
+                "question_code": "result1 = 2 ** 3\nresult2 = pow(2, 3)",
+                "answer": "Operator `**` dan fungsi `pow()` keduanya digunakan untuk eksponensial, tetapi `pow()` juga bisa menerima parameter ketiga untuk modulus.",
+                "answer_code": "result1 = 2 ** 3\nresult2 = pow(2, 3)\n# Keduanya menghasilkan 8"
+            },
+            {
+                "question": "Bagaimana cara menghindari kesalahan presisi dalam perhitungan floating-point di Python?",
+                "answer": "Untuk menghindari kesalahan presisi dalam floating-point, pertimbangkan untuk menggunakan modul `decimal` yang menyediakan representasi floating-point dengan presisi yang lebih tinggi."
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "Sarah Johnson",
+        "tanggal": "2024-07-25",
+        "judul": "Eksplorasi Operator Aritmatika Menengah di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["python", "aritmatika", "menengah", "konsep"],
+        "konten": "Artikel ini menguraikan penggunaan operator aritmatika tingkat menengah dalam Python dengan fokus pada teknik dan praktik yang lebih kompleks.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari ekspresi `(2 + 3) * (5 ** 2) / 4`?",
+                "question_code": "result = (2 + 3) * (5 ** 2) / 4",
+                "answer": "Hasil dari ekspresi ini adalah `37.5`, mengikuti urutan operasi yang tepat.",
+                "answer_code": "result = (2 + 3) * (5 ** 2) / 4\n# Hasilnya adalah 37.5"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `//` untuk pembagian bulat dalam konteks praktis?",
+                "question_code": "result = 10 // 3",
+                "answer": "Operator `//` digunakan untuk mendapatkan hasil pembagian bulat dari dua angka. Hasilnya adalah integer yang merupakan hasil pembagian tanpa desimal.",
+                "answer_code": "result = 10 // 3\n# Hasilnya adalah 3"
+            },
+            {
+                "question": "Apa yang dimaksud dengan ketidakakuratan dalam floating-point arithmetic dan bagaimana mengatasinya?",
+                "answer": "Ketidakakuratan dalam floating-point arithmetic terjadi karena representasi bilangan desimal yang terbatas. Anda bisa menggunakan modul `decimal` untuk presisi yang lebih baik."
+            },
+            {
+                "question": "Apa hasil dari `(-4) ** 2` dan bagaimana Python menangani operator aritmatika dengan tanda kurung?",
+                "question_code": "result = (-4) ** 2",
+                "answer": "Hasil dari `(-4) ** 2` adalah `16`. Python menghitung eksponensial terlebih dahulu, kemudian menerapkan tanda negatif.",
+                "answer_code": "result = (-4) ** 2\n# Hasilnya adalah 16"
+            },
+            {
+                "question": "Bagaimana operator `%` dapat digunakan dalam situasi di mana pembagian modulus diperlukan?",
+                "question_code": "result = 14 % 5",
+                "answer": "Operator `%` memberikan sisa dari pembagian. Misalnya, `14 % 5` menghasilkan `4`.",
+                "answer_code": "result = 14 % 5\n# Hasilnya adalah 4"
+            },
+            {
+                "question": "Apa hasil dari `2 ** 3 * 4 / 5 - 1` dan bagaimana urutan operasi mempengaruhi hasilnya?",
+                "question_code": "result = 2 ** 3 * 4 / 5 - 1",
+                "answer": "Hasil dari ekspresi ini adalah `7.0`. Urutan operasi dilakukan sesuai dengan prioritas operator: eksponensial, perkalian, pembagian, dan penjumlahan.",
+                "answer_code": "result = 2 ** 3 * 4 / 5 - 1\n# Hasilnya adalah 7.0"
+            },
+            {
+                "question": "Apa kegunaan dari fungsi `math.fsum()` dan bagaimana cara menggunakannya untuk penjumlahan floating-point?",
+                "answer": "Fungsi `math.fsum()` digunakan untuk penjumlahan floating-point dengan akurasi tinggi dan mengurangi kesalahan presisi. Ini berguna saat menjumlahkan sejumlah besar bilangan floating-point."
+            }
+        ]
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "sumber": "w3schools.com",
+        "penulis": "James Lee",
+        "tanggal": "2024-07-27",
+        "judul": "Panduan Operator Perbandingan Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "perbandingan", "pemula"],
+        "konten": "Artikel ini membahas bagaimana menggunakan operator perbandingan di Python seperti `==`, `!=`, `>`, `<`, `>=`, dan `<=` dengan contoh yang jelas untuk setiap operator.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara memeriksa apakah nilai `x` kurang dari `10`?",
+                "question_code": "x = 15\nresult = x = 10\nprint(result)",
+                "answer": "Untuk memeriksa apakah nilai `x` kurang dari `10`, gunakan operator `<`. Contoh: `x < 10` akan menghasilkan `False` karena `15` tidak kurang dari `10`.",
+                "answer_code": "x = 15\nresult = x < 10\nprint(result)\n# Output: False"
+            },
+            {
+                "question": "Saya ingin mengecek apakah dua variabel `a` dan `b` memiliki nilai yang sama. Bagaimana caranya?",
+                "question_code": "a = 4\nb = 5\nresult = a ! b\nprint(result)",
+                "answer": "Untuk memeriksa apakah dua variabel memiliki nilai yang sama, gunakan operator `==`. Contoh: `a == b` akan menghasilkan `False` karena `4` tidak sama dengan `5`.",
+                "answer_code": "a = 4\nb = 5\nresult = a == b\nprint(result)\n# Output: False"
+            },
+            {
+                "question": "Bagaimana saya dapat memastikan bahwa `9` lebih besar dari atau sama dengan `7`?",
+                "question_code": "result = 9 = 7\n# Hasil perbandingan",
+                "answer": "Untuk memastikan bahwa `9` lebih besar dari atau sama dengan `7`, gunakan operator `>=`. Contoh: `9 >= 7` akan menghasilkan `True` karena `9` memang lebih besar dari `7`.",
+                "answer_code": "result = 9 >= 7\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Apa hasil dari `8 <= 8` dan bagaimana cara mengetahuinya?",
+                "question_code": "result = 8 < 8\n# Periksa hasilnya",
+                "answer": "Ekspresi `8 <= 8` akan menghasilkan `True` karena `8` adalah sama dengan `8`. Operator `<=` memeriksa apakah nilai di sebelah kiri kurang dari atau sama dengan nilai di sebelah kanan.",
+                "answer_code": "result = 8 <= 8\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Bagaimana cara membandingkan dua string untuk memastikan mereka tidak sama?",
+                "question_code": "result = 'apple' = 'banana'\n# Apakah hasilnya benar?",
+                "answer": "Untuk membandingkan dua string dan memastikan mereka tidak sama, gunakan operator `!=`. Contoh: `'apple' != 'banana'` akan menghasilkan `True` karena kedua string tersebut berbeda.",
+                "answer_code": "result = 'apple' != 'banana'\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Jika saya memiliki `10` dan `15`, bagaimana saya dapat memeriksa apakah `10` lebih kecil dari `15`?",
+                "question_code": "result = 10 = 15\n# Periksa hasilnya",
+                "answer": "Untuk memeriksa apakah `10` lebih kecil dari `15`, gunakan operator `<`. Ekspresi `10 < 15` akan menghasilkan `True` karena `10` memang lebih kecil dari `15`.",
+                "answer_code": "result = 10 < 15\nprint(result)\n# Output: True"
+            }
+        ]
+    },
+    {
+        "sumber": "python.org",
+        "penulis": "Sophia Martinez",
+        "tanggal": "2024-07-27",
+        "judul": "Memahami Operator Perbandingan di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "perbandingan", "pemula"],
+        "konten": "Panduan ini menjelaskan bagaimana operator perbandingan digunakan dalam Python, termasuk contoh dan penjelasan tentang bagaimana mereka mempengaruhi hasil operasi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara memeriksa apakah angka `5` sama dengan angka `5`?",
+                "question_code": "result = 5 = 5\n# Apakah ini benar?",
+                "answer": "Untuk memeriksa apakah angka `5` sama dengan angka `5`, gunakan operator `==`. Contoh: `5 == 5` akan menghasilkan `True` karena kedua angka tersebut identik.",
+                "answer_code": "result = 5 == 5\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Apa yang terjadi jika saya memeriksa apakah `4` tidak sama dengan `5` menggunakan operator `!=`?",
+                "question_code": "result = 4 == 5\n# Hasil perbandingan",
+                "answer": "Untuk memeriksa apakah `4` tidak sama dengan `5`, gunakan operator `!=`. Ekspresi `4 != 5` akan menghasilkan `True` karena `4` memang tidak sama dengan `5`.",
+                "answer_code": "result = 4 != 5\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Bagaimana cara membandingkan dua nilai untuk memastikan yang pertama lebih besar dari yang kedua?",
+                "question_code": "result = 6 <= 4\n# Apakah hasilnya benar?",
+                "answer": "Untuk memastikan nilai pertama lebih besar dari yang kedua, gunakan operator `>`. Ekspresi `6 > 4` akan menghasilkan `True` karena `6` memang lebih besar dari `4`.",
+                "answer_code": "result = 6 > 4\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Apa hasil dari membandingkan `5` dengan `10` menggunakan operator `>=`?",
+                "question_code": "result = 5 >= 10\n# Hasil perbandingan",
+                "answer": "Ekspresi `5 >= 10` akan menghasilkan `False` karena `5` tidak lebih besar atau sama dengan `10`. Operator `>=` memeriksa apakah nilai di sebelah kiri lebih besar atau sama dengan nilai di sebelah kanan.",
+                "answer_code": "result = 5 >= 10\nprint(result)\n# Output: False"
+            },
+            {
+                "question": "Saya ingin memeriksa apakah `15` lebih kecil dari atau sama dengan `15`. Bagaimana melakukannya?",
+                "question_code": "result = 15 < 15\n# Periksa hasilnya",
+                "answer": "Untuk memeriksa apakah `15` lebih kecil dari atau sama dengan `15`, gunakan operator `<=`. Ekspresi `15 <= 15` akan menghasilkan `True` karena `15` sama dengan `15`.",
+                "answer_code": "result = 15 <= 15\nprint(result)\n# Output: True"
+            },
+            {
+                "question": "Bagaimana saya bisa memeriksa apakah string `'hello'` tidak sama dengan string `'world'`?",
+                "question_code": "result = 'hello' = 'world'\n# Hasil perbandingan",
+                "answer": "Untuk memeriksa apakah dua string tidak sama, gunakan operator `!=`. Ekspresi `'hello' != 'world'` akan menghasilkan `True` karena kedua string tersebut berbeda.",
+                "answer_code": "result = 'hello' != 'world'\nprint(result)\n# Output: True"
+            }
+        ]
+    }
+]

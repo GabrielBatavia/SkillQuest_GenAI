@@ -1,0 +1,113 @@
+[
+    {
+        "sumber": "PythonMahir.org",
+        "penulis": "Lisa Santika",
+        "tanggal": "2024-07-05",
+        "judul": "Pemrograman Berorientasi Objek di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["oop", "kelas", "objek"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pemrograman berorientasi objek (OOP) di Python, termasuk pembuatan kelas dan objek.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat kelas baru di Python?",
+                "answer": "Untuk membuat kelas baru, gunakan kata kunci `class`. Contoh: `class Vehicle:`."
+            },
+            {
+                "question": "Apa fungsi dari metode `__init__` dalam sebuah kelas?",
+                "answer": "Metode `__init__` adalah konstruktor yang digunakan untuk menginisialisasi objek dari kelas. Contoh: `def __init__(self, make, model):`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan AttributeError dalam Python?",
+                "answer": "AttributeError terjadi saat mencoba mengakses atribut yang tidak ada pada objek. Pastikan atribut sudah didefinisikan di kelas."
+            },
+            {
+                "question": "Bagaimana cara membuat objek dari sebuah kelas?",
+                "question_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\nmy_pet = Animal('Cat', 'Whiskers')",
+                "answer": "Untuk membuat objek dari kelas, panggil kelas tersebut seperti fungsi. Contoh: `my_pet = Animal('Cat', 'Whiskers')`."
+            },
+            {
+                "question": "Bagaimana cara mencetak atribut dari objek?",
+                "question_code": "print(my_pet.species, my_pet.name)",
+                "answer": "Gunakan notasi titik untuk mengakses atribut objek. Contoh: `my_pet.species`.",
+                "answer_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\nmy_pet = Animal('Cat', 'Whiskers')\nprint(my_pet.species, my_pet.name)"
+            },
+            {
+                "question": "Bagaimana cara menambahkan metode pada kelas?",
+                "question_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\n    def describe(self):\n        return f'{self.species} named {self.name}'",
+                "answer": "Metode ditambahkan dalam kelas dengan mendefinisikan fungsi dengan parameter `self`. Contoh: `def describe(self):`.",
+                "answer_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\n    def describe(self):\n        return f'{self.species} named {self.name}'"
+            },
+            {
+                "question": "Bagaimana cara memanggil metode dari objek?",
+                "question_code": "my_pet.describe()",
+                "answer": "Metode objek diakses menggunakan notasi titik. Contoh: `my_pet.describe()`.",
+                "answer_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\n    def describe(self):\n        return f'{self.species} named {self.name}'\n\nmy_pet = Animal('Cat', 'Whiskers')\nprint(my_pet.describe())"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pewarisan kelas di Python?",
+                "question_code": "class ElectricCar(Animal):\n    def __init__(self, species, name, battery_size):\n        super().__init__(species, name)\n        self.battery_size = battery_size",
+                "answer": "Pewarisan memungkinkan kelas anak mewarisi atribut dan metode dari kelas induk. Contoh: `class ElectricCar(Animal):`.",
+                "answer_code": "class Animal:\n    def __init__(self, species, name):\n        self.species = species\n        self.name = name\n\nclass ElectricCar(Animal):\n    def __init__(self, species, name, battery_size):\n        super().__init__(species, name)\n        self.battery_size = battery_size\n\nmy_ev = ElectricCar('Electric', 'Tesla', 75)\nprint(my_ev.species, my_ev.name, my_ev.battery_size)"
+            }
+        ]
+    },
+    {
+        "sumber": "KodingPython.com",
+        "penulis": "Ahmad Taufik",
+        "tanggal": "2024-07-08",
+        "judul": "Manipulasi String di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["string", "manipulasi", "python"],
+        "konten": "Artikel ini membahas berbagai metode untuk manipulasi string di Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil?",
+                "answer": "Gunakan metode `lower()` untuk mengubah string menjadi huruf kecil. Contoh: `text.lower()`."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string?",
+                "answer": "Gunakan operator `+` untuk menggabungkan string. Contoh: `'Hello' + ' World'`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan TypeError?",
+                "answer": "TypeError muncul ketika operasi yang tidak sesuai dengan tipe data dilakukan. Pastikan operasi cocok dengan tipe data yang digunakan."
+            },
+            {
+                "question": "Bagaimana cara memotong string?",
+                "question_code": "string = 'Welcome to Python!'\nprint(string[0:7])",
+                "answer": "Gunakan slicing untuk memotong string. Contoh: `string[start:end]`.",
+                "answer_code": "string = 'Welcome to Python!'\nprint(string[0:7])"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf besar?",
+                "question_code": "string = 'Hello, Python!'\nprint(string.uppercase())",
+                "answer": "Gunakan metode `upper()` untuk mengubah string menjadi huruf besar. Contoh: `string.upper()`.",
+                "answer_code": "string = 'Hello, Python!'\nprint(string.upper())"
+            },
+            {
+                "question": "Bagaimana cara menghapus spasi di awal dan akhir string?",
+                "question_code": "text = '   Leading and trailing spaces   '\nprint(text.remove_space())",
+                "answer": "Gunakan metode `strip()` untuk menghapus spasi di awal dan akhir string. Contoh: `text.strip()`.",
+                "answer_code": "text = '   Leading and trailing spaces   '\nprint(text.strip())"
+            },
+            {
+                "question": "Bagaimana memeriksa apakah string dimulai dengan substring tertentu?",
+                "question_code": "text = 'Python Programming'\nprint(text.begin_with('Python'))",
+                "answer": "Gunakan metode `startswith()` untuk memeriksa apakah string dimulai dengan substring tertentu. Contoh: `text.startswith('Python')`.",
+                "answer_code": "text = 'Python Programming'\nprint(text.startswith('Python'))"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string diakhiri dengan substring tertentu?",
+                "question_code": "text = 'Learn Python'\nprint(text.ends_with('Python'))",
+                "answer": "Gunakan metode `endswith()` untuk memeriksa apakah string diakhiri dengan substring tertentu. Contoh: `text.endswith('Python')`.",
+                "answer_code": "text = 'Learn Python'\nprint(text.endswith('Python'))"
+            },
+            {
+                "question": "Bagaimana mengganti substring di dalam string?",
+                "question_code": "text = 'Hello, Python!'\nprint(text.replace('Python', 'Java'))",
+                "answer": "Gunakan metode `replace()` untuk mengganti substring dalam string. Contoh: `text.replace('Python', 'Java')`.",
+                "answer_code": "text = 'Hello, Python!'\nprint(text.replace('Python', 'Java'))"
+            }
+        ]
+    }
+]

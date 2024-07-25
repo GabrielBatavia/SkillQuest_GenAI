@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Liam Roberts",
+        "tanggal": "2024-12-12",
+        "judul": "Menghapus Elemen dari List dengan `del`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "del", "Pemula"],
+        "konten": "Panduan ini memberikan wawasan tentang bagaimana menggunakan statement `del` untuk menghapus elemen dari list di Python. Contoh dan penjelasan yang mudah dipahami untuk pemula disediakan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menghapus elemen pertama dari list `[10, 20, 30, 40]`?",
+                "answer": "Untuk menghapus elemen pertama dari list `[10, 20, 30, 40]`, gunakan perintah `del list1[0]`. Ini akan menghapus elemen '10'.",
+                "question_code": "list1 = [10, 20, 30, 40]\ndel list1[0]"
+            },
+            {
+                "question": "Apa yang akan terjadi jika mencoba menghapus elemen pada indeks yang tidak ada dengan `del`?",
+                "answer": "Jika indeks yang digunakan dengan `del` tidak ada dalam list, akan muncul `IndexError`. Pastikan indeks yang digunakan berada dalam rentang list.",
+                "question_code": "list1 = [1, 2, 3]\ndel list1[3]"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen terakhir dari list `[5, 15, 25, 35]`?",
+                "answer": "Untuk menghapus elemen terakhir dari list `[5, 15, 25, 35]`, gunakan `del list1[-1]`. Ini akan menghapus elemen '35'.",
+                "question_code": "list1 = [5, 15, 25, 35]\ndel list1[-1]"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen yang terletak di indeks 1 dan 2 dari list `[100, 200, 300, 400]`?",
+                "answer": "Untuk menghapus elemen pada indeks 1 dan 2, gunakan `del list1[1:3]`. Ini akan menghapus elemen '200' dan '300'.",
+                "question_code": "list1 = [100, 200, 300, 400]\ndel list1[1:3]"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen pada indeks genap dari list `[8, 16, 24, 32]`?",
+                "answer": "Untuk menghapus elemen pada indeks genap, gunakan `del list1[::2]`. Ini akan menghapus elemen pada indeks 0 dan 2, yaitu '8' dan '24'.",
+                "question_code": "list1 = [8, 16, 24, 32]\ndel list1[::2]"
+            },
+            {
+                "question": "Apa yang perlu dilakukan sebelum menggunakan `del` pada list yang memiliki elemen duplikat?",
+                "answer": "Sebelum menggunakan `del` pada list dengan elemen duplikat, tentukan indeks yang tepat dari elemen yang ingin dihapus. `del` hanya menghapus elemen pada indeks tertentu dan tidak mempengaruhi duplikat lainnya.",
+                "question_code": "list1 = [3, 3, 3, 3]\ndel list1[1]"
+            }
+        ]
+    },
+    {
+        "sumber": "Fundamentals of Python",
+        "penulis": "Sophia Lee",
+        "tanggal": "2024-12-13",
+        "judul": "Cara Menghapus Elemen List Menggunakan `del`",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "del", "Pemula"],
+        "konten": "Artikel ini menjelaskan cara menggunakan statement `del` untuk menghapus elemen dari list dengan berbagai contoh dan penjelasan yang sederhana.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menghapus elemen keempat dari list `[7, 14, 21, 28, 35]`?",
+                "answer": "Untuk menghapus elemen keempat (indeks 3) dari list `[7, 14, 21, 28, 35]`, gunakan `del list1[3]`. Ini akan menghapus elemen '28'.",
+                "question_code": "list1 = [7, 14, 21, 28, 35]\ndel list1[3]"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menghapus elemen dengan `del` dari list kosong?",
+                "answer": "Menggunakan `del` pada list kosong akan menghasilkan `IndexError` karena tidak ada elemen untuk dihapus. Pastikan list tidak kosong sebelum menggunakan `del`.",
+                "question_code": "list1 = []\ndel list1[0]"
+            },
+            {
+                "question": "Bagaimana cara menghapus semua elemen dari list `[1, 2, 3, 4]` dengan menggunakan `del`?",
+                "answer": "Untuk menghapus semua elemen dari list, gunakan `del list1[:]`. Ini akan menghapus seluruh isi list.",
+                "question_code": "list1 = [1, 2, 3, 4]\ndel list1[:]"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen di tengah list `[10, 20, 30, 40, 50]`?",
+                "answer": "Untuk menghapus elemen di tengah list `[10, 20, 30, 40, 50]`, tentukan indeks tengah (indeks 2) dan gunakan `del list1[2]`. Ini akan menghapus elemen '30'.",
+                "question_code": "list1 = [10, 20, 30, 40, 50]\ndel list1[2]"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen pada indeks negatif dari list `[5, 10, 15, 20]`?",
+                "answer": "Untuk menghapus elemen pada indeks negatif, misalnya indeks -2, gunakan `del list1[-2]`. Ini akan menghapus elemen '15'.",
+                "question_code": "list1 = [5, 10, 15, 20]\ndel list1[-2]"
+            },
+            {
+                "question": "Apa yang perlu diperhatikan saat menggunakan `del` untuk menghapus elemen dalam nested lists?",
+                "answer": "Saat menggunakan `del` untuk nested lists, pastikan untuk mengakses dan menghapus elemen pada tingkat yang benar. Misalnya, untuk menghapus elemen dari sublist, gunakan `del list1[sublist_index][element_index]`.",
+                "question_code": "list1 = [[1, 2], [3, 4]]\ndel list1[1][0]"
+            }
+        ]
+    }
+]

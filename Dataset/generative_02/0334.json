@@ -1,0 +1,132 @@
+[
+    {
+        "sumber": "Python List Operations",
+        "penulis": "Alex Morgan",
+        "tanggal": "2024-08-05",
+        "judul": "Dasar-dasar Manipulasi List Kosong di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Basics"],
+        "konten": "Panduan ini mencakup dasar-dasar tentang cara mengelola list kosong di Python, termasuk cara menambahkan elemen dan menghindari kesalahan umum.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan list kosong dan menambahkan elemen menggunakan metode append()?",
+                "answer": "List kosong dapat dideklarasikan dengan sintaks: empty_list = []. Anda dapat menambahkan elemen menggunakan metode append(). Contoh: empty_list.append(5)",
+                "question_code": "empty_list = []\nempty_list.append(5)",
+                "answer_code": "empty_list = []\nempty_list.append(5) # empty_list menjadi [5]"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan metode pop() pada list kosong?",
+                "answer": "Menggunakan metode pop() pada list kosong akan menyebabkan error 'IndexError: pop from empty list'. Pastikan list tidak kosong sebelum menggunakan metode pop().",
+                "question_code": "empty_list = []\nempty_list.pop()",
+                "answer_code": "empty_list = []\nif empty_list:\n    empty_list.pop()"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode clear() untuk menghapus semua elemen dari list?",
+                "answer": "Metode clear() menghapus semua elemen dari list tanpa menghapus list itu sendiri. Contoh: empty_list.clear()",
+                "question_code": "empty_list = [1, 2, 3]\nempty_list.clear()",
+                "answer_code": "empty_list = [1, 2, 3]\nempty_list.clear() # empty_list menjadi []"
+            },
+            {
+                "question": "Apa penyebab error 'TypeError: 'int' object is not iterable' ketika menggunakan metode extend()?",
+                "question_code": "empty_list = []\nempty_list.extend(5)",
+                "answer": "Error ini terjadi karena extend() membutuhkan iterable. Integer bukan iterable, jadi Anda harus menggunakan list atau tipe iterable lainnya.",
+                "answer_code": "empty_list = []\nempty_list.extend([5])"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen di awal list kosong menggunakan metode insert()?",
+                "answer": "Metode insert() memungkinkan Anda menambahkan elemen pada posisi tertentu dalam list. Contoh: empty_list.insert(0, 'item') akan menambahkan 'item' di awal list.",
+                "question_code": "empty_list = []\nempty_list.insert(0, 'item')",
+                "answer_code": "empty_list = []\nempty_list.insert(0, 'item') # empty_list menjadi ['item']"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'ValueError: list.remove(x): x not in list' saat menggunakan metode remove() pada list kosong?",
+                "question_code": "empty_list = []\nempty_list.remove('item')",
+                "answer": "Error ini terjadi karena Anda mencoba menghapus elemen yang tidak ada dalam list. Pastikan elemen ada dalam list sebelum menggunakan metode remove().",
+                "answer_code": "empty_list = []\n# Pastikan elemen ada dalam list sebelum menggunakan remove()\nif 'item' in empty_list:\n    empty_list.remove('item')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk mengisi list kosong dengan nilai dari 0 hingga 4?",
+                "answer": "Anda dapat menggunakan list comprehension untuk menghasilkan list baru dari list kosong dengan menambahkan nilai dari 0 hingga 4. Contoh: empty_list = [x for x in range(5)]",
+                "question_code": "empty_list = []\nempty_list = [x for x in range(5)]",
+                "answer_code": "empty_list = []\nempty_list = [x for x in range(5)] # empty_list menjadi [0, 1, 2, 3, 4]"
+            },
+            {
+                "question": "Mengapa error 'TypeError: 'list' object is not callable' terjadi saat mencoba mengakses elemen list?",
+                "question_code": "empty_list = []\nelement = empty_list(0)",
+                "answer": "Error ini terjadi karena Anda mencoba menggunakan list seperti fungsi. Gunakan tanda kurung siku untuk mengakses elemen list.",
+                "answer_code": "empty_list = []\nelement = empty_list[0] # akan menyebabkan IndexError jika list kosong"
+            },
+            {
+                "question": "Bagaimana cara menghindari error 'IndexError: list assignment index out of range' saat mencoba menetapkan nilai ke indeks tertentu?",
+                "answer": "Error ini terjadi karena Anda mencoba menetapkan nilai ke indeks yang tidak ada dalam list. Gunakan metode append() atau insert() untuk menambahkan elemen.",
+                "question_code": "empty_list = []\nempty_list[0] = 'item'",
+                "answer_code": "empty_list = []\nempty_list.append('item')"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Advanced List Operations",
+        "penulis": "Chris Johnson",
+        "tanggal": "2024-08-06",
+        "judul": "Teknik Lanjutan untuk Memanipulasi List Kosong di Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Advanced Techniques"],
+        "konten": "Artikel ini mencakup teknik lanjutan untuk memanipulasi list kosong di Python, termasuk cara menambahkan elemen dengan berbagai metode dan penanganan kesalahan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen ke list kosong menggunakan fungsi zip()?",
+                "answer": "Anda dapat menggunakan fungsi zip() untuk menggabungkan dua iterable dan menambahkannya ke list kosong. Contoh: empty_list = list(zip([1, 2, 3], ['a', 'b', 'c']))",
+                "question_code": "empty_list = list(zip([1, 2, 3], ['a', 'b', 'c']))",
+                "answer_code": "empty_list = list(zip([1, 2, 3], ['a', 'b', 'c'])) # empty_list menjadi [(1, 'a'), (2, 'b'), (3, 'c')]"
+            },
+            {
+                "question": "Apa penyebab error 'ValueError: too many values to unpack' ketika menggunakan fungsi zip()?",
+                "question_code": "empty_list = list(zip([1, 2, 3], [4, 5]))",
+                "answer": "Error ini terjadi karena jumlah elemen dalam kedua iterable tidak sama. Pastikan kedua iterable memiliki jumlah elemen yang sama.",
+                "answer_code": "empty_list = list(zip([1, 2, 3], [4, 5, 6]))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode reverse() untuk membalik urutan elemen dalam list kosong?",
+                "answer": "Metode reverse() membalik urutan elemen dalam list. Pada list kosong, metode ini tidak akan mengubah apapun. Contoh: empty_list.reverse()",
+                "question_code": "empty_list = [1, 2, 3]\nempty_list.reverse()",
+                "answer_code": "empty_list = [1, 2, 3]\nempty_list.reverse() # empty_list menjadi [3, 2, 1]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode count() untuk menghitung jumlah kemunculan elemen dalam list kosong?",
+                "answer": "Metode count() menghitung jumlah kemunculan elemen dalam list. Pada list kosong, hasilnya selalu 0. Contoh: empty_list.count('item')",
+                "question_code": "empty_list = []\ncount = empty_list.count('item')",
+                "answer_code": "empty_list = []\ncount = empty_list.count('item') # count menjadi 0"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi sorted() untuk mengurutkan elemen dalam list kosong?",
+                "answer": "Fungsi sorted() mengembalikan list baru dengan elemen yang diurutkan. Pada list kosong, hasilnya tetap list kosong. Contoh: sorted_list = sorted(empty_list)",
+                "question_code": "empty_list = []\nsorted_list = sorted(empty_list)",
+                "answer_code": "empty_list = []\nsorted_list = sorted(empty_list) # sorted_list tetap []"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'NoneType' object is not iterable' ketika menggunakan fungsi map()?",
+                "question_code": "empty_list = []\nnone_value = None\nmapped_list = list(map(str, none_value))",
+                "answer": "Error ini terjadi karena Anda mencoba menggunakan None sebagai iterable. Pastikan untuk menggunakan iterable yang valid seperti list atau tuple.",
+                "answer_code": "empty_list = []\nvalid_iterable = [1, 2, 3]\nmapped_list = list(map(str, valid_iterable))"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi enumerate() untuk mendapatkan indeks dan nilai dari elemen dalam list kosong?",
+                "answer": "Fungsi enumerate() memberikan pasangan indeks dan nilai dari elemen dalam list. Pada list kosong, tidak ada pasangan yang dihasilkan. Contoh: for index, value in enumerate(empty_list):",
+                "question_code": "empty_list = []\nfor index, value in enumerate(empty_list):\n    print(index, value)",
+                "answer_code": "empty_list = []\nfor index, value in enumerate(empty_list):\n    print(index, value) # Tidak ada output"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi any() untuk memeriksa apakah ada elemen yang benar dalam list kosong?",
+                "answer": "Fungsi any() mengembalikan True jika ada elemen yang benar dalam list. Pada list kosong, hasilnya selalu False. Contoh: any(empty_list)",
+                "question_code": "empty_list = []\nhas_true_element = any(empty_list)",
+                "answer_code": "empty_list = []\nhas_true_element = any(empty_list) # has_true_element menjadi False"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list kosong dengan list lain menggunakan operator * untuk pengulangan?",
+                "answer": "Operator * dapat digunakan untuk mengulang elemen dalam list. Contoh: empty_list = []\nnew_list = empty_list * 3",
+                "question_code": "empty_list = []\nnew_list = empty_list * 3",
+                "answer_code": "empty_list = []\nnew_list = empty_list * 3 # new_list tetap []"
+            }
+        ]
+    }
+]

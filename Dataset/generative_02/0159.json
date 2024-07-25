@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "belajarpemrogramanpython.net",
+        "penulis": "Ika Permata",
+        "tanggal": "2023-06-15",
+        "judul": "Penggunaan Operator Aritmatika di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator aritmatika", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan operator aritmatika di Python seperti penjumlahan, pengurangan, perkalian, pembagian, modulus, dan perpangkatan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menjumlahkan banyak angka di Python?",
+                "answer": "Untuk menjumlahkan dua angka di Python, gunakan operator `+`. Misalnya: `15 + 30`."
+            },
+            {
+                "question": "Apa langkah yang harus diambil untuk mengurangi satu angka dari angka lainnya?",
+                "answer": "Gunakan operator `-` untuk mengurangi angka di Python. Contohnya: `a - b`."
+            },
+            {
+                "question": "Jika saya ingin mengalikan dua angka, kode apa yang harus saya tulis?",
+                "question_code": "a * b",
+                "answer": "Gunakan operator `*` untuk perkalian di Python. Sebagai contoh: `a * b`.",
+                "answer_code": "a * b"
+            },
+            {
+                "question": "Bagaimana cara melakukan pembagian antara dua angka?",
+                "question_code": "a / b",
+                "answer": "Untuk melakukan pembagian, gunakan operator `/`. Misalnya: `a / b`.",
+                "answer_code": "a / b"
+            },
+            {
+                "question": "Apa cara untuk mendapatkan sisa hasil bagi dari pembagian?",
+                "question_code": "a % b",
+                "answer": "Gunakan operator `%` untuk mendapatkan sisa hasil bagi dari pembagian. Contoh: `a % b`.",
+                "answer_code": "a % b"
+            },
+            {
+                "question": "Bagaimana saya bisa mengangkat angka ke pangkat tertentu di Python?",
+                "question_code": "a ** b",
+                "answer": "Untuk perpangkatan, gunakan operator `**`. Misalnya: `a ** b`.",
+                "answer_code": "a ** b"
+            },
+            {
+                "question": "Apa yang dilakukan operator `//` di Python?",
+                "question_code": "a // b",
+                "answer": "Operator `//` digunakan untuk pembagian bulat. Contoh penggunaannya adalah: `a // b`.",
+                "answer_code": "a // b"
+            },
+            {
+                "question": "Bagaimana cara menambahkan nilai pada variabel yang sudah ada?",
+                "question_code": "a += 10",
+                "answer": "Gunakan operator `+=` untuk menambahkan nilai pada variabel. Contoh: `a += 10`.",
+                "answer_code": "a += 10"
+            },
+            {
+                "question": "Jika saya memiliki angka negatif, bagaimana cara membuatnya positif?",
+                "question_code": "abs(-a)",
+                "answer": "Gunakan fungsi `abs()` untuk mengubah angka negatif menjadi positif. Contoh: `abs(-a)`.",
+                "answer_code": "abs(-a)"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpython.org",
+        "penulis": "Rizki Maulana",
+        "tanggal": "2024-02-01",
+        "judul": "Penggunaan Loop While di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "loop while", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan loop while di Python untuk mengulangi eksekusi blok kode selama kondisi tertentu terpenuhi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana caranya membuat loop yang terus-menerus selama kondisi tertentu benar?",
+                "answer": "Untuk membuat loop yang terus berlanjut selama kondisi terpenuhi, gunakan sintaks `while kondisi:` diikuti dengan blok kode. Contoh: `while x < 5: print(x)`."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika saya ingin keluar dari loop sebelum kondisi selesai?",
+                "question_code": "counter = 0\nwhile counter < 10:\n    if counter == 7:\n        break\n    print(counter)\n    counter += 1",
+                "answer": "Gunakan perintah `break` untuk menghentikan loop lebih awal. Misalnya: `if counter == 7: break`.",
+                "answer_code": "counter = 0\nwhile counter < 10:\n    if counter == 7:\n        break\n    print(counter)\n    counter += 1"
+            },
+            {
+                "question": "Bagaimana saya bisa melewati iterasi tertentu dan langsung ke iterasi berikutnya?",
+                "question_code": "counter = 0\nwhile counter < 10:\n    counter += 1\n    if counter % 2 == 0:\n        continue\n    print(counter)",
+                "answer": "Gunakan perintah `continue` untuk melewati iterasi saat ini dan lanjut ke iterasi berikutnya. Contoh: `if counter % 2 == 0: continue`.",
+                "answer_code": "counter = 0\nwhile counter < 10:\n    counter += 1\n    if counter % 2 == 0:\n        continue\n    print(counter)"
+            },
+            {
+                "question": "Apa yang terjadi jika saya menulis loop dengan `while True`?",
+                "question_code": "while True:\n    print('Loop ini akan terus berlanjut')",
+                "answer": "Menulis `while True` akan menghasilkan loop tak hingga yang terus berjalan tanpa berhenti. Contoh: `while True: print('Loop ini akan terus berlanjut')`.",
+                "answer_code": "while True:\n    print('Loop ini akan terus berlanjut')"
+            },
+            {
+                "question": "Bagaimana cara mengubah kondisi loop while selama loop itu sendiri berlangsung?",
+                "question_code": "counter = 0\nwhile counter < 5:\n    print(counter)\n    counter += 1",
+                "answer": "Anda dapat mengubah kondisi loop dengan memodifikasi variabel kondisi di dalam loop. Contoh: `while counter < 5: print(counter); counter += 1`.",
+                "answer_code": "counter = 0\nwhile counter < 5:\n    print(counter)\n    counter += 1"
+            },
+            {
+                "question": "Bisakah saya membuat loop while di dalam loop while lainnya?",
+                "question_code": "i = 0\nwhile i < 3:\n    j = 0\n    while j < 2:\n        print(i, j)\n        j += 1\n    i += 1",
+                "answer": "Ya, Anda bisa menggunakan loop while di dalam loop while lainnya. Misalnya: `while i < 3: while j < 2:`.",
+                "answer_code": "i = 0\nwhile i < 3:\n    j = 0\n    while j < 2:\n        print(i, j)\n        j += 1\n    i += 1"
+            },
+            {
+                "question": "Bagaimana cara menangani loop while dengan kondisi yang rumit?",
+                "question_code": "a = 0\nb = 20\nwhile a < 5 and b > 10:\n    print(a, b)\n    a += 1\n    b -= 2",
+                "answer": "Anda dapat menggunakan beberapa kondisi logika dalam loop while. Contoh: `while a < 5 and b > 10:`.",
+                "answer_code": "a = 0\nb = 20\nwhile a < 5 and b > 10:\n    print(a, b)\n    a += 1\n    b -= 2"
+            },
+            {
+                "question": "Apa yang dilakukan pernyataan `else` setelah loop while?",
+                "question_code": "i = 0\nwhile i < 3:\n    print(i)\n    i += 1\nelse:\n    print('Loop telah selesai')",
+                "answer": "Pernyataan `else` setelah loop while akan dijalankan jika loop selesai tanpa perintah `break`. Contoh: `else: print('Loop telah selesai')`.",
+                "answer_code": "i = 0\nwhile i < 3:\n    print(i)\n    i += 1\nelse:\n    print('Loop telah selesai')"
+            },
+            {
+                "question": "Bagaimana saya bisa meminta input dari pengguna selama loop while?",
+                "question_code": "user_input = ''\nwhile user_input != 'quit':\n    user_input = input('Tulis sesuatu (ketik quit untuk keluar): ')\n    print(user_input)",
+                "answer": "Gunakan `input()` di dalam loop untuk meminta input dari pengguna. Misalnya: `while user_input != 'quit': user_input = input('Tulis sesuatu (ketik quit untuk keluar): '); print(user_input)`.",
+                "answer_code": "user_input = ''\nwhile user_input != 'quit':\n    user_input = input('Tulis sesuatu (ketik quit untuk keluar): ')\n    print(user_input)"
+            }
+        ]
+    }
+]

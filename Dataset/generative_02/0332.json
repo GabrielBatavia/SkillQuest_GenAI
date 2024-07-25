@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Emily Clark",
+        "tanggal": "2024-08-01",
+        "judul": "Mengelola List Kosong di Python: Metode dan Kesalahan Umum",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Error Handling"],
+        "konten": "Panduan ini membahas cara efektif untuk mengelola list kosong di Python, termasuk metode yang dapat digunakan serta cara mengatasi kesalahan umum.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan metode pop() pada list kosong dan apa yang terjadi?",
+                "answer": "Metode pop() pada list kosong akan menyebabkan error 'IndexError: pop from empty list'. Anda harus memastikan list tidak kosong sebelum memanggil pop().",
+                "question_code": "empty_list = []\nempty_list.pop()",
+                "answer_code": "empty_list = []\n# Jangan menggunakan pop() pada list kosong"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menghapus elemen dengan metode remove() dari list kosong?",
+                "answer": "Metode remove() pada list kosong akan menyebabkan error 'ValueError: list.remove(x): x not in list'. Pastikan elemen ada dalam list sebelum memanggil remove().",
+                "question_code": "empty_list = []\nempty_list.remove('item')",
+                "answer_code": "empty_list = []\n# Jangan menggunakan remove() pada list kosong tanpa elemen yang ada"
+            },
+            {
+                "question": "Bagaimana cara menyalin list kosong ke list baru dan apa hasilnya?",
+                "answer": "Anda dapat menyalin list kosong ke list baru dengan menggunakan assignment atau metode copy(). Kedua list akan tetap kosong.",
+                "question_code": "empty_list = []\nnew_list = empty_list.copy()",
+                "answer_code": "empty_list = []\nnew_list = empty_list.copy() # new_list juga kosong"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'list' object is not callable' ketika menggunakan list sebagai fungsi?",
+                "question_code": "empty_list = []\nresult = empty_list(1)",
+                "answer": "Error ini muncul karena Anda mencoba menggunakan list seperti fungsi. Pastikan untuk tidak menggunakan nama variabel yang sama dengan tipe data bawaan.",
+                "answer_code": "empty_list = []\n# Jangan menggunakan nama variabel yang sama dengan tipe data bawaan seperti list"
+            },
+            {
+                "question": "Mengapa error 'IndexError: list index out of range' terjadi saat mencoba mengakses indeks di list kosong?",
+                "question_code": "empty_list = []\nitem = empty_list[0]",
+                "answer": "Error ini terjadi karena list kosong tidak memiliki elemen pada indeks manapun. Pastikan untuk memeriksa apakah list kosong sebelum mengakses indeks.",
+                "answer_code": "empty_list = []\n# Periksa apakah list kosong sebelum mengakses indeks"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk membuat list dari list kosong dan apa contohnya?",
+                "answer": "Anda bisa menggunakan list comprehension untuk menghasilkan list baru dari list kosong dengan menambahkan elemen menggunakan kondisi. Contoh: [x for x in range(3)] akan menghasilkan [0, 1, 2].",
+                "question_code": "empty_list = []\nnew_list = [x*2 for x in range(3)]",
+                "answer_code": "empty_list = []\nnew_list = [x*2 for x in range(3)] # new_list adalah [0, 2, 4]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'list' object is not subscriptable' ketika mencoba mengakses elemen dengan indeks?",
+                "question_code": "empty_list = []\nitem = empty_list[1]",
+                "answer": "Error ini terjadi jika Anda mencoba mengakses elemen dari objek yang bukan list. Pastikan Anda menggunakan list untuk akses indeks.",
+                "answer_code": "empty_list = []\n# Pastikan empty_list adalah list sebelum mengakses elemen dengan indeks"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke list kosong menggunakan metode extend() dengan iterable baru?",
+                "answer": "Metode extend() dapat digunakan untuk menambahkan elemen dari iterable lain ke list kosong. Contoh: empty_list = []\nempty_list.extend([1, 2, 3])",
+                "question_code": "empty_list = []\nempty_list.extend([1, 2, 3])",
+                "answer_code": "empty_list = []\nempty_list.extend([1, 2, 3]) # empty_list menjadi [1, 2, 3]"
+            }
+        ]
+    },
+    {
+        "sumber": "Advanced Python Techniques",
+        "penulis": "Michael Roberts",
+        "tanggal": "2024-08-02",
+        "judul": "Teknik Lanjutan untuk Manipulasi List Kosong di Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Advanced", "Lists"],
+        "konten": "Artikel ini menjelaskan teknik-teknik lanjutan untuk memanipulasi list kosong di Python serta cara menghindari kesalahan umum.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara memeriksa apakah list kosong sebelum melakukan operasi tertentu?",
+                "answer": "Anda dapat memeriksa apakah list kosong dengan menggunakan kondisi if. Contoh: if not empty_list: # list kosong",
+                "question_code": "empty_list = []\nif not empty_list:\n    print('List is empty')",
+                "answer_code": "empty_list = []\nif not empty_list:\n    print('List is empty')"
+            },
+            {
+                "question": "Apa penyebab error 'ValueError: too many values to unpack' saat unpacking list kosong?",
+                "question_code": "empty_list = []\na, b = empty_list",
+                "answer": "Error ini muncul karena Anda mencoba unpack list kosong ke dalam variabel. Pastikan list memiliki jumlah elemen yang sesuai dengan variabel yang akan di-unpack.",
+                "answer_code": "empty_list = []\n# Pastikan list memiliki elemen sebelum unpack"
+            },
+            {
+                "question": "Bagaimana menggunakan metode insert() untuk menambahkan elemen pada list kosong dan apa contohnya?",
+                "answer": "Metode insert() memungkinkan Anda menambahkan elemen pada posisi tertentu dalam list. Contoh: empty_list = []\nempty_list.insert(0, 'element')",
+                "question_code": "empty_list = []\nempty_list.insert(0, 'element')",
+                "answer_code": "empty_list = []\nempty_list.insert(0, 'element') # empty_list menjadi ['element']"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'AttributeError: 'list' object has no attribute 'add'' dan bagaimana cara menghindarinya?",
+                "question_code": "empty_list = []\nempty_list.add('element')",
+                "answer": "Error ini terjadi karena tidak ada metode add() pada list. Gunakan append() untuk menambahkan elemen.",
+                "answer_code": "empty_list = []\nempty_list.append('element')"
+            },
+            {
+                "question": "Mengapa error 'IndexError: list index out of range' terjadi saat menggunakan metode pop() pada list kosong?",
+                "question_code": "empty_list = []\nelement = empty_list.pop()",
+                "answer": "Error ini terjadi karena metode pop() tidak dapat digunakan pada list kosong. Pastikan list tidak kosong sebelum menggunakan pop().",
+                "answer_code": "empty_list = []\n# Pastikan list tidak kosong sebelum menggunakan pop()"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke list kosong dengan cara yang lebih efisien menggunakan operasi *?",
+                "answer": "Anda bisa menggunakan operasi * untuk menggandakan elemen dalam list. Contoh: empty_list = []\nnew_list = empty_list + [1] * 3",
+                "question_code": "empty_list = []\nnew_list = empty_list + [1] * 3",
+                "answer_code": "empty_list = []\nnew_list = empty_list + [1] * 3 # new_list menjadi [1, 1, 1]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: unhashable type: 'list'' ketika mencoba menambahkan list ke dalam set?",
+                "question_code": "empty_set = set()\nempty_set.add([1, 2])",
+                "answer": "Error ini terjadi karena list tidak dapat digunakan sebagai elemen set. Gunakan tipe data yang dapat di-hash seperti tuple.",
+                "answer_code": "empty_set = set()\nempty_set.add((1, 2))"
+            }
+        ]
+    }
+]

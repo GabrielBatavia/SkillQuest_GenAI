@@ -1,0 +1,130 @@
+Skenario 1: Menggunakan range dalam Loop
+User: "Bagaimana cara menggunakan range dalam loop di Python?"
+AI: "Fungsi range digunakan untuk menghasilkan urutan angka, yang sering digunakan dalam loop. Contohnya:
+
+python
+Copy code
+for i in range(1, 6):
+    print(i)
+Kode di atas mencetak angka dari 1 hingga 5. Fungsi range(1, 6) menghasilkan angka dari 1 hingga 5."
+
+Skenario 2: Fungsi dengan Argumen Default
+User: "Bagaimana cara mendefinisikan fungsi dengan argumen default di Python?"
+AI: "Anda bisa mendefinisikan argumen default dalam fungsi dengan memberikan nilai default pada argumen. Contohnya:
+
+python
+Copy code
+def sapa(nama='Dunia'):
+    return f"Hello, {nama}!"
+
+print(sapa())       # Output: Hello, Dunia!
+print(sapa('Alice'))  # Output: Hello, Alice!
+Fungsi sapa ini memiliki argumen default nama yang bernilai 'Dunia'. Jika tidak ada argumen yang diberikan saat fungsi dipanggil, nilai default akan digunakan."
+
+Skenario 3: Fungsi Rekursif
+User: "Apa itu fungsi rekursif dan bagaimana cara menggunakannya di Python?"
+AI: "Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Contohnya, menghitung faktorial dari sebuah angka:
+
+python
+Copy code
+def faktorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * faktorial(n - 1)
+
+print(faktorial(5))  # Output: 120
+Fungsi faktorial memanggil dirinya sendiri untuk menghitung faktorial dari angka yang diberikan."
+
+Skenario 4: Menggunakan enumerate dalam Loop
+User: "Bagaimana cara menggunakan enumerate dalam loop di Python?"
+AI: "Fungsi enumerate digunakan untuk mendapatkan pasangan indeks dan nilai saat mengiterasi melalui list. Contohnya:
+
+python
+Copy code
+buah = ['apel', 'pisang', 'jeruk']
+
+for indeks, nilai in enumerate(buah):
+    print(indeks, nilai)
+Kode di atas mencetak indeks dan nilai dari setiap elemen dalam list buah."
+
+Skenario 5: Membalik String
+User: "Bagaimana cara membalik string di Python?"
+AI: "Anda bisa membalik string menggunakan slicing. Contohnya:
+
+python
+Copy code
+teks = "Hello, world!"
+teks_terbalik = teks[::-1]
+
+print(teks_terbalik)  # Output: !dlrow ,olleH
+Kode di atas membalik urutan karakter dalam string teks."
+
+Skenario 6: List of Dictionaries
+User: "Bagaimana cara bekerja dengan list of dictionaries di Python?"
+AI: "Anda bisa membuat list yang berisi beberapa dictionary. Contohnya:
+
+python
+Copy code
+mahasiswa = [
+    {'nama': 'Alice', 'umur': 23},
+    {'nama': 'Bob', 'umur': 24},
+    {'nama': 'Charlie', 'umur': 22}
+]
+
+for mhs in mahasiswa:
+    print(f"Nama: {mhs['nama']}, Umur: {mhs['umur']}")
+Kode di atas mengiterasi melalui list mahasiswa dan mencetak informasi dari setiap dictionary."
+
+Skenario 7: Exception Handling dengan else dan finally
+User: "Bagaimana cara menggunakan blok else dan finally dalam penanganan error di Python?"
+AI: "Blok else dijalankan jika tidak ada exception yang ditangkap, dan blok finally dijalankan selalu, baik ada exception maupun tidak. Contohnya:
+
+python
+Copy code
+try:
+    angka = int(input("Masukkan sebuah angka: "))
+    hasil = 10 / angka
+except ZeroDivisionError:
+    print("Error: Tidak bisa membagi angka dengan nol.")
+else:
+    print(f"Hasil: {hasil}")
+finally:
+    print("Blok finally dijalankan selalu.")
+Blok else akan dijalankan jika tidak ada exception, sedangkan blok finally akan dijalankan selalu."
+
+Skenario 8: Lambda Function
+User: "Apa itu lambda function dan bagaimana cara menggunakannya di Python?"
+AI: "Lambda function adalah fungsi anonim yang didefinisikan dengan kata kunci lambda. Contohnya:
+
+python
+Copy code
+tambah = lambda a, b: a + b
+hasil = tambah(5, 3)
+
+print(hasil)  # Output: 8
+Lambda function tambah menerima dua argumen dan mengembalikan hasil penjumlahannya."
+
+Skenario 9: Menggunakan map untuk Transformasi List
+User: "Bagaimana cara menggunakan map untuk transformasi list di Python?"
+AI: "Fungsi map digunakan untuk menerapkan fungsi tertentu ke setiap elemen dalam list. Contohnya:
+
+python
+Copy code
+angka = [1, 2, 3, 4, 5]
+kuadrat = list(map(lambda x: x**2, angka))
+
+print(kuadrat)  # Output: [1, 4, 9, 16, 25]
+Fungsi map menerapkan lambda function yang mengkuadratkan setiap elemen dalam list angka."
+
+Skenario 10: Menggunakan filter untuk Menyaring List
+User: "Bagaimana cara menggunakan filter untuk menyaring list di Python?"
+AI: "Fungsi filter digunakan untuk menyaring elemen dalam list berdasarkan kondisi tertentu. Contohnya:
+
+python
+Copy code
+angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+genap = list(filter(lambda x: x % 2 == 0, angka))
+
+print(genap)  # Output: [2, 4, 6, 8, 10]
+Fungsi filter menyaring elemen yang memenuhi kondisi dalam lambda function, yaitu angka genap."

@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "python.org",
+        "penulis": "John Doe",
+        "tanggal": "2024-07-23",
+        "judul": "Pengantar Sintaks Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "pemula"],
+        "konten": "Artikel ini membahas dasar-dasar sintaks Python, termasuk variabel, tipe data, dan struktur kontrol.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu variabel dalam Python?",
+                "answer": "Variabel dalam Python adalah nama yang digunakan untuk menyimpan data yang bisa diakses dan diubah di program."
+            },
+            {
+                "question": "Bagaimana cara membuat variabel di Python?",
+                "answer": "Anda bisa membuat variabel dengan menuliskan nama variabel diikuti tanda sama dengan dan nilai. Misalnya: `nama = 'Budi'`."
+            },
+            {
+                "question": "Tipe data apa saja yang ada di Python?",
+                "answer": "Python memiliki beberapa tipe data dasar seperti int (integer), float (pecahan), str (string atau teks), dan bool (boolean)."
+            },
+            {
+                "question": "Bagaimana cara menulis komentar di Python?",
+                "question_code": "x = 10  # Ini adalah komentar",
+                "answer": "Komentar di Python ditulis dengan tanda pagar (#). Misalnya: `# Ini adalah komentar`.",
+                "answer_code": "x = 10  # Ini adalah komentar"
+            },
+            {
+                "question": "Apa itu list di Python?",
+                "question_code": "buah = ['apel', 'jeruk', 'mangga']",
+                "answer": "List adalah struktur data yang bisa menyimpan beberapa item dalam satu variabel. Misalnya: `buah = ['apel', 'jeruk', 'mangga']`.",
+                "answer_code": "buah = ['apel', 'jeruk', 'mangga']"
+            },
+            {
+                "question": "Bagaimana cara mengakses item dalam list?",
+                "question_code": "angka = [1, 2, 3]\npertama = angka[0]",
+                "answer": "Anda bisa mengakses item dalam list menggunakan indeks, contohnya: `pertama = angka[0]`.",
+                "answer_code": "angka = [1, 2, 3]\npertama = angka[0]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan perulangan for di Python?",
+                "question_code": "for i in range(3):\n    print(i)",
+                "answer": "Anda bisa menggunakan perulangan for untuk mengulang suatu blok kode beberapa kali. Misalnya: `for i in range(3): print(i)`.",
+                "answer_code": "for i in range(3):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara membuat pernyataan if di Python?",
+                "question_code": "x = 10\nif x > 5:\n    print('x lebih besar dari 5')",
+                "answer": "Pernyataan if digunakan untuk membuat keputusan berdasarkan kondisi. Misalnya: `if x > 5: print('x lebih besar dari 5')`.",
+                "answer_code": "x = 10\nif x > 5:\n    print('x lebih besar dari 5')"
+            },
+            {
+                "question": "Bagaimana cara membuat fungsi di Python?",
+                "question_code": "def sapa():\n    print('Halo!')",
+                "answer": "Fungsi didefinisikan dengan kata kunci def diikuti dengan nama fungsi dan tanda kurung. Misalnya: `def sapa(): print('Halo!')`.",
+                "answer_code": "def sapa():\n    print('Halo!')"
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "Jane Smith",
+        "tanggal": "2024-07-20",
+        "judul": "Dasar-Dasar Sintaks Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "tutorial"],
+        "konten": "Artikel ini memberikan panduan lengkap untuk memahami dasar-dasar sintaks Python bagi pemula.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu boolean di Python?",
+                "answer": "Boolean adalah tipe data yang hanya memiliki dua nilai: True atau False."
+            },
+            {
+                "question": "Bagaimana cara mengubah tipe data di Python?",
+                "answer": "Anda bisa mengubah tipe data dengan menggunakan fungsi seperti int(), float(), dan str(). Misalnya: `str(100)` untuk mengubah angka menjadi string."
+            },
+            {
+                "question": "Apa itu string di Python?",
+                "answer": "String adalah urutan karakter yang dikelilingi oleh tanda kutip. Contohnya: 'Halo' atau \"Halo\"."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string?",
+                "question_code": "nama_depan = 'Budi'\nnama_belakang = 'Setiawan'\nnama_lengkap = nama_depan + ' ' + nama_belakang",
+                "answer": "Dua string bisa digabungkan dengan operator +. Misalnya: `nama_lengkap = nama_depan + ' ' + nama_belakang`.",
+                "answer_code": "nama_depan = 'Budi'\nnama_belakang = 'Setiawan'\nnama_lengkap = nama_depan + ' ' + nama_belakang"
+            },
+            {
+                "question": "Bagaimana cara mengambil sebagian teks dari string?",
+                "question_code": "teks = 'Pemrograman Python'\nbagian = teks[0:11]",
+                "answer": "Anda bisa mengambil sebagian teks dengan slicing. Misalnya: `bagian = teks[0:11]`.",
+                "answer_code": "teks = 'Pemrograman Python'\nbagian = teks[0:11]"
+            },
+            {
+                "question": "Bagaimana cara mengubah teks menjadi huruf besar?",
+                "question_code": "teks = 'halo'\nteks_besar = teks.upper()",
+                "answer": "Anda bisa mengubah teks menjadi huruf besar dengan metode upper(). Misalnya: `teks_besar = teks.upper()`.",
+                "answer_code": "teks = 'halo'\nteks_besar = teks.upper()"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari list di Python?",
+                "question_code": "buah = ['apel', 'pisang', 'ceri']\nbuah.pop(1)",
+                "answer": "Anda bisa menghapus item dari list dengan metode pop(). Misalnya: `buah.pop(1)` untuk menghapus item di indeks ke-1.",
+                "answer_code": "buah = ['apel', 'pisang', 'ceri']\nbuah.pop(1)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu item ada dalam list?",
+                "question_code": "hewan = ['kucing', 'anjing', 'burung']\nif 'anjing' in hewan:\n    print('Anjing ada dalam list')",
+                "answer": "Anda bisa memeriksa apakah item ada dalam list dengan kata kunci in. Misalnya: `if 'anjing' in hewan: print('Anjing ada dalam list')`.",
+                "answer_code": "hewan = ['kucing', 'anjing', 'burung']\nif 'anjing' in hewan:\n    print('Anjing ada dalam list')"
+            },
+            {
+                "question": "Bagaimana cara membuat perulangan while di Python?",
+                "question_code": "i = 0\nwhile i < 3:\n    print(i)\n    i += 1",
+                "answer": "Perulangan while digunakan untuk mengulang kode selama kondisinya True. Misalnya: `i = 0\nwhile i < 3: print(i)\ni += 1`.",
+                "answer_code": "i = 0\nwhile i < 3:\n    print(i)\n    i += 1"
+            }
+        ]
+    }
+]

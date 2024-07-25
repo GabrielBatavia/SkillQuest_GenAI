@@ -1,0 +1,105 @@
+{
+    "datasets": [
+        {
+            "sumber": "KodingPython.com",
+            "penulis": "Ahmad Taufik",
+            "tanggal": "2024-07-08",
+            "judul": "Manipulasi String di Python",
+            "tingkat_kesulitan": "menengah",
+            "tag": ["string", "manipulasi", "python"],
+            "konten": "Artikel ini membahas berbagai metode untuk manipulasi string di Python.",
+            "pertanyaan": [
+                {
+                    "question": "Bagaimana saya bisa mengubah semua huruf dalam sebuah string menjadi huruf kecil?",
+                    "answer": "Gunakan metode .lower() pada string untuk mengubah semua huruf menjadi kecil. Misal: 'HELLO'.lower() akan menjadi 'hello'."
+                },
+                {
+                    "question": "Apakah ada cara sederhana untuk menyatukan dua string di Python?",
+                    "answer": "Ya, gunakan tanda + untuk menyatukan string. Misal, 'Selamat' + ' Pagi' akan menghasilkan 'Selamat Pagi'."
+                },
+                {
+                    "question": "Apa itu kesalahan TypeError dan kapan itu terjadi?",
+                    "answer": "TypeError muncul saat Anda mencoba melakukan operasi dengan tipe data yang tidak sesuai, seperti menambahkan string dan angka."
+                },
+                {
+                    "question": "Saya ingin memotong bagian dari sebuah string. Bagaimana caranya?",
+                    "question_code": "kalimat = 'Saya belajar Python'\nprint(kalimat[5:12])",
+                    "answer": "Gunakan slicing untuk memotong string. Misal, kalimat[5:12] akan menghasilkan 'belajar'."
+                },
+                {
+                    "question": "Bagaimana cara membuat semua huruf dalam string menjadi huruf kapital?",
+                    "question_code": "pesan = 'selamat siang'\nprint(pesan.upper())",
+                    "answer": "Metode .upper() digunakan untuk mengubah semua huruf menjadi kapital, misal 'selamat siang' menjadi 'SELAMAT SIANG'."
+                },
+                {
+                    "question": "Cara menghilangkan spasi yang tidak perlu di awal dan akhir string?",
+                    "question_code": "teks = '  halo  '\nprint(teks.strip())",
+                    "answer": "Gunakan .strip() untuk menghilangkan spasi ekstra di kedua sisi, mengubah '  halo  ' menjadi 'halo'."
+                },
+                {
+                    "question": "Bagaimana saya bisa mengetahui apakah sebuah string dimulai dengan kata 'Hello'?",
+                    "question_code": "salam = 'Hello everyone'\nprint(salam.startswith('Hello'))",
+                    "answer": "Metode .startswith() digunakan untuk memeriksa ini, mengembalikan True jika benar."
+                },
+                {
+                    "question": "Bagaimana saya bisa mengetahui apakah sebuah string berakhir dengan 'World'?",
+                    "question_code": "sapaan = 'Hello World'\nprint(sapaan.endswith('World'))",
+                    "answer": "Metode .endswith() akan memeriksa hal ini dan mengembalikan True jika benar."
+                },
+                {
+                    "question": "Bagaimana cara mengganti kata 'World' dengan 'Everyone' dalam string?",
+                    "question_code": "ucapan = 'Hello, World!'\nprint(ucapan.replace('World', 'Everyone'))",
+                    "answer": "Gunakan .replace() untuk mengganti kata, mengubah 'Hello, World!' menjadi 'Hello, Everyone!'."
+                }
+            ]
+        },
+        {
+            "sumber": "ExpertPython.net",
+            "penulis": "Dewi Lestari",
+            "tanggal": "2024-07-10",
+            "judul": "Pemrograman Asinkron di Python",
+            "tingkat_kesulitan": "lanjutan",
+            "tag": ["asinkron", "async", "await"],
+            "konten": "Artikel ini menjelaskan konsep pemrograman asinkron di Python dengan menggunakan async dan await.",
+            "pertanyaan": [
+                {
+                    "question": "Apa yang dimaksud dengan pemrograman asinkron di Python?",
+                    "answer": "Pemrograman asinkron memungkinkan eksekusi tugas secara paralel, mempercepat proses tanpa menunggu tugas lain selesai."
+                },
+                {
+                    "question": "Bagaimana saya bisa mendefinisikan fungsi yang asinkron di Python?",
+                    "answer": "Definisikan fungsi asinkron dengan 'async def', contoh: async def proses_data():"
+                },
+                {
+                    "question": "Mengapa bisa terjadi RuntimeError dalam pemrograman asinkron?",
+                    "answer": "RuntimeError bisa terjadi jika event loop dijalankan di thread yang salah atau sudah tertutup."
+                },
+                {
+                    "question": "Bagaimana cara menjalankan fungsi asinkron yang sudah saya definisikan?",
+                    "question_code": "async def tugas():\nawait proses_lama()\n\nimport asyncio\nasyncio.run(tugas())",
+                    "answer": "Gunakan asyncio.run() untuk menjalankan fungsi asinkron di luar event loop."
+                },
+                {
+                    "question": "Apa cara membuat dan menjalankan tugas asinkron di Python?",
+                    "question_code": "import asyncio\n\nasync def salam():\n    await asyncio.sleep(1)\n    print('Halo')\n\nasyncio.run(salam())",
+                    "answer": "Definisikan fungsi dengan async, gunakan await untuk operasi asinkron, dan jalankan dengan asyncio.run()."
+                },
+                {
+                    "question": "Bagaimana menjalankan beberapa tugas asinkron bersamaan?",
+                    "question_code": "async def kirim_salam():\n    await salam()\n\nasync def kirim_dunia():\n    await dunia()\n\nasync def main():\n    await asyncio.gather(kirim_salam(), kirim_dunia())\n\nimport asyncio\nasyncio.run(main())",
+                    "answer": "Gunakan asyncio.gather() untuk menjalankan beberapa tugas secara bersamaan."
+                },
+                {
+                    "question": "Bagaimana cara mengoperasikan event loop secara manual di Python?",
+                    "question_code": "async def utama():\n    print('Mulai')\n    await asyncio.sleep(1)\n    print('Selesai')\n\nloop = asyncio.get_event_loop()\nloop.run_until_complete(utama())",
+                    "answer": "Dapatkan event loop dengan asyncio.get_event_loop() dan jalankan tugas dengan run_until_complete()."
+                },
+                {
+                    "question": "Bagaimana cara menangani kesalahan atau eksepsi dalam fungsi asinkron?",
+                    "question_code": "async def cek_data():\n    try:\n        await verifikasi_data()\n    except ValueError as e:\n        print(f'Kesalahan: {e}')",
+                    "answer": "Gunakan blok try-except dalam fungsi asinkron untuk menangani kesalahan atau eksepsi."
+                }
+            ]
+        }
+    ]
+}

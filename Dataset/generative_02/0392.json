@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-10-30",
+        "judul": "Menambahkan Elemen pada Posisi Spesifik dengan insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Panduan ini membahas penggunaan method insert() untuk menambahkan elemen pada posisi tertentu dalam list. Method ini memungkinkan penambahan elemen baru tanpa mempengaruhi elemen yang sudah ada di list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen 'apple' ke dalam list fruits pada indeks ke-2 menggunakan method insert()?",
+                "answer": "Gunakan kode berikut untuk menambahkan 'apple' pada indeks ke-2: fruits.insert(2, 'apple'). Ini akan menempatkan 'apple' pada posisi indeks ke-2 dan menggeser elemen lainnya ke kanan."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menyisipkan elemen pada indeks 0 menggunakan insert()?",
+                "answer": "Menyisipkan elemen pada indeks 0 akan menempatkan elemen tersebut di awal list. Semua elemen yang ada sebelumnya akan digeser satu posisi ke kanan."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan angka 7 pada indeks ke-4 dalam list menggunakan insert()?",
+                "answer": "Gunakan kode berikut: numbers.insert(4, 7). Ini akan menambahkan angka 7 pada posisi indeks ke-4 di dalam list numbers."
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() missing 1 required positional argument: 'object'', saya tidak paham?",
+                "question_code": "items = [10, 20, 30]\nitems.insert(1)",
+                "answer": "Error ini terjadi karena method insert() memerlukan dua argumen: indeks dan elemen yang akan disisipkan. Pastikan untuk memberikan kedua argumen saat menggunakan insert().",
+                "answer_code": "items = [10, 20, 30]\nitems.insert(1, 25)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() takes exactly 2 arguments (3 given)', saya tidak paham?",
+                "question_code": "values = [1, 2, 3]\nvalues.insert(1, 8, 9)",
+                "answer": "Error ini karena method insert() hanya menerima dua argumen: indeks dan elemen yang akan disisipkan. Hanya berikan dua argumen untuk menghindari error.",
+                "answer_code": "values = [1, 2, 3]\nvalues.insert(1, 8)"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list assignment index out of range', saya tidak paham?",
+                "question_code": "numbers = [1, 2, 3]\nnumbers[7] = 4",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses atau mengubah elemen pada indeks yang tidak ada. Gunakan insert() untuk menambahkan elemen di posisi yang ada dalam list.",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.insert(3, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'dict' object has no attribute 'insert'', saya tidak paham?",
+                "question_code": "data = {'key1': 'value1'}\ndata.insert('key2', 'value2')",
+                "answer": "Error ini terjadi karena method insert() tidak tersedia untuk dictionary. Untuk menambahkan elemen ke dictionary, gunakan sintaks assignment seperti data['key2'] = 'value2'.",
+                "answer_code": "data = {'key1': 'value1'}\ndata['key2'] = 'value2'"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be an integer', saya tidak paham?",
+                "question_code": "elements = [1, 2, 3]\nelements.insert('index', 5)",
+                "answer": "Error ini terjadi karena argumen pertama pada insert() harus berupa integer yang menunjukkan indeks. Pastikan argumen pertama adalah integer.",
+                "answer_code": "elements = [1, 2, 3]\nelements.insert(1, 5)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be a single item', saya tidak paham?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.insert(1, [4, 5])",
+                "answer": "Error ini terjadi karena method insert() hanya dapat menambahkan satu elemen pada indeks yang ditentukan. Untuk menambahkan beberapa elemen, gunakan metode extend().",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.insert(1, 4)\nmy_list.insert(2, 5)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Crash Course",
+        "penulis": "Mark Wilson",
+        "tanggal": "2024-10-31",
+        "judul": "Menyisipkan Elemen pada Posisi Tertentu dalam List dengan insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan method insert() untuk menambahkan elemen pada posisi tertentu dalam list Python. Method ini memudahkan penempatan elemen baru tanpa menghapus yang sudah ada.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyisipkan string 'Python' pada indeks ke-3 di dalam list subjects menggunakan insert()?",
+                "answer": "Gunakan kode berikut untuk menyisipkan 'Python' pada indeks ke-3: subjects.insert(3, 'Python'). Ini akan menempatkan 'Python' pada posisi indeks ke-3 dalam list subjects."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menyisipkan elemen pada indeks yang sama dengan panjang list?",
+                "answer": "Jika indeks sama dengan panjang list, elemen akan disisipkan di akhir list. Ini setara dengan menggunakan metode append()."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan angka 42 pada indeks ke-2 dalam list menggunakan insert()?",
+                "answer": "Gunakan kode berikut: numbers.insert(2, 42). Ini akan menempatkan angka 42 pada posisi indeks ke-2 dalam list numbers."
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() requires two arguments', saya tidak paham?",
+                "question_code": "items = [5, 6, 7]\nitems.insert(2)",
+                "answer": "Error ini terjadi karena method insert() memerlukan dua argumen: indeks dan elemen yang akan disisipkan. Pastikan Anda menyertakan kedua argumen.",
+                "answer_code": "items = [5, 6, 7]\nitems.insert(2, 8)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be a single value', saya tidak paham?",
+                "question_code": "my_list = [10, 20, 30]\nmy_list.insert(2, [40, 50])",
+                "answer": "Error ini terjadi karena insert() hanya dapat menambahkan satu elemen pada indeks yang ditentukan. Untuk menambahkan beberapa elemen, gunakan metode extend().",
+                "answer_code": "my_list = [10, 20, 30]\nmy_list.insert(2, 40)\nmy_list.insert(3, 50)"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'list' object has no attribute 'insert'' ketika menggunakan insert() pada string?",
+                "question_code": "text = 'example'\ntext.insert(0, 'test')",
+                "answer": "Error ini terjadi karena method insert() hanya berlaku untuk list, bukan string. Untuk manipulasi string, gunakan metode string lainnya.",
+                "answer_code": "text = 'example'\ntext = 'test' + text"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list assignment index out of range' ketika mencoba menambahkan elemen pada indeks di luar jangkauan list?",
+                "question_code": "list_data = [1, 2]\nlist_data[5] = 9",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses indeks yang tidak ada. Gunakan method insert() untuk menambahkan elemen di posisi yang valid.",
+                "answer_code": "list_data = [1, 2]\nlist_data.insert(2, 9)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be an integer' saat menggunakan string sebagai indeks?",
+                "question_code": "values = [1, 2, 3]\nvalues.insert('1', 4)",
+                "answer": "Error ini terjadi karena indeks pada insert() harus berupa integer. Pastikan untuk menggunakan integer sebagai argumen pertama.",
+                "answer_code": "values = [1, 2, 3]\nvalues.insert(1, 4)"
+            }
+        ]
+    }
+]

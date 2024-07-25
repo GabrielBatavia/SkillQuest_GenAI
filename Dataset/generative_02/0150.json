@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "panduancodingpython.com",
+        "penulis": "Dina Puspita",
+        "tanggal": "2023-05-30",
+        "judul": "Penggunaan Dictionary di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "dictionary", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan dictionary di Python untuk menyimpan dan mengelola data berbasis pasangan kunci-nilai.",
+        "pertanyaan": [
+            {
+                "question": "Apa sebenarnya dictionary di Python dan untuk apa biasanya digunakan?",
+                "answer": "Dictionary adalah struktur data yang menyimpan data dalam bentuk pasangan kunci-nilai. Ini mirip dengan kamus, di mana Anda memiliki kata (kunci) dan artinya (nilai)."
+            },
+            {
+                "question": "Bagaimana cara membuat dictionary baru dari awal?",
+                "answer": "Anda dapat membuat dictionary baru dengan menulis kurung kurawal `{}`. Misalnya: `data = {}`. Jika Anda ingin menambahkan data langsung, Anda bisa menggunakan kurung kurawal dengan pasangan kunci-nilai seperti: `data = {'nama': 'John', 'umur': 30}`."
+            },
+            {
+                "question": "Apa langkah-langkah untuk menambah data ke dictionary yang sudah ada?",
+                "question_code": "data['alamat'] = 'Jakarta'",
+                "answer": "Untuk menambahkan data ke dictionary yang sudah ada, cukup tambahkan pasangan kunci-nilai baru dengan menetapkan nilai pada kunci baru. Contoh: `data['alamat'] = 'Jakarta'`.",
+                "answer_code": "data['alamat'] = 'Jakarta'"
+            },
+            {
+                "question": "Bagaimana cara mengambil nilai berdasarkan kunci dalam dictionary?",
+                "question_code": "data = {'nama': 'John'}\nnilai = data['nama']",
+                "answer": "Anda dapat mengambil nilai dari dictionary dengan menulis nama dictionary diikuti dengan kunci dalam tanda kurung siku. Misalnya: `nilai = data['nama']` akan memberikan nilai 'John'.",
+                "answer_code": "data = {'nama': 'John'}\nnilai = data['nama']"
+            },
+            {
+                "question": "Bagaimana cara menghapus data dari dictionary jika saya tidak membutuhkannya lagi?",
+                "question_code": "del data['umur']",
+                "answer": "Untuk menghapus data dari dictionary, gunakan perintah `del` diikuti dengan kunci yang ingin dihapus. Contoh: `del data['umur']` akan menghapus kunci 'umur' beserta nilainya.",
+                "answer_code": "del data['umur']"
+            },
+            {
+                "question": "Bagaimana saya bisa memeriksa apakah suatu kunci ada di dalam dictionary?",
+                "question_code": "'nama' in data",
+                "answer": "Untuk memeriksa apakah sebuah kunci ada di dalam dictionary, Anda bisa menggunakan operator `in`. Contoh: `'nama' in data` akan mengembalikan True jika kunci 'nama' ada.",
+                "answer_code": "'nama' in data"
+            },
+            {
+                "question": "Bagaimana cara mengambil semua kunci dari dictionary?",
+                "question_code": "data.keys()",
+                "answer": "Untuk mendapatkan semua kunci dari dictionary, gunakan metode `keys()`. Contoh: `data.keys()` akan mengembalikan semua kunci dalam dictionary.",
+                "answer_code": "data.keys()"
+            },
+            {
+                "question": "Bagaimana cara mengambil semua nilai dari dictionary?",
+                "question_code": "data.values()",
+                "answer": "Gunakan metode `values()` untuk mengambil semua nilai dari dictionary. Contoh: `data.values()` akan menampilkan semua nilai yang ada dalam dictionary.",
+                "answer_code": "data.values()"
+            },
+            {
+                "question": "Bagaimana cara memperbarui nilai yang ada di dictionary?",
+                "question_code": "data['nama'] = 'Jane'",
+                "answer": "Untuk memperbarui nilai dalam dictionary, cukup tetapkan nilai baru ke kunci yang ada. Misalnya: `data['nama'] = 'Jane'` akan mengganti nilai kunci 'nama' menjadi 'Jane'.",
+                "answer_code": "data['nama'] = 'Jane'"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpemrogramanpython.net",
+        "penulis": "Eko Prasetyo",
+        "tanggal": "2023-11-21",
+        "judul": "Penggunaan List Comprehensions di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list comprehensions", "dasar"],
+        "konten": "Artikel ini menguraikan cara menggunakan list comprehensions di Python untuk membuat dan mengubah list dengan sintaks yang lebih singkat dan jelas.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan list comprehension dan bagaimana cara kerjanya?",
+                "answer": "List comprehension adalah cara yang ringkas untuk membuat list baru dari iterable yang ada. Dengan satu baris kode, Anda bisa melakukan operasi dan memanipulasi data dalam list dengan lebih efisien."
+            },
+            {
+                "question": "Bagaimana saya bisa membuat list comprehension untuk mendapatkan angka dari 0 hingga 4?",
+                "question_code": "[i for i in range(5)]",
+                "answer": "Untuk membuat list comprehension yang berisi angka dari 0 hingga 4, Anda bisa menggunakan sintaks `[i for i in range(5)]`.",
+                "answer_code": "[i for i in range(5)]"
+            },
+            {
+                "question": "Bagaimana cara menambahkan syarat untuk hanya mengambil angka ganjil dari 0 hingga 9?",
+                "question_code": "[i for i in range(10) if i % 2 != 0]",
+                "answer": "Jika Anda ingin menyaring angka ganjil, tambahkan kondisi `if` dalam list comprehension. Contoh: `[i for i in range(10) if i % 2 != 0]` hanya akan mengambil angka ganjil.",
+                "answer_code": "[i for i in range(10) if i % 2 != 0]"
+            },
+            {
+                "question": "Bagaimana saya bisa membuat list comprehension untuk mengubah setiap angka menjadi kuadratnya?",
+                "question_code": "[x**2 for x in range(6)]",
+                "answer": "Untuk membuat list comprehension yang mengubah setiap angka menjadi kuadratnya, gunakan `[x**2 for x in range(6)]`. Ini menghasilkan list kuadrat dari angka 0 hingga 5.",
+                "answer_code": "[x**2 for x in range(6)]"
+            },
+            {
+                "question": "Bagaimana membuat list comprehension dari list yang ada dan menggandakan setiap elemennya?",
+                "question_code": "list_angka = [1, 2, 3]\ndobel = [x * 2 for x in list_angka]",
+                "answer": "Jika Anda ingin menggandakan setiap elemen dalam list yang ada, gunakan sintaks `[x * 2 for x in list_angka]`. Contoh: `dobel = [x * 2 for x in list_angka]`.",
+                "answer_code": "list_angka = [1, 2, 3]\ndobel = [x * 2 for x in list_angka]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk mengubah setiap huruf dalam string menjadi huruf kecil?",
+                "question_code": "[char.lower() for char in 'HELLO']",
+                "answer": "Untuk mengubah setiap huruf dalam string menjadi huruf kecil, gunakan list comprehension seperti `[char.lower() for char in 'HELLO']`. Ini akan menghasilkan `['h', 'e', 'l', 'l', 'o']`.",
+                "answer_code": "[char.lower() for char in 'HELLO']"
+            },
+            {
+                "question": "Bagaimana cara membuat nested list comprehension untuk membuat matrix 2x3?",
+                "question_code": "[[row, col] for row in range(2) for col in range(3)]",
+                "answer": "Untuk membuat matrix 2x3, gunakan nested list comprehension seperti `[[row, col] for row in range(2) for col in range(3)]`. Ini menghasilkan semua kombinasi baris dan kolom.",
+                "answer_code": "[[row, col] for row in range(2) for col in range(3)]"
+            },
+            {
+                "question": "Bagaimana saya bisa membuat dictionary comprehension yang menghubungkan huruf dengan posisi mereka dalam string?",
+                "question_code": "{char: i for i, char in enumerate('abc')}",
+                "answer": "Untuk membuat dictionary comprehension yang menghubungkan huruf dengan posisinya dalam string, gunakan `{char: i for i, char in enumerate('abc')}`. Ini akan menghasilkan dictionary dengan huruf sebagai kunci dan posisi sebagai nilai.",
+                "answer_code": "{char: i for i, char in enumerate('abc')}"
+            },
+            {
+                "question": "Bagaimana membuat set comprehension untuk angka dari 1 hingga 5 tanpa duplikat?",
+                "question_code": "{i for i in range(1, 6)}",
+                "answer": "Untuk membuat set comprehension yang berisi angka dari 1 hingga 5 tanpa duplikat, gunakan `{i for i in range(1, 6)}`. Set secara otomatis menghilangkan duplikat.",
+                "answer_code": "{i for i in range(1, 6)}"
+            }
+        ]
+    }
+]

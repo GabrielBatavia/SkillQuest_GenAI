@@ -1,0 +1,118 @@
+[
+    {
+        "sumber": "pythonforbeginners.com",
+        "penulis": "Emily Clark",
+        "tanggal": "2024-07-23",
+        "judul": "Panduan Dasar Memulai dengan Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "pemula", "tutorial", "dasar"],
+        "konten": "Panduan ini memberikan langkah-langkah awal untuk mulai dengan Python, termasuk cara membuat dan menjalankan script, serta tips untuk pemula.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu file Python dan bagaimana cara membuatnya?",
+                "answer": "File Python adalah file yang berisi kode Python dengan ekstensi `.py`. Untuk membuatnya, buka editor teks, tulis kode Python, dan simpan file dengan ekstensi `.py`."
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python di command prompt?",
+                "answer": "Buka command prompt, navigasikan ke direktori tempat script berada, dan jalankan perintah `python nama_file.py`, contohnya `python script_pertama.py`."
+            },
+            {
+                "question": "Bagaimana cara menangani masalah jika Python tidak terdeteksi di sistem?",
+                "question_code": "Cek versi Python dengan perintah `python --version`. Jika Python tidak ditemukan, pastikan Python sudah terinstall dengan benar atau tambahkan ke PATH.",
+                "answer": "Jika Python tidak terdeteksi, pastikan Python terinstal dengan benar dan PATH sudah dikonfigurasi. Anda bisa menambahkan Python ke PATH secara manual atau menginstal ulang.",
+                "answer_code": "Unduh dan instal Python dari https://www.python.org/downloads/ dan pastikan PATH sudah diatur dengan benar."
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python di Jupyter Notebook?",
+                "question_code": "Di Jupyter Notebook, gunakan cell untuk menulis kode Python. Untuk menjalankan kode, tekan Shift+Enter pada cell yang berisi kode.",
+                "answer": "Di Jupyter Notebook, tulis kode Python di cell dan tekan Shift+Enter untuk menjalankannya. Ini akan menampilkan hasil langsung di bawah cell.",
+                "answer_code": "Tulis kode di cell dan tekan Shift+Enter untuk mengeksekusi kode di Jupyter Notebook."
+            },
+            {
+                "question": "Bagaimana mengatasi error saat script Python tidak bisa dijalankan?",
+                "question_code": "Periksa apakah ada kesalahan dalam kode atau masalah lingkungan. Gunakan debugger untuk membantu mengidentifikasi dan memperbaiki masalah.",
+                "answer": "Periksa kode Anda untuk kesalahan sintaks atau logika dan pastikan lingkungan Python sudah dikonfigurasi dengan benar. Gunakan debugger untuk menemukan dan memperbaiki masalah.",
+                "answer_code": "Gunakan fitur debugging di IDE untuk mendeteksi dan memperbaiki kesalahan dalam kode."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika script Python memerlukan modul eksternal?",
+                "question_code": "Instal modul dengan perintah `pip install nama_modul`. Setelah itu, impor modul dalam script dengan `import nama_modul`.",
+                "answer": "Jika script memerlukan modul eksternal, instal modul tersebut menggunakan `pip install nama_modul`. Kemudian, impor modul tersebut di dalam script dengan `import nama_modul`.",
+                "answer_code": "Instal modul dengan `pip install nama_modul` dan gunakan `import nama_modul` di script Anda."
+            },
+            {
+                "question": "Bagaimana cara menggunakan argumen baris perintah dalam script Python?",
+                "question_code": "Jalankan script dengan argumen seperti `python script.py arg1`. Di dalam script, akses argumen menggunakan `sys.argv`.",
+                "answer": "Jalankan script dengan argumen di baris perintah dan akses argumen tersebut di script menggunakan `sys.argv` untuk memproses input.",
+                "answer_code": "import sys\nprint(sys.argv)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa hasil dari script Python saat menjalankannya di terminal?",
+                "question_code": "Hasil dari `print()` akan ditampilkan di terminal setelah menjalankan script.",
+                "answer": "Hasil dari `print()` dalam script Python akan muncul di terminal setelah eksekusi. Pastikan untuk memeriksa terminal untuk output.",
+                "answer_code": "Output dari `print()` akan terlihat di terminal atau command prompt."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika tidak bisa menghapus folder virtual environment?",
+                "question_code": "Gunakan perintah `rm -rf venv` di Unix atau hapus folder `venv` secara manual di Windows.",
+                "answer": "Untuk menghapus folder virtual environment, gunakan perintah `rm -rf venv` di Unix atau hapus folder `venv` secara manual di Windows.",
+                "answer_code": "Hapus folder `venv` untuk menghapus virtual environment."
+            }
+        ]
+    },
+    {
+        "sumber": "learnpython.org",
+        "penulis": "Michael Lewis",
+        "tanggal": "2024-07-23",
+        "judul": "Memulai dengan Python: Tutorial Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "tutorial", "pemula", "belajar"],
+        "konten": "Tutorial ini dirancang untuk pemula yang baru memulai dengan Python. Ini mencakup cara membuat, menjalankan, dan memecahkan masalah script Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat file Python dari awal?",
+                "answer": "Untuk membuat file Python, buka editor teks, ketikkan kode Python, dan simpan file dengan ekstensi `.py`, seperti `file_baru.py`."
+            },
+            {
+                "question": "Bagaimana cara menjalankan file Python di Windows?",
+                "answer": "Di Windows, buka Command Prompt, navigasikan ke folder yang berisi file, dan jalankan perintah `python nama_file.py`, misalnya `python file_baru.py`."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika tidak bisa menemukan Python di sistem?",
+                "question_code": "Periksa instalasi Python dengan perintah `python --version`. Jika tidak ada, pastikan Python sudah terinstall atau tambahkan ke PATH.",
+                "answer": "Jika Python tidak terdeteksi, pastikan Python terinstal dengan benar dan PATH sudah dikonfigurasi. Jika belum, instal Python dan atur PATH sesuai petunjuk.",
+                "answer_code": "Instal Python dari https://www.python.org/downloads/ dan pastikan PATH dikonfigurasi dengan benar."
+            },
+            {
+                "question": "Bagaimana menjalankan script Python di editor seperti VSCode?",
+                "question_code": "Buka VSCode, buka file Python, dan tekan tombol `Run` di pojok kanan atas atau gunakan shortcut `Ctrl+F5`.",
+                "answer": "Di VSCode, buka file `.py` dan tekan tombol `Run` di bagian atas atau gunakan shortcut `Ctrl+F5` untuk menjalankan script.",
+                "answer_code": "Tekan `Ctrl+F5` untuk menjalankan script Python di VSCode."
+            },
+            {
+                "question": "Bagaimana cara mengelola dependensi proyek Python dengan virtual environment?",
+                "question_code": "Buat environment dengan `python -m venv myenv`. Aktifkan dengan `source myenv/bin/activate` di Unix atau `myenv\\Scripts\\activate` di Windows.",
+                "answer": "Gunakan virtual environment untuk mengelola dependensi proyek. Aktifkan environment dengan perintah sesuai sistem operasi sebelum menjalankan script.",
+                "answer_code": "Aktifkan virtual environment dengan `source myenv/bin/activate` (Unix) atau `myenv\\Scripts\\activate` (Windows)."
+            },
+            {
+                "question": "Bagaimana cara menjalankan script Python dengan argumen tambahan?",
+                "question_code": "Jalankan script dengan argumen seperti `python script.py arg1`. Di dalam script, akses argumen menggunakan `sys.argv`.",
+                "answer": "Jalankan script dengan argumen di command line dan akses argumen tersebut di dalam script menggunakan `sys.argv` untuk memproses input.",
+                "answer_code": "import sys\nprint(sys.argv)"
+            },
+            {
+                "question": "Bagaimana cara melihat hasil output dari script Python di terminal?",
+                "question_code": "Output dari `print()` dalam script akan ditampilkan di terminal setelah script dijalankan.",
+                "answer": "Hasil dari fungsi `print()` akan terlihat di terminal setelah script dijalankan. Periksa terminal untuk output yang dihasilkan.",
+                "answer_code": "Output dari `print()` akan ditampilkan di terminal."
+            },
+            {
+                "question": "Apa langkah-langkah untuk menghapus folder virtual environment?",
+                "question_code": "Hapus folder environment dengan perintah `rm -rf myenv` di Unix atau hapus folder `myenv` di Windows.",
+                "answer": "Untuk menghapus virtual environment, gunakan perintah `rm -rf myenv` di Unix atau hapus folder `myenv` di Windows.",
+                "answer_code": "Hapus folder `myenv` untuk menghapus virtual environment."
+            }
+        ]
+    }
+]

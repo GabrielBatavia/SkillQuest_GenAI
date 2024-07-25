@@ -1,0 +1,98 @@
+[
+    {
+        "sumber": "pythonmasters.com",
+        "penulis": "Dian Kurniawan",
+        "tanggal": "2024-12-12",
+        "judul": "Metaprogramming dengan Decorators dan Metaclasses di Python",
+        "tingkat_kesulitan": "Lanjut",
+        "tag": ["python", "metaprogramming", "decorators", "metaclasses", "lanjut"],
+        "konten": "Artikel ini membahas teknik metaprogramming di Python dengan menggunakan decorators dan metaclasses untuk memodifikasi perilaku class dan fungsi secara dinamis.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu metaprogramming di Python?",
+                "answer": "Metaprogramming adalah teknik pemrograman yang memungkinkan program untuk memodifikasi atau menghasilkan kode program lain selama waktu eksekusi."
+            },
+            {
+                "question": "Bagaimana cara membuat decorator yang menambah atribut ke fungsi di Python?",
+                "question_code": "def add_attribute(attribute, value):\n    def decorator(func):\n        setattr(func, attribute, value)\n        return func\n    return decorator\n\n@add_attribute('category', 'math')\ndef add(a, b):\n    return a + b",
+                "answer": "Anda bisa membuat decorator yang menambah atribut ke fungsi dengan menggunakan `setattr` di dalam decorator. Contohnya: `setattr(func, attribute, value)`.",
+                "answer_code": "def add_attribute(attribute, value):\n    def decorator(func):\n        setattr(func, attribute, value)\n        return func\n    return decorator\n\n@add_attribute('category', 'math')\ndef add(a, b):\n    return a + b"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metaclass untuk memodifikasi atribut class di Python?",
+                "question_code": "class Meta(type):\n    def __new__(cls, name, bases, dct):\n        dct['category'] = 'math'\n        return super().__new__(cls, name, bases, dct)\n\nclass MyClass(metaclass=Meta):\n    pass\n\nprint(MyClass.category)",
+                "answer": "Anda bisa menggunakan metaclass untuk memodifikasi atribut class dengan menambahkan atau mengubah atribut dalam metode `__new__`. Contohnya: `dct['category'] = 'math'`.",
+                "answer_code": "class Meta(type):\n    def __new__(cls, name, bases, dct):\n        dct['category'] = 'math'\n        return super().__new__(cls, name, bases, dct)\n\nclass MyClass(metaclass=Meta):\n    pass\n\nprint(MyClass.category)"
+            },
+            {
+                "question": "Bagaimana cara membuat metaclass yang mengontrol pembuatan instance di Python?",
+                "question_code": "class SingletonMeta(type):\n    _instances = {}\n    def __call__(cls, *args, **kwargs):\n        if cls not in cls._instances:\n            instance = super().__call__(*args, **kwargs)\n            cls._instances[cls] = instance\n        return cls._instances[cls]\n\nclass SingletonClass(metaclass=SingletonMeta):\n    pass\n\nobj1 = SingletonClass()\nobj2 = SingletonClass()\nprint(obj1 is obj2)",
+                "answer": "Anda bisa membuat metaclass yang mengontrol pembuatan instance dengan mengoverride metode `__call__` untuk menerapkan pola desain singleton. Contohnya: `if cls not in cls._instances: instance = super().__call__(*args, **kwargs)`.",
+                "answer_code": "class SingletonMeta(type):\n    _instances = {}\n    def __call__(cls, *args, **kwargs):\n        if cls not in cls._instances:\n            instance = super().__call__(*args, **kwargs)\n            cls._instances[cls] = instance\n        return cls._instances[cls]\n\nclass SingletonClass(metaclass=SingletonMeta):\n    pass\n\nobj1 = SingletonClass()\nobj2 = SingletonClass()\nprint(obj1 is obj2)"
+            },
+            {
+                "question": "Bagaimana cara membuat metaclass yang memeriksa atribut wajib di Python?",
+                "question_code": "class RequiredAttributeMeta(type):\n    def __init__(cls, name, bases, dct):\n        super().__init__(name, bases, dct)\n        if not hasattr(cls, 'required_attribute'):\n            raise TypeError(f'{name} is missing required attribute')\n\nclass MyClass(metaclass=RequiredAttributeMeta):\n    required_attribute = 'This is required'\n\nclass MyOtherClass(metaclass=RequiredAttributeMeta):\n    pass  # This will raise a TypeError",
+                "answer": "Anda bisa membuat metaclass yang memeriksa atribut wajib dengan mengoverride metode `__init__` dan memeriksa atribut dalam class yang dibuat. Contohnya: `if not hasattr(cls, 'required_attribute'):`.",
+                "answer_code": "class RequiredAttributeMeta(type):\n    def __init__(cls, name, bases, dct):\n        super().__init__(name, bases, dct)\n        if not hasattr(cls, 'required_attribute'):\n            raise TypeError(f'{name} is missing required attribute')\n\nclass MyClass(metaclass=RequiredAttributeMeta):\n    required_attribute = 'This is required'\n\nclass MyOtherClass(metaclass=RequiredAttributeMeta):\n    pass  # This will raise a TypeError"
+            },
+            {
+                "question": "Bagaimana cara menggunakan decorator untuk mengatur logging pada fungsi di Python?",
+                "question_code": "import logging\n\nlogging.basicConfig(level=logging.INFO)\n\ndef log_decorator(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f'Calling {func.__name__}')\n        result = func(*args, **kwargs)\n        logging.info(f'{func.__name__} returned {result}')\n        return result\n    return wrapper\n\n@log_decorator\ndef add(a, b):\n    return a + b",
+                "answer": "Anda bisa menggunakan decorator untuk mengatur logging pada fungsi dengan menambahkan logging sebelum dan sesudah pemanggilan fungsi dalam fungsi pembungkus. Contohnya: `logging.info(f'Calling {func.__name__}')`.",
+                "answer_code": "import logging\n\nlogging.basicConfig(level=logging.INFO)\n\ndef log_decorator(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f'Calling {func.__name__}')\n        result = func(*args, **kwargs)\n        logging.info(f'{func.__name__} returned {result}')\n        return result\n    return wrapper\n\n@log_decorator\ndef add(a, b):\n    return a + b"
+            },
+            {
+                "question": "Bagaimana cara membuat decorator yang menambahkan cache ke fungsi di Python?",
+                "question_code": "def cache_decorator(func):\n    cache = {}\n    def wrapper(*args):\n        if args in cache:\n            return cache[args]\n        result = func(*args)\n        cache[args] = result\n        return result\n    return wrapper\n\n@cache_decorator\ndef add(a, b):\n    return a + b",
+                "answer": "Anda bisa membuat decorator yang menambahkan cache ke fungsi dengan menggunakan dictionary untuk menyimpan hasil panggilan fungsi berdasarkan argumen. Contohnya: `if args in cache: return cache[args]`.",
+                "answer_code": "def cache_decorator(func):\n    cache = {}\n    def wrapper(*args):\n        if args in cache:\n            return cache[args]\n        result = func(*args)\n        cache[args] = result\n        return result\n    return wrapper\n\n@cache_decorator\ndef add(a, b):\n    return a + b"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonprotips.com",
+        "penulis": "Bayu Santoso",
+        "tanggal": "2024-12-18",
+        "judul": "Pemrograman Asinkron dengan Awaitable Objects dan Custom Event Loop di Python",
+        "tingkat_kesulitan": "Lanjut",
+        "tag": ["python", "asyncio", "awaitable", "event loop", "lanjut"],
+        "konten": "Artikel ini menjelaskan cara membuat awaitable objects dan custom event loop di Python untuk pemrograman asinkron yang lebih kompleks.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu awaitable object di Python?",
+                "answer": "Awaitable object adalah objek yang bisa digunakan dengan kata kunci `await` dalam coroutine. Contohnya adalah coroutine dan objek yang mengimplementasikan metode `__await__`."
+            },
+            {
+                "question": "Bagaimana cara membuat custom awaitable object di Python?",
+                "question_code": "class CustomAwaitable:\n    def __init__(self, value):\n        self.value = value\n    def __await__(self):\n        yield\n        return self.value\n\nasync def main():\n    result = await CustomAwaitable(42)\n    print(result)\n\nimport asyncio\nasyncio.run(main())",
+                "answer": "Anda bisa membuat custom awaitable object dengan mengimplementasikan metode `__await__` yang mengembalikan iterator. Contohnya: `def __await__(self): yield return self.value`.",
+                "answer_code": "class CustomAwaitable:\n    def __init__(self, value):\n        self.value = value\n    def __await__(self):\n        yield\n        return self.value\n\nasync def main():\n    result = await CustomAwaitable(42)\n    print(result)\n\nimport asyncio\nasyncio.run(main())"
+            },
+            {
+                "question": "Bagaimana cara membuat custom event loop di Python?",
+                "question_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        pass  # Implementasi event loop custom\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\n\n# Implementasi event loop lengkap diperlukan untuk penggunaan nyata",
+                "answer": "Anda bisa membuat custom event loop dengan mengimplementasikan class yang mewarisi `asyncio.AbstractEventLoop` dan mengoverride metode-metode yang diperlukan seperti `run_forever`, `run_until_complete`, dan `stop`.",
+                "answer_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        pass  # Implementasi event loop custom\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\n\n# Implementasi event loop lengkap diperlukan untuk penggunaan nyata"
+            },
+            {
+                "question": "Bagaimana cara mengintegrasikan custom event loop dengan asyncio di Python?",
+                "question_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        pass  # Implementasi event loop custom\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nasync def main():\n    print('Hello, World!')\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\nloop.run_until_complete(main())",
+                "answer": "Anda bisa mengintegrasikan custom event loop dengan asyncio dengan menggunakan `asyncio.set_event_loop` untuk menetapkan loop kustom sebagai event loop saat ini dan menjalankan coroutine dengan `run_until_complete`. Contohnya: `asyncio.set_event_loop(loop)`.",
+                "answer_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        pass  # Implementasi event loop custom\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nasync def main():\n    print('Hello, World!')\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\nloop.run_until_complete(main())"
+            },
+            {
+                "question": "Bagaimana cara menangani pengecualian dalam custom event loop di Python?",
+                "question_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        try:\n            while True:\n                # Event loop logic here\n                pass\n        except Exception as e:\n            self.handle_exception(e)\n    def handle_exception(self, e):\n        print(f'Exception caught: {e}')\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\n\n# Implementasi event loop lengkap diperlukan untuk penggunaan nyata",
+                "answer": "Anda bisa menangani pengecualian dalam custom event loop dengan mengimplementasikan metode `handle_exception` dan memanggilnya dalam blok try-except di metode `run_forever`. Contohnya: `self.handle_exception(e)`.",
+                "answer_code": "import asyncio\n\nclass CustomEventLoop(asyncio.AbstractEventLoop):\n    def run_forever(self):\n        try:\n            while True:\n                # Event loop logic here\n                pass\n        except Exception as e:\n            self.handle_exception(e)\n    def handle_exception(self, e):\n        print(f'Exception caught: {e}')\n    def run_until_complete(self, future):\n        pass  # Implementasi event loop custom\n    def stop(self):\n        pass  # Implementasi event loop custom\n\nloop = CustomEventLoop()\nasyncio.set_event_loop(loop)\n\n# Implementasi event loop lengkap diperlukan untuk penggunaan nyata"
+            },
+            {
+                "question": "Bagaimana cara membuat event loop yang mendukung multiple threads di Python?",
+                "question_code": "import asyncio\nimport threading\n\nclass ThreadedEventLoop(asyncio.AbstractEventLoop):\n    def __init__(self):\n        self._loop = asyncio.new_event_loop()\n        self._thread = threading.Thread(target=self._loop.run_forever)\n    def start(self):\n        self._thread.start()\n    def run_until_complete(self, future):\n        return asyncio.run_coroutine_threadsafe(future, self._loop).result()\n    def stop(self):\n        self._loop.call_soon_threadsafe(self._loop.stop)\n        self._thread.join()\n\nloop = ThreadedEventLoop()\nasyncio.set_event_loop(loop)\nloop.start()\n\nasync def main():\n    print('Running in a threaded event loop')\n\nloop.run_until_complete(main())",
+                "answer": "Anda bisa membuat event loop yang mendukung multiple threads dengan menggunakan `asyncio.run_coroutine_threadsafe` dan mengelola thread secara manual. Contohnya: `self._thread = threading.Thread(target=self._loop.run_forever)`.",
+                "answer_code": "import asyncio\nimport threading\n\nclass ThreadedEventLoop(asyncio.AbstractEventLoop):\n    def __init__(self):\n        self._loop = asyncio.new_event_loop()\n        self._thread = threading.Thread(target=self._loop.run_forever)\n    def start(self):\n        self._thread.start()\n    def run_until_complete(self, future):\n        return asyncio.run_coroutine_threadsafe(future, self._loop).result()\n    def stop(self):\n        self._loop.call_soon_threadsafe(self._loop.stop)\n        self._thread.join()\n\nloop = ThreadedEventLoop()\nasyncio.set_event_loop(loop)\nloop.start()\n\nasync def main():\n    print('Running in a threaded event loop')\n\nloop.run_until_complete(main())"
+            }
+        ]
+    }
+]

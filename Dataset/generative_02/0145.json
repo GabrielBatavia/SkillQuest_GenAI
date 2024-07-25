@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "python.org",
+        "penulis": "John Doe",
+        "tanggal": "2024-07-23",
+        "judul": "Pengantar Sintaks Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "pemula"],
+        "konten": "Artikel ini membahas dasar-dasar sintaks Python, termasuk variabel, tipe data, dan struktur kontrol.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan variabel dalam Python?",
+                "answer": "Variabel dalam Python adalah nama yang digunakan untuk menyimpan data yang bisa digunakan dan diubah selama program berjalan."
+            },
+            {
+                "question": "Bagaimana caranya membuat variabel di Python?",
+                "answer": "Untuk membuat variabel di Python, cukup tulis nama variabel, diikuti tanda sama dengan, dan nilai yang ingin disimpan. Contohnya: `x = 10`."
+            },
+            {
+                "question": "Tipe data apa saja yang tersedia di Python?",
+                "answer": "Di Python, beberapa tipe data dasar termasuk integer (int), floating-point (float), string (str), dan boolean (bool)."
+            },
+            {
+                "question": "Bagaimana cara menulis komentar di Python?",
+                "question_code": "# Ini komentar",
+                "answer": "Komentar dalam Python ditulis dengan tanda pagar (#). Segala sesuatu setelah tanda ini akan dianggap komentar dan diabaikan oleh interpreter.",
+                "answer_code": "# Ini komentar"
+            },
+            {
+                "question": "Apa itu list dalam Python dan bagaimana cara membuatnya?",
+                "question_code": "buah = ['apel', 'jeruk', 'mangga']",
+                "answer": "List adalah struktur data yang menyimpan beberapa item dalam satu variabel. Contohnya: `buah = ['apel', 'jeruk', 'mangga']`.",
+                "answer_code": "buah = ['apel', 'jeruk', 'mangga']"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan elemen pertama dari sebuah list?",
+                "question_code": "angka = [10, 20, 30]\npertama = angka[0]",
+                "answer": "Untuk mengakses elemen dalam list, gunakan indeks. Misalnya, `angka[0]` akan memberikan elemen pertama dari list `angka`.",
+                "answer_code": "angka = [10, 20, 30]\npertama = angka[0]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan perulangan for untuk mencetak angka dari 1 hingga 5?",
+                "question_code": "for i in range(1, 6):\n    print(i)",
+                "answer": "Perulangan for digunakan untuk mengiterasi melalui sebuah urutan. Misalnya: `for i in range(1, 6): print(i)` akan mencetak angka dari 1 hingga 5.",
+                "answer_code": "for i in range(1, 6):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara membuat kondisi if untuk memeriksa apakah sebuah angka lebih besar dari 10?",
+                "question_code": "angka = 12\nif angka > 10:\n    print('Lebih dari 10')",
+                "answer": "Pernyataan if digunakan untuk mengevaluasi kondisi. Contohnya: `if angka > 10: print('Lebih dari 10')` akan mencetak 'Lebih dari 10' jika `angka` lebih besar dari 10.",
+                "answer_code": "angka = 12\nif angka > 10:\n    print('Lebih dari 10')"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan sebuah fungsi yang mengembalikan 'Halo Dunia'?",
+                "question_code": "def halo_dunia():\n    return 'Halo Dunia'",
+                "answer": "Fungsi didefinisikan dengan menggunakan kata kunci `def`, diikuti dengan nama fungsi dan tanda kurung. Misalnya: `def halo_dunia(): return 'Halo Dunia'`.",
+                "answer_code": "def halo_dunia():\n    return 'Halo Dunia'"
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "Jane Smith",
+        "tanggal": "2024-07-20",
+        "judul": "Dasar-Dasar Sintaks Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "tutorial"],
+        "konten": "Artikel ini memberikan panduan lengkap untuk memahami dasar-dasar sintaks Python bagi pemula.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu boolean dalam Python dan apa fungsinya?",
+                "answer": "Boolean adalah tipe data yang hanya memiliki dua nilai: True dan False. Ini digunakan untuk membuat keputusan dalam program."
+            },
+            {
+                "question": "Bagaimana cara mengubah tipe data dari integer ke string di Python?",
+                "answer": "Gunakan fungsi `str()` untuk mengubah integer menjadi string. Contohnya: `str(123)` akan mengubah angka 123 menjadi string '123'."
+            },
+            {
+                "question": "Apa yang dimaksud dengan string di Python?",
+                "answer": "String adalah kumpulan karakter yang dikelilingi oleh tanda kutip. Misalnya, 'Hello World' adalah sebuah string."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string menjadi satu?",
+                "question_code": "kata1 = 'Selamat'\nkata2 = 'Pagi'\ngabungan = kata1 + ' ' + kata2",
+                "answer": "Anda bisa menggabungkan string dengan menggunakan operator +. Misalnya: `gabungan = kata1 + ' ' + kata2` akan menghasilkan 'Selamat Pagi'.",
+                "answer_code": "kata1 = 'Selamat'\nkata2 = 'Pagi'\ngabungan = kata1 + ' ' + kata2"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan bagian tertentu dari sebuah string?",
+                "question_code": "kalimat = 'Python sangat menyenangkan'\nsub_kalimat = kalimat[0:6]",
+                "answer": "Untuk mengambil bagian dari string, gunakan slicing. Misalnya: `sub_kalimat = kalimat[0:6]` akan memberikan bagian 'Python'.",
+                "answer_code": "kalimat = 'Python sangat menyenangkan'\nsub_kalimat = kalimat[0:6]"
+            },
+            {
+                "question": "Bagaimana cara mengubah semua huruf dalam string menjadi huruf besar?",
+                "question_code": "teks = 'programming'\nbesar = teks.upper()",
+                "answer": "Gunakan metode `upper()` untuk mengubah semua huruf dalam string menjadi huruf besar. Misalnya: `besar = teks.upper()` akan menghasilkan 'PROGRAMMING'.",
+                "answer_code": "teks = 'programming'\nbesar = teks.upper()"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari sebuah list di Python?",
+                "question_code": "angka = [1, 2, 3, 4]\nangka.remove(3)",
+                "answer": "Anda bisa menghapus item dari list dengan menggunakan metode `remove()`. Misalnya: `angka.remove(3)` akan menghapus angka 3 dari list.",
+                "answer_code": "angka = [1, 2, 3, 4]\nangka.remove(3)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah sebuah item ada dalam list?",
+                "question_code": "warna = ['merah', 'hijau', 'biru']\nif 'hijau' in warna:\n    print('Hijau ada di list')",
+                "answer": "Untuk memeriksa keberadaan item dalam list, gunakan kata kunci `in`. Misalnya: `if 'hijau' in warna: print('Hijau ada di list')`.",
+                "answer_code": "warna = ['merah', 'hijau', 'biru']\nif 'hijau' in warna:\n    print('Hijau ada di list')"
+            },
+            {
+                "question": "Bagaimana cara menulis loop while untuk mencetak angka dari 0 hingga 4?",
+                "question_code": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1",
+                "answer": "Loop while digunakan untuk menjalankan kode selama kondisi terpenuhi. Misalnya: `i = 0\nwhile i < 5: print(i)\ni += 1` akan mencetak angka dari 0 hingga 4.",
+                "answer_code": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1"
+            }
+        ]
+    }
+]

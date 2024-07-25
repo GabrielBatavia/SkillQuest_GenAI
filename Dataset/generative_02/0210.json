@@ -1,0 +1,125 @@
+[
+    {
+        "sumber": "LearnPython.org",
+        "penulis": "Rafi Pratama",
+        "tanggal": "2024-08-13",
+        "judul": "Pengantar pada Tuples dalam Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["tuple", "python"],
+        "konten": "Artikel ini membahas bagaimana cara membuat dan menggunakan tuple dalam Python, termasuk operasi dasar seperti akses elemen dan penggabungan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat tuple dan mengakses elemennya?",
+                "question_code": "my_tuple = (1, 2, 3)\nprint(my_tuple[1])",
+                "answer": "Untuk membuat tuple, gunakan tanda kurung `()`. Elemen dapat diakses menggunakan indeks, di mana indeks mulai dari 0. Contoh: `my_tuple[1]` mengakses elemen kedua, yaitu 2.",
+                "answer_code": "my_tuple = (1, 2, 3)\nprint(my_tuple[1])"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua tuple?",
+                "question_code": "tuple1 = (1, 2)\ntuple2 = (3, 4)\ncombined = tuple1 + tuple2\nprint(combined)",
+                "answer": "Untuk menggabungkan dua tuple, gunakan operator `+`. Misalnya: `tuple1 + tuple2` menggabungkan `tuple1` dan `tuple2` menjadi satu tuple baru.",
+                "answer_code": "tuple1 = (1, 2)\ntuple2 = (3, 4)\ncombined = tuple1 + tuple2\nprint(combined)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu nilai ada dalam tuple?",
+                "question_code": "my_tuple = (1, 2, 3)\nprint(4 in my_tuple)",
+                "answer": "Gunakan operator `in` untuk memeriksa keberadaan nilai dalam tuple. Misalnya: `4 in my_tuple` mengembalikan `False` jika 4 tidak ada dalam tuple.",
+                "answer_code": "my_tuple = (1, 2, 3)\nprint(2 in my_tuple)"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah elemen dalam tuple?",
+                "question_code": "my_tuple = (1, 2, 3, 4)\nprint(len(my_tuple))",
+                "answer": "Gunakan fungsi `len()` untuk menghitung jumlah elemen dalam tuple. Misalnya: `len(my_tuple)` mengembalikan jumlah elemen dalam tuple.",
+                "answer_code": "my_tuple = (1, 2, 3, 4)\nprint(len(my_tuple))"
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen terakhir dari tuple?",
+                "question_code": "my_tuple = (10, 20, 30)\nprint(my_tuple[-1])",
+                "answer": "Untuk mengakses elemen terakhir dari tuple, gunakan indeks negatif `-1`. Misalnya: `my_tuple[-1]` mengakses elemen terakhir, yaitu 30.",
+                "answer_code": "my_tuple = (10, 20, 30)\nprint(my_tuple[-1])"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonTutorials.org",
+        "penulis": "Fadila Alia",
+        "tanggal": "2024-08-14",
+        "judul": "Dasar-Dasar Set dalam Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["set", "python"],
+        "konten": "Artikel ini mengajarkan tentang penggunaan set dalam Python, termasuk bagaimana membuat set, menambahkan elemen, dan menghapus elemen.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat set dan menambahkan elemen baru?",
+                "question_code": "my_set = {1, 2, 3}\nmy_set.add(4)\nprint(my_set)",
+                "answer": "Set dibuat dengan menggunakan kurung kurawal `{}`. Untuk menambahkan elemen, gunakan metode `add()`. Misalnya: `my_set.add(4)` menambahkan angka 4 ke dalam set.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.add(4)\nprint(my_set)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari set?",
+                "question_code": "my_set = {1, 2, 3}\nmy_set.remove(2)\nprint(my_set)",
+                "answer": "Untuk menghapus elemen dari set, gunakan metode `remove()`. Misalnya: `my_set.remove(2)` menghapus angka 2 dari set.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.remove(2)\nprint(my_set)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah elemen ada dalam set?",
+                "question_code": "my_set = {5, 10, 15}\nprint(10 in my_set)",
+                "answer": "Gunakan operator `in` untuk memeriksa apakah elemen ada dalam set. Misalnya: `10 in my_set` mengembalikan `True` jika 10 ada dalam set.",
+                "answer_code": "my_set = {5, 10, 15}\nprint(10 in my_set)"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan elemen yang ada di dua set?",
+                "question_code": "set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nintersection = set1 & set2\nprint(intersection)",
+                "answer": "Gunakan operator `&` atau metode `intersection()` untuk mendapatkan elemen yang ada di kedua set. Misalnya: `set1 & set2` memberikan elemen {2, 3} yang ada di kedua set.",
+                "answer_code": "set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nintersection = set1 & set2\nprint(intersection)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua set?",
+                "question_code": "set1 = {1, 2}\nset2 = {3, 4}\ncombined = set1 | set2\nprint(combined)",
+                "answer": "Gunakan operator `|` atau metode `union()` untuk menggabungkan dua set. Misalnya: `set1 | set2` menggabungkan `set1` dan `set2` menjadi satu set baru.",
+                "answer_code": "set1 = {1, 2}\nset2 = {3, 4}\ncombined = set1 | set2\nprint(combined)"
+            }
+        ]
+    },
+    {
+        "sumber": "ProgrammingPython.net",
+        "penulis": "Hadi Nurdin",
+        "tanggal": "2024-08-15",
+        "judul": "Manipulasi String dalam Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["string", "python"],
+        "konten": "Artikel ini membahas bagaimana cara melakukan manipulasi string dalam Python, termasuk cara mengganti, memotong, dan memeriksa string.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengganti bagian dari string?",
+                "question_code": "my_string = 'Hello World'\nnew_string = my_string.replace('World', 'Python')\nprint(new_string)",
+                "answer": "Untuk mengganti bagian dari string, gunakan metode `replace()`. Misalnya: `my_string.replace('World', 'Python')` mengganti 'World' dengan 'Python' dalam string.",
+                "answer_code": "my_string = 'Hello World'\nnew_string = my_string.replace('World', 'Python')\nprint(new_string)"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah string mengandung substring tertentu?",
+                "question_code": "my_string = 'Python Programming'\nprint('Java' in my_string)",
+                "answer": "Gunakan operator `in` untuk memeriksa apakah substring ada dalam string. Misalnya: `'Python' in my_string` mengembalikan `True` jika 'Python' ditemukan dalam string.",
+                "answer_code": "my_string = 'Python Programming'\nprint('Python' in my_string)"
+            },
+            {
+                "question": "Bagaimana cara memotong bagian dari string?",
+                "question_code": "my_string = 'Python Programming'\nprint(my_string[7:18])",
+                "answer": "Gunakan slicing untuk memotong bagian dari string. Sintaksnya adalah `my_string[start:end]`, di mana `start` adalah indeks awal dan `end` adalah indeks akhir. Misalnya: `my_string[7:18]` memotong dari indeks 7 hingga 17.",
+                "answer_code": "my_string = 'Python Programming'\nprint(my_string[7:18])"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kapital?",
+                "question_code": "my_string = 'hello'\nprint(my_string.upper())",
+                "answer": "Gunakan metode `upper()` untuk mengubah string menjadi huruf kapital. Misalnya: `my_string.upper()` mengubah 'hello' menjadi 'HELLO'.",
+                "answer_code": "my_string = 'hello'\nprint(my_string.upper())"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah kemunculan karakter dalam string?",
+                "question_code": "my_string = 'banana'\nprint(my_string.count('a'))",
+                "answer": "Gunakan metode `count()` untuk menghitung jumlah kemunculan karakter dalam string. Misalnya: `my_string.count('a')` menghitung berapa kali 'a' muncul dalam string.",
+                "answer_code": "my_string = 'banana'\nprint(my_string.count('a'))"
+            }
+        ]
+    }
+]

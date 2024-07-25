@@ -1,0 +1,98 @@
+[
+    {
+        "sumber": "Python Fundamentals",
+        "penulis": "Emily Davis",
+        "tanggal": "2024-11-10",
+        "judul": "Cara Menggabungkan Dua List di Python dengan `extend()` dan `+` Operator",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "extend", "Operator", "Pemula"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan metode `extend()` dan operator `+` untuk menggabungkan dua list di Python. Pelajari perbedaan dan aplikasi masing-masing metode dalam konteks pemrograman Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggabungkan list `[2, 4]` dan `[6, 8]` menggunakan `extend()`?",
+                "answer": "Untuk menggabungkan list `[2, 4]` dan `[6, 8]` menggunakan `extend()`, lakukan `list_one = [2, 4]; list_one.extend([6, 8])`. Setelah operasi ini, `list_one` akan menjadi `[2, 4, 6, 8]`."
+            },
+            {
+                "question": "Apa hasil dari menggunakan operator `+` untuk menggabungkan list `[7, 14]` dan `[21, 28]`?",
+                "answer": "Menggunakan operator `+` untuk menggabungkan list `[7, 14]` dan `[21, 28]` dengan kode `result = [7, 14] + [21, 28]` menghasilkan list baru `[7, 14, 21, 28]`. Operator `+` menghasilkan list baru yang menggabungkan kedua list."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[10, 20]` dengan list `[30, 40]` menggunakan `extend()` tanpa mengubah list asli?",
+                "answer": "Untuk menggabungkan list tanpa mengubah list asli, salin list yang ingin Anda extend. Contoh: `list_one = [10, 20]; list_two = [30, 40]; list_copy = list_one.copy(); list_copy.extend(list_two)` menghasilkan `list_copy` menjadi `[10, 20, 30, 40]`."
+            },
+            {
+                "question": "Apa yang menyebabkan error saat mencoba menggabungkan list `[5, 10]` dan string `'hello'` dengan operator `+`?",
+                "question_code": "list_a = [5, 10]\nresult = list_a + 'hello'",
+                "answer": "Error ini terjadi karena operator `+` hanya dapat digunakan untuk menggabungkan list dengan list. Untuk menggabungkan list dengan string, konversi string menjadi list atau gunakan metode yang sesuai.",
+                "answer_code": "list_a = [5, 10]\nresult = list_a + list('hello')"
+            },
+            {
+                "question": "Kenapa `extend()` tidak bisa digunakan untuk menggabungkan list `[1, 2]` dengan set `{3, 4}`?",
+                "question_code": "list_b = [1, 2]\nlist_b.extend({3, 4})",
+                "answer": "`extend()` mengharapkan iterable yang menghasilkan elemen individual, dan set bisa di-extend langsung tanpa konversi. Namun, perlu diingat bahwa set adalah unordered, sehingga urutan elemen tidak terjamin.",
+                "answer_code": "list_b = [1, 2]\nlist_b.extend(list({3, 4}))"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: can only concatenate list (not 'dict') to list' saat menggunakan operator `+`?",
+                "question_code": "list_c = [1, 2]\nresult = list_c + {'key': 'value'}",
+                "answer": "Error ini terjadi karena operator `+` tidak bisa menggabungkan list dengan dictionary. Untuk menggabungkan dictionary dengan list, konversikan dictionary menjadi list terlebih dahulu atau gunakan metode lain.",
+                "answer_code": "list_c = [1, 2]\nresult = list_c + list({'key': 'value'})"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[5, 10, 15]` dan `[20, 25, 30]` menggunakan `+` jika Anda tidak ingin memodifikasi list asli?",
+                "answer": "Untuk menggabungkan list tanpa mengubah list asli, gunakan operator `+` yang menghasilkan list baru. Contoh: `result = [5, 10, 15] + [20, 25, 30]` menghasilkan list baru `[5, 10, 15, 20, 25, 30]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggabungkan list `[8, 16]` dengan tuple `(32, 64)` menggunakan `extend()`?",
+                "question_code": "list_d = [8, 16]\nlist_d.extend((32, 64))",
+                "answer": "`extend()` dapat menerima tuple secara langsung, karena tuple adalah iterable. Setelah operasi ini, `list_d` akan menjadi `[8, 16, 32, 64]`.",
+                "answer_code": "list_d = [8, 16]\nlist_d.extend((32, 64))"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "James Lee",
+        "tanggal": "2024-11-11",
+        "judul": "Penggunaan `extend()` dan `+` Operator untuk Menggabungkan List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "extend", "Operator", "Pemula"],
+        "konten": "Artikel ini memberikan pemahaman mendalam tentang cara menggunakan `extend()` dan `+` operator untuk menggabungkan dua list di Python. Pelajari bagaimana masing-masing metode mempengaruhi list dan penggunaannya dalam berbagai situasi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana menggabungkan list `[3, 6, 9]` dan `[12, 15, 18]` menggunakan `extend()`?",
+                "answer": "Untuk menggabungkan list `[3, 6, 9]` dan `[12, 15, 18]` menggunakan `extend()`, Anda dapat menggunakan kode `list_one = [3, 6, 9]; list_one.extend([12, 15, 18])`. Setelah operasi ini, `list_one` akan menjadi `[3, 6, 9, 12, 15, 18]`."
+            },
+            {
+                "question": "Apa hasil penggabungan list `[5, 10]` dan `[15, 20]` dengan operator `+`?",
+                "answer": "Hasil penggabungan list `[5, 10]` dan `[15, 20]` dengan operator `+` menggunakan kode `result = [5, 10] + [15, 20]` adalah list baru `[5, 10, 15, 20]`. Operator `+` menggabungkan kedua list dan menghasilkan list baru."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan list `[100, 200]` dan `[300, 400]` menggunakan `extend()` tanpa memodifikasi list awal?",
+                "answer": "Untuk menggabungkan list tanpa mengubah list awal, buat salinan dari list awal dan gunakan `extend()`. Contoh: `list_initial = [100, 200]; list_additional = [300, 400]; list_result = list_initial.copy(); list_result.extend(list_additional)` menghasilkan `list_result` menjadi `[100, 200, 300, 400]`."
+            },
+            {
+                "question": "Mengapa Anda mendapatkan error 'TypeError: can only concatenate list (not 'set') to list' saat menggunakan operator `+` dengan list `[1, 2]` dan set `{3, 4}`?",
+                "question_code": "list_e = [1, 2]\nresult = list_e + {3, 4}",
+                "answer": "Error ini terjadi karena operator `+` tidak dapat digunakan untuk menggabungkan list dengan set. Anda harus mengonversi set menjadi list sebelum penggabungan.",
+                "answer_code": "list_e = [1, 2]\nresult = list_e + list({3, 4})"
+            },
+            {
+                "question": "Apa yang harus Anda lakukan jika ingin menggabungkan list `[1, 2]` dengan string `'world'` menggunakan `extend()`?",
+                "question_code": "list_f = [1, 2]\nlist_f.extend('world')",
+                "answer": "Saat menggunakan `extend()` dengan string, string akan dianggap sebagai iterable karakter. Untuk menambahkan string sebagai elemen tunggal, konversikan string menjadi list terlebih dahulu.",
+                "answer_code": "list_f = [1, 2]\nlist_f.extend(['world'])"
+            },
+            {
+                "question": "Bagaimana Anda menggabungkan list `[7, 14]` dengan tuple `(21, 28)` menggunakan operator `+`?",
+                "answer": "Untuk menggabungkan list `[7, 14]` dan tuple `(21, 28)` menggunakan operator `+`, konversikan tuple menjadi list dan gunakan `+`. Contoh: `result = [7, 14] + list((21, 28))` menghasilkan `[7, 14, 21, 28]`."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: can only concatenate list (not 'NoneType') to list' saat menggabungkan list `[1, 2]` dan hasil fungsi yang mengembalikan `None`?",
+                "question_code": "list_g = [1, 2]\nresult = list_g + None",
+                "answer": "Error ini terjadi karena `None` bukan tipe data yang bisa digabungkan dengan list. Pastikan semua elemen yang ingin digabungkan adalah list atau dapat diubah menjadi list.",
+                "answer_code": "list_g = [1, 2]\nresult = list_g + [None]"
+            }
+        ]
+    }
+]

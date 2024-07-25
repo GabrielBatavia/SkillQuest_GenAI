@@ -1,0 +1,138 @@
+[
+    {
+        "sumber": "Codecademy",
+        "penulis": "Agus Salim",
+        "tanggal": "2024-07-30",
+        "judul": "Dasar-dasar Penggunaan List di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["list", "python"],
+        "konten": "Artikel ini menjelaskan tentang penggunaan list di Python, termasuk cara membuat, mengakses, dan memodifikasi elemen list.",
+        "pertanyaan": [
+            {
+                "question": "Saya baru belajar Python, bagaimana cara membuat daftar dan menambah elemen ke dalamnya?",
+                "question_code": "list_data = [1, 2, 3\nlist_data.add(4\nprint(list_data[-1])",
+                "answer": "Untuk membuat daftar (list), Anda bisa menggunakan tanda kurung siku `[]`. Untuk menambahkan elemen, gunakan metode `append()`. Misalnya, `list_data.append(4)`. Untuk mencetak elemen terakhir, gunakan `print(list_data[-1])`.",
+                "answer_code": "list_data = [1, 2, 3]\nlist_data.append(4)\nprint(list_data[-1])"
+            },
+            {
+                "question": "Saya ingin mengakses elemen kedua dalam daftar, tapi kode saya tidak bekerja. Apa yang salah?",
+                "question_code": "my_list = [10, 20, 30]\nprint(my_list(1))",
+                "answer": "Elemen dalam daftar diakses menggunakan indeks yang dimulai dari 0 dan menggunakan tanda kurung siku, bukan tanda kurung biasa. Gunakan `print(my_list[1])` untuk mengakses elemen kedua.",
+                "answer_code": "my_list = [10, 20, 30]\nprint(my_list[1])"
+            },
+            {
+                "question": "Bagaimana cara mengubah elemen dalam daftar? Saya ingin mengganti elemen kedua.",
+                "question_code": "my_list = [1, 2, 3]\nmy_list[1] == 5\nprint(my_list)",
+                "answer": "Anda bisa mengganti elemen dalam daftar dengan memberikan nilai baru pada indeks yang diinginkan menggunakan `=`. Misalnya, `my_list[1] = 5` akan mengganti elemen kedua dengan 5.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list[1] = 5\nprint(my_list)"
+            },
+            {
+                "question": "Bagaimana caranya saya menambahkan beberapa elemen sekaligus ke dalam daftar?",
+                "question_code": "my_list = [1, 2]\nmy_list.add([3, 4])\nprint(my_list)",
+                "answer": "Untuk menambahkan beberapa elemen sekaligus, gunakan metode `extend()`. Misalnya, `my_list.extend([3, 4])` akan menambahkan elemen 3 dan 4 ke dalam daftar.",
+                "answer_code": "my_list = [1, 2]\nmy_list.extend([3, 4])\nprint(my_list)"
+            },
+            {
+                "question": "Saya ingin menghapus elemen dengan nilai 2 dari daftar, tapi kode saya error. Apa yang salah?",
+                "question_code": "my_list = [1, 2, 3, 4]\nmy_list.delete(2)\nprint(my_list)",
+                "answer": "Untuk menghapus elemen berdasarkan nilai, gunakan metode `remove()`. Misalnya, `my_list.remove(2)` akan menghapus elemen dengan nilai 2.",
+                "answer_code": "my_list = [1, 2, 3, 4]\nmy_list.remove(2)\nprint(my_list)"
+            },
+            {
+                "question": "Bagaimana cara saya mengetahui berapa banyak elemen yang ada di dalam daftar?",
+                "question_code": "my_list = [1, 2, 3]\nlength = my_list.size()\nprint(length)",
+                "answer": "Gunakan fungsi `len()` untuk mendapatkan jumlah elemen dalam daftar. Misalnya, `len(my_list)` akan mengembalikan panjang daftar.",
+                "answer_code": "my_list = [1, 2, 3]\nprint(len(my_list))"
+            },
+            {
+                "question": "Bagaimana caranya saya membalik urutan elemen dalam daftar?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.flip()\nprint(my_list)",
+                "answer": "Gunakan metode `reverse()` untuk membalik urutan elemen dalam daftar. Misalnya, `my_list.reverse()` akan membalikkan urutan daftar.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.reverse()\nprint(my_list)"
+            },
+            {
+                "question": "Bagaimana cara saya memotong daftar dari indeks tertentu hingga akhir?",
+                "question_code": "my_list = [1, 2, 3, 4, 5]\nprint(my_list[2:5])",
+                "answer": "Untuk memotong daftar dari indeks tertentu hingga akhir, gunakan slicing dengan hanya menyebutkan indeks awal. Misalnya, `my_list[2:]` akan memotong daftar mulai dari indeks 2 hingga akhir.",
+                "answer_code": "my_list = [1, 2, 3, 4, 5]\nprint(my_list[2:])"
+            },
+            {
+                "question": "Saya perlu menyisipkan elemen pada posisi tertentu dalam daftar. Bagaimana caranya?",
+                "question_code": "my_list = [1, 2, 4]\nmy_list.append(2, 3)\nprint(my_list)",
+                "answer": "Gunakan metode `insert()` untuk menyisipkan elemen pada posisi tertentu dalam daftar. Misalnya, `my_list.insert(2, 3)` akan menyisipkan angka 3 pada posisi indeks 2.",
+                "answer_code": "my_list = [1, 2, 4]\nmy_list.insert(2, 3)\nprint(my_list)"
+            },
+            {
+                "question": "Bagaimana saya bisa memeriksa apakah elemen ada dalam daftar?",
+                "question_code": "my_list = [1, 2, 3]\nif 4 not in my_list:\nprint('Not found')",
+                "answer": "Gunakan operator `in` untuk memeriksa apakah elemen ada dalam daftar. Misalnya, `4 in my_list` akan mengembalikan `False` jika elemen 4 tidak ada dalam daftar.",
+                "answer_code": "my_list = [1, 2, 3]\nprint(4 in my_list)"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonTutorials.com",
+        "penulis": "Sari Wulandari",
+        "tanggal": "2024-07-31",
+        "judul": "Fungsi dan Cara Penggunaannya di Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["fungsi", "python"],
+        "konten": "Artikel ini membahas tentang cara mendefinisikan dan menggunakan fungsi di Python, serta berbagai konsep terkait seperti parameter dan pengembalian nilai.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendefinisikan dan memanggil fungsi sederhana di Python?",
+                "question_code": "def say_hello()\nprint('Hello!')\nsay_hello()",
+                "answer": "Untuk mendefinisikan fungsi, gunakan kata kunci `def` diikuti dengan nama fungsi dan tanda kurung. Fungsi harus memiliki tanda kurung `:` di akhir baris definisi dan indentasi yang benar. Misalnya, `def say_hello():` dan panggil dengan `say_hello()`.",
+                "answer_code": "def say_hello():\n    print('Hello!')\nsay_hello()"
+            },
+            {
+                "question": "Saya ingin membuat fungsi yang menerima parameter. Bagaimana caranya?",
+                "question_code": "def greet(name)\nprint('Hello, ' + name)\ngreet('Alice')",
+                "answer": "Untuk membuat fungsi dengan parameter, tambahkan parameter dalam tanda kurung setelah nama fungsi. Misalnya, `def greet(name):` lalu gunakan parameter dalam fungsi, `print('Hello, ' + name)`.",
+                "answer_code": "def greet(name):\n    print('Hello, ' + name)\ngreet('Alice')"
+            },
+            {
+                "question": "Bagaimana cara mengembalikan nilai dari sebuah fungsi? Saya ingin mengembalikan hasil penjumlahan dua angka.",
+                "question_code": "def add(a, b)\n    return a + b\nadd(3, 4)",
+                "answer": "Gunakan kata kunci `return` untuk mengembalikan nilai dari fungsi. Misalnya, `def add(a, b):` kemudian `return a + b`.",
+                "answer_code": "def add(a, b):\n    return a + b\nprint(add(3, 4))"
+            },
+            {
+                "question": "Bagaimana cara memberikan nilai default pada parameter fungsi?",
+                "question_code": "def greet(name='Guest'):\nprint('Hello, ' + name)\ngreet()",
+                "answer": "Berikan nilai default pada parameter dengan menyebutkan nilai setelah tanda sama dengan. Misalnya, `def greet(name='Guest'):` akan memberikan nilai default 'Guest' jika tidak ada argumen yang diberikan.",
+                "answer_code": "def greet(name='Guest'):\n    print('Hello, ' + name)\ngreet()\ngreet('Bob')"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi yang bisa menerima jumlah argumen yang bervariasi?",
+                "question_code": "def print_all(*args):\nfor arg in args\nprint(arg)\nprint_all(1, 2, 3)",
+                "answer": "Gunakan `*` sebelum nama parameter untuk menerima jumlah argumen yang bervariasi. Misalnya, `def print_all(*args):` akan menerima semua argumen yang diberikan sebagai tuple.",
+                "answer_code": "def print_all(*args):\n    for arg in args:\n        print(arg)\nprint_all(1, 2, 3)"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi yang menerima argumen kata kunci bervariasi?",
+                "question_code": "def show_info(**kwargs):\nfor key, value in kwargs.items():\nprint(key, value)\nshow_info(name='Alice', age=30)",
+                "answer": "Gunakan `**` sebelum nama parameter untuk menerima argumen kata kunci yang bervariasi. Misalnya, `def show_info(**kwargs):` akan menerima semua argumen kata kunci sebagai dictionary.",
+                "answer_code": "def show_info(**kwargs):\n    for key, value in kwargs.items():\n        print(key, value)\nshow_info(name='Alice', age=30)"
+            },
+            {
+                "question": "Bagaimana cara memanggil fungsi dengan parameter posisi dan kata kunci?",
+                "question_code": "def greet(greeting, name):\nprint(greeting, name)\ngreet('Hello', name='Bob')",
+                "answer": "Anda dapat memanggil fungsi dengan parameter posisi terlebih dahulu, kemudian parameter kata kunci. Misalnya, `greet('Hello', name='Bob')`.",
+                "answer_code": "def greet(greeting, name):\n    print(greeting + ', ' + name)\ngreet('Hello', name='Bob')"
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi di dalam fungsi lain?",
+                "question_code": "def outer_function():\n def inner_function():\nprint('Inner function')\ninner_function()\nouter_function()",
+                "answer": "Fungsi dapat didefinisikan di dalam fungsi lain. Fungsi dalam fungsi ini adalah fungsi lokal dan hanya dapat diakses dari dalam fungsi luar. Misalnya, `def outer_function():` dan di dalamnya `def inner_function():`.",
+                "answer_code": "def outer_function():\n    def inner_function():\n        print('Inner function')\n    inner_function()\nouter_function()"
+            },
+            {
+                "question": "Bagaimana cara menangani kesalahan yang mungkin terjadi dalam fungsi menggunakan try-except?",
+                "question_code": "def divide(a, b):\ntry\nreturn a / b\nexcept ZeroDivisionError\nreturn 'Cannot divide by zero'\nprint(divide(10, 0))",
+                "answer": "Gunakan blok `try-except` untuk menangani kesalahan yang mungkin terjadi dalam fungsi. Misalnya, `except ZeroDivisionError:` menangani kesalahan pembagian dengan nol.",
+                "answer_code": "def divide(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return 'Cannot divide by zero'\nprint(divide(10, 0))"
+            }
+        ]
+    }
+]

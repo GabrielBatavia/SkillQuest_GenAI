@@ -1,0 +1,108 @@
+[
+    {
+        "sumber": "pythonbasics.org",
+        "penulis": "Michael Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Operator Aritmatika dan Kesalahan Umum di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "aritmatika", "pemula", "kesalahan"],
+        "konten": "Artikel ini membahas operator aritmatika dasar di Python dan kesalahan umum yang sering terjadi saat melakukan operasi aritmatika.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara melakukan penjumlahan antara dua angka di Python?",
+                "question_code": "result = 5 - 2",
+                "answer": "Untuk penjumlahan, gunakan operator `+`. Misalnya, `5 + 2` akan menghasilkan `7`.",
+                "answer_code": "result = 5 + 2\n# Hasilnya adalah 7"
+            },
+            {
+                "question": "Apa yang dimaksud dengan operator `*` dalam perkalian di Python?",
+                "question_code": "result = 7 / 3",
+                "answer": "Operator `*` digunakan untuk perkalian. Misalnya, `7 * 3` akan menghasilkan `21`.",
+                "answer_code": "result = 7 * 3\n# Hasilnya adalah 21"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `8 / 3` dan bagaimana jika kita ingin pembagian bulat?",
+                "question_code": "result = 8 / 3\nresult_bulat = 8 / 3",
+                "answer": "Hasil dari `8 / 3` adalah `2.666...`. Untuk pembagian bulat, gunakan operator `//`. Misalnya, `8 // 3` menghasilkan `2`.",
+                "answer_code": "result = 8 / 3\nresult_bulat = 8 // 3\n# Hasilnya adalah 2.666... dan 2"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `**` untuk menghitung pangkat di Python?",
+                "question_code": "result = 3 * 2",
+                "answer": "Operator `**` digunakan untuk perpangkatan. Misalnya, `3 ** 2` akan menghasilkan `9`.",
+                "answer_code": "result = 3 ** 2\n# Hasilnya adalah 9"
+            },
+            {
+                "question": "Apa hasil dari `6 + 2 * 5` dan bagaimana urutan operasi mempengaruhi hasil?",
+                "question_code": "result = (6 + 2) * 5",
+                "answer": "Hasil dari `6 + 2 * 5` adalah `16`. Urutan operasi mengikuti aturan perkalian sebelum penjumlahan.",
+                "answer_code": "result = 6 + 2 * 5\n# Hasilnya adalah 16"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `%` untuk mencari sisa dari pembagian?",
+                "question_code": "result = 10 / 4",
+                "answer": "Operator `%` digunakan untuk menemukan sisa dari pembagian. Misalnya, `10 % 4` menghasilkan `2`.",
+                "answer_code": "result = 10 % 4\n# Hasilnya adalah 2"
+            },
+            {
+                "question": "Apa hasil dari `7 ** 2 / 2` dan bagaimana operasi ini dieksekusi?",
+                "question_code": "result = 7 ** 2 / 2",
+                "answer": "Hasil dari `7 ** 2 / 2` adalah `24.5`. Operator `**` dieksekusi terlebih dahulu, diikuti oleh pembagian.",
+                "answer_code": "result = 7 ** 2 / 2\n# Hasilnya adalah 24.5"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonlearn.com",
+        "penulis": "Sophia Adams",
+        "tanggal": "2024-07-27",
+        "judul": "Kesalahan Umum pada Operator Aritmatika di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "aritmatika", "pemula", "kesalahan"],
+        "konten": "Artikel ini membahas kesalahan umum yang terjadi saat menggunakan operator aritmatika di Python dan cara menghindarinya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara melakukan perkalian antara dua angka di Python?",
+                "question_code": "result = 9 + 4",
+                "answer": "Untuk perkalian, gunakan operator `*`. Misalnya, `9 * 4` akan menghasilkan `36`.",
+                "answer_code": "result = 9 * 4\n# Hasilnya adalah 36"
+            },
+            {
+                "question": "Apa hasil dari `10 % 4` dan bagaimana cara kerja operator `%`?",
+                "question_code": "result = 10 // 4",
+                "answer": "Operator `%` memberikan sisa dari pembagian. Misalnya, `10 % 4` menghasilkan `2`.",
+                "answer_code": "result = 10 % 4\n# Hasilnya adalah 2"
+            },
+            {
+                "question": "Apa yang dimaksud dengan operator `//` dalam konteks pembagian bulat?",
+                "question_code": "result = 15 / 2",
+                "answer": "Operator `//` digunakan untuk pembagian bulat yang menghilangkan sisa. Misalnya, `15 // 2` menghasilkan `7`.",
+                "answer_code": "result = 15 // 2\n# Hasilnya adalah 7"
+            },
+            {
+                "question": "Bagaimana cara menghitung pangkat menggunakan operator `**`?",
+                "question_code": "result = 4 ^ 3",
+                "answer": "Operator `**` digunakan untuk eksponensial. Misalnya, `4 ** 3` menghasilkan `64`.",
+                "answer_code": "result = 4 ** 3\n# Hasilnya adalah 64"
+            },
+            {
+                "question": "Apa hasil dari `5 * (3 + 2)` dan bagaimana operator `*` bekerja dalam ekspresi ini?",
+                "question_code": "result = 5 + (3 * 2)",
+                "answer": "Hasil dari `5 * (3 + 2)` adalah `25`. Operator `*` dieksekusi setelah penjumlahan dalam tanda kurung.",
+                "answer_code": "result = 5 * (3 + 2)\n# Hasilnya adalah 25"
+            },
+            {
+                "question": "Bagaimana saya bisa menggunakan operator `-` untuk mengurangi dua angka?",
+                "question_code": "result = 8 * 3",
+                "answer": "Operator `-` digunakan untuk pengurangan. Misalnya, `8 - 3` menghasilkan `5`.",
+                "answer_code": "result = 8 - 3\n# Hasilnya adalah 5"
+            },
+            {
+                "question": "Apa hasil dari `9 / 2` dan bagaimana hasilnya dibandingkan dengan pembagian bulat?",
+                "question_code": "result = 9 // 2",
+                "answer": "Hasil dari `9 / 2` adalah `4.5`. Untuk pembagian bulat, gunakan `//`, yang akan menghasilkan `4`.",
+                "answer_code": "result = 9 / 2\nresult_bulat = 9 // 2\n# Hasilnya adalah 4.5 dan 4"
+            }
+        ]
+    }
+]

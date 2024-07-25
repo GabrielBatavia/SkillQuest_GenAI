@@ -1,0 +1,94 @@
+[
+    {
+        "sumber": "PythonTechGuru.com",
+        "penulis": "Rina Putri",
+        "tanggal": "2024-12-01",
+        "judul": "Memahami Struktur Data Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["struktur data", "python", "list", "tuple"],
+        "konten": "Artikel ini membahas berbagai struktur data yang tersedia di Python, termasuk list, tuple, dan dictionary, serta perbedaan antara mereka.",
+        "pertanyaan": [
+            {
+                "question": "Apa perbedaan utama antara list dan tuple di Python?",
+                "answer": "Perbedaan utama adalah bahwa list bersifat mutable (dapat diubah), sedangkan tuple bersifat immutable (tidak dapat diubah)."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dari tuple?",
+                "answer": "Gunakan indeks untuk mengakses elemen tuple. Contoh: tuple[index], seperti tuple[0] untuk elemen pertama."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke dalam list di Python?",
+                "answer": "Gunakan metode append() untuk menambahkan elemen ke akhir list. Contoh: list.append(element)."
+            },
+            {
+                "question": "Kenapa kode ini menghasilkan error?",
+                "question_code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 10",
+                "answer": "Error terjadi karena tuple bersifat immutable, jadi Anda tidak dapat mengubah elemennya setelah tuple dibuat.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list[0] = 10"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari dictionary?",
+                "question_code": "my_dict = {'a': 1, 'b': 2}\nmy_dict.remove('a')",
+                "answer": "Gunakan metode pop() untuk menghapus elemen dari dictionary dengan kunci tertentu. Contoh: my_dict.pop('a').",
+                "answer_code": "my_dict = {'a': 1, 'b': 2}\nmy_dict.pop('a')"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua list di Python?",
+                "question_code": "list1 = [1, 2, 3]\nlist2 = [4, 5, 6]\nlist3 = list1.append(list2)",
+                "answer": "Gunakan operator + untuk menggabungkan dua list. Contoh: list1 + list2.",
+                "answer_code": "list1 = [1, 2, 3]\nlist2 = [4, 5, 6]\nlist3 = list1 + list2"
+            },
+            {
+                "question": "Bagaimana cara mengubah list menjadi set di Python?",
+                "question_code": "my_list = [1, 2, 2, 3]\nmy_set = set(my_list)",
+                "answer": "Gunakan fungsi set() untuk mengubah list menjadi set, yang otomatis menghapus elemen duplikat.",
+                "answer_code": "my_list = [1, 2, 2, 3]\nmy_set = set(my_list)"
+            }
+        ]
+    },
+    {
+        "sumber": "AdvancedPythonTech.org",
+        "penulis": "Arif Rahman",
+        "tanggal": "2024-12-05",
+        "judul": "Pemrograman Berorientasi Objek di Python",
+        "tingkat_kesulitan": "lanjutan",
+        "tag": ["OOP", "python", "kelas", "objek"],
+        "konten": "Artikel ini menjelaskan konsep dasar pemrograman berorientasi objek (OOP) di Python, termasuk kelas, objek, pewarisan, dan enkapsulasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu kelas dan objek dalam pemrograman berorientasi objek?",
+                "answer": "Kelas adalah cetak biru untuk membuat objek, sedangkan objek adalah instansi dari kelas yang berisi data dan metode."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan kelas di Python?",
+                "answer": "Gunakan kata kunci class diikuti dengan nama kelas. Contoh: class MyClass: pass."
+            },
+            {
+                "question": "Apa itu pewarisan dalam OOP?",
+                "answer": "Pewarisan adalah mekanisme di mana kelas baru (subclass) mewarisi atribut dan metode dari kelas yang ada (superclass)."
+            },
+            {
+                "question": "Mengapa kode ini menghasilkan error?",
+                "question_code": "class Person:\n    def __init__(self, name):\n        self.name = name\n\nperson = Person()\nprint(person.name)",
+                "answer": "Error terjadi karena konstruktor __init__() membutuhkan parameter name saat membuat objek. Berikan argumen saat instansiasi objek.",
+                "answer_code": "class Person:\n    def __init__(self, name):\n        self.name = name\n\nperson = Person('John')\nprint(person.name)"
+            },
+            {
+                "question": "Bagaimana cara membuat metode dalam kelas di Python?",
+                "question_code": "class MyClass:\n    def my_method(self):\n        print('Hello')\n\nobj = MyClass()\nobj.my_method()",
+                "answer": "Definisikan metode di dalam kelas dengan menambahkan parameter self. Metode ini dapat diakses melalui objek kelas.",
+                "answer_code": "class MyClass:\n    def my_method(self):\n        print('Hello')\n\nobj = MyClass()\nobj.my_method()"
+            },
+            {
+                "question": "Apa yang dimaksud dengan enkapsulasi dalam OOP?",
+                "answer": "Enkapsulasi adalah konsep menyembunyikan detail implementasi internal kelas dan hanya mengekspos antarmuka publik untuk berinteraksi dengan objek."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pewarisan di Python?",
+                "question_code": "class Animal:\n    def speak(self):\n        print('Animal speaks')\n\nclass Dog(Animal):\n    def bark(self):\n        print('Dog barks')\n\ndog = Dog()\ndog.speak()\ndog.bark()",
+                "answer": "Definisikan kelas turunan dengan menyebutkan kelas induk dalam tanda kurung. Contoh: class Dog(Animal).",
+                "answer_code": "class Animal:\n    def speak(self):\n        print('Animal speaks')\n\nclass Dog(Animal):\n    def bark(self):\n        print('Dog barks')\n\ndog = Dog()\ndog.speak()\ndog.bark()"
+            }
+        ]
+    }
+]

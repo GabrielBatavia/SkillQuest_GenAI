@@ -1,0 +1,72 @@
+[
+    {
+        "sumber": "PythonBasics.org",
+        "penulis": "Alex Johnson",
+        "tanggal": "2024-12-20",
+        "judul": "Pengenalan ke List Comprehension di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["list comprehension", "python", "programming", "pemula"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan list comprehension di Python untuk membuat list dengan sintaks yang lebih bersih dan efisien. Termasuk juga beberapa contoh penggunaannya dalam berbagai situasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu list comprehension di Python?",
+                "answer": "List comprehension adalah cara singkat untuk membuat list baru dengan menerapkan ekspresi atau operasi pada setiap elemen dari iterable yang ada. Ini membuat kode lebih bersih dan mudah dibaca."
+            },
+            {
+                "question": "Bagaimana cara menulis list comprehension untuk membuat list kuadrat dari angka 1 hingga 10?",
+                "answer": "Gunakan sintaks `[x**2 for x in range(1, 11)]` untuk membuat list yang berisi kuadrat dari angka 1 hingga 10."
+            },
+            {
+                "question": "Berikan contoh penggunaan list comprehension untuk menyaring angka genap dari list.",
+                "answer": "Gunakan sintaks `[x for x in numbers if x % 2 == 0]` di mana `numbers` adalah list yang berisi angka. Ini akan mengembalikan list yang hanya berisi angka genap."
+            },
+            {
+                "question": "Kenapa kode ini menghasilkan hasil yang salah?",
+                "question_code": "numbers = [1, 2, 3, 4, 5, 6]\n\nsquares = [x**2 for x in numbers if x % 2]\nprint(squares)",
+                "answer": "Masalah terjadi karena kondisi `x % 2` hanya memeriksa apakah angka ganjil. Gunakan `x % 2 == 0` untuk memilih angka genap jika itu tujuannya.",
+                "answer_code": "numbers = [1, 2, 3, 4, 5, 6]\n\nsquares = [x**2 for x in numbers if x % 2 == 0]\nprint(squares)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk mengubah semua huruf dalam string menjadi huruf besar?",
+                "question_code": "sentence = 'hello world'\n\nupper_case = [char.upper() for char in sentence]\nprint(''.join(upper_case))",
+                "answer": "List comprehension ini mengubah setiap karakter dalam string menjadi huruf besar. Gunakan `char.upper()` pada setiap karakter dan gabungkan hasilnya dengan `join()`.",
+                "answer_code": "sentence = 'hello world'\n\nupper_case = [char.upper() for char in sentence]\nprint(''.join(upper_case))"
+            }
+        ]
+    },
+    {
+        "sumber": "DataScienceEssentials.com",
+        "penulis": "Michael Brown",
+        "tanggal": "2024-12-22",
+        "judul": "Memahami dan Menggunakan Pandas DataFrame",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["pandas", "dataframe", "python", "data science"],
+        "konten": "Artikel ini memberikan pengantar tentang Pandas DataFrame, termasuk cara membuat, memanipulasi, dan menganalisis data menggunakan struktur DataFrame di Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu Pandas DataFrame dan bagaimana cara membuatnya?",
+                "answer": "Pandas DataFrame adalah struktur data dua dimensi seperti tabel yang dapat menyimpan data dengan berbagai tipe. Untuk membuat DataFrame, gunakan `pd.DataFrame(data)`, di mana `data` bisa berupa dictionary, list of lists, atau array NumPy."
+            },
+            {
+                "question": "Bagaimana cara menambahkan kolom baru ke DataFrame di Pandas?",
+                "answer": "Tambahkan kolom baru dengan cara menetapkan nilai untuk kolom baru, misalnya, `df['new_column'] = values`, di mana `df` adalah DataFrame dan `values` adalah data untuk kolom baru."
+            },
+            {
+                "question": "Apa perbedaan antara `loc` dan `iloc` dalam Pandas?",
+                "answer": "`loc` digunakan untuk pemilihan berdasarkan label indeks, sedangkan `iloc` digunakan untuk pemilihan berdasarkan posisi integer. `loc` memungkinkan akses menggunakan nama baris dan kolom, sementara `iloc` menggunakan indeks numerik."
+            },
+            {
+                "question": "Kenapa kode ini tidak berjalan?",
+                "question_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\ndf['C'] = [7, 8]\nprint(df)",
+                "answer": "Error terjadi karena panjang data untuk kolom baru tidak sesuai dengan panjang baris DataFrame. Pastikan panjang data untuk kolom baru sama dengan jumlah baris di DataFrame.",
+                "answer_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\ndf['C'] = [7, 8, 9]\nprint(df)"
+            },
+            {
+                "question": "Bagaimana cara menghapus baris dengan nilai NaN dari DataFrame?",
+                "question_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, None, 3], 'B': [4, 5, None]})\n\nclean_df = df.dropna()\nprint(clean_df)",
+                "answer": "Gunakan metode `dropna()` untuk menghapus baris yang memiliki nilai NaN dari DataFrame. Ini akan mengembalikan DataFrame tanpa baris yang memiliki nilai NaN.",
+                "answer_code": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1, None, 3], 'B': [4, 5, None]})\n\nclean_df = df.dropna()\nprint(clean_df)"
+            }
+        ]
+    }
+]

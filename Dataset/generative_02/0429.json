@@ -1,0 +1,72 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Sarah Johnson",
+        "tanggal": "2024-12-05",
+        "judul": "Memahami Metode `pop()` dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "pop", "Pemula"],
+        "konten": "Panduan ini menjelaskan penggunaan metode `pop()` untuk menghapus elemen dari list Python berdasarkan indeks tertentu. Berbagai contoh kode diberikan untuk membantu pemahaman.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari kode berikut: `fruits = ['apple', 'mango', 'banana']\nremoved_fruit = fruits.pop(2)`?",
+                "answer": "Kode ini akan menghapus elemen pada indeks 2 dari list `fruits`, yaitu 'banana'. Variabel `removed_fruit` akan menyimpan 'banana', dan list `fruits` akan menjadi `['apple', 'mango']`."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen pertama dan ketiga dari list `[100, 200, 300, 400, 500]`?",
+                "answer": "Untuk menghapus elemen pertama dan ketiga, gunakan kode berikut: `numbers = [100, 200, 300, 400, 500]\nnumbers.pop(2)\nnumbers.pop(0)`. Ini akan menghapus '300' dan '100', sehingga list menjadi `[200, 400, 500]`."
+            },
+            {
+                "question": "Apa yang akan terjadi jika Anda mencoba menghapus elemen pada indeks 5 dari list `[1, 2, 3, 4]`?",
+                "answer": "Menghapus elemen pada indeks 5 dari list `[1, 2, 3, 4]` akan menyebabkan `IndexError`, karena list ini hanya memiliki indeks dari 0 hingga 3."
+            },
+            {
+                "question": "Bagaimana Anda bisa menghapus elemen terakhir dan elemen pertama dari list `[9, 8, 7, 6]` menggunakan metode `pop()`?",
+                "answer": "Untuk menghapus elemen terakhir dan pertama, gunakan kode berikut: `numbers = [9, 8, 7, 6]\nnumbers.pop()  # Menghapus '6'\nnumbers.pop(0)  # Menghapus '9'`. List akan menjadi `[8, 7]`."
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'IndexError' pada kode `values = ['x', 'y', 'z']\nvalues.pop(3)`?",
+                "question_code": "values = ['x', 'y', 'z']\nvalues.pop(3)",
+                "answer": "Error ini terjadi karena indeks '3' berada di luar rentang list `values` yang hanya memiliki tiga elemen. Pastikan indeks berada dalam rentang yang valid.",
+                "answer_code": "values = ['x', 'y', 'z']\nif len(values) > 3:\n    values.pop(3)"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan `pop()` tanpa argumen pada list `[5, 10, 15]`?",
+                "answer": "Menggunakan `pop()` tanpa argumen akan menghapus dan mengembalikan elemen terakhir dari list. Pada list `[5, 10, 15]`, elemen '15' akan dihapus dan dikembalikan."
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python the Hard Way",
+        "penulis": "David Miller",
+        "tanggal": "2024-12-06",
+        "judul": "Prinsip Dasar Menggunakan `pop()` untuk Menghapus Elemen List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "pop", "Pemula"],
+        "konten": "Artikel ini membahas cara menggunakan metode `pop()` dalam Python untuk menghapus elemen dari list berdasarkan indeks tertentu. Contoh kode yang berbeda diberikan untuk ilustrasi.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari kode `items = ['a', 'b', 'c', 'd']\nremoved_item = items.pop(1)`?",
+                "answer": "Kode ini akan menghapus elemen pada indeks 1 dari list `items`, yaitu 'b'. Variabel `removed_item` akan menyimpan 'b', dan list `items` akan menjadi `['a', 'c', 'd']`."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen kedua dan keempat dari list `[12, 24, 36, 48, 60]`?",
+                "answer": "Untuk menghapus elemen kedua dan keempat, gunakan kode berikut: `numbers = [12, 24, 36, 48, 60]\nnumbers.pop(3)\nnumbers.pop(1)`. Ini akan menghapus '48' dan '24', sehingga list menjadi `[12, 36, 60]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan `pop()` dengan indeks negatif pada list `[10, 20, 30]`?",
+                "answer": "Menggunakan indeks negatif pada `pop()` menghapus elemen dari akhir list, dengan indeks -1 mewakili elemen terakhir. Misalnya, `numbers.pop(-1)` pada list `[10, 20, 30]` akan menghapus '30'."
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'TypeError: pop() takes no arguments' pada kode berikut: `data = [1, 2, 3]\ndata.pop(0, 1)`?",
+                "question_code": "data = [1, 2, 3]\ndata.pop(0, 1)",
+                "answer": "Error ini terjadi karena metode `pop()` hanya menerima satu argumen, yaitu indeks. Jika lebih dari satu argumen diberikan, akan terjadi error.",
+                "answer_code": "data = [1, 2, 3]\ndata.pop(0)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen ketiga dari list `[5, 15, 25, 35]` dan menyimpan hasilnya?",
+                "answer": "Untuk menghapus elemen ketiga dan menyimpannya, gunakan kode berikut: `numbers = [5, 15, 25, 35]\nremoved_element = numbers.pop(2)`. Ini akan menghapus '25' dan menyimpannya dalam variabel `removed_element`."
+            }
+        ]
+    }
+]

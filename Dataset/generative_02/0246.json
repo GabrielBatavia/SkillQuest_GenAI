@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "pythonsyntaxmenengah.com",
+        "penulis": "Rizal Fadli",
+        "tanggal": "2024-06-10",
+        "judul": "Penggunaan Fungsi Map, Filter, dan Reduce di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "map", "filter", "reduce", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi built-in map, filter, dan reduce di Python untuk memproses data dalam iterable dengan cara yang lebih efisien.",
+        "pertanyaan": [
+            {
+                "question": "Bisa jelaskan apa fungsi map dalam Python?",
+                "answer": "Fungsi map digunakan untuk menerapkan fungsi tertentu ke setiap item dalam iterable dan mengembalikan map object (iterator) dengan hasilnya."
+            },
+            {
+                "question": "Bagaimana cara pakai fungsi map di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\ncubed = list(map(lambda x: x**3, numbers))",
+                "answer": "Anda bisa menggunakan fungsi map dengan menerapkan fungsi lambda atau fungsi yang sudah didefinisikan ke setiap item dalam iterable. Contohnya: map(lambda x: x**3, numbers).",
+                "answer_code": "numbers = [1, 2, 3, 4]\ncubed = list(map(lambda x: x**3, numbers))"
+            },
+            {
+                "question": "Apa kegunaan fungsi filter di Python?",
+                "answer": "Fungsi filter digunakan untuk menyaring item dalam iterable berdasarkan fungsi tertentu yang mengembalikan nilai boolean."
+            },
+            {
+                "question": "Bagaimana cara pakai filter di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\nodds = list(filter(lambda x: x % 2 != 0, numbers))",
+                "answer": "Anda bisa menggunakan fungsi filter dengan menerapkan fungsi lambda atau fungsi yang sudah didefinisikan ke setiap item dalam iterable. Contohnya: filter(lambda x: x % 2 != 0, numbers).",
+                "answer_code": "numbers = [1, 2, 3, 4]\nodds = list(filter(lambda x: x % 2 != 0, numbers))"
+            },
+            {
+                "question": "Apa fungsi dari reduce di Python?",
+                "answer": "Fungsi reduce digunakan untuk menerapkan fungsi tertentu ke item dalam iterable secara berurutan dan mengembalikan hasil akhir."
+            },
+            {
+                "question": "Bagaimana cara pakai reduce di Python?",
+                "question_code": "from functools import reduce\nnumbers = [1, 2, 3, 4]\nproduct = reduce(lambda x, y: x * y, numbers)",
+                "answer": "Anda bisa menggunakan fungsi reduce dengan menerapkan fungsi lambda atau fungsi yang sudah didefinisikan ke item dalam iterable secara berurutan. Contohnya: reduce(lambda x, y: x * y, numbers).",
+                "answer_code": "from functools import reduce\nnumbers = [1, 2, 3, 4]\nproduct = reduce(lambda x, y: x * y, numbers)"
+            },
+            {
+                "question": "Bagaimana menggabungkan penggunaan map dan filter di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\nsquare_odds = list(map(lambda x: x**2, filter(lambda x: x % 2 != 0, numbers)))",
+                "answer": "Anda bisa mengkombinasikan penggunaan map dan filter dengan menerapkan filter terlebih dahulu, kemudian hasilnya diproses dengan map. Contohnya: map(lambda x: x**2, filter(lambda x: x % 2 != 0, numbers)).",
+                "answer_code": "numbers = [1, 2, 3, 4]\nsquare_odds = list(map(lambda x: x**2, filter(lambda x: x % 2 != 0, numbers)))"
+            },
+            {
+                "question": "Bagaimana menggunakan map dengan beberapa iterable di Python?",
+                "question_code": "numbers1 = [1, 2, 3]\nnumbers2 = [7, 8, 9]\nmultiplied_numbers = list(map(lambda x, y: x * y, numbers1, numbers2))",
+                "answer": "Anda bisa menggunakan map dengan beberapa iterable dengan menerapkan fungsi yang menerima beberapa argumen. Contohnya: map(lambda x, y: x * y, numbers1, numbers2).",
+                "answer_code": "numbers1 = [1, 2, 3]\nnumbers2 = [7, 8, 9]\nmultiplied_numbers = list(map(lambda x, y: x * y, numbers1, numbers2))"
+            },
+            {
+                "question": "Bagaimana cara menyaring string yang mengandung substring tertentu di Python?",
+                "question_code": "fruits = ['apple', 'banana', 'kiwi']\nfiltered_fruits = list(filter(lambda x: 'i' in x, fruits))",
+                "answer": "Anda bisa menggunakan filter untuk menyaring string yang mengandung substring tertentu dengan menerapkan fungsi lambda yang memeriksa keberadaan substring. Contohnya: filter(lambda x: 'i' in x, fruits).",
+                "answer_code": "fruits = ['apple', 'banana', 'kiwi']\nfiltered_fruits = list(filter(lambda x: 'i' in x, fruits))"
+            }
+        ]
+    },
+    {
+        "sumber": "pythonmenengah.com",
+        "penulis": "Siti Nurhasanah",
+        "tanggal": "2024-07-01",
+        "judul": "Penggunaan Exception Handling di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "exception handling", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan exception handling di Python untuk menangani error dan memastikan program berjalan dengan lancar meskipun terjadi kesalahan.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan exception handling di Python?",
+                "answer": "Exception handling adalah mekanisme untuk menangani error atau pengecualian yang terjadi selama eksekusi program sehingga program dapat terus berjalan."
+            },
+            {
+                "question": "Bagaimana cara kerja blok try-except di Python?",
+                "question_code": "try:\n    value = int('hello')\nexcept ValueError:\n    print('Gagal mengubah string menjadi integer')",
+                "answer": "Anda bisa menggunakan blok try-except untuk menangani error dengan menempatkan kode yang mungkin menghasilkan error di dalam blok try dan menangani error di dalam blok except. Contohnya: try: value = int('hello') except ValueError: print('Gagal mengubah string menjadi integer').",
+                "answer_code": "try:\n    value = int('hello')\nexcept ValueError:\n    print('Gagal mengubah string menjadi integer')"
+            },
+            {
+                "question": "Bagaimana cara menangani beberapa pengecualian di Python?",
+                "question_code": "try:\n    items = [1, 2, 3]\n    value = items[5]\nexcept IndexError:\n    print('Indeks diluar jangkauan')\nexcept TypeError:\n    print('Kesalahan tipe data')",
+                "answer": "Anda bisa menangani beberapa pengecualian dengan menggunakan beberapa blok except untuk menangani masing-masing jenis pengecualian. Contohnya: try: items = [1, 2, 3] value = items[5] except IndexError: print('Indeks diluar jangkauan') except TypeError: print('Kesalahan tipe data').",
+                "answer_code": "try:\n    items = [1, 2, 3]\n    value = items[5]\nexcept IndexError:\n    print('Indeks diluar jangkauan')\nexcept TypeError:\n    print('Kesalahan tipe data')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan blok finally di Python?",
+                "question_code": "try:\n    num = int('20')\nexcept ValueError:\n    print('Error konversi')\nfinally:\n    print('Eksekusi selesai')",
+                "answer": "Blok finally digunakan untuk mengeksekusi kode yang harus dijalankan terlepas dari apakah terjadi pengecualian atau tidak. Contohnya: try: num = int('20') except ValueError: print('Error konversi') finally: print('Eksekusi selesai').",
+                "answer_code": "try:\n    num = int('20')\nexcept ValueError:\n    print('Error konversi')\nfinally:\n    print('Eksekusi selesai')"
+            },
+            {
+                "question": "Bagaimana cara membuat pengecualian khusus di Python?",
+                "question_code": "class InvalidAgeError(Exception):\n    pass\n\ntry:\n    age = -1\n    if age < 0:\n        raise InvalidAgeError('Umur tidak valid')\nexcept InvalidAgeError as e:\n    print(e)",
+                "answer": "Anda bisa membuat pengecualian khusus dengan mendefinisikan kelas pengecualian yang mewarisi dari kelas Exception. Contohnya: class InvalidAgeError(Exception): pass.",
+                "answer_code": "class InvalidAgeError(Exception):\n    pass\n\ntry:\n    age = -1\n    if age < 0:\n        raise InvalidAgeError('Umur tidak valid')\nexcept InvalidAgeError as e:\n    print(e)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan klausa else dengan blok try-except di Python?",
+                "question_code": "try:\n    result = 5 + 5\nexcept Exception as e:\n    print('Terjadi kesalahan:', e)\nelse:\n    print('Hasil:', result)",
+                "answer": "Klausa else digunakan untuk mengeksekusi kode jika tidak ada pengecualian yang terjadi di dalam blok try. Contohnya: try: result = 5 + 5 except Exception as e: print('Terjadi kesalahan:', e) else: print('Hasil:', result).",
+                "answer_code": "try:\n    result = 5 + 5\nexcept Exception as e:\n    print('Terjadi kesalahan:', e)\nelse:\n    print('Hasil:', result)"
+            },
+            {
+                "question": "Bagaimana cara menangkap semua jenis pengecualian di Python?",
+                "question_code": "try:\n    print(undefined_var)\nexcept Exception as error:\n    print('Kesalahan yang terjadi:', error)",
+                "answer": "Anda bisa menangkap semua jenis pengecualian dengan menggunakan kelas dasar Exception. Contohnya: try: print(undefined_var) except Exception as error: print('Kesalahan yang terjadi:', error).",
+                "answer_code": "try:\n    print(undefined_var)\nexcept Exception as error:\n    print('Kesalahan yang terjadi:', error)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan klausa raise di Python?",
+                "question_code": "try:\n    raise IndexError('Indeks di luar batas')\nexcept IndexError as err:\n    print(err)",
+                "answer": "Klausa raise digunakan untuk memunculkan pengecualian secara manual. Contohnya: raise IndexError('Indeks di luar batas').",
+                "answer_code": "try:\n    raise IndexError('Indeks di luar batas')\nexcept IndexError as err:\n    print(err)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan klausa assert di Python?",
+                "question_code": "age = 15\nassert age >= 18, 'Umur harus minimal 18 tahun'",
+                "answer": "Klausa assert digunakan untuk melakukan pemeriksaan logika selama eksekusi program. Jika kondisi assert False, AssertionError akan dipicu. Contohnya: assert age >= 18, 'Umur harus minimal 18 tahun'.",
+                "answer_code": "age = 15\nassert age >= 18, 'Umur harus minimal 18 tahun'"
+            }
+        ]
+    }
+]

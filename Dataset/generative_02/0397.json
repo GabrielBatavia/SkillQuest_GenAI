@@ -1,0 +1,102 @@
+[
+    {
+        "sumber": "Beginner Python Programming",
+        "penulis": "Jordan Lee",
+        "tanggal": "2024-11-05",
+        "judul": "Penggunaan Method insert() untuk Menyisipkan Elemen pada Posisi Tertentu",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Tutorial ini menjelaskan bagaimana cara menggunakan method insert() untuk menempatkan elemen pada posisi tertentu dalam sebuah list di Python. Method ini memudahkan penempatan elemen tanpa mengubah urutan elemen lainnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyisipkan elemen 'dog' pada posisi ke-4 dalam list animals?",
+                "answer": "Gunakan kode berikut: animals.insert(4, 'dog'). Ini akan menempatkan 'dog' pada posisi indeks ke-4 dalam list animals, menggeser elemen setelahnya ke kanan.",
+                "question_code": "animals = ['cat', 'rabbit', 'hamster', 'fish']\nanimals.insert(4, 'dog')",
+                "answer_code": "animals = ['cat', 'rabbit', 'hamster', 'fish']\nanimals.insert(4, 'dog')  # Output: ['cat', 'rabbit', 'hamster', 'fish', 'dog']"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan method insert() untuk menyisipkan elemen pada indeks 0 dalam list yang sudah ada?",
+                "answer": "Jika Anda menyisipkan elemen pada indeks 0, elemen tersebut akan menjadi elemen pertama dalam list, menggeser semua elemen yang sudah ada ke satu posisi ke belakang.",
+                "question_code": "fruits = ['banana', 'apple', 'orange']\nfruits.insert(0, 'grape')",
+                "answer_code": "fruits = ['banana', 'apple', 'orange']\nfruits.insert(0, 'grape')  # Output: ['grape', 'banana', 'apple', 'orange']"
+            },
+            {
+                "question": "Bagaimana Anda dapat menyisipkan elemen 'pear' di akhir list menggunakan method insert()?",
+                "answer": "Untuk menyisipkan elemen di akhir list, gunakan len(list) sebagai indeks. Contohnya, list.insert(len(list), 'pear') akan menambahkan 'pear' di akhir list.",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.insert(len(numbers), 4)",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.insert(len(numbers), 4)  # Output: [1, 2, 3, 4]"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list index out of range' saat mencoba menyisipkan elemen pada indeks yang sangat besar?",
+                "answer": "Error ini muncul karena indeks yang digunakan melebihi rentang yang valid untuk list. Method insert() akan menambahkan elemen di akhir list jika indeks lebih besar dari panjang list, tetapi indeks yang sangat besar akan menyebabkan error.",
+                "question_code": "data = [10, 20]\ndata.insert(100, 30)",
+                "answer_code": "data = [10, 20]\ndata.insert(100, 30)  # Output: [10, 20, 30]"
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Anda mendapatkan error 'TypeError: insert() argument must be a list' saat mencoba menyisipkan list sebagai elemen?",
+                "answer": "Jika Anda mendapatkan error ini, pastikan bahwa elemen yang Anda sisipkan adalah satu item, bukan list. Anda dapat menyisipkan list sebagai elemen dengan cara ini: list.insert(index, [item1, item2])",
+                "question_code": "values = [1, 2, 3]\nvalues.insert(2, [4, 5])",
+                "answer_code": "values = [1, 2, 3]\nvalues.insert(2, [4, 5])  # Output: [1, 2, [4, 5], 3]"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be an integer' saat menggunakan string sebagai indeks?",
+                "question_code": "items = ['a', 'b', 'c']\nitems.insert('1', 'd')",
+                "answer": "Error ini terjadi karena method insert() memerlukan indeks berupa integer. Pastikan untuk selalu menggunakan integer sebagai indeks.",
+                "answer_code": "items = ['a', 'b', 'c']\nitems.insert(1, 'd')  # Output: ['a', 'd', 'b', 'c']"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'AttributeError: 'tuple' object has no attribute 'insert'' saat menggunakan method insert() pada tuple?",
+                "question_code": "my_tuple = (1, 2, 3)\nmy_tuple.insert(1, 4)",
+                "answer": "Error ini terjadi karena tuple di Python adalah struktur data yang tidak dapat diubah (immutable), sehingga tidak memiliki method insert(). Gunakan list jika Anda perlu mengubah elemen.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.insert(1, 4)  # Output: [1, 4, 2, 3]"
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python Quickly",
+        "penulis": "Morgan Clark",
+        "tanggal": "2024-11-05",
+        "judul": "Menggunakan Method insert() untuk Menambahkan Elemen ke List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Artikel ini menjelaskan penggunaan method insert() di Python untuk menambahkan elemen pada posisi tertentu dalam list. Method ini memberikan fleksibilitas dalam pengelolaan data dalam list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyisipkan elemen 'fish' pada posisi ke-2 dalam list pets?",
+                "answer": "Gunakan kode berikut: pets.insert(2, 'fish'). Ini akan menempatkan 'fish' pada posisi indeks ke-2 dalam list pets.",
+                "question_code": "pets = ['cat', 'dog', 'hamster']\npets.insert(2, 'fish')",
+                "answer_code": "pets = ['cat', 'dog', 'hamster']\npets.insert(2, 'fish')  # Output: ['cat', 'dog', 'fish', 'hamster']"
+            },
+            {
+                "question": "Apa efek dari menyisipkan elemen 'zebra' pada posisi ke-0 dalam list kosong?",
+                "answer": "Menambahkan elemen pada posisi ke-0 dalam list kosong akan membuat elemen tersebut menjadi satu-satunya elemen dalam list. List akan berisi hanya elemen yang disisipkan.",
+                "question_code": "empty = []\nempty.insert(0, 'zebra')",
+                "answer_code": "empty = []\nempty.insert(0, 'zebra')  # Output: ['zebra']"
+            },
+            {
+                "question": "Bagaimana Anda dapat menambahkan elemen 'blue' pada akhir list menggunakan method insert()?",
+                "answer": "Untuk menambahkan elemen di akhir list, gunakan len(list) sebagai indeks. Contoh: list.insert(len(list), 'blue') akan menambahkan 'blue' di akhir list.",
+                "question_code": "colors = ['red', 'green', 'yellow']\ncolors.insert(len(colors), 'blue')",
+                "answer_code": "colors = ['red', 'green', 'yellow']\ncolors.insert(len(colors), 'blue')  # Output: ['red', 'green', 'yellow', 'blue']"
+            },
+            {
+                "question": "Kenapa method insert() menyebabkan error jika indeks yang digunakan berupa float?",
+                "answer": "Error ini disebabkan karena method insert() memerlukan indeks berupa integer. Jika Anda menggunakan float, akan terjadi error karena tipe data yang tidak sesuai.",
+                "question_code": "items = [10, 20, 30]\nitems.insert(1.5, 40)",
+                "answer_code": "items = [10, 20, 30]\nitems.insert(1, 40)  # Output: [10, 40, 20, 30]"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list index out of range' saat menyisipkan elemen pada indeks yang sangat negatif?",
+                "answer": "Error ini terjadi karena indeks yang sangat negatif dianggap di luar jangkauan. Method insert() tidak dapat menangani indeks yang sangat negatif. Gunakan indeks yang berada dalam rentang valid.",
+                "question_code": "data = [1, 2, 3]\ndata.insert(-100, 4)",
+                "answer_code": "data = [1, 2, 3]\ndata.insert(0, 4)  # Output: [4, 1, 2, 3]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: insert() argument must be a string' saat menggunakan insert() dengan tipe data yang salah?",
+                "question_code": "data = ['apple', 'banana']\ndata.insert(1, 3.14)",
+                "answer": "Error ini muncul karena method insert() mengharapkan elemen sebagai argumen kedua yang sesuai dengan tipe data yang diterima list. Pastikan elemen yang disisipkan sesuai dengan tipe data list.",
+                "answer_code": "data = ['apple', 'banana']\ndata.insert(1, 'pear')  # Output: ['apple', 'pear', 'banana']"
+            }
+        ]
+    }
+]

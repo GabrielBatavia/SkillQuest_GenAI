@@ -1,0 +1,108 @@
+[
+    {
+        "sumber": "pythonforintermediate.com",
+        "penulis": "Rama Widodo",
+        "tanggal": "2024-12-15",
+        "judul": "Penggunaan Metode Collections di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "collections", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan beberapa metode dari modul collections di Python seperti `Counter`, `defaultdict`, `namedtuple`, dan `deque`.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu modul collections di Python?",
+                "answer": "Modul collections adalah modul standar Python yang menyediakan struktur data alternatif untuk meningkatkan fleksibilitas dan performa."
+            },
+            {
+                "question": "Bagaimana cara menggunakan `Counter` dari modul collections di Python?",
+                "question_code": "from collections import Counter\ncounter = Counter(['a', 'b', 'c', 'a', 'b', 'a'])\nresult = counter['a']",
+                "answer": "Anda bisa menggunakan `Counter` untuk menghitung kemunculan elemen dalam iterable. Contohnya: `Counter(['a', 'b', 'c', 'a', 'b', 'a'])`.",
+                "answer_code": "from collections import Counter\ncounter = Counter(['a', 'b', 'c', 'a', 'b', 'a'])\nresult = counter['a']"
+            },
+            {
+                "question": "Apa itu `defaultdict` di Python?",
+                "answer": "`defaultdict` adalah subclass dari dictionary yang memberikan nilai default untuk key yang tidak ada."
+            },
+            {
+                "question": "Bagaimana cara menggunakan `defaultdict` dari modul collections di Python?",
+                "question_code": "from collections import defaultdict\ndef_dict = defaultdict(int)\ndef_dict['key1'] += 1",
+                "answer": "Anda bisa menggunakan `defaultdict` dengan memberikan tipe data atau fungsi sebagai argumen untuk nilai default. Contohnya: `defaultdict(int)`.",
+                "answer_code": "from collections import defaultdict\ndef_dict = defaultdict(int)\ndef_dict['key1'] += 1"
+            },
+            {
+                "question": "Apa itu `namedtuple` di Python?",
+                "answer": "`namedtuple` adalah subclass dari tuple yang memungkinkan akses elemen dengan nama atribut."
+            },
+            {
+                "question": "Bagaimana cara menggunakan `namedtuple` dari modul collections di Python?",
+                "question_code": "from collections import namedtuple\nPoint = namedtuple('Point', ['x', 'y'])\np = Point(1, 2)\nresult = p.x",
+                "answer": "Anda bisa menggunakan `namedtuple` dengan mendefinisikan nama tuple dan field names. Contohnya: `namedtuple('Point', ['x', 'y'])`.",
+                "answer_code": "from collections import namedtuple\nPoint = namedtuple('Point', ['x', 'y'])\np = Point(1, 2)\nresult = p.x"
+            },
+            {
+                "question": "Apa itu `deque` di Python?",
+                "answer": "`deque` adalah double-ended queue yang memungkinkan penambahan dan penghapusan elemen dari kedua ujung dengan performa yang baik."
+            },
+            {
+                "question": "Bagaimana cara menggunakan `deque` dari modul collections di Python?",
+                "question_code": "from collections import deque\ndq = deque([1, 2, 3])\ndq.appendleft(0)",
+                "answer": "Anda bisa menggunakan `deque` untuk operasi penambahan dan penghapusan elemen dari kedua ujung dengan performa yang baik. Contohnya: `deque([1, 2, 3])`.",
+                "answer_code": "from collections import deque\ndq = deque([1, 2, 3])\ndq.appendleft(0)"
+            }
+        ]
+    },
+    {
+        "sumber": "advancedpythonsyntax.com",
+        "penulis": "Dewi Putri",
+        "tanggal": "2024-12-20",
+        "judul": "Penggunaan Fungsi Any dan All di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["python", "any", "all", "menengah"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi built-in `any` dan `all` di Python untuk evaluasi kondisi dalam iterable.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu fungsi `any` di Python?",
+                "answer": "Fungsi `any` digunakan untuk memeriksa apakah setidaknya satu elemen dalam iterable bernilai True."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `any` di Python?",
+                "question_code": "result = any([False, True, False])",
+                "answer": "Anda bisa menggunakan fungsi `any` dengan memberikan iterable sebagai argumen. Contohnya: `any([False, True, False])`.",
+                "answer_code": "result = any([False, True, False])"
+            },
+            {
+                "question": "Apa itu fungsi `all` di Python?",
+                "answer": "Fungsi `all` digunakan untuk memeriksa apakah semua elemen dalam iterable bernilai True."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `all` di Python?",
+                "question_code": "result = all([True, True, False])",
+                "answer": "Anda bisa menggunakan fungsi `all` dengan memberikan iterable sebagai argumen. Contohnya: `all([True, True, False])`.",
+                "answer_code": "result = all([True, True, False])"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `any` dengan list comprehension di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\nresult = any(x > 3 for x in numbers)",
+                "answer": "Anda bisa menggunakan fungsi `any` dengan list comprehension untuk evaluasi kondisi dalam list. Contohnya: `any(x > 3 for x in numbers)`.",
+                "answer_code": "numbers = [1, 2, 3, 4]\nresult = any(x > 3 for x in numbers)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `all` dengan list comprehension di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\nresult = all(x > 0 for x in numbers)",
+                "answer": "Anda bisa menggunakan fungsi `all` dengan list comprehension untuk evaluasi kondisi dalam list. Contohnya: `all(x > 0 for x in numbers)`.",
+                "answer_code": "numbers = [1, 2, 3, 4]\nresult = all(x > 0 for x in numbers)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `any` untuk memeriksa apakah ada elemen yang kosong dalam list di Python?",
+                "question_code": "strings = ['foo', '', 'bar']\nresult = any(not s for s in strings)",
+                "answer": "Anda bisa menggunakan fungsi `any` untuk memeriksa apakah ada elemen yang kosong dalam list dengan list comprehension. Contohnya: `any(not s for s in strings)`.",
+                "answer_code": "strings = ['foo', '', 'bar']\nresult = any(not s for s in strings)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `all` untuk memeriksa apakah semua elemen adalah bilangan positif di Python?",
+                "question_code": "numbers = [1, 2, 3, 4]\nresult = all(x > 0 for x in numbers)",
+                "answer": "Anda bisa menggunakan fungsi `all` untuk memeriksa apakah semua elemen adalah bilangan positif dengan list comprehension. Contohnya: `all(x > 0 for x in numbers)`.",
+                "answer_code": "numbers = [1, 2, 3, 4]\nresult = all(x > 0 for x in numbers)"
+            }
+        ]
+    }
+]

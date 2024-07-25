@@ -1,0 +1,51 @@
+[
+    {
+        "sumber": "Python Basics for Beginners",
+        "penulis": "Alex Johnson",
+        "tanggal": "2024-12-25",
+        "judul": "For Loops: Mastering Iteration",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Panduan ini membantu pemula memahami konsep iterasi dengan for loop dalam Python melalui berbagai contoh praktis dan penjelasan yang mudah dipahami.",
+        "pertanyaan": [
+            {
+                "question": "Anda baru saja membeli beberapa buku untuk dibaca dalam dua minggu ke depan dan ingin mengatur waktu bacaan per hari agar mencapai target selesai tepat waktu. Jika Anda harus menentukan berapa lama waktu yang diperlukan setiap hari untuk menyelesaikan buku, bagaimana Anda akan melakukannya jika buku-buku tersebut bervariasi dalam jumlah halaman?",
+                "answer": "Anda bisa menggunakan for loop untuk menjumlahkan total halaman dan kemudian membagi jumlah total dengan jumlah hari untuk menentukan waktu bacaan harian. Misalnya, `books = [150, 200, 120]\ntotal_pages = 0\nfor pages in books:\n    total_pages += pages\npages_per_day = total_pages / 14`."
+            },
+            {
+                "question": "Katakanlah Anda memiliki sebuah daftar yang berisi berbagai jenis kegiatan yang ingin dilakukan setiap hari. Jika Anda harus memprioritaskan kegiatan berdasarkan durasi dan menentukan kegiatan mana yang harus diprioritaskan lebih dahulu, bagaimana Anda bisa menyusun dan mengurutkan kegiatan-kegiatan tersebut?",
+                "answer": "Gunakan for loop untuk memeriksa durasi kegiatan dan urutkan kegiatan berdasarkan durasinya. Misalnya, `activities = {'study': 2, 'exercise': 1, 'relax': 3}\nsorted_activities = sorted(activities.items(), key=lambda x: x[1])\nfor activity, duration in sorted_activities:\n    print(f'{activity}: {duration} hours')`."
+            },
+            {
+                "question": "Bayangkan Anda sedang merencanakan liburan dan memiliki daftar tujuan wisata yang ingin dikunjungi. Jika Anda ingin menghitung berapa banyak kota yang dapat Anda kunjungi jika Anda membagi waktu secara merata di antara tujuan tersebut, bagaimana Anda bisa menghitung dan mendistribusikan waktu yang tersedia?",
+                "answer": "Iterasi melalui daftar tujuan wisata dan bagi waktu secara merata di antara tujuan-tujuan tersebut. Misalnya, `destinations = ['Paris', 'London', 'Rome']\navailable_days = 10\ndays_per_destination = available_days / len(destinations)\nfor destination in destinations:\n    print(f'{destination}: {days_per_destination} days')`."
+            },
+            {
+                "question": "Jika Anda memiliki beberapa kotak dengan berbagai ukuran dan Anda ingin menghitung kapasitas total jika setiap kotak memiliki beberapa lapisan, bagaimana Anda dapat menghitung kapasitas setiap kotak secara keseluruhan dan mendapatkan total kapasitas?",
+                "question_code": "box_layers = {'small': [5, 5], 'medium': [10, 10], 'large': [15, 15]}\ntotal_capacity = 0\nfor box, layers in box_layers.items():\n    capacity = layers[0] * layers[1]\n    total_capacity += capacity\nprint(total_capacity)",
+                "answer": "Gunakan for loop untuk menghitung kapasitas setiap kotak berdasarkan lapisan dan tambahkan ke total kapasitas. Misalnya, `box_layers = {'small': [5, 5], 'medium': [10, 10], 'large': [15, 15]}\ntotal_capacity = 0\nfor box, layers in box_layers.items():\n    capacity = layers[0] * layers[1]\n    total_capacity += capacity\nprint(total_capacity)`."
+            },
+            {
+                "question": "Anda memiliki beberapa surat yang dikumpulkan dari berbagai teman dan ingin mengkategorikannya berdasarkan bulan terima. Jika Anda perlu mengelompokkan dan menghitung berapa banyak surat yang diterima setiap bulan, bagaimana Anda akan melakukannya?",
+                "answer": "Iterasi melalui daftar surat dan gunakan for loop untuk menghitung jumlah surat per bulan. Misalnya, `letters = {'January': 3, 'February': 2, 'March': 5}\nfor month, count in letters.items():\n    print(f'{month}: {count} letters')`."
+            },
+            {
+                "question": "Jika Anda memiliki beberapa laporan yang perlu dianalisis dan setiap laporan berisi beberapa kategori data, bagaimana Anda dapat menghitung jumlah total data dalam setiap kategori di seluruh laporan?",
+                "answer": "Iterasi melalui laporan dan kategori data, hitung jumlah total untuk setiap kategori. Misalnya, `reports = {'Q1': {'sales': 150, 'expenses': 50}, 'Q2': {'sales': 200, 'expenses': 70}}\ntotal_sales = 0\nfor report in reports.values():\n    total_sales += report['sales']\nprint(total_sales)`."
+            },
+            {
+                "question": "Anda sedang menyusun rencana anggaran bulanan dan memiliki beberapa pos anggaran yang perlu dipertimbangkan. Jika Anda harus menghitung total pengeluaran untuk setiap pos dan mengalokasikan anggaran secara efisien, bagaimana Anda akan melakukannya?",
+                "question_code": "budget_items = {'rent': 1000, 'food': 500, 'utilities': 200}\ntotal_expense = 0\nfor item, cost in budget_items.items():\n    total_expense += cost\nprint(total_expense)",
+                "answer": "Gunakan for loop untuk menjumlahkan biaya dari setiap pos anggaran dan menghitung total pengeluaran. Misalnya, `budget_items = {'rent': 1000, 'food': 500, 'utilities': 200}\ntotal_expense = 0\nfor item, cost in budget_items.items():\n    total_expense += cost\nprint(total_expense)`."
+            },
+            {
+                "question": "Jika Anda memiliki sebuah daftar berisi nilai-nilai ujian siswa dan ingin menghitung rata-rata nilai untuk menentukan kelulusan, bagaimana Anda bisa melakukannya dengan menghitung total nilai terlebih dahulu?",
+                "answer": "Gunakan for loop untuk menjumlahkan nilai ujian siswa dan kemudian bagi total tersebut dengan jumlah siswa untuk mendapatkan rata-rata. Misalnya, `grades = [85, 90, 78, 92]\ntotal = 0\nfor grade in grades:\n    total += grade\naverage = total / len(grades)\nprint(average)`."
+            },
+            {
+                "question": "Anda memiliki sebuah file teks yang berisi daftar nama dan usia. Jika Anda ingin mengelompokkan nama-nama orang berdasarkan kelompok usia, bagaimana Anda akan membaca dan mengelompokkan data tersebut?",
+                "answer": "Gunakan for loop untuk membaca nama dan usia dari file, kemudian kelompokkan berdasarkan usia. Misalnya, `ages = {'Alice': 30, 'Bob': 20, 'Charlie': 30}\ngroups = {}\nfor name, age in ages.items():\n    if age not in groups:\n        groups[age] = []\n    groups[age].append(name)\nprint(groups)`."
+            }
+        ]
+    }
+]

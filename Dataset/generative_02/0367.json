@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Understanding Python Lists",
+        "penulis": "Emma Johnson",
+        "tanggal": "2024-09-10",
+        "judul": "Exploring List Slicing Techniques in Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Slicing"],
+        "konten": "Artikel ini mengeksplorasi teknik slicing dalam Python yang memungkinkan Anda untuk memanipulasi list dengan cara yang fleksibel. Dengan slicing, Anda dapat dengan mudah mengambil potongan dari list dan membuat sublist.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda ingin mengambil elemen dari indeks ke-3 hingga ke-8 dari sebuah list, bagaimana caranya?",
+                "answer": "Anda dapat menggunakan notasi slicing `list[3:9]` untuk mendapatkan elemen dari indeks ke-3 hingga ke-8 (indeks akhir tidak termasuk)."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba untuk mengakses elemen dari indeks negatif hingga indeks positif dengan slicing?",
+                "answer": "Jika Anda menggunakan slicing dengan indeks negatif dan positif, Python akan menghitung indeks negatif dari akhir list dan menggabungkannya dengan indeks positif. Contoh: `list[-4:2]` akan mengakses elemen dari keempat terakhir hingga indeks ke-1."
+            },
+            {
+                "question": "Bagaimana cara membuat salinan dari list menggunakan slicing?",
+                "answer": "Untuk membuat salinan dari list, Anda bisa menggunakan slicing tanpa memberikan indeks mulai dan akhir, yaitu `list[:]`. Ini akan mengembalikan salinan penuh dari list tersebut."
+            },
+            {
+                "question": "Saya mendapatkan error 'TypeError: list indices must be integers or slices, not float'. Kenapa bisa terjadi?",
+                "question_code": "elements = [10, 20, 30, 40]\nprint(elements[1.5:3])",
+                "answer": "Error ini muncul karena slicing tidak mendukung float sebagai indeks. Pastikan Anda menggunakan integer untuk indeks saat melakukan slicing.",
+                "answer_code": "elements = [10, 20, 30, 40]\nprint(elements[1:3])"
+            },
+            {
+                "question": "Mengapa saya mendapatkan error 'IndexError: list index out of range' saat mencoba slicing?",
+                "question_code": "data = [1, 2, 3]\nprint(data[5:10])",
+                "answer": "Dalam kasus slicing, jika indeks akhir melebihi panjang list, tidak akan ada error tetapi hanya hasil yang lebih pendek. Contoh: `data[5:10]` akan menghasilkan list kosong jika indeks akhir lebih besar dari panjang list.",
+                "answer_code": "data = [1, 2, 3]\nprint(data[1:3])"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: 'int' object is not subscriptable'? Saya tidak paham.",
+                "question_code": "number = 25\nprint(number[2:4])",
+                "answer": "Error ini muncul karena Anda mencoba melakukan slicing pada tipe data integer, yang tidak mendukung slicing. Pastikan Anda melakukan slicing pada tipe data yang mendukungnya, seperti list.",
+                "answer_code": "number_list = [25]\nprint(number_list[0:1])"
+            },
+            {
+                "question": "Apa penyebab error 'TypeError: slice indices must be integers or None or have an __index__ method' dalam slicing?",
+                "question_code": "values = [10, 20, 30]\nprint(values[2:5.5])",
+                "answer": "Error ini terjadi karena indeks dalam slicing harus berupa integer. Float tidak diizinkan sebagai indeks dalam slicing.",
+                "answer_code": "values = [10, 20, 30]\nprint(values[2:5])"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'TypeError: list indices must be integers or slices, not dict' saat melakukan slicing?",
+                "question_code": "numbers = [1, 2, 3]\nprint(numbers[{1:2}])",
+                "answer": "Error ini terjadi karena dictionary tidak dapat digunakan sebagai indeks dalam list. Indeks harus berupa integer atau slice.",
+                "answer_code": "numbers = [1, 2, 3]\nprint(numbers[1:2])"
+            },
+            {
+                "question": "Saya mendapat error 'TypeError: unhashable type: 'set'' saat mencoba menyimpan list sebagai kunci dictionary. Kenapa bisa terjadi?",
+                "question_code": "my_list = [4, 5, 6]\nmy_dict = {set(my_list): 'value'}",
+                "answer": "Error ini terjadi karena set tidak dapat digunakan sebagai kunci dalam dictionary karena tidak hashable. Gunakan tipe data hashable seperti tuple.",
+                "answer_code": "my_tuple = (4, 5, 6)\nmy_dict = {my_tuple: 'value'}"
+            },
+            {
+                "question": "Kenapa error 'IndexError: tuple index out of range' muncul saat menggunakan slicing pada tuple?",
+                "question_code": "my_tuple = (7, 8, 9)\nprint(my_tuple[5:7])",
+                "answer": "Slicing pada tuple yang melebihi panjang tuple tidak mengakibatkan error, tetapi hanya menghasilkan tuple kosong jika indeks akhir lebih besar dari panjang tuple. Misalnya, `my_tuple[5:7]` akan menghasilkan tuple kosong.",
+                "answer_code": "my_tuple = (7, 8, 9)\nprint(my_tuple[1:])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python List Manipulation",
+        "penulis": "Oliver Smith",
+        "tanggal": "2024-09-15",
+        "judul": "Advanced Slicing Techniques for Python Lists",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Slicing"],
+        "konten": "Artikel ini membahas teknik slicing yang lebih kompleks untuk memanipulasi list di Python. Slicing tidak hanya memudahkan Anda untuk mendapatkan potongan dari list tetapi juga dapat digunakan untuk mengubah data dalam list.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda ingin mengambil elemen dari indeks ke-0 hingga ke-6 dari list, bagaimana cara melakukannya?",
+                "answer": "Gunakan notasi slicing `list[:7]` untuk mendapatkan elemen dari indeks ke-0 hingga ke-6 (indeks akhir tidak termasuk)."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan notasi slicing dengan langkah negatif, seperti `list[::-2]`?",
+                "answer": "Notasi slicing dengan langkah negatif akan membalikkan list dan mengambil elemen dengan langkah yang ditentukan. Contoh, `list[::-2]` akan memberikan elemen dari list secara terbalik dengan langkah 2."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke list menggunakan slicing?",
+                "answer": "Untuk menambahkan elemen ke list menggunakan slicing, Anda bisa melakukan slicing pada bagian yang ingin diubah dan menetapkan nilai baru. Misalnya, `list[2:2] = [new_element]` akan menambahkan `new_element` pada posisi indeks ke-2."
+            },
+            {
+                "question": "Kenapa error 'TypeError: 'str' object cannot be interpreted as an integer' muncul saat slicing?",
+                "question_code": "text = 'hello'\nprint(text[1:'3'])",
+                "answer": "Error ini terjadi karena indeks dalam slicing harus berupa integer, bukan string. Ubah indeks menjadi integer untuk memperbaiki error.",
+                "answer_code": "text = 'hello'\nprint(text[1:3])"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'IndexError: list index out of range' saat mencoba mengakses elemen di luar rentang list dengan slicing?",
+                "question_code": "colors = ['red', 'green', 'blue']\nprint(colors[2:5])",
+                "answer": "Slicing yang melebihi panjang list tidak akan menghasilkan error tetapi hanya menghasilkan potongan list yang lebih pendek. Misalnya, `colors[2:5]` akan menghasilkan `['blue']` tanpa error.",
+                "answer_code": "colors = ['red', 'green', 'blue']\nprint(colors[1:3])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'float' object is not subscriptable' saat menggunakan slicing?",
+                "question_code": "value = 3.14\nprint(value[1:4])",
+                "answer": "Error ini terjadi karena Anda mencoba melakukan slicing pada tipe data float, yang tidak mendukung slicing. Pastikan objek yang di-slice adalah tipe data yang mendukung slicing seperti list.",
+                "answer_code": "value_list = [3.14]\nprint(value_list[0:1])"
+            },
+            {
+                "question": "Kenapa error 'TypeError: slice indices must be integers or None or have an __index__ method' muncul dengan slicing?",
+                "question_code": "items = [100, 200, 300]\nprint(items[1:'2'])",
+                "answer": "Error ini muncul karena indeks dalam slicing harus berupa integer atau None. Gunakan integer untuk indeks saat slicing.",
+                "answer_code": "items = [100, 200, 300]\nprint(items[1:2])"
+            },
+            {
+                "question": "Bagaimana cara menangani error 'IndexError: tuple index out of range' saat slicing tuple?",
+                "question_code": "my_tuple = (10, 20, 30)\nprint(my_tuple[4:6])",
+                "answer": "Jika indeks akhir melebihi panjang tuple, slicing akan menghasilkan tuple kosong. Pastikan indeks akhir tidak melebihi panjang tuple.",
+                "answer_code": "my_tuple = (10, 20, 30)\nprint(my_tuple[1:3])"
+            }
+        ]
+    }
+]

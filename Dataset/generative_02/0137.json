@@ -1,0 +1,128 @@
+[
+    {
+        "sumber": "belajarpythononline.com",
+        "penulis": "Yusuf Pratama",
+        "tanggal": "2023-10-05",
+        "judul": "Penggunaan List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "list", "dasar"],
+        "konten": "Artikel ini menjelaskan cara membuat, mengakses, menambah, menghapus, dan memanipulasi elemen dalam list di Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu list di Python?",
+                "answer": "List adalah tipe data di Python yang bisa menyimpan beberapa item dalam satu variabel, mirip seperti array di bahasa pemrograman lain."
+            },
+            {
+                "question": "Bagaimana cara membuat list di Python?",
+                "answer": "Untuk membuat list, gunakan tanda kurung siku `[]` dan pisahkan item dengan koma. Contohnya: `my_list = [1, 2, 3]`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam list?",
+                "question_code": "data = [4, 5, 6]\nelement = data[2]",
+                "answer": "Anda bisa mengakses elemen dalam list dengan menggunakan indeks, dimulai dari 0. Misalnya: `element = my_list[0]`.",
+                "answer_code": "data = [4, 5, 6]\nelement = data[2]"
+            },
+            {
+                "question": "Gimana caranya nambah elemen ke list?",
+                "question_code": "angka = [10, 20]\nangka.append(40)",
+                "answer": "Untuk menambahkan elemen ke list, gunakan metode `append()`. Contoh: `my_list.append(4)`.",
+                "answer_code": "angka = [10, 20]\nangka.append(40)"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari list?",
+                "question_code": "buah = ['apel', 'mangga', 'jeruk']\nbuah.remove('jeruk')",
+                "answer": "Untuk menghapus elemen dari list, gunakan metode `remove()`. Misalnya: `my_list.remove(2)`.",
+                "answer_code": "buah = ['apel', 'mangga', 'jeruk']\nbuah.remove('jeruk')"
+            },
+            {
+                "question": "Bagaimana cara mengurutkan elemen dalam list?",
+                "question_code": "angka = [3, 1, 2]\nangka.sort()",
+                "answer": "Untuk mengurutkan elemen dalam list, gunakan metode `sort()`. Contoh: `my_list.sort()`.",
+                "answer_code": "angka = [3, 1, 2]\nangka.sort()"
+            },
+            {
+                "question": "Bagaimana cara membalik urutan elemen dalam list?",
+                "question_code": "huruf = ['a', 'b', 'c']\nhuruf.reverse()",
+                "answer": "Untuk membalik urutan elemen dalam list, gunakan metode `reverse()`. Contoh: `my_list.reverse()`.",
+                "answer_code": "huruf = ['a', 'b', 'c']\nhuruf.reverse()"
+            },
+            {
+                "question": "Bagaimana cara menemukan indeks elemen dalam list?",
+                "question_code": "data = [7, 8, 9]\nposisi = data.index(9)",
+                "answer": "Untuk menemukan indeks elemen dalam list, gunakan metode `index()`. Misalnya: `my_list.index(3)`.",
+                "answer_code": "data = [7, 8, 9]\nposisi = data.index(9)"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah kemunculan elemen dalam list?",
+                "question_code": "angka = [1, 2, 2, 3]\njumlah = angka.count(1)",
+                "answer": "Untuk menghitung jumlah kemunculan elemen dalam list, gunakan metode `count()`. Contoh: `my_list.count(2)`.",
+                "answer_code": "angka = [1, 2, 2, 3]\njumlah = angka.count(1)"
+            }
+        ]
+    },
+    {
+        "sumber": "panduanpython.net",
+        "penulis": "Lestari Dewi",
+        "tanggal": "2024-01-20",
+        "judul": "Penggunaan String Methods di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "string", "methods"],
+        "konten": "Artikel ini menjelaskan berbagai metode bawaan Python untuk memanipulasi string, seperti `upper()`, `lower()`, `strip()`, `replace()`, dan `find()`.",
+        "pertanyaan": [
+            {
+                "question": "Gimana cara bikin teks jadi huruf besar semua?",
+                "question_code": "teks = 'python'\nteks_besar = teks.upper()",
+                "answer": "Untuk mengubah string menjadi huruf besar, gunakan metode `upper()`. Contoh: `my_string.upper()`.",
+                "answer_code": "teks = 'python'\nteks_besar = teks.upper()"
+            },
+            {
+                "question": "Bagaimana cara bikin teks jadi huruf kecil semua?",
+                "question_code": "teks = 'PYTHON'\nteks_kecil = teks.lower()",
+                "answer": "Untuk mengubah string menjadi huruf kecil, gunakan metode `lower()`. Contoh: `my_string.lower()`.",
+                "answer_code": "teks = 'PYTHON'\nteks_kecil = teks.lower()"
+            },
+            {
+                "question": "Gimana cara hapus spasi di depan dan belakang teks?",
+                "question_code": "teks = ' python '\ntrimmed_teks = teks.strip()",
+                "answer": "Untuk menghapus spasi di awal dan akhir string, gunakan metode `strip()`. Contoh: `my_string.strip()`.",
+                "answer_code": "teks = ' python '\ntrimmed_teks = teks.strip()"
+            },
+            {
+                "question": "Bagaimana cara mengganti kata dalam teks?",
+                "question_code": "teks = 'hai dunia'\nteks_baru = teks.replace('dunia', 'Python')",
+                "answer": "Untuk mengganti substring dalam string, gunakan metode `replace()`. Contoh: `my_string.replace('world', 'Python')`.",
+                "answer_code": "teks = 'hai dunia'\nteks_baru = teks.replace('dunia', 'Python')"
+            },
+            {
+                "question": "Gimana cara cari posisi kata dalam teks?",
+                "question_code": "teks = 'selamat datang'\nposisi = teks.find('datang')",
+                "answer": "Untuk menemukan posisi substring dalam string, gunakan metode `find()`. Contoh: `my_string.find('world')`.",
+                "answer_code": "teks = 'selamat datang'\nposisi = teks.find('datang')"
+            },
+            {
+                "question": "Gimana cara pecah teks jadi daftar kata?",
+                "question_code": "teks = 'belajar python mudah'\nkata_list = teks.split()",
+                "answer": "Untuk memisahkan string menjadi list, gunakan metode `split()`. Contoh: `my_string.split()`.",
+                "answer_code": "teks = 'belajar python mudah'\nkata_list = teks.split()"
+            },
+            {
+                "question": "Bagaimana cara gabung daftar kata jadi satu teks?",
+                "question_code": "kata_list = ['belajar', 'python']\nteks_gabung = ' '.join(kata_list)",
+                "answer": "Untuk menggabungkan list menjadi string, gunakan metode `join()`. Contoh: `' '.join(words)`.",
+                "answer_code": "kata_list = ['belajar', 'python']\nteks_gabung = ' '.join(kata_list)"
+            },
+            {
+                "question": "Gimana cara cek apakah teks mulai dengan kata tertentu?",
+                "question_code": "teks = 'belajar python'\nawal_teks = teks.startswith('belajar')",
+                "answer": "Untuk memeriksa apakah string dimulai dengan substring tertentu, gunakan metode `startswith()`. Contoh: `my_string.startswith('hello')`.",
+                "answer_code": "teks = 'belajar python'\nawal_teks = teks.startswith('belajar')"
+            },
+            {
+                "question": "Bagaimana cara cek apakah teks diakhiri dengan kata tertentu?",
+                "question_code": "teks = 'belajar python'\nakhir_teks = teks.endswith('python')",
+                "answer": "Untuk memeriksa apakah string diakhiri dengan substring tertentu, gunakan metode `endswith()`. Contoh: `my_string.endswith('world')`.",
+                "answer_code": "teks = 'belajar python'\nakhir_teks = teks.endswith('python')"
+            }
+        ]
+    }
+]

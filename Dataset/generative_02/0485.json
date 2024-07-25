@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Beginner Python Programming",
+        "penulis": "Liam Johnson",
+        "tanggal": "2024-12-14",
+        "judul": "Memahami `for` Loop dalam Python untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Artikel ini membahas penggunaan `for` loop dalam Python, termasuk bagaimana mengiterasi melalui list, string, dan range. Dengan contoh praktis, Anda akan mempelajari dasar-dasar iterasi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa mencetak setiap angka dari 10 hingga 14 menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for num in range(10, 15): print(num)` untuk mencetak angka dari 10 hingga 14."
+            },
+            {
+                "question": "Apa yang akan ditampilkan oleh kode ini: `for item in 'data': print(item)`?",
+                "answer": "Kode ini akan mencetak setiap karakter dalam string 'data', yaitu `d`, `a`, `t`, `a` secara terpisah."
+            },
+            {
+                "question": "Bagaimana cara mencetak nilai-nilai dari list `[5, 10, 15]` menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for value in [5, 10, 15]: print(value)` untuk mencetak setiap nilai dalam list."
+            },
+            {
+                "question": "Mengapa kode berikut menyebabkan error 'TypeError: 'dict' object is not iterable'?",
+                "question_code": "for item in {'name': 'Alice', 'age': 25}:\n    print(item)",
+                "answer": "Error ini terjadi karena dictionary tidak bisa diiterasi langsung untuk mendapatkan pasangan kunci-nilai. Gunakan `for key in dict:` atau `for key, value in dict.items():` untuk iterasi.",
+                "answer_code": "for key, value in {'name': 'Alice', 'age': 25}.items():\n    print(key, value)"
+            },
+            {
+                "question": "Kenapa kode ini memberikan error 'TypeError: 'float' object is not iterable'?",
+                "question_code": "for num in 2.5:\n    print(num)",
+                "answer": "Error ini terjadi karena Anda mencoba mengiterasi tipe data float, yang tidak bisa diiterasi. Gunakan tipe data seperti string atau list yang bisa diiterasi.",
+                "answer_code": "for num in '2.5':\n    print(num)"
+            },
+            {
+                "question": "Bagaimana cara mencetak elemen dari tuple `(1, 2, 3, 4)` menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for item in (1, 2, 3, 4): print(item)` untuk mencetak setiap elemen dalam tuple."
+            },
+            {
+                "question": "Apa keuntungan dari menggunakan `for` loop dibandingkan dengan pendekatan lain dalam Python?",
+                "answer": "Keuntungan utama menggunakan `for` loop adalah kemudahan dalam melakukan iterasi langsung melalui elemen-elemen koleksi seperti list, tuple, dan string, tanpa memerlukan kontrol manual terhadap indeks atau kondisi loop, sehingga membuat kode lebih bersih dan mudah dibaca."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Fundamentals",
+        "penulis": "Sophia Martinez",
+        "tanggal": "2024-12-15",
+        "judul": "Dasar-Dasar `for` Loop dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Loop", "For Loop", "Pemula"],
+        "konten": "Artikel ini memberikan panduan lengkap mengenai penggunaan `for` loop di Python. Fokusnya adalah bagaimana menggunakan loop untuk mengakses dan memanipulasi berbagai jenis data dengan mudah.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda dapat mencetak setiap huruf dalam string 'hello' menggunakan `for` loop?",
+                "answer": "Gunakan kode berikut: `for char in 'hello': print(char)` untuk mencetak setiap huruf dalam string 'hello'."
+            },
+            {
+                "question": "Apa yang akan dicetak oleh kode ini: `for num in range(1, 8, 3): print(num)`?",
+                "answer": "Kode ini akan mencetak `1`, `4`, `7`. Fungsi `range(1, 8, 3)` memulai dari 1 hingga kurang dari 8 dengan langkah 3."
+            },
+            {
+                "question": "Bagaimana cara menggunakan `for` loop untuk mencetak elemen-elemen dari set `{8, 9, 10}`?",
+                "answer": "Gunakan kode berikut: `for number in {8, 9, 10}: print(number)` untuk mencetak setiap elemen dalam set."
+            },
+            {
+                "question": "Kenapa kode berikut menghasilkan error 'TypeError: 'str' object is not callable'?",
+                "question_code": "for char in 'hello'():\n    print(char)",
+                "answer": "Error ini terjadi karena Anda mencoba memanggil string seperti fungsi. Hapus tanda kurung setelah string.",
+                "answer_code": "for char in 'hello':\n    print(char)"
+            },
+            {
+                "question": "Kenapa kode ini memberikan error 'TypeError: 'list' object is not callable'?",
+                "question_code": "for value in [1, 2, 3]():\n    print(value)",
+                "answer": "Error ini terjadi karena Anda mencoba memanggil list seperti fungsi. Pastikan tidak ada tanda kurung setelah list.",
+                "answer_code": "for value in [1, 2, 3]:\n    print(value)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan `for` loop untuk mencetak kuadrat dari angka 1 hingga 3?",
+                "answer": "Gunakan kode berikut: `for num in range(1, 4): print(num ** 2)` untuk mencetak kuadrat dari angka 1 hingga 3, yaitu `1`, `4`, `9`."
+            },
+            {
+                "question": "Apa keuntungan utama menggunakan `for` loop dalam Python?",
+                "answer": "Keuntungan utama dari `for` loop adalah kemampuannya untuk secara efisien mengiterasi melalui elemen-elemen koleksi seperti list, tuple, set, atau string, sehingga menyederhanakan pengulangan dan meminimalisir kesalahan dalam pengelolaan indeks atau kondisi loop."
+            }
+        ]
+    }
+]

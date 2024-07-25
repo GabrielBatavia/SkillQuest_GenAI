@@ -1,0 +1,124 @@
+[
+    {
+        "sumber": "python-docs.org",
+        "penulis": "Emily Carter",
+        "tanggal": "2024-07-26",
+        "judul": "Memahami Operator Perbandingan di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "perbandingan", "pemula"],
+        "konten": "Artikel ini menjelaskan penggunaan operator perbandingan di Python, termasuk `==`, `!=`, `>`, `<`, `>=`, dan `<=`, dengan contoh dan penjelasan tentang bagaimana operator ini digunakan dalam pengujian kondisi.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dilakukan operator `==` dalam Python?",
+                "answer": "Operator `==` digunakan untuk membandingkan dua nilai apakah sama. Jika kedua nilai sama, maka operator ini mengembalikan `True`, jika tidak, `False`."
+            },
+            {
+                "question": "Bagaimana operator `!=` berbeda dari operator `==`?",
+                "answer": "Operator `!=` digunakan untuk memeriksa apakah dua nilai tidak sama. Jika nilai-nilai tersebut berbeda, operator ini mengembalikan `True`, sebaliknya `False`."
+            },
+            {
+                "question": "Apa hasil dari ekspresi `5 > 3` dan apa maknanya?",
+                "question_code": "result = 5 > 3",
+                "answer": "Ekspresi `5 > 3` menghasilkan `True` karena `5` lebih besar dari `3`.",
+                "answer_code": "result = 5 > 3\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator `<` untuk membandingkan dua nilai di Python?",
+                "question_code": "result = 4 < 7",
+                "answer": "Operator `<` digunakan untuk memeriksa apakah nilai di sebelah kiri lebih kecil dari nilai di sebelah kanan. Misalnya, `4 < 7` menghasilkan `True`.",
+                "answer_code": "result = 4 < 7\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Apa perbedaan antara operator `>=` dan `<=`?",
+                "answer": "Operator `>=` memeriksa apakah nilai di sebelah kiri lebih besar atau sama dengan nilai di sebelah kanan, sedangkan `<=` memeriksa apakah nilai di sebelah kiri lebih kecil atau sama dengan nilai di sebelah kanan."
+            },
+            {
+                "question": "Apa hasil dari `10 >= 10` dan bagaimana operator ini digunakan?",
+                "question_code": "result = 10 >= 10",
+                "answer": "Ekspresi `10 >= 10` menghasilkan `True` karena `10` sama dengan `10`, dan operator `>=` memeriksa apakah nilai di sebelah kiri lebih besar atau sama dengan nilai di sebelah kanan.",
+                "answer_code": "result = 10 >= 10\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Bagaimana operator `!=` digunakan dalam kondisi `if` untuk mengecek ketidaksetaraan?",
+                "question_code": "if a != b:\n    print('a dan b tidak sama')",
+                "answer": "Operator `!=` digunakan dalam pernyataan `if` untuk memeriksa apakah dua variabel tidak sama. Jika tidak sama, blok kode di dalam `if` akan dijalankan.",
+                "answer_code": "a = 5\nb = 10\nif a != b:\n    print('a dan b tidak sama')\n# Output: 'a dan b tidak sama'"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `7 <= 5` dan apa maknanya?",
+                "question_code": "result = 7 <= 5",
+                "answer": "Ekspresi `7 <= 5` menghasilkan `False` karena `7` tidak lebih kecil atau sama dengan `5`.",
+                "answer_code": "result = 7 <= 5\n# Hasilnya adalah False"
+            },
+            {
+                "question": "Bagaimana operator perbandingan dapat digunakan dalam pengkondisian bersarang?",
+                "question_code": "if (a > 5) and (b < 10):\n    print('Kondisi terpenuhi')",
+                "answer": "Operator perbandingan dapat digabungkan dengan operator logika untuk membuat kondisi yang lebih kompleks. Misalnya, dalam kondisi bersarang, `a > 5` dan `b < 10` harus benar agar blok kode dijalankan.",
+                "answer_code": "a = 7\nb = 3\nif (a > 5) and (b < 10):\n    print('Kondisi terpenuhi')\n# Output: 'Kondisi terpenuhi'"
+            },
+            {
+                "question": "Apa hasil dari perbandingan `5 == 5.0` dan bagaimana Python menangani perbandingan tipe data berbeda?",
+                "question_code": "result = 5 == 5.0",
+                "answer": "Python membandingkan nilai tanpa memperhatikan tipe data, sehingga `5 == 5.0` menghasilkan `True` karena keduanya mewakili nilai yang sama, meskipun satu adalah integer dan yang lain adalah float.",
+                "answer_code": "result = 5 == 5.0\n# Hasilnya adalah True"
+            }
+        ]
+    },
+    {
+        "sumber": "realpython.com",
+        "penulis": "Sarah Johnson",
+        "tanggal": "2024-07-26",
+        "judul": "Eksplorasi Operator Perbandingan di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "operator", "perbandingan", "pemula"],
+        "konten": "Artikel ini menguraikan penggunaan berbagai operator perbandingan di Python dan bagaimana operator ini dapat digunakan dalam berbagai konteks pemrograman.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari ekspresi `(3 + 2) == 5` dan bagaimana operator `==` digunakan dalam perbandingan?",
+                "question_code": "result = (3 + 2) == 5",
+                "answer": "Ekspresi `(3 + 2) == 5` menghasilkan `True` karena hasil penjumlahan adalah `5`, yang sama dengan nilai yang dibandingkan.",
+                "answer_code": "result = (3 + 2) == 5\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Bagaimana operator `!=` digunakan untuk membandingkan string di Python?",
+                "question_code": "result = 'hello' != 'world'",
+                "answer": "Operator `!=` dapat digunakan untuk membandingkan dua string. Misalnya, `'hello' != 'world'` menghasilkan `True` karena kedua string berbeda.",
+                "answer_code": "result = 'hello' != 'world'\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `8 < 6` dan bagaimana cara memeriksa hasil perbandingan di Python?",
+                "question_code": "result = 8 < 6",
+                "answer": "Ekspresi `8 < 6` menghasilkan `False` karena `8` tidak lebih kecil dari `6`. Perbandingan ini dapat diperiksa dengan operator `<`.",
+                "answer_code": "result = 8 < 6\n# Hasilnya adalah False"
+            },
+            {
+                "question": "Apa perbedaan antara operator `>=` dan `<=` dalam hal perbandingan dua nilai?",
+                "answer": "Operator `>=` memeriksa apakah nilai di sebelah kiri lebih besar atau sama dengan nilai di sebelah kanan, sedangkan `<=` memeriksa apakah nilai di sebelah kiri lebih kecil atau sama dengan nilai di sebelah kanan."
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator perbandingan dalam list comprehension?",
+                "question_code": "result = [x for x in range(10) if x > 5]",
+                "answer": "Operator perbandingan dapat digunakan dalam list comprehension untuk menyaring elemen yang memenuhi kriteria tertentu. Dalam contoh ini, elemen yang lebih besar dari `5` dipilih dari rentang `0` hingga `9`.",
+                "answer_code": "result = [x for x in range(10) if x > 5]\n# Hasilnya adalah [6, 7, 8, 9]"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `4 <= 4` dan bagaimana operator ini mempengaruhi kondisi pengujian?",
+                "question_code": "result = 4 <= 4",
+                "answer": "Ekspresi `4 <= 4` menghasilkan `True` karena `4` sama dengan `4`, dan operator `<=` memeriksa apakah nilai di sebelah kiri lebih kecil atau sama dengan nilai di sebelah kanan.",
+                "answer_code": "result = 4 <= 4\n# Hasilnya adalah True"
+            },
+            {
+                "question": "Bagaimana operator perbandingan dapat digunakan dalam pengkondisian bersarang untuk evaluasi kompleks?",
+                "question_code": "if (a > 2) and (b < 10):\n    print('Kondisi terpenuhi')",
+                "answer": "Operator perbandingan dapat digabungkan dengan operator logika untuk membuat kondisi yang lebih kompleks. Misalnya, jika `a` lebih besar dari `2` dan `b` lebih kecil dari `10`, maka blok kode di dalam `if` akan dijalankan.",
+                "answer_code": "a = 3\nb = 8\nif (a > 2) and (b < 10):\n    print('Kondisi terpenuhi')\n# Output: 'Kondisi terpenuhi'"
+            },
+            {
+                "question": "Apa hasil dari ekspresi `5 == 5.0` dan bagaimana Python menangani perbandingan tipe data yang berbeda?",
+                "question_code": "result = 5 == 5.0",
+                "answer": "Python membandingkan nilai tanpa memperhatikan tipe data, sehingga `5 == 5.0` menghasilkan `True` karena keduanya mewakili nilai yang sama, meskipun satu adalah integer dan yang lain adalah float.",
+                "answer_code": "result = 5 == 5.0\n# Hasilnya adalah True"
+            }
+        ]
+    }
+]

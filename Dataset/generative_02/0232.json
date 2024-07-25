@@ -1,0 +1,100 @@
+{
+    "datasets": [
+        {
+            "sumber": "KodingPython.com",
+            "penulis": "Ahmad Taufik",
+            "tanggal": "2024-07-08",
+            "judul": "Manipulasi String di Python",
+            "tingkat_kesulitan": "menengah",
+            "tag": ["string", "manipulasi", "python"],
+            "konten": "Artikel ini membahas berbagai metode untuk manipulasi string di Python.",
+            "pertanyaan": [
+                {
+                    "question": "Bagaimana saya membuat huruf-huruf dalam sebuah kalimat jadi kecil semua?",
+                    "answer": "Anda bisa membuat semua huruf kecil dengan menambahkan .lower() setelah teks, seperti 'Halo Dunia'.lower()."
+                },
+                {
+                    "question": "Bagaimana caranya menyatukan 'halo' dan 'dunia' menjadi 'halo dunia'?",
+                    "answer": "Untuk menggabungkan dua kata, gunakan + antara mereka, seperti 'halo' + ' ' + 'dunia'."
+                },
+                {
+                    "question": "Apa yang terjadi jika saya mencoba menggabungkan huruf dengan angka?",
+                    "answer": "Python tidak akan mengizinkan Anda menggabungkan teks dengan angka secara langsung, ini akan menyebabkan kesalahan yang disebut TypeError."
+                },
+                {
+                    "question": "Bagaimana cara saya melihat hanya sebagian dari kalimat?",
+                    "question_code": "pesan = 'Kemarin saya pergi ke pasar'\nprint(pesan[8:12])",
+                    "answer": "Anda bisa melihat bagian dari kalimat dengan menggunakan [mulai:akhir], seperti pesan[8:12] akan menampilkan 'saya'."
+                },
+                {
+                    "question": "Bagaimana saya bisa mengubah semua huruf dalam kalimat menjadi besar?",
+                    "question_code": "salam = 'pagi yang cerah'\nprint(salam.upper())",
+                    "answer": "Anda bisa menggunakan .upper() untuk membuat semua huruf menjadi besar, seperti 'pagi yang cerah' menjadi 'PAGI YANG CERAH'."
+                },
+                {
+                    "question": "Cara menghilangkan spasi lebih di depan dan belakang kata?",
+                    "question_code": "sapa = '  selamat datang  '\nprint(sapa.strip())",
+                    "answer": "Gunakan .strip() untuk menghapus spasi ekstra di depan dan belakang, mengubah '  selamat datang  ' menjadi 'selamat datang'."
+                },
+                {
+                    "question": "Bagaimana cara mengetahui apakah kata saya mulai dengan 'Selamat'?",
+                    "question_code": "ucap = 'Selamat pagi'\nprint(ucap.startswith('Selamat'))",
+                    "answer": "Metode .startswith() digunakan untuk mengecek awalan teks, akan mengembalikan True jika teks dimulai dengan 'Selamat'."
+                },
+                {
+                    "question": "Bagaimana cara mengetahui jika kalimat saya berakhir dengan kata 'pagi'?",
+                    "question_code": "ucap = 'Selamat pagi'\nprint(ucap.endswith('pagi'))",
+                    "answer": "Gunakan .endswith() untuk memeriksa akhiran teks, yang akan True jika teks berakhir dengan 'pagi'."
+                },
+                {
+                    "question": "Bagaimana saya bisa mengganti kata dalam kalimat?",
+                    "question_code": "salam = 'Selamat malam'\nprint(salam.replace('malam', 'pagi'))",
+                    "answer": "Gunakan .replace() untuk mengganti kata, misal mengubah 'Selamat malam' menjadi 'Selamat pagi'."
+                }
+            ]
+        },
+        {
+            "sumber": "ExpertPython.net",
+            "penulis": "Dewi Lestari",
+            "tanggal": "2024-07-10",
+            "judul": "Pemrograman Asinkron di Python",
+            "tingkat_kesulitan": "lanjutan",
+            "tag": ["asinkron", "async", "await"],
+            "konten": "Artikel ini menjelaskan konsep pemrograman asinkron di Python dengan menggunakan async dan await.",
+            "pertanyaan": [
+                {
+                    "question": "Apa itu tugas asinkron dan kenapa itu penting?",
+                    "answer": "Tugas asinkron memungkinkan program menjalankan beberapa tugas sekaligus tanpa harus menunggu satu sama lain selesai."
+                },
+                {
+                    "question": "Bagaimana cara saya membuat fungsi yang tidak mengganggu tugas lainnya saat berjalan?",
+                    "answer": "Anda bisa membuat fungsi asinkron dengan menulis 'async def nama_fungsi():', yang memungkinkan fungsi berjalan secara independen."
+                },
+                {
+                    "question": "Kenapa terkadang ada kesalahan saat menjalankan tugas bersamaan?",
+                    "answer": "Kesalahan biasanya terjadi karena masalah dalam mengatur waktu atau sumber daya yang saling bertentangan antar tugas."
+                },
+                {
+                    "question": "Bagaimana cara menjalankan tugas yang telah saya buat?",
+                    "question_code": "async def kerjakan_tugas():\nawait selesaikan_tugas()\n\nasyncio.run(kerjakan_tugas())",
+                    "answer": "Anda bisa menjalankan tugas asinkron dengan 'asyncio.run()', yang akan mengatur dan mengeksekusi tugas."
+                },
+                {
+                    "question": "Bagaimana saya bisa membuat tugas yang menyapa secara otomatis?",
+                    "question_code": "async def sapa():\n    await asyncio.sleep(1)\n    print('Halo semua!')\n\nasyncio.run(sapa())",
+                    "answer": "Buat fungsi dengan 'async' dan gunakan 'await' untuk tunda, kemudian 'print()' untuk menyapa."
+                },
+                {
+                    "question": "Bagaimana cara menjalankan banyak tugas sekaligus?",
+                    "question_code": "async def utama():\n    tugas_satu = asyncio.create_task(sapa())\n    tugas_dua = asyncio.create_task(ucap())\n    await asyncio.gather(tugas_satu, tugas_dua)\n\nasyncio.run(utama())",
+                    "answer": "Gunakan 'asyncio.gather()' untuk menjalankan beberapa tugas sekaligus, yang memastikan bahwa semua tugas dikelola dan dijalankan bersama."
+                },
+                {
+                    "question": "Apa yang saya lakukan jika ada kesalahan saat menjalankan tugas?",
+                    "question_code": "async def periksa_tugas():\n    try:\n        await jalankan_tugas()\n    except Exception as e:\n        print(f'Terdapat kesalahan: {e}')",
+                    "answer": "Gunakan blok 'try-except' dalam fungsi asinkron Anda untuk menangkap dan menangani kesalahan selama eksekusi tugas."
+                }
+            ]
+        }
+    ]
+}

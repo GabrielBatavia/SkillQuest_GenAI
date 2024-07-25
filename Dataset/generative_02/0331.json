@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python Programming Basics",
+        "penulis": "David Johnson",
+        "tanggal": "2024-07-30",
+        "judul": "Penggunaan dan Manipulasi List Kosong di Python",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Advanced"],
+        "konten": "Artikel ini mengeksplorasi konsep list kosong di Python, serta operasi canggih dan penanganan kesalahan saat menggunakan list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen pada list kosong menggunakan metode slicing?",
+                "answer": "Anda dapat menambahkan elemen pada list kosong menggunakan slicing. Contoh: empty_list = []\nempty_list[0:0] = ['new_element']"
+            },
+            {
+                "question": "Apa perbedaan antara metode append() dan extend() ketika digunakan pada list kosong?",
+                "answer": "Metode append() menambahkan satu elemen di akhir list, sedangkan extend() menambahkan beberapa elemen dari iterable di akhir list. Contoh: empty_list.append('a') vs. empty_list.extend(['b', 'c'])"
+            },
+            {
+                "question": "Bagaimana menambahkan elemen pada list kosong dengan metode insert() pada posisi tertentu?",
+                "answer": "Gunakan metode insert() untuk menambahkan elemen pada posisi tertentu dalam list. Contoh: empty_list = []\nempty_list.insert(1, 'item')"
+            },
+            {
+                "question": "Apa penyebab error 'IndexError: list assignment index out of range' dan bagaimana cara menghindarinya?",
+                "question_code": "empty_list = []\nempty_list[1] = 'data'",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses index yang tidak ada dalam list. Gunakan append() atau insert() untuk menambahkan elemen tanpa menyebabkan error.",
+                "answer_code": "empty_list = []\nempty_list.append('data')"
+            },
+            {
+                "question": "Mengapa error 'TypeError: 'str' object is not iterable' muncul saat menggunakan metode extend()?",
+                "question_code": "empty_list = []\nempty_list.extend('string')",
+                "answer": "Error ini terjadi karena extend() membutuhkan iterable, dan string tidak bisa digunakan sebagai iterable untuk extend(). Gunakan list dari string.",
+                "answer_code": "empty_list = []\nempty_list.extend(list('string'))"
+            },
+            {
+                "question": "Bagaimana mengatasi error 'AttributeError: 'list' object has no attribute 'add_element''?",
+                "question_code": "empty_list = []\nempty_list.add_element('item')",
+                "answer": "Error ini terjadi karena tidak ada metode add_element() pada list. Gunakan metode append() atau insert() untuk menambahkan elemen.",
+                "answer_code": "empty_list = []\nempty_list.append('item')"
+            },
+            {
+                "question": "Apa penyebab error 'SyntaxError: invalid syntax' saat menggunakan metode append() dengan parameter yang tidak valid?",
+                "question_code": "empty_list = []\nempty_list.append('item'",
+                "answer": "Error ini disebabkan oleh tanda kurung yang tidak lengkap. Pastikan untuk menutup tanda kurung dengan benar.",
+                "answer_code": "empty_list = []\nempty_list.append('item')"
+            },
+            {
+                "question": "Bagaimana cara mengatasi error 'NameError: name 'empty_list' is not defined' ketika menggunakan metode insert()?",
+                "question_code": "empty_list.insert(0, 'item')",
+                "answer": "Error ini terjadi karena variabel empty_list belum dideklarasikan. Deklarasikan variabel sebagai list kosong sebelum menggunakan metode insert().",
+                "answer_code": "empty_list = []\nempty_list.insert(0, 'item')"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: can only concatenate list (not 'set') to list'?",
+                "question_code": "empty_list = []\nempty_list += {1, 2, 3}",
+                "answer": "Error ini terjadi karena Anda mencoba menggabungkan list dengan set menggunakan operator +=. Gunakan list untuk penambahan elemen.",
+                "answer_code": "empty_list = []\nempty_list += list({1, 2, 3})"
+            }
+        ]
+    },
+    {
+        "sumber": "Comprehensive Python Guide",
+        "penulis": "Sarah Lee",
+        "tanggal": "2024-07-31",
+        "judul": "Manipulasi List Kosong di Python: Teknik dan Kesalahan Umum",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Manipulation"],
+        "konten": "Panduan ini mencakup teknik lanjutan untuk memanipulasi list kosong dan kesalahan umum yang mungkin terjadi saat bekerja dengan list di Python.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen ke list kosong menggunakan list comprehension?",
+                "answer": "List comprehension dapat digunakan untuk membuat list baru dari list kosong dengan menambahkan elemen. Contoh: empty_list = []\nnew_list = [x for x in ['element']]"
+            },
+            {
+                "question": "Apa perbedaan penggunaan metode append() dan + untuk menambahkan elemen ke list kosong?",
+                "answer": "Metode append() menambahkan satu elemen di akhir list, sedangkan operator + menambahkan elemen dari list lain. Contoh: empty_list.append('a') vs. empty_list + ['b']"
+            },
+            {
+                "question": "Bagaimana menggunakan metode insert() untuk menambah elemen pada list kosong pada indeks yang ditentukan?",
+                "answer": "Metode insert() memungkinkan Anda menambahkan elemen pada posisi tertentu dalam list. Contoh: empty_list = []\nempty_list.insert(2, 'item')"
+            },
+            {
+                "question": "Apa penyebab error 'IndexError: list assignment index out of range' dan solusinya?",
+                "question_code": "empty_list = []\nempty_list[2] = 'value'",
+                "answer": "Error ini muncul karena index yang Anda akses tidak ada dalam list. Untuk menambah elemen, gunakan metode append() atau insert().",
+                "answer_code": "empty_list = []\nempty_list.append('value')"
+            },
+            {
+                "question": "Mengapa error 'TypeError: 'int' object is not iterable' terjadi saat menggunakan metode extend()?",
+                "question_code": "empty_list = []\nempty_list.extend(10)",
+                "answer": "Error ini terjadi karena extend() membutuhkan iterable. Pastikan untuk memberikan iterable seperti list atau tuple.",
+                "answer_code": "empty_list = []\nempty_list.extend([10])"
+            },
+            {
+                "question": "Bagaimana mengatasi error 'AttributeError: 'list' object has no attribute 'add_element''?",
+                "question_code": "empty_list = []\nempty_list.add_element('value')",
+                "answer": "Error ini karena add_element() bukan metode yang ada pada list. Gunakan append() atau insert() untuk menambahkan elemen.",
+                "answer_code": "empty_list = []\nempty_list.append('value')"
+            },
+            {
+                "question": "Apa penyebab error 'SyntaxError: unexpected EOF while parsing' ketika menggunakan metode append()?",
+                "question_code": "empty_list = []\nempty_list.append('value'",
+                "answer": "Error ini disebabkan oleh kurung yang tidak ditutup dengan benar. Pastikan semua tanda kurung dalam sintaks append() lengkap.",
+                "answer_code": "empty_list = []\nempty_list.append('value')"
+            },
+            {
+                "question": "Bagaimana mengatasi error 'NameError: name 'empty_list' is not defined' ketika menggunakan metode insert()?",
+                "question_code": "empty_list.insert(1, 'value')",
+                "answer": "Error ini karena variabel empty_list belum dideklarasikan. Pastikan variabel tersebut dideklarasikan sebagai list kosong sebelum menggunakan insert().",
+                "answer_code": "empty_list = []\nempty_list.insert(1, 'value')"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: can only concatenate list (not 'dict') to list'?",
+                "question_code": "empty_list = []\nempty_list += {'key': 'value'}",
+                "answer": "Error ini terjadi karena Anda mencoba menambahkan dict ke list. Gunakan metode lain untuk menambahkan dict ke list.",
+                "answer_code": "empty_list = []\nempty_list.append({'key': 'value'})"
+            }
+        ]
+    }
+]

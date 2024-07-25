@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "Mastering Python Lists",
+        "penulis": "Emma Brown",
+        "tanggal": "2024-10-10",
+        "judul": "Memahami Penambahan Elemen dengan `append()` di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "append", "Beginner"],
+        "konten": "Tutorial ini menjelaskan cara menambahkan elemen ke dalam list menggunakan method `append()`. Method ini sangat berguna untuk memperluas list dengan elemen baru di akhir list yang ada.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan angka 9 ke dalam list `my_numbers` menggunakan method `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan angka 9 ke dalam list: `my_numbers.append(9)`. Ini akan menambahkan angka 9 di akhir list `my_numbers`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan method `append()` pada variabel bertipe string?",
+                "answer": "Jika Anda menggunakan `append()` pada variabel bertipe string, Python akan menghasilkan error karena method ini hanya berlaku untuk list."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan list baru `[4, 5]` ke dalam list yang sudah ada menggunakan `append()`?",
+                "answer": "Untuk menambahkan list baru `[4, 5]` ke dalam list yang sudah ada, gunakan kode berikut: `my_list.append([4, 5])`. Ini akan menambahkan list `[4, 5]` sebagai elemen tunggal di akhir list `my_list`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'str' object has no attribute 'append'' saat menggunakan `append()`?",
+                "question_code": "text = 'Hello'\ntext.append(' World')",
+                "answer": "Error ini terjadi karena method `append()` tidak ada pada tipe data string. String bersifat immutable. Gunakan concatenation untuk menambahkan teks.",
+                "answer_code": "text = 'Hello'\ntext += ' World'"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() missing 1 required positional argument: 'item'' saat menggunakan `append()`?",
+                "question_code": "my_list = [1, 2]\nmy_list.append()",
+                "answer": "Error ini karena method `append()` memerlukan satu argumen untuk menambahkan elemen ke list. Pastikan Anda memberikan argumen saat menggunakan `append()`.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'tuple' object has no attribute 'append'' saat menggunakan `append()` pada tuple?",
+                "question_code": "my_tuple = (1, 2)\nmy_tuple.append(3)",
+                "answer": "Error ini karena tuple tidak mendukung method `append()`. Tuple adalah tipe data immutable. Untuk menambahkan elemen, gunakan list.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'set' object has no attribute 'append'' saat menggunakan `append()` pada set?",
+                "question_code": "my_set = {1, 2}\nmy_set.append(3)",
+                "answer": "Error ini karena set tidak mendukung method `append()`. Untuk menambahkan elemen ke set, gunakan method `add()`.",
+                "answer_code": "my_set = {1, 2}\nmy_set.add(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() takes exactly one argument (2 given)' saat menggunakan `append()` dengan dua argumen?",
+                "question_code": "my_list = [1, 2]\nmy_list.append(3, 4)",
+                "answer": "Error ini karena method `append()` hanya menerima satu argumen. Untuk menambahkan beberapa elemen, gunakan `extend()` atau tambahkan elemen satu per satu.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)\nmy_list.append(4)"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list assignment index out of range' saat mencoba mengubah elemen dengan index yang tidak ada?",
+                "question_code": "my_list = [1, 2]\nmy_list[5] = 6",
+                "answer": "Error ini karena Anda mencoba mengakses atau mengubah elemen di indeks yang tidak ada. Gunakan `append()` untuk menambahkan elemen baru di akhir list.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(6)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "David Smith",
+        "tanggal": "2024-10-20",
+        "judul": "Cara Efektif Menambahkan Elemen ke List dengan `append()`",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "append", "Beginner"],
+        "konten": "Panduan ini menjelaskan bagaimana menambahkan elemen baru ke dalam list menggunakan method `append()`. Ini adalah salah satu teknik dasar dalam pemrograman Python untuk memanipulasi list.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan nilai boolean `True` ke dalam list `my_values` menggunakan `append()`?",
+                "answer": "Untuk menambahkan nilai boolean `True` ke dalam list `my_values`, gunakan kode berikut: `my_values.append(True)`. Ini akan menambahkan nilai `True` di akhir list `my_values`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menambahkan elemen ke tipe data tuple dengan `append()`?",
+                "answer": "Jika Anda mencoba menggunakan `append()` pada tuple, Python akan menghasilkan error. Tuple adalah tipe data immutable, sehingga tidak mendukung `append()`."
+            },
+            {
+                "question": "Bagaimana caranya menambahkan elemen dictionary `{'key': 'value'}` ke dalam list dengan `append()`?",
+                "answer": "Gunakan kode berikut untuk menambahkan dictionary ke dalam list: `my_list.append({'key': 'value'})`. Ini akan menambahkan dictionary sebagai elemen baru di akhir list `my_list`."
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'dict' object has no attribute 'append'' saat menggunakan `append()` pada dictionary?",
+                "question_code": "my_dict = {'key': 'value'}\nmy_dict.append({'new_key': 'new_value'})",
+                "answer": "Error ini karena method `append()` tidak ada pada dictionary. Dictionary tidak mendukung method `append()`. Gunakan metode lain untuk menambah elemen ke dictionary.",
+                "answer_code": "my_dict = {'key': 'value'}\nmy_dict['new_key'] = 'new_value'"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() missing 1 required positional argument: 'item'' saat tidak memberikan argumen?",
+                "question_code": "my_list = [1, 2]\nmy_list.append()",
+                "answer": "Error ini terjadi karena method `append()` memerlukan satu argumen untuk menambahkan elemen ke list. Anda harus memberikan argumen saat menggunakan `append()`.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'frozenset' object has no attribute 'append'' saat menggunakan `append()` pada frozenset?",
+                "question_code": "my_frozenset = frozenset([1, 2])\nmy_frozenset.append(3)",
+                "answer": "Error ini terjadi karena frozenset adalah tipe data immutable dan tidak mendukung method `append()`. Gunakan set biasa untuk `append()`.",
+                "answer_code": "my_set = {1, 2}\nmy_set.add(3)"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: append() takes exactly one argument (2 given)' saat mencoba memberikan dua argumen?",
+                "question_code": "my_list = [1, 2]\nmy_list.append(3, 4)",
+                "answer": "Error ini terjadi karena `append()` hanya menerima satu argumen. Untuk menambahkan beberapa elemen, gunakan `extend()` atau tambahkan elemen satu per satu.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(3)\nmy_list.append(4)"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list assignment index out of range' saat mengakses indeks yang lebih besar dari panjang list?",
+                "question_code": "my_list = [1, 2]\nmy_list[10] = 7",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses atau mengubah elemen di indeks yang tidak ada. Gunakan `append()` untuk menambahkan elemen baru di akhir list.",
+                "answer_code": "my_list = [1, 2]\nmy_list.append(7)"
+            }
+        ]
+    }
+]

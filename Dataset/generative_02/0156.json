@@ -1,0 +1,126 @@
+[
+    {
+        "sumber": "belajarpemrogramanpython.net",
+        "penulis": "Ika Permata",
+        "tanggal": "2023-06-15",
+        "judul": "Penggunaan Operator Aritmatika di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "operator aritmatika", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan operator aritmatika di Python seperti penjumlahan, pengurangan, perkalian, pembagian, modulus, dan perpangkatan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara melakukan penjumlahan di Python?",
+                "answer": "Anda bisa melakukan penjumlahan dengan menggunakan operator `+`. Contohnya: `x + y`."
+            },
+            {
+                "question": "Bagaimana cara melakukan pengurangan di Python?",
+                "answer": "Anda bisa melakukan pengurangan dengan menggunakan operator `-`. Contohnya: `x - y`."
+            },
+            {
+                "question": "Bagaimana cara melakukan perkalian di Python?",
+                "question_code": "x * y",
+                "answer": "Anda bisa melakukan perkalian dengan menggunakan operator `*`. Contohnya: `x * y`.",
+                "answer_code": "x * y"
+            },
+            {
+                "question": "Bagaimana cara melakukan pembagian di Python?",
+                "question_code": "x / y",
+                "answer": "Anda bisa melakukan pembagian dengan menggunakan operator `/`. Contohnya: `x / y`.",
+                "answer_code": "x / y"
+            },
+            {
+                "question": "Bagaimana cara mendapatkan sisa hasil bagi di Python?",
+                "question_code": "x % y",
+                "answer": "Anda bisa mendapatkan sisa hasil bagi dengan menggunakan operator `%`. Contohnya: `x % y`.",
+                "answer_code": "x % y"
+            },
+            {
+                "question": "Bagaimana cara melakukan perpangkatan di Python?",
+                "question_code": "x ** y",
+                "answer": "Anda bisa melakukan perpangkatan dengan menggunakan operator `**`. Contohnya: `x ** y`.",
+                "answer_code": "x ** y"
+            },
+            {
+                "question": "Bagaimana cara melakukan pembagian bulat di Python?",
+                "question_code": "x // y",
+                "answer": "Anda bisa melakukan pembagian bulat dengan menggunakan operator `//`. Contohnya: `x // y`.",
+                "answer_code": "x // y"
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator augmented assignment di Python?",
+                "question_code": "x += 5",
+                "answer": "Anda bisa menggunakan operator augmented assignment untuk memperbarui nilai variabel. Contohnya: `x += 5`.",
+                "answer_code": "x += 5"
+            },
+            {
+                "question": "Bagaimana cara mengubah bilangan negatif menjadi positif di Python?",
+                "question_code": "abs(-x)",
+                "answer": "Anda bisa mengubah bilangan negatif menjadi positif dengan menggunakan fungsi `abs()`. Contohnya: `abs(-x)`.",
+                "answer_code": "abs(-x)"
+            }
+        ]
+    },
+    {
+        "sumber": "belajarpython.org",
+        "penulis": "Rizki Maulana",
+        "tanggal": "2024-02-01",
+        "judul": "Penggunaan Loop While di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["python", "loop while", "dasar"],
+        "konten": "Artikel ini menjelaskan cara menggunakan loop while di Python untuk mengulangi eksekusi blok kode selama kondisi tertentu terpenuhi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menulis loop while di Python?",
+                "answer": "Anda bisa menulis loop while dengan menggunakan sintaks `while condition:` diikuti dengan blok kode yang akan diulang. Contohnya: `while x < 5: print(x)`."
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop while menggunakan break di Python?",
+                "question_code": "x = 0\nwhile x < 10:\n    if x == 5:\n        break\n    print(x)\n    x += 1",
+                "answer": "Anda bisa menghentikan loop while menggunakan pernyataan `break`. Contohnya: `if x == 5: break`.",
+                "answer_code": "x = 0\nwhile x < 10:\n    if x == 5:\n        break\n    print(x)\n    x += 1"
+            },
+            {
+                "question": "Bagaimana cara melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya dalam loop while di Python?",
+                "question_code": "x = 0\nwhile x < 10:\n    x += 1\n    if x % 2 == 0:\n        continue\n    print(x)",
+                "answer": "Anda bisa melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya dengan menggunakan pernyataan `continue`. Contohnya: `if x % 2 == 0: continue`.",
+                "answer_code": "x = 0\nwhile x < 10:\n    x += 1\n    if x % 2 == 0:\n        continue\n    print(x)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while dengan kondisi yang selalu benar?",
+                "question_code": "while True:\n    print('This is an infinite loop')",
+                "answer": "Anda bisa menggunakan loop while dengan kondisi yang selalu benar untuk membuat loop tak hingga. Contohnya: `while True: print('This is an infinite loop')`.",
+                "answer_code": "while True:\n    print('This is an infinite loop')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while dengan kondisi yang diubah di dalam loop?",
+                "question_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1",
+                "answer": "Anda bisa menggunakan loop while dengan kondisi yang diubah di dalam loop untuk menghentikan loop pada suatu kondisi tertentu. Contohnya: `while x < 5: print(x); x += 1`.",
+                "answer_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while bersarang di Python?",
+                "question_code": "x = 0\nwhile x < 3:\n    y = 0\n    while y < 3:\n        print(x, y)\n        y += 1\n    x += 1",
+                "answer": "Anda bisa menggunakan loop while bersarang dengan menempatkan satu loop while di dalam loop while lainnya. Contohnya: `while x < 3: while y < 3:`.",
+                "answer_code": "x = 0\nwhile x < 3:\n    y = 0\n    while y < 3:\n        print(x, y)\n        y += 1\n    x += 1"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while dengan kondisi kompleks di Python?",
+                "question_code": "x = 0\ny = 10\nwhile x < 5 and y > 5:\n    print(x, y)\n    x += 1\n    y -= 1",
+                "answer": "Anda bisa menggunakan loop while dengan kondisi kompleks yang melibatkan beberapa kondisi logika. Contohnya: `while x < 5 and y > 5:`.",
+                "answer_code": "x = 0\ny = 10\nwhile x < 5 and y > 5:\n    print(x, y)\n    x += 1\n    y -= 1"
+            },
+            {
+                "question": "Bagaimana cara mengimplementasikan loop while dengan else di Python?",
+                "question_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1\nelse:\n    print('Loop selesai')",
+                "answer": "Anda bisa menggunakan pernyataan else dalam loop while untuk menjalankan blok kode jika loop selesai tanpa intervensi break. Contohnya: `else: print('Loop selesai')`.",
+                "answer_code": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1\nelse:\n    print('Loop selesai')"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while dengan input pengguna di Python?",
+                "question_code": "user_input = ''\nwhile user_input != 'exit':\n    user_input = input('Enter something (type exit to quit): ')\n    print(user_input)",
+                "answer": "Anda bisa menggunakan loop while dengan input pengguna untuk membuat loop yang berinteraksi dengan pengguna. Contohnya: `while user_input != 'exit': user_input = input('Enter something (type exit to quit): '); print(user_input)`.",
+                "answer_code": "user_input = ''\nwhile user_input != 'exit':\n    user_input = input('Enter something (type exit to quit): ')\n    print(user_input)"
+            }
+        ]
+    }
+]

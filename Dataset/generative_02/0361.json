@@ -1,0 +1,114 @@
+[
+    {
+        "sumber": "Deep Dive into Python",
+        "penulis": "Evelyn Davis",
+        "tanggal": "2024-09-05",
+        "judul": "Menjelajahi Indeks Negatif dalam List Python: Penjelasan dan Ilustrasi",
+        "tingkat_kesulitan": "Advanced",
+        "tag": ["Python", "Lists", "Negative Indexing"],
+        "konten": "Panduan ini menyelami penggunaan indeks negatif dalam list Python dengan penjelasan rinci dan ilustrasi praktis yang membuat konsep ini lebih mudah dipahami.",
+        "pertanyaan": [
+            {
+                "question": "Cobalah bayangkan Anda memiliki sebuah daftar yang penuh dengan barang-barang favorit Anda, seperti buku dan film. Jika Anda hanya memiliki tiga barang dalam daftar tersebut dan Anda ingin mengakses barang kedua dari akhir, bagaimana cara Anda melakukannya menggunakan indeks negatif?",
+                "answer": "Untuk mengakses barang kedua dari akhir dalam daftar yang memiliki tiga barang, Anda harus menggunakan indeks -2. Ini akan memberikan Anda barang yang berada di posisi kedua dari akhir daftar."
+            },
+            {
+                "question": "Bayangkan Anda memiliki daftar yang berisi enam buah buku, dan Anda ingin mengakses buku yang berada di posisi keempat dari akhir daftar. Dalam hal ini, bagaimana Anda bisa menggunakan indeks negatif untuk mencapai tujuan tersebut?",
+                "answer": "Anda perlu menggunakan indeks -4 untuk mengakses buku yang berada di posisi keempat dari akhir. Indeks negatif bekerja dari akhir daftar menuju awal, sehingga -4 mengacu pada posisi keempat dari belakang."
+            },
+            {
+                "question": "Jika Anda sedang menangani daftar kosong, yang berarti daftar tersebut tidak berisi elemen apapun, apa yang akan terjadi jika Anda mencoba mengakses elemen menggunakan indeks negatif, seperti -1? Apa yang harus Anda perhatikan dalam kasus ini?",
+                "answer": "Mengakses indeks -1 dalam daftar kosong akan menyebabkan 'IndexError'. Daftar kosong tidak memiliki elemen sama sekali, jadi setiap usaha untuk mengakses elemen akan menghasilkan error."
+            },
+            {
+                "question": "Kenapa ada error yang disebut 'IndexError: list index out of range' ketika saya mencoba mengakses elemen menggunakan indeks negatif yang tampaknya berada di luar rentang daftar? Bisa tolong jelaskan mengapa hal ini bisa terjadi?",
+                "question_code": "numbers = [4, 8, 15]\nprint(numbers[-4])",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses indeks -4 pada daftar yang hanya memiliki tiga elemen. Indeks -4 melebihi rentang yang ada. Anda harus memastikan bahwa indeks negatif yang digunakan sesuai dengan panjang daftar.",
+                "answer_code": "numbers = [4, 8, 15]\nprint(numbers[-3])"
+            },
+            {
+                "question": "Apa alasan di balik error 'TypeError: list indices must be integers or slices, not dict' ketika saya mencoba menggunakan tipe data yang tidak sesuai sebagai indeks? Bagaimana cara yang benar untuk mengakses elemen dalam daftar?",
+                "question_code": "data = [7, 14, 21]\nprint(data[{2: 'value'}])",
+                "answer": "Error ini terjadi karena indeks harus berupa integer, bukan dictionary. Untuk mengakses elemen dalam daftar, Anda harus menggunakan integer sebagai indeks.",
+                "answer_code": "data = [7, 14, 21]\nprint(data[-1])"
+            },
+            {
+                "question": "Ketika saya menggunakan kode yang seharusnya mengakses elemen terakhir dalam daftar namun muncul error 'TypeError: 'NoneType' object is not subscriptable', apa yang menyebabkan masalah ini dan bagaimana cara memperbaikinya?",
+                "question_code": "result = None\nprint(result[-1])",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses elemen dalam objek None, yang tidak mendukung indexing. Pastikan objek yang Anda coba indeks adalah sebuah daftar atau tipe data lain yang mendukung indexing.",
+                "answer_code": "result = [10, 20, 30]\nprint(result[-1])"
+            },
+            {
+                "question": "Mengapa saya mendapatkan error 'AttributeError: 'list' object has no attribute 'remove_item'' ketika saya mencoba metode yang tidak valid pada daftar? Apa yang harus saya lakukan untuk mengatasi masalah ini?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.remove_item(-1)",
+                "answer": "Error ini muncul karena metode 'remove_item' tidak ada pada objek daftar. Untuk menghapus elemen dari daftar, gunakan metode 'remove' atau 'pop'.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.remove(2)"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'IndexError: tuple index out of range' ketika saya mencoba mengakses elemen dengan indeks negatif pada tuple yang lebih kecil dari panjang indeks? Bagaimana cara menghindari kesalahan ini?",
+                "question_code": "my_tuple = (1, 2)\nprint(my_tuple[-3])",
+                "answer": "Error ini terjadi karena indeks -3 melebihi jumlah elemen dalam tuple yang hanya memiliki dua elemen. Gunakan indeks yang valid dalam rentang panjang tuple.",
+                "answer_code": "my_tuple = (1, 2)\nprint(my_tuple[-2])"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'IndexError: string index out of range' ketika saya mencoba mengakses indeks negatif yang lebih besar dari panjang string? Apa langkah yang harus saya ambil untuk menghindari kesalahan ini?",
+                "question_code": "text = 'world'\nprint(text[-6])",
+                "answer": "Error ini terjadi karena indeks -6 berada di luar rentang string yang hanya memiliki lima karakter. Gunakan indeks yang sesuai dengan panjang string untuk mengakses elemen.",
+                "answer_code": "text = 'world'\nprint(text[-5])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming Insights",
+        "penulis": "Lucas Bennett",
+        "tanggal": "2024-09-07",
+        "judul": "Memahami Akses Elemen dengan Indeks Negatif dalam Python: Konsep dan Aplikasi",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Negative Indexing"],
+        "konten": "Artikel ini memberikan pemahaman yang jelas tentang akses elemen dalam list menggunakan indeks negatif, disertai dengan berbagai contoh dan penjelasan yang memudahkan pemahaman.",
+        "pertanyaan": [
+            {
+                "question": "Misalkan Anda memiliki sebuah daftar yang terdiri dari lima jenis makanan yang Anda sukai. Jika Anda ingin mengambil makanan kedua dari akhir daftar, indeks negatif mana yang harus Anda gunakan untuk mendapatkan hasil yang tepat?",
+                "answer": "Untuk mendapatkan makanan kedua dari akhir dalam daftar yang memiliki lima elemen, Anda harus menggunakan indeks -2. Indeks negatif menghitung dari belakang daftar ke depan."
+            },
+            {
+                "question": "Jika Anda memiliki daftar berisi tujuh elemen dan Anda ingin mengakses elemen yang berada di posisi kelima dari belakang, indeks negatif apa yang harus digunakan?",
+                "answer": "Untuk mengakses elemen yang berada di posisi kelima dari belakang dalam daftar dengan tujuh elemen, Anda harus menggunakan indeks -5. Ini akan memberikan elemen kelima dari akhir daftar."
+            },
+            {
+                "question": "Dalam situasi di mana daftar Anda kosong dan Anda mencoba mengakses elemen menggunakan indeks negatif, apa yang akan terjadi dan mengapa?",
+                "answer": "Jika Anda mencoba mengakses elemen dengan indeks negatif dalam daftar kosong, Anda akan mendapatkan 'IndexError'. Ini karena daftar kosong tidak memiliki elemen sama sekali untuk diakses."
+            },
+            {
+                "question": "Apa penyebab error 'IndexError: list index out of range' ketika saya mengakses elemen dengan indeks negatif yang sepertinya di luar batas daftar? Bisakah Anda menjelaskan mengapa hal ini terjadi?",
+                "question_code": "fruits = ['apple', 'banana']\nprint(fruits[-3])",
+                "answer": "Error ini disebabkan karena indeks -3 melebihi rentang daftar yang hanya memiliki dua elemen. Pastikan indeks negatif yang digunakan sesuai dengan panjang daftar.",
+                "answer_code": "fruits = ['apple', 'banana']\nprint(fruits[-2])"
+            },
+            {
+                "question": "Kenapa saya mendapat error 'TypeError: list indices must be integers or slices, not float' ketika mencoba mengakses elemen menggunakan tipe data non-integer? Bagaimana saya bisa memperbaikinya?",
+                "question_code": "numbers = [9, 18, 27]\nprint(numbers[-2.1])",
+                "answer": "Error ini terjadi karena indeks harus berupa integer, bukan float. Gunakan integer untuk mengakses elemen dalam daftar.",
+                "answer_code": "numbers = [9, 18, 27]\nprint(numbers[-2])"
+            },
+            {
+                "question": "Mengapa saya menerima error 'AttributeError: 'list' object has no attribute 'update'' saat mencoba metode yang tidak ada pada daftar? Apa langkah yang tepat untuk mengatasi masalah ini?",
+                "question_code": "my_list = [5, 10, 15]\nmy_list.update(-1)",
+                "answer": "Error ini muncul karena metode 'update' tidak ada pada objek daftar. Untuk memodifikasi elemen dalam daftar, Anda dapat langsung mengakses dan mengubahnya menggunakan indeks.",
+                "answer_code": "my_list = [5, 10, 15]\nmy_list[1] = 20"
+            },
+            {
+                "question": "Apa penyebab error 'IndexError: tuple index out of range' ketika saya menggunakan indeks negatif yang tidak sesuai dengan panjang tuple? Bagaimana cara menghindari kesalahan ini?",
+                "question_code": "my_tuple = (3, 6)\nprint(my_tuple[-4])",
+                "answer": "Error ini disebabkan karena indeks -4 melebihi jumlah elemen dalam tuple yang hanya memiliki dua elemen. Pastikan indeks negatif berada dalam rentang panjang tuple.",
+                "answer_code": "my_tuple = (3, 6)\nprint(my_tuple[-2])"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'IndexError: string index out of range' saat mengakses indeks negatif yang lebih besar dari panjang string? Apa langkah yang harus saya ambil untuk memperbaikinya?",
+                "question_code": "text = 'hello'\nprint(text[-6])",
+                "answer": "Error ini terjadi karena indeks -6 berada di luar rentang string yang hanya memiliki lima karakter. Gunakan indeks yang sesuai dengan panjang string untuk mengakses elemen.",
+                "answer_code": "text = 'hello'\nprint(text[-5])"
+            }
+        ]
+    }
+]

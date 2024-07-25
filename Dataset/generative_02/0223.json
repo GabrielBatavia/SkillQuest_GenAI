@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python List Operations",
+        "penulis": "Jane Wilson",
+        "tanggal": "2024-12-20",
+        "judul": "Mengakses Elemen List di Python dengan Indeks",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Indexing"],
+        "konten": "Artikel ini membahas cara mengakses elemen dalam list di Python menggunakan indeks. Indeks di Python dimulai dari 0 untuk elemen pertama dan -1 untuk elemen terakhir.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengakses elemen pertama dalam list di Python?",
+                "answer": "Anda dapat mengakses elemen pertama dalam list dengan menggunakan indeks 0. Contoh: my_list[0] akan mengembalikan elemen pertama dari my_list."
+            },
+            {
+                "question": "Mengapa penting memahami cara kerja indeks dalam list di Python?",
+                "answer": "Memahami cara kerja indeks dalam list penting karena memungkinkan Anda untuk mengakses dan memanipulasi elemen dengan efisien, terutama saat bekerja dengan dataset besar."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen terakhir dalam list di Python?",
+                "answer": "Anda dapat mengakses elemen terakhir dalam list dengan menggunakan indeks -1. Contoh: my_list[-1] akan mengembalikan elemen terakhir dari my_list."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "my_list = ['a', 'b', 'c']\nprint(my_list[3])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang list. Indeks maksimum untuk elemen terakhir adalah panjang list dikurangi satu.",
+                "answer_code": "my_list = ['a', 'b', 'c']\nprint(my_list[2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not str', saya tidak paham?",
+                "question_code": "my_list = [10, 20, 30]\nprint(my_list['1'])",
+                "answer": "Error ini terjadi karena indeks yang digunakan harus berupa bilangan bulat atau slice, bukan string.",
+                "answer_code": "my_list = [10, 20, 30]\nprint(my_list[1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'NoneType' object is not subscriptable', saya tidak paham?",
+                "question_code": "my_var = None\nprint(my_var[0])",
+                "answer": "Error ini terjadi karena NoneType tidak mendukung subscripting. Hanya list atau objek yang mendukung indexing yang dapat diakses dengan menggunakan indeks.",
+                "answer_code": "my_var = [None]\nprint(my_var[0])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not float', saya tidak paham?",
+                "question_code": "my_list = [1, 2, 3]\nprint(my_list[1.5])",
+                "answer": "Error ini terjadi karena indeks yang digunakan harus berupa bilangan bulat, bukan float.",
+                "answer_code": "my_list = [1, 2, 3]\nprint(my_list[1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unhashable type: 'set'', saya tidak paham?",
+                "question_code": "my_list = [4, 5, 6]\nmy_dict = {my_list: 'data'}",
+                "answer": "Error ini terjadi karena list tidak dapat digunakan sebagai kunci dalam dictionary karena tidak hashable. Gunakan tipe data yang hashable seperti tuple.",
+                "answer_code": "my_list = [4, 5, 6]\nmy_dict = {tuple(my_list): 'data'}"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: tuple index out of range', saya tidak paham?",
+                "question_code": "my_tuple = (7, 8, 9)\nprint(my_tuple[3])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang tuple. Indeks maksimum untuk elemen terakhir adalah panjang tuple dikurangi satu.",
+                "answer_code": "my_tuple = (7, 8, 9)\nprint(my_tuple[2])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python List Techniques",
+        "penulis": "Emily Green",
+        "tanggal": "2024-12-25",
+        "judul": "Cara Mengakses Elemen dalam List dengan Indeks di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Indexing"],
+        "konten": "Panduan ini memberikan penjelasan lengkap tentang cara mengakses elemen dalam list menggunakan indeks di Python. Anda akan mempelajari cara mengakses elemen pertama, elemen terakhir, dan elemen di posisi tertentu dengan berbagai metode.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengakses elemen kelima dalam list di Python?",
+                "answer": "Anda bisa mengakses elemen kelima dalam list dengan menggunakan indeks 4. Contoh: my_list[4] akan mengembalikan elemen kelima dari my_list."
+            },
+            {
+                "question": "Mengapa penting memahami indeks saat bekerja dengan list di Python?",
+                "answer": "Penting untuk memahami indeks karena ini memungkinkan Anda mengakses, memodifikasi, dan memanipulasi elemen dalam list dengan tepat, terutama ketika bekerja dengan dataset besar."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen kedua dari belakang dalam list di Python?",
+                "answer": "Anda bisa mengakses elemen kedua dari belakang dalam list dengan menggunakan indeks -2. Contoh: my_list[-2] akan mengembalikan elemen kedua dari belakang dari my_list."
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "items = ['pen', 'pencil', 'eraser']\nprint(items[3])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang list. Indeks maksimum untuk elemen terakhir adalah panjang list dikurangi satu.",
+                "answer_code": "items = ['pen', 'pencil', 'eraser']\nprint(items[2])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not dict', saya tidak paham?",
+                "question_code": "numbers = [10, 20, 30]\nprint(numbers[{'index': 1}])",
+                "answer": "Error ini terjadi karena indeks yang digunakan harus berupa bilangan bulat atau slice, bukan dictionary.",
+                "answer_code": "numbers = [10, 20, 30]\nprint(numbers[1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'float' object is not subscriptable', saya tidak paham?",
+                "question_code": "value = 123.45\nprint(value[0])",
+                "answer": "Error ini terjadi karena float tidak mendukung subscripting. Hanya list atau objek yang mendukung indexing yang dapat diakses dengan menggunakan indeks.",
+                "answer_code": "value = [123.45]\nprint(value[0])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: list indices must be integers or slices, not bool', saya tidak paham?",
+                "question_code": "values = [5, 10, 15]\nprint(values[True])",
+                "answer": "Error ini terjadi karena indeks yang digunakan harus berupa bilangan bulat atau slice, bukan boolean.",
+                "answer_code": "values = [5, 10, 15]\nprint(values[1])"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unhashable type: 'list'', saya tidak paham?",
+                "question_code": "keys = [1, 2, 3]\nmy_dict = {keys: 'values'}",
+                "answer": "Error ini terjadi karena list tidak dapat digunakan sebagai kunci dalam dictionary karena tidak hashable. Gunakan tipe data yang hashable seperti tuple.",
+                "answer_code": "keys = [1, 2, 3]\nmy_dict = {tuple(keys): 'values'}"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: tuple index out of range', saya tidak paham?",
+                "question_code": "coordinates = (10, 20, 30)\nprint(coordinates[3])",
+                "answer": "Error ini terjadi karena indeks yang diakses berada di luar rentang tuple. Indeks maksimum untuk elemen terakhir adalah panjang tuple dikurangi satu.",
+                "answer_code": "coordinates = (10, 20, 30)\nprint(coordinates[2])"
+            }
+        ]
+    }
+]

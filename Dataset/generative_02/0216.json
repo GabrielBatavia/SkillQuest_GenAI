@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "PythonDasar.com",
+        "penulis": "Dewi Kartika",
+        "tanggal": "2024-08-10",
+        "judul": "Pemrograman Dasar dengan Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["dasar", "python", "pemula"],
+        "konten": "Artikel ini menjelaskan tentang konsep dasar pemrograman di Python, termasuk variabel, tipe data, dan operasi dasar.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel dalam Python?",
+                "answer": "Variabel dapat dideklarasikan dengan memberikan nilai langsung. Contohnya: x = 5."
+            },
+            {
+                "question": "Bagaimana cara mencetak nilai dari sebuah variabel?",
+                "answer": "Anda dapat menggunakan fungsi print() untuk mencetak nilai variabel. Contohnya: print(x)."
+            },
+            {
+                "question": "Apa itu tipe data dalam Python?",
+                "answer": "Tipe data adalah jenis dari nilai yang dapat disimpan dalam variabel. Contohnya: integer, float, string."
+            },
+            {
+                "question": "Mengapa kode ini tidak berjalan?",
+                "question_code": "x = 'Hello'\nprint(X)",
+                "answer": "Kesalahan terjadi karena Python bersifat case-sensitive. Gunakan x bukan X.",
+                "answer_code": "x = 'Hello'\nprint(x)"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error NameError?",
+                "question_code": "print(y)",
+                "answer": "NameError terjadi karena variabel y belum dideklarasikan. Pastikan y sudah diberi nilai sebelum dipanggil.",
+                "answer_code": "y = 10\nprint(y)"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua string di Python?",
+                "question_code": "str1 = 'Hello'\nstr2 = 'World'\nprint(str1, str2)",
+                "answer": "Anda dapat menggunakan operator + untuk menggabungkan dua string. Contohnya: 'Hello' + ' World'.",
+                "answer_code": "str1 = 'Hello'\nstr2 = 'World'\nprint(str1 + ' ' + str2)"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kapital semua di Python?",
+                "question_code": "text = 'hello'\nprint(text.capitalize())",
+                "answer": "Gunakan metode upper() untuk mengubah string menjadi huruf kapital semua. Contohnya: text.upper().",
+                "answer_code": "text = 'hello'\nprint(text.upper())"
+            },
+            {
+                "question": "Bagaimana cara menghilangkan spasi di awal dan akhir string di Python?",
+                "question_code": "text = ' hello '\nprint(text.lstrip().rstrip())",
+                "answer": "Gunakan metode strip() untuk menghilangkan spasi di awal dan akhir string. Contohnya: text.strip().",
+                "answer_code": "text = ' hello '\nprint(text.strip())"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu string mengandung substring tertentu di Python?",
+                "question_code": "text = 'Hello, World!'\nprint(text.has('World'))",
+                "answer": "Gunakan operator in untuk memeriksa apakah suatu string mengandung substring tertentu. Contohnya: 'World' in text.",
+                "answer_code": "text = 'Hello, World!'\nprint('World' in text)"
+            }
+        ]
+    },
+    {
+        "sumber": "PythonLanjutan.net",
+        "penulis": "Bambang Susilo",
+        "tanggal": "2024-08-15",
+        "judul": "Kontrol Alur dalam Python",
+        "tingkat_kesulitan": "menengah",
+        "tag": ["kontrol alur", "if", "loop"],
+        "konten": "Artikel ini membahas tentang kontrol alur dalam Python, termasuk penggunaan pernyataan if-else, loop for, dan loop while.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan pernyataan if di Python?",
+                "answer": "Pernyataan if digunakan untuk menjalankan blok kode tertentu jika kondisi yang diberikan benar. Contohnya: if x > 0: print('x positif')."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan else di Python?",
+                "answer": "Pernyataan else digunakan untuk menjalankan blok kode jika kondisi dalam pernyataan if salah. Contohnya: else: print('x negatif atau nol')."
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan elif di Python?",
+                "answer": "Pernyataan elif digunakan untuk memeriksa kondisi lain jika kondisi dalam pernyataan if sebelumnya salah. Contohnya: elif x == 0: print('x nol')."
+            },
+            {
+                "question": "Mengapa kode ini tidak berjalan dengan benar?",
+                "question_code": "x = 10\nif x > 5:\nprint('x lebih besar dari 5')",
+                "answer": "IndentationError terjadi karena print() tidak memiliki indentasi yang benar. Pastikan blok kode di dalam if memiliki indentasi.",
+                "answer_code": "x = 10\nif x > 5:\n    print('x lebih besar dari 5')"
+            },
+            {
+                "question": "Apa yang salah dengan loop ini?",
+                "question_code": "for i in range(5)\n    print(i)",
+                "answer": "SyntaxError terjadi karena tanda titik dua (:) setelah range(5) hilang. Tambahkan tanda titik dua.",
+                "answer_code": "for i in range(5):\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop while di Python?",
+                "question_code": "x = 5\nwhile x >= 0:\nprint(x)\nx -= 1",
+                "answer": "Loop while digunakan untuk mengulang eksekusi kode selama kondisi tertentu benar. Contohnya: while x >= 0: print(x); x -= 1.",
+                "answer_code": "x = 5\nwhile x >= 0:\n    print(x)\n    x -= 1"
+            },
+            {
+                "question": "Bagaimana cara menghentikan loop dengan break di Python?",
+                "question_code": "for i in range(5):\n    if i == 3:\n        stop\n    print(i)",
+                "answer": "Gunakan pernyataan break untuk menghentikan loop. Ganti stop dengan break.",
+                "answer_code": "for i in range(5):\n    if i == 3:\n        break\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan pernyataan continue dalam loop di Python?",
+                "question_code": "for i in range(5):\n    if i == 2:\n        pass\n    print(i)",
+                "answer": "Gunakan pernyataan continue untuk melompati iterasi saat ini dan melanjutkan ke iterasi berikutnya. Ganti pass dengan continue.",
+                "answer_code": "for i in range(5):\n    if i == 2:\n        continue\n    print(i)"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop nested di Python?",
+                "question_code": "for i in range(3):\nfor j in range(2):\nprint(i, j)",
+                "answer": "Loop nested adalah loop di dalam loop. Pastikan loop dalam memiliki indentasi yang benar. Contohnya: for i in range(3): for j in range(2): print(i, j).",
+                "answer_code": "for i in range(3):\n    for j in range(2):\n        print(i, j)"
+            }
+        ]
+    }
+]

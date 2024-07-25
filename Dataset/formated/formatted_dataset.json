@@ -1,0 +1,373 @@
+[
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "Python adalah salah satu bahasa pemrograman yang sangat populer dan sering digunakan oleh banyak programmer di seluruh dunia. Salah satu alasan utama popularitasnya adalah karena sintaks yang sederhana dan mudah dipahami. Python sangat cocok untuk pemula yang baru mulai belajar pemrograman, tetapi juga kuat dan serbaguna untuk pengembang yang lebih berpengalaman.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "Dalam Python, segala sesuatu adalah objek, termasuk angka dan fungsi. Ini membuat Python menjadi bahasa yang sangat fleksibel. Berikut adalah contoh sederhana dari bagaimana kita dapat menggunakan variabel dan tipe data dasar dalam Python:",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "```python # Menginisialisasi variabel nama = \"John\" umur = 25 tinggi = 180.5",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menampilkan variabel print print print Python juga mendukung berbagai tipe data kompleks seperti list, tuple, dan dictionary. List adalah koleksi yang dapat diubah dan terurut, sedangkan tuple adalah koleksi yang tidak dapat diubah. Dictionary adalah koleksi pasangan kunci-nilai yang tidak terurut.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Contoh list buah =  print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Contoh tuple warna =  print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Contoh dictionary mahasiswa = {\"nama\": \"Ayu\", \"jurusan\": \"Informatika\", \"angkatan\": 2020} print Python juga mendukung pemrograman berorientasi objek . Dalam OOP, kita dapat mendefinisikan kelas yang merupakan cetak biru untuk objek.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Mendefinisikan kelas class Mahasiswa: def __init__: self.nama = nama self.jurusan = jurusan self.angkatan = angkatan",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "def tampilkan_info: print print print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat objek dari kelas Mahasiswa mahasiswa1 = Mahasiswa mahasiswa1.tampilkan_info Dengan Python, kita juga dapat melakukan banyak hal seperti pengolahan data, pengembangan web, otomatisasi tugas, dan banyak lagi. Python memiliki banyak pustaka yang kuat seperti NumPy, Pandas, dan Matplotlib untuk analisis data, Django dan Flask untuk pengembangan web, dan Selenium untuk otomatisasi web.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "File 2: `dataset_part2.txt`",
+        "content": "",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "Pemrograman dengan Python sangat efisien karena banyaknya pustaka dan framework yang tersedia. Sebagai contoh, dalam pengolahan data, kita dapat menggunakan pustaka Pandas yang menyediakan struktur data dan alat analisis yang sangat kuat. Pandas sangat membantu dalam menangani data berukuran besar dan kompleks dengan cara yang intuitif dan efisien.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "import pandas as pd",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat DataFrame dari dictionary data = { \"Nama\": , \"Umur\": , \"Kota\":  } df = pd.DataFrame",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menampilkan DataFrame print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menambahkan kolom baru df =  print Selain Pandas, Python juga memiliki pustaka Matplotlib untuk visualisasi data. Dengan Matplotlib, kita dapat membuat berbagai jenis grafik dan plot untuk menganalisis data secara visual.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "import matplotlib.pyplot as plt",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Data untuk grafik x =  y =",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat grafik garis plt.plot plt.xlabel plt.ylabel plt.title plt.show Dalam pengembangan web, Python sangat populer dengan framework seperti Django dan Flask. Django adalah framework web tingkat tinggi yang mendorong pengembangan cepat dan desain bersih, sementara Flask adalah microframework yang ringan dan fleksibel.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "from flask import Flask",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "app = Flask",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "@app.route def hello_world: return 'Hello, World!'",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "if __name__ == '__main__': app.run Salah satu fitur utama Python adalah dukungan yang kuat untuk pembelajaran mesin dan kecerdasan buatan. Pustaka seperti Scikit-Learn, TensorFlow, dan PyTorch memungkinkan pengembang untuk membuat dan melatih model pembelajaran mesin dengan mudah. Scikit-Learn, misalnya, adalah pustaka untuk pembelajaran mesin di Python yang menyediakan alat sederhana namun efisien untuk analisis data dan pemodelan prediktif.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "from sklearn import datasets from sklearn.model_selection import train_test_split from sklearn.linear_model import LogisticRegression from sklearn.metrics import accuracy_score",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Mengimpor dataset iris iris = datasets.load_iris X = iris.data y = iris.target",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membagi data menjadi training dan testing X_train, X_test, y_train, y_test = train_test_split",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat model Logistic Regression model = LogisticRegression model.fit",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Memprediksi data testing y_pred = model.predict",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Mengukur akurasi model print}\") Python terus berkembang dan komunitasnya yang besar selalu menyediakan dukungan dan sumber daya untuk pemrogram. Inilah yang membuat Python tetap relevan dan terus digunakan dalam berbagai bidang teknologi.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "File 3: `dataset_part3.txt`",
+        "content": "",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "Dalam Python, kita juga dapat melakukan manipulasi string dengan sangat mudah. Python menyediakan berbagai metode string yang memungkinkan kita untuk melakukan berbagai operasi pada string, seperti menggabungkan, memotong, dan mengganti bagian dari string.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menggabungkan string nama_depan = \"John\" nama_belakang = \"Doe\" nama_lengkap = nama_depan + \" \" + nama_belakang print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Mengganti karakter dalam string kalimat = \"Hello, World!\" kalimat_baru = kalimat.replace print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Memotong string substring = kalimat print Selain itu, Python juga sangat kuat dalam bekerja dengan file. Kita dapat membuka, membaca, menulis, dan menutup file dengan mudah menggunakan built-in functions.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menulis ke dalam file with open as file: file.write",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membaca dari file with open as file: isi_file = file.read print Python juga mendukung pengolahan dan analisis data yang canggih menggunakan pustaka seperti NumPy. NumPy adalah pustaka untuk komputasi ilmiah yang mendukung array besar dan matriks multidimensi serta berbagai fungsi matematika tingkat tinggi untuk operasi ini.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "import numpy as np",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat array NumPy array = np.array",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Operasi matematika dengan array print print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat matriks matrix = np.array print",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Transpose matriks print Dalam pengembangan perangkat lunak, pengujian sangat penting untuk memastikan bahwa kode kita bekerja seperti yang diharapkan. Python memiliki pustaka unittest yang built-in untuk menulis dan menjalankan tes unit.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "import unittest",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Fungsi yang akan diuji def tambah: return a + b",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Kelas tes unit class TestTambah: def test_tambah: self.assertEqual, 5) self.assertEqual, 0) self.assertEqual, 0)",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "if __name__ == '__main__': unittest.main Python juga mendukung integrasi dengan berbagai database seperti SQLite, MySQL, dan PostgreSQL. Kita dapat menggunakan pustaka seperti SQLite3 dan SQLAlchemy untuk mengelola dan berinteraksi dengan database.",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "import sqlite3",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat koneksi ke database conn = sqlite3.connect",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat cursor cur = conn.cursor",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membuat tabel cur.execute''')",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menambahkan data ke tabel cur.execute VALUES \")",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menyimpan perubahan conn.commit",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Membaca data dari tabel cur.execute print)",
+        "examples": [],
+        "topics": []
+    },
+    {
+        "source": "Python Tutorial",
+        "title": "Untitled",
+        "content": "# Menutup koneksi conn.close Dengan memahami dasar-dasar Python dan berbagai pustaka yang tersedia, kita dapat membangun berbagai aplikasi yang kuat dan efisien. Python adalah bahasa yang sangat serbaguna dan dapat digunakan dalam berbagai bidang seperti pengembangan web, analisis data, pembelajaran mesin, dan banyak lagi.",
+        "examples": [],
+        "topics": []
+    }
+]

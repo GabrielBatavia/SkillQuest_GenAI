@@ -1,0 +1,120 @@
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Jordan Lee",
+        "tanggal": "2024-10-31",
+        "judul": "Menambahkan Elemen pada Posisi Tertentu dalam List dengan insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Panduan ini menjelaskan cara menggunakan method insert() untuk menyisipkan elemen pada posisi tertentu di dalam list. Dengan insert(), Anda dapat menambahkan elemen baru di tempat yang diinginkan tanpa menghapus elemen lainnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana caranya menambahkan elemen 'banana' pada posisi ke-3 di dalam list fruits menggunakan method insert()?",
+                "answer": "Gunakan kode berikut: fruits.insert(3, 'banana'). Ini akan menambahkan 'banana' pada posisi indeks ke-3 dalam list fruits, menggeser elemen lainnya ke kanan."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menyisipkan elemen pada indeks yang lebih besar dari panjang list?",
+                "answer": "Jika indeks lebih besar dari panjang list, elemen akan disisipkan di akhir list. Ini setara dengan menggunakan metode append()."
+            },
+            {
+                "question": "Bagaimana caranya menyisipkan elemen 'hello' pada indeks ke-1 dalam list words?",
+                "answer": "Gunakan kode berikut: words.insert(1, 'hello'). Ini akan menambahkan 'hello' pada posisi indeks ke-1 dalam list words."
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() missing 1 required positional argument: 'object'' ketika menggunakan insert() tanpa argumen kedua?",
+                "question_code": "colors = ['red', 'blue', 'green']\ncolors.insert(2)",
+                "answer": "Error ini terjadi karena method insert() memerlukan dua argumen: indeks dan elemen yang akan disisipkan. Pastikan untuk menyertakan kedua argumen saat menggunakan insert().",
+                "answer_code": "colors = ['red', 'blue', 'green']\ncolors.insert(2, 'yellow')"
+            },
+            {
+                "question": "Kenapa muncul error 'ValueError: too many values to unpack (expected 2)' saat menggunakan lebih dari dua argumen?",
+                "question_code": "numbers = [1, 2, 3]\nnumbers.insert(1, 4, 5)",
+                "answer": "Error ini terjadi karena method insert() hanya menerima dua argumen. Jika lebih dari dua argumen digunakan, akan menyebabkan error. Hanya berikan dua argumen: indeks dan elemen.",
+                "answer_code": "numbers = [1, 2, 3]\nnumbers.insert(1, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list index out of range' ketika menyisipkan elemen pada indeks negatif yang tidak valid?",
+                "question_code": "my_list = [10, 20, 30]\nmy_list.insert(-4, 40)",
+                "answer": "Error ini terjadi karena indeks negatif di luar jangkauan list jika lebih kecil dari -len(my_list). Gunakan indeks yang valid atau gunakan metode append() jika menambahkan di akhir list.",
+                "answer_code": "my_list = [10, 20, 30]\nmy_list.insert(3, 40)"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'tuple' object has no attribute 'insert'' saat menggunakan insert() pada tuple?",
+                "question_code": "data = (1, 2, 3)\ndata.insert(1, 4)",
+                "answer": "Error ini terjadi karena method insert() tidak tersedia untuk tuple. Tuple adalah struktur data yang tidak dapat diubah setelah dibuat. Gunakan list jika Anda memerlukan operasi insert().",
+                "answer_code": "data = [1, 2, 3]\ndata.insert(1, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be an integer' saat menggunakan string sebagai indeks?",
+                "question_code": "values = [5, 6, 7]\nvalues.insert('one', 8)",
+                "answer": "Error ini terjadi karena indeks pada insert() harus berupa integer. Pastikan untuk menggunakan integer sebagai argumen pertama.",
+                "answer_code": "values = [5, 6, 7]\nvalues.insert(1, 8)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be a single item' saat mencoba menyisipkan list dalam list?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.insert(1, [4, 5])",
+                "answer": "Error ini terjadi karena method insert() hanya dapat menambahkan satu elemen pada indeks yang ditentukan. Untuk menambahkan beberapa elemen, gunakan metode extend() atau loop untuk menambahkannya satu per satu.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.insert(1, 4)\nmy_list.insert(2, 5)"
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python Today",
+        "penulis": "Emily Davis",
+        "tanggal": "2024-10-31",
+        "judul": "Cara Menyisipkan Elemen pada Posisi Spesifik dalam List Menggunakan insert()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "insert", "Pemula"],
+        "konten": "Artikel ini memberikan panduan mengenai cara menggunakan method insert() untuk menyisipkan elemen pada posisi tertentu dalam list. Dengan menggunakan method ini, Anda bisa menambahkan elemen baru tanpa mengubah elemen yang sudah ada.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen 'cherry' pada posisi ke-2 di dalam list fruits menggunakan method insert()?",
+                "answer": "Gunakan kode berikut: fruits.insert(2, 'cherry'). Ini akan menambahkan 'cherry' pada posisi indeks ke-2 dalam list fruits, menggeser elemen lainnya ke kanan."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menyisipkan elemen pada indeks 0 dalam list yang sudah ada?",
+                "answer": "Menyisipkan elemen pada indeks 0 akan menempatkan elemen baru di awal list. Semua elemen yang ada sebelumnya akan digeser satu posisi ke kanan."
+            },
+            {
+                "question": "Bagaimana caranya menyisipkan string 'world' pada indeks ke-0 dalam list greetings?",
+                "answer": "Gunakan kode berikut: greetings.insert(0, 'world'). Ini akan menambahkan 'world' pada posisi indeks ke-0 dalam list greetings."
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be a single item' saat menggunakan dictionary sebagai elemen?",
+                "question_code": "data = [1, 2, 3]\ndata.insert(1, {'key': 'value'})",
+                "answer": "Error ini terjadi karena insert() hanya dapat menambahkan satu elemen pada indeks yang ditentukan. Dictionary adalah satu elemen, jadi tidak ada masalah dengan penggunaannya di sini. Periksa apakah data lain yang dimasukkan menyebabkan error.",
+                "answer_code": "data = [1, 2, 3]\ndata.insert(1, 'new_item')"
+            },
+            {
+                "question": "Kenapa muncul error 'ValueError: too many values to unpack (expected 2)' saat mencoba menggunakan lebih dari dua argumen pada insert()?",
+                "question_code": "items = [1, 2, 3]\nitems.insert(2, 4, 5)",
+                "answer": "Error ini muncul karena method insert() hanya menerima dua argumen: indeks dan elemen. Pastikan hanya memberikan dua argumen untuk menghindari error.",
+                "answer_code": "items = [1, 2, 3]\nitems.insert(2, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list index out of range' ketika mencoba menyisipkan elemen pada indeks negatif yang lebih kecil dari -len(list)?",
+                "question_code": "elements = [10, 20, 30]\nelements.insert(-5, 40)",
+                "answer": "Error ini terjadi karena indeks negatif yang lebih kecil dari -len(list) di luar jangkauan list. Gunakan indeks yang valid atau metode append() untuk menambahkan elemen di akhir list.",
+                "answer_code": "elements = [10, 20, 30]\nelements.insert(3, 40)"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'set' object has no attribute 'insert'' saat menggunakan insert() pada set?",
+                "question_code": "my_set = {1, 2, 3}\nmy_set.insert(1, 4)",
+                "answer": "Error ini muncul karena method insert() tidak berlaku untuk set. Set adalah struktur data yang tidak mendukung operasi insert(). Gunakan list untuk operasi seperti ini.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.insert(1, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be an integer' saat menggunakan string sebagai indeks?",
+                "question_code": "values = [1, 2, 3]\nvalues.insert('two', 4)",
+                "answer": "Error ini terjadi karena indeks pada insert() harus berupa integer. Pastikan untuk menggunakan integer sebagai argumen pertama.",
+                "answer_code": "values = [1, 2, 3]\nvalues.insert(1, 4)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: insert() argument must be a single item' saat mencoba menyisipkan beberapa elemen sekaligus?",
+                "question_code": "data = [1, 2, 3]\ndata.insert(1, [4, 5])",
+                "answer": "Error ini muncul karena method insert() hanya menerima satu elemen untuk disisipkan. Untuk menambahkan beberapa elemen, gunakan metode extend() atau loop.",
+                "answer_code": "data = [1, 2, 3]\ndata.insert(1, 4)\ndata.insert(2, 5)"
+            }
+        ]
+    }
+]

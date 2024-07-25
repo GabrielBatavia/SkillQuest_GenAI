@@ -1,0 +1,179 @@
+[
+    {
+        "sumber": "w3schools.com",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-07-22",
+        "judul": "Memahami Variabel dan Tipe Data di Python",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "variabel", "tipe data"],
+        "konten": "Artikel ini menjelaskan bagaimana cara mendeklarasikan variabel dan memahami berbagai tipe data dalam Python.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu tipe data integer dalam Python?",
+                "answer": "Tipe data integer (int) adalah tipe data yang digunakan untuk menyimpan bilangan bulat, contohnya: 10, -5, 0."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel bertipe float?",
+                "answer": "Variabel bertipe float dideklarasikan dengan memberikan nilai desimal, contohnya: `x = 5.0`."
+            },
+            {
+                "question": "Apa itu tipe data string dalam Python?",
+                "answer": "Tipe data string (str) digunakan untuk menyimpan teks, misalnya: 'Python' atau \"Hello, World!\"."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi `type()` untuk memeriksa tipe data?",
+                "question_code": "x = 10\nprint(type(x))",
+                "answer": "Fungsi `type()` digunakan untuk memeriksa tipe data dari suatu variabel, contohnya: `print(type(x))`.",
+                "answer_code": "<class 'int'>"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi string menjadi integer?",
+                "question_code": "str_number = '123'\nnumber = int(str_number)",
+                "answer": "String dapat dikonversi menjadi integer menggunakan fungsi `int()`, contohnya: `number = int(str_number)`.",
+                "answer_code": "123"
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data list dalam Python?",
+                "question_code": "my_list = [1, 2, 3, 4]",
+                "answer": "Tipe data list adalah kumpulan item yang bisa memiliki berbagai tipe data, contohnya: `[1, 2, 3, 4]`.",
+                "answer_code": "[1, 2, 3, 4]"
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen ke dalam list?",
+                "question_code": "my_list = [1, 2]\nmy_list.append(3)",
+                "answer": "Elemen dapat ditambahkan ke list menggunakan metode `append()`, contohnya: `my_list.append(3)`.",
+                "answer_code": "[1, 2, 3]"
+            },
+            {
+                "question": "Bagaimana cara melakukan slicing pada list?",
+                "question_code": "my_list = [1, 2, 3, 4, 5]\nsub_list = my_list[1:4]",
+                "answer": "Slicing pada list dilakukan dengan menggunakan notasi indeks, contohnya: `sub_list = my_list[1:4]`.",
+                "answer_code": "[2, 3, 4]"
+            },
+            {
+                "question": "Bagaimana cara menghitung panjang list?",
+                "question_code": "my_list = [1, 2, 3]\nlength = len(my_list)",
+                "answer": "Panjang list dapat dihitung menggunakan fungsi `len()`, contohnya: `length = len(my_list)`.",
+                "answer_code": "3"
+            }
+        ]
+    },
+    {
+        "sumber": "geeksforgeeks.org",
+        "penulis": "Robert Brown",
+        "tanggal": "2024-07-21",
+        "judul": "Dasar-Dasar Sintaks Python untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "pemula"],
+        "konten": "Panduan ini memberikan penjelasan dasar mengenai sintaks Python dan cara penggunaannya untuk pemula.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu `print()` dalam Python?",
+                "answer": "Fungsi `print()` digunakan untuk menampilkan output ke layar, contohnya: `print('Hello, World!')`."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan fungsi sederhana dalam Python?",
+                "answer": "Fungsi sederhana dapat didefinisikan menggunakan kata kunci `def`, contohnya: `def greet(): return 'Hello!'`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan loop dalam Python?",
+                "answer": "Loop adalah struktur kontrol yang digunakan untuk mengulangi blok kode beberapa kali, seperti `for` dan `while`."
+            },
+            {
+                "question": "Bagaimana cara membuat loop `for` yang mengiterasi melalui list?",
+                "question_code": "my_list = [1, 2, 3]\nfor item in my_list:\n    print(item)",
+                "answer": "Loop `for` digunakan untuk iterasi melalui elemen list, contohnya: `for item in my_list: print(item)`.",
+                "answer_code": "1\n2\n3"
+            },
+            {
+                "question": "Bagaimana cara menggunakan loop `while`?",
+                "question_code": "i = 0\nwhile i < 3:\n    print(i)\n    i += 1",
+                "answer": "Loop `while` digunakan untuk menjalankan blok kode selama kondisi bernilai True, contohnya: `while i < 3: print(i); i += 1`.",
+                "answer_code": "0\n1\n2"
+            },
+            {
+                "question": "Apa yang dimaksud dengan operator aritmatika dalam Python?",
+                "question_code": "x = 10\ny = 5\nresult = x + y",
+                "answer": "Operator aritmatika digunakan untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian, contohnya: `result = x + y`.",
+                "answer_code": "15"
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah suatu elemen ada dalam string?",
+                "question_code": "my_string = 'Python'\nif 'P' in my_string:\n    print('Ada')",
+                "answer": "Keberadaan elemen dalam string dapat diperiksa menggunakan kata kunci `in`, contohnya: `if 'P' in my_string: print('Ada')`.",
+                "answer_code": "Ada"
+            },
+            {
+                "question": "Bagaimana cara mengubah string menjadi huruf kecil semua?",
+                "question_code": "my_string = 'HELLO'\nlower_string = my_string.lower()",
+                "answer": "String dapat diubah menjadi huruf kecil semua menggunakan metode `lower()`, contohnya: `lower_string = my_string.lower()`.",
+                "answer_code": "hello"
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen terakhir dari list?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list.pop()",
+                "answer": "Elemen terakhir dari list dapat dihapus menggunakan metode `pop()`, contohnya: `my_list.pop()`.",
+                "answer_code": "[1, 2]"
+            }
+        ]
+    },
+    {
+        "sumber": "tutorialspoint.com",
+        "penulis": "Emily White",
+        "tanggal": "2024-07-19",
+        "judul": "Memulai dengan Sintaks Python: Panduan untuk Pemula",
+        "tingkat_kesulitan": "pemula",
+        "tag": ["python", "syntax", "tutorial"],
+        "konten": "Panduan ini dirancang untuk membantu pemula memahami sintaks dasar Python dan bagaimana menerapkannya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan `input()` dalam Python?",
+                "answer": "Fungsi `input()` digunakan untuk mendapatkan input dari pengguna, contohnya: `name = input('Masukkan nama: ')`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan operator perbandingan dalam Python?",
+                "answer": "Operator perbandingan seperti `==`, `!=`, `<`, `>`, `<=`, dan `>=` digunakan untuk membandingkan nilai, contohnya: `x == 5`."
+            },
+            {
+                "question": "Apa itu tuple dalam Python?",
+                "answer": "Tuple adalah struktur data yang mirip dengan list, tetapi tidak dapat diubah (immutable), contohnya: `(1, 2, 3)`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan tuple?",
+                "question_code": "my_tuple = (1, 2, 3)",
+                "answer": "Tuple dideklarasikan dengan menggunakan tanda kurung, contohnya: `my_tuple = (1, 2, 3)`.",
+                "answer_code": "(1, 2, 3)"
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam tuple?",
+                "question_code": "my_tuple = (1, 2, 3)\nelement = my_tuple[1]",
+                "answer": "Elemen dalam tuple dapat diakses menggunakan indeks, contohnya: `element = my_tuple[1]`.",
+                "answer_code": "2"
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode `join()` pada string?",
+                "question_code": "separator = '-'\nresult = separator.join(['a', 'b', 'c'])",
+                "answer": "Metode `join()` digunakan untuk menggabungkan elemen dalam list menjadi satu string dengan pemisah yang ditentukan, contohnya: `result = separator.join(['a', 'b', 'c'])`.",
+                "answer_code": "a-b-c"
+            },
+            {
+                "question": "Apa itu dictionary dalam Python?",
+                "question_code": "my_dict = {'key1': 'value1', 'key2': 'value2'}",
+                "answer": "Dictionary adalah struktur data yang menyimpan pasangan kunci-nilai, contohnya: `my_dict = {'key1': 'value1', 'key2': 'value2'}`.",
+                "answer_code": "{'key1': 'value1', 'key2': 'value2'}"
+            },
+            {
+                "question": "Bagaimana cara menambah item ke dictionary?",
+                "question_code": "my_dict = {'key1': 'value1'}\nmy_dict['key2'] = 'value2'",
+                "answer": "Item baru dapat ditambahkan ke dictionary dengan menetapkan nilai untuk kunci baru, contohnya: `my_dict['key2'] = 'value2'`.",
+                "answer_code": "{'key1': 'value1', 'key2': 'value2'}"
+            },
+            {
+                "question": "Bagaimana cara menghapus item dari dictionary?",
+                "question_code": "my_dict = {'key1': 'value1', 'key2': 'value2'}\nmy_dict.pop('key1')",
+                "answer": "Item dari dictionary dapat dihapus menggunakan metode `pop()`, contohnya: `my_dict.pop('key1')`.",
+                "answer_code": "{'key2': 'value2'}"
+            }
+        ]
+    }
+]
