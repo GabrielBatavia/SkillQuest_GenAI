@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "Python Mastery",
+        "penulis": "Emily Davis",
+        "tanggal": "2024-12-30",
+        "judul": "List Comprehension: Membuat Kode Python Lebih Efisien",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Panduan ini menawarkan wawasan praktis tentang penggunaan list comprehension dalam Python. Teknik ini memungkinkan Anda menulis kode yang lebih ringkas dan mudah dibaca.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda memiliki dua list, `[3, 6, 9]` dan `[2, 4, 6]`, bagaimana Anda dapat membuat list yang berisi hasil perkalian dari setiap elemen dalam kedua list yang terletak pada posisi yang sama?",
+                "answer": "Gunakan kode berikut: `[a * b for a, b in zip([3, 6, 9], [2, 4, 6])]`. Ini akan menghasilkan list `[6, 24, 54]`."
+            },
+            {
+                "question": "Anda diberi string `'artificial intelligence'`. Bagaimana Anda bisa membuat list dari setiap huruf konsonan dalam string tersebut, mengabaikan huruf vokal dan spasi?",
+                "answer": "Gunakan kode berikut: `[char for char in 'artificial intelligence' if char not in 'aeiou ']`. Ini akan menghasilkan list `['r', 't', 'f', 'c', 'l', 't', 'l', 'g', 'n', 'c']`."
+            },
+            {
+                "question": "Bagaimana Anda bisa menghasilkan list dari panjang setiap kata dalam kalimat `'I love Python programming'`, tetapi hanya untuk kata-kata yang panjangnya lebih dari 3 karakter?",
+                "answer": "Gunakan kode berikut: `[len(word) for word in 'I love Python programming'.split() if len(word) > 3]`. Ini akan menghasilkan list `[5, 7, 11]`."
+            },
+            {
+                "question": "Anda memiliki list berisi angka `[4, 8, 12, 16]`. Bagaimana Anda bisa membuat list baru yang berisi angka-angka tersebut yang jika dibagi 4, hasilnya adalah angka genap?",
+                "answer": "Gunakan kode berikut: `[x for x in [4, 8, 12, 16] if (x // 4) % 2 == 0]`. Ini akan menghasilkan list `[4, 12]`."
+            },
+            {
+                "question": "Bagaimana Anda bisa memfilter list yang berisi hasil kuadrat dari angka-angka dari 1 hingga 10, tetapi hanya menyertakan kuadrat yang merupakan angka ganjil?",
+                "question_code": "[x**2 for x in range(1, 11) if (x**2) % 2 != 0]",
+                "answer": "Gunakan kode berikut: `[x**2 for x in range(1, 11) if (x**2) % 2 != 0]`. Ini akan menghasilkan list `[1, 9, 25, 49, 81]`.",
+                "answer_code": "[x**2 for x in range(1, 11) if (x**2) % 2 != 0]"
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk membuat list dari setiap string dalam list `['A', 'b', 'C', 'd']` yang diubah menjadi huruf besar, tetapi hanya jika huruf tersebut adalah huruf vokal?",
+                "question_code": "[char.upper() for char in ['A', 'b', 'C', 'd'] if char.lower() in 'aeiou']",
+                "answer": "Gunakan kode berikut: `[char.upper() for char in ['A', 'b', 'C', 'd'] if char.lower() in 'aeiou']`. Ini akan menghasilkan list `['A']`.",
+                "answer_code": "[char.upper() for char in ['A', 'b', 'C', 'd'] if char.lower() in 'aeiou']"
+            },
+            {
+                "question": "Anda memiliki list `['apple', 'banana', 'cherry', 'date']`. Bagaimana cara membuat list baru yang hanya berisi nama-nama buah dengan panjang karakter yang lebih dari 5, tetapi setiap nama buah dalam huruf kapital?",
+                "answer": "Gunakan kode berikut: `[fruit.upper() for fruit in ['apple', 'banana', 'cherry', 'date'] if len(fruit) > 5]`. Ini akan menghasilkan list `['BANANA', 'CHERRY']`."
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Newbies",
+        "penulis": "Sophia Lee",
+        "tanggal": "2024-12-31",
+        "judul": "Panduan List Comprehension untuk Pemula: Tips dan Trik",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini membahas cara-cara praktis menggunakan list comprehension untuk pemula. Teknik ini menawarkan cara yang lebih bersih dan efisien untuk menangani berbagai operasi pada list.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda memiliki list angka `[10, 20, 30, 40, 50]`, bagaimana Anda bisa membuat list baru yang hanya berisi angka-angka yang lebih kecil dari 40 dan merupakan kelipatan 10?",
+                "answer": "Gunakan kode berikut: `[x for x in [10, 20, 30, 40, 50] if x < 40 and x % 10 == 0]`. Ini akan menghasilkan list `[10, 20, 30]`."
+            },
+            {
+                "question": "Bagaimana Anda dapat menghasilkan list yang berisi angka-angka dalam rentang dari 0 hingga 15 yang jika dibagi 3, menghasilkan angka yang lebih besar dari 2?",
+                "answer": "Gunakan kode berikut: `[x for x in range(16) if x % 3 > 2]`. Ini akan menghasilkan list `[9, 15]`."
+            },
+            {
+                "question": "Anda diberi string `'quick brown fox'`. Bagaimana Anda bisa menghasilkan list yang hanya berisi karakter-karakter yang muncul lebih dari satu kali dalam string tersebut?",
+                "answer": "Gunakan kode berikut: `[char for char in set('quick brown fox') if 'quick brown fox'.count(char) > 1]`. Ini akan menghasilkan list `[' ', 'o']`."
+            },
+            {
+                "question": "Jika Anda ingin membuat list dari setiap angka dalam list `[5, 7, 9]` yang dibagi 2 dan hasilnya adalah bilangan bulat lebih dari 3, bagaimana Anda melakukannya?",
+                "answer": "Gunakan kode berikut: `[x // 2 for x in [5, 7, 9] if x // 2 > 3]`. Ini akan menghasilkan list `[4]`."
+            },
+            {
+                "question": "Bagaimana Anda bisa menghasilkan sebuah list dari setiap nama dalam list `['Alice', 'Bob', 'Charlie']` yang mengandung huruf 'e', tetapi dengan huruf awal yang diubah menjadi huruf kecil?",
+                "question_code": "[name.lower() for name in ['Alice', 'Bob', 'Charlie'] if 'e' in name]",
+                "answer": "Gunakan kode berikut: `[name.lower() for name in ['Alice', 'Bob', 'Charlie'] if 'e' in name]`. Ini akan menghasilkan list `['alice', 'charlie']`.",
+                "answer_code": "[name.lower() for name in ['Alice', 'Bob', 'Charlie'] if 'e' in name]"
+            },
+            {
+                "question": "Bagaimana Anda dapat membuat list yang berisi setiap string dalam list `['green', 'blue', 'red']` dengan panjang lebih dari 3 karakter, tetapi hanya huruf vokal yang akan diubah menjadi huruf kapital?",
+                "question_code": "[''.join(char.upper() if char in 'aeiou' else char for char in color) for color in ['green', 'blue', 'red'] if len(color) > 3]",
+                "answer": "Gunakan kode berikut: `[ ''.join(char.upper() if char in 'aeiou' else char for char in color) for color in ['green', 'blue', 'red'] if len(color) > 3 ]`. Ini akan menghasilkan list `['grEEEn', 'blUE']`.",
+                "answer_code": "[ ''.join(char.upper() if char in 'aeiou' else char for char in color) for color in ['green', 'blue', 'red'] if len(color) > 3 ]"
+            }
+        ]
+    }
+]

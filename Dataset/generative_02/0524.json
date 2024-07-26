@@ -1,0 +1,68 @@
+[
+    {
+        "sumber": "Mastering Basic Sorting in Python",
+        "penulis": "Claire Johnson",
+        "tanggal": "2024-12-22",
+        "judul": "Memahami Pengurutan Elemen dalam List: Panduan Praktis dengan Metode sort()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Artikel ini membahas dasar-dasar penggunaan metode sort() di Python dengan berbagai contoh praktis. Fokus pada teknik-teknik pengurutan yang umum dan penerapannya dalam situasi nyata.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda bekerja dengan daftar waktu acara dan ingin mengaturnya untuk membuat jadwal yang logis, bagaimana Anda menangani list yang berisi waktu dalam format jam:menit seperti `['15:45', '09:30', '12:15']`? Apa yang perlu dipertimbangkan untuk memastikan pengurutan yang tepat?",
+                "answer": "Anda bisa menggunakan kode berikut: `times = ['15:45', '09:30', '12:15']; times.sort(key=lambda t: (int(t.split(':')[0]), int(t.split(':')[1])))`. Ini akan menghasilkan `['09:30', '12:15', '15:45']`, mengurutkan waktu berdasarkan jam dan menit."
+            },
+            {
+                "question": "Bayangkan Anda memiliki daftar nama yang ingin diurutkan berdasarkan panjang nama dan kemudian berdasarkan urutan alfabet jika panjangnya sama. Dengan list `['John', 'Alexandra', 'Mike', 'Sara']`, bagaimana Anda mengatur urutan nama-nama tersebut?",
+                "answer": "Gunakan kode berikut: `names = ['John', 'Alexandra', 'Mike', 'Sara']; names.sort(key=lambda name: (len(name), name))`. Ini akan menghasilkan `['John', 'Mike', 'Sara', 'Alexandra']`, mengurutkan berdasarkan panjang nama dan secara alfabetis jika panjang nama sama."
+            },
+            {
+                "question": "Jika Anda memiliki daftar produk dengan harga dan ingin mengurutkan berdasarkan harga dalam format string seperti `['12.99', '8.49', '25.00']`, bagaimana Anda bisa menyusunnya sehingga harga lebih rendah muncul terlebih dahulu?",
+                "answer": "Gunakan kode berikut: `prices = ['12.99', '8.49', '25.00']; prices.sort(key=lambda p: float(p))`. Ini akan menghasilkan `['8.49', '12.99', '25.00']`, mengurutkan harga berdasarkan nilai numeriknya."
+            },
+            {
+                "question": "Anda bekerja dengan daftar film yang memiliki tag genre dan ingin mengurutkan berdasarkan genre dan kemudian berdasarkan nama film. Misalnya, dengan daftar `['action:Die Hard', 'comedy:Superbad', 'action:Mad Max']`, bagaimana cara mengaturnya?",
+                "answer": "Gunakan kode berikut: `movies = ['action:Die Hard', 'comedy:Superbad', 'action:Mad Max']; movies.sort(key=lambda m: (m.split(':')[0], m.split(':')[1]))`. Ini akan menghasilkan `['action:Die Hard', 'action:Mad Max', 'comedy:Superbad']`, mengurutkan berdasarkan genre dan nama film."
+            },
+            {
+                "question": "Anda memiliki daftar kegiatan dengan waktu dan prioritas seperti `['8:00 - Breakfast', '12:00 - Meeting', '18:00 - Gym']`, dan ingin mengurutkan kegiatan berdasarkan waktu, bagaimana cara mengaturnya?",
+                "answer": "Gunakan kode berikut: `activities = ['8:00 - Breakfast', '12:00 - Meeting', '18:00 - Gym']; activities.sort(key=lambda a: a.split(' ')[0])`. Ini akan menghasilkan `['8:00 - Breakfast', '12:00 - Meeting', '18:00 - Gym']`, mengurutkan kegiatan berdasarkan waktu."
+            },
+            {
+                "question": "Dalam kasus di mana Anda memiliki daftar objek yang masing-masing memiliki tanggal dan deskripsi, dan Anda ingin mengurutkannya berdasarkan tanggal terlebih dahulu, bagaimana Anda bisa menyusunnya jika daftar Anda adalah `['2024-07-25:Event A', '2023-12-01:Event B']`?",
+                "answer": "Gunakan kode berikut: `events = ['2024-07-25:Event A', '2023-12-01:Event B']; events.sort(key=lambda e: datetime.strptime(e.split(':')[0], '%Y-%m-%d'))`. Ini akan menghasilkan `['2023-12-01:Event B', '2024-07-25:Event A']`, mengurutkan berdasarkan tanggal."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Sorting Fundamentals",
+        "penulis": "David Lee",
+        "tanggal": "2024-12-23",
+        "judul": "Dasar-dasar Pengurutan Elemen dalam List dengan Metode sort() di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Artikel ini menjelaskan penggunaan dasar metode sort() dalam Python. Disertai dengan berbagai contoh untuk menunjukkan bagaimana mengurutkan list berdasarkan berbagai kriteria.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa mengurutkan daftar nama-nama negara yang memiliki panjang nama yang berbeda? Misalnya, dengan list `['Brazil', 'USA', 'France', 'Germany']`, apa yang perlu dilakukan untuk mengurutkan nama berdasarkan panjang nama terlebih dahulu, kemudian alfabetis jika panjangnya sama?",
+                "answer": "Gunakan kode berikut: `countries = ['Brazil', 'USA', 'France', 'Germany']; countries.sort(key=lambda c: (len(c), c))`. Ini akan menghasilkan `['USA', 'France', 'Brazil', 'Germany']`, diurutkan berdasarkan panjang nama dan secara alfabetis jika panjang nama sama."
+            },
+            {
+                "question": "Jika Anda memiliki daftar angka dalam format string yang ingin diurutkan dalam urutan menaik, bagaimana Anda bisa memastikan pengurutan yang benar? Misalnya, dengan list `['50', '20', '10']`, apa kode yang diperlukan?",
+                "answer": "Gunakan kode berikut: `numbers = ['50', '20', '10']; numbers.sort(key=int)`. Ini akan menghasilkan `['10', '20', '50']`, mengurutkan angka berdasarkan nilai numeriknya."
+            },
+            {
+                "question": "Anda bekerja dengan daftar teks yang memiliki pola tertentu seperti `['task:Finish Homework', 'task:Go Grocery Shopping', 'note:Call Mom']`. Bagaimana Anda bisa mengurutkan berdasarkan kategori dan kemudian deskripsi?",
+                "answer": "Gunakan kode berikut: `entries = ['task:Finish Homework', 'task:Go Grocery Shopping', 'note:Call Mom']; entries.sort(key=lambda e: (e.split(':')[0], e.split(':')[1]))`. Ini akan menghasilkan `['note:Call Mom', 'task:Finish Homework', 'task:Go Grocery Shopping']`, diurutkan berdasarkan kategori dan deskripsi."
+            },
+            {
+                "question": "Jika Anda memiliki daftar objek dengan informasi yang terpisah seperti `['Alice, 5', 'Bob, 3']` di mana angka menunjukkan nilai yang ingin diurutkan, bagaimana Anda bisa mengurutkan berdasarkan nilai numerik?",
+                "answer": "Gunakan kode berikut: `data = ['Alice, 5', 'Bob, 3']; data.sort(key=lambda d: int(d.split(', ')[1]))`. Ini akan menghasilkan `['Bob, 3', 'Alice, 5']`, mengurutkan berdasarkan nilai numerik."
+            },
+            {
+                "question": "Anda memiliki daftar produk dengan tanggal kedaluwarsa dan ingin mengurutkannya berdasarkan tanggal tersebut. Misalnya, dengan daftar `['2024-06-30:Milk', '2024-01-15:Cheese']`, bagaimana cara mengaturnya?",
+                "answer": "Gunakan kode berikut: `products = ['2024-06-30:Milk', '2024-01-15:Cheese']; products.sort(key=lambda p: datetime.strptime(p.split(':')[0], '%Y-%m-%d'))`. Ini akan menghasilkan `['2024-01-15:Cheese', '2024-06-30:Milk']`, mengurutkan berdasarkan tanggal kedaluwarsa."
+            }
+        ]
+    }
+]

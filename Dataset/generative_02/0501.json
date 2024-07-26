@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Emily Johnson",
+        "tanggal": "2024-12-10",
+        "judul": "Contoh Praktis List Comprehension di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini memberikan beberapa contoh praktis penggunaan list comprehension dalam Python. List comprehension adalah metode yang efisien untuk membuat dan memanipulasi list dengan cara yang lebih ringkas dibandingkan dengan metode tradisional.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list yang berisi hasil pangkat dua dari setiap elemen dalam list `[1, 2, 3, 4, 5]` menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `[x**2 for x in [1, 2, 3, 4, 5]]`. Ini akan menghasilkan list `[1, 4, 9, 16, 25]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[x + 5 for x in range(3)]`?",
+                "answer": "Outputnya adalah `[5, 6, 7]`, karena setiap elemen dalam rentang 0 hingga 2 ditambah 5."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension untuk menghasilkan list dari semua angka genap dalam list `[10, 15, 20, 25, 30]`?",
+                "answer": "Contoh kodenya adalah `[x for x in [10, 15, 20, 25, 30] if x % 2 == 0]`. Ini akan menghasilkan list `[10, 20, 30]`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk membuat list yang berisi panjang dari setiap string dalam list `['apple', 'banana', 'cherry']`?",
+                "answer": "Gunakan kode berikut: `[len(word) for word in ['apple', 'banana', 'cherry']]`. Ini akan menghasilkan list `[5, 6, 6]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not iterable', saya tidak paham?",
+                "question_code": "[x for x in 123]",
+                "answer": "Error ini terjadi karena `123` bukan tipe data yang dapat diiterasi. Pastikan untuk menggunakan iterable seperti list atau string.",
+                "answer_code": "[x for x in range(3)]"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham?",
+                "question_code": "[x for x in range(3) if x % 2 == 0]",
+                "answer": "Error ini mungkin disebabkan oleh kesalahan sintaks lain di luar list comprehension. Kode di atas sebenarnya valid dan akan menghasilkan `[0, 2]`. Periksa sintaks di seluruh kode Anda.",
+                "answer_code": "[x for x in range(3) if x % 2 == 0]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk membuat list dari huruf-huruf unik dalam string 'hello'?",
+                "answer": "Gunakan kode berikut: `[char for char in set('hello')]`. Ini akan menghasilkan list yang berisi huruf unik dari string tersebut, seperti `['h', 'e', 'l', 'o']`."
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Michael Brown",
+        "tanggal": "2024-12-11",
+        "judul": "List Comprehension: Contoh Praktis untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini memberikan berbagai contoh praktis list comprehension di Python untuk pemula. List comprehension memungkinkan pembuatan list baru dengan menerapkan ekspresi pada elemen iterable dengan cara yang ringkas dan efisien.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk membuat list yang berisi angka ganjil dari 1 hingga 9?",
+                "answer": "Gunakan kode berikut: `[x for x in range(1, 10) if x % 2 != 0]`. Ini akan menghasilkan list `[1, 3, 5, 7, 9]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[x*2 for x in [1, 2, 3, 4]]`?",
+                "answer": "Outputnya adalah `[2, 4, 6, 8]`, karena setiap elemen dalam list dikalikan dengan 2."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension untuk menyaring elemen lebih besar dari 5 dari list `[3, 6, 9, 12]`?",
+                "answer": "Contoh kodenya adalah `[x for x in [3, 6, 9, 12] if x > 5]`. Ini akan menghasilkan list `[6, 9, 12]`."
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk menghasilkan list dari string dalam list yang semuanya huruf kecil?",
+                "answer": "Gunakan kode berikut: `[word.lower() for word in ['HELLO', 'WORLD']]`. Ini akan menghasilkan list `['hello', 'world']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'ValueError: too many values to unpack', saya tidak paham?",
+                "question_code": "[a, b for a in range(5)]",
+                "answer": "Error ini terjadi karena list comprehension harus menghasilkan satu nilai per iterasi. Untuk unpacking, pastikan format list comprehension sesuai dengan jumlah nilai yang diharapkan.",
+                "answer_code": "[x for x in range(5)]"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "[lst[i] for i in range(len(lst))]",
+                "answer": "Error ini mungkin disebabkan oleh akses indeks yang tidak valid. Pastikan indeks yang digunakan berada dalam rentang yang sesuai dengan ukuran list.",
+                "answer_code": "[lst[i] for i in range(len(lst))]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk menghasilkan list dari bilangan kuadrat dari list `[1, 2, 3, 4]`?",
+                "answer": "Gunakan kode berikut: `[x**2 for x in [1, 2, 3, 4]]`. Ini akan menghasilkan list `[1, 4, 9, 16]`."
+            }
+        ]
+    }
+]

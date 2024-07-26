@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Python Basics Guide",
+        "penulis": "Laura Thompson",
+        "tanggal": "2024-12-15",
+        "judul": "Mengurutkan Elemen dalam List dengan Metode sort()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Artikel ini menjelaskan cara menggunakan metode sort() untuk mengurutkan elemen dalam list di Python. Metode sort() mengurutkan list secara in-place dan tidak mengembalikan list baru.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda memiliki list yang berisi angka-angka acak seperti [15, 3, 9, 6, 12], bagaimana Anda dapat mengurutkannya dalam urutan menaik menggunakan metode sort()? Bagaimana jika Anda ingin mengurutkan list yang berisi angka negatif?",
+                "answer": "Gunakan kode berikut: `my_list = [15, 3, 9, 6, 12]; my_list.sort()`. Setelah eksekusi, `my_list` akan menjadi `[3, 6, 9, 12, 15]`. Untuk list yang berisi angka negatif, seperti `[-7, 2, 0, -5]`, kode yang sama akan menghasilkan `[-7, -5, 0, 2]`."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba mengurutkan list yang berisi elemen berbeda jenis, seperti string dan angka, menggunakan metode sort()?",
+                "answer": "Python tidak dapat mengurutkan list yang berisi elemen dengan tipe data berbeda secara langsung. Misalnya, kode berikut: `mixed_list = [1, 'two', 3]; mixed_list.sort()` akan menghasilkan error. Semua elemen dalam list harus memiliki tipe data yang sama."
+            },
+            {
+                "question": "Bagaimana Anda dapat menggunakan metode sort() untuk mengurutkan list yang berisi string berdasarkan panjang string?",
+                "answer": "Gunakan parameter `key` untuk menentukan kriteria pengurutan. Contoh: `strings = ['pear', 'apple', 'banana']; strings.sort(key=len)`. Ini akan menghasilkan `['pear', 'apple', 'banana']` karena urutan berdasarkan panjang string."
+            },
+            {
+                "question": "Jika Anda memiliki list dari tuple seperti `[(1, 'apple'), (3, 'banana'), (2, 'cherry')]` dan ingin mengurutkan list berdasarkan elemen kedua dari setiap tuple, bagaimana Anda bisa melakukannya?",
+                "answer": "Gunakan kode berikut: `list_of_tuples = [(1, 'apple'), (3, 'banana'), (2, 'cherry')]; list_of_tuples.sort(key=lambda x: x[1])`. Ini akan menghasilkan `[(1, 'apple'), (2, 'cherry'), (3, 'banana')]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not callable' ketika Anda mencoba menggunakan metode sort() pada list?",
+                "question_code": "my_list = [1, 2, 3]; sort = 5; my_list.sort()",
+                "answer": "Error ini terjadi karena Anda telah mengubah nama fungsi `sort` menjadi sebuah integer. Pastikan nama variabel tidak sama dengan nama metode atau fungsi. Gunakan nama variabel yang berbeda, seperti `my_list = [1, 2, 3]; my_list.sort()`. Jangan gunakan nama `sort` sebagai variabel.",
+                "answer_code": "my_list = [1, 2, 3]; my_list.sort()"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range' ketika Anda menggunakan metode sort() pada list dengan elemen yang memiliki nilai indeks yang terlalu besar?",
+                "question_code": "my_list = [10, 20, 30]; my_list.sort(key=lambda x: x[1])",
+                "answer": "Error ini terjadi karena lambda function `key` mencoba mengakses indeks yang tidak ada dalam elemen list. Pastikan lambda function hanya mengakses indeks yang valid untuk elemen dalam list. Misalnya, gunakan `key=lambda x: x` jika elemen list adalah integer.",
+                "answer_code": "my_list = [10, 20, 30]; my_list.sort(key=lambda x: x)"
+            },
+            {
+                "question": "Bagaimana Anda dapat mengurutkan list dari list berdasarkan total elemen dalam setiap sublist?",
+                "answer": "Gunakan parameter `key` untuk menentukan kriteria pengurutan. Contoh: `list_of_lists = [[1, 2], [1, 2, 3], [1]]; list_of_lists.sort(key=len)`. Ini akan menghasilkan `[[1], [1, 2], [1, 2, 3]]` karena urutan berdasarkan panjang setiap sublist."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming for Beginners",
+        "penulis": "James Clark",
+        "tanggal": "2024-12-16",
+        "judul": "Cara Mengurutkan List dengan Metode sort() di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Panduan ini membahas penggunaan metode sort() untuk mengurutkan list di Python. Metode ini sangat berguna untuk mengatur data dalam urutan tertentu dan sangat efisien.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang akan terjadi jika Anda mencoba mengurutkan list yang berisi dictionary menggunakan metode sort()?",
+                "answer": "Python tidak dapat mengurutkan list yang berisi dictionary secara langsung menggunakan metode sort(). Misalnya, kode berikut: `dict_list = [{'a': 1}, {'b': 2}]; dict_list.sort()` akan menghasilkan error. Anda perlu menentukan kriteria pengurutan dengan parameter `key` jika dictionary berisi kunci yang sama."
+            },
+            {
+                "question": "Bagaimana Anda dapat mengurutkan list angka desimal dari yang terkecil hingga terbesar?",
+                "answer": "Gunakan kode berikut: `decimal_numbers = [3.5, 1.2, 4.8, 2.3]; decimal_numbers.sort()`. Ini akan menghasilkan `[1.2, 2.3, 3.5, 4.8]`."
+            },
+            {
+                "question": "Jika Anda memiliki list yang berisi string panjang dan pendek dan ingin mengurutkannya berdasarkan urutan terbalik dari panjang string, bagaimana Anda bisa melakukannya?",
+                "answer": "Gunakan kode berikut: `strings = ['short', 'longer', 'longest']; strings.sort(key=len, reverse=True)`. Ini akan menghasilkan `['longest', 'longer', 'short']`."
+            },
+            {
+                "question": "Bagaimana Anda dapat mengurutkan list dari list berdasarkan elemen terakhir dari setiap sublist?",
+                "answer": "Gunakan parameter `key` pada metode sort() untuk menentukan elemen terakhir. Contoh: `list_of_lists = [[1, 2], [3, 4], [5, 0]]; list_of_lists.sort(key=lambda x: x[-1])`. Ini akan menghasilkan `[[5, 0], [1, 2], [3, 4]]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: sort() got an unexpected keyword argument 'reverse''?", 
+                "question_code": "my_list = [5, 2, 9]; my_list.sort(reverse='true')",
+                "answer": "Error ini terjadi karena parameter `reverse` harus berupa boolean (`True` atau `False`), bukan string. Gunakan `reverse=True` atau `reverse=False` untuk menentukan urutan. Misalnya, `my_list.sort(reverse=True)`.",
+                "answer_code": "my_list = [5, 2, 9]; my_list.sort(reverse=True)"
+            },
+            {
+                "question": "Kenapa terjadi error 'ValueError: too many values to unpack', ketika Anda mencoba menggunakan metode sort() dengan lambda function?",
+                "question_code": "my_list = [(1, 2), (3, 4)]; my_list.sort(key=lambda x, y: x - y)",
+                "answer": "Error ini terjadi karena lambda function untuk parameter `key` hanya dapat menerima satu argumen yang mewakili elemen dalam list. Pastikan lambda function hanya menerima satu argumen, seperti `lambda x: x[0]` jika Anda ingin mengurutkan berdasarkan elemen pertama.",
+                "answer_code": "my_list = [(1, 2), (3, 4)]; my_list.sort(key=lambda x: x[0])"
+            },
+            {
+                "question": "Bagaimana Anda dapat mengurutkan list yang berisi objek kustom berdasarkan atribut tertentu dalam objek tersebut?",
+                "answer": "Gunakan parameter `key` pada metode sort(). Contoh: `objects = [obj1, obj2, obj3]; objects.sort(key=lambda x: x.attribute)`. Ini akan mengurutkan objek berdasarkan nilai dari atribut yang ditentukan."
+            }
+        ]
+    }
+]

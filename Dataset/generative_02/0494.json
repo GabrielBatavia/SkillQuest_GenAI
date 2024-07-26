@@ -1,0 +1,76 @@
+[
+    {
+        "sumber": "Python Programming for Beginners",
+        "penulis": "Alice Smith",
+        "tanggal": "2024-12-12",
+        "judul": "Mendalami Penggunaan Loop For di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "For Loop", "Pemula"],
+        "konten": "Artikel ini membahas penggunaan loop `for` untuk iterasi dalam Python, serta memberikan contoh aplikasi praktis dan tantangan dasar dalam pemrograman.",
+        "pertanyaan": [
+            {
+                "question": "Jika Anda memiliki list `['apple', 'banana', 'cherry']` dan ingin menampilkan setiap item dengan prefiks 'Fruit: ', bagaimana Anda bisa melakukannya dengan loop for? Jelaskan bagaimana hasil akhirnya bisa terlihat.",
+                "answer": "Gunakan kode berikut: `for fruit in ['apple', 'banana', 'cherry']:\n    print('Fruit:', fruit)`. Kode ini akan mencetak setiap item dari list dengan prefiks 'Fruit: ', menghasilkan output 'Fruit: apple', 'Fruit: banana', dan 'Fruit: cherry'."
+            },
+            {
+                "question": "Anda memiliki list angka `[-2, 0, 5, 9]` dan ingin menghasilkan list baru yang berisi hasil perkalian setiap angka dengan 10. Bagaimana cara Anda mengubah list ini menggunakan loop for, dan apa hasil akhirnya?",
+                "answer": "Cobalah kode berikut: `multiplied = [num * 10 for num in [-2, 0, 5, 9]]\nfor value in multiplied:\n    print(value)`. Ini akan menghasilkan list baru `[ -20, 0, 50, 90]` dan mencetak setiap nilai."
+            },
+            {
+                "question": "Misalkan Anda memiliki string 'DataScience' dan ingin mencetak setiap huruf vokal dalam string tersebut dengan loop for. Bagaimana cara melakukannya, dan huruf vokal apa yang akan dicetak?",
+                "answer": "Gunakan kode ini: `vowels = 'aeiou'\nfor char in 'DataScience':\n    if char.lower() in vowels:\n        print(char)`. Ini akan mencetak huruf vokal 'a', 'i', dan 'e' yang terdapat dalam string 'DataScience'."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggunakan loop for untuk mencetak bilangan genap dari 10 hingga 20, dan mengapa metode ini lebih baik dibandingkan jika menggunakan pendekatan lain seperti list comprehensions?",
+                "answer": "Gunakan kode berikut: `for num in range(10, 21):\n    if num % 2 == 0:\n        print(num)`. Metode ini jelas menunjukkan pemilihan bilangan genap dari rentang yang diberikan. Meskipun list comprehensions juga bisa digunakan, menggunakan loop for dapat memberikan kontrol yang lebih baik terhadap logika tambahan yang mungkin diperlukan."
+            },
+            {
+                "question": "Jika Anda ingin menghitung total jumlah dari setiap elemen dalam list `[-1, 2, 3, 4]` dengan menambahkan 1 ke setiap elemen sebelum penjumlahan, bagaimana Anda bisa melakukannya dengan loop for dan apa hasil akhir yang diharapkan?",
+                "answer": "Gunakan kode berikut: `total = 0\nfor num in [-1, 2, 3, 4]:\n    total += num + 1\nprint(total)`. Hasil akhir dari penjumlahan ini adalah 11 karena elemen yang diubah menjadi `[0, 3, 4, 5]` sebelum penjumlahan."
+            },
+            {
+                "question": "Cobalah untuk menghasilkan string baru dengan menggabungkan setiap karakter dari string 'hello' diulang sebanyak tiga kali menggunakan loop for. Bagaimana Anda akan melakukannya, dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `result = ''\nfor char in 'hello':\n    result += char * 3\nprint(result)`. Hasil akhirnya adalah 'hhheeellllooo', dengan setiap karakter dari 'hello' diulang tiga kali."
+            },
+            {
+                "question": "Misalkan Anda memiliki list `['dog', 'cat', 'bird']` dan ingin membuat list baru yang berisi panjang setiap string dalam list asli. Bagaimana Anda bisa mencapainya menggunakan loop for, dan bagaimana outputnya?",
+                "answer": "Gunakan kode berikut: `lengths = [len(animal) for animal in ['dog', 'cat', 'bird']]\nfor length in lengths:\n    print(length)`. Outputnya akan menjadi 3, 3, dan 4, yang merupakan panjang masing-masing string dalam list."
+            }
+        ]
+    },
+    {
+        "sumber": "Intro to Python Programming",
+        "penulis": "Michael Brown",
+        "tanggal": "2024-12-13",
+        "judul": "Menggunakan Loop For untuk Manipulasi Data di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "For Loop", "Pemula"],
+        "konten": "Panduan ini menjelaskan penggunaan loop `for` untuk manipulasi data dasar di Python, termasuk pembuatan list baru dan pengolahan string.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa menampilkan setiap item dalam tuple `(1, 3, 5, 7)` dengan prefiks 'Item: ', dan apa yang harus diperhatikan saat mencetak tuple dengan loop for?",
+                "answer": "Gunakan kode berikut: `for item in (1, 3, 5, 7):\n    print('Item:', item)`. Ini akan mencetak setiap elemen tuple dengan prefiks 'Item: '. Perhatikan bahwa tuple tidak dapat diubah seperti list, tetapi masih dapat diiterasi dengan loop for."
+            },
+            {
+                "question": "Anda ingin membuat sebuah list baru dari hasil pembagian setiap elemen dalam list `[100, 200, 300]` dengan 5 menggunakan loop for. Bagaimana Anda dapat melakukannya, dan hasil akhir seperti apa yang bisa diharapkan?",
+                "answer": "Gunakan kode ini: `divided = [num / 5 for num in [100, 200, 300]]\nfor value in divided:\n    print(value)`. Hasil akhir dari list baru akan menjadi `[20.0, 40.0, 60.0]`."
+            },
+            {
+                "question": "Misalkan Anda memiliki string 'PythonIsFun' dan ingin menghasilkan list yang berisi semua huruf kapital dari string tersebut. Bagaimana cara melakukannya menggunakan loop for, dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `caps = [char for char in 'PythonIsFun' if char.isupper()]\nfor cap in caps:\n    print(cap)`. Ini akan menghasilkan dan mencetak huruf kapital 'P', 'I', dan 'F'."
+            },
+            {
+                "question": "Jika Anda ingin menghitung total nilai dari list `[2, 4, 6]` dengan menambahkan 2 ke setiap elemen sebelum penjumlahan, bagaimana Anda dapat melakukannya menggunakan loop for dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `total = 0\nfor num in [2, 4, 6]:\n    total += num + 2\nprint(total)`. Hasil akhirnya adalah 18, setelah menambahkan 2 pada setiap elemen list."
+            },
+            {
+                "question": "Cobalah untuk membalikkan string 'reverse' dan mencetak setiap karakter dengan loop for. Bagaimana Anda akan melakukannya, dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `for char in 'reverse'[::-1]:\n    print(char, end='')`. Hasil akhirnya adalah 'esrever', yaitu string yang dibalik."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggunakan loop for untuk mencetak angka dari 1 hingga 5 dalam bentuk daftar dengan format string 'Number: X', dan mengapa menggunakan loop for lebih menguntungkan dibandingkan dengan metode lain?",
+                "answer": "Gunakan kode berikut: `for i in range(1, 6):\n    print(f'Number: {i}')`. Metode ini memberikan cara yang langsung dan jelas untuk mencetak format string yang diinginkan. Meskipun metode lain seperti list comprehensions juga mungkin berguna, loop for memberikan kontrol lebih terhadap format output dan logika tambahan."
+            }
+        ]
+    }
+]

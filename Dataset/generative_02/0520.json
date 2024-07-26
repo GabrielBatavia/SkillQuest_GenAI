@@ -1,0 +1,30 @@
+[
+    {
+        "theme": "Contoh-contoh praktis penggunaan list comprehension",
+        "difficulty": "pemula",
+        "questions": [
+            {
+                "question": "Jika Anda ingin memfilter sebuah list yang berisi angka-angka dari 0 hingga 20 untuk menemukan angka-angka yang adalah kelipatan dari 3 dan 5, bagaimana Anda dapat melakukannya dengan list comprehension? Bagaimana jika list hanya berisi satu angka yang bukan kelipatan dari 3 atau 5?",
+                "answer": "Gunakan kode berikut: `numbers = range(21); multiples = [num for num in numbers if num % 3 == 0 and num % 5 == 0]`. Ini menghasilkan `[0, 15]`. Jika list hanya berisi satu angka seperti `[7]`, hasilnya adalah `[]`."
+            },
+            {
+                "question": "Anda memiliki sebuah list yang berisi angka-angka acak dan ingin membuat list baru yang berisi kuadrat dari setiap angka, tetapi hanya untuk angka-angka yang lebih besar dari 10. Bagaimana Anda bisa melakukannya dan apa yang terjadi jika semua angka dalam list lebih kecil atau sama dengan 10?",
+                "answer": "Gunakan kode berikut: `numbers = [5, 12, 3, 15]; squares = [num ** 2 for num in numbers if num > 10]`. Ini menghasilkan `[144, 225]`. Jika semua angka lebih kecil atau sama dengan 10, seperti `[3, 8, 9]`, hasilnya adalah `[]`."
+            },
+            {
+                "question": "Bagaimana Anda dapat membuat list yang berisi string dari list `['cat', 'dog', 'bird']` dengan menambahkan angka yang sesuai dengan urutan setiap elemen dalam list? Misalnya, 'cat1', 'dog2', dan seterusnya. Apa yang terjadi jika list tersebut berisi elemen lebih dari 10?",
+                "answer": "Gunakan kode berikut: `animals = ['cat', 'dog', 'bird']; labeled = [f'{animal}{i+1}' for i, animal in enumerate(animals)]`. Ini menghasilkan `['cat1', 'dog2', 'bird3']`. Jika list berisi lebih dari 10 elemen, seperti `['a', 'b', ..., 'j']`, hasilnya adalah `['a1', 'b2', ..., 'j10']`."
+            },
+            {
+                "question": "Anda memiliki sebuah list yang berisi string seperti `['hello', 'world', 'python']` dan ingin membuat list baru yang berisi string yang panjangnya lebih dari 5 karakter dengan huruf kapital. Bagaimana Anda melakukan ini dan apa yang terjadi jika semua string dalam list kurang dari atau sama dengan 5 karakter?",
+                "answer": "Gunakan kode berikut: `words = ['hello', 'world', 'python']; long_words = [word.upper() for word in words if len(word) > 5]`. Ini menghasilkan `['PYTHON']`. Jika semua string kurang dari atau sama dengan 5 karakter, seperti `['hi', 'bye']`, hasilnya adalah `[]`."
+            },
+            {
+                "question": "Jika Anda ingin membuat sebuah list baru dari list `['apple', 'banana', 'cherry']` yang mengandung karakter pertama dari setiap elemen, bagaimana Anda bisa melakukannya? Bagaimana jika elemen-elemen dalam list adalah string kosong?",
+                "question_code": "fruits = ['apple', 'banana', 'cherry']; initials = [fruit[0] for fruit in fruits]",
+                "answer": "Gunakan kode berikut: `fruits = ['apple', 'banana', 'cherry']; initials = [fruit[0] for fruit in fruits]`. Ini menghasilkan `['a', 'b', 'c']`. Jika list berisi string kosong, seperti `['', 'banana', '']`, hasilnya adalah `['b']`.",
+                "answer_code": "fruits = ['apple', 'banana', 'cherry']; initials = [fruit[0] for fruit in fruits]"
+            }
+        ]
+    }
+]

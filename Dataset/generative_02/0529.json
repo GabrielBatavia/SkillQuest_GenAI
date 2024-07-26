@@ -1,0 +1,72 @@
+[
+    {
+        "sumber": "Python Basics for Beginners",
+        "penulis": "Rachel Adams",
+        "tanggal": "2024-12-30",
+        "judul": "Dasar-Dasar Pengurutan List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Panduan ini membahas konsep dasar pengurutan list di Python, memberikan berbagai contoh praktis untuk pemula agar mudah dipahami.",
+        "pertanyaan": [
+            {
+                "question": "Anda memiliki daftar barang belanja dengan nama dan kategori, misalnya `['Apples:Fruit', 'Broccoli:Vegetable', 'Carrots:Vegetable', 'Bananas:Fruit']`. Bagaimana Anda dapat mengurutkan barang berdasarkan kategori terlebih dahulu, kemudian berdasarkan nama barang jika kategori sama?",
+                "question_code": "items = ['Apples:Fruit', 'Broccoli:Vegetable', 'Carrots:Vegetable', 'Bananas:Fruit']; items.sort(key=lambda x: (x.split(':')[1], x.split(':')[0]))",
+                "answer_code": "['Bananas:Fruit', 'Apples:Fruit', 'Carrots:Vegetable', 'Broccoli:Vegetable']",
+                "answer": "Kode ini mengurutkan barang berdasarkan kategori terlebih dahulu, kemudian berdasarkan nama barang secara alfabetis jika kategori sama."
+            },
+            {
+                "question": "Anda memiliki daftar pemain sepak bola dengan nama dan jumlah gol yang dicetak, seperti `['Leo Messi:35', 'Cristiano Ronaldo:40', 'Neymar:30']`. Bagaimana Anda bisa mengurutkan pemain berdasarkan jumlah gol dari yang terbanyak ke yang sedikit, dan jika jumlah gol sama, berdasarkan nama pemain secara alfabetis?",
+                "question_code": "players = ['Leo Messi:35', 'Cristiano Ronaldo:40', 'Neymar:30']; players.sort(key=lambda p: (-int(p.split(':')[1]), p.split(':')[0]))",
+                "answer_code": "['Cristiano Ronaldo:40', 'Leo Messi:35', 'Neymar:30']",
+                "answer": "Kode ini mengurutkan pemain berdasarkan jumlah gol dari yang terbanyak ke yang sedikit, dan jika jumlah gol sama, berdasarkan nama pemain secara alfabetis."
+            },
+            {
+                "question": "Anda memiliki daftar dokumen dengan judul dan tanggal pembuatan, seperti `['Report Q:2023-09-10', 'Summary A:2024-01-15', 'Document B:2023-09-10']`. Bagaimana Anda dapat mengurutkan dokumen berdasarkan tanggal pembuatan dari yang paling lama hingga terbaru, dan jika tanggal sama, berdasarkan judul dokumen secara alfabetis?",
+                "question_code": "documents = ['Report Q:2023-09-10', 'Summary A:2024-01-15', 'Document B:2023-09-10']; documents.sort(key=lambda d: (d.split(':')[1], d.split(':')[0]))",
+                "answer_code": "['Document B:2023-09-10', 'Report Q:2023-09-10', 'Summary A:2024-01-15']",
+                "answer": "Kode ini mengurutkan dokumen berdasarkan tanggal pembuatan dari yang paling lama hingga terbaru, dan jika tanggal sama, berdasarkan judul dokumen secara alfabetis."
+            },
+            {
+                "question": "Anda memiliki daftar jadwal acara dengan nama dan waktu mulai, seperti `['Meeting:14:00', 'Lunch:12:00', 'Workout:06:00']`. Bagaimana Anda bisa mengurutkan acara berdasarkan waktu mulai dari yang terawal hingga yang terakhir, dan jika waktu mulai sama, berdasarkan nama acara secara alfabetis?",
+                "question_code": "events = ['Meeting:14:00', 'Lunch:12:00', 'Workout:06:00']; events.sort(key=lambda e: (e.split(':')[1], e.split(':')[0]))",
+                "answer_code": "['Workout:06:00', 'Lunch:12:00', 'Meeting:14:00']",
+                "answer": "Kode ini mengurutkan acara berdasarkan waktu mulai dari yang terawal hingga yang terakhir, dan jika waktu mulai sama, berdasarkan nama acara secara alfabetis."
+            }
+        ]
+    },
+    {
+        "sumber": "Intro to Python Sorting",
+        "penulis": "Michael Brown",
+        "tanggal": "2024-12-31",
+        "judul": "Pengurutan List di Python untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Artikel ini menjelaskan dasar-dasar pengurutan list di Python dengan pendekatan yang sederhana dan berbagai contoh untuk pemula.",
+        "pertanyaan": [
+            {
+                "question": "Anda memiliki daftar elemen elektronik dengan nama dan harga, seperti `['Tablet:250', 'Laptop:1200', 'Smartphone:600']`. Bagaimana Anda dapat mengurutkan elemen berdasarkan harga dari yang paling murah ke yang termahal, dan jika harga sama, berdasarkan nama elemen secara alfabetis?",
+                "question_code": "electronics = ['Tablet:250', 'Laptop:1200', 'Smartphone:600']; electronics.sort(key=lambda e: (int(e.split(':')[1]), e.split(':')[0]))",
+                "answer_code": "['Tablet:250', 'Smartphone:600', 'Laptop:1200']",
+                "answer": "Kode ini mengurutkan elemen berdasarkan harga dari yang paling murah ke yang termahal, dan jika harga sama, berdasarkan nama elemen secara alfabetis."
+            },
+            {
+                "question": "Anda memiliki daftar siswa dengan nama dan jumlah absensi seperti `['Anna:2', 'John:5', 'Lisa:2']`. Bagaimana Anda dapat mengurutkan siswa berdasarkan jumlah absensi dari yang paling sedikit ke yang paling banyak, dan jika jumlah absensi sama, berdasarkan nama siswa secara alfabetis?",
+                "question_code": "students = ['Anna:2', 'John:5', 'Lisa:2']; students.sort(key=lambda s: (int(s.split(':')[1]), s.split(':')[0]))",
+                "answer_code": "['Anna:2', 'Lisa:2', 'John:5']",
+                "answer": "Kode ini mengurutkan siswa berdasarkan jumlah absensi dari yang paling sedikit ke yang paling banyak, dan jika jumlah absensi sama, berdasarkan nama siswa secara alfabetis."
+            },
+            {
+                "question": "Anda memiliki daftar film dengan judul dan durasi tayang dalam format `['Movie X:120 min', 'Movie Y:90 min', 'Movie Z:120 min']`. Bagaimana Anda mengurutkan film berdasarkan durasi tayang dari yang terpendek hingga terpanjang, dan jika durasi tayang sama, berdasarkan judul film secara alfabetis?",
+                "question_code": "movies = ['Movie X:120 min', 'Movie Y:90 min', 'Movie Z:120 min']; movies.sort(key=lambda m: (int(m.split(':')[1].split()[0]), m.split(':')[0]))",
+                "answer_code": "['Movie Y:90 min', 'Movie X:120 min', 'Movie Z:120 min']",
+                "answer": "Kode ini mengurutkan film berdasarkan durasi tayang dari yang terpendek hingga terpanjang, dan jika durasi tayang sama, berdasarkan judul film secara alfabetis."
+            },
+            {
+                "question": "Anda memiliki daftar hadiah ulang tahun dengan nama dan nilai, seperti `['Watch:150', 'Perfume:80', 'Bag:120']`. Bagaimana Anda dapat mengurutkan hadiah berdasarkan nilai dari yang terendah hingga tertinggi, dan jika nilai sama, berdasarkan nama hadiah secara alfabetis?",
+                "question_code": "gifts = ['Watch:150', 'Perfume:80', 'Bag:120']; gifts.sort(key=lambda g: (int(g.split(':')[1]), g.split(':')[0]))",
+                "answer_code": "['Perfume:80', 'Bag:120', 'Watch:150']",
+                "answer": "Kode ini mengurutkan hadiah berdasarkan nilai dari yang terendah hingga tertinggi, dan jika nilai sama, berdasarkan nama hadiah secara alfabetis."
+            }
+        ]
+    }
+]

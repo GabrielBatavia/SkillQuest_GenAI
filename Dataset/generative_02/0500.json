@@ -1,0 +1,80 @@
+[
+    {
+        "sumber": "Programming 101",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-12-20",
+        "judul": "Memahami List Comprehension dengan Contoh Praktis",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini membahas teknik dasar list comprehension dengan berbagai contoh praktis yang dirancang untuk membantu pemula memahami cara kerjanya.",
+        "pertanyaan": [
+            {
+                "question": "Diberikan string `'hello world'`, bagaimana Anda bisa membuat daftar yang berisi huruf vokal dari string tersebut yang diulang sebanyak dua kali? Misalnya, huruf 'o' akan muncul dua kali. Apa kode yang digunakan dan hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `doubled_vowels = [char * 2 for char in 'hello world' if char in 'aeiou']`. Hasil akhirnya adalah `['e', 'o', 'o', 'o']`, yang merupakan huruf vokal dari string yang diulang dua kali."
+            },
+            {
+                "question": "Anda memiliki daftar angka `[1, 2, 3, 4, 5]`. Bagaimana Anda bisa membuat daftar baru yang berisi angka yang dikuadratkan dan hasil kuadratnya lebih besar dari 10? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `squared_numbers = [num ** 2 for num in [1, 2, 3, 4, 5] if num ** 2 > 10]`. Hasil akhirnya adalah `[16, 25]`, yang merupakan kuadrat dari angka yang lebih besar dari 10."
+            },
+            {
+                "question": "Diberikan string `'the quick brown fox'`, bagaimana Anda bisa membuat daftar yang berisi panjang setiap kata, tetapi hanya untuk kata-kata yang panjangnya lebih dari 3 huruf? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `lengths = [len(word) for word in 'the quick brown fox'.split() if len(word) > 3]`. Hasil akhirnya adalah `[5, 5, 4]`, yang merupakan panjang kata-kata dengan lebih dari 3 huruf."
+            },
+            {
+                "question": "Anda memiliki daftar string `['cat', 'dog', 'rabbit']`. Bagaimana Anda bisa membuat daftar baru yang berisi setiap string dengan semua huruf kapital dan hanya untuk string yang panjangnya lebih dari 3 huruf? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `capitalized_strings = [word.upper() for word in ['cat', 'dog', 'rabbit'] if len(word) > 3]`. Hasil akhirnya adalah `['RABBIT']`, yang merupakan string yang panjangnya lebih dari 3 huruf dan diubah menjadi huruf kapital."
+            },
+            {
+                "question": "Jika Anda memiliki daftar `[7, 14, 21, 28]`, bagaimana Anda bisa menghasilkan daftar baru yang berisi setiap angka dikurangi 3, tetapi hanya jika hasil pengurangan tersebut adalah bilangan kelipatan 5? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `multiples_of_five = [num - 3 for num in [7, 14, 21, 28] if (num - 3) % 5 == 0]`. Hasil akhirnya adalah `[12, 19]`, yang merupakan hasil pengurangan setiap angka dengan 3 jika hasilnya adalah kelipatan 5."
+            },
+            {
+                "question": "Bagaimana Anda bisa membuat daftar dari string `'data science'` yang hanya berisi huruf-huruf unik dari string tersebut, diurutkan menurut kemunculannya pertama kali? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `unique_chars = [char for char in 'data science' if char.isalpha() and 'data science'.index(char) == i]`. Hasil akhirnya adalah `['d', 'a', 't', 's', 'c', 'i', 'e']`, yang merupakan huruf unik dari string dengan urutan kemunculan pertama."
+            },
+            {
+                "question": "Anda memiliki daftar angka `[11, 22, 33, 44, 55]`. Bagaimana Anda bisa membuat daftar baru yang berisi setiap angka yang dibagi 11, tetapi hanya jika hasil pembagiannya adalah bilangan bulat? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `divisible_by_eleven = [num / 11 for num in [11, 22, 33, 44, 55] if num % 11 == 0]`. Hasil akhirnya adalah `[1.0, 2.0, 3.0, 4.0, 5.0]`, yang merupakan hasil pembagian angka dengan 11 jika hasilnya adalah bilangan bulat."
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Robert Smith",
+        "tanggal": "2024-12-21",
+        "judul": "Memahami List Comprehension dengan Berbagai Contoh",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Panduan ini memberikan pemahaman mendalam tentang list comprehension dengan beragam contoh yang dapat membantu pemula untuk memahami dan menguasai konsep ini.",
+        "pertanyaan": [
+            {
+                "question": "Diberikan string `'automobile'`, bagaimana Anda bisa membuat daftar yang berisi huruf vokal dari string tersebut yang diulang tiga kali? Misalnya, huruf 'o' akan muncul tiga kali. Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `tripled_vowels = [char * 3 for char in 'automobile' if char in 'aeiou']`. Hasil akhirnya adalah `['aaa', 'ooo', 'iii', 'eee']`, yang merupakan huruf vokal dari string yang diulang tiga kali."
+            },
+            {
+                "question": "Anda memiliki daftar angka `[9, 18, 27, 36]`. Bagaimana Anda bisa membuat daftar baru yang berisi angka yang dibagi 3 dan hasil pembagian tersebut lebih besar dari 5? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `divided_results = [num / 3 for num in [9, 18, 27, 36] if num / 3 > 5]`. Hasil akhirnya adalah `[9.0, 12.0]`, yang merupakan hasil pembagian angka dengan 3 jika hasilnya lebih besar dari 5."
+            },
+            {
+                "question": "Diberikan string `'hello universe'`, bagaimana Anda bisa membuat daftar yang berisi panjang setiap kata setelah dihapus huruf vokal, dan hanya untuk kata-kata yang panjangnya lebih dari 4 huruf? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `lengths_without_vowels = [len(''.join([char for char in word if char not in 'aeiou'])) for word in 'hello universe'.split() if len(word) > 4]`. Hasil akhirnya adalah `[4, 7]`, yang merupakan panjang kata setelah menghapus huruf vokal dari kata yang lebih dari 4 huruf."
+            },
+            {
+                "question": "Anda memiliki daftar string `['apple', 'banana', 'cherry']`. Bagaimana Anda bisa membuat daftar baru yang berisi setiap string dengan semua huruf kecil dan hanya untuk string yang mengandung huruf 'a'? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `lowercase_strings = [word.lower() for word in ['apple', 'banana', 'cherry'] if 'a' in word]`. Hasil akhirnya adalah `['apple', 'banana']`, yang merupakan string dengan huruf kecil yang mengandung huruf 'a'."
+            },
+            {
+                "question": "Bagaimana Anda bisa menghasilkan daftar dari angka `[5, 10, 15, 20]` yang berisi setiap angka dikali 3, tetapi hanya jika hasil perkalian tersebut adalah bilangan ganjil? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `odd_products = [num * 3 for num in [5, 10, 15, 20] if (num * 3) % 2 != 0]`. Hasil akhirnya adalah `[15, 45]`, yang merupakan hasil perkalian setiap angka dengan 3 jika hasilnya adalah bilangan ganjil."
+            },
+            {
+                "question": "Diberikan string `'welcome to python'`, bagaimana Anda bisa membuat daftar dari setiap huruf yang muncul lebih dari sekali, tetapi hanya huruf vokal dan diurutkan berdasarkan abjad? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `sorted_vowels = sorted([char for char in 'welcome to python' if char in 'aeiou' and 'welcome to python'.count(char) > 1])`. Hasil akhirnya adalah `['e', 'o']`, yang merupakan huruf vokal yang muncul lebih dari sekali dan diurutkan berdasarkan abjad."
+            },
+            {
+                "question": "Anda memiliki daftar `[8, 16, 24, 32]`. Bagaimana Anda bisa membuat daftar baru yang berisi setiap angka yang dibagi 8, tetapi hanya jika hasil pembagiannya adalah bilangan bulat dan lebih dari 1? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `divisible_by_eight = [num / 8 for num in [8, 16, 24, 32] if (num / 8) > 1]`. Hasil akhirnya adalah `[2.0, 3.0, 4.0]`, yang merupakan hasil pembagian angka dengan 8 jika hasilnya lebih dari 1 dan merupakan bilangan bulat."
+            }
+        ]
+    }
+]

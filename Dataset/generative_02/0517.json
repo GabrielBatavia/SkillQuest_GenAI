@@ -1,0 +1,96 @@
+[
+    {
+        "sumber": "Advanced Python Techniques",
+        "penulis": "Emily Johnson",
+        "tanggal": "2024-12-15",
+        "judul": "Menggunakan List Comprehension untuk Transformasi Data",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "List Comprehension", "Transformasi Data", "Menengah"],
+        "konten": "Artikel ini membahas cara menggunakan list comprehension untuk melakukan transformasi data secara efisien di Python. List comprehension dapat digunakan untuk berbagai macam operasi pada data.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa membuat list baru yang berisi hasil perkalian setiap elemen dari list `[2, 4, 6]` dengan 3 menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `values = [2, 4, 6]; tripled = [x * 3 for x in values]`. Hasilnya adalah `[6, 12, 18]`."
+            },
+            {
+                "question": "Bagaimana cara menyaring elemen dari list `[10, 15, 20, 25]` untuk menyertakan hanya elemen yang lebih besar dari 15 dan kemudian mengurangi setiap elemen yang tersisa dengan 5?",
+                "answer": "Gunakan kode berikut: `values = [10, 15, 20, 25]; result = [x - 5 for x in values if x > 15]`. Hasilnya adalah `[15, 20]`."
+            },
+            {
+                "question": "Apa yang dilakukan kode berikut: `data = ['a', 'b', 'c']; capitalized = [item.upper() for item in data]`?",
+                "answer": "Kode ini mengubah semua string dalam list `data` menjadi huruf kapital, menghasilkan list `['A', 'B', 'C']`."
+            },
+            {
+                "question": "Bagaimana Anda dapat menghasilkan list yang berisi panjang setiap string dalam list `['apple', 'banana', 'cherry']` menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `words = ['apple', 'banana', 'cherry']; lengths = [len(word) for word in words]`. Hasilnya adalah `[5, 6, 6]`."
+            },
+            {
+                "question": "Bagaimana cara mengubah list yang berisi string angka menjadi list integer menggunakan list comprehension?",
+                "question_code": "str_numbers = ['1', '2', '3']; int_numbers = [int(num) for num in str_numbers]",
+                "answer": "Gunakan kode berikut untuk mengkonversi string angka menjadi integer: `str_numbers = ['1', '2', '3']; int_numbers = [int(num) for num in str_numbers]`. Hasilnya adalah `[1, 2, 3]`.",
+                "answer_code": "str_numbers = ['1', '2', '3']; int_numbers = [int(num) for num in str_numbers]"
+            },
+            {
+                "question": "Bagaimana Anda dapat menghapus elemen duplikat dari list `[1, 2, 2, 3, 3, 4]` menggunakan list comprehension?",
+                "question_code": "duplicates = [1, 2, 2, 3, 3, 4]; unique = list(dict.fromkeys(duplicates))",
+                "answer": "Gunakan kode berikut: `duplicates = [1, 2, 2, 3, 3, 4]; unique = list(dict.fromkeys(duplicates))`. Ini akan menghasilkan list `[1, 2, 3, 4]` tanpa duplikat.",
+                "answer_code": "duplicates = [1, 2, 2, 3, 3, 4]; unique = list(dict.fromkeys(duplicates))"
+            },
+            {
+                "question": "Apa yang dilakukan kode berikut: `nested_lists = [[1, 2], [3, 4], [5, 6]]; flat_list = [elem for sublist in nested_lists for elem in sublist]`?",
+                "answer": "Kode ini meratakan list nested menjadi satu list tunggal, menghasilkan `[1, 2, 3, 4, 5, 6]`."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggabungkan dua list `['a', 'b']` dan `[1, 2]` menjadi list baru yang berisi string gabungan seperti `'a1'`, `'b2'`?",
+                "question_code": "letters = ['a', 'b']; numbers = [1, 2]; combined = [f'{letter}{number}' for letter in letters for number in numbers]",
+                "answer": "Gunakan kode berikut: `letters = ['a', 'b']; numbers = [1, 2]; combined = [f'{letter}{number}' for letter in letters for number in numbers]`. Ini akan menghasilkan list `['a1', 'a2', 'b1', 'b2']`.",
+                "answer_code": "letters = ['a', 'b']; numbers = [1, 2]; combined = [f'{letter}{number}' for letter in letters for number in numbers]"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Data Manipulation",
+        "penulis": "Oliver Smith",
+        "tanggal": "2024-12-16",
+        "judul": "Menerapkan List Comprehension untuk Manipulasi Data",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "Data Manipulation", "List Comprehension", "Menengah"],
+        "konten": "Panduan ini mengeksplorasi penggunaan list comprehension untuk manipulasi data di Python. List comprehension menawarkan cara yang efisien dan elegan untuk melakukan berbagai transformasi data.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda dapat mengkonversi list string yang berisi angka seperti `['10', '20', '30']` menjadi list integer?",
+                "answer": "Gunakan kode berikut: `str_numbers = ['10', '20', '30']; int_numbers = [int(num) for num in str_numbers]`. Hasilnya adalah `[10, 20, 30]`."
+            },
+            {
+                "question": "Apa yang dilakukan kode ini: `mixed = ['x', 2, 'y', 4]; filtered = [str(item) for item in mixed if isinstance(item, int)]`?",
+                "answer": "Kode ini mengubah semua elemen integer dalam list `mixed` menjadi string, menghasilkan `['2', '4']`."
+            },
+            {
+                "question": "Bagaimana Anda bisa menghasilkan list yang berisi hasil dari operasi matematika pada setiap elemen dari list `[1, 2, 3]` yang dikalikan dengan 4?",
+                "answer": "Gunakan kode berikut: `values = [1, 2, 3]; multiplied = [x * 4 for x in values]`. Hasilnya adalah `[4, 8, 12]`."
+            },
+            {
+                "question": "Bagaimana Anda dapat memproses list `[['cat', 'dog'], ['fish', 'bird']]` untuk mendapatkan satu list yang berisi semua elemen?",
+                "answer": "Gunakan kode berikut: `nested = [['cat', 'dog'], ['fish', 'bird']]; flattened = [item for sublist in nested for item in sublist]`. Hasilnya adalah `['cat', 'dog', 'fish', 'bird']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'float' object is not iterable' saat mencoba kode `numbers = [1.5, 2.5, 3.5]; rounded = [round(n) for n in numbers if n > 2.0]`?",
+                "question_code": "numbers = 1.5; rounded = [round(n) for n in numbers if n > 2.0]",
+                "answer": "Error ini terjadi karena `numbers` harus berupa list, bukan float. Pastikan `numbers` adalah list dari float seperti `[1.5, 2.5, 3.5]`.",
+                "answer_code": "numbers = [1.5, 2.5, 3.5]; rounded = [round(n) for n in numbers if n > 2.0]"
+            },
+            {
+                "question": "Apa yang menyebabkan error 'IndexError: list index out of range' pada kode `data = [1, 2, 3]; value = [item for item in data if item[0] == 2]`?",
+                "question_code": "data = [1, 2, 3]; value = [item for item in data if item[0] == 2]",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses indeks pada elemen yang bukan list. Anda harus memastikan elemen yang diakses adalah sublist atau tipe data yang sesuai.",
+                "answer_code": "data = [[1], [2], [3]]; value = [item for item in data if item[0] == 2]"
+            },
+            {
+                "question": "Bagaimana Anda dapat membuat list yang berisi hasil kuadrat dari angka dalam list `[2, 3, 4]` menggunakan list comprehension?",
+                "question_code": "numbers = [2, 3, 4]; squares = [n**2 for n in numbers]",
+                "answer": "Gunakan kode berikut: `numbers = [2, 3, 4]; squares = [n**2 for n in numbers]`. Hasilnya adalah `[4, 9, 16]`.",
+                "answer_code": "numbers = [2, 3, 4]; squares = [n**2 for n in numbers]"
+            }
+        ]
+    }
+]

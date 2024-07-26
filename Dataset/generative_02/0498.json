@@ -1,0 +1,84 @@
+[
+    {
+        "sumber": "Python Fundamentals",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-12-16",
+        "judul": "Pemahaman Dasar List Comprehension",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini memberikan pemahaman dasar tentang list comprehension dengan berbagai contoh yang menantang namun cocok untuk pemula.",
+        "pertanyaan": [
+            {
+                "question": "Anda diberikan sebuah list `['dog', 'cat', 'fish', 'bird']`. Bagaimana Anda bisa membuat list baru yang berisi string dengan lebih dari 3 huruf, namun mengganti huruf vokal di setiap string dengan karakter `'*'`? Jelaskan bagaimana proses ini dilakukan dan hasil akhirnya.",
+                "answer": "Gunakan kode berikut: `modified_list = [word.replace('a', '*').replace('e', '*').replace('i', '*').replace('o', '*').replace('u', '*') for word in ['dog', 'cat', 'fish', 'bird'] if len(word) > 3]`. Hasil dari list baru adalah `['d*g', 'f*sh', 'b*rd']`, yang merupakan string yang panjangnya lebih dari 3 huruf dengan vokal diganti dengan '*'."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggunakan list comprehension untuk menghasilkan list baru dari angka `[1, 4, 7, 10, 13]` di mana setiap angka dikali dengan 3, tetapi hanya jika hasil perkalian lebih besar dari 15? Apa kode yang digunakan dan hasil akhirnya?",
+                "answer": "Gunakan kode ini: `result = [num * 3 for num in [1, 4, 7, 10, 13] if num * 3 > 15]`. Hasil akhirnya adalah `[21, 30, 39]`, yang merupakan angka-angka hasil perkalian dengan 3 dari list asli yang lebih besar dari 15."
+            },
+            {
+                "question": "Jika Anda memiliki string `'algorithm'` dan ingin membuat list dari karakter-karakter di string tersebut dengan urutan terbalik menggunakan list comprehension, bagaimana Anda melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `reversed_chars = [char for char in reversed('algorithm')]`. Hasil akhirnya adalah `['m', 't', 'h', 'g', 'r', 'o', 'l', 'g', 'i', 'a']`, yang merupakan karakter-karakter dari string 'algorithm' dengan urutan terbalik."
+            },
+            {
+                "question": "Anda diberikan list string `['red', 'green', 'blue', 'yellow']`. Bagaimana Anda bisa membuat list baru yang berisi panjang setiap string ditambah 2 dengan menggunakan list comprehension? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `length_plus_two = [len(color) + 2 for color in ['red', 'green', 'blue', 'yellow']]`. Hasil akhirnya adalah `[5, 7, 6, 9]`, yang merupakan panjang setiap string ditambah 2 dari list asli."
+            },
+            {
+                "question": "Cobalah untuk membuat list dari string `'data science'` yang hanya berisi huruf-huruf yang muncul di lebih dari satu kata dengan menggunakan list comprehension. Bagaimana cara Anda melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `common_chars = [char for char in 'data science' if 'data science'.count(char) > 1 and char != ' ']`. Hasil akhirnya adalah `['a', 'd', 's', 'e']`, yang merupakan huruf yang muncul di lebih dari satu kata dalam string 'data science'."
+            },
+            {
+                "question": "Anda memiliki list angka `[2, 4, 6, 8, 10]`. Bagaimana Anda bisa menggunakan list comprehension untuk menghasilkan list yang berisi string `'even-<angka>'` untuk setiap angka genap dalam list? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `even_strings = [f'even-{num}' for num in [2, 4, 6, 8, 10] if num % 2 == 0]`. Hasil akhirnya adalah `['even-2', 'even-4', 'even-6', 'even-8', 'even-10']`, yang merupakan string 'even-' diikuti oleh setiap angka genap dari list asli."
+            },
+            {
+                "question": "Bagaimana Anda bisa menggunakan list comprehension untuk membuat list baru dari angka `[3, 6, 9, 12]` dengan mengalikan setiap angka dengan 4 dan hanya mencakup hasil yang merupakan kelipatan 12? Jelaskan proses pembuatan list ini dan hasil akhirnya.",
+                "answer": "Gunakan kode ini: `multiples_of_12 = [num * 4 for num in [3, 6, 9, 12] if (num * 4) % 12 == 0]`. Hasil akhirnya adalah `[12, 24]`, yang merupakan hasil perkalian setiap angka dalam list dengan 4 dan hasilnya merupakan kelipatan dari 12."
+            },
+            {
+                "question": "Cobalah untuk menghasilkan list yang berisi huruf-huruf dari string `'openai'` yang muncul lebih dari sekali, namun hanya yang merupakan huruf vokal menggunakan list comprehension. Bagaimana cara melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `repeated_vowels = [char for char in 'openai' if char in 'aeiou' and 'openai'.count(char) > 1]`. Hasil akhirnya adalah `['o', 'i', 'a']`, yang merupakan huruf vokal dari string 'openai' yang muncul lebih dari sekali."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming 101",
+        "penulis": "Michael Davis",
+        "tanggal": "2024-12-17",
+        "judul": "Memahami List Comprehension untuk Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Panduan ini menyajikan berbagai contoh dan latihan tentang list comprehension untuk pemula dengan penjelasan yang mendetail.",
+        "pertanyaan": [
+            {
+                "question": "Diberikan list `[8, 15, 22, 29, 36]`, bagaimana Anda bisa membuat list baru yang berisi hasil pembagian setiap angka dengan 3, tetapi hanya jika hasil pembagian adalah bilangan bulat? Jelaskan kode yang digunakan dan hasil akhirnya.",
+                "answer": "Gunakan kode ini: `divisible_by_three = [num / 3 for num in [8, 15, 22, 29, 36] if num % 3 == 0]`. Hasil akhirnya adalah `[15.0, 36.0]`, yang merupakan hasil pembagian angka-angka dalam list dengan 3 jika hasilnya adalah bilangan bulat."
+            },
+            {
+                "question": "Jika Anda memiliki list string `['sun', 'moon', 'star']`, bagaimana Anda bisa membuat list baru yang berisi string yang memiliki lebih dari 3 huruf, tetapi setiap huruf vokal diubah menjadi huruf kapital? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `vowel_uppercase = [word.replace('a', 'A').replace('e', 'E').replace('i', 'I').replace('o', 'O').replace('u', 'U') for word in ['sun', 'moon', 'star'] if len(word) > 3]`. Hasil akhirnya adalah `['stAr']`, di mana string 'star' adalah satu-satunya yang panjangnya lebih dari 3 huruf dengan huruf vokal diubah menjadi kapital."
+            },
+            {
+                "question": "Cobalah untuk menghasilkan list baru dari angka `[5, 10, 15, 20]` yang berisi setiap angka dikurangi 3, tetapi hanya angka-angka yang hasilnya lebih besar dari 10 menggunakan list comprehension. Bagaimana cara Anda melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `greater_than_10 = [num - 3 for num in [5, 10, 15, 20] if num - 3 > 10]`. Hasil akhirnya adalah `[12, 17]`, yang merupakan angka setelah dikurangi 3 dan hasilnya lebih besar dari 10."
+            },
+            {
+                "question": "Jika Anda diberikan string `'example'` dan ingin menghasilkan list dari setiap huruf yang merupakan huruf konsonan dengan huruf kapital menggunakan list comprehension, bagaimana Anda melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `consonant_caps = [char.upper() for char in 'example' if char not in 'aeiou']`. Hasil akhirnya adalah `['X', 'M', 'P', 'L']`, yang merupakan huruf konsonan dari string 'example' dengan huruf kapital."
+            },
+            {
+                "question": "Bagaimana Anda bisa membuat list dari angka `[7, 14, 21, 28]` yang berisi hasil pangkat dua dari setiap angka, tetapi hanya jika hasilnya kurang dari 500? Jelaskan kode yang digunakan dan hasil akhirnya.",
+                "answer": "Gunakan kode berikut: `squares_less_than_500 = [num ** 2 for num in [7, 14, 21, 28] if num ** 2 < 500]`. Hasil akhirnya adalah `[49, 196, 441]`, yang merupakan hasil pangkat dua dari angka dalam list yang kurang dari 500."
+            },
+            {
+                "question": "Diberikan string `'hello world'`, bagaimana Anda bisa menghasilkan list dari kata-kata yang memiliki lebih dari 4 huruf dengan huruf kapital hanya pada huruf pertama dari setiap kata menggunakan list comprehension? Apa kode yang digunakan dan apa hasil akhirnya?",
+                "answer": "Gunakan kode berikut: `capitalized_words = [word.capitalize() for word in 'hello world'.split() if len(word) > 4]`. Hasil akhirnya adalah `['Hello']`, yang merupakan kata dengan panjang lebih dari 4 huruf dan huruf pertama dikapitalisasi."
+            },
+            {
+                "question": "Cobalah untuk membuat list baru dari angka `[11, 22, 33, 44]` yang berisi string `'number_<angka>'` dengan angka-angka yang merupakan kelipatan dari 11 menggunakan list comprehension. Bagaimana cara Anda melakukannya dan apa hasil akhirnya?",
+                "answer": "Gunakan kode ini: `formatted_numbers = [f'number_{num}' for num in [11, 22, 33, 44] if num % 11 == 0]`. Hasil akhirnya adalah `['number_11', 'number_22', 'number_33', 'number_44']`, yang merupakan string 'number_' diikuti oleh setiap angka kelipatan dari 11."
+            }
+        ]
+    }
+]

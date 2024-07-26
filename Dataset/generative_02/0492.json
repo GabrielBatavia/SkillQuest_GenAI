@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Introduction to Python Programming",
+        "penulis": "Anna Brown",
+        "tanggal": "2024-12-10",
+        "judul": "Dasar-dasar List Comprehension dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini menjelaskan dasar-dasar list comprehension dalam Python, yang memungkinkan pembuatan list dengan sintaks yang lebih ringkas dan efisien daripada menggunakan loop tradisional.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda bisa menghasilkan list dari 2 hingga 10 dengan langkah 2 menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `[x for x in range(2, 11, 2)]`. Ini akan menghasilkan list `[2, 4, 6, 8, 10]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[x * 2 for x in [5, 10, 15] if x < 15]`?",
+                "answer": "Outputnya adalah `[10, 20]`, karena hanya angka kurang dari 15 yang dikalikan dua dan dimasukkan dalam list baru."
+            },
+            {
+                "question": "Berikan contoh list comprehension untuk menghasilkan list dari string yang diubah menjadi huruf kecil?",
+                "answer": "Contoh kodenya adalah `[s.lower() for s in 'HELLO WORLD']`. Ini akan menghasilkan list `['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']`."
+            },
+            {
+                "question": "Kenapa muncul error 'ValueError: too many values to unpack', saya tidak paham?",
+                "question_code": "[a, b for a, b in [(1, 2), (3, 4)]]",
+                "answer": "Error ini muncul karena Anda mencoba membongkar lebih dari dua nilai dari tuple. Kode yang benar adalah `[a + b for a, b in [(1, 2), (3, 4)]]`.",
+                "answer_code": "[a + b for a, b in [(1, 2), (3, 4)]]"
+            },
+            {
+                "question": "Kenapa muncul error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "[x for x in range(5) if x > 2][5]",
+                "answer": "Error ini disebabkan karena Anda mencoba mengakses indeks yang tidak ada dalam list. Periksa batasan indeks untuk memastikan Anda tidak melebihi panjang list.",
+                "answer_code": "[x for x in range(5) if x > 2]"
+            },
+            {
+                "question": "Bagaimana membuat list comprehension untuk menghasilkan list dari angka dalam rentang 1 hingga 20 yang merupakan bilangan genap?",
+                "answer": "Gunakan kode berikut: `[x for x in range(1, 21) if x % 2 == 0]`. Ini akan menghasilkan list `[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`."
+            },
+            {
+                "question": "Apa perbedaan utama antara list comprehension dan fungsi map() dalam Python?",
+                "answer": "List comprehension sering kali lebih mudah dibaca dan lebih fleksibel dibandingkan dengan fungsi map(). List comprehension memungkinkan penyertaan kondisi tambahan dan ekspresi lebih kompleks secara langsung, sedangkan map() lebih fokus pada penerapan fungsi pada elemen list."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Mastery",
+        "penulis": "David Clark",
+        "tanggal": "2024-12-11",
+        "judul": "Memaksimalkan List Comprehension untuk Penggunaan Efisien",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini membahas teknik untuk memaksimalkan penggunaan list comprehension dalam Python, dengan contoh-contoh kode dan praktik terbaik untuk menghasilkan list secara efisien.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list yang berisi hasil perkalian dari setiap elemen dalam list `[2, 4, 6]` dengan angka 3?",
+                "answer": "Gunakan kode berikut: `[x * 3 for x in [2, 4, 6]]`. Ini akan menghasilkan list `[6, 12, 18]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[x ** 3 for x in range(4)]`?",
+                "answer": "Outputnya adalah `[0, 1, 8, 27]`, karena setiap angka dari 0 hingga 3 dipangkatkan tiga."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension yang menyaring huruf vokal dari string 'Education'?",
+                "answer": "Contoh kodenya adalah `[char for char in 'Education' if char in 'aeiou']`. Ini akan menghasilkan list `['E', 'u', 'a', 'i', 'o']`."
+            },
+            {
+                "question": "Kenapa muncul error 'NameError: name 'list' is not defined', saya tidak paham?",
+                "question_code": "[x for x in range(3) if list]",
+                "answer": "Error ini muncul karena `list` digunakan tanpa mendefinisikannya sebelumnya. Anda seharusnya menggunakan kondisi yang valid untuk filter.",
+                "answer_code": "[x for x in range(3)]"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: 'dict' object is not callable', saya tidak paham?",
+                "question_code": "[x for x in {'a': 1, 'b': 2}]",
+                "answer": "Error ini terjadi karena penggunaan sintaks yang tidak benar. Untuk iterasi dictionary, gunakan `.items()` untuk mendapatkan pasangan key-value.",
+                "answer_code": "[x for x in {'a': 1, 'b': 2}.items()]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk menghasilkan list dari angka yang merupakan kuadrat dari bilangan dalam rentang 0 hingga 9?",
+                "answer": "Gunakan kode berikut: `[x ** 2 for x in range(10)]`. Ini akan menghasilkan list `[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]`."
+            },
+            {
+                "question": "Apa keuntungan dari menggunakan list comprehension dibandingkan dengan fungsi filter() dan lambda dalam Python?",
+                "answer": "List comprehension sering kali lebih ringkas dan lebih mudah dibaca dibandingkan dengan kombinasi filter() dan lambda. Dengan list comprehension, Anda dapat menulis ekspresi dan kondisi dalam satu baris kode, yang membuatnya lebih efisien dan lebih mudah dipahami."
+            }
+        ]
+    }
+]

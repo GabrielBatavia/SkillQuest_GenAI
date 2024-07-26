@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Python Basics Guide",
+        "penulis": "Sarah Lee",
+        "tanggal": "2024-12-07",
+        "judul": "Memahami List Comprehension dalam Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini membahas cara membuat list menggunakan list comprehension dalam Python. List comprehension adalah cara singkat dan efisien untuk membuat list baru dengan menerapkan ekspresi pada setiap elemen dari iterable yang ada.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list baru yang berisi kuadrat dari angka 1 hingga 5 menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `[x**2 for x in range(1, 6)]`. Ini akan menghasilkan list `[1, 4, 9, 16, 25]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[x for x in [1, 2, 3] if x > 1]`?",
+                "answer": "Outputnya adalah `[2, 3]`, karena hanya angka yang lebih besar dari 1 yang akan disertakan dalam list baru."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension untuk membuat list dari string yang sudah dipisahkan berdasarkan spasi?",
+                "answer": "Ya, contoh kode adalah `[word for word in 'Hello world'.split()]`. Ini akan menghasilkan list `['Hello', 'world']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'int' object is not iterable', saya tidak paham?",
+                "question_code": "[x for x in 123]",
+                "answer": "Error ini terjadi karena `123` bukan tipe data yang dapat diiterasi. Pastikan untuk menggunakan iterable seperti list atau string.",
+                "answer_code": "[x for x in range(5)]"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: invalid syntax', saya tidak paham?",
+                "question_code": "[x for x in range(5) if x % 2 == 0]",
+                "answer": "Error ini mungkin disebabkan oleh kesalahan sintaks lain di luar list comprehension. Kode di atas sebenarnya valid dan akan menghasilkan `[0, 2, 4]`. Periksa sintaks di seluruh kode Anda.",
+                "answer_code": "[x for x in range(5) if x % 2 == 0]"
+            },
+            {
+                "question": "Bagaimana membuat list comprehension untuk menghasilkan list dari string dengan setiap karakter dikapitalisasi?",
+                "answer": "Gunakan kode berikut: `[char.upper() for char in 'hello']`. Ini akan menghasilkan list `['H', 'E', 'L', 'L', 'O']`."
+            },
+            {
+                "question": "Apa perbedaan antara list comprehension dan loop for tradisional dalam hal pembuatan list?",
+                "answer": "List comprehension sering kali lebih ringkas dan lebih efisien dibandingkan dengan loop for tradisional. Dengan list comprehension, Anda dapat membuat list baru dalam satu baris kode, sedangkan loop for tradisional memerlukan beberapa baris untuk mencapai hasil yang sama."
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "James Smith",
+        "tanggal": "2024-12-08",
+        "judul": "Cara Efektif Menggunakan List Comprehension di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List Comprehension", "Pemula"],
+        "konten": "Artikel ini menjelaskan cara efektif menggunakan list comprehension untuk membuat list di Python. List comprehension adalah cara singkat untuk menghasilkan list baru dengan menerapkan ekspresi pada setiap elemen iterable.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list yang berisi semua elemen dari list `[1, 2, 3, 4]` yang dikalikan 3 menggunakan list comprehension?",
+                "answer": "Gunakan kode berikut: `[x * 3 for x in [1, 2, 3, 4]]`. Ini akan menghasilkan list `[3, 6, 9, 12]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[str(x) for x in range(3)]`?",
+                "answer": "Outputnya adalah `['0', '1', '2']`, karena setiap angka dari 0 hingga 2 dikonversi menjadi string."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension untuk menyaring elemen yang lebih besar dari 10 dari list `[5, 12, 7, 15]`?",
+                "answer": "Contoh kodenya adalah `[x for x in [5, 12, 7, 15] if x > 10]`. Ini akan menghasilkan list `[12, 15]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: 'list' object is not callable', saya tidak paham?",
+                "question_code": "[x for x in [1, 2, 3]()]",
+                "answer": "Error ini terjadi karena `()` di akhir `[1, 2, 3]` menyebabkan kesalahan. Hapus tanda kurung yang tidak perlu untuk memperbaiki error.",
+                "answer_code": "[x for x in [1, 2, 3]]"
+            },
+            {
+                "question": "Kenapa terjadi error 'SyntaxError: unexpected EOF while parsing', saya tidak paham?",
+                "question_code": "[x for x in range(5) if x % 2 == 0",
+                "answer": "Error ini disebabkan oleh kurangnya tanda kurung penutup di akhir list comprehension. Pastikan untuk menutup semua tanda kurung dengan benar.",
+                "answer_code": "[x for x in range(5) if x % 2 == 0]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk menghasilkan list dari angka yang merupakan kelipatan dari 5 dalam rentang 10 hingga 50?",
+                "answer": "Gunakan kode berikut: `[x for x in range(10, 51) if x % 5 == 0]`. Ini akan menghasilkan list `[10, 15, 20, 25, 30, 35, 40, 45, 50]`."
+            },
+            {
+                "question": "Apa keuntungan utama dari menggunakan list comprehension dibandingkan dengan metode lain untuk membuat list?",
+                "answer": "Keuntungan utama menggunakan list comprehension adalah sintaksnya yang lebih ringkas dan kemudahan dalam menulis ekspresi kompleks dalam satu baris kode. Ini membuat kode lebih mudah dibaca dan dipelihara."
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "sumber": "Understanding Python Sorting",
+        "penulis": "Anna Lee",
+        "tanggal": "2024-12-20",
+        "judul": "Mengurutkan Elemen dalam List: Pendekatan Dasar dengan Metode sort()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Dokumen ini menyajikan panduan lengkap tentang metode sort() dalam Python. Fokus pada teknik-teknik dasar untuk mengurutkan elemen dalam list dan beberapa pertimbangan penting yang perlu diperhatikan.",
+        "pertanyaan": [
+            {
+                "question": "Bayangkan Anda memiliki daftar kosakata yang tidak terurut dan Anda ingin menata kata-kata tersebut untuk memudahkan pencarian. Jika Anda memiliki list `['zebra', 'apple', 'banana', 'cherry']`, bagaimana Anda akan menyusun kata-kata ini dengan menggunakan metode yang sesuai? Apakah ada pengaruh khusus dari metode ini terhadap hasil urutan?",
+                "answer": "Anda bisa menggunakan kode berikut: `words = ['zebra', 'apple', 'banana', 'cherry']; words.sort()`. Ini akan menghasilkan `['apple', 'banana', 'cherry', 'zebra']`, yang mengurutkan kata secara alfabetis. Metode `sort()` memodifikasi list asli dan mengurutkan elemen berdasarkan urutan alfanumerik."
+            },
+            {
+                "question": "Dalam situasi di mana Anda memiliki daftar angka dalam format string dan ingin mengurutkannya berdasarkan nilai numerik, bagaimana Anda dapat memastikan bahwa pengurutan dilakukan dengan benar? Misalnya, dengan list `['30', '4', '100', '7']`, apa yang perlu dilakukan untuk mengurutkannya dengan benar?",
+                "answer": "Gunakan kode berikut: `numbers = ['30', '4', '100', '7']; numbers.sort(key=int)`. Ini akan menghasilkan `['4', '7', '30', '100']` setelah konversi ke integer. Menggunakan `key=int` memastikan bahwa string diubah menjadi angka sebelum pengurutan."
+            },
+            {
+                "question": "Jika Anda memiliki daftar nama yang harus diurutkan berdasarkan urutan panjang nama terlebih dahulu, kemudian alfabetis jika panjang nama sama, apa pendekatan yang akan Anda gunakan? Misalnya, dengan daftar `['Emily', 'Alexander', 'John', 'Sophia']`, bagaimana Anda bisa mengaturnya?",
+                "answer": "Gunakan kode berikut: `names = ['Emily', 'Alexander', 'John', 'Sophia']; names.sort(key=lambda x: (len(x), x))`. Ini akan menghasilkan `['John', 'Emily', 'Sophia', 'Alexander']`, mengurutkan berdasarkan panjang nama dan secara alfabetis jika panjangnya sama."
+            },
+            {
+                "question": "Dalam konteks pengurutan data campuran yang melibatkan angka dan teks dalam list, bagaimana Anda bisa memastikan bahwa pengurutan dilakukan dengan mempertimbangkan tipe data yang berbeda? Sebagai contoh, dengan list `['a', 1, 'b', 2]`, bagaimana cara pengurutan yang tepat?",
+                "answer": "Python tidak memungkinkan pengurutan list yang mengandung tipe data campuran secara langsung. Untuk menghindari error, pisahkan list berdasarkan tipe data atau ubah semua elemen ke tipe data yang sama sebelum pengurutan. Misalnya, konversi semua elemen menjadi string atau integer."
+            },
+            {
+                "question": "Anda memiliki list yang berisi objek dengan atribut berbeda, dan Anda ingin mengurutkannya berdasarkan salah satu atribut. Jika objek-objek tersebut tidak memiliki metode perbandingan khusus, bagaimana Anda bisa mengurutkan mereka? Misalnya, dengan list objek `[{ 'name': 'Alice', 'age': 30 }, { 'name': 'Bob', 'age': 25 }]`, apa langkah yang diperlukan?",
+                "answer": "Gunakan kode berikut: `objects = [{'name': 'Alice', 'age': 30}, {'name': 'Bob', 'age': 25}]; objects.sort(key=lambda x: x['age'])`. Ini akan mengurutkan objek berdasarkan atribut `age`. Jika objek tidak memiliki metode perbandingan, gunakan parameter `key` untuk menentukan kriteria pengurutan."
+            },
+            {
+                "question": "Dalam kasus di mana Anda ingin mengurutkan daftar waktu berdasarkan tanggal dan waktu secara efisien, apa yang bisa Anda lakukan jika list tersebut sangat besar? Misalnya, dengan list dari objek `datetime`, bagaimana Anda akan menangani pengurutan pada skala besar?",
+                "answer": "Gunakan kode berikut: `from datetime import datetime; times = [datetime(2024, 1, 1, 12, 0), datetime(2024, 1, 1, 8, 0), datetime(2024, 1, 1, 15, 0)]; times.sort()`. Pada skala besar, pastikan Anda menggunakan metode pengurutan yang efisien seperti `sort()`, yang menggunakan algoritma Timsort, dan pertimbangkan untuk mengoptimalkan memori."
+            }
+        ]
+    },
+    {
+        "sumber": "Introduction to Python Lists",
+        "penulis": "James Brown",
+        "tanggal": "2024-12-21",
+        "judul": "Pengurutan Elemen dalam List: Pengenalan Metode sort()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Sorting", "List", "Pemula"],
+        "konten": "Artikel ini memberikan pemahaman dasar tentang bagaimana menggunakan metode sort() untuk mengurutkan elemen dalam list. Termasuk berbagai contoh dan teknik dasar untuk pengurutan.",
+        "pertanyaan": [
+            {
+                "question": "Anda sedang mengelola daftar tugas yang harus diurutkan berdasarkan prioritas. Jika Anda memiliki list seperti `['task4', 'task1', 'task3', 'task2']`, bagaimana Anda akan menyusun daftar ini untuk memudahkan penjadwalan tugas?",
+                "answer": "Gunakan kode berikut: `tasks = ['task4', 'task1', 'task3', 'task2']; tasks.sort()`. Ini akan menghasilkan `['task1', 'task2', 'task3', 'task4']`, mengurutkan berdasarkan urutan alfanumerik dari nama tugas."
+            },
+            {
+                "question": "Jika Anda ingin mengurutkan daftar harga barang dalam format string seperti `['20.50', '5.99', '12.30']` sehingga harganya tersusun dari yang terendah hingga tertinggi, apa langkah yang harus diambil?",
+                "answer": "Gunakan kode berikut: `prices = ['20.50', '5.99', '12.30']; prices.sort(key=float)`. Ini akan menghasilkan `['5.99', '12.30', '20.50']` dengan mengurutkan harga berdasarkan nilai numeriknya."
+            },
+            {
+                "question": "Dalam situasi di mana Anda harus mengurutkan daftar nama dengan kriteria yang melibatkan beberapa atribut, seperti nama dan usia, bagaimana Anda akan menangani ini jika Anda memiliki daftar seperti `['John:30', 'Jane:25', 'Doe:30']`?",
+                "answer": "Gunakan kode berikut: `data = ['John:30', 'Jane:25', 'Doe:30']; data.sort(key=lambda x: (x.split(':')[1], x.split(':')[0]))`. Ini akan menghasilkan `['Jane:25', 'John:30', 'Doe:30']`, diurutkan berdasarkan usia terlebih dahulu, lalu nama jika usia sama."
+            },
+            {
+                "question": "Jika Anda memiliki daftar item dengan beberapa kategori, misalnya `['fruit:apple', 'fruit:banana', 'vegetable:carrot']`, bagaimana Anda bisa mengurutkan berdasarkan kategori dan kemudian nama item?",
+                "answer": "Gunakan kode berikut: `items = ['fruit:apple', 'fruit:banana', 'vegetable:carrot']; items.sort(key=lambda x: (x.split(':')[0], x.split(':')[1]))`. Ini akan menghasilkan `['fruit:apple', 'fruit:banana', 'vegetable:carrot']`, diurutkan berdasarkan kategori dan nama item."
+            },
+            {
+                "question": "Bagaimana Anda bisa mengurutkan list yang berisi data waktu dalam format string seperti `['2024-12-25', '2024-01-01', '2024-06-15']` untuk mendapatkan urutan kronologis? Apa yang perlu dilakukan agar pengurutan dilakukan dengan benar?",
+                "answer": "Gunakan kode berikut: `dates = ['2024-12-25', '2024-01-01', '2024-06-15']; dates.sort(key=lambda date: datetime.strptime(date, '%Y-%m-%d'))`. Ini akan menghasilkan `['2024-01-01', '2024-06-15', '2024-12-25']`, mengurutkan berdasarkan tanggal."
+            },
+            {
+                "question": "Anda memiliki daftar objek yang harus diurutkan berdasarkan atribut yang berbeda. Jika objek-objek tersebut memiliki format `{'title': 'Book1', 'rating': 5}`, bagaimana Anda bisa mengurutkan berdasarkan rating terlebih dahulu dan kemudian berdasarkan judul?",
+                "answer": "Gunakan kode berikut: `books = [{'title': 'Book1', 'rating': 5}, {'title': 'Book2', 'rating': 4}]; books.sort(key=lambda x: (-x['rating'], x['title']))`. Ini akan menghasilkan ` [{'title': 'Book1', 'rating': 5}, {'title': 'Book2', 'rating': 4}]`, diurutkan berdasarkan rating tertinggi terlebih dahulu, lalu judul."
+            }
+        ]
+    }
+]

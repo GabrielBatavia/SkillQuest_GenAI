@@ -1,0 +1,88 @@
+[
+    {
+        "sumber": "Advanced Python Programming",
+        "penulis": "Sophia Taylor",
+        "tanggal": "2024-12-15",
+        "judul": "List Comprehension: Teknik Lanjutan di Python",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "List Comprehension", "Menengah"],
+        "konten": "Artikel ini mengeksplorasi teknik lanjutan dalam penggunaan list comprehension di Python. List comprehension memungkinkan untuk membuat list yang lebih kompleks dengan cara yang ringkas, termasuk penerapan berbagai kondisi dan ekspresi.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menghasilkan list dari string yang memiliki panjang lebih dari 3 karakter dalam list `['cat', 'elephant', 'dog', 'giraffe']`?",
+                "answer": "Gunakan kode berikut: `[word for word in ['cat', 'elephant', 'dog', 'giraffe'] if len(word) > 3]`. Ini akan menghasilkan list `['elephant', 'giraffe']`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[str(x) + '!' for x in [1, 2, 3, 4, 5]]`?",
+                "answer": "Outputnya adalah `['1!', '2!', '3!', '4!', '5!']`, karena setiap angka dalam list dikonversi menjadi string dan ditambahkan tanda seru."
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk membuat list yang berisi akar kuadrat dari setiap angka dalam list `[16, 25, 36]`?",
+                "answer": "Gunakan kode berikut: `[x**0.5 for x in [16, 25, 36]]`. Ini akan menghasilkan list `[4.0, 5.0, 6.0]`."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension yang menghasilkan list dari angka negatif dalam list `[10, -1, 20, -5]`?",
+                "answer": "Contoh kodenya adalah `[x for x in [10, -1, 20, -5] if x < 0]`. Ini akan menghasilkan list `[-1, -5]`."
+            },
+            {
+                "question": "Kenapa terjadi error 'NameError: name 'range' is not defined', saya tidak paham?",
+                "question_code": "[x for x in rang(5)]",
+                "answer": "Error ini terjadi karena ada kesalahan penulisan dalam fungsi `range`. Pastikan untuk menulis `range` dengan benar.",
+                "answer_code": "[x for x in range(5)]"
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: string indices must be integers', saya tidak paham?",
+                "question_code": "[char.upper() for char in 'hello' if char[0] == 'h']",
+                "answer": "Error ini terjadi karena `char` adalah string, bukan list. Anda harus mengakses elemen string dengan indeks integer. Kode yang benar adalah `[char.upper() for char in 'hello' if char == 'h']`.",
+                "answer_code": "[char.upper() for char in 'hello' if char == 'h']"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk menyaring list dari elemen yang mengandung huruf vokal dari list `['grape', 'banana', 'pear', 'kiwi']`?",
+                "answer": "Gunakan kode berikut: `[fruit for fruit in ['grape', 'banana', 'pear', 'kiwi'] if any(vowel in fruit for vowel in 'aeiou')]`. Ini akan menghasilkan list `['grape', 'banana', 'pear']`."
+            }
+        ]
+    },
+    {
+        "sumber": "Python Techniques",
+        "penulis": "Lucas Green",
+        "tanggal": "2024-12-16",
+        "judul": "Efisiensi List Comprehension untuk Pemula",
+        "tingkat_kesulitan": "Menengah",
+        "tag": ["Python", "List Comprehension", "Menengah"],
+        "konten": "Artikel ini menyajikan berbagai teknik efisiensi dalam menggunakan list comprehension di Python untuk pemula. List comprehension memungkinkan pemrosesan data yang efisien dengan sintaks yang lebih ringkas.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list baru dari list `[1, 3, 5, 7, 9]` yang berisi angka yang lebih besar dari 4?",
+                "answer": "Gunakan kode berikut: `[x for x in [1, 3, 5, 7, 9] if x > 4]`. Ini akan menghasilkan list `[5, 7, 9]`."
+            },
+            {
+                "question": "Apa output dari list comprehension berikut: `[(x, x**2) for x in [2, 4, 6]]`?",
+                "answer": "Outputnya adalah `[(2, 4), (4, 16), (6, 36)]`, karena setiap elemen dalam list dipasangkan dengan kuadratnya."
+            },
+            {
+                "question": "Dapatkah Anda memberikan contoh list comprehension untuk menghasilkan list dari karakter dalam string 'programming' yang tidak berulang?",
+                "answer": "Contoh kodenya adalah `[char for char in 'programming' if 'programming'.count(char) == 1]`. Ini akan menghasilkan list dari karakter yang tidak berulang dalam string tersebut."
+            },
+            {
+                "question": "Bagaimana cara menggunakan list comprehension untuk menyaring elemen dengan panjang genap dari list `['star', 'moon', 'sun']`?",
+                "answer": "Gunakan kode berikut: `[word for word in ['star', 'moon', 'sun'] if len(word) % 2 == 0]`. Ini akan menghasilkan list `['moon']`."
+            },
+            {
+                "question": "Kenapa terjadi error 'TypeError: unsupported operand type(s) for +: 'str' and 'int'', saya tidak paham?",
+                "question_code": "[str(x) + 1 for x in range(3)]",
+                "answer": "Error ini terjadi karena Anda mencoba menambahkan string dan integer. Pastikan untuk mengkonversi tipe data yang sesuai, seperti `str(x) + '1'`.",
+                "answer_code": "[str(x) + '1' for x in range(3)]"
+            },
+            {
+                "question": "Kenapa terjadi error 'IndexError: list index out of range', saya tidak paham?",
+                "question_code": "[lst[i] for i in range(10)]",
+                "answer": "Error ini terjadi karena Anda mencoba mengakses indeks yang tidak ada dalam list. Pastikan indeks berada dalam rentang list yang valid.",
+                "answer_code": "[lst[i] for i in range(len(lst))]"
+            },
+            {
+                "question": "Bagaimana menggunakan list comprehension untuk menyaring angka dari list `[0, 1, 2, 3, 4, 5, 6]` yang merupakan angka genap dan kurang dari 5?",
+                "answer": "Gunakan kode berikut: `[x for x in [0, 1, 2, 3, 4, 5, 6] if x % 2 == 0 and x < 5]`. Ini akan menghasilkan list `[0, 2, 4]`."
+            }
+        ]
+    }
+]
