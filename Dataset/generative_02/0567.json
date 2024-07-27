@@ -1,1 +1,72 @@
-{}
+[
+    {
+        "sumber": "Programming Basics",
+        "penulis": "Olivia Smith",
+        "tanggal": "2024-07-26",
+        "judul": "Memperbaiki Kesalahan dalam Penyalinan List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Copy Method"],
+        "konten": "Artikel ini membahas kesalahan umum saat menyalin list di Python dan bagaimana cara yang benar untuk membuat salinan list yang terpisah.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang salah dengan kode berikut dalam menyalin list berisi string dan mengubahnya?",
+                "answer": "Kode ini tidak membuat salinan yang benar-benar terpisah dari list asli. Gunakan metode `copy()` untuk membuat salinan yang independen.",
+                "question_code": "my_list = ['dog', 'cat', 'mouse']\nmy_list_copy = my_list\nmy_list_copy.append('rabbit')\nprint('Original List:', my_list)\nprint('Copied List:', my_list_copy)",
+                "answer_code": "my_list = ['dog', 'cat', 'mouse']\nmy_list_copy = my_list.copy()\nmy_list_copy.append('rabbit')\nprint('Original List:', my_list)\nprint('Copied List:', my_list_copy)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki untuk memastikan bahwa perubahan pada salinan list tidak mempengaruhi list asli?",
+                "answer": "Kode ini membuat salinan dangkal dari list. Gunakan metode `copy()` untuk membuat salinan yang benar-benar terpisah.",
+                "question_code": "numbers = [10, 20, 30]\ncopied_numbers = list(numbers)\ncopied_numbers[0] = 99\nprint('Numbers:', numbers)\nprint('Copied Numbers:', copied_numbers)",
+                "answer_code": "numbers = [10, 20, 30]\ncopied_numbers = numbers.copy()\ncopied_numbers[0] = 99\nprint('Numbers:', numbers)\nprint('Copied Numbers:', copied_numbers)"
+            },
+            {
+                "question": "Apa yang salah dalam kode ini yang mencoba menyalin list yang berisi objek dictionary?",
+                "answer": "Kode ini menggunakan metode `copy()` yang hanya membuat salinan dangkal. Gunakan `deepcopy()` untuk memastikan bahwa semua objek di dalam list juga disalin dengan benar.",
+                "question_code": "data = [{'key': 'value1'}, {'key': 'value2'}]\ndata_copy = data.copy()\ndata_copy[0]['key'] = 'new_value'\nprint('Data:', data)\nprint('Data Copy:', data_copy)",
+                "answer_code": "import copy\ndata = [{'key': 'value1'}, {'key': 'value2'}]\ndata_copy = copy.deepcopy(data)\ndata_copy[0]['key'] = 'new_value'\nprint('Data:', data)\nprint('Data Copy:', data_copy)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki untuk menyalin list yang berisi list lain di dalamnya dan menghindari efek samping?",
+                "answer": "Kode ini membuat salinan dangkal yang tidak memisahkan sub-list. Gunakan `deepcopy()` untuk membuat salinan mendalam.",
+                "question_code": "nested_list = [[1, 2], [3, 4]]\ncopied_list = nested_list.copy()\ncopied_list[1][0] = 99\nprint('Nested List:', nested_list)\nprint('Copied List:', copied_list)",
+                "answer_code": "import copy\nnested_list = [[1, 2], [3, 4]]\ncopied_list = copy.deepcopy(nested_list)\ncopied_list[1][0] = 99\nprint('Nested List:', nested_list)\nprint('Copied List:', copied_list)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "James Lee",
+        "tanggal": "2024-07-26",
+        "judul": "Memahami Kesalahan dalam Menyalin List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Copy Method"],
+        "konten": "Artikel ini menjelaskan berbagai kesalahan umum saat menyalin list di Python dan solusi untuk memastikan salinan yang benar.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang salah dengan kode berikut ketika membuat salinan dari list dan mengubah elemen di salinan?",
+                "answer": "Kode ini tidak membuat salinan yang benar-benar terpisah dari list asli. Gunakan `copy()` untuk membuat salinan independen.",
+                "question_code": "fruits = ['apple', 'banana', 'cherry']\nfruits_copy = fruits\nfruits_copy.append('grape')\nprint('Fruits:', fruits)\nprint('Fruits Copy:', fruits_copy)",
+                "answer_code": "fruits = ['apple', 'banana', 'cherry']\nfruits_copy = fruits.copy()\nfruits_copy.append('grape')\nprint('Fruits:', fruits)\nprint('Fruits Copy:', fruits_copy)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki untuk menyalin list yang berisi bilangan dan menghindari perubahan pada list asli?",
+                "answer": "Kode ini membuat salinan dangkal dari list. Gunakan metode `copy()` untuk menyalin list dengan benar.",
+                "question_code": "ages = [25, 30, 35]\nages_copy = list(ages)\nages_copy[1] = 40\nprint('Ages:', ages)\nprint('Ages Copy:', ages_copy)",
+                "answer_code": "ages = [25, 30, 35]\nages_copy = ages.copy()\nages_copy[1] = 40\nprint('Ages:', ages)\nprint('Ages Copy:', ages_copy)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini dalam menyalin list yang berisi objek dan memodifikasinya?",
+                "answer": "Kode ini hanya membuat salinan dangkal dari list. Gunakan `deepcopy()` untuk membuat salinan mendalam yang benar-benar terpisah.",
+                "question_code": "objects = [{'name': 'Alice'}, {'name': 'Bob'}]\nobjects_copy = objects.copy()\nobjects_copy[1]['name'] = 'Charlie'\nprint('Objects:', objects)\nprint('Objects Copy:', objects_copy)",
+                "answer_code": "import copy\nobjects = [{'name': 'Alice'}, {'name': 'Bob'}]\nobjects_copy = copy.deepcopy(objects)\nobjects_copy[1]['name'] = 'Charlie'\nprint('Objects:', objects)\nprint('Objects Copy:', objects_copy)"
+            },
+            {
+                "question": "Bagaimana kode ini dapat diperbaiki untuk menyalin list yang berisi list di dalamnya dan menghindari perubahan pada list asli?",
+                "answer": "Kode ini menggunakan metode `copy()` yang membuat salinan dangkal. Gunakan `deepcopy()` untuk menyalin semua tingkat list dengan benar.",
+                "question_code": "import copy\nlist_of_lists = [[10, 20], [30, 40]]\ncopy_of_list_of_lists = copy.copy(list_of_lists)\ncopy_of_list_of_lists[0][0] = 99\nprint('List of Lists:', list_of_lists)\nprint('Copy of List of Lists:', copy_of_list_of_lists)",
+                "answer_code": "import copy\nlist_of_lists = [[10, 20], [30, 40]]\ncopy_of_list_of_lists = copy.deepcopy(list_of_lists)\ncopy_of_list_of_lists[0][0] = 99\nprint('List of Lists:', list_of_lists)\nprint('Copy of List of Lists:', copy_of_list_of_lists)"
+            }
+        ]
+    }
+]

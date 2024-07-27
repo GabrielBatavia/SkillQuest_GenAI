@@ -1,1 +1,88 @@
-{}
+[
+    {
+        "sumber": "Python Beginner",
+        "penulis": "John Smith",
+        "tanggal": "2024-07-25",
+        "judul": "Menghitung Jumlah Elemen dalam List dengan Fungsi len()",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "len()"],
+        "konten": "Artikel ini membahas penggunaan fungsi len() untuk mendapatkan jumlah elemen dalam sebuah list di Python, beserta contohnya.",
+        "pertanyaan": [
+            {
+                "question": "Apa fungsi dari len() dalam konteks list di Python?",
+                "answer": "Fungsi len() digunakan untuk menghitung jumlah elemen dalam sebuah list di Python. Contoh: len([1, 2, 3]) akan menghasilkan 3."
+            },
+            {
+                "question": "Bagaimana cara menggunakan len() untuk menghitung elemen dalam list?",
+                "answer": "Untuk menggunakan len(), panggil fungsi tersebut dengan list sebagai argumen. Contoh: len(my_list) di mana my_list adalah list yang ingin dihitung jumlah elemennya."
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'TypeError: object of type 'int' has no len()' saat menggunakan len()?",
+                "question_code": "my_number = 5\nlength = len(my_number)",
+                "answer": "Error ini muncul karena len() hanya dapat digunakan pada objek seperti list, string, atau dictionary, bukan pada tipe data integer. Pastikan argumen len() adalah list atau objek yang memiliki panjang.",
+                "answer_code": "my_list = [1, 2, 3]\nlength = len(my_list)"
+            },
+            {
+                "question": "Kenapa fungsi len() tidak menghasilkan hasil yang diharapkan saat diterapkan pada list kosong?",
+                "question_code": "empty_list = []\ncount = len(empty_list)\nprint(count)",
+                "answer": "Fungsi len() akan menghasilkan 0 ketika diterapkan pada list kosong karena tidak ada elemen di dalamnya. Ini adalah hasil yang diharapkan untuk list kosong.",
+                "answer_code": "empty_list = []\ncount = len(empty_list)\nprint(count)"  
+            },
+            {
+                "question": "Bagaimana cara memeriksa jumlah elemen dalam list yang berisi list lain?",
+                "question_code": "nested_list = [[1, 2], [3, 4]]\nlength = len(nested_list)\nprint(length)",
+                "answer": "Fungsi len() menghitung jumlah elemen di level teratas dari list. Untuk list bersarang, len() hanya menghitung jumlah sublist, bukan jumlah total elemen di dalam sublist.",
+                "answer_code": "nested_list = [[1, 2], [3, 4]]\nlength = len(nested_list)\nprint(length)"  
+            },
+            {
+                "question": "Apa yang harus dilakukan jika len() tidak berfungsi pada tipe data yang tidak didukung?",
+                "answer": "Pastikan bahwa tipe data yang digunakan dengan len() adalah tipe yang mendukung fungsi ini seperti list, string, atau dictionary. Jika tidak, pertimbangkan untuk menggunakan tipe data yang sesuai."
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'TypeError: len() of unsized object' ketika menggunakan len()?",
+                "question_code": "my_dict = {'a': 1}\nlength = len(my_dict[0])",
+                "answer": "Error ini muncul karena Anda mencoba menggunakan len() pada elemen yang tidak memiliki ukuran seperti integer atau elemen yang tidak diindeks dengan benar. Pastikan untuk menggunakan len() pada objek yang memiliki ukuran seperti list atau string.",
+                "answer_code": "my_dict = {'a': 1}\nlength = len(my_dict)\nprint(length)"  
+            }
+        ]
+    },
+    {
+        "sumber": "Python Basics",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-07-26",
+        "judul": "Memahami Fungsi len() untuk Mengetahui Jumlah Elemen dalam List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "len()"],
+        "konten": "Panduan ini menjelaskan tentang fungsi len() untuk menghitung jumlah elemen dalam list di Python dan memberikan contoh penggunaannya.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan fungsi len() dalam Python dan bagaimana cara kerjanya?",
+                "answer": "Fungsi len() digunakan untuk menghitung jumlah elemen dalam list, string, atau objek lain yang memiliki ukuran. Misalnya, len([1, 2, 3]) akan mengembalikan 3."
+            },
+            {
+                "question": "Bagaimana cara menggunakan len() pada string untuk menghitung jumlah karakter?",
+                "answer": "Untuk menggunakan len() pada string, panggil fungsi dengan string sebagai argumen. Contoh: len('hello') akan mengembalikan 5, yang merupakan jumlah karakter dalam string tersebut."
+            },
+            {
+                "question": "Kenapa len() menghasilkan hasil yang tidak sesuai pada dictionary?",
+                "answer": "Fungsi len() pada dictionary akan menghitung jumlah kunci (keys) di dalam dictionary, bukan jumlah elemen di dalam nilai (values). Contoh: len({'a': 1, 'b': 2}) akan mengembalikan 2."
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'TypeError: object of type 'NoneType' has no len()' saat menggunakan len()?",
+                "question_code": "none_type = None\nlength = len(none_type)",
+                "answer": "Error ini muncul karena Anda mencoba menggunakan len() pada objek None yang tidak memiliki ukuran. Pastikan untuk menggunakan len() pada objek yang valid seperti list atau string.",
+                "answer_code": "my_list = [1, 2, 3]\nlength = len(my_list)"
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah elemen dalam list yang berisi berbagai tipe data?",
+                "question_code": "mixed_list = [1, 'two', 3.0, [4]]\ncount = len(mixed_list)\nprint(count)",
+                "answer": "Fungsi len() akan menghitung jumlah elemen di level teratas dari list, terlepas dari tipe data elemen tersebut. Jadi, len() pada mixed_list di atas akan mengembalikan 4.",
+                "answer_code": "mixed_list = [1, 'two', 3.0, [4]]\ncount = len(mixed_list)\nprint(count)"  
+            },
+            {
+                "question": "Apa yang harus dilakukan jika len() tidak menghasilkan hasil yang sesuai untuk list berisi objek kompleks?",
+                "answer": "Pastikan bahwa objek yang dioperasikan dengan len() adalah list atau objek yang memiliki ukuran. Jika objek kompleks berisi sub-objek, len() hanya menghitung elemen di level teratas."
+            }
+        ]
+    }
+]

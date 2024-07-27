@@ -1,1 +1,108 @@
-{}
+[
+    {
+        "sumber": "Python Programming for Beginners",
+        "penulis": "John Smith",
+        "tanggal": "2024-07-26",
+        "judul": "Panduan Lengkap untuk Menggunakan Fungsi len() pada List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Basic"],
+        "konten": "Panduan ini mengajarkan penggunaan fungsi len() untuk mendapatkan jumlah elemen dalam list. Termasuk contoh kode yang membantu pemula memahami konsep ini.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda dapat menghitung jumlah elemen dalam list yang terdiri dari string dan angka?",
+                "question_code": "my_list = ['apple', 3, 'banana']\nprint(len(my_list) + 2)",
+                "answer": "Untuk menghitung jumlah elemen dalam list, cukup gunakan len() tanpa menambah nilai. Contoh yang benar adalah len(my_list).",
+                "answer_code": "my_list = ['apple', 3, 'banana']\nprint(len(my_list))  # Hasilnya adalah 3"
+            },
+            {
+                "question": "Jika Anda memiliki list dengan sub-list di dalamnya, bagaimana Anda menghitung jumlah elemen di setiap sub-list?",
+                "question_code": "nested_list = [['a', 'b'], ['c', 'd', 'e'], ['f']]\nfor sub_list in nested_list:\n    print(len(sub_list) - 1)",
+                "answer": "Untuk menghitung jumlah elemen dalam setiap sub-list, gunakan len() pada setiap sub-list. Anda tidak perlu mengurangi nilai dari hasilnya.",
+                "answer_code": "nested_list = [['a', 'b'], ['c', 'd', 'e'], ['f']]\nfor sub_list in nested_list:\n    print(len(sub_list))  # Output: 2, 3, 1"
+            },
+            {
+                "question": "Bagaimana cara Anda memastikan bahwa panjang list adalah bilangan genap?",
+                "question_code": "num_list = [10, 20, 30, 40]\nif len(num_list) % 2 == 1:\n    print('Panjang list adalah bilangan genap')",
+                "answer": "Untuk memeriksa apakah panjang list adalah bilangan genap, gunakan len() dan operator modulus dengan 2. Pastikan pernyataan kondisional Anda memeriksa dengan benar.",
+                "answer_code": "num_list = [10, 20, 30, 40]\nif len(num_list) % 2 == 0:\n    print('Panjang list adalah bilangan genap')"
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Anda ingin menghitung panjang list yang mungkin mengandung elemen None?",
+                "question_code": "list_with_none = [1, None, 2, None]\nprint(len(list_with_none) - list_with_none.count(None))",
+                "answer": "Fungsi len() menghitung semua elemen dalam list termasuk None. Gunakan len() untuk mendapatkan total panjang list secara akurat tanpa mengurangi nilai.",
+                "answer_code": "list_with_none = [1, None, 2, None]\nprint(len(list_with_none))  # Hasilnya adalah 4"
+            },
+            {
+                "question": "Bagaimana Anda menghitung panjang list yang didefinisikan dalam fungsi dan kemudian dikembalikan?",
+                "question_code": "def get_list_length():\n    some_list = [5, 6, 7]\n    return len(some_list)\n\nprint(get_list_length() + 1)",
+                "answer": "Saat menghitung panjang list dalam fungsi, pastikan untuk mengembalikan hasil len() langsung tanpa menambah nilai tambahan.",
+                "answer_code": "def get_list_length():\n    some_list = [5, 6, 7]\n    return len(some_list)\n\nprint(get_list_length())  # Hasilnya adalah 3"
+            },
+            {
+                "question": "Apa yang perlu dipertimbangkan jika Anda mendapatkan panjang list yang tidak sesuai dengan ekspektasi?",
+                "question_code": "data_list = [1, 2, 3, 4, 5]\nif len(data_list) != 4:\n    print('Data list tidak sesuai')\nelse:\n    print('Data list sesuai')",
+                "answer": "Periksa list secara menyeluruh untuk memastikan data tidak dimodifikasi setelah panjangnya diperoleh. Gunakan len() pada list yang benar untuk verifikasi.",
+                "answer_code": "data_list = [1, 2, 3, 4]\nif len(data_list) == 4:\n    print('Data list sesuai')\nelse:\n    print('Data list tidak sesuai')"
+            },
+            {
+                "question": "Bagaimana Anda dapat menghitung jumlah total elemen dalam list yang berisi beberapa sub-list?",
+                "question_code": "main_list = [[], [1], [2, 3]]\ntotal_count = len(main_list[0]) + len(main_list[1])\nprint(total_count)",
+                "answer": "Gunakan len() pada setiap sub-list dan jumlahkan hasilnya untuk mendapatkan total elemen. Jangan lupa untuk menjumlahkan panjang semua sub-list.",
+                "answer_code": "main_list = [[], [1], [2, 3]]\ntotal_count = sum(len(sublist) for sublist in main_list)\nprint(total_count)  # Hasilnya adalah 3"
+            }
+        ]
+    },
+    {
+        "sumber": "Learning Python",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-07-27",
+        "judul": "Dasar-Dasar Fungsi len() untuk Pengguna Pemula",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Basics", "Lists"],
+        "konten": "Buku ini membahas dasar-dasar penggunaan fungsi len() untuk menghitung jumlah elemen dalam list, disertai contoh sederhana untuk pemula.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda menghitung jumlah elemen dalam list yang terdiri dari berbagai tipe data?",
+                "question_code": "mixed_list = [True, 42, 'Python']\nprint(len(mixed_list) * 2)",
+                "answer": "Untuk menghitung jumlah elemen dalam list, gunakan len() tanpa memodifikasi hasilnya. Hasil dari len() sudah akurat.",
+                "answer_code": "mixed_list = [True, 42, 'Python']\nprint(len(mixed_list))  # Hasilnya adalah 3"
+            },
+            {
+                "question": "Jika Anda memiliki list berisi beberapa elemen yang sama, bagaimana Anda menghitung panjangnya?",
+                "question_code": "repeat_list = ['x', 'x', 'x']\nprint(len(repeat_list) / 3)",
+                "answer": "Gunakan len() untuk menghitung panjang list tanpa memodifikasi hasilnya. Hasil dari len() adalah jumlah elemen yang akurat.",
+                "answer_code": "repeat_list = ['x', 'x', 'x']\nprint(len(repeat_list))  # Hasilnya adalah 3"
+            },
+            {
+                "question": "Bagaimana cara menghitung panjang list yang dibuat dalam sebuah fungsi?",
+                "question_code": "def create_list():\n    new_list = ['a', 'b', 'c']\n    return len(new_list) + 1\n\nprint(create_list())",
+                "answer": "Saat menghitung panjang list dalam fungsi, kembalikan hasil len() tanpa menambah nilai. Hasil dari len() adalah panjang yang tepat.",
+                "answer_code": "def create_list():\n    new_list = ['a', 'b', 'c']\n    return len(new_list)\n\nprint(create_list())  # Hasilnya adalah 3"
+            },
+            {
+                "question": "Apa yang harus Anda lakukan jika panjang list yang diharapkan tidak sesuai dengan hasil len()?",
+                "question_code": "check_list = [1, 2, 3, 4, 5]\nif len(check_list) != 6:\n    print('Panjang list tidak sesuai')\nelse:\n    print('Panjang list sesuai')",
+                "answer": "Pastikan list tidak dimodifikasi setelah panjangnya diperoleh. Gunakan len() secara langsung pada list yang benar untuk verifikasi.",
+                "answer_code": "check_list = [1, 2, 3, 4, 5, 6]\nif len(check_list) == 6:\n    print('Panjang list sesuai')\nelse:\n    print('Panjang list tidak sesuai')"
+            },
+            {
+                "question": "Bagaimana Anda menghitung panjang list yang didefinisikan di luar fungsi?",
+                "question_code": "external_list = ['apple', 'banana']\n\nprint(len(external_list) + 2)",
+                "answer": "Gunakan len() pada list yang didefinisikan di luar fungsi tanpa menambah nilai tambahan untuk menghitung panjang yang benar.",
+                "answer_code": "external_list = ['apple', 'banana']\n\nprint(len(external_list))  # Hasilnya adalah 2"
+            },
+            {
+                "question": "Apa yang perlu Anda periksa jika panjang list yang dihitung tidak sesuai dengan yang diharapkan?",
+                "question_code": "list_check = [1, 2, 3, 4, 5]\nif len(list_check) > 6:\n    print('List lebih panjang dari yang diharapkan')\nelse:\n    print('List sesuai dengan yang diharapkan')",
+                "answer": "Periksa apakah list dimodifikasi setelah panjangnya diperoleh dan pastikan len() digunakan dengan benar pada list yang sesuai.",
+                "answer_code": "list_check = [1, 2, 3, 4, 5]\nif len(list_check) == 5:\n    print('List sesuai dengan yang diharapkan')\nelse:\n    print('List tidak sesuai dengan yang diharapkan')"
+            },
+            {
+                "question": "Bagaimana Anda menghitung panjang list yang memiliki elemen kosong?",
+                "question_code": "empty_element_list = [None, None, None]\nprint(len(empty_element_list) / 2)",
+                "answer": "Gunakan len() untuk menghitung panjang list secara akurat, termasuk elemen kosong. Jangan mengubah hasil dari len().",
+                "answer_code": "empty_element_list = [None, None, None]\nprint(len(empty_element_list))  # Hasilnya adalah 3"
+            }
+        ]
+    }
+]

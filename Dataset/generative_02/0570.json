@@ -1,1 +1,72 @@
-{}
+[
+    {
+        "sumber": "Python Programming Basics",
+        "penulis": "Laura Green",
+        "tanggal": "2024-07-26",
+        "judul": "Kesalahan Umum dalam Menyalin List di Python dan Cara Memperbaikinya",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "List", "Copy Method"],
+        "konten": "Panduan ini membahas berbagai kesalahan umum saat menyalin list di Python dan memberikan solusi yang benar untuk setiap masalah.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang salah dengan kode berikut ketika mencoba menyalin list dan membuat beberapa perubahan pada salinan?",
+                "answer": "Kode ini hanya membuat referensi ke list asli. Untuk membuat salinan yang benar-benar terpisah, gunakan metode `copy()`.",
+                "question_code": "numbers = [4, 8, 12]\nnew_numbers = numbers\nnew_numbers.append(16)\nprint('Numbers:', numbers)\nprint('New Numbers:', new_numbers)",
+                "answer_code": "numbers = [4, 8, 12]\nnew_numbers = numbers.copy()\nnew_numbers.append(16)\nprint('Numbers:', numbers)\nprint('New Numbers:', new_numbers)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki agar salinan list yang berisi objek tidak mempengaruhi list asli?",
+                "answer": "Kode ini hanya menyalin referensi ke objek dalam list. Gunakan metode `copy()` untuk membuat salinan yang benar-benar terpisah.",
+                "question_code": "data = [{'a': 1}, {'b': 2}]\ndata_copy = data\ndata_copy[1]['b'] = 3\nprint('Data:', data)\nprint('Data Copy:', data_copy)",
+                "answer_code": "import copy\ndata = [{'a': 1}, {'b': 2}]\ndata_copy = copy.deepcopy(data)\ndata_copy[1]['b'] = 3\nprint('Data:', data)\nprint('Data Copy:', data_copy)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini ketika mencoba menyalin list yang berisi tuple dan mengubah tuple di salinan?",
+                "answer": "Kode ini tidak membuat salinan yang mendalam dari list yang berisi tuple. Gunakan metode `copy()` untuk menyalin list secara independen.",
+                "question_code": "items = [(10, 20), (30, 40)]\nitems_copy = items.copy()\nitems_copy[0] = (50, 60)\nprint('Items:', items)\nprint('Items Copy:', items_copy)",
+                "answer_code": "items = [(10, 20), (30, 40)]\nitems_copy = items.copy()\nitems_copy[0] = (50, 60)\nprint('Items:', items)\nprint('Items Copy:', items_copy)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki untuk memastikan bahwa list yang berisi list di dalamnya disalin dengan benar tanpa mempengaruhi list asli?",
+                "answer": "Kode ini hanya menyalin list secara dangkal. Gunakan `deepcopy()` untuk menyalin list secara mendalam.",
+                "question_code": "import copy\nnested_list = [[1, 2], [3, 4]]\nnested_copy = copy.copy(nested_list)\nnested_copy[0].append(3)\nprint('Nested List:', nested_list)\nprint('Nested Copy:', nested_copy)",
+                "answer_code": "import copy\nnested_list = [[1, 2], [3, 4]]\nnested_copy = copy.deepcopy(nested_list)\nnested_copy[0].append(3)\nprint('Nested List:', nested_list)\nprint('Nested Copy:', nested_copy)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Quick Reference",
+        "penulis": "Mark Taylor",
+        "tanggal": "2024-07-26",
+        "judul": "Memperbaiki Kesalahan Umum dalam Menyalin List di Python",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Copy"],
+        "konten": "Artikel ini mengidentifikasi kesalahan umum saat menyalin list di Python dan memberikan solusi untuk memperbaikinya.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang salah dengan kode ini saat membuat salinan dari list dan menambahkan elemen baru ke salinan?",
+                "answer": "Kode ini hanya membuat referensi ke list asli. Gunakan `copy()` untuk membuat salinan yang benar-benar terpisah.",
+                "question_code": "names = ['Alice', 'Bob', 'Charlie']\nnames_copy = names\nnames_copy.remove('Alice')\nprint('Names:', names)\nprint('Names Copy:', names_copy)",
+                "answer_code": "names = ['Alice', 'Bob', 'Charlie']\nnames_copy = names.copy()\nnames_copy.remove('Alice')\nprint('Names:', names)\nprint('Names Copy:', names_copy)"
+            },
+            {
+                "question": "Bagaimana kode berikut dapat diperbaiki untuk menyalin list yang berisi float tanpa mempengaruhi list asli?",
+                "answer": "Kode ini menyalin list secara dangkal. Gunakan metode `copy()` untuk menyalin list dengan benar.",
+                "question_code": "floats = [1.1, 2.2, 3.3]\nfloat_copy = floats\nfloat_copy[1] = 9.9\nprint('Floats:', floats)\nprint('Float Copy:', float_copy)",
+                "answer_code": "floats = [1.1, 2.2, 3.3]\nfloat_copy = floats.copy()\nfloat_copy[1] = 9.9\nprint('Floats:', floats)\nprint('Float Copy:', float_copy)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini ketika menyalin list yang berisi integer dan mengubah nilai dalam salinan?",
+                "answer": "Kode ini tidak membuat salinan terpisah dari list. Gunakan metode `copy()` untuk membuat salinan yang independen.",
+                "question_code": "scores = [10, 20, 30]\nscores_copy = scores.copy()\nscores_copy[2] = 50\nprint('Scores:', scores)\nprint('Scores Copy:', scores_copy)",
+                "answer_code": "scores = [10, 20, 30]\nscores_copy = scores.copy()\nscores_copy[2] = 50\nprint('Scores:', scores)\nprint('Scores Copy:', scores_copy)"
+            },
+            {
+                "question": "Bagaimana kode ini bisa diperbaiki untuk menyalin list yang berisi objek kompleks tanpa mempengaruhi list asli?",
+                "answer": "Kode ini membuat salinan dangkal dari list yang berisi objek kompleks. Gunakan `deepcopy()` untuk membuat salinan yang mendalam.",
+                "question_code": "import copy\nobjects = [{'x': 1}, {'y': 2}]\nobjects_copy = copy.copy(objects)\nobjects_copy[0]['x'] = 99\nprint('Objects:', objects)\nprint('Objects Copy:', objects_copy)",
+                "answer_code": "import copy\nobjects = [{'x': 1}, {'y': 2}]\nobjects_copy = copy.deepcopy(objects)\nobjects_copy[0]['x'] = 99\nprint('Objects:', objects)\nprint('Objects Copy:', objects_copy)"
+            }
+        ]
+    }
+]

@@ -1,1 +1,102 @@
-{}
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "John Smith",
+        "tanggal": "2024-07-26",
+        "judul": "Menggunakan len() pada List: Kesalahan Umum",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Error Handling"],
+        "konten": "Panduan ini membahas kesalahan umum saat menggunakan fungsi len() dan cara memperbaikinya dengan berbagai contoh.",
+        "pertanyaan": [
+            {
+                "question": "Mengapa kode ini menghasilkan error?\n\n```python\nmy_list = [4, 5, 6]\nprint(len(my_list) + ' elements')\n```",
+                "question_code": "my_list = [4, 5, 6]\nprint(len(my_list) + ' elements')",
+                "answer": "Error terjadi karena Anda mencoba menambahkan integer dengan string. Gunakan fungsi `str()` untuk mengkonversi integer ke string sebelum penambahan.",
+                "answer_code": "my_list = [4, 5, 6]\nprint(str(len(my_list)) + ' elements')"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang diharapkan?\n\n```python\nlist_of_lists = [[], [1, 2], [3]]\nfor lst in list_of_lists:\n    print(len(lst) + 1)\n```",
+                "question_code": "list_of_lists = [[], [1, 2], [3]]\nfor lst in list_of_lists:\n    print(len(lst) + 1)",
+                "answer": "Kode ini mencetak panjang setiap sub-list ditambah 1, bukan total panjang dari semua sub-list. Anda perlu menjumlahkan panjang dari setiap sub-list untuk mendapatkan totalnya.",
+                "answer_code": "list_of_lists = [[], [1, 2], [3]]\ntotal_length = sum(len(lst) for lst in list_of_lists)\nprint(total_length)"
+            },
+            {
+                "question": "Mengapa kode ini menghasilkan error saat dijalankan?\n\n```python\ndef length_of_list(my_list):\n    return len()\n\nprint(length_of_list([1, 2, 3]))\n```",
+                "question_code": "def length_of_list(my_list):\n    return len()\n\nprint(length_of_list([1, 2, 3]))",
+                "answer": "Error muncul karena fungsi `len()` dipanggil tanpa argumen. `len()` harus diberikan list sebagai argumen untuk menghitung panjangnya.",
+                "answer_code": "def length_of_list(my_list):\n    return len(my_list)\n\nprint(length_of_list([1, 2, 3]))"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang benar?\n\n```python\nnumbers = [10, 20, 30, 40]\nprint('Length:', len(numbers) * 2)\n```",
+                "question_code": "numbers = [10, 20, 30, 40]\nprint('Length:', len(numbers) * 2)",
+                "answer": "Kode ini mengalikan panjang list dengan 2, yang tidak diperlukan jika Anda hanya ingin menampilkan panjang list itu sendiri. Hasil dari `len()` sudah memadai.",
+                "answer_code": "numbers = [10, 20, 30, 40]\nprint('Length:', len(numbers))"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan output yang diinginkan?\n\n```python\nsample = ['apple', 'banana', 'cherry']\nif len(sample) = 3:\n    print('There are three items')\n```",
+                "question_code": "sample = ['apple', 'banana', 'cherry']\nif len(sample) = 3:\n    print('There are three items')",
+                "answer": "Error terjadi karena operator `=` digunakan untuk perbandingan alih-alih operator `==`. Gunakan `==` untuk membandingkan nilai.",
+                "answer_code": "sample = ['apple', 'banana', 'cherry']\nif len(sample) == 3:\n    print('There are three items')"
+            },
+            {
+                "question": "Mengapa kode ini tidak berfungsi seperti yang diharapkan?\n\n```python\nempty = []\nprint('Count:', len(empty) + len([1]))\n```",
+                "question_code": "empty = []\nprint('Count:', len(empty) + len([1]))",
+                "answer": "Kode ini menambahkan panjang list kosong dengan panjang list yang berisi satu elemen. Jika Anda hanya ingin menghitung panjang list kosong, tidak perlu menambahkan hasil len() dari list lain.",
+                "answer_code": "empty = []\nprint('Count:', len(empty))"
+            },
+            {
+                "question": "Mengapa kode ini menghasilkan hasil yang salah?\n\n```python\nitems = [5, 10, 15]\nprint(len(items) / 2)\n```",
+                "question_code": "items = [5, 10, 15]\nprint(len(items) / 2)",
+                "answer": "Kode ini membagi panjang list dengan 2, padahal Anda hanya ingin menampilkan panjang list. Hasil dari `len()` sudah cukup untuk menghitung jumlah elemen.",
+                "answer_code": "items = [5, 10, 15]\nprint(len(items))"
+            }
+        ]
+    },
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Emily Johnson",
+        "tanggal": "2024-07-27",
+        "judul": "Kesalahan Umum dalam Menggunakan len() pada List",
+        "tingkat_kesulitan": "Pemula",
+        "tag": ["Python", "Lists", "Error Handling"],
+        "konten": "Panduan ini mengidentifikasi dan menjelaskan kesalahan umum yang terjadi saat menggunakan fungsi len() pada list.",
+        "pertanyaan": [
+            {
+                "question": "Mengapa kode ini menghasilkan error?\n\n```python\ndef count_elements(data):\n    return len(data) + 1\n\nprint(count_elements(['x', 'y']))\n```",
+                "question_code": "def count_elements(data):\n    return len(data) + 1\n\nprint(count_elements(['x', 'y']))",
+                "answer": "Error tidak muncul pada kode ini, namun jika tujuan Anda adalah mendapatkan panjang list, penambahan 1 tidak diperlukan. Hasil `len()` sudah memadai.",
+                "answer_code": "def count_elements(data):\n    return len(data)\n\nprint(count_elements(['x', 'y']))"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang diinginkan?\n\n```python\nnested = [[], ['one', 'two'], ['three']]\nfor item in nested:\n    print(len(item) - 1)\n```",
+                "question_code": "nested = [[], ['one', 'two'], ['three']]\nfor item in nested:\n    print(len(item) - 1)",
+                "answer": "Kode ini mengurangi panjang setiap sub-list dengan 1. Jika Anda ingin menghitung total panjang dari semua sub-list, Anda harus menjumlahkan panjang dari setiap sub-list.",
+                "answer_code": "nested = [[], ['one', 'two'], ['three']]\ntotal_length = sum(len(item) for item in nested)\nprint(total_length)"
+            },
+            {
+                "question": "Mengapa kode ini memberikan error?\n\n```python\nlist_of_numbers = [1, 2, 3, 4]\nprint(len() - 1)\n```",
+                "question_code": "list_of_numbers = [1, 2, 3, 4]\nprint(len() - 1)",
+                "answer": "Error terjadi karena `len()` dipanggil tanpa argumen. `len()` harus diberikan list sebagai argumen untuk menghitung panjangnya.",
+                "answer_code": "list_of_numbers = [1, 2, 3, 4]\nprint(len(list_of_numbers) - 1)"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang sesuai?\n\n```python\nlist_with_items = ['a', 'b', 'c']\nprint('Length is:', len(list_with_items) + len([]))\n```",
+                "question_code": "list_with_items = ['a', 'b', 'c']\nprint('Length is:', len(list_with_items) + len([]))",
+                "answer": "Kode ini menambahkan panjang list kosong ke panjang list yang sudah ada. Jika Anda hanya ingin menampilkan panjang list, Anda tidak perlu menambahkan panjang list kosong.",
+                "answer_code": "list_with_items = ['a', 'b', 'c']\nprint('Length is:', len(list_with_items))"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan output yang benar?\n\n```python\nnumbers = [1, 2, 3]\nif len(numbers) = 3:\n    print('Correct length')\n```",
+                "question_code": "numbers = [1, 2, 3]\nif len(numbers) = 3:\n    print('Correct length')",
+                "answer": "Kode ini menggunakan `=` untuk perbandingan, padahal `==` harus digunakan untuk perbandingan nilai. Gunakan `==` untuk membandingkan nilai.",
+                "answer_code": "numbers = [1, 2, 3]\nif len(numbers) == 3:\n    print('Correct length')"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang benar?\n\n```python\nempty_list = []\nprint('Length:', len(empty_list) + 1)\n```",
+                "question_code": "empty_list = []\nprint('Length:', len(empty_list) + 1)",
+                "answer": "Kode ini menambahkan 1 ke panjang list kosong. Jika Anda hanya ingin menampilkan panjang list kosong, tidak perlu menambahkan 1.",
+                "answer_code": "empty_list = []\nprint('Length:', len(empty_list))"
+            }
+        ]
+    }
+]

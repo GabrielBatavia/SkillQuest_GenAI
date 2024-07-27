@@ -1,1 +1,102 @@
-{}
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-25",
+        "judul": "Menggunakan count() untuk Menghitung Nilai dalam List di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Count"],
+        "konten": "Artikel ini membahas cara menggunakan metode count() dalam Python untuk mengetahui frekuensi kemunculan nilai dalam sebuah list.",
+        "pertanyaan": [
+            {
+                "question": "Apa fungsi dari metode count() dalam Python dan bagaimana penerapannya?",
+                "answer": "Metode count() di Python menghitung berapa kali suatu nilai muncul dalam list. Misalnya, list.count(5) akan mengembalikan jumlah kemunculan nilai 5 dalam list tersebut."
+            },
+            {
+                "question": "Bagaimana cara mengetahui jumlah kemunculan angka 7 dalam list [4, 7, 2, 7, 5]?",
+                "answer": "Untuk mengetahui jumlah kemunculan angka 7, gunakan list.count(7). Hasilnya adalah 2, karena 7 muncul dua kali dalam list."
+            },
+            {
+                "question": "Jika list adalah ['apple', 'banana', 'apple'], berapa banyak kemunculan 'banana' dengan metode count()?",
+                "answer": "Menggunakan list.count('banana') akan menghasilkan 1, karena 'banana' hanya muncul sekali dalam list tersebut."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'str' object is not callable' dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = ['a', 'b', 'c']\nmy_list.count = 'a'\nmy_list.count('a')",
+                "answer": "Error ini terjadi karena kamu mengganti metode count() dengan string. Jangan menimpa metode dengan tipe data lain. Gunakan metode count() dengan benar.",
+                "answer_code": "my_list = ['a', 'b', 'c']\nmy_list.count('a')"
+            },
+            {
+                "question": "Kenapa muncul error 'AttributeError: 'NoneType' object has no attribute 'count' dan bagaimana cara menghindarinya?",
+                "question_code": "my_list = None\nmy_list.count(3)",
+                "answer": "Error ini terjadi karena my_list adalah None, bukan list. Pastikan untuk mendeklarasikan my_list sebagai list sebelum menggunakan count().",
+                "answer_code": "my_list = [3, 3, 4]\nmy_list.count(3)"
+            },
+            {
+                "question": "Mengapa error 'TypeError: unhashable type: 'list'' muncul dan bagaimana cara mengatasinya?",
+                "question_code": "my_list = [[1, 2], [3, 4]]\nmy_list.count([1, 2])",
+                "answer": "Error ini muncul karena list yang berisi list lain tidak dapat dihitung. Pastikan elemen yang dihitung adalah tipe data yang hashable, seperti integer atau string.",
+                "answer_code": "my_list = [1, 1, 2]\nmy_list.count(1)"
+            },
+            {
+                "question": "Kenapa error 'ValueError: too many values to unpack (expected 2)' terjadi, dan bagaimana cara memperbaikinya?",
+                "question_code": "my_list = [1, 2, 3]\nresult, count = my_list.count(2)",
+                "answer": "Error ini terjadi karena metode count() hanya mengembalikan satu nilai. Jangan mencoba membongkar hasil metode count() menjadi lebih dari satu variabel.",
+                "answer_code": "my_list = [1, 2, 2]\ncount = my_list.count(2)"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: can only concatenate list (not 'int') to list', dan apa solusinya?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list += 4",
+                "answer": "Error ini muncul karena kamu mencoba menambahkan integer ke list. Gunakan metode append() untuk menambahkan elemen ke list.",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.append(4)"
+            }
+        ]
+    },
+    {
+        "sumber": "Programming 101",
+        "penulis": "Emma Johnson",
+        "tanggal": "2024-07-26",
+        "judul": "Panduan Praktis Menggunakan count() di Python",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Count"],
+        "konten": "Panduan ini memberikan penjelasan tentang cara menggunakan metode count() di Python untuk menghitung frekuensi kemunculan nilai dalam list.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu metode count() dan apa kegunaannya dalam Python?",
+                "answer": "Metode count() di Python digunakan untuk menghitung jumlah kemunculan nilai tertentu dalam list. Fungsi ini mengembalikan angka yang menunjukkan berapa kali nilai tersebut muncul."
+            },
+            {
+                "question": "Cara apa yang bisa digunakan untuk menghitung seberapa sering angka 10 muncul dalam list [10, 20, 10, 30, 10]?",
+                "answer": "Gunakan list.count(10) untuk menghitung berapa kali angka 10 muncul. Hasilnya adalah 3, karena 10 muncul tiga kali."
+            },
+            {
+                "question": "Bagaimana hasil dari list.count('x') jika list adalah ['x', 'y', 'x', 'x']?",
+                "answer": "Hasil dari list.count('x') adalah 3, karena 'x' muncul tiga kali dalam list tersebut."
+            },
+            {
+                "question": "Apa yang menyebabkan error 'TypeError: 'list' object is not callable' dan bagaimana memperbaikinya?",
+                "question_code": "my_list = [5, 6, 7]\nmy_list.count = 10\nmy_list.count(5)",
+                "answer": "Error ini terjadi karena kamu menimpa metode count() dengan angka. Gunakan metode count() dengan cara yang benar untuk menghitung kemunculan nilai.",
+                "answer_code": "my_list = [5, 6, 7]\nmy_list.count(5)"
+            },
+            {
+                "question": "Kenapa error 'AttributeError: 'NoneType' object has no attribute 'count' muncul, dan bagaimana cara menghindarinya?",
+                "question_code": "my_list = None\nmy_list.count('x')",
+                "answer": "Error ini muncul karena my_list bukan list, tapi None. Pastikan untuk mendeklarasikan my_list sebagai list sebelum menggunakan metode count().",
+                "answer_code": "my_list = ['x', 'x', 'x']\nmy_list.count('x')"
+            },
+            {
+                "question": "Kenapa muncul error 'TypeError: can only concatenate list (not 'int') to list', dan bagaimana solusinya?",
+                "question_code": "my_list = [1, 2, 3]\nmy_list = my_list + 5",
+                "answer": "Error ini muncul karena kamu mencoba menambahkan integer ke list. Untuk menambahkan elemen, gunakan metode append() atau extend().",
+                "answer_code": "my_list = [1, 2, 3]\nmy_list.append(5)"
+            },
+            {
+                "question": "Apa penyebab error 'ValueError: too many values to unpack (expected 2)' dan cara mengatasinya?",
+                "question_code": "my_list = [4, 5, 6]\nfirst, second = my_list.count(4)",
+                "answer": "Error ini muncul karena metode count() hanya mengembalikan satu nilai, bukan dua. Jangan mencoba membongkar hasil count() menjadi beberapa variabel.",
+                "answer_code": "my_list = [4, 4, 5]\ncount = my_list.count(4)"
+            }
+        ]
+    }
+]

@@ -1,1 +1,100 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-25",
+        "judul": "Membuat Salinan List dengan Metode copy() di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Copy Method"],
+        "konten": "Artikel ini menjelaskan tentang metode copy() untuk membuat salinan dari list di Python, beserta contohnya dan perbedaannya dengan metode lain seperti slicing.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu metode copy() dalam konteks list di Python?",
+                "answer": "Metode copy() digunakan untuk membuat salinan dangkal (shallow copy) dari list di Python. Salinan ini memiliki elemen yang sama dengan list asal, tetapi merupakan objek yang berbeda."
+            },
+            {
+                "question": "Bagaimana cara menggunakan metode copy() untuk membuat salinan dari list?",
+                "answer": "Untuk menggunakan metode copy(), cukup panggil metode tersebut pada list. Contoh: new_list = original_list.copy()"
+            },
+            {
+                "question": "Apa perbedaan antara metode copy() dan slicing dalam membuat salinan list?",
+                "answer": "Metode copy() dan slicing (misalnya: new_list = original_list[:]) keduanya dapat digunakan untuk membuat salinan dangkal list. Namun, slicing dapat lebih fleksibel untuk membuat salinan dari bagian tertentu dari list, sedangkan copy() hanya membuat salinan dari seluruh list."
+            },
+            {
+                "question": "Kenapa saya mendapatkan hasil yang sama jika mengubah elemen di salinan list yang dibuat dengan copy() dan yang asli?",
+                "answer": "Ini karena copy() membuat salinan dangkal dari list. Jika list berisi objek yang dapat diubah (seperti list di dalam list), perubahan pada objek-objek tersebut akan terlihat pada list asal dan salinan."
+            },
+            {
+                "question": "Bagaimana cara membuat salinan mendalam (deep copy) dari list dan apa bedanya dengan salinan dangkal?",
+                "answer": "Untuk membuat salinan mendalam, gunakan modul copy dengan metode deepcopy(). Berbeda dengan salinan dangkal yang hanya menyalin referensi ke objek dalam list, deepcopy() menyalin objek yang lebih dalam, sehingga perubahan pada salinan mendalam tidak mempengaruhi list asal.",
+                "answer_code": "import copy\nnew_list = copy.deepcopy(original_list)"
+            },
+            {
+                "question": "Kenapa terjadi error 'AttributeError: 'list' object has no attribute 'deepcopy'', saya tidak paham?",
+                "question_code": "new_list = original_list.deepcopy()",
+                "answer": "Kamu bisa mengatasi error ini dengan menggunakan modul copy untuk melakukan deep copy. Metode deepcopy() tidak tersedia pada objek list itu sendiri.",
+                "answer_code": "import copy\nnew_list = copy.deepcopy(original_list)"
+            },
+            {
+                "question": "Kenapa setelah melakukan copy(), perubahan pada elemen di list salinan mempengaruhi list asal?",
+                "question_code": "original_list = [1, [2, 3]]\nsal_copy = original_list.copy()\nsal_copy[1][0] = 99",
+                "answer": "Perubahan tersebut mempengaruhi list asal karena metode copy() hanya melakukan salinan dangkal. List berisi referensi ke objek dalam list, bukan salinan dari objek-objek tersebut.",
+                "answer_code": "import copy\noriginal_list = [1, [2, 3]]\nsal_copy = copy.deepcopy(original_list)\nsal_copy[1][0] = 99"
+            },
+            {
+                "question": "Bagaimana cara mengatasi masalah ketika metode copy() tidak memberikan salinan yang sepenuhnya independen dari list asal?",
+                "answer": "Untuk mengatasi masalah ini, gunakan modul copy dan metode deepcopy() untuk membuat salinan mendalam dari list, memastikan bahwa semua objek dalam list juga disalin, bukan hanya referensi.",
+                "answer_code": "import copy\nnew_list = copy.deepcopy(original_list)"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Guru",
+        "penulis": "Jane Doe",
+        "tanggal": "2024-07-26",
+        "judul": "Salinan List di Python: Menggunakan copy() dan Deep Copy",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Copy Method"],
+        "konten": "Panduan ini membahas metode copy() untuk membuat salinan dangkal dari list dan perbandingannya dengan metode deep copy dari modul copy.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan salinan dangkal (shallow copy) dan bagaimana cara membuatnya dengan metode copy()?",
+                "answer": "Salinan dangkal dibuat dengan metode copy() yang menyalin elemen dari list asal ke list baru tetapi hanya menyalin referensi untuk objek di dalam list, bukan objek itu sendiri."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika kita perlu menyalin list yang berisi objek yang dapat diubah?",
+                "answer": "Jika list berisi objek yang dapat diubah dan Anda perlu salinan yang sepenuhnya independen, gunakan metode deepcopy() dari modul copy untuk membuat salinan mendalam yang menyalin objek di dalam list secara keseluruhan."
+            },
+            {
+                "question": "Bagaimana cara memeriksa apakah salinan list menggunakan copy() sama dengan list asal?",
+                "answer": "Periksa dengan membandingkan id dari list asal dan salinan menggunakan fungsi id(). Jika id berbeda, berarti list tersebut merupakan objek yang berbeda. Namun, untuk elemen yang terletak di dalamnya, Anda perlu memeriksa apakah referensinya sama.",
+                "answer_code": "original_list = [1, 2, 3]\nsal_copy = original_list.copy()\nprint(id(original_list) != id(sal_copy))"
+            },
+            {
+                "question": "Kenapa list yang dibuat dengan metode copy() tetap dapat mempengaruhi list asal ketika list tersebut berisi sublist?",
+                "answer": "Karena metode copy() membuat salinan dangkal, perubahan pada sublist dalam salinan juga akan mempengaruhi sublist dalam list asal, karena sublist tersebut hanya di-referensikan, bukan disalin secara mendalam.",
+                "answer_code": "original_list = [[1, 2], [3, 4]]\nsal_copy = original_list.copy()\nsal_copy[0][0] = 99"
+            },
+            {
+                "question": "Bagaimana menggunakan metode copy() dalam pengolahan data di Python, misalnya, saat melakukan pemrograman data besar?",
+                "answer": "Metode copy() sering digunakan dalam pengolahan data untuk membuat salinan sementara dari data sebelum melakukan modifikasi, sehingga data asli tetap tidak berubah. Ini penting dalam pemrograman data besar untuk menghindari perubahan yang tidak diinginkan pada data asli."
+            },
+            {
+                "question": "Kenapa Anda tidak disarankan menggunakan metode copy() untuk objek yang memerlukan salinan mendalam?",
+                "answer": "Metode copy() hanya membuat salinan dangkal dan tidak cukup jika objek yang di-copy mengandung referensi ke objek lain yang juga perlu disalin. Untuk objek kompleks, metode deepcopy() diperlukan untuk memastikan semua referensi di-copy.",
+                "answer_code": "import copy\nnew_list = copy.deepcopy(original_list)"
+            },
+            {
+                "question": "Apa yang harus dilakukan jika Anda mengalami kesalahan terkait dengan metode copy() saat menyalin list di Python?",
+                "answer": "Periksa apakah objek yang Anda coba salin mendukung metode copy(). Jika menggunakan salinan mendalam, pastikan menggunakan modul copy dan metode deepcopy() untuk menghindari masalah terkait salinan dangkal.",
+                "answer_code": "import copy\nnew_list = copy.deepcopy(original_list)"
+            },
+            {
+                "question": "Kenapa saya mendapatkan error 'AttributeError: 'list' object has no attribute 'copy'', saya tidak paham?",
+                "question_code": "original_list = [1, 2, 3]\nnew_list = original_list.copy(1)",
+                "answer": "Kamu bisa mengatasi error ini dengan memastikan bahwa metode copy() digunakan dengan benar tanpa parameter tambahan. Metode copy() tidak menerima argumen.",
+                "answer_code": "original_list = [1, 2, 3]\nnew_list = original_list.copy()"
+            }
+        ]
+    }
+]

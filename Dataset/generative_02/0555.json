@@ -1,1 +1,74 @@
-{}
+[
+    {
+        "sumber": "Python Programming Essentials",
+        "penulis": "Sophie Lee",
+        "tanggal": "2024-08-30",
+        "judul": "Menjelajahi Penggunaan count() dalam Konteks yang Kompleks",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Basic Operations"],
+        "konten": "Artikel ini mengupas penggunaan metode count() pada list dengan data yang kompleks. Penjelasan mencakup cara mempersiapkan data dan menggunakan count() dengan benar dalam berbagai skenario.",
+        "pertanyaan": [
+            {
+                "question": "Dalam skenario di mana Anda bekerja dengan list yang berisi data dari input pengguna yang tidak terformat dengan konsisten, bagaimana Anda dapat menggunakan count() untuk menghindari hasil yang salah?",
+                "question_code": "user_input = ['yes', 'Yes', 'YES']\nprint(user_input.count('yes'))",
+                "answer": "Untuk memastikan hasil yang akurat ketika menggunakan count() pada list dengan input yang tidak konsisten, normalisasikan data terlebih dahulu. Gunakan metode lower() atau upper() untuk menyamakan format sebelum menghitung."
+            },
+            {
+                "question": "Jika Anda harus menghitung kemunculan elemen dalam list yang mengandung string dengan berbagai format seperti tanggal dan waktu, apa langkah yang harus diambil?",
+                "question_code": "date_times = ['2024-08-30 10:00', '2024-08-30 10:00', '2024-08-30 15:00']\nprint(date_times.count('2024-08-30'))",
+                "answer": "Ketika bekerja dengan format data yang kompleks seperti tanggal dan waktu, pastikan format yang dihitung konsisten dengan format yang ada dalam list. Anda mungkin perlu memformat ulang string atau menggunakan parsing untuk memastikan kecocokan."
+            },
+            {
+                "question": "Bagaimana Anda menangani list yang berisi objek dengan atribut yang berbeda tetapi ingin menghitung objek berdasarkan nilai atribut tertentu?",
+                "question_code": "objects = [{'color': 'red'}, {'color': 'blue'}, {'color': 'red'}]\nprint(objects.count({'color': 'red'}))",
+                "answer": "Dalam kasus ini, count() tidak dapat menghitung objek berdasarkan atributnya secara langsung. Anda perlu menulis logika tambahan untuk menghitung kemunculan objek dengan atribut tertentu, seperti iterasi dan pemfilteran."
+            },
+            {
+                "question": "Apa yang harus dilakukan jika list berisi elemen dengan format numerik tetapi Anda ingin menghitung elemen berdasarkan kriteria yang berbeda, seperti rentang angka?",
+                "question_code": "numbers = [1, 2, 3, 4, 5, 6, 7]\nprint(numbers.count(5))",
+                "answer": "Untuk menghitung elemen dalam rentang tertentu, Anda tidak dapat menggunakan count() secara langsung. Anda perlu menulis fungsi tambahan yang memfilter elemen sesuai kriteria dan kemudian menghitung jumlah elemen yang sesuai."
+            },
+            {
+                "question": "Bagaimana Anda menangani kasus di mana list yang dihitung memiliki data yang dihasilkan secara dinamis dan mungkin berubah selama eksekusi program?",
+                "question_code": "dynamic_data = [10, 20, 30]\ndynamic_data.append(20)\nprint(dynamic_data.count(20) - dynamic_data.count(30))",
+                "answer": "Pastikan untuk memperbarui data secara berkala dan menghitung elemen setelah setiap perubahan. Gunakan count() pada list yang telah diperbarui untuk mendapatkan hasil yang akurat sesuai dengan data terkini."
+            }
+        ]
+    },
+    {
+        "sumber": "Practical Python",
+        "penulis": "Daniel Nguyen",
+        "tanggal": "2024-09-01",
+        "judul": "Memahami count() dengan Berbagai Jenis Data",
+        "tingkat_kesulitan": "Beginner",
+        "tag": ["Python", "Lists", "Data Handling"],
+        "konten": "Panduan ini menjelaskan cara menggunakan count() pada list dengan berbagai jenis data dan format. Termasuk penjelasan cara menyesuaikan data untuk memastikan hasil yang akurat.",
+        "pertanyaan": [
+            {
+                "question": "Dalam situasi di mana list Anda berisi elemen dengan casing yang berbeda, bagaimana Anda memastikan count() memberikan hasil yang sesuai?",
+                "question_code": "mixed_case_list = ['item', 'Item', 'ITEM']\nprint(mixed_case_list.count('ITEM'))",
+                "answer": "Normalisasikan casing elemen sebelum menggunakan count(). Gunakan metode lower() atau upper() untuk mengubah semua elemen menjadi huruf kecil atau besar, sehingga perhitungan lebih konsisten."
+            },
+            {
+                "question": "Jika list yang Anda gunakan untuk count() mengandung nilai yang merupakan hasil dari perhitungan matematis, bagaimana Anda bisa memastikan hasil yang benar?",
+                "question_code": "results = [x**2 for x in range(5)]\nprint(results.count(9))",
+                "answer": "Pastikan bahwa hasil yang dihitung konsisten dengan format yang ada dalam list. Periksa hasil perhitungan matematis untuk memastikan kecocokan sebelum menggunakan count()."
+            },
+            {
+                "question": "Apa yang harus Anda lakukan jika data dalam list yang dihitung berasal dari berbagai sumber dan memiliki format yang tidak seragam?",
+                "question_code": "mixed_sources = [1, '2', 2, '2']\nprint(mixed_sources.count('2'))",
+                "answer": "Pastikan untuk menyamakan format data sebelum menggunakan count(). Gunakan konversi tipe data seperti int() atau str() untuk memastikan elemen dalam list memiliki format yang konsisten."
+            },
+            {
+                "question": "Bagaimana Anda menghitung kemunculan elemen dalam list jika elemen tersebut merupakan objek dengan berbagai properti?",
+                "question_code": "object_list = [{'name': 'apple'}, {'name': 'banana'}, {'name': 'apple'}]\nprint(object_list.count({'name': 'banana'}))",
+                "answer": "Count() tidak dapat digunakan untuk menghitung objek dengan atribut berbeda. Anda perlu menulis logika tambahan untuk memeriksa properti objek dan menghitung kemunculan berdasarkan atribut tersebut."
+            },
+            {
+                "question": "Ketika data dalam list dihasilkan oleh proses yang memanipulasi string secara dinamis, bagaimana Anda bisa memastikan count() memberikan hasil yang benar?",
+                "question_code": "dynamic_strings = [generate_string(i) for i in range(3)]\nprint(dynamic_strings.count(generate_string(2)))",
+                "answer": "Verifikasi hasil fungsi yang menghasilkan string dinamis sebelum menggunakan count(). Pastikan elemen yang dihitung sesuai dengan format dan nilai yang dihasilkan oleh fungsi."
+            }
+        ]
+    }
+]
