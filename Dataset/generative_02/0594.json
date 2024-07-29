@@ -1,1 +1,102 @@
-{}
+[
+    {
+        "sumber": "Python Official Documentation",
+        "penulis": "Python Software Foundation",
+        "tanggal": "2024-07-27",
+        "judul": "Menggunakan Fungsi sum() untuk Mengakumulasi Elemen List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Dokumentasi ini menjelaskan tentang cara menggunakan fungsi sum() untuk menjumlahkan elemen-elemen dalam list di Python, beserta dengan berbagai contoh kode dan kesalahan umum.",
+        "pertanyaan": [
+            {
+                "question": "Apa tujuan utama dari fungsi sum() dalam Python?",
+                "answer": "Fungsi sum() dirancang untuk menjumlahkan semua elemen dalam list atau iterable lainnya yang terdiri dari angka, memberikan total kumulatif dari data tersebut."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi sum() pada list yang berisi angka desimal?",
+                "answer": "Anda dapat menggunakan sum() pada list dengan angka desimal dengan cara yang sama seperti pada list dengan angka bulat. Contoh: sum([1.5, 2.5, 3.0]) akan menghasilkan 7.0."
+            },
+            {
+                "question": "Apa yang terjadi jika Anda mencoba menggunakan sum() pada list yang berisi elemen campuran (angka dan string)?",
+                "answer": "Menggunakan sum() pada list yang berisi campuran angka dan string akan menyebabkan TypeError, karena fungsi sum() hanya bekerja dengan elemen numerik."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut ini?",
+                "question_code": "values = [5.5, 7.2, 3.1]\ntotal = sum(values)",
+                "answer": "Kode ini benar dan akan menghasilkan total 15.8. Tidak ada kesalahan dalam kode ini.",
+                "answer_code": "values = [5.5, 7.2, 3.1]\ntotal = sum(values)"
+            },
+            {
+                "question": "Kenapa kode ini tidak berhasil?",
+                "question_code": "scores = [85, 90, 75]\ntotal_scores = sum(scores",
+                "answer": "Error terjadi karena ada tanda kurung yang tidak lengkap pada fungsi sum(). Harus ada tanda kurung penutup di akhir.",
+                "answer_code": "scores = [85, 90, 75]\ntotal_scores = sum(scores)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini saat menjumlahkan elemen?",
+                "question_code": "ages = [10, 20, 30]\ntotal_age = sum(ages, 100)",
+                "answer": "Kesalahan disebabkan oleh argumen tambahan yang tidak diperlukan pada fungsi sum(). Fungsi sum() hanya membutuhkan satu argumen yaitu list atau iterable.",
+                "answer_code": "ages = [10, 20, 30]\ntotal_age = sum(ages)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "amounts = [2.5, 3.5, 4.5]\ntotal_amount = sum(amounts]]",
+                "answer": "Kesalahan terletak pada penggunaan tanda kurung ganda yang tidak diperlukan di akhir fungsi sum().",
+                "answer_code": "amounts = [2.5, 3.5, 4.5]\ntotal_amount = sum(amounts)"
+            },
+            {
+                "question": "Apa kesalahan pada kode berikut saat menjumlahkan list?",
+                "question_code": "numbers = [8, 16, 24]\ntotal_sum = sum(numbers))",
+                "answer": "Error ini disebabkan oleh adanya tanda kurung penutup yang berlebihan pada fungsi sum().",
+                "answer_code": "numbers = [8, 16, 24]\ntotal_sum = sum(numbers)"
+            }
+        ]
+    },
+    {
+        "sumber": "Learn Python",
+        "penulis": "John Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Panduan Lengkap Fungsi sum() untuk Menjumlahkan List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Artikel ini membahas tentang cara kerja fungsi sum() untuk menjumlahkan elemen dalam list di Python, serta memberikan beberapa contoh kode dan penjelasan tentang kesalahan yang mungkin terjadi.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dilakukan fungsi sum() pada list yang berisi nilai-nilai numerik?",
+                "answer": "Fungsi sum() menjumlahkan semua nilai numerik dalam list dan mengembalikan total hasil penjumlahan tersebut."
+            },
+            {
+                "question": "Bagaimana cara menggunakan fungsi sum() pada list yang berisi angka dan float?",
+                "answer": "Fungsi sum() dapat digunakan pada list yang berisi angka bulat dan float secara bersamaan. Misalnya, sum([1.2, 2, 3.5]) akan menghasilkan 6.7."
+            },
+            {
+                "question": "Apa yang akan terjadi jika sum() digunakan pada list dengan elemen bukan numerik?",
+                "answer": "Penggunaan sum() pada list dengan elemen bukan numerik akan mengakibatkan TypeError karena fungsi ini hanya mendukung operasi pada elemen numerik."
+            },
+            {
+                "question": "Kenapa kode berikut ini tidak berjalan?",
+                "question_code": "temperatures = [32.0, 25.5, 18.5]\ntotal_temp = sum(temperatures))",
+                "answer": "Error terjadi karena tanda kurung penutup yang berlebihan di akhir fungsi sum().",
+                "answer_code": "temperatures = [32.0, 25.5, 18.5]\ntotal_temp = sum(temperatures)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini?",
+                "question_code": "salaries = [3000, 4000, 5000]\ntotal_salaries = sum(salaries, 2000)",
+                "answer": "Kode ini salah karena argumen tambahan setelah list dalam fungsi sum(). Argumen tambahan tidak diperlukan dan harus dihapus.",
+                "answer_code": "salaries = [3000, 4000, 5000]\ntotal_salaries = sum(salaries)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut ini saat menjumlahkan list?",
+                "question_code": "costs = [100, 200, 300]\ntotal_cost = sum(costs)",
+                "answer": "Kode ini benar dan tidak mengandung kesalahan. Hasilnya adalah 600.",
+                "answer_code": "costs = [100, 200, 300]\ntotal_cost = sum(costs)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "numbers = [7, 14, 21]\ntotal_sum = sum(numbers]]",
+                "answer": "Kesalahan disebabkan oleh tanda kurung ganda yang salah pada akhir fungsi sum().",
+                "answer_code": "numbers = [7, 14, 21]\ntotal_sum = sum(numbers)"
+            }
+        ]
+    }
+]

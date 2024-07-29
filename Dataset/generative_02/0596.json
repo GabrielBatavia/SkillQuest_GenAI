@@ -1,1 +1,92 @@
-{}
+[
+    {
+        "sumber": "Python 101",
+        "penulis": "David Lee",
+        "tanggal": "2024-07-27",
+        "judul": "Menggunakan sum() untuk Penjumlahan Elemen List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Panduan ini menjelaskan fungsi sum() di Python untuk menjumlahkan elemen dalam list. Dilengkapi dengan contoh kode dan penjelasan tentang kesalahan umum yang mungkin terjadi.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dilakukan fungsi sum() ketika digunakan dengan list yang berisi angka bulat?",
+                "answer": "Fungsi sum() akan menjumlahkan semua angka bulat dalam list dan mengembalikan hasil penjumlahannya. Misalnya, sum([4, 7, 11]) akan menghasilkan 22."
+            },
+            {
+                "question": "Bagaimana cara sum() menangani list yang berisi campuran integer dan float?",
+                "answer": "Fungsi sum() dapat menangani campuran integer dan float dalam list dengan baik. Contoh, sum([1, 2.5, 3]) akan menghasilkan 6.5."
+            },
+            {
+                "question": "Apa yang terjadi jika sum() digunakan pada list yang hanya berisi string?",
+                "answer": "Jika sum() digunakan pada list yang hanya berisi string, akan terjadi TypeError karena sum() hanya dapat menjumlahkan elemen numerik."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "values = [10, 20, 30]\ntotal = sum(values, 1.5)",
+                "answer": "Kesalahan dalam kode ini adalah penggunaan argumen kedua yang tidak perlu. Fungsi sum() hanya memerlukan satu argumen yaitu list atau iterable.",
+                "answer_code": "values = [10, 20, 30]\ntotal = sum(values)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak memberikan hasil yang diharapkan?",
+                "question_code": "numbers = [5, 10, 15]\nresult = sum(numbers, start='10')",
+                "answer": "Kode ini menghasilkan TypeError karena argumen kedua pada fungsi sum() harus berupa angka, bukan string. Argumen kedua ini seharusnya berupa nilai numerik atau dihilangkan.",
+                "answer_code": "numbers = [5, 10, 15]\nresult = sum(numbers)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini?",
+                "question_code": "list_values = [1, 2, 3, 4]\ntotal_sum = sum(list_values[0:3])",
+                "answer": "Kode ini benar dan menghasilkan 6, yaitu penjumlahan dari elemen-elemen list_values[0:3]. Tidak ada kesalahan dalam kode ini.",
+                "answer_code": "list_values = [1, 2, 3, 4]\ntotal_sum = sum(list_values[0:3])"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut?",
+                "question_code": "data = [7, 14, 21]\ntotal = sum(data[::2])",
+                "answer": "Kode ini benar dan akan menghasilkan 28, yaitu penjumlahan dari elemen data[::2]. Tidak ada kesalahan dalam kode ini.",
+                "answer_code": "data = [7, 14, 21]\ntotal = sum(data[::2])"
+            }
+        ]
+    },
+    {
+        "sumber": "Basic Python Guide",
+        "penulis": "Sophia Chen",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Menjumlahkan Elemen dalam List Menggunakan sum() di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Artikel ini membahas bagaimana cara menggunakan fungsi sum() untuk menjumlahkan elemen dalam list dengan contoh kode sederhana dan penjelasan tentang kesalahan umum yang mungkin terjadi.",
+        "pertanyaan": [
+            {
+                "question": "Apa output dari fungsi sum() ketika digunakan pada list dengan elemen-elemen negatif?",
+                "answer": "Fungsi sum() dapat menjumlahkan elemen negatif dengan benar. Misalnya, sum([-1, -2, -3]) akan menghasilkan -6."
+            },
+            {
+                "question": "Bagaimana cara menangani kesalahan jika list yang digunakan dengan sum() berisi tipe data yang berbeda?",
+                "answer": "Jika list berisi tipe data yang berbeda seperti angka dan string, sum() akan menghasilkan TypeError. Pastikan semua elemen dalam list adalah numerik sebelum menggunakan sum()."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "data = [5, 10, 15]\ntotal_sum = sum(data, 100)",
+                "answer": "Kesalahan ini disebabkan oleh penggunaan argumen kedua yang tidak diperlukan. Fungsi sum() hanya memerlukan satu argumen yaitu list atau iterable.",
+                "answer_code": "data = [5, 10, 15]\ntotal_sum = sum(data)"
+            },
+            {
+                "question": "Kenapa kode ini tidak memberikan hasil yang diharapkan?",
+                "question_code": "items = [2, 4, 6]\ntotal_items = sum(items[::2])",
+                "answer": "Kode ini benar dan menghasilkan 8, yaitu penjumlahan dari elemen items[::2]. Tidak ada kesalahan dalam kode ini.",
+                "answer_code": "items = [2, 4, 6]\ntotal_items = sum(items[::2])"
+            },
+            {
+                "question": "Apa yang salah dalam kode berikut?",
+                "question_code": "values = [3, 6, 9]\ntotal = sum(values[1:3])",
+                "answer": "Kode ini benar dan akan menghasilkan 15, yaitu penjumlahan dari elemen values[1:3]. Tidak ada kesalahan dalam kode ini.",
+                "answer_code": "values = [3, 6, 9]\ntotal = sum(values[1:3])"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini?",
+                "question_code": "numbers = [4, 8, 12]\ntotal_sum = sum(numbers, 5)",
+                "answer": "Kesalahan terjadi karena penggunaan argumen kedua yang tidak diperlukan. Fungsi sum() hanya memerlukan satu argumen yaitu list atau iterable.",
+                "answer_code": "numbers = [4, 8, 12]\ntotal_sum = sum(numbers)"
+            }
+        ]
+    }
+]

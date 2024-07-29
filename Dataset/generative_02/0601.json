@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Mendeklarasikan List di dalam List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Artikel ini menjelaskan cara mendeklarasikan list di dalam list di Python. Termasuk contoh kode dan tips praktis.",
+        "pertanyaan": [
+            {
+                "question": "Mengapa kita menggunakan list di dalam list dalam pemrograman?",
+                "answer": "Kita menggunakan list di dalam list dalam pemrograman untuk merepresentasikan struktur data yang lebih kompleks, seperti matriks atau tabel, yang memerlukan lebih dari satu dimensi."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan list di dalam list?",
+                "answer": "Untuk mendeklarasikan list di dalam list, cukup letakkan list sebagai elemen di dalam list lain. Contohnya: `nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]`."
+            },
+            {
+                "question": "Apa yang akan terjadi jika kita mencoba mengakses elemen di dalam list yang tidak ada?",
+                "answer": "Jika kita mencoba mengakses elemen di dalam list yang tidak ada, Python akan menghasilkan IndexError karena indeks yang diminta berada di luar jangkauan list."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]\nvalue = matrix[1, 2]",
+                "answer": "Kode tersebut menghasilkan error karena indeks yang digunakan untuk mengakses elemen dalam list harus berupa dua indeks terpisah, bukan satu indeks tuple.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nvalue = matrix[1][2]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi untuk mendeklarasikan list di dalam list?",
+                "question_code": "nested_list = [1, 2, [3, 4, 5, [6, 7]]",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "nested_list = [1, 2, [3, 4, 5, [6, 7]]]"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendeklarasikan list di dalam list?",
+                "question_code": "list_in_list = [[10, 20, 30], [40, 50, 60,]",
+                "answer": "Kode tersebut salah karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "list_in_list = [[10, 20, 30], [40, 50, 60]]"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "data = [[1, 2], [3, 4, [5, 6]], 7]\nitem = data[2][1]",
+                "answer": "Kode tersebut menghasilkan error karena elemen `data[2]` adalah integer (7), bukan list, sehingga tidak bisa diakses dengan indeks kedua.",
+                "answer_code": "data = [[1, 2], [3, 4, [5, 6]], [7]]\nitem = data[2][0]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan list di dalam list yang benar?",
+                "question_code": "nested = [10, [20, 30], 40, [50, 60], 70]",
+                "answer": "Kode tersebut sebenarnya menghasilkan list di dalam list yang benar, tetapi mungkin bukan yang diharapkan jika pengguna ingin semua elemen berada dalam sub-list yang seragam.",
+                "answer_code": "nested = [[10], [20, 30], [40], [50, 60], [70]]"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendeklarasikan list di dalam list?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6] [7, 8, 9]]",
+                "answer": "Kode tersebut salah karena ada koma yang hilang antara elemen kedua dan ketiga dalam list utama.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Mendeklarasikan dan Menggunakan List di dalam List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Panduan ini membahas cara mendeklarasikan dan menggunakan list di dalam list di Python, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana list di dalam list dapat membantu dalam pemrograman?",
+                "answer": "List di dalam list dapat membantu dalam pemrograman dengan memungkinkan kita untuk merepresentasikan data yang memiliki lebih dari satu dimensi, seperti tabel atau matriks, dengan cara yang terstruktur dan mudah diakses."
+            },
+            {
+                "question": "Dapatkah kita membuat list di dalam list dengan elemen dari tipe data yang berbeda?",
+                "answer": "Ya, kita dapat membuat list di dalam list dengan elemen dari tipe data yang berbeda. Python memungkinkan kita untuk mencampur tipe data yang berbeda dalam list."
+            },
+            {
+                "question": "Apa yang harus diperhatikan saat mengakses elemen dalam list di dalam list?",
+                "answer": "Saat mengakses elemen dalam list di dalam list, kita harus menggunakan indeks ganda, di mana indeks pertama mengakses sub-list, dan indeks kedua mengakses elemen dalam sub-list tersebut."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]\nvalue = matrix(1, 2)",
+                "answer": "Kode tersebut menghasilkan error karena kita harus menggunakan tanda kurung siku untuk mengakses elemen dalam list, bukan tanda kurung biasa.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nvalue = matrix[1][2]"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini saat mencoba mendeklarasikan list di dalam list?",
+                "question_code": "nested_list = [[10, 20, 30], [40, 50 60]]",
+                "answer": "Kode tersebut salah karena ada koma yang hilang antara elemen kedua dan ketiga dalam sub-list kedua.",
+                "answer_code": "nested_list = [[10, 20, 30], [40, 50, 60]]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi untuk mendeklarasikan list di dalam list?",
+                "question_code": "data = [[1, 2], [3, 4, [5, 6, [7, 8]]]",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "data = [[1, 2], [3, 4, [5, 6, [7, 8]]]]"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "matrix = [[1, 2], [3, 4, [5, 6]], 7]\nitem = matrix[2][1]",
+                "answer": "Kode tersebut menghasilkan error karena elemen `matrix[2]` adalah integer (7), bukan list, sehingga tidak bisa diakses dengan indeks kedua.",
+                "answer_code": "matrix = [[1, 2], [3, 4, [5, 6]], [7]]\nitem = matrix[2][0]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan list di dalam list yang benar?",
+                "question_code": "list_nested = [1, [2, 3], 4, [5, 6], 7]",
+                "answer": "Kode tersebut sebenarnya menghasilkan list di dalam list yang benar, tetapi mungkin bukan yang diharapkan jika pengguna ingin semua elemen berada dalam sub-list yang seragam.",
+                "answer_code": "list_nested = [[1], [2, 3], [4], [5, 6], [7]]"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendeklarasikan list di dalam list?",
+                "question_code": "matrix = [[10, 20], [30, 40], [50, 60, 70]",
+                "answer": "Kode tersebut salah karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "matrix = [[10, 20], [30, 40], [50, 60, 70]]"
+            }
+        ]
+    }
+]

@@ -1,1 +1,117 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Menggunakan min() dan max() untuk Mendapatkan Nilai Minimum dan Maksimum dalam List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Min", "Max"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi min() dan max() untuk mendapatkan nilai minimum dan maksimum dari list di Python. Termasuk contoh kode dan tips praktis.",
+        "pertanyaan": [
+            {
+                "question": "Apa fungsi dari min() dalam list di Python?",
+                "answer": "Fungsi min() digunakan untuk mendapatkan nilai minimum dalam list. Ini mengembalikan elemen dengan nilai terkecil dalam list."
+            },
+            {
+                "question": "Bagaimana cara mendapatkan nilai maksimum dari list menggunakan max()?",
+                "answer": "Gunakan fungsi max() dengan memberikan list sebagai argumen. Fungsi ini mengembalikan nilai maksimum dari list."
+            },
+            {
+                "question": "Apa yang terjadi jika min() atau max() dipanggil pada list kosong?",
+                "answer": "Memanggil min() atau max() pada list kosong akan menghasilkan ValueError, karena tidak ada elemen untuk dibandingkan."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "numbers = [8, 2, 5, 1]\nsmallest = min(numbers(",
+                "answer": "Kode tersebut menghasilkan error karena ada tanda kurung yang tidak perlu setelah fungsi min().",
+                "answer_code": "numbers = [8, 2, 5, 1]\nsmallest = min(numbers)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi untuk mendapatkan nilai maksimum dalam list?",
+                "question_code": "values = [20, 50, 10, 40]\nmax_value = max(values.",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda titik yang tidak perlu setelah fungsi max().",
+                "answer_code": "values = [20, 50, 10, 40]\nmax_value = max(values)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendapatkan nilai minimum dari list?",
+                "question_code": "temps = [75, 60, 85, 90]\nmin_temp = min temps",
+                "answer": "Kode tersebut salah karena fungsi min() harus dipanggil dengan tanda kurung.",
+                "answer_code": "temps = [75, 60, 85, 90]\nmin_temp = min(temps)"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "scores = [95, 88, 70, 80]\nlowest_score = min(scores))",
+                "answer": "Kode tersebut menghasilkan error karena ada tanda kurung ganda di akhir panggilan fungsi min().",
+                "answer_code": "scores = [95, 88, 70, 80]\nlowest_score = min(scores)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan nilai maksimum yang benar?",
+                "question_code": "heights = [150, 180, 165, 170]\nmax_height = max(heights,",
+                "answer": "Kode tersebut tidak menghasilkan nilai maksimum yang benar karena ada tanda koma yang tidak perlu setelah argumen pada fungsi max().",
+                "answer_code": "heights = [150, 180, 165, 170]\nmax_height = max(heights)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mencari nilai minimum?",
+                "question_code": "weights = [55, 70, 65, 75]\nmin_weight = min[weights]",
+                "answer": "Kode tersebut salah karena tanda kurung penutup pada fungsi min() adalah kurung siku, bukan kurung biasa.",
+                "answer_code": "weights = [55, 70, 65, 75]\nmin_weight = min(weights)"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Fungsi min() dan max() di Python: Menemukan Nilai Ekstrem dalam List",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Min", "Max"],
+        "konten": "Panduan ini membahas cara menggunakan fungsi min() dan max() untuk menemukan nilai minimum dan maksimum dalam list, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana min() dan max() berfungsi untuk menemukan nilai ekstrem dalam list?",
+                "answer": "Fungsi min() mengembalikan nilai terkecil dalam list, sedangkan fungsi max() mengembalikan nilai terbesar. Keduanya membandingkan elemen dalam list untuk menentukan nilai ekstrem."
+            },
+            {
+                "question": "Dapatkah min() dan max() digunakan pada list dengan elemen yang memiliki tipe data berbeda?",
+                "answer": "Min() dan max() dapat digunakan pada list dengan elemen yang memiliki tipe data berbeda jika tipe data tersebut dapat dibandingkan satu sama lain. Jika tidak, akan menghasilkan TypeError."
+            },
+            {
+                "question": "Apa yang harus diperhatikan ketika menggunakan min() dan max() pada list yang berisi objek kustom?",
+                "answer": "Jika menggunakan min() dan max() pada list yang berisi objek kustom, pastikan objek tersebut memiliki metode perbandingan (__lt__, __le__, __gt__, __ge__) untuk menghindari TypeError."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "ages = [29, 34, 23, 40]\nmin_age = min(ages,)",
+                "answer": "Kode tersebut menghasilkan error karena ada tanda koma yang tidak perlu setelah argumen pada fungsi min()."
+            },
+            {
+                "question": "Apa yang salah dengan kode ini saat mencoba menghitung nilai maksimum dalam list?",
+                "question_code": "prices = [120, 250, 80, 90]\nmax_price = max(prices))",
+                "answer": "Kode tersebut salah karena ada tanda kurung ganda di akhir panggilan fungsi max()."
+            },
+            {
+                "question": "Mengapa kode berikut tidak dapat menghitung nilai minimum dalam list?",
+                "question_code": "scores = [88, 75, 95, 85]\nmin_score = minimum(scores)",
+                "answer": "Kode tersebut tidak dapat menghitung nilai minimum dalam list karena nama fungsi yang benar adalah min(), bukan minimum()."
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi?",
+                "question_code": "temps = [30, 25, 35, 40]\nmin_temp = min((temps)",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda kurung ganda yang tidak perlu pada fungsi min().",
+                "answer_code": "temps = [30, 25, 35, 40]\nmin_temp = min(temps)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak menghasilkan nilai maksimum yang benar?",
+                "question_code": "distances = [3.4, 2.1, 5.0, 4.8]\nmax_distance = max(distances.",
+                "answer": "Kode tersebut tidak menghasilkan nilai maksimum yang benar karena ada tanda titik yang tidak perlu setelah fungsi max().",
+                "answer_code": "distances = [3.4, 2.1, 5.0, 4.8]\nmax_distance = max(distances)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mencari nilai minimum?",
+                "question_code": "heights = [180, 175, 165, 160]\nmin_height = min[heights]",
+                "answer": "Kode tersebut salah karena tanda kurung penutup pada fungsi min() adalah kurung siku, bukan kurung biasa.",
+                "answer_code": "heights = [180, 175, 165, 160]\nmin_height = min(heights)"
+            }
+        ]
+    }
+]

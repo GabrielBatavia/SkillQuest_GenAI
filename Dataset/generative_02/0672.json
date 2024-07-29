@@ -1,1 +1,116 @@
-{}
+[
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Sarah Wilson",
+        "tanggal": "2024-08-01",
+        "judul": "Panduan Lengkap Tipe Data Koleksi di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Collections", "List", "Tuple", "Dictionary", "Set"],
+        "konten": "Panduan ini memberikan pemahaman dasar tentang berbagai tipe data koleksi di Python, termasuk list, tuple, dictionary, dan set, serta penggunaan praktisnya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menambahkan elemen baru ke dalam sebuah list?",
+                "answer": "Gunakan metode `append()` untuk menambahkan elemen di akhir list. Contoh: `my_list.append(4)`."
+            },
+            {
+                "question": "Apa perbedaan antara tuple dan list dalam hal modifikasi data?",
+                "answer": "List dapat diubah setelah dibuat (mutable), sedangkan tuple tidak bisa diubah (immutable). Contoh: `my_list = [1, 2]` dan `my_tuple = (1, 2)`."
+            },
+            {
+                "question": "Bagaimana cara mengakses nilai dari dictionary dengan kunci 'key1'?",
+                "answer": "Gunakan notasi `dictionary['key1']` untuk mengakses nilai dari dictionary. Contoh: `value = my_dict['key1']`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan operasi union pada set dan bagaimana cara melakukannya?",
+                "answer": "Operasi union menggabungkan elemen dari dua set, menghilangkan duplikat. Gunakan metode `union()` atau operator `|`. Contoh: `set1.union(set2)` atau `set1 | set2`."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen terakhir dari sebuah list?",
+                "question_code": "my_list = [10, 20, 30, 40]\nmy_list.pop()",
+                "answer": "Gunakan metode `pop()` tanpa parameter untuk menghapus elemen terakhir dari list. Contoh: `my_list.pop()`.",
+                "answer_code": "my_list = [10, 20, 30, 40]\nmy_list.pop()"
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "my_tuple = (1, 2, 3, 4, 5)\nmy_tuple[2] = 10",
+                "answer": "Kesalahan ini karena tuple bersifat immutable, sehingga elemen tidak dapat diubah. Gunakan list jika Anda perlu memodifikasi elemen.",
+                "answer_code": "my_tuple = (1, 2, 3, 4, 5) # Tidak bisa mengubah elemen di tuple"
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua dictionary?",
+                "question_code": "dict1 = {'a': 1}\ndict2 = {'b': 2}\nmerged_dict = dict1 | dict2",
+                "answer": "Gunakan operator `|` untuk menggabungkan dua dictionary. Contoh: `merged_dict = dict1 | dict2`.",
+                "answer_code": "dict1 = {'a': 1}\ndict2 = {'b': 2}\nmerged_dict = dict1 | dict2"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut?",
+                "question_code": "my_set = {1, 1, 2, 3, 3, 4}",
+                "answer": "Tidak ada kesalahan dalam kode ini, tetapi set akan menghapus duplikat dan hasilnya akan menjadi `my_set = {1, 2, 3, 4}`.",
+                "answer_code": "my_set = {1, 2, 3, 4}"
+            },
+            {
+                "question": "Bagaimana cara mengambil elemen pertama dari tuple?",
+                "question_code": "my_tuple = (5, 10, 15)\nelement_pertama = my_tuple[0]",
+                "answer": "Gunakan indeks 0 untuk mengambil elemen pertama dari tuple. Contoh: `element_pertama = my_tuple[0]`.",
+                "answer_code": "my_tuple = (5, 10, 15)\nelement_pertama = my_tuple[0]"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Data Types",
+        "penulis": "James Turner",
+        "tanggal": "2024-08-01",
+        "judul": "Mengenal Lebih Dalam Tipe Data Koleksi di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Data Collections", "List", "Tuple", "Dictionary", "Set"],
+        "konten": "Buku ini menjelaskan lebih dalam tentang tipe data koleksi di Python dengan berbagai operasi lanjutan dan contoh praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara membuat list yang berisi elemen dari 1 sampai 10 secara otomatis?",
+                "answer": "Gunakan list comprehension untuk membuat list otomatis. Contoh: `numbers = [x for x in range(1, 11)]`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan unpacking pada tuple dan bagaimana cara melakukannya?",
+                "answer": "Unpacking adalah proses memisahkan elemen tuple ke dalam variabel individu. Contoh: `a, b, c = (1, 2, 3)`."
+            },
+            {
+                "question": "Bagaimana cara menambahkan kunci dan nilai baru ke dalam dictionary yang sudah ada?",
+                "answer": "Gunakan notasi `dictionary['key'] = value` untuk menambahkan kunci dan nilai baru. Contoh: `my_dict['new_key'] = 'new_value'`."
+            },
+            {
+                "question": "Bagaimana cara menghitung jumlah elemen unik dalam sebuah set?",
+                "answer": "Gunakan fungsi `len()` untuk menghitung jumlah elemen unik dalam set. Contoh: `count = len(my_set)`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "my_list = [10, 20, 30, 40]\nmy_list[2] = 'thirty'",
+                "answer": "Tidak ada kesalahan dalam kode ini; Anda dapat mengganti elemen list dengan tipe data yang berbeda.",
+                "answer_code": "my_list = [10, 20, 30, 40]\nmy_list[2] = 'thirty'"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "my_dict = {1: 'one', 2: 'two'}\nmy_dict[1] = 'uno'",
+                "answer": "Tidak ada kesalahan dalam kode ini; nilai kunci yang ada dapat diupdate.",
+                "answer_code": "my_dict = {1: 'one', 2: 'two'}\nmy_dict[1] = 'uno'"
+            },
+            {
+                "question": "Bagaimana cara menghapus semua elemen dalam sebuah set?",
+                "question_code": "my_set = {1, 2, 3}\nmy_set.clear()",
+                "answer": "Gunakan metode `clear()` untuk menghapus semua elemen dalam set. Contoh: `my_set.clear()`.",
+                "answer_code": "my_set = {1, 2, 3}\nmy_set.clear()"
+            },
+            {
+                "question": "Bagaimana cara mengekstrak elemen kedua dan ketiga dari list?",
+                "question_code": "my_list = [10, 20, 30, 40]\nsub_list = my_list[1:3]",
+                "answer": "Gunakan slicing untuk mengekstrak elemen kedua dan ketiga. Contoh: `sub_list = my_list[1:3]`.",
+                "answer_code": "my_list = [10, 20, 30, 40]\nsub_list = my_list[1:3]"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut?",
+                "question_code": "my_tuple = ([1, 2], [3, 4])\nmy_tuple[0].append(3)",
+                "answer": "Tidak ada kesalahan dalam kode ini; Anda dapat memodifikasi elemen mutable di dalam tuple, seperti list.",
+                "answer_code": "my_tuple = ([1, 2], [3, 4])\nmy_tuple[0].append(3)"
+            }
+        ]
+    }
+]

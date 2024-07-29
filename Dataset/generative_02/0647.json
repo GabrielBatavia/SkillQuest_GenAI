@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Aturan Penamaan Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Naming Rules"],
+        "konten": "Artikel ini menjelaskan aturan penamaan variabel di Python, termasuk karakter yang diizinkan, konvensi penamaan, dan contoh penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Apa yang dimaksud dengan variabel dalam konteks pemrograman Python?",
+                "answer": "Variabel adalah entitas penyimpanan yang dapat menyimpan nilai yang berubah-ubah selama eksekusi program. Nama variabel digunakan untuk mengakses nilai tersebut."
+            },
+            {
+                "question": "Sebutkan aturan dasar dalam penamaan variabel di Python?",
+                "answer": "Nama variabel harus dimulai dengan huruf atau garis bawah (_), diikuti oleh huruf, angka, atau garis bawah. Nama variabel tidak boleh menggunakan kata kunci Python."
+            },
+            {
+                "question": "Apakah Python memperhatikan huruf besar dan kecil dalam nama variabel?",
+                "answer": "Ya, Python membedakan antara huruf besar dan kecil dalam nama variabel, sehingga 'data' dan 'Data' dianggap sebagai dua variabel yang berbeda."
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak dapat dieksekusi dengan benar?",
+                "question_code": "2nd_place = 'Silver'",
+                "answer": "Kode tersebut tidak dapat dieksekusi karena nama variabel tidak boleh diawali dengan angka. Nama variabel harus dimulai dengan huruf atau garis bawah.",
+                "answer_code": "second_place = 'Silver'"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "username = 'Alice'\nUsername = 'Bob'",
+                "answer": "Kode tersebut salah karena 'username' dan 'Username' adalah dua variabel yang berbeda akibat case-sensitivity, sehingga mendefinisikan dua variabel yang berbeda.",
+                "answer_code": "username = 'Alice'\nusername_alt = 'Bob'"
+            },
+            {
+                "question": "Mengapa kode ini salah?",
+                "question_code": "user-name = 'Charlie'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda hubung (-). Sebaiknya gunakan garis bawah (_).",
+                "answer_code": "user_name = 'Charlie'"
+            },
+            {
+                "question": "Apa masalah dengan kode ini?",
+                "question_code": "class = 10",
+                "answer": "Kode tersebut salah karena 'class' adalah kata kunci di Python dan tidak bisa digunakan sebagai nama variabel.",
+                "answer_code": "class_level = 10"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak bekerja sebagaimana mestinya?",
+                "question_code": "greeting = 'Hello\nprint(greeting)",
+                "answer": "Kode tersebut salah karena tanda kutip penutup pada nilai string hilang, dan tanda kurung pada fungsi print() tidak lengkap.",
+                "answer_code": "greeting = 'Hello'\nprint(greeting)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "total-sum = 100",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda hubung (-). Sebaiknya gunakan garis bawah (_).",
+                "answer_code": "total_sum = 100"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Konvensi Penamaan Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Naming Rules"],
+        "konten": "Panduan ini membahas konvensi penamaan variabel di Python, termasuk praktik terbaik dan contoh penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menamai variabel yang baik di Python?",
+                "answer": "Sebaiknya gunakan huruf kecil dan garis bawah (_) untuk memisahkan kata, seperti 'user_id' atau 'total_price'."
+            },
+            {
+                "question": "Dapatkah kita menggunakan kata kunci Python sebagai nama variabel?",
+                "answer": "Tidak, kata kunci Python tidak dapat digunakan sebagai nama variabel karena mereka memiliki makna khusus dalam bahasa tersebut, seperti 'if', 'while', 'return', dll."
+            },
+            {
+                "question": "Bolehkah nama variabel di Python mengandung angka?",
+                "answer": "Ya, nama variabel bisa mengandung angka, tetapi tidak boleh diawali dengan angka. Contoh yang benar adalah 'data1'."
+            },
+            {
+                "question": "Mengapa kode berikut ini salah?",
+                "question_code": "last-name = 'Doe'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda hubung (-). Sebaiknya gunakan garis bawah (_).",
+                "answer_code": "last_name = 'Doe'"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "amount$ = 200",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung karakter khusus seperti '$'.",
+                "answer_code": "amount_total = 200"
+            },
+            {
+                "question": "Apa masalah dengan kode berikut?",
+                "question_code": "while = 50",
+                "answer": "Kode tersebut salah karena 'while' adalah kata kunci Python yang digunakan dalam loop, sehingga tidak bisa digunakan sebagai nama variabel.",
+                "answer_code": "while_value = 50"
+            },
+            {
+                "question": "Mengapa kode ini salah?",
+                "question_code": "5stars = 'Excellent'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh dimulai dengan angka. Harus diawali dengan huruf atau garis bawah.",
+                "answer_code": "stars5 = 'Excellent'"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "address = '123 Main St\naddress2 = 'Suite 100'",
+                "answer": "Kode tersebut salah karena tanda kutip penutup pada nilai string pertama hilang.",
+                "answer_code": "address = '123 Main St'\naddress2 = 'Suite 100'"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "value% = 30",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda persen (%).",
+                "answer_code": "value_percent = 30"
+            }
+        ]
+    }
+]

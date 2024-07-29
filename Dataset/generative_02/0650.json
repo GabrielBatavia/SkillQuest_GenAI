@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Aturan Penamaan Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Naming Rules"],
+        "konten": "Artikel ini menjelaskan aturan penamaan variabel di Python, termasuk karakter yang diizinkan, konvensi penamaan, dan contoh penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Apa fungsi dari variabel dalam pemrograman Python?",
+                "answer": "Variabel berfungsi sebagai penampung nilai yang bisa berubah-ubah selama program berjalan."
+            },
+            {
+                "question": "Sebutkan aturan penamaan variabel yang benar di Python.",
+                "answer": "Nama variabel harus dimulai dengan huruf atau garis bawah (_), diikuti oleh huruf, angka, atau garis bawah. Tidak boleh menggunakan kata kunci Python sebagai nama variabel."
+            },
+            {
+                "question": "Apakah Python membedakan antara huruf besar dan kecil dalam penamaan variabel?",
+                "answer": "Ya, Python membedakan antara huruf besar dan kecil. Jadi 'variabel' dan 'Variabel' dianggap sebagai dua variabel yang berbeda."
+            },
+            {
+                "question": "Mengapa kode berikut ini salah?",
+                "question_code": "123name = 'John'",
+                "answer": "Nama variabel tidak boleh dimulai dengan angka. Harus diawali dengan huruf atau garis bawah.",
+                "answer_code": "name123 = 'John'"
+            },
+            {
+                "question": "Apa yang salah dengan penamaan variabel ini?",
+                "question_code": "user-age = 30",
+                "answer": "Nama variabel tidak boleh mengandung tanda hubung (-). Gunakan garis bawah (_) sebagai gantinya.",
+                "answer_code": "user_age = 30"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error?",
+                "question_code": "amount% = 50",
+                "answer": "Nama variabel tidak boleh mengandung karakter khusus seperti tanda persen (%).",
+                "answer_code": "amount_percent = 50"
+            },
+            {
+                "question": "Apa masalah dengan kode ini?",
+                "question_code": "first name = 'Alice'",
+                "answer": "Nama variabel tidak boleh mengandung spasi. Gunakan garis bawah (_) atau camelCase.",
+                "answer_code": "first_name = 'Alice'"
+            },
+            {
+                "question": "Mengapa kode ini tidak valid?",
+                "question_code": "return = 10",
+                "answer": "Kode tersebut tidak valid karena 'return' adalah kata kunci Python dan tidak bisa digunakan sebagai nama variabel.",
+                "answer_code": "return_value = 10"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "temp#1 = 25",
+                "answer": "Nama variabel tidak boleh mengandung karakter khusus seperti tanda pagar (#).",
+                "answer_code": "temp1 = 25"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Konvensi Penamaan Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Naming Rules"],
+        "konten": "Panduan ini membahas konvensi penamaan variabel di Python, termasuk praktik terbaik dan contoh penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu nama variabel yang deskriptif di Python?",
+                "answer": "Nama variabel yang deskriptif adalah nama yang menjelaskan apa yang disimpan dalam variabel tersebut, seperti 'total_amount' untuk jumlah total."
+            },
+            {
+                "question": "Mengapa penting menggunakan nama variabel yang deskriptif?",
+                "answer": "Nama variabel yang deskriptif membuat kode lebih mudah dipahami dan dikelola, terutama ketika dibaca oleh orang lain atau diri sendiri di masa depan."
+            },
+            {
+                "question": "Apakah nama variabel boleh mengandung angka?",
+                "answer": "Ya, nama variabel boleh mengandung angka, tetapi tidak boleh dimulai dengan angka. Contoh yang benar: 'data2'."
+            },
+            {
+                "question": "Mengapa kode berikut tidak valid?",
+                "question_code": "my-var = 100",
+                "answer": "Kode tersebut tidak valid karena nama variabel tidak boleh mengandung tanda hubung (-). Gunakan garis bawah (_) sebagai gantinya.",
+                "answer_code": "my_var = 100"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "price$ = 19.99",
+                "answer": "Nama variabel tidak boleh mengandung karakter khusus seperti tanda dolar ($).",
+                "answer_code": "price_usd = 19.99"
+            },
+            {
+                "question": "Mengapa variabel berikut tidak valid?",
+                "question_code": "4score = 20",
+                "answer": "Nama variabel tidak boleh dimulai dengan angka. Harus diawali dengan huruf atau garis bawah.",
+                "answer_code": "score4 = 20"
+            },
+            {
+                "question": "Apa yang salah dengan penamaan variabel ini?",
+                "question_code": "user-list = ['Tom', 'Jerry']",
+                "answer": "Nama variabel tidak boleh mengandung tanda hubung (-). Gunakan garis bawah (_) sebagai gantinya.",
+                "answer_code": "user_list = ['Tom', 'Jerry']"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error?",
+                "question_code": "value@ = 75",
+                "answer": "Nama variabel tidak boleh mengandung karakter khusus seperti '@'.",
+                "answer_code": "value_at = 75"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "1st_place = 'Gold'",
+                "answer": "Nama variabel tidak valid karena tidak boleh dimulai dengan angka. Gunakan huruf atau garis bawah di awal nama variabel.",
+                "answer_code": "first_place = 'Gold'"
+            }
+        ]
+    }
+]

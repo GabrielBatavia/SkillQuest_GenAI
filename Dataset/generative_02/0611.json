@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Mengakses, Menambahkan, dan Menghapus Elemen pada Nested List di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Artikel ini menjelaskan cara mengakses, menambahkan, dan menghapus elemen pada nested list di Python. Termasuk contoh kode dan tips praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mengakses elemen pada nested list?",
+                "answer": "Untuk mengakses elemen pada nested list, gunakan indeks ganda. Indeks pertama mengakses sub-list, dan indeks kedua mengakses elemen dalam sub-list tersebut. Contoh: `nested_list[0][1]` mengakses elemen kedua dari sub-list pertama."
+            },
+            {
+                "question": "Bagaimana cara menambahkan elemen pada nested list?",
+                "answer": "Untuk menambahkan elemen pada nested list, gunakan metode append() atau insert() pada sub-list yang diinginkan. Contoh: `nested_list[1].append(5)` menambahkan elemen 5 pada sub-list kedua."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen dari nested list?",
+                "answer": "Untuk menghapus elemen dari nested list, gunakan metode remove(), del, atau pop() pada sub-list yang diinginkan. Contoh: `del nested_list[1][2]` menghapus elemen ketiga dari sub-list kedua."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nvalue = matrix[3][0]",
+                "answer": "Kode tersebut menghasilkan error karena indeks yang diakses berada di luar jangkauan. Sub-list ketiga tidak ada dalam list utama.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nvalue = matrix[2][0]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menambahkan elemen pada sub-list yang benar?",
+                "question_code": "nested_list = [[1, 2], [3, 4]]\nnested_list[2].append(5)",
+                "answer": "Kode tersebut tidak menambahkan elemen karena sub-list ketiga tidak ada. Indeks yang benar seharusnya adalah 1 untuk sub-list kedua.",
+                "answer_code": "nested_list = [[1, 2], [3, 4]]\nnested_list[1].append(5)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk menghapus elemen dari nested list?",
+                "question_code": "data = [[10, 20], [30, 40]]\ndata.remove([30, 40][1])",
+                "answer": "Kode tersebut salah karena metode remove() digunakan dengan cara yang salah. Seharusnya menggunakan del atau pop untuk menghapus elemen dalam sub-list.",
+                "answer_code": "data = [[10, 20], [30, 40]]\ndel data[1][1]"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "matrix = [[1, 2], [3, 4, [5, 6]], 7]\nitem = matrix[2].pop(1)",
+                "answer": "Kode tersebut menghasilkan error karena elemen `matrix[2]` adalah integer, bukan list, sehingga tidak bisa di-pop elemen.",
+                "answer_code": "matrix = [[1, 2], [3, 4, [5, 6]], [7]]\nitem = matrix[2].pop()"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan perubahan pada nested list?",
+                "question_code": "nested = [10, [20, 30], 40, [50, 60], 70]\nnested[1].append(35)",
+                "answer": "Kode tersebut menghasilkan perubahan pada nested list dengan benar, menambahkan elemen 35 ke sub-list kedua.",
+                "answer_code": "nested = [10, [20, 30], 40, [50, 60], 70]\nnested[1].append(35)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mencoba menghapus elemen dari nested list?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\ndel matrix[2][3]",
+                "answer": "Kode tersebut salah karena indeks yang diakses berada di luar jangkauan. Sub-list ketiga hanya memiliki indeks sampai 2.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\ndel matrix[2][2]"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Mengakses, Menambahkan, dan Menghapus Elemen pada Nested List di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Panduan ini membahas cara mengakses, menambahkan, dan menghapus elemen pada nested list di Python, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana nested list digunakan dalam pemrograman?",
+                "answer": "Nested list digunakan dalam pemrograman untuk merepresentasikan data yang memiliki lebih dari satu dimensi, seperti tabel atau matriks, dan memungkinkan pengorganisasian data secara hierarkis."
+            },
+            {
+                "question": "Bisakah kita menambahkan sub-list baru ke dalam nested list?",
+                "answer": "Ya, kita bisa menambahkan sub-list baru ke dalam nested list menggunakan metode append() atau insert(). Contoh: `nested_list.append([7, 8, 9])`."
+            },
+            {
+                "question": "Bagaimana cara mengakses elemen dalam nested list yang berada di sub-list kedua?",
+                "answer": "Untuk mengakses elemen dalam sub-list kedua, gunakan indeks pertama untuk sub-list dan indeks kedua untuk elemen. Contoh: `nested_list[1][0]` mengakses elemen pertama dari sub-list kedua."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "data = [[1, 2], [3, 4, 5]]\nitem = data[2][1]",
+                "answer": "Kode tersebut menghasilkan error karena indeks yang diakses berada di luar jangkauan. Sub-list ketiga tidak ada dalam list utama.",
+                "answer_code": "data = [[1, 2], [3, 4, 5]]\nitem = data[1][2]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menambahkan elemen pada sub-list yang benar?",
+                "question_code": "nested = [[10, 20], [30, 40]]\nnested[2].append(50)",
+                "answer": "Kode tersebut tidak menambahkan elemen karena sub-list ketiga tidak ada. Indeks yang benar seharusnya adalah 1 untuk sub-list kedua.",
+                "answer_code": "nested = [[10, 20], [30, 40]]\nnested[1].append(50)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk menghapus elemen dari nested list?",
+                "question_code": "matrix = [[5, 10], [15, 20]]\nmatrix.pop([1][1])",
+                "answer": "Kode tersebut salah karena metode pop() digunakan dengan cara yang salah. Seharusnya menggunakan del untuk menghapus elemen dalam sub-list.",
+                "answer_code": "matrix = [[5, 10], [15, 20]]\ndel matrix[1][1]"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "nested_list = [[2, 4], [6, 8, [10, 12]], 14]\nelement = nested_list[2][1]",
+                "answer": "Kode tersebut menghasilkan error karena elemen `nested_list[2]` adalah integer (14), bukan list, sehingga tidak bisa diakses dengan indeks kedua.",
+                "answer_code": "nested_list = [[2, 4], [6, 8, [10, 12]], [14]]\nelement = nested_list[2][0]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan perubahan pada nested list?",
+                "question_code": "nested = [10, [20, 30], 40, [50, 60], 70]\nnested[1].append(35)",
+                "answer": "Kode tersebut benar dan menghasilkan perubahan pada nested list dengan menambahkan elemen 35 ke sub-list kedua.",
+                "answer_code": "nested = [10, [20, 30], 40, [50, 60], 70]\nnested[1].append(35)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mencoba menghapus elemen dari nested list?",
+                "question_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nmatrix[2].remove(10)",
+                "answer": "Kode tersebut salah karena elemen 10 tidak ada dalam sub-list ketiga, sehingga tidak bisa dihapus.",
+                "answer_code": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nmatrix[2].remove(9)"
+            }
+        ]
+    }
+]

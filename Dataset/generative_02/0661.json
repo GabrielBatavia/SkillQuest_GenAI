@@ -1,1 +1,112 @@
-{}
+[
+    {
+        "sumber": "Python Basics",
+        "penulis": "Jane Doe",
+        "tanggal": "2024-08-01",
+        "judul": "Memahami Tipe Data Dasar di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Artikel ini membahas tipe data dasar dalam Python, termasuk integer, float, string, dan boolean, serta cara penggunaannya dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel integer di Python?",
+                "answer": "Untuk mendeklarasikan variabel integer di Python, cukup tuliskan nama variabel diikuti dengan tanda sama dengan dan nilai integer. Contoh: `number = 42`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data float dalam Python?",
+                "answer": "Tipe data float dalam Python digunakan untuk menyimpan nilai numerik dengan titik desimal. Contoh: `pi = 3.14`."
+            },
+            {
+                "question": "Bagaimana cara menginisialisasi string di Python?",
+                "answer": "Anda bisa menginisialisasi string di Python dengan menuliskan teks di antara tanda kutip. Contoh: `greeting = 'Hello, world!'`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data boolean dalam Python?",
+                "answer": "Tipe data boolean dalam Python hanya memiliki dua nilai: `True` atau `False`. Contoh: `is_valid = True`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut ini?",
+                "question_code": "distance = '10.5'",
+                "answer": "Kesalahan dalam kode ini adalah nilai string '10.5' harusnya merupakan nilai float. Perbaiki dengan: `distance = 10.5`.",
+                "answer_code": "distance = 10.5"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error?",
+                "question_code": "message = Hello",
+                "answer": "Kode ini menghasilkan error karena teks string 'Hello' tidak diapit oleh tanda kutip. Perbaiki dengan: `message = 'Hello'`.",
+                "answer_code": "message = 'Hello'"
+            },
+            {
+                "question": "Bagaimana cara mengubah nilai integer menjadi string di Python?",
+                "question_code": "age = 25\nage_str = str(age)",
+                "answer": "Anda bisa mengubah nilai integer menjadi string dengan fungsi `str()`. Contoh: `age_str = str(age)`.",
+                "answer_code": "age = 25\nage_str = str(age)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "is_active = 'True'",
+                "answer": "Kesalahan dalam kode ini adalah nilai boolean tidak boleh diapit oleh tanda kutip. Gunakan tanpa tanda kutip: `is_active = True`.",
+                "answer_code": "is_active = True"
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel float di Python?",
+                "answer": "Anda bisa mendeklarasikan variabel float dengan menuliskan nama variabel diikuti dengan tanda sama dengan dan nilai float. Contoh: `height = 5.9`."
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python Guide",
+        "penulis": "John Smith",
+        "tanggal": "2024-08-01",
+        "judul": "Pengenalan Tipe Data di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Panduan ini menjelaskan tipe data dasar di Python dan memberikan contoh bagaimana mereka digunakan dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel string di Python?",
+                "answer": "Anda dapat mendeklarasikan variabel string dengan menuliskan teks di antara tanda kutip. Contoh: `name = \"Alice\"`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data integer dalam Python?",
+                "answer": "Tipe data integer dalam Python digunakan untuk menyimpan bilangan bulat. Contoh: `count = 100`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel boolean di Python?",
+                "answer": "Anda dapat mendeklarasikan variabel boolean dengan menetapkan nilai `True` atau `False`. Contoh: `is_member = False`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut ini?",
+                "question_code": "pi = 3,14",
+                "answer": "Kesalahan dalam kode ini adalah penggunaan koma untuk nilai float. Gunakan titik sebagai ganti koma: `pi = 3.14`.",
+                "answer_code": "pi = 3.14"
+            },
+            {
+                "question": "Mengapa kode berikut tidak valid?",
+                "question_code": "flag = TRUE",
+                "answer": "Kode ini tidak valid karena nilai boolean harus ditulis dengan huruf besar pertama, bukan semua huruf besar. Perbaiki dengan: `flag = True`.",
+                "answer_code": "flag = True"
+            },
+            {
+                "question": "Bagaimana cara mengubah nilai string menjadi integer di Python?",
+                "question_code": "num_str = '50'\nnum = int(num_str)",
+                "answer": "Anda bisa mengubah nilai string menjadi integer dengan fungsi `int()`. Contoh: `num = int(num_str)`.",
+                "answer_code": "num_str = '50'\nnum = int(num_str)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "price = '19.99'",
+                "answer": "Kesalahan dalam kode ini adalah nilai string '19.99' seharusnya merupakan nilai float. Perbaiki dengan: `price = 19.99`.",
+                "answer_code": "price = 19.99"
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel integer di Python?",
+                "answer": "Anda bisa mendeklarasikan variabel integer dengan menuliskan nama variabel diikuti dengan tanda sama dengan dan nilai integer. Contoh: `quantity = 30`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data string dalam Python?",
+                "answer": "Tipe data string dalam Python digunakan untuk menyimpan teks. Contoh: `welcome_message = \"Hello, welcome to Python!\"`."
+            }
+        ]
+    }
+]

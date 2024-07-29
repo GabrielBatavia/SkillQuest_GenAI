@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Penggunaan List dalam Aplikasi Nyata: Penyimpanan dan Manipulasi Data di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Data Manipulation"],
+        "konten": "Artikel ini menjelaskan bagaimana menggunakan list dalam aplikasi nyata untuk penyimpanan dan manipulasi data di Python. Termasuk contoh kode dan tips praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana list dapat digunakan untuk mengelola data transaksi dalam aplikasi keuangan?",
+                "answer": "List dapat digunakan untuk menyimpan detail transaksi seperti jumlah, tanggal, dan deskripsi, sehingga memudahkan pengelolaan dan analisis data keuangan."
+            },
+            {
+                "question": "Apa metode yang digunakan untuk menambahkan elemen baru di akhir list?",
+                "answer": "Metode append() digunakan untuk menambahkan elemen baru di akhir list. Contoh: `transactions.append('transaksi baru')`."
+            },
+            {
+                "question": "Bagaimana cara menghapus elemen tertentu dari list berdasarkan nilainya?",
+                "answer": "Metode remove() digunakan untuk menghapus elemen tertentu dari list berdasarkan nilainya. Contoh: `transactions.remove('transaksi lama')`."
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error IndexError?",
+                "question_code": "courses = ['math', 'science', 'history']\ncourse = courses[4]",
+                "answer": "Error terjadi karena indeks yang diakses berada di luar jangkauan. Indeks yang valid adalah 0 hingga 2.",
+                "answer_code": "courses = ['math', 'science', 'history']\ncourse = courses[2]"
+            },
+            {
+                "question": "Mengapa kode berikut tidak berhasil menambahkan 'Jake' ke dalam list?",
+                "question_code": "students = ['John', 'Jane']\nstudents[3].append('Jake')",
+                "answer": "Kode tidak berhasil karena append() seharusnya digunakan langsung pada list, bukan dengan indeks yang tidak ada.",
+                "answer_code": "students = ['John', 'Jane']\nstudents.append('Jake')"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk menghapus elemen dari list?",
+                "question_code": "temps = [30, 35, 40]\ntemps.remove(45)",
+                "answer": "Kode salah karena elemen 45 tidak ada dalam list, sehingga tidak bisa dihapus.",
+                "answer_code": "temps = [30, 35, 40]\ntemps.remove(40)"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan IndexError?",
+                "question_code": "grades = [85, 90, 95]\ngrade = grades.pop(3)",
+                "answer": "IndexError terjadi karena mencoba mengakses indeks yang tidak ada. Indeks yang valid adalah 0 hingga 2.",
+                "answer_code": "grades = [85, 90, 95]\ngrade = grades.pop(2)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak mengubah elemen di dalam list?",
+                "question_code": "fruits = ['apple', 'banana', 'cherry']\nfruits[1] = 'mango'",
+                "answer": "Kode benar dan mengganti elemen kedua 'banana' dengan 'mango'.",
+                "answer_code": "fruits = ['apple', 'banana', 'cherry']\nfruits[1] = 'mango'"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut saat menambahkan elemen ke dalam list?",
+                "question_code": "cars = ['Toyota', 'Honda']\ncars.insert('Ford', 1)",
+                "answer": "Kode salah karena argumen pertama insert() harus indeks, dan kedua adalah elemen yang akan ditambahkan.",
+                "answer_code": "cars = ['Toyota', 'Honda']\ncars.insert(1, 'Ford')"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Penggunaan List dalam Aplikasi Nyata: Penyimpanan dan Manipulasi Data di Python",
+        "tingkat_kesulitan": "Intermediate",
+        "tag": ["Python", "Lists", "Data Manipulation"],
+        "konten": "Panduan ini membahas cara menggunakan list dalam aplikasi nyata untuk penyimpanan dan manipulasi data di Python, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana list dapat digunakan untuk mengelola data pelanggan?",
+                "answer": "List dapat digunakan untuk menyimpan informasi pelanggan seperti nama, alamat, dan nomor telepon, memudahkan akses dan pengelolaan data pelanggan."
+            },
+            {
+                "question": "Apakah list di Python bisa menyimpan elemen-elemen dengan tipe data yang berbeda?",
+                "answer": "Ya, list di Python dapat menyimpan elemen dengan tipe data yang berbeda seperti angka, teks, dan objek."
+            },
+            {
+                "question": "Bagaimana cara menggabungkan dua list menjadi satu list?",
+                "answer": "Dua list dapat digabungkan menggunakan operator + atau metode extend(). Contoh: `list1 + list2` atau `list1.extend(list2)`."
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error IndexError?",
+                "question_code": "gadgets = ['phone', 'tablet']\ngadget = gadgets.pop(3)",
+                "answer": "IndexError terjadi karena mencoba mengakses indeks yang tidak ada dalam list. Indeks yang valid adalah 0 dan 1.",
+                "answer_code": "gadgets = ['phone', 'tablet']\ngadget = gadgets.pop(1)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak berhasil menambahkan 'ruler' ke dalam list?",
+                "question_code": "supplies = ['pen', 'notebook']\nsupplies.append(1, 'ruler')",
+                "answer": "Kode tidak berhasil karena metode append() hanya menerima satu argumen, yaitu elemen yang akan ditambahkan.",
+                "answer_code": "supplies = ['pen', 'notebook']\nsupplies.append('ruler')"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk menghapus elemen dari list?",
+                "question_code": "letters = ['a', 'b', 'c']\ndel letters[3]",
+                "answer": "Kode salah karena indeks yang dihapus berada di luar jangkauan. Indeks yang valid adalah 0, 1, dan 2.",
+                "answer_code": "letters = ['a', 'b', 'c']\ndel letters[2]"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan ValueError?",
+                "question_code": "colors = ['red', 'green', 'blue']\ncolors.remove('yellow')",
+                "answer": "ValueError terjadi karena elemen 'yellow' tidak ada dalam list, sehingga tidak bisa dihapus.",
+                "answer_code": "colors = ['red', 'green', 'blue']\ncolors.remove('blue')"
+            },
+            {
+                "question": "Mengapa kode berikut tidak mengubah elemen di dalam list?",
+                "question_code": "pets = ['cat', 'dog', 'rabbit']\npets[1] = 'parrot'",
+                "answer": "Kode benar dan mengganti elemen kedua 'dog' dengan 'parrot'.",
+                "answer_code": "pets = ['cat', 'dog', 'rabbit']\npets[1] = 'parrot'"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut saat mencoba menambahkan elemen ke dalam list?",
+                "question_code": "sports = ['soccer', 'basketball']\nsports.insert(2, 'tennis', 1)",
+                "answer": "Kode salah karena metode insert() hanya menerima dua argumen: indeks dan elemen yang ditambahkan.",
+                "answer_code": "sports = ['soccer', 'basketball']\nsports.insert(1, 'tennis')"
+            }
+        ]
+    }
+]

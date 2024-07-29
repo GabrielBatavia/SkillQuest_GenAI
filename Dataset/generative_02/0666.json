@@ -1,1 +1,108 @@
-{}
+[
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-08-01",
+        "judul": "Pengenalan Tipe Data Dasar di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Artikel ini membahas tipe data dasar dalam Python, termasuk integer, float, string, dan boolean, serta cara penggunaannya dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel yang menyimpan suhu dalam derajat Celsius di Python?",
+                "answer": "Untuk menyimpan suhu dalam derajat Celsius, gunakan tipe data float. Contoh: `suhu = 23.5`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data string dalam Python dan bagaimana menggunakannya?",
+                "answer": "Tipe data string digunakan untuk menyimpan teks. Anda bisa menggunakannya dengan menulis teks di antara tanda kutip. Contoh: `teks = 'Belajar Python'`."
+            },
+            {
+                "question": "Bagaimana cara menginisialisasi variabel yang menyimpan status login pengguna?",
+                "answer": "Gunakan tipe data boolean untuk status login. Contoh: `is_logged_in = True`."
+            },
+            {
+                "question": "Apa perbedaan utama antara tipe data integer dan float dalam Python?",
+                "answer": "Integer digunakan untuk bilangan bulat, sedangkan float digunakan untuk bilangan desimal. Contoh: `integer = 100` dan `float = 100.5`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "panjang = 10,5",
+                "answer": "Kesalahan karena pemisah desimal yang salah. Gunakan titik sebagai pemisah desimal: `panjang = 10.5`.",
+                "answer_code": "panjang = 10.5"
+            },
+            {
+                "question": "Mengapa kode berikut menghasilkan error?",
+                "question_code": "username = Alice",
+                "answer": "Error terjadi karena string 'Alice' tidak diapit oleh tanda kutip. Perbaiki dengan: `username = 'Alice'`.",
+                "answer_code": "username = 'Alice'"
+            },
+            {
+                "question": "Bagaimana cara mengubah variabel integer menjadi string?",
+                "question_code": "angka = 42\nangka_str = str(angka)",
+                "answer": "Gunakan fungsi `str()` untuk mengkonversi integer ke string. Contoh: `angka_str = str(angka)`.",
+                "answer_code": "angka = 42\nangka_str = str(angka)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "status = 'True'",
+                "answer": "Nilai boolean tidak perlu diapit oleh tanda kutip. Perbaiki dengan: `status = True`.",
+                "answer_code": "status = True"
+            }
+        ]
+    },
+    {
+        "sumber": "Learning Python",
+        "penulis": "Bob Williams",
+        "tanggal": "2024-08-01",
+        "judul": "Dasar Tipe Data di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Panduan ini menjelaskan tipe data dasar di Python dan memberikan contoh bagaimana mereka digunakan dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel yang menyimpan harga barang dalam Python?",
+                "answer": "Gunakan tipe data float untuk harga barang. Contoh: `harga_barang = 99.99`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data integer dan kapan biasanya digunakan?",
+                "answer": "Tipe data integer digunakan untuk menyimpan angka bulat. Biasanya digunakan untuk menghitung jumlah item atau angka tanpa desimal. Contoh: `jumlah_item = 10`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel yang menyimpan status ketersediaan produk?",
+                "answer": "Gunakan tipe data boolean untuk status ketersediaan. Contoh: `is_available = False`."
+            },
+            {
+                "question": "Apa perbedaan antara tipe data float dan string dalam Python?",
+                "answer": "Float digunakan untuk angka desimal, sedangkan string digunakan untuk teks. Contoh: `float_number = 12.34` dan `text = 'Hello World'`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini?",
+                "question_code": "radius = 7.5,",
+                "answer": "Kesalahan karena ada koma di akhir angka. Perbaiki dengan: `radius = 7.5`.",
+                "answer_code": "radius = 7.5"
+            },
+            {
+                "question": "Mengapa kode berikut tidak valid?",
+                "question_code": "status = NO",
+                "answer": "Kode ini tidak valid karena `NO` bukan nilai boolean yang benar. Perbaiki dengan: `status = False`.",
+                "answer_code": "status = False"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi string berisi angka menjadi integer?",
+                "question_code": "nilai_str = '123'\nnilai_int = int(nilai_str)",
+                "answer": "Gunakan fungsi `int()` untuk mengkonversi string menjadi integer. Contoh: `nilai_int = int(nilai_str)`.",
+                "answer_code": "nilai_str = '123'\nnilai_int = int(nilai_str)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "jumlah = '100.1'",
+                "answer": "Kesalahan karena nilai string '100.1' seharusnya merupakan float. Perbaiki dengan: `jumlah = 100.1`.",
+                "answer_code": "jumlah = 100.1"
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel yang menyimpan nama produk?",
+                "answer": "Gunakan tipe data string untuk menyimpan nama produk. Contoh: `nama_produk = 'Laptop'`."
+            }
+        ]
+    }
+]

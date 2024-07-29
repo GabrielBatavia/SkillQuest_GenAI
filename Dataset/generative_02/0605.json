@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Beginner's Manual",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Mengelola List Bersarang di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Artikel ini membahas cara mendeklarasikan list di dalam list di Python dan beberapa contoh aplikasinya.",
+        "pertanyaan": [
+            {
+                "question": "Dalam situasi apa kita mungkin memerlukan struktur data yang lebih dalam dari sekadar list tunggal?",
+                "answer": "Saat kita perlu merepresentasikan data yang lebih kompleks seperti tabel atau matriks, list bersarang sangat membantu karena memungkinkan struktur data multi-dimensi."
+            },
+            {
+                "question": "Jika Anda memiliki data yang terdiri dari beberapa level, bagaimana Anda dapat menyusunnya dalam Python?",
+                "answer": "Anda dapat menyusun data bertingkat menggunakan list bersarang. Misalnya, Anda bisa membuat list di dalam list: `multi_level_list = [['A', 'B'], ['C', 'D'], ['E', 'F']]`."
+            },
+            {
+                "question": "Apa hasilnya jika mencoba mengakses elemen di luar batas list?",
+                "answer": "Jika mencoba mengakses elemen di luar batas list, Python akan memberikan IndexError karena indeks yang diminta tidak ada dalam list."
+            },
+            {
+                "question": "Kode ini mengandung kesalahan. Dapatkah Anda mengidentifikasinya?",
+                "question_code": "fruits = [['apple', 'banana'], ['cherry', 'date'], ['elderberry', 'fig']\nfruit = fruits[1, 1]",
+                "answer": "Kesalahannya adalah cara mengakses elemen dalam list bersarang harus menggunakan dua indeks terpisah, bukan satu tuple.",
+                "answer_code": "fruits = [['apple', 'banana'], ['cherry', 'date'], ['elderberry', 'fig']]\nfruit = fruits[1][1]"
+            },
+            {
+                "question": "Apa yang tidak tepat dalam kode berikut?",
+                "question_code": "colors = ['red', 'green', ['blue', 'yellow']",
+                "answer": "Kode ini tidak tepat karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "colors = ['red', 'green', ['blue', 'yellow']]"
+            },
+            {
+                "question": "Mengapa kode ini tidak bekerja seperti yang diharapkan?",
+                "question_code": "shapes = [['circle', 'square'], ['triangle', 'rectangle',]",
+                "answer": "Kode ini tidak bekerja karena ada tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "shapes = [['circle', 'square'], ['triangle', 'rectangle']]"
+            },
+            {
+                "question": "Mengapa kode ini tidak memberikan hasil yang diharapkan?",
+                "question_code": "animal_list = [['cat', 'dog'], ['fish', 'bird', ['hamster', 'rabbit']], 'turtle']\npicked_animal = animal_list[2][1]",
+                "answer": "Kode ini tidak memberikan hasil yang diharapkan karena elemen `animal_list[2]` adalah string ('turtle'), bukan list, sehingga tidak bisa diakses dengan indeks kedua.",
+                "answer_code": "animal_list = [['cat', 'dog'], ['fish', 'bird', ['hamster', 'rabbit']], ['turtle']]\npicked_animal = animal_list[2][0]"
+            },
+            {
+                "question": "Apa yang tidak konsisten dalam struktur list ini?",
+                "question_code": "nested_values = [1, [2, 3], 4, [5, 6], 7]",
+                "answer": "Struktur list ini mungkin tidak sesuai harapan jika semua elemen diinginkan berada dalam sub-list yang seragam.",
+                "answer_code": "nested_values = [[1], [2, 3], [4], [5, 6], [7]]"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini saat mendeklarasikan list bersarang?",
+                "question_code": "number_matrix = [['one', 'two', 'three'], ['four', 'five', 'six'] ['seven', 'eight', 'nine']]",
+                "answer": "Kesalahan dalam kode ini adalah hilangnya koma antara elemen kedua dan ketiga dalam list utama.",
+                "answer_code": "number_matrix = [['one', 'two', 'three'], ['four', 'five', 'six'], ['seven', 'eight', 'nine']]"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Simplified",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-07-27",
+        "judul": "Membuat dan Menggunakan List Bersarang di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Nested Lists"],
+        "konten": "Panduan ini membahas cara mendeklarasikan dan menggunakan list bersarang di Python, serta beberapa contoh aplikasinya.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana Anda mengatur data yang memiliki beberapa tingkatan dalam Python?",
+                "answer": "Data dengan beberapa tingkatan dapat diatur menggunakan list bersarang, yang memungkinkan representasi data multi-dimensi seperti matriks atau tabel. Contoh: `nested_list = [['x', 'y'], ['z', 'w']]`."
+            },
+            {
+                "question": "Apakah mungkin mencampur berbagai tipe data dalam satu list bersarang?",
+                "answer": "Ya, Python memungkinkan mencampur berbagai tipe data dalam satu list bersarang, sehingga elemen dari tipe data yang berbeda dapat berada dalam satu list."
+            },
+            {
+                "question": "Apa yang harus diperhatikan saat mengakses elemen dalam list di dalam list?",
+                "answer": "Saat mengakses elemen dalam list di dalam list, kita perlu menggunakan dua indeks: indeks pertama untuk sub-list, dan indeks kedua untuk elemen dalam sub-list tersebut."
+            },
+            {
+                "question": "Kode ini memiliki masalah. Bisakah Anda menemukannya?",
+                "question_code": "number_grid = [['one', 'two', 'three'], ['four', 'five', 'six'], ['seven', 'eight', 'nine']\nelement = number_grid(1, 2)",
+                "answer": "Masalah dalam kode ini adalah penggunaan tanda kurung biasa untuk mengakses elemen dalam list. Harusnya menggunakan tanda kurung siku.",
+                "answer_code": "number_grid = [['one', 'two', 'three'], ['four', 'five', 'six'], ['seven', 'eight', 'nine']]\nelement = number_grid[1][2]"
+            },
+            {
+                "question": "Apa yang tidak tepat dalam kode berikut saat mendeklarasikan list bersarang?",
+                "question_code": "nested_items = [['alpha', 'beta', 'gamma'], ['delta', 'epsilon zeta']]",
+                "answer": "Kode ini tidak tepat karena ada koma yang hilang antara elemen kedua dan ketiga dalam sub-list kedua.",
+                "answer_code": "nested_items = [['alpha', 'beta', 'gamma'], ['delta', 'epsilon', 'zeta']]"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi seperti yang diharapkan?",
+                "question_code": "layered_data = [['A', 'B'], ['C', 'D', ['E', 'F', ['G', 'H']]]",
+                "answer": "Kode ini tidak berfungsi karena tanda kurung penutup hilang di akhir deklarasi list.",
+                "answer_code": "layered_data = [['A', 'B'], ['C', 'D', ['E', 'F', ['G', 'H']]]]"
+            },
+            {
+                "question": "Apa yang menyebabkan kode ini gagal?",
+                "question_code": "multi_list = [['a', 'b'], ['c', 'd', ['e', 'f']], 'g']\nitem = multi_list[2][1]",
+                "answer": "Kode ini gagal karena elemen `multi_list[2]` adalah string ('g'), bukan list, sehingga tidak bisa diakses dengan indeks kedua.",
+                "answer_code": "multi_list = [['a', 'b'], ['c', 'd', ['e', 'f']], ['g']]\nitem = multi_list[2][0]"
+            },
+            {
+                "question": "Apa yang tidak konsisten dalam list bersarang berikut ini?",
+                "question_code": "mixed_list = [1, ['2', '3'], 4, ['5', '6'], 7]",
+                "answer": "List bersarang ini mungkin tidak sesuai harapan jika semua elemen diinginkan berada dalam sub-list yang seragam.",
+                "answer_code": "mixed_list = [[1], ['2', '3'], [4], ['5', '6'], [7]]"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini saat mendeklarasikan list bersarang?",
+                "question_code": "alpha_matrix = [['alpha', 'beta'], ['gamma', 'delta'], ['epsilon', 'zeta', 'eta']",
+                "answer": "Kesalahan dalam kode ini adalah tanda kurung penutup yang hilang di akhir deklarasi list.",
+                "answer_code": "alpha_matrix = [['alpha', 'beta'], ['gamma', 'delta'], ['epsilon', 'zeta', 'eta']]"
+            }
+        ]
+    }
+]

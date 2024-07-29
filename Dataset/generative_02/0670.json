@@ -1,1 +1,108 @@
-{}
+[
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-08-01",
+        "judul": "Pengenalan Tipe Data Dasar di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Artikel ini membahas tipe data dasar dalam Python, termasuk integer, float, string, dan boolean, serta cara penggunaannya dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyimpan nilai suhu tubuh dalam variabel menggunakan tipe data float?",
+                "answer": "Deklarasikan variabel dengan tipe data float untuk nilai suhu tubuh. Contoh: `suhu_tubuh = 36.6`."
+            },
+            {
+                "question": "Apa perbedaan antara tipe data integer dan float dalam Python?",
+                "answer": "Integer digunakan untuk menyimpan bilangan bulat, sedangkan float digunakan untuk bilangan dengan desimal. Contoh integer: `age = 30`. Contoh float: `height = 5.9`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel untuk menyimpan nama lengkap seseorang?",
+                "answer": "Gunakan tipe data string untuk menyimpan nama lengkap. Contoh: `nama_lengkap = 'Joko Widodo'`."
+            },
+            {
+                "question": "Apa kegunaan dari tipe data boolean dalam pemrograman?",
+                "answer": "Tipe data boolean digunakan untuk menyimpan nilai benar atau salah. Contoh penggunaan: `is_active = True`."
+            },
+            {
+                "question": "Apa kesalahan pada kode ini?",
+                "question_code": "radius = 4,5",
+                "answer": "Kesalahan ini karena menggunakan koma untuk nilai float. Gunakan titik: `radius = 4.5`.",
+                "answer_code": "radius = 4.5"
+            },
+            {
+                "question": "Mengapa kode ini menghasilkan error?",
+                "question_code": "total_amount = $250",
+                "answer": "Error terjadi karena simbol `$` tidak boleh digunakan dalam kode Python. Hapus simbolnya: `total_amount = 250`.",
+                "answer_code": "total_amount = 250"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi nilai integer menjadi string?",
+                "question_code": "nilai = 2024\nnilai_str = str(nilai)",
+                "answer": "Gunakan fungsi `str()` untuk mengkonversi integer ke string. Contoh: `nilai_str = str(nilai)`.",
+                "answer_code": "nilai = 2024\nnilai_str = str(nilai)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "is_sunny = 'Yes'",
+                "answer": "Nilai boolean harus dalam format `True` atau `False`. Perbaiki dengan: `is_sunny = False`.",
+                "answer_code": "is_sunny = False"
+            }
+        ]
+    },
+    {
+        "sumber": "Learning Python",
+        "penulis": "Bob Williams",
+        "tanggal": "2024-08-01",
+        "judul": "Dasar Tipe Data di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Panduan ini menjelaskan tipe data dasar di Python dan memberikan contoh bagaimana mereka digunakan dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyimpan total pendapatan dalam variabel dengan tipe data float?",
+                "answer": "Gunakan tipe data float untuk total pendapatan. Contoh: `total_pendapatan = 1500.75`."
+            },
+            {
+                "question": "Apa fungsi utama dari tipe data integer dalam sebuah program Python?",
+                "answer": "Tipe data integer digunakan untuk menyimpan nilai numerik tanpa desimal. Contoh: `jumlah_anggota = 45`."
+            },
+            {
+                "question": "Bagaimana cara mengatur status aktif dari pengguna dengan tipe data boolean?",
+                "answer": "Gunakan tipe data boolean untuk status aktif. Contoh: `is_active = True`."
+            },
+            {
+                "question": "Apa perbedaan mendasar antara tipe data string dan float?",
+                "answer": "String digunakan untuk menyimpan teks, sedangkan float digunakan untuk menyimpan angka desimal. Contoh: `alamat = 'Jl. Merdeka'` (string) dan `harga = 29.99` (float)."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "height = 1.75m",
+                "answer": "Kesalahan terjadi karena penggunaan `m` untuk satuan. Hapus satuan dari kode: `height = 1.75`.",
+                "answer_code": "height = 1.75"
+            },
+            {
+                "question": "Mengapa kode ini tidak valid?",
+                "question_code": "status = FALSE",
+                "answer": "Kode ini tidak valid karena `FALSE` harus ditulis dengan huruf kapital pertama. Perbaiki dengan: `status = False`.",
+                "answer_code": "status = False"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi string menjadi float?",
+                "question_code": "nilai_str = '9.8'\nnilai_float = float(nilai_str)",
+                "answer": "Gunakan fungsi `float()` untuk mengkonversi string ke float. Contoh: `nilai_float = float(nilai_str)`.",
+                "answer_code": "nilai_str = '9.8'\nnilai_float = float(nilai_str)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut?",
+                "question_code": "jumlah = '500'",
+                "answer": "Kesalahan ini karena nilai string '500' seharusnya menjadi integer. Perbaiki dengan: `jumlah = 500`.",
+                "answer_code": "jumlah = 500"
+            },
+            {
+                "question": "Bagaimana cara menyimpan kode pos dalam variabel?",
+                "answer": "Gunakan tipe data string jika kode pos terdiri dari angka dan mungkin karakter lain. Contoh: `kode_pos = '12345'`."
+            }
+        ]
+    }
+]

@@ -1,1 +1,108 @@
-{}
+[
+    {
+        "sumber": "Python for Beginners",
+        "penulis": "Alice Johnson",
+        "tanggal": "2024-08-01",
+        "judul": "Pengenalan Tipe Data Dasar di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Artikel ini membahas tipe data dasar dalam Python, termasuk integer, float, string, dan boolean, serta cara penggunaannya dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel float untuk menyimpan berat badan di Python?",
+                "answer": "Anda dapat mendeklarasikan variabel float dengan menuliskan nilai desimal. Misalnya: `berat_badan = 65.5`."
+            },
+            {
+                "question": "Apa kegunaan tipe data boolean dalam program Python?",
+                "answer": "Tipe data boolean digunakan untuk menyimpan nilai logika, yaitu `True` atau `False`. Contoh penggunaannya: `is_approved = True`."
+            },
+            {
+                "question": "Bagaimana cara membuat string yang berisi nama pengguna?",
+                "answer": "String untuk menyimpan nama pengguna bisa dibuat dengan menuliskan nama dalam tanda kutip. Contoh: `nama_pengguna = 'Budi'`."
+            },
+            {
+                "question": "Apa perbedaan antara tipe data integer dan float di Python?",
+                "answer": "Integer adalah tipe data untuk bilangan bulat tanpa desimal, sedangkan float untuk bilangan dengan desimal. Contoh: `integer = 12` dan `float = 12.0`."
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut ini?",
+                "question_code": "umur = '25",
+                "answer": "Kesalahan dalam kode ini adalah tanda kutip penutup hilang. Perbaiki dengan: `umur = '25'`.",
+                "answer_code": "umur = '25'"
+            },
+            {
+                "question": "Mengapa kode ini tidak berjalan dengan baik?",
+                "question_code": "harga_total = 1000,00",
+                "answer": "Kode ini salah karena pemisah desimal seharusnya menggunakan titik. Perbaiki dengan: `harga_total = 1000.00`.",
+                "answer_code": "harga_total = 1000.00"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi integer ke string?",
+                "question_code": "usia = 30\nusia_str = str(usia)",
+                "answer": "Gunakan fungsi `str()` untuk mengkonversi integer ke string. Contoh: `usia_str = str(usia)`.",
+                "answer_code": "usia = 30\nusia_str = str(usia)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini?",
+                "question_code": "status_login = 'True'",
+                "answer": "Nilai boolean tidak perlu diapit oleh tanda kutip. Perbaiki dengan: `status_login = True`.",
+                "answer_code": "status_login = True"
+            }
+        ]
+    },
+    {
+        "sumber": "Learning Python",
+        "penulis": "Bob Williams",
+        "tanggal": "2024-08-01",
+        "judul": "Dasar Tipe Data di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Data Types", "Integer", "Float", "String", "Boolean"],
+        "konten": "Panduan ini menjelaskan tipe data dasar di Python dan memberikan contoh bagaimana mereka digunakan dalam program.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara menyimpan informasi tanggal dalam variabel string?",
+                "answer": "Untuk menyimpan tanggal dalam variabel string, tuliskan tanggal di dalam tanda kutip. Contoh: `tanggal = '2024-08-01'`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data integer di Python?",
+                "answer": "Tipe data integer digunakan untuk menyimpan angka bulat, seperti `jumlah = 50`."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan variabel boolean untuk status aktif?",
+                "answer": "Gunakan `True` atau `False` untuk mendeklarasikan variabel boolean. Contoh: `is_active = True`."
+            },
+            {
+                "question": "Kenapa kode ini menghasilkan error?",
+                "question_code": "nilai_pi = 3.14,",
+                "answer": "Error karena ada koma di akhir angka desimal. Perbaiki dengan: `nilai_pi = 3.14`.",
+                "answer_code": "nilai_pi = 3.14"
+            },
+            {
+                "question": "Mengapa kode berikut salah?",
+                "question_code": "nilai = '3.5.5'",
+                "answer": "Kode ini salah karena string '3.5.5' tidak valid untuk tipe data float. Perbaiki dengan: `nilai = 3.55`.",
+                "answer_code": "nilai = 3.55"
+            },
+            {
+                "question": "Bagaimana cara mengkonversi string menjadi float?",
+                "question_code": "nilai_str = '5.75'\nnilai_float = float(nilai_str)",
+                "answer": "Gunakan fungsi `float()` untuk mengkonversi string menjadi float. Contoh: `nilai_float = float(nilai_str)`.",
+                "answer_code": "nilai_str = '5.75'\nnilai_float = float(nilai_str)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini?",
+                "question_code": "harga = '1200",
+                "answer": "Kesalahan karena tanda kutip penutup hilang. Perbaiki dengan: `harga = '1200'`.",
+                "answer_code": "harga = '1200'"
+            },
+            {
+                "question": "Bagaimana cara menyimpan bilangan bulat dalam variabel?",
+                "answer": "Untuk menyimpan bilangan bulat, gunakan tipe data integer. Contoh: `jumlah_item = 10`."
+            },
+            {
+                "question": "Apa yang dimaksud dengan tipe data string dan bagaimana cara mendeklarasikannya?",
+                "answer": "Tipe data string digunakan untuk teks. Deklarasikan dengan menuliskan teks di dalam tanda kutip. Contoh: `message = \"Hello!\"`."
+            }
+        ]
+    }
+]

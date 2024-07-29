@@ -1,1 +1,96 @@
-{}
+[
+    {
+        "sumber": "Intro to Python Programming",
+        "penulis": "Alex Johnson",
+        "tanggal": "2024-07-27",
+        "judul": "Penggunaan Fungsi sum() untuk Menjumlahkan Elemen List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Artikel ini membahas penggunaan fungsi sum() untuk menjumlahkan elemen dalam list, dengan berbagai contoh kode dan penjelasan tentang kesalahan umum.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari kode berikut?",
+                "question_code": "values = [10, 20, 30]\ntotal = sum(values)",
+                "answer": "Hasil dari kode tersebut adalah 60, yaitu penjumlahan dari 10, 20, dan 30.",
+                "answer_code": "values = [10, 20, 30]\ntotal = sum(values)"
+            },
+            {
+                "question": "Apa yang terjadi jika Anda menggunakan sum() pada list yang berisi elemen kosong?",
+                "question_code": "empty_list = []\nresult = sum(empty_list)",
+                "answer": "Jika list kosong digunakan dengan sum(), hasilnya adalah 0, karena tidak ada elemen untuk dijumlahkan.",
+                "answer_code": "empty_list = []\nresult = sum(empty_list)"
+            },
+            {
+                "question": "Bagaimana cara menangani kesalahan jika menggunakan sum() pada list dengan tipe data campuran?",
+                "question_code": "mixed_list = [1, 'two', 3]\ntotal = sum(mixed_list)",
+                "answer": "Kode ini akan menghasilkan TypeError karena sum() hanya dapat menjumlahkan elemen numerik. Pastikan list hanya berisi angka.",
+                "answer_code": "mixed_list = [1, 'two', 3]\n# Pastikan list hanya berisi angka.\n# total = sum(mixed_list)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode berikut?",
+                "question_code": "numbers = [1.5, 2.5, 3.5]\nresult = sum(numbers, start=10)",
+                "answer": "Kesalahan ini terjadi karena argumen kedua pada sum() tidak diperlukan dalam kasus ini. Argumen kedua digunakan untuk memberikan nilai awal yang tidak diperlukan di sini.",
+                "answer_code": "numbers = [1.5, 2.5, 3.5]\nresult = sum(numbers)"
+            },
+            {
+                "question": "Apa output dari kode berikut?",
+                "question_code": "data = [7, 14, 21]\ntotal_sum = sum(data[1:3])",
+                "answer": "Kode ini menghasilkan 35, yaitu penjumlahan dari elemen data[1:3], yang terdiri dari 14 dan 21.",
+                "answer_code": "data = [7, 14, 21]\ntotal_sum = sum(data[1:3])"
+            },
+            {
+                "question": "Bagaimana kode berikut menghasilkan hasil yang benar?",
+                "question_code": "list_of_numbers = [1, 2, 3, 4, 5]\ntotal = sum(list_of_numbers[::2])",
+                "answer": "Kode ini menghasilkan 9, yaitu penjumlahan dari elemen list_of_numbers[::2] yang mencakup elemen dengan indeks genap (1, 3, 5).",
+                "answer_code": "list_of_numbers = [1, 2, 3, 4, 5]\ntotal = sum(list_of_numbers[::2])"
+            }
+        ]
+    },
+    {
+        "sumber": "Python Essentials",
+        "penulis": "Emily Clark",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Menggunakan sum() untuk Menjumlahkan Elemen List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Tutorial ini menjelaskan bagaimana menggunakan fungsi sum() untuk menjumlahkan elemen dalam list dengan contoh yang bervariasi dan penjelasan tentang kesalahan yang sering terjadi.",
+        "pertanyaan": [
+            {
+                "question": "Apa hasil dari kode berikut ketika dijalankan?",
+                "question_code": "values = [8, 16, 24]\nresult = sum(values)",
+                "answer": "Hasil dari kode ini adalah 48, yaitu penjumlahan dari 8, 16, dan 24.",
+                "answer_code": "values = [8, 16, 24]\nresult = sum(values)"
+            },
+            {
+                "question": "Apa yang terjadi jika sum() digunakan pada list yang mengandung elemen None?",
+                "question_code": "list_with_none = [5, None, 10]\nresult = sum(list_with_none)",
+                "answer": "Kode ini akan menghasilkan TypeError karena sum() tidak dapat menjumlahkan elemen None. List harus berisi hanya angka.",
+                "answer_code": "list_with_none = [5, None, 10]\n# Pastikan list hanya berisi angka.\n# result = sum(list_with_none)"
+            },
+            {
+                "question": "Apa kesalahan dalam kode ini?",
+                "question_code": "numbers = [10, 20, 30]\ntotal = sum(numbers, start='0')",
+                "answer": "Kesalahan ini terjadi karena argumen kedua harus berupa angka, bukan string. Argumen kedua harus dihapus atau diganti dengan angka.",
+                "answer_code": "numbers = [10, 20, 30]\ntotal = sum(numbers)"
+            },
+            {
+                "question": "Apa output dari kode berikut?",
+                "question_code": "values = [3, 6, 9, 12]\ntotal = sum(values[2:])",
+                "answer": "Kode ini menghasilkan 21, yaitu penjumlahan dari elemen values[2:] yang mencakup 9 dan 12.",
+                "answer_code": "values = [3, 6, 9, 12]\ntotal = sum(values[2:])"
+            },
+            {
+                "question": "Bagaimana kode berikut menghasilkan hasil yang benar?",
+                "question_code": "data = [2, 4, 6, 8]\ntotal = sum(data[::3])",
+                "answer": "Kode ini menghasilkan 10, yaitu penjumlahan dari elemen data[::3] yang mencakup 2 dan 8.",
+                "answer_code": "data = [2, 4, 6, 8]\ntotal = sum(data[::3])"
+            },
+            {
+                "question": "Apa yang salah dalam kode berikut?",
+                "question_code": "list_values = [1, 2, 3]\ntotal_sum = sum(list_values, start=1000)",
+                "answer": "Kesalahan ini terjadi karena penggunaan argumen kedua yang tidak perlu. Fungsi sum() hanya memerlukan satu argumen yaitu list atau iterable.",
+                "answer_code": "list_values = [1, 2, 3]\ntotal_sum = sum(list_values)"
+            }
+        ]
+    }
+]

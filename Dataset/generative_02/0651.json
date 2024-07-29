@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Deklarasi dan Inisialisasi Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Declaration", "Initialization"],
+        "konten": "Artikel ini menjelaskan cara mendeklarasikan dan menginisialisasi variabel di Python, termasuk contoh penggunaan dan aturan dasar.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu deklarasi dan inisialisasi variabel?",
+                "answer": "Deklarasi variabel adalah tindakan mendefinisikan variabel dengan nama tertentu. Inisialisasi variabel adalah tindakan memberikan nilai awal kepada variabel tersebut."
+            },
+            {
+                "question": "Bagaimana cara mendeklarasikan dan menginisialisasi variabel di Python?",
+                "answer": "Di Python, deklarasi dan inisialisasi variabel dilakukan secara bersamaan dengan menuliskan nama variabel diikuti dengan tanda sama dengan dan nilai awal. Contoh: `x = 10`."
+            },
+            {
+                "question": "Apakah kita bisa mendeklarasikan variabel tanpa menginisialisasi nilai di Python?",
+                "answer": "Tidak, di Python kita harus menginisialisasi variabel saat mendeklarasikannya. Variabel tidak bisa dideklarasikan tanpa nilai awal."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "number =",
+                "answer": "Kode tersebut menghasilkan error karena variabel 'number' dideklarasikan tanpa nilai awal. Variabel harus diinisialisasi dengan nilai.",
+                "answer_code": "number = 0"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak mendeklarasikan variabel dengan benar?",
+                "question_code": "name == 'Alice'",
+                "answer": "Kode tersebut tidak mendeklarasikan variabel karena menggunakan tanda sama dengan ganda (==) yang digunakan untuk perbandingan, bukan penugasan. Gunakan tanda sama dengan tunggal (=) untuk mendeklarasikan variabel.",
+                "answer_code": "name = 'Alice'"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendeklarasikan variabel?",
+                "question_code": "user-name = 'Bob'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda hubung (-). Gunakan garis bawah (_) sebagai gantinya.",
+                "answer_code": "user_name = 'Bob'"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "x = 10\nx = 'Hello'",
+                "answer": "Kode tersebut tidak menghasilkan error, tetapi mengganti tipe data variabel 'x' dari integer menjadi string. Python mendukung penggantian tipe data variabel selama program berjalan.",
+                "answer_code": "x = 10\nx = 'Hello'"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan variabel yang benar?",
+                "question_code": "y = 'Hello\nprint(y)",
+                "answer": "Kode tersebut tidak menghasilkan variabel yang benar karena tanda kutip penutup pada nilai string hilang, dan tanda kurung pada fungsi print() tidak lengkap.",
+                "answer_code": "y = 'Hello'\nprint(y)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendeklarasikan variabel?",
+                "question_code": "price$ = 25.99",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda dolar ($). Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "price = 25.99"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Mendeklarasikan dan Menginisialisasi Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables", "Declaration", "Initialization"],
+        "konten": "Panduan ini membahas cara mendeklarasikan dan menginisialisasi variabel di Python, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana cara mendeklarasikan dan menginisialisasi beberapa variabel dalam satu baris di Python?",
+                "answer": "Di Python, kita bisa mendeklarasikan dan menginisialisasi beberapa variabel dalam satu baris dengan memisahkan setiap pasangan variabel-nilai dengan koma. Contoh: `a, b, c = 1, 2, 3`."
+            },
+            {
+                "question": "Dapatkah kita mengubah nilai variabel yang sudah diinisialisasi di Python?",
+                "answer": "Ya, kita bisa mengubah nilai variabel yang sudah diinisialisasi di Python dengan menetapkan nilai baru ke variabel tersebut. Contoh: `x = 5` kemudian `x = 10`."
+            },
+            {
+                "question": "Apakah kita bisa mendeklarasikan variabel dengan tipe data yang berbeda dalam satu baris?",
+                "answer": "Ya, kita bisa mendeklarasikan variabel dengan tipe data yang berbeda dalam satu baris. Contoh: `name, age, is_student = 'Alice', 20, True`."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "a, b, c = 1, 2",
+                "answer": "Kode tersebut menghasilkan error karena jumlah variabel di sebelah kiri tidak sesuai dengan jumlah nilai di sebelah kanan. Harus ada jumlah variabel dan nilai yang sama.",
+                "answer_code": "a, b = 1, 2"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak mendeklarasikan variabel dengan benar?",
+                "question_code": "name = 'Alice\nage = 25",
+                "answer": "Kode tersebut tidak mendeklarasikan variabel dengan benar karena tanda kutip penutup pada nilai string untuk variabel 'name' hilang.",
+                "answer_code": "name = 'Alice'\nage = 25"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendeklarasikan variabel?",
+                "question_code": "user!name = 'Charlie'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung karakter khusus seperti '!'. Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "user_name = 'Charlie'"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "3var = 'Python'",
+                "answer": "Kode tersebut menghasilkan error karena nama variabel tidak boleh dimulai dengan angka. Nama variabel harus dimulai dengan huruf atau garis bawah.",
+                "answer_code": "var3 = 'Python'"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan variabel yang benar?",
+                "question_code": "greeting = 'Hello World\nprint(greeting)",
+                "answer": "Kode tersebut tidak menghasilkan variabel yang benar karena tanda kutip penutup pada nilai string hilang, dan tanda kurung pada fungsi print() tidak lengkap.",
+                "answer_code": "greeting = 'Hello World'\nprint(greeting)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendeklarasikan variabel?",
+                "question_code": "value# = 100",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda pagar (#). Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "value_number = 100"
+            }
+        ]
+    }
+]

@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Menggunakan sum() untuk Menjumlahkan Semua Elemen dalam List di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Artikel ini menjelaskan cara menggunakan fungsi sum() untuk menjumlahkan semua elemen dalam list di Python. Termasuk contoh kode dan tips praktis.",
+        "pertanyaan": [
+            {
+                "question": "Mengapa fungsi sum() penting dalam pemrograman?",
+                "answer": "Fungsi sum() penting dalam pemrograman karena memungkinkan kita dengan mudah menjumlahkan semua elemen dalam kumpulan data, yang sangat berguna untuk analisis dan perhitungan."
+            },
+            {
+                "question": "Bagaimana cara menggunakan sum() untuk menjumlahkan semua elemen dalam list?",
+                "answer": "Untuk menjumlahkan semua elemen dalam list, gunakan fungsi sum() dengan memberikan list sebagai argumen. Misalnya, sum([1, 2, 3, 4]) akan mengembalikan 10."
+            },
+            {
+                "question": "Apa yang akan terjadi jika kita menggunakan sum() pada list kosong?",
+                "answer": "Menggunakan sum() pada list kosong akan mengembalikan 0 karena tidak ada elemen yang dijumlahkan."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "numbers = [10, 20, 30, 40]\ntotal = sum(numbers[)",
+                "answer": "Kode tersebut menghasilkan error karena tanda kurung penutup pada fungsi sum() adalah kurung siku, bukan kurung biasa.",
+                "answer_code": "numbers = [10, 20, 30, 40]\ntotal = sum(numbers)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi untuk menjumlahkan elemen dalam list?",
+                "question_code": "values = [4, 5, 6]\nsum_values = sum(values,",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda koma yang tidak perlu setelah argumen pada fungsi sum().",
+                "answer_code": "values = [4, 5, 6]\nsum_values = sum(values)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk menjumlahkan elemen dalam list?",
+                "question_code": "scores = [75, 80, 85]\ntotal_score = sum scores",
+                "answer": "Kode tersebut salah karena fungsi sum() harus dipanggil dengan tanda kurung.",
+                "answer_code": "scores = [75, 80, 85]\ntotal_score = sum(scores)"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "prices = [100, 200, 300]\ntotal_price = sum(prices))",
+                "answer": "Kode tersebut menghasilkan error karena ada tanda kurung ganda di akhir panggilan fungsi sum().",
+                "answer_code": "prices = [100, 200, 300]\ntotal_price = sum(prices)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan jumlah yang benar?",
+                "question_code": "distances = [5, 10, 15]\ntotal_distance = sum(distances[",
+                "answer": "Kode tersebut tidak menghasilkan jumlah yang benar karena tanda kurung penutup pada fungsi sum() adalah kurung siku, bukan kurung biasa.",
+                "answer_code": "distances = [5, 10, 15]\ntotal_distance = sum(distances)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat menjumlahkan elemen dalam list?",
+                "question_code": "weights = [60, 70, 80]\ntotal_weight = sum weights((",
+                "answer": "Kode tersebut salah karena ada tanda kurung ganda di akhir panggilan fungsi sum().",
+                "answer_code": "weights = [60, 70, 80]\ntotal_weight = sum(weights)"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Fungsi sum() di Python: Menjumlahkan Elemen dalam List",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Lists", "Sum"],
+        "konten": "Panduan ini membahas cara menggunakan fungsi sum() untuk menjumlahkan elemen dalam list, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana sum() dapat digunakan dalam analisis data?",
+                "answer": "Sum() dapat digunakan dalam analisis data untuk menjumlahkan elemen dalam dataset, yang membantu dalam perhitungan total, rata-rata, dan statistik lainnya."
+            },
+            {
+                "question": "Bisakah sum() digunakan pada list yang berisi string?",
+                "answer": "Tidak, sum() tidak dapat digunakan pada list yang berisi string karena string tidak dapat dijumlahkan seperti angka. Akan menghasilkan TypeError."
+            },
+            {
+                "question": "Apa yang perlu diperhatikan saat menggunakan sum() pada list dengan elemen campuran?",
+                "answer": "Pastikan semua elemen dalam list adalah tipe data yang dapat dijumlahkan, seperti integer atau float. Jika tidak, akan menghasilkan TypeError."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "grades = [85, 90, 78]\ntotal_grades = sum grades",
+                "answer": "Kode tersebut menghasilkan error karena fungsi sum() harus dipanggil dengan tanda kurung.",
+                "answer_code": "grades = [85, 90, 78]\ntotal_grades = sum(grades)"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini saat mencoba menjumlahkan elemen dalam list?",
+                "question_code": "times = [12, 15, 20]\ntotal_time = sum(times(",
+                "answer": "Kode tersebut salah karena ada tanda kurung yang tidak perlu setelah argumen pada fungsi sum().",
+                "answer_code": "times = [12, 15, 20]\ntotal_time = sum(times)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak dapat menjumlahkan elemen dalam list?",
+                "question_code": "values = [100, 200, 300]\nsum_value = sums(values)",
+                "answer": "Kode tersebut tidak dapat menjumlahkan elemen dalam list karena nama fungsi yang benar adalah sum(), bukan sums().",
+                "answer_code": "values = [100, 200, 300]\nsum_value = sum(values)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak berfungsi?",
+                "question_code": "lengths = [10, 20, 30]\ntotal_length = sum(lengths((",
+                "answer": "Kode tersebut tidak berfungsi karena ada tanda kurung ganda di akhir panggilan fungsi sum().",
+                "answer_code": "lengths = [10, 20, 30]\ntotal_length = sum(lengths)"
+            },
+            {
+                "question": "Mengapa kode berikut tidak menghasilkan jumlah yang benar?",
+                "question_code": "profits = [500, 700, 300]\ntotal_profit = sum(profits]",
+                "answer": "Kode tersebut tidak menghasilkan jumlah yang benar karena tanda kurung penutup pada fungsi sum() adalah kurung siku, bukan kurung biasa.",
+                "answer_code": "profits = [500, 700, 300]\ntotal_profit = sum(profits)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mencari jumlah elemen dalam list?",
+                "question_code": "numbers = [1, 2, 3]\ntotal = sum(numbers))",
+                "answer": "Kode tersebut salah karena ada tanda kurung ganda di akhir panggilan fungsi sum().",
+                "answer_code": "numbers = [1, 2, 3]\ntotal = sum(numbers)"
+            }
+        ]
+    }
+]

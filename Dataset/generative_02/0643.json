@@ -1,1 +1,120 @@
-{}
+[
+    {
+        "sumber": "Python Documentation",
+        "penulis": "Guido van Rossum",
+        "tanggal": "2024-07-27",
+        "judul": "Definisi Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables"],
+        "konten": "Artikel ini menjelaskan cara mendefinisikan variabel di Python, termasuk aturan penamaan, tipe data, dan contoh penggunaan.",
+        "pertanyaan": [
+            {
+                "question": "Apa itu variabel dalam pemrograman?",
+                "answer": "Variabel adalah tempat penyimpanan untuk nilai yang dapat berubah selama program berjalan. Variabel memiliki nama yang digunakan untuk merujuk pada nilai yang disimpan."
+            },
+            {
+                "question": "Bagaimana cara mendefinisikan variabel di Python?",
+                "answer": "Untuk mendefinisikan variabel di Python, cukup tuliskan nama variabel diikuti dengan tanda sama dengan dan nilai yang ingin disimpan. Contoh: `x = 10`."
+            },
+            {
+                "question": "Apa aturan penamaan variabel di Python?",
+                "answer": "Nama variabel di Python harus dimulai dengan huruf atau garis bawah (_), dan bisa diikuti oleh huruf, angka, atau garis bawah. Tidak boleh menggunakan kata kunci Python sebagai nama variabel."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "2variable = 100",
+                "answer": "Kode tersebut menghasilkan error karena nama variabel tidak boleh dimulai dengan angka. Nama variabel harus dimulai dengan huruf atau garis bawah.",
+                "answer_code": "variable2 = 100"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak mendefinisikan variabel dengan benar?",
+                "question_code": "y == 30",
+                "answer": "Kode tersebut tidak mendefinisikan variabel karena menggunakan tanda sama dengan ganda (==) yang digunakan untuk perbandingan, bukan penugasan. Gunakan tanda sama dengan tunggal (=) untuk mendefinisikan variabel.",
+                "answer_code": "y = 30"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendefinisikan variabel?",
+                "question_code": "var-name = 'Bob'",
+                "answer": "Kode tersebut salah karena ada tanda hubung di dalam nama variabel. Nama variabel tidak boleh mengandung tanda hubung.",
+                "answer_code": "var_name = 'Bob'"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "class = 5",
+                "answer": "Kode tersebut menghasilkan error karena 'class' adalah kata kunci Python yang digunakan untuk mendefinisikan kelas, sehingga tidak bisa digunakan sebagai nama variabel.",
+                "answer_code": "class_number = 5"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan variabel yang benar?",
+                "question_code": "msg = 'Hello\nprint(msg)",
+                "answer": "Kode tersebut tidak menghasilkan variabel yang benar karena tanda kutip penutup pada nilai string hilang, dan tanda kurung pada fungsi print() tidak lengkap.",
+                "answer_code": "msg = 'Hello'\nprint(msg)"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendefinisikan variabel?",
+                "question_code": "user@name = 'Eve'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung karakter khusus seperti '@'. Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "user_name = 'Eve'"
+            }
+        ]
+    },
+    {
+        "sumber": "Real Python",
+        "penulis": "Alex Smith",
+        "tanggal": "2024-07-27",
+        "judul": "Cara Mendefinisikan dan Menggunakan Variabel di Python",
+        "tingkat_kesulitan": "Basic",
+        "tag": ["Python", "Variables"],
+        "konten": "Panduan ini membahas cara mendefinisikan dan menggunakan variabel di Python, serta memberikan beberapa contoh aplikasi praktis.",
+        "pertanyaan": [
+            {
+                "question": "Bagaimana variabel membantu dalam pemrograman?",
+                "answer": "Variabel membantu dalam pemrograman dengan memungkinkan kita menyimpan, mengakses, dan memodifikasi data dengan mudah selama program berjalan."
+            },
+            {
+                "question": "Dapatkah kita mendefinisikan variabel tanpa memberikan nilai awal?",
+                "answer": "Tidak, di Python kita harus memberikan nilai awal saat mendefinisikan variabel. Variabel tidak bisa didefinisikan tanpa nilai awal."
+            },
+            {
+                "question": "Bagaimana cara mengubah nilai variabel yang sudah didefinisikan?",
+                "answer": "Untuk mengubah nilai variabel yang sudah didefinisikan, cukup tetapkan nilai baru ke variabel tersebut menggunakan tanda sama dengan. Contoh: `x = 10` kemudian `x = 20`."
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "name = 'Alice\nprint(name)",
+                "answer": "Kode tersebut menghasilkan error karena tanda kutip penutup pada nilai string hilang, dan tanda kurung pada fungsi print() tidak lengkap.",
+                "answer_code": "name = 'Alice'\nprint(name)"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak mendefinisikan variabel dengan benar?",
+                "question_code": "float = 3.14",
+                "answer": "Kode tersebut tidak mendefinisikan variabel dengan benar karena 'float' adalah tipe data bawaan di Python dan tidak boleh digunakan sebagai nama variabel.",
+                "answer_code": "pi_value = 3.14"
+            },
+            {
+                "question": "Apa yang salah dengan kode ini untuk mendefinisikan variabel?",
+                "question_code": "num! = 42",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung karakter khusus seperti '!'. Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "num = 42"
+            },
+            {
+                "question": "Mengapa kode berikut ini menghasilkan error?",
+                "question_code": "7days = 'week'",
+                "answer": "Kode tersebut menghasilkan error karena nama variabel tidak boleh dimulai dengan angka. Nama variabel harus dimulai dengan huruf atau garis bawah.",
+                "answer_code": "days7 = 'week'"
+            },
+            {
+                "question": "Mengapa kode berikut ini tidak menghasilkan variabel yang benar?",
+                "question_code": "text = 'Python\nversion = '3.8'",
+                "answer": "Kode tersebut tidak menghasilkan variabel yang benar karena tanda kutip penutup pada nilai string untuk 'text' hilang.",
+                "answer_code": "text = 'Python'\nversion = '3.8'"
+            },
+            {
+                "question": "Apa yang salah dengan kode berikut ini saat mendefinisikan variabel?",
+                "question_code": "var$name = 'John'",
+                "answer": "Kode tersebut salah karena nama variabel tidak boleh mengandung tanda dolar ($). Gunakan huruf, angka, atau garis bawah.",
+                "answer_code": "var_name = 'John'"
+            }
+        ]
+    }
+]
