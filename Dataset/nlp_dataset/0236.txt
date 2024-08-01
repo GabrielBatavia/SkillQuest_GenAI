@@ -1,0 +1,1 @@
+buatkan saya 5000 kata membahas Penanganan kesalahan konversi tipe data dalam python (buat hanya bahasa indonesia tanpa bahasa inggris ataupun bahasa kode dan buat tanpa angka bila ada angka buat dalam bahasa indonesia)
