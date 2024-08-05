@@ -1,0 +1,13 @@
+Operator perbandingan dalam Python berfungsi untuk membandingkan dua nilai dan memberikan hasil yang menunjukkan hubungan antara nilai-nilai tersebut. Salah satu operator perbandingan yang paling dasar adalah operator yang memeriksa apakah dua nilai sama. Ketika digunakan, operator ini akan mengembalikan hasil yang menunjukkan apakah kedua nilai yang dibandingkan identik atau tidak. Ini berguna untuk menentukan kesamaan antara dua data atau variabel.
+
+Selain itu, ada operator yang digunakan untuk memeriksa apakah dua nilai tidak sama. Operator ini memberikan hasil yang menunjukkan apakah kedua nilai berbeda satu sama lain. Dengan menggunakan operator ini, kita dapat menentukan dengan jelas apakah dua nilai tidak identik dan memastikan bahwa kondisi perbedaan terpenuhi.
+
+Untuk membandingkan nilai-nilai dengan cara yang lebih spesifik, kita memiliki operator yang digunakan untuk memeriksa apakah satu nilai lebih besar dari nilai lainnya. Operator ini membantu dalam mengevaluasi situasi di mana nilai pertama lebih tinggi dibandingkan nilai kedua. Ini penting dalam konteks di mana kita perlu mengetahui apakah suatu nilai melampaui batas tertentu.
+
+Sebaliknya, ada operator yang dirancang untuk memeriksa apakah satu nilai lebih kecil dari nilai lainnya. Operator ini memberikan hasil yang menunjukkan jika nilai pertama berada di bawah nilai kedua. Ini berguna dalam konteks di mana kita perlu mengetahui apakah suatu nilai tidak mencapai batas tertentu atau berada di bawah ambang yang ditetapkan.
+
+Operator lain yang sering digunakan adalah operator yang memeriksa apakah satu nilai lebih besar atau sama dengan nilai lainnya. Operator ini membantu dalam situasi di mana kita perlu menentukan apakah nilai pertama setidaknya sama dengan nilai kedua atau lebih besar. Ini berguna dalam berbagai konteks di mana kita perlu mengevaluasi apakah nilai memenuhi kriteria minimum yang ditetapkan.
+
+Terakhir, ada operator yang memeriksa apakah satu nilai lebih kecil atau sama dengan nilai lainnya. Operator ini memberikan hasil yang menunjukkan apakah nilai pertama tidak lebih besar dari nilai kedua atau setidaknya sama dengan nilai kedua. Ini berguna dalam situasi di mana kita perlu menentukan apakah suatu nilai berada di bawah atau setara dengan batas tertentu.
+
+Dalam aplikasi praktis, penggunaan operator perbandingan memungkinkan kita untuk membuat keputusan berdasarkan hasil perbandingan nilai-nilai. Operator ini sangat penting dalam struktur kontrol seperti percabangan dan perulangan, di mana hasil perbandingan menentukan jalur eksekusi program. Hasil dari operator perbandingan dapat digunakan untuk mengarahkan alur program dan menentukan tindakan yang harus diambil berdasarkan kondisi yang dievaluasi.

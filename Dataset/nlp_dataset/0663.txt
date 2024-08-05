@@ -1,0 +1,11 @@
+Operator perbandingan di Python digunakan untuk membandingkan dua nilai dan menghasilkan hasil yang menunjukkan hubungan antara nilai-nilai tersebut. Salah satu operator perbandingan adalah operator yang memeriksa apakah dua nilai adalah sama. Dengan menggunakan operator ini, kita dapat mengetahui apakah kedua nilai yang dibandingkan identik atau tidak. Ini sangat berguna dalam berbagai situasi di mana kita perlu memverifikasi kesamaan nilai, seperti saat memeriksa apakah dua variabel memiliki nilai yang sama.
+
+Operator perbandingan lainnya adalah operator yang memeriksa ketidaksetaraan antara dua nilai. Dengan operator ini, kita dapat menentukan apakah dua nilai yang dibandingkan tidak identik. Ini penting dalam kondisi di mana kita perlu memastikan bahwa dua nilai berbeda, misalnya saat membandingkan hasil dari dua perhitungan yang berbeda.
+
+Ada juga operator perbandingan yang memeriksa apakah satu nilai lebih besar dari nilai lainnya. Dengan operator ini, kita dapat menentukan apakah nilai pertama lebih tinggi dibandingkan dengan nilai kedua. Operator ini sering digunakan untuk menentukan apakah suatu nilai melebihi nilai yang lain dalam berbagai situasi perbandingan.
+
+Sebaliknya, ada operator perbandingan yang memeriksa apakah satu nilai lebih kecil dari nilai lainnya. Operator ini memungkinkan kita untuk mengetahui apakah nilai pertama lebih rendah dibandingkan dengan nilai kedua. Ini berguna untuk menentukan apakah suatu nilai berada di bawah nilai yang lain dalam perhitungan atau perbandingan.
+
+Selain itu, terdapat operator perbandingan yang memeriksa apakah satu nilai lebih besar atau sama dengan nilai lainnya. Operator ini memberikan informasi tentang apakah nilai pertama lebih besar atau setara dengan nilai kedua. Ini sering diterapkan dalam situasi di mana kita perlu memastikan bahwa suatu nilai memenuhi kriteria minimum yang ditetapkan.
+
+Ada juga operator perbandingan yang memeriksa apakah satu nilai lebih kecil atau sama dengan nilai lainnya. Operator ini memungkinkan kita untuk mengetahui apakah nilai pertama lebih kecil atau setara dengan nilai kedua. Ini berguna dalam situasi di mana kita perlu memastikan bahwa suatu nilai tidak melebihi batas maksimum yang diizinkan.

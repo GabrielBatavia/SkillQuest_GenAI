@@ -1,0 +1,13 @@
+Operator perbandingan dalam Python digunakan untuk membandingkan nilai dan menghasilkan hasil yang menunjukkan hubungan antara nilai-nilai tersebut. Misalnya, ketika kita ingin memeriksa apakah dua nilai adalah sama, kita menggunakan operator kesamaan untuk menentukan apakah nilai pertama sama dengan nilai kedua. Ini sangat berguna dalam situasi di mana kita perlu memvalidasi data atau memeriksa apakah input yang diterima sesuai dengan nilai yang diharapkan.
+
+Sebaliknya, jika kita ingin mengetahui apakah dua nilai berbeda, kita menggunakan operator ketidaksamaan. Operator ini membantu kita menentukan apakah ada perbedaan antara dua nilai, misalnya, ketika memeriksa apakah nilai yang dimasukkan oleh pengguna berbeda dari nilai default atau nilai lainnya dalam sistem.
+
+Ketika kita perlu menentukan apakah suatu nilai lebih besar dari nilai lainnya, kita menggunakan operator perbandingan lebih besar. Ini berguna dalam berbagai situasi, seperti ketika memeriksa apakah skor pengguna melebihi skor minimum yang diperlukan untuk mencapai suatu level atau memenuhi syarat tertentu.
+
+Sebaliknya, jika kita perlu memeriksa apakah suatu nilai lebih kecil dari nilai lainnya, operator perbandingan lebih kecil digunakan. Ini membantu dalam menentukan apakah nilai yang diperoleh kurang dari batas yang ditetapkan atau tidak memenuhi kriteria yang diinginkan.
+
+Jika kita perlu mengetahui apakah suatu nilai lebih besar atau setidaknya sama dengan nilai lainnya, kita menggunakan operator perbandingan lebih besar atau sama dengan. Ini sering digunakan dalam situasi di mana kita ingin memastikan bahwa nilai memenuhi ambang batas yang telah ditentukan, seperti dalam kasus persetujuan atau kriteria kelayakan.
+
+Sebaliknya, operator perbandingan lebih kecil atau sama dengan digunakan untuk memeriksa apakah suatu nilai lebih kecil atau setidaknya sama dengan nilai lainnya. Ini berguna dalam situasi di mana kita perlu memastikan bahwa nilai berada dalam rentang yang diizinkan atau memenuhi kriteria minimum yang ditetapkan.
+
+Dalam pemrograman, operator perbandingan memungkinkan kita untuk melakukan evaluasi logis dan pengambilan keputusan berdasarkan hubungan antara nilai-nilai. Dengan menggunakan operator ini, kita dapat membuat keputusan yang tepat dalam program berdasarkan hasil perbandingan, yang mendukung berbagai fungsi dan logika dalam aplikasi yang dikembangkan.

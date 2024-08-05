@@ -1,0 +1,13 @@
+Operator perbandingan sering digunakan dalam struktur kontrol seperti kondisi jika-selainnya untuk menentukan jalannya program berdasarkan evaluasi logis dari dua nilai. Ketika kita menggunakan operator perbandingan dalam kondisi jika, kita bisa membuat keputusan berdasarkan hubungan antara nilai-nilai yang dibandingkan. Misalnya, jika kita ingin menjalankan bagian tertentu dari kode hanya jika dua nilai sama, kita menggunakan operator kesamaan dalam kondisi jika untuk memeriksa kesamaan tersebut. Jika nilai-nilai tersebut sama, maka kondisi jika akan terpenuhi dan kode yang terkait akan dijalankan.
+
+Sebaliknya, jika kita ingin menjalankan kode ketika dua nilai berbeda, kita menggunakan operator ketidaksamaan dalam kondisi jika. Dengan operator ini, kita bisa menentukan tindakan yang harus diambil jika nilai yang diperiksa tidak sama, yang berguna dalam situasi di mana kita perlu menangani kasus ketika data tidak sesuai dengan ekspektasi.
+
+Ketika kita perlu menentukan apakah suatu nilai lebih besar dari nilai lainnya, kita menggunakan operator perbandingan lebih besar dalam kondisi jika. Ini memungkinkan kita untuk menjalankan kode tertentu hanya jika nilai pertama melebihi nilai kedua, yang berguna dalam berbagai situasi seperti validasi batasan atau pengaturan kriteria.
+
+Demikian juga, jika kita ingin menjalankan kode ketika suatu nilai lebih kecil dari nilai lainnya, kita menggunakan operator perbandingan lebih kecil dalam kondisi jika. Ini membantu kita menentukan tindakan yang harus diambil jika nilai yang diperiksa berada di bawah ambang batas yang telah ditetapkan.
+
+Untuk kasus di mana kita perlu memastikan bahwa suatu nilai lebih besar atau setidaknya sama dengan nilai lainnya, kita menggunakan operator perbandingan lebih besar atau sama dengan dalam kondisi jika. Dengan cara ini, kita dapat menentukan apakah nilai memenuhi kriteria minimum yang ditetapkan dan menjalankan kode berdasarkan hasil evaluasi tersebut.
+
+Sebaliknya, operator perbandingan lebih kecil atau sama dengan digunakan dalam kondisi jika untuk memastikan bahwa suatu nilai lebih kecil atau setidaknya sama dengan nilai lainnya. Ini berguna untuk menangani situasi di mana nilai harus berada dalam rentang tertentu atau memenuhi kriteria yang diizinkan.
+
+Secara keseluruhan, penggunaan operator perbandingan dalam kondisi jika-selainnya memungkinkan kita untuk mengontrol alur eksekusi program berdasarkan hasil perbandingan nilai. Dengan memanfaatkan operator ini dalam struktur kontrol, kita dapat membuat keputusan yang tepat dan menangani berbagai kondisi secara dinamis, yang mendukung fungsionalitas program dan logika aplikasi.

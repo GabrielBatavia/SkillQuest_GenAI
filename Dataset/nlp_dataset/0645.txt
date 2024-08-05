@@ -1,0 +1,19 @@
+Berikut adalah pembahasan tentang contoh penggunaan operator aritmatika dalam operasi matematika dasar di Python:
+
+---
+
+Ketika bekerja dengan operator aritmatika di Python, kita sering memulai dengan penjumlahan. Misalnya, jika kita ingin menjumlahkan dua angka, kita dapat menggunakan operator penjumlahan untuk mendapatkan hasil total dari angka-angka tersebut. Contoh yang umum adalah menambahkan dua angka yang diberikan untuk menghitung jumlah keseluruhan. Ini sangat berguna dalam berbagai situasi, seperti menghitung total belanjaan atau jumlah anggota dalam suatu kelompok.
+
+Selain penjumlahan, kita juga bisa menggunakan operator pengurangan untuk menentukan selisih antara dua angka. Jika kita memiliki angka awal dan ingin menguranginya dengan angka lainnya, operator pengurangan akan memberikan hasil selisih dari kedua angka tersebut. Misalnya, jika kita memiliki jumlah uang tertentu dan membeli barang dengan harga tertentu, pengurangan ini akan membantu menghitung sisa uang yang tersisa setelah pembelian.
+
+Operator perkalian digunakan ketika kita perlu mengalikan dua angka untuk mendapatkan hasil yang merupakan hasil kali dari kedua angka tersebut. Ini bisa sangat membantu dalam situasi di mana kita perlu menghitung total dari beberapa unit barang yang memiliki harga yang sama. Misalnya, jika kita membeli beberapa barang dengan harga yang sama, perkalian akan memberikan total biaya yang harus dibayar.
+
+Pembagian adalah operator lain yang sering digunakan untuk membagi satu angka dengan angka lainnya. Hasil dari pembagian ini menunjukkan berapa banyak bagian yang diperoleh dari hasil pembagian. Misalnya, jika kita ingin membagi sejumlah barang secara merata antara beberapa orang, operator pembagian akan membantu menentukan jumlah barang yang diterima oleh setiap orang.
+
+Selain itu, operator modulus dapat digunakan untuk menemukan sisa dari hasil pembagian antara dua angka. Ini berguna ketika kita ingin mengetahui apakah sebuah angka dapat dibagi habis oleh angka lainnya atau ketika kita mencari sisa pembagian. Misalnya, jika kita membagi beberapa barang dalam kelompok dan ingin mengetahui sisa barang yang tidak terbagi, operator modulus akan memberikan informasi tersebut.
+
+Operator pangkat juga penting untuk menghitung hasil perpangkatan dari suatu angka. Misalnya, jika kita ingin menghitung kuadrat dari sebuah angka, kita dapat menggunakan operator pangkat untuk mendapatkan hasil yang merupakan angka tersebut dipangkatkan. Ini berguna dalam berbagai aplikasi matematika, termasuk perhitungan yang melibatkan fungsi kuadrat atau kubik.
+
+Terakhir, operator pembagian bulat digunakan untuk melakukan pembagian dan mendapatkan hasil yang berupa angka bulat tanpa desimal. Ini membantu dalam situasi di mana kita hanya membutuhkan hasil bulat dari pembagian. Misalnya, jika kita membagi sejumlah barang dan hanya membutuhkan jumlah penuh tanpa memperhitungkan pecahan, operator pembagian bulat akan memberikan hasil yang sesuai.
+
+Dengan memahami dan menggunakan operator-operator ini, kita dapat melakukan berbagai operasi matematika dasar secara efektif dalam Python. Operator aritmatika ini mempermudah perhitungan yang sering kita lakukan sehari-hari, mulai dari jumlah total hingga perhitungan sisa pembagian.
