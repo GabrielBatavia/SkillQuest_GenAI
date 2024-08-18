@@ -1,0 +1,162 @@
+[
+    {
+        "id": "0001",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Siapa yang menciptakan bahasa pemrograman Python?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python diciptakan oleh Guido van Rossum, seorang programmer Belanda, pada akhir tahun 1980-an dan pertama kali dirilis pada tahun 1991."
+            }
+        ],
+        "alternative_answers": [
+            "Guido van Rossum."
+        ]
+    },
+    {
+        "id": "0002",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Mengapa Guido van Rossum menamakan bahasa pemrogramannya 'Python'?"
+            },
+            {
+                "from": "gpt",
+                "value": "Nama 'Python' diambil dari acara komedi Inggris 'Monty Python's Flying Circus', yang merupakan favorit Guido van Rossum saat dia mengembangkan bahasa ini."
+            }
+        ],
+        "alternative_answers": [
+            "Guido van Rossum sedang membaca skrip yang diterbitkan dari \"Monty Python's Flying Circus\" saat mengerjakan Python."
+        ]
+    },
+    {
+        "id": "0003",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Kapan Python pertama kali dirilis ke publik?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python pertama kali dirilis ke publik pada tahun 1991."
+            }
+        ],
+        "alternative_answers": [
+            "Februari 1991."
+        ]
+    },
+    {
+        "id": "0004",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Apa versi pertama dari Python yang dirilis?"
+            },
+            {
+                "from": "gpt",
+                "value": "Versi pertama dari Python yang dirilis adalah Python 0.9.0."
+            }
+        ],
+        "alternative_answers": [
+            "Python 0.9.0"
+        ]
+    },
+    {
+        "id": "0005",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Bagaimana perkembangan Python dari versi 1.0 hingga versi saat ini?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python telah mengalami banyak perkembangan sejak versi 1.0 dirilis pada tahun 1994. Setiap versi baru membawa peningkatan performa, fitur-fitur baru, dan perbaikan keamanan. Saat ini, Python berada pada versi 3.x yang lebih efisien dan memiliki fitur modern."
+            }
+        ],
+        "alternative_answers": [
+            "Python terus berkembang dengan versi baru yang menawarkan peningkatan performa, fitur tambahan, dan keamanan yang lebih baik."
+        ]
+    },
+    {
+        "id": "0006",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Apa saja perbedaan utama antara Python 2.x dan 3.x?"
+            },
+            {
+                "from": "gpt",
+                "value": "Perbedaan utama antara Python 2.x dan 3.x termasuk perubahan dalam penanganan string, pembagian integer, dan penanganan Unicode. Python 3.x juga menghapus beberapa fitur lama yang usang dan lebih berfokus pada konsistensi dan modernitas."
+            }
+        ],
+        "alternative_answers": [
+            "Python 2.x menggunakan string ASCII secara default, sedangkan Python 3.x menggunakan Unicode. Pembagian integer di Python 2.x menghasilkan nilai integer, sementara di Python 3.x menghasilkan nilai float. Python 3.x juga menghapus beberapa fitur lama dan meningkatkan konsistensi bahasa."
+        ]
+    },
+    {
+        "id": "0007",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Mengapa Python 3 dirilis, dan apa tujuannya?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python 3 dirilis untuk memperbaiki masalah dan kekurangan yang ada di Python 2.x, dengan fokus pada peningkatan kompatibilitas Unicode, konsistensi bahasa, dan menghapus fitur-fitur yang usang."
+            }
+        ],
+        "alternative_answers": [
+            "Python 3 dirilis untuk memodernisasi Python dan memperbaiki kekurangan fundamental dalam desain bahasa."
+        ]
+    },
+    {
+        "id": "0008",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Apa yang membuat Python begitu populer di kalangan developer?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python populer di kalangan developer karena sintaksisnya yang sederhana dan mudah dipahami, kemampuannya untuk digunakan dalam berbagai bidang, serta dukungan komunitas yang luas dan kuat."
+            }
+        ],
+        "alternative_answers": [
+            "Python populer karena mudah dipelajari, serbaguna, dan memiliki banyak pustaka untuk berbagai kebutuhan."
+        ]
+    },
+    {
+        "id": "0009",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Bagaimana peran Python dalam komunitas open source?"
+            },
+            {
+                "from": "gpt",
+                "value": "Python memiliki peran yang besar dalam komunitas open source. Dengan lisensi terbuka, banyak kontributor dari seluruh dunia yang berkontribusi dalam pengembangan dan perbaikan bahasa ini, serta ekosistem yang luas seperti pustaka dan framework."
+            }
+        ],
+        "alternative_answers": [
+            "Python adalah tulang punggung bagi banyak proyek dan komunitas open source."
+        ]
+    },
+    {
+        "id": "0010",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Apa manfaat utama dari dukungan komunitas Python yang kuat?"
+            },
+            {
+                "from": "gpt",
+                "value": "Dukungan komunitas Python yang kuat memberikan banyak manfaat seperti tersedianya pustaka yang melimpah, forum bantuan yang aktif, dan sumber daya pembelajaran yang banyak. Ini membantu developer untuk lebih mudah memecahkan masalah dan terus belajar."
+            }
+        ],
+        "alternative_answers": [
+            "Pembelajaran lebih cepat, pemecahan masalah efisien, dan pengembangan proyek yang dipercepat."
+        ]
+    }
+]
