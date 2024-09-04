@@ -1,5 +1,0 @@
-buatkan saya 5000 kata membahas XOR di Python. dalam python (buat hanya bahasa indonesia tanpa bahasa inggris ataupun bahasa kode dan buat tanpa angka bila ada angka buat dalam bahasa indonesia)
-
-buat tanpa judul dan buat dalam paragraf paragraf yg menyatu
-
-buat bahasa yang digunakan seakan bercerita dan menjelaskan ke user, buat seakan ada user yang bertanya mengenai hal ini (user adalah mahasiswa baru yg belum paham pemrograman)
